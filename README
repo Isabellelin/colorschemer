@@ -1,0 +1,83 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4240
+
+The ColorSchemer is a Forms library based utility.
+The Forms library  can be found at
+http://www.vim.org/scripts/script.php?script_id=4150
+or
+https://github.com/megaannum/forms
+
+
+The ColorSchemer consist of three parts:
+  Basic utilty and core data,
+  Cterm distilled color scheme data files and
+  Gui distilled color scheme data files.
+
+The core subset of colorschemer does not require either the
+cterm or gui data files. It consist of the Distill code
+found in 'distill.vim' and the Viewer code found in 'viewer.vim'.
+In addition, it has a collection of some 687 third-party color
+scheme files.
+
+The Distiller will take one or more color scheme files and
+produce 'distilled' versions of those color schema.
+The processing does the following:
+*  It eliminates those highlight group declarations that are redundant,
+*  It eliminates those group attributes that are redundant,
+*  Generates a standard comment header and initial VimL code:
+
+        set background= 'light' or 'dark'
+        hi clear
+
+        if exists("syntax_on")
+            syntax reset
+        endif
+
+        let g:colors_name = expand("<sfile>:t:r")
+
+*  Output highlight group definitions targeted for specific GVim and Vim
+configurations:
+
+        if has("gui_running")
+            " highlights for GVim
+        elseif &t_Co == 256
+            " highlights for 256 color Xterm Vim
+        elseif &t_Co == 88
+            " highlights for 88 urvxt color Vim
+        elseif &t_Co == 16
+            " highlights for 16 color Xterm Vim
+        else " &t_Co == 8
+            " highlights for 8 color Xterm Vim
+        endif
+
+*  It eliminates redundant link definitions,
+*  The background color set depends primarily on the Normal background value and not what the color scheme file says (because, they sometimes lie).
+*  When appropriate generates both a 'dark' and 'light' version of the same base color scheme file.
+
+One of the Distill functions takes all of the 687 third-party color
+schema and distills them. It should be noted that slightly different
+results are achieved when executing the Distill code in GVim versus
+Vim (some color schemes only have definitions for GVim or Vim).
+
+Also part of the core distribution that allows one to very easily
+view different file-types applying different color schemes.
+Far easier and quicker than other ways.
+The viewer can be invoked through the mapping:
+
+    <Leader>cv
+
+The Cterm distribution contains the set of distilled files generated
+by the distill script by using Vim. A user can simply download this
+set if they do not want to generate them themselves using distill.vim.
+
+The Gui distribution contains the set of distilled files generated
+by the distill script by using GVim. A user can simply download this
+set if they do not want to generate them themselves using distill.vim.
+
+
+The release version can also be found at:
+https://github.com/megaannum/colorschemer
+
+Examples images of the color schemer viewer can be found at:
+https://github.com/megaannum/colorschemer/tree/master/images
+
+
