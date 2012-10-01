@@ -4,7 +4,7 @@
 " Name: shine
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:16
+" Date: 2012-09-29 13:43:58
 "----------------------------------------------------------
 
 set background=light
@@ -32,162 +32,106 @@ if has("gui_running")
   hi Search guifg=Black
   hi Special guifg=DarkOrange guibg=grey80
   hi SpecialChar gui=bold guifg=DarkGrey guibg=#ffffff
-  hi SpellBad guibg=#5fafd7
-  hi SpellCap guibg=#00d7af
-  hi SpellRare guibg=#5fafff
   hi Statement guifg=#ffff60 guibg=#ffffff
   hi StorageClass gui=bold guifg=Red guibg=#ffffff
   hi Visual gui=reverse guifg=Grey guibg=fg
-  hi VisualNOS gui=bold,underline
-  hi lcursor guifg=Black guibg=Cyan
+  hi lCursor guifg=Black guibg=Cyan
 elseif &t_Co == 256
   hi Normal ctermfg=0 ctermbg=15
-  hi ColorColumn ctermbg=74
-  hi Comment ctermfg=82 ctermbg=15
-  hi Conceal ctermbg=82
+  hi Comment ctermfg=8 ctermbg=15
   hi Constant ctermfg=13 ctermbg=252
   hi Cursor ctermfg=16 ctermbg=10
-  hi CursorLineNr ctermfg=32
-  hi DiffAdd ctermbg=4
+  hi DiffAdd ctermbg=1
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=74
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=12
   hi Ignore ctermfg=7
-  hi LineNr ctermfg=11
-  hi MoreMsg ctermfg=61
-  hi NonText ctermfg=43 ctermbg=7
-  hi Number ctermfg=74 ctermbg=15
-  hi Pmenu ctermbg=75
-  hi PmenuSbar ctermbg=84
-  hi Question ctermfg=61
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=84
-  hi Special ctermfg=74 ctermbg=252
-  hi SpecialChar ctermfg=82 ctermbg=15
-  hi SpecialKey ctermfg=43
-  hi SpellBad ctermbg=74
-  hi SpellCap ctermbg=43
-  hi SpellRare ctermbg=75
+  hi LineNr ctermfg=14
+  hi MoreMsg ctermfg=10
+  hi NonText ctermbg=7
+  hi Number ctermfg=12 ctermbg=15
+  hi Question ctermfg=10
+  hi Special ctermfg=12 ctermbg=252
+  hi SpecialChar ctermfg=8 ctermbg=15
+  hi SpecialKey ctermfg=9
   hi Statement cterm=bold ctermfg=2 ctermbg=15
-  hi StorageClass ctermfg=9 ctermbg=15
-  hi Title ctermfg=75
-  hi Visual cterm=reverse ctermfg=250
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=74
-  hi lcursor ctermfg=16 ctermbg=51
+  hi StorageClass ctermfg=12 ctermbg=15
+  hi Title ctermfg=13
+  hi Visual ctermfg=250 ctermbg=7
+  hi WarningMsg ctermfg=12
+  hi lCursor ctermfg=16 ctermbg=51
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi ColorColumn ctermbg=42
-  hi Comment ctermfg=44 ctermbg=79
-  hi Conceal ctermbg=44
+  hi Comment ctermfg=81 ctermbg=79
   hi Constant ctermfg=67 ctermbg=58
   hi Cursor ctermfg=16 ctermbg=28
-  hi CursorLineNr ctermfg=22
-  hi DiffAdd ctermbg=19
+  hi DiffAdd ctermbg=48
   hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=42
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
+  hi DiffDelete ctermbg=56
+  hi Directory ctermfg=39
   hi Ignore ctermfg=87
-  hi LineNr ctermfg=76
-  hi MoreMsg ctermfg=81
-  hi NonText ctermfg=6 ctermbg=87
-  hi Number ctermfg=42 ctermbg=79
-  hi Pmenu ctermbg=43
-  hi PmenuSbar ctermbg=45
-  hi Question ctermfg=81
-  hi Search ctermfg=16
-  hi SignColumn ctermbg=45
-  hi Special ctermfg=42 ctermbg=58
-  hi SpecialChar ctermfg=44 ctermbg=79
-  hi SpecialKey ctermfg=6
-  hi SpellBad ctermbg=42
-  hi SpellCap ctermbg=6
-  hi SpellRare ctermbg=43
+  hi LineNr ctermfg=31
+  hi MoreMsg ctermfg=28
+  hi NonText ctermbg=87
+  hi Number ctermfg=39 ctermbg=79
+  hi Question ctermfg=28
+  hi Special ctermfg=39 ctermbg=58
+  hi SpecialChar ctermfg=81 ctermbg=79
+  hi SpecialKey ctermfg=9
   hi Statement cterm=bold ctermfg=24 ctermbg=79
-  hi StorageClass ctermfg=9 ctermbg=79
-  hi Title ctermfg=43
-  hi Visual cterm=reverse ctermfg=85
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=42
-  hi lcursor ctermfg=16 ctermbg=31
+  hi StorageClass ctermfg=39 ctermbg=79
+  hi Title ctermfg=67
+  hi Visual ctermfg=85 ctermbg=87
+  hi WarningMsg ctermfg=39
+  hi lCursor ctermfg=16 ctermbg=31
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi ColorColumn ctermbg=8
-  hi Comment ctermfg=3 ctermbg=15
-  hi Conceal ctermbg=3
+  hi Comment ctermfg=2 ctermbg=15
   hi Constant ctermfg=13 ctermbg=7
   hi Cursor ctermfg=0 ctermbg=2
-  hi CursorLineNr ctermfg=6
-  hi DiffAdd ctermbg=4
+  hi DiffAdd ctermbg=9
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=8
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=12
   hi Ignore ctermfg=11
-  hi LineNr ctermfg=11
-  hi MoreMsg ctermfg=8
-  hi NonText ctermfg=6 ctermbg=11
-  hi Number ctermfg=8 ctermbg=15
-  hi Pmenu ctermbg=12
-  hi PmenuSbar ctermbg=10
-  hi Question ctermfg=8
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=10
-  hi Special ctermfg=8 ctermbg=7
-  hi SpecialChar ctermfg=3 ctermbg=15
-  hi SpecialKey ctermfg=6
-  hi SpellBad ctermbg=8
-  hi SpellCap ctermbg=6
-  hi SpellRare ctermbg=12
+  hi LineNr ctermfg=14
+  hi MoreMsg ctermfg=2
+  hi NonText ctermbg=11
+  hi Number ctermfg=12 ctermbg=15
+  hi Question ctermfg=2
+  hi Special ctermfg=12 ctermbg=7
+  hi SpecialChar ctermfg=2 ctermbg=15
+  hi SpecialKey ctermfg=9
   hi Statement cterm=bold ctermfg=2 ctermbg=15
-  hi StorageClass ctermfg=9 ctermbg=15
-  hi Title ctermfg=12
-  hi Visual cterm=reverse ctermfg=7
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=8
-  hi lcursor ctermfg=0 ctermbg=14
+  hi StorageClass ctermfg=12 ctermbg=15
+  hi Title ctermfg=13
+  hi Visual ctermfg=7 ctermbg=11
+  hi WarningMsg ctermfg=12
+  hi lCursor ctermfg=0 ctermbg=14
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi ColorColumn ctermbg=7
-  hi Comment ctermfg=3 ctermbg=7
-  hi Conceal ctermbg=3
+  hi Comment ctermfg=2 ctermbg=7
   hi Constant ctermfg=5 ctermbg=7
   hi Cursor ctermfg=0 ctermbg=2
-  hi CursorLineNr ctermfg=6
-  hi DiffAdd ctermbg=4
+  hi DiffAdd ctermbg=1
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=7
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=5
   hi Ignore ctermfg=7
-  hi LineNr ctermfg=3
-  hi MoreMsg ctermfg=5
-  hi NonText ctermfg=6 ctermbg=7
-  hi Number ctermfg=7 ctermbg=7
-  hi Pmenu ctermbg=7
-  hi PmenuSbar ctermbg=6
-  hi Question ctermfg=5
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=6
-  hi Special ctermfg=7 ctermbg=7
-  hi SpecialChar ctermfg=3 ctermbg=7
-  hi SpecialKey ctermfg=6
-  hi SpellBad ctermbg=7
-  hi SpellCap ctermbg=6
-  hi SpellRare ctermbg=7
+  hi LineNr ctermfg=6
+  hi MoreMsg ctermfg=2
+  hi NonText ctermbg=7
+  hi Number ctermfg=5 ctermbg=7
+  hi Question ctermfg=2
+  hi Special ctermfg=5 ctermbg=7
+  hi SpecialChar ctermfg=2 ctermbg=7
+  hi SpecialKey ctermfg=1
   hi Statement cterm=bold ctermfg=2 ctermbg=7
-  hi StorageClass ctermfg=1 ctermbg=7
-  hi Title ctermfg=7
-  hi Visual cterm=reverse ctermfg=7
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=7
-  hi lcursor ctermfg=0 ctermbg=6
+  hi StorageClass ctermfg=5 ctermbg=7
+  hi Title ctermfg=5
+  hi Visual ctermfg=7 ctermbg=7
+  hi WarningMsg ctermfg=5
+  hi lCursor ctermfg=0 ctermbg=6
 endif
 
 

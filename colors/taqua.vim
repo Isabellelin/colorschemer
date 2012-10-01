@@ -4,7 +4,7 @@
 " Name: taqua
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:37
+" Date: 2012-09-29 13:45:44
 "----------------------------------------------------------
 
 set background=light
@@ -58,7 +58,7 @@ if has("gui_running")
   hi htmlLink gui=underline guifg=#0000ff
   hi htmlUnderline gui=underline
   hi htmlUnderlineItalic gui=underline,italic
-  hi lcursor gui=bold guifg=#f8f8f8 guibg=#162CF7
+  hi lCursor gui=bold guifg=#f8f8f8 guibg=#162CF7
 elseif &t_Co == 256
   hi Normal ctermfg=236 ctermbg=231
   hi Comment ctermbg=195
@@ -75,7 +75,7 @@ elseif &t_Co == 256
   hi NonText ctermbg=231
   hi PreProc ctermbg=231
   hi Scrollbar ctermfg=39 ctermbg=231
-  hi Search ctermfg=28
+  hi Search ctermfg=NONE
   hi Special ctermbg=195
   hi SpecialKey ctermbg=231
   hi Statement ctermbg=231
@@ -84,11 +84,11 @@ elseif &t_Co == 256
   hi Title ctermbg=231
   hi Type ctermbg=231
   hi VertSplit ctermfg=231 ctermbg=32
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=190
   hi cursorim ctermfg=231 ctermbg=21
   hi htmlLink ctermfg=21
-  hi lcursor ctermfg=231 ctermbg=21
+  hi lCursor ctermfg=231 ctermbg=21
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=79
   hi Comment ctermbg=63
@@ -105,7 +105,7 @@ elseif &t_Co == 88
   hi NonText ctermbg=79
   hi PreProc ctermbg=79
   hi Scrollbar ctermfg=27 ctermbg=79
-  hi Search ctermfg=20
+  hi Search ctermfg=NONE
   hi Special ctermbg=63
   hi SpecialKey ctermbg=79
   hi Statement ctermbg=79
@@ -114,11 +114,11 @@ elseif &t_Co == 88
   hi Title ctermbg=79
   hi Type ctermbg=79
   hi VertSplit ctermfg=79 ctermbg=22
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=60
   hi cursorim ctermfg=79 ctermbg=19
   hi htmlLink ctermfg=19
-  hi lcursor ctermfg=79 ctermbg=19
+  hi lCursor ctermfg=79 ctermbg=19
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Comment ctermbg=14
@@ -135,7 +135,7 @@ elseif &t_Co == 16
   hi NonText ctermbg=15
   hi PreProc ctermbg=15
   hi Scrollbar ctermfg=6 ctermbg=15
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi Special ctermbg=14
   hi SpecialKey ctermbg=15
   hi Statement ctermbg=15
@@ -144,11 +144,11 @@ elseif &t_Co == 16
   hi Title ctermbg=15
   hi Type ctermbg=15
   hi VertSplit ctermfg=15 ctermbg=6
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=3
   hi cursorim ctermfg=15 ctermbg=4
   hi htmlLink ctermfg=4
-  hi lcursor ctermfg=15 ctermbg=4
+  hi lCursor ctermfg=15 ctermbg=4
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Comment ctermbg=7
@@ -165,7 +165,7 @@ else " 8 colors
   hi NonText ctermbg=7
   hi PreProc ctermbg=7
   hi Scrollbar ctermfg=6 ctermbg=7
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi SpecialKey ctermbg=7
   hi Statement ctermbg=7
@@ -174,11 +174,11 @@ else " 8 colors
   hi Title ctermbg=7
   hi Type ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=6
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=3
   hi cursorim ctermfg=7 ctermbg=4
   hi htmlLink ctermfg=4
-  hi lcursor ctermfg=7 ctermbg=4
+  hi lCursor ctermfg=7 ctermbg=4
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: thor
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:00
+" Date: 2012-09-29 13:46:13
 "----------------------------------------------------------
 
 set background=dark
@@ -70,231 +70,203 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=232
   hi Comment ctermfg=8 ctermbg=16
-  hi Conceal ctermbg=8
-  hi Conditional ctermfg=9
-  hi Constant ctermfg=14
+  hi Conditional ctermfg=12
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=233
-  hi Delimiter ctermfg=14
-  hi Directory ctermfg=12
-  hi ErrorMsg ctermbg=9
-  hi FoldColumn ctermbg=8
+  hi Delimiter ctermfg=11
+  hi Directory ctermfg=9
+  hi ErrorMsg ctermbg=12
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=3
-  hi Identifier cterm=NONE ctermfg=12
-  hi Keyword ctermfg=9
+  hi Function ctermfg=6
+  hi Identifier cterm=NONE ctermfg=9
+  hi Keyword ctermfg=12
   hi LineNr ctermfg=8 ctermbg=16
   hi MatchParen ctermfg=15 ctermbg=8
-  hi ModeMsg ctermfg=0 ctermbg=14
-  hi MoreMsg ctermfg=10
+  hi ModeMsg ctermfg=0 ctermbg=11
   hi NonText ctermfg=0 ctermbg=232
   hi Number ctermfg=13
   hi Operator ctermfg=15
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=9
-  hi Question ctermfg=10
-  hi Search ctermfg=NONE ctermbg=12
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=3
+  hi PreProc ctermfg=12
+  hi Search ctermfg=NONE ctermbg=9
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=NONE ctermbg=236
-  hi Statement ctermfg=9
+  hi Statement ctermfg=12
   hi StatusLine cterm=NONE ctermfg=15 ctermbg=8
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=8
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=8
   hi String ctermfg=10 ctermbg=234
-  hi TabLine ctermbg=8
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=12
-  hi Underlined ctermfg=12
+  hi Todo ctermfg=12 ctermbg=NONE
+  hi Type ctermfg=9
   hi VertSplit cterm=NONE ctermfg=8 ctermbg=8
-  hi Visual ctermbg=8
-  hi WarningMsg ctermfg=15 ctermbg=9
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermfg=15 ctermbg=12
   hi javaDocSeeTag ctermfg=8
   hi railsMethod ctermfg=15
   hi rubyAttribute ctermfg=228
-  hi rubyControl ctermfg=12
-  hi rubyEscape ctermfg=14
-  hi rubyInterpolation ctermfg=14
-  hi rubyInterpolationDelimiter ctermfg=14
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=11
+  hi rubyInterpolation ctermfg=11
+  hi rubyInterpolationDelimiter ctermfg=11
   hi rubyPredefinedVariable ctermfg=15
-  hi rubyRegexp ctermfg=3
-  hi rubyRegexpDelimiter ctermfg=3
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
   hi rubyStringDelimiter ctermfg=10
-  hi rubySymbol ctermfg=14
+  hi rubySymbol ctermfg=11
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Comment ctermfg=81 ctermbg=16
-  hi Conceal ctermbg=81
-  hi Conditional ctermfg=9
-  hi Constant ctermfg=31
+  hi Conditional ctermfg=39
+  hi Constant ctermfg=76
   hi Cursor cterm=reverse ctermfg=16 ctermbg=79
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=16
-  hi Delimiter ctermfg=31
-  hi Directory ctermfg=39
-  hi ErrorMsg ctermbg=9
-  hi FoldColumn ctermbg=81
+  hi Delimiter ctermfg=76
+  hi Directory ctermfg=9
+  hi ErrorMsg ctermbg=39
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=56
-  hi Identifier cterm=NONE ctermfg=39
-  hi Keyword ctermfg=9
+  hi Function ctermfg=6
+  hi Identifier cterm=NONE ctermfg=9
+  hi Keyword ctermfg=39
   hi LineNr ctermfg=81 ctermbg=16
   hi MatchParen ctermfg=79 ctermbg=81
-  hi ModeMsg ctermfg=16 ctermbg=31
-  hi MoreMsg ctermfg=28
+  hi ModeMsg ctermfg=16 ctermbg=76
   hi NonText ctermfg=16 ctermbg=16
   hi Number ctermfg=67
   hi Operator ctermfg=79
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=16 ctermbg=79
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=9
-  hi Question ctermfg=28
-  hi Search ctermfg=NONE ctermbg=39
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=56
+  hi PreProc ctermfg=39
+  hi Search ctermfg=NONE ctermbg=9
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=NONE ctermbg=80
-  hi Statement ctermfg=9
+  hi Statement ctermfg=39
   hi StatusLine cterm=NONE ctermfg=79 ctermbg=81
-  hi StatusLineNC cterm=NONE ctermfg=39 ctermbg=81
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=81
   hi String ctermfg=28 ctermbg=80
-  hi TabLine ctermbg=81
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=39
-  hi Underlined ctermfg=39
+  hi Todo ctermfg=39 ctermbg=NONE
+  hi Type ctermfg=9
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
-  hi Visual ctermbg=81
-  hi WarningMsg ctermfg=79 ctermbg=9
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermfg=79 ctermbg=39
   hi javaDocSeeTag ctermfg=81
   hi railsMethod ctermfg=79
   hi rubyAttribute ctermfg=77
-  hi rubyControl ctermfg=39
-  hi rubyEscape ctermfg=31
-  hi rubyInterpolation ctermfg=31
-  hi rubyInterpolationDelimiter ctermfg=31
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=76
+  hi rubyInterpolation ctermfg=76
+  hi rubyInterpolationDelimiter ctermfg=76
   hi rubyPredefinedVariable ctermfg=79
-  hi rubyRegexp ctermfg=56
-  hi rubyRegexpDelimiter ctermfg=56
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
   hi rubyStringDelimiter ctermfg=28
-  hi rubySymbol ctermfg=31
+  hi rubySymbol ctermfg=76
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=2 ctermbg=0
-  hi Conceal ctermbg=2
-  hi Conditional ctermfg=9
-  hi Constant ctermfg=14
+  hi Conditional ctermfg=12
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=0
-  hi Delimiter ctermfg=14
-  hi Directory ctermfg=12
-  hi ErrorMsg ctermbg=9
-  hi FoldColumn ctermbg=2
+  hi Delimiter ctermfg=11
+  hi Directory ctermfg=9
+  hi ErrorMsg ctermbg=12
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=3
-  hi Identifier cterm=NONE ctermfg=12
-  hi Keyword ctermfg=9
+  hi Function ctermfg=6
+  hi Identifier cterm=NONE ctermfg=9
+  hi Keyword ctermfg=12
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen ctermfg=15 ctermbg=2
-  hi ModeMsg ctermfg=0 ctermbg=14
-  hi MoreMsg ctermfg=2
+  hi ModeMsg ctermfg=0 ctermbg=11
   hi NonText ctermfg=0 ctermbg=0
   hi Number ctermfg=13
   hi Operator ctermfg=15
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=9
-  hi Question ctermfg=2
-  hi Search ctermfg=NONE ctermbg=12
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=3
+  hi PreProc ctermfg=12
+  hi Search ctermfg=NONE ctermbg=9
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=NONE ctermbg=2
-  hi Statement ctermfg=9
+  hi Statement ctermfg=12
   hi StatusLine cterm=NONE ctermfg=15 ctermbg=2
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=2
   hi String ctermfg=2 ctermbg=0
-  hi TabLine ctermbg=2
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=12
-  hi Underlined ctermfg=12
+  hi Todo ctermfg=12 ctermbg=NONE
+  hi Type ctermfg=9
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=15 ctermbg=9
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=15 ctermbg=12
   hi javaDocSeeTag ctermfg=2
   hi railsMethod ctermfg=15
   hi rubyAttribute ctermfg=11
-  hi rubyControl ctermfg=12
-  hi rubyEscape ctermfg=14
-  hi rubyInterpolation ctermfg=14
-  hi rubyInterpolationDelimiter ctermfg=14
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=11
+  hi rubyInterpolation ctermfg=11
+  hi rubyInterpolationDelimiter ctermfg=11
   hi rubyPredefinedVariable ctermfg=15
-  hi rubyRegexp ctermfg=3
-  hi rubyRegexpDelimiter ctermfg=3
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
   hi rubyStringDelimiter ctermfg=2
-  hi rubySymbol ctermfg=14
+  hi rubySymbol ctermfg=11
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=2 ctermbg=0
-  hi Conceal ctermbg=2
-  hi Conditional ctermfg=1
-  hi Constant ctermfg=6
+  hi Conditional ctermfg=5
+  hi Constant ctermfg=3
   hi Cursor cterm=reverse ctermfg=0 ctermbg=7
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=0
-  hi Delimiter ctermfg=6
-  hi Directory ctermfg=5
-  hi ErrorMsg ctermbg=1
-  hi FoldColumn ctermbg=2
+  hi Delimiter ctermfg=3
+  hi Directory ctermfg=1
+  hi ErrorMsg ctermbg=5
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=3
-  hi Identifier cterm=NONE ctermfg=5
-  hi Keyword ctermfg=1
+  hi Function ctermfg=6
+  hi Identifier cterm=NONE ctermfg=1
+  hi Keyword ctermfg=5
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen ctermfg=7 ctermbg=2
-  hi ModeMsg ctermfg=0 ctermbg=6
-  hi MoreMsg ctermfg=2
+  hi ModeMsg ctermfg=0 ctermbg=3
   hi NonText ctermfg=0 ctermbg=0
   hi Number ctermfg=5
   hi Operator ctermfg=7
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=7
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=1
-  hi Question ctermfg=2
-  hi Search ctermfg=NONE ctermbg=5
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=3
+  hi PreProc ctermfg=5
+  hi Search ctermfg=NONE ctermbg=1
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=NONE ctermbg=2
-  hi Statement ctermfg=1
+  hi Statement ctermfg=5
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=2
-  hi StatusLineNC cterm=NONE ctermfg=5 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=1 ctermbg=2
   hi String ctermfg=2 ctermbg=0
-  hi TabLine ctermbg=2
   hi Title ctermfg=NONE
-  hi Todo ctermfg=1 ctermbg=NONE
-  hi Type ctermfg=5
-  hi Underlined ctermfg=5
+  hi Todo ctermfg=5 ctermbg=NONE
+  hi Type ctermfg=1
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=7 ctermbg=1
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=7 ctermbg=5
   hi javaDocSeeTag ctermfg=2
   hi railsMethod ctermfg=7
   hi rubyAttribute ctermfg=7
-  hi rubyControl ctermfg=5
-  hi rubyEscape ctermfg=6
-  hi rubyInterpolation ctermfg=6
-  hi rubyInterpolationDelimiter ctermfg=6
+  hi rubyControl ctermfg=1
+  hi rubyEscape ctermfg=3
+  hi rubyInterpolation ctermfg=3
+  hi rubyInterpolationDelimiter ctermfg=3
   hi rubyPredefinedVariable ctermfg=7
-  hi rubyRegexp ctermfg=3
-  hi rubyRegexpDelimiter ctermfg=3
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
   hi rubyStringDelimiter ctermfg=2
-  hi rubySymbol ctermfg=6
+  hi rubySymbol ctermfg=3
 endif
 
 hi! link csXmlTag Keyword

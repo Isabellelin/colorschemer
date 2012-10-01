@@ -4,7 +4,7 @@
 " Name: pyte_2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:59
+" Date: 2012-09-29 13:42:17
 "----------------------------------------------------------
 
 set background=light
@@ -33,6 +33,7 @@ if has("gui_running")
   hi Operator guifg=#408010
   hi PreProc guifg=#1060a0
   hi Repeat gui=bold guifg=#7fbf58
+  hi Search guifg=NONE
   hi Special gui=italic guifg=#70a0d0
   hi Statement guifg=#007020
   hi StatusLine gui=bold,italic guifg=white guibg=#8090a0
@@ -44,7 +45,7 @@ if has("gui_running")
   hi Type gui=italic guifg=#e5a00d
   hi Underlined guifg=#202020
   hi VertSplit gui=NONE guifg=#a0b0c0 guibg=#a0b0c0
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
 elseif &t_Co == 256
   hi Normal ctermfg=234 ctermbg=255
   hi Conditional ctermfg=64
@@ -57,12 +58,14 @@ elseif &t_Co == 256
   hi Number ctermfg=71
   hi Operator ctermfg=64
   hi Repeat ctermfg=107
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=103
   hi StatusLineNC ctermfg=59 ctermbg=145
   hi String ctermfg=61
   hi Structure ctermfg=22
   hi VertSplit ctermfg=145 ctermbg=145
-  hi lcursor ctermfg=16 ctermbg=231
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=16 ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=87
   hi Conditional ctermfg=81
@@ -75,12 +78,14 @@ elseif &t_Co == 88
   hi Number ctermfg=82
   hi Operator ctermfg=20
   hi Repeat ctermfg=41
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=83
   hi StatusLineNC ctermfg=81 ctermbg=85
   hi String ctermfg=82
   hi Structure ctermfg=20
   hi VertSplit ctermfg=85 ctermbg=85
-  hi lcursor ctermfg=16 ctermbg=79
+  hi Visual cterm=NONE ctermbg=87
+  hi lCursor ctermfg=16 ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Conditional ctermfg=3
@@ -93,12 +98,14 @@ elseif &t_Co == 16
   hi Number ctermfg=6
   hi Operator ctermfg=3
   hi Repeat ctermfg=10
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=8
   hi StatusLineNC ctermfg=6 ctermbg=8
   hi String ctermfg=6
   hi Structure ctermfg=2
   hi VertSplit ctermfg=8 ctermbg=8
-  hi lcursor ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=11
+  hi lCursor ctermfg=0 ctermbg=15
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Conditional ctermfg=3
@@ -111,12 +118,14 @@ else " 8 colors
   hi Number ctermfg=6
   hi Operator ctermfg=3
   hi Repeat ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=7
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi String ctermfg=6
   hi Structure ctermfg=2
   hi VertSplit ctermfg=7 ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 

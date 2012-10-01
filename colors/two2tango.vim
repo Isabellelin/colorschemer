@@ -4,7 +4,7 @@
 " Name: two2tango
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:35
+" Date: 2012-09-29 13:46:58
 "----------------------------------------------------------
 
 set background=dark
@@ -59,177 +59,104 @@ if has("gui_running")
   hi Underlined guifg=#729fcf
   hi VertSplit gui=NONE guifg=#2e3436 guibg=#888a85
   hi Visual guifg=#ce5c00 guibg=#fcaf3e
-  hi VisualNOS guibg=black
+  hi VisualNOS gui=NONE guibg=black
   hi WarningMsg guifg=#fcaf3e
   hi WildMenu guifg=#c4a000 guibg=#fce94f
   hi cursorim guifg=#2e3436 guibg=#8ae234
 elseif &t_Co == 256
   hi Normal ctermfg=252 ctermbg=236
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=178
   hi Cursor ctermfg=236 ctermbg=9
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=235
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi Ignore ctermbg=236
   hi IncSearch ctermfg=178 ctermbg=221
   hi LineNr ctermbg=236
   hi MatchParen ctermfg=236
   hi ModeMsg ctermfg=166
-  hi MoreMsg ctermfg=10
   hi NonText ctermbg=236
   hi Operator ctermfg=220
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
   hi Repeat ctermfg=178
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=255 ctermbg=166
   hi StatusLineNC ctermfg=236 ctermbg=102
   hi String ctermfg=74
-  hi TabLine ctermbg=8
   hi TabLineFill ctermbg=255
   hi TabLineSel ctermfg=255 ctermbg=236
-  hi Title ctermfg=13
   hi Tooltip ctermfg=255 ctermbg=74
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=236 ctermbg=102
-  hi Visual ctermfg=166 ctermbg=8
+  hi Visual cterm=NONE ctermfg=166 ctermbg=8
   hi VisualNOS ctermbg=16
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=236 ctermbg=113
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=52
   hi Cursor ctermfg=80 ctermbg=9
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi Ignore ctermbg=80
   hi IncSearch ctermfg=52 ctermbg=77
   hi LineNr ctermbg=80
   hi MatchParen ctermfg=80
   hi ModeMsg ctermfg=52
-  hi MoreMsg ctermfg=28
   hi NonText ctermbg=80
   hi Operator ctermfg=72
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
   hi Repeat ctermfg=52
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=87 ctermbg=52
   hi StatusLineNC ctermfg=80 ctermbg=83
   hi String ctermfg=38
-  hi TabLine ctermbg=81
   hi TabLineFill ctermbg=87
   hi TabLineSel ctermfg=87 ctermbg=80
-  hi Title ctermfg=67
   hi Tooltip ctermfg=87 ctermbg=38
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
   hi VertSplit ctermfg=80 ctermbg=83
-  hi Visual ctermfg=52 ctermbg=81
+  hi Visual cterm=NONE ctermfg=52 ctermbg=81
   hi VisualNOS ctermbg=16
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=80 ctermbg=40
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
   hi Cursor ctermfg=2 ctermbg=9
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Ignore ctermbg=2
   hi IncSearch ctermfg=3 ctermbg=11
   hi LineNr ctermbg=2
   hi MatchParen ctermfg=2
   hi ModeMsg ctermfg=3
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=2
   hi Operator ctermfg=3
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
   hi Repeat ctermfg=3
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=11 ctermbg=3
   hi StatusLineNC ctermfg=2 ctermbg=8
   hi String ctermfg=8
-  hi TabLine ctermbg=2
   hi TabLineFill ctermbg=11
   hi TabLineSel ctermfg=11 ctermbg=2
-  hi Title ctermfg=13
   hi Tooltip ctermfg=11 ctermbg=8
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=2 ctermbg=8
-  hi Visual ctermfg=3 ctermbg=2
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi VisualNOS ctermbg=0
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=2 ctermbg=10
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
   hi Cursor ctermfg=2 ctermbg=1
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Ignore ctermbg=2
   hi IncSearch ctermfg=3 ctermbg=7
   hi LineNr ctermbg=2
   hi MatchParen ctermfg=2
   hi ModeMsg ctermfg=3
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=2
   hi Operator ctermfg=3
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
   hi Repeat ctermfg=3
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=7 ctermbg=3
   hi StatusLineNC ctermfg=2 ctermbg=3
   hi String ctermfg=7
-  hi TabLine ctermbg=2
   hi TabLineFill ctermbg=7
   hi TabLineSel ctermfg=7 ctermbg=2
-  hi Title ctermfg=5
   hi Tooltip ctermfg=7 ctermbg=7
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
   hi VertSplit ctermfg=2 ctermbg=3
-  hi Visual ctermfg=3 ctermbg=2
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi VisualNOS ctermbg=0
-  hi WarningMsg ctermfg=1
   hi cursorim ctermfg=2 ctermbg=3
 endif
 
-hi! link TagListFileName Directory
 hi! link cOperator Constant
 hi! link cocoaClass objcClass
 hi! link cocoaFunction Function
@@ -251,17 +178,17 @@ hi! link phpArrayPair Operator
 hi! link phpBoolean Constant
 hi! link phpFunctions Function
 hi! link phpNull Constant
-hi! link phpQuoteDouble StringDelimiter
-hi! link phpQuoteSingle StringDelimiter
-hi! link phpSuperglobal Identifier
+hi! link phpQuoteDouble stringDelimiter
+hi! link phpQuoteSingle stringDelimiter
+hi! link phpSuperGlobal Identifier
 hi! link pythonAssignment Assignment
-hi! link pythonBuiltinFunc BuiltinFunc
-hi! link pythonBuiltinObj BuiltinObj
-hi! link pythonCalOperator CalOperator
+hi! link pythonBuiltinFunc builtinFunc
+hi! link pythonBuiltinObj builtinObj
+hi! link pythonCalOperator calOperator
 hi! link pythonDecorator Decorator
-hi! link pythonDottedName DottedName
+hi! link pythonDottedName dottedName
 hi! link pythonPrecondit Import
-hi! link pythonSuperclass Superclass
+hi! link pythonSuperclass superclass
 hi! link rubyConstant Type
 hi! link rubyFunction Function
 hi! link rubyGlobalVariable rubyInstanceVariable
@@ -269,5 +196,6 @@ hi! link rubyInterpolationDelimiter Identifier
 hi! link rubyModule rubyClass
 hi! link rubySharpBang Comment
 hi! link rubyString String
-hi! link rubyStringDelimiter StringDelimiter
+hi! link rubyStringDelimiter stringDelimiter
+hi! link tagListFileName Directory
 

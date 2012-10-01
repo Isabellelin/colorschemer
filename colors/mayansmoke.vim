@@ -4,7 +4,7 @@
 " Name: mayansmoke
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:18
+" Date: 2012-09-29 13:38:41
 "----------------------------------------------------------
 
 set background=light
@@ -21,7 +21,6 @@ if has("gui_running")
   hi ColorColumn guibg=#EEEEDD
   hi Comment gui=italic guifg=#96AAC2
   hi Constant guifg=DarkOrange
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=#FFFDD0
   hi CursorLine guibg=#FFFDD0
   hi DiffAdd guifg=#000000 guibg=SeaGreen1
@@ -80,7 +79,6 @@ if has("gui_running")
   hi diffNewFile gui=bold guifg=#0088FF
   hi diffOldFile guifg=#006666
   hi diffRemoved guifg=#BB0000
-  hi lcursor guifg=bg guibg=fg
   hi phpBoolean guifg=brown
   hi phpComparison guifg=black
   hi phpConditional guifg=black
@@ -115,14 +113,11 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=255
   hi Boolean ctermfg=88
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=110
-  hi Conceal ctermbg=8
   hi Constant ctermfg=214
   hi Cursor ctermfg=255 ctermbg=16
   hi CursorColumn ctermbg=255
   hi CursorLine cterm=NONE ctermbg=254
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=16 ctermbg=48
   hi DiffChange ctermfg=16 ctermbg=153
   hi DiffDelete ctermfg=16 ctermbg=203
@@ -168,7 +163,7 @@ elseif &t_Co == 256
   hi VertSplit cterm=NONE ctermfg=255 ctermbg=24
   hi VimCommentTitle ctermfg=110 ctermbg=bg
   hi VimError ctermfg=160 ctermbg=16
-  hi Visual ctermfg=255 ctermbg=153
+  hi Visual cterm=NONE ctermfg=255 ctermbg=153
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=16 ctermbg=117
   hi cursorim ctermfg=255 ctermbg=16
@@ -179,7 +174,7 @@ elseif &t_Co == 256
   hi diffNewFile ctermfg=33
   hi diffOldFile ctermfg=23
   hi diffRemoved ctermfg=124
-  hi lcursor ctermfg=255 ctermbg=16
+  hi lCursor ctermfg=255 ctermbg=16
   hi phpBoolean ctermfg=58
   hi phpComparison ctermfg=0
   hi phpConditional ctermfg=21
@@ -205,7 +200,7 @@ elseif &t_Co == 256
   hi phpStringDouble ctermfg=30
   hi phpStringSingle ctermfg=30
   hi phpStructure ctermfg=0
-  hi phpTodo cterm=bold ctermfg=9
+  hi phpTodo cterm=bold ctermfg=12
   hi phpType ctermfg=2
   hi pythonDecorator ctermfg=208 ctermbg=255
   hi qfError ctermfg=9
@@ -214,14 +209,11 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Boolean ctermfg=32
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=42
-  hi Conceal ctermbg=81
   hi Constant ctermfg=72
   hi Cursor ctermfg=87 ctermbg=16
   hi CursorColumn ctermbg=87
   hi CursorLine cterm=NONE ctermbg=87
-  hi CursorLineNr ctermfg=56
   hi DiffAdd ctermfg=16 ctermbg=29
   hi DiffChange ctermfg=16 ctermbg=59
   hi DiffDelete ctermfg=16 ctermbg=69
@@ -267,7 +259,7 @@ elseif &t_Co == 88
   hi VertSplit cterm=NONE ctermfg=87 ctermbg=21
   hi VimCommentTitle ctermfg=42 ctermbg=bg
   hi VimError ctermfg=48 ctermbg=16
-  hi Visual ctermfg=87 ctermbg=59
+  hi Visual cterm=NONE ctermfg=87 ctermbg=59
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=16 ctermbg=43
   hi cursorim ctermfg=87 ctermbg=16
@@ -278,7 +270,7 @@ elseif &t_Co == 88
   hi diffNewFile ctermfg=23
   hi diffOldFile ctermfg=21
   hi diffRemoved ctermfg=48
-  hi lcursor ctermfg=87 ctermbg=16
+  hi lCursor ctermfg=87 ctermbg=16
   hi phpBoolean ctermfg=36
   hi phpComparison ctermfg=16
   hi phpConditional ctermfg=19
@@ -304,7 +296,7 @@ elseif &t_Co == 88
   hi phpStringDouble ctermfg=21
   hi phpStringSingle ctermfg=21
   hi phpStructure ctermfg=16
-  hi phpTodo cterm=bold ctermfg=9
+  hi phpTodo cterm=bold ctermfg=39
   hi phpType ctermfg=24
   hi pythonDecorator ctermfg=68 ctermbg=87
   hi qfError ctermfg=9
@@ -313,14 +305,11 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Boolean ctermfg=1
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=8
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=11 ctermbg=0
   hi CursorColumn ctermbg=11
   hi CursorLine cterm=NONE ctermbg=11
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=0 ctermbg=6
   hi DiffChange ctermfg=0 ctermbg=12
   hi DiffDelete ctermfg=0 ctermbg=9
@@ -366,7 +355,7 @@ elseif &t_Co == 16
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=6
   hi VimCommentTitle ctermfg=8 ctermbg=bg
   hi VimError ctermfg=9 ctermbg=0
-  hi Visual ctermfg=11 ctermbg=12
+  hi Visual cterm=NONE ctermfg=11 ctermbg=12
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=0 ctermbg=12
   hi cursorim ctermfg=11 ctermbg=0
@@ -377,7 +366,7 @@ elseif &t_Co == 16
   hi diffNewFile ctermfg=6
   hi diffOldFile ctermfg=6
   hi diffRemoved ctermfg=1
-  hi lcursor ctermfg=11 ctermbg=0
+  hi lCursor ctermfg=11 ctermbg=0
   hi phpBoolean ctermfg=3
   hi phpComparison ctermfg=0
   hi phpConditional ctermfg=4
@@ -403,7 +392,7 @@ elseif &t_Co == 16
   hi phpStringDouble ctermfg=6
   hi phpStringSingle ctermfg=6
   hi phpStructure ctermfg=0
-  hi phpTodo cterm=bold ctermfg=9
+  hi phpTodo cterm=bold ctermfg=12
   hi phpType ctermfg=2
   hi pythonDecorator ctermfg=3 ctermbg=11
   hi qfError ctermfg=9
@@ -412,14 +401,11 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=1
-  hi ColorColumn ctermbg=1
   hi Comment ctermfg=7
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=7 ctermbg=0
   hi CursorColumn ctermbg=7
   hi CursorLine cterm=NONE ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=0 ctermbg=6
   hi DiffChange ctermfg=0 ctermbg=7
   hi DiffDelete ctermfg=0 ctermbg=3
@@ -465,7 +451,7 @@ else " 8 colors
   hi VertSplit cterm=NONE ctermfg=7 ctermbg=6
   hi VimCommentTitle ctermfg=7 ctermbg=bg
   hi VimError ctermfg=1 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=7 ctermbg=0
@@ -476,7 +462,7 @@ else " 8 colors
   hi diffNewFile ctermfg=6
   hi diffOldFile ctermfg=6
   hi diffRemoved ctermfg=1
-  hi lcursor ctermfg=7 ctermbg=0
+  hi lCursor ctermfg=7 ctermbg=0
   hi phpBoolean ctermfg=3
   hi phpComparison ctermfg=0
   hi phpConditional ctermfg=4
@@ -502,7 +488,7 @@ else " 8 colors
   hi phpStringDouble ctermfg=6
   hi phpStringSingle ctermfg=6
   hi phpStructure ctermfg=0
-  hi phpTodo cterm=bold ctermfg=1
+  hi phpTodo cterm=bold ctermfg=5
   hi phpType ctermfg=2
   hi pythonDecorator ctermfg=3 ctermbg=7
   hi qfError ctermfg=1

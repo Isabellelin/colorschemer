@@ -4,7 +4,7 @@
 " Name: mango
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:01
+" Date: 2012-09-29 13:38:19
 "----------------------------------------------------------
 
 set background=light
@@ -34,6 +34,7 @@ if has("gui_running")
   hi Operator guifg=#ff5f00
   hi PreCondit guifg=#af87ff
   hi Repeat guifg=#ff875f
+  hi Search guifg=NONE
   hi SpecialChar guifg=#ff5faf
   hi SpecialComment guifg=#5f87d7
   hi StorageClass guifg=#af87ff
@@ -67,6 +68,7 @@ elseif &t_Co == 256
   hi PreCondit ctermfg=141
   hi PreProc ctermfg=209
   hi Repeat ctermfg=209
+  hi Search ctermfg=NONE
   hi Special ctermfg=205
   hi SpecialChar ctermfg=205
   hi SpecialComment ctermfg=68
@@ -79,6 +81,7 @@ elseif &t_Co == 256
   hi Type ctermfg=202
   hi Typedef ctermfg=164
   hi Underlined ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=80
   hi Boolean ctermfg=9
@@ -105,6 +108,7 @@ elseif &t_Co == 88
   hi PreCondit ctermfg=55
   hi PreProc ctermfg=69
   hi Repeat ctermfg=69
+  hi Search ctermfg=NONE
   hi Special ctermfg=70
   hi SpecialChar ctermfg=70
   hi SpecialComment ctermfg=38
@@ -117,6 +121,7 @@ elseif &t_Co == 88
   hi Type ctermfg=68
   hi Typedef ctermfg=50
   hi Underlined ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=2
   hi Boolean ctermfg=9
@@ -143,6 +148,7 @@ elseif &t_Co == 16
   hi PreCondit ctermfg=12
   hi PreProc ctermfg=8
   hi Repeat ctermfg=8
+  hi Search ctermfg=NONE
   hi Special ctermfg=8
   hi SpecialChar ctermfg=8
   hi SpecialComment ctermfg=8
@@ -155,6 +161,7 @@ elseif &t_Co == 16
   hi Type ctermfg=9
   hi Typedef ctermfg=13
   hi Underlined ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=11
 else " 8 colors
   hi Normal ctermfg=2
   hi Boolean ctermfg=1
@@ -181,6 +188,7 @@ else " 8 colors
   hi PreCondit ctermfg=7
   hi PreProc ctermfg=3
   hi Repeat ctermfg=3
+  hi Search ctermfg=NONE
   hi Special ctermfg=7
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=6
@@ -193,6 +201,7 @@ else " 8 colors
   hi Type ctermfg=3
   hi Typedef ctermfg=5
   hi Underlined ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=7
 endif
 
 hi! link javaScriptFutureKeys Comment

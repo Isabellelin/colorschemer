@@ -4,7 +4,7 @@
 " Name: seoul
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:08
+" Date: 2012-09-29 13:43:48
 "----------------------------------------------------------
 
 set background=dark
@@ -17,7 +17,6 @@ let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
   hi Normal guifg=#ffffff guibg=#000000
-  hi Cursor guifg=#000000 guibg=#ffff00
   hi CursorLine guifg=#ffffff
   hi Define guifg=#5f87d7
   hi Function guifg=#5fd700
@@ -41,7 +40,7 @@ elseif &t_Co == 256
   hi CursorLine cterm=NONE ctermfg=15 ctermbg=80
   hi Define ctermfg=68
   hi Error ctermfg=7 ctermbg=1
-  hi ErrorMsg ctermfg=7
+  hi ErrorMsg ctermfg=7 ctermbg=1
   hi Function ctermfg=76
   hi Identifier ctermfg=27
   hi IncSearch ctermfg=0 ctermbg=72
@@ -56,6 +55,7 @@ elseif &t_Co == 256
   hi TabLineFill cterm=underline ctermfg=15 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=86
   hi Type ctermfg=76
+  hi Visual cterm=NONE ctermbg=8
   hi rubyConstant ctermfg=51
   hi rubyInterpolation ctermfg=78
   hi rubyPseudoVariable ctermfg=27
@@ -69,7 +69,7 @@ elseif &t_Co == 88
   hi CursorLine cterm=NONE ctermfg=79 ctermbg=42
   hi Define ctermfg=38
   hi Error ctermfg=87 ctermbg=48
-  hi ErrorMsg ctermfg=87
+  hi ErrorMsg ctermfg=87 ctermbg=48
   hi Function ctermfg=40
   hi Identifier ctermfg=23
   hi IncSearch ctermfg=16 ctermbg=41
@@ -84,6 +84,7 @@ elseif &t_Co == 88
   hi TabLineFill cterm=underline ctermfg=79 ctermbg=16
   hi TabLineSel ctermfg=16 ctermbg=46
   hi Type ctermfg=40
+  hi Visual cterm=NONE ctermbg=81
   hi rubyConstant ctermfg=31
   hi rubyInterpolation ctermfg=41
   hi rubyPseudoVariable ctermfg=23
@@ -97,7 +98,7 @@ elseif &t_Co == 16
   hi CursorLine cterm=NONE ctermfg=15 ctermbg=12
   hi Define ctermfg=8
   hi Error ctermfg=11 ctermbg=9
-  hi ErrorMsg ctermfg=11
+  hi ErrorMsg ctermfg=11 ctermbg=9
   hi Function ctermfg=3
   hi Identifier ctermfg=6
   hi IncSearch ctermfg=0 ctermbg=8
@@ -112,6 +113,7 @@ elseif &t_Co == 16
   hi TabLineFill cterm=underline ctermfg=15 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=12
   hi Type ctermfg=3
+  hi Visual cterm=NONE ctermbg=2
   hi rubyConstant ctermfg=14
   hi rubyInterpolation ctermfg=10
   hi rubyPseudoVariable ctermfg=6
@@ -125,7 +127,7 @@ else " 8 colors
   hi CursorLine cterm=NONE ctermfg=7 ctermbg=7
   hi Define ctermfg=6
   hi Error ctermfg=7 ctermbg=1
-  hi ErrorMsg ctermfg=7
+  hi ErrorMsg ctermfg=7 ctermbg=1
   hi Function ctermfg=3
   hi Identifier ctermfg=6
   hi IncSearch ctermfg=0 ctermbg=6
@@ -140,6 +142,7 @@ else " 8 colors
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=7
   hi Type ctermfg=3
+  hi Visual cterm=NONE ctermbg=2
   hi rubyConstant ctermfg=6
   hi rubyInterpolation ctermfg=6
   hi rubyPseudoVariable ctermfg=6

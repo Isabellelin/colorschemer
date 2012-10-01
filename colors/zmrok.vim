@@ -4,7 +4,7 @@
 " Name: zmrok
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:26
+" Date: 2012-09-29 13:49:16
 "----------------------------------------------------------
 
 set background=dark
@@ -70,6 +70,7 @@ elseif &t_Co == 256
   hi StorageClass ctermfg=186
   hi String ctermfg=192
   hi VertSplit ctermfg=234 ctermbg=234
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
   hi Character ctermfg=72
@@ -91,6 +92,7 @@ elseif &t_Co == 88
   hi StorageClass ctermfg=57
   hi String ctermfg=61
   hi VertSplit ctermfg=80 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Character ctermfg=7
@@ -112,6 +114,7 @@ elseif &t_Co == 16
   hi StorageClass ctermfg=7
   hi String ctermfg=10
   hi VertSplit ctermfg=0 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Character ctermfg=7
@@ -133,6 +136,7 @@ else " 8 colors
   hi StorageClass ctermfg=7
   hi String ctermfg=7
   hi VertSplit ctermfg=0 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

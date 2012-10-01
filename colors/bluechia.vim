@@ -4,7 +4,7 @@
 " Name: bluechia
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:00
+" Date: 2012-09-29 13:30:59
 "----------------------------------------------------------
 
 set background=dark
@@ -68,7 +68,7 @@ if has("gui_running")
   hi WarningMsg guifg=#d2ff00 guibg=black
   hi WildMenu guifg=#3a553a guibg=#d2ff00
   hi cursorim guifg=#3a553a guibg=#d2ff00
-  hi lcursor guifg=#3a553a guibg=#d2ff00
+  hi lCursor guifg=#3a553a guibg=#d2ff00
 elseif &t_Co == 256
   hi Normal ctermfg=189 ctermbg=233
   hi Boolean ctermfg=190
@@ -95,11 +95,11 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=253 ctermbg=16
   hi Title ctermbg=16
   hi VertSplit ctermfg=16 ctermbg=253
-  hi Visual ctermfg=190
+  hi Visual cterm=NONE ctermfg=190 ctermbg=8
   hi VisualNOS ctermfg=234 ctermbg=16
   hi WarningMsg ctermbg=16
   hi cursorim ctermfg=237 ctermbg=190
-  hi lcursor ctermfg=237 ctermbg=190
+  hi lCursor ctermfg=237 ctermbg=190
 elseif &t_Co == 88
   hi Normal ctermfg=59 ctermbg=16
   hi Boolean ctermfg=60
@@ -126,11 +126,11 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=87 ctermbg=16
   hi Title ctermbg=16
   hi VertSplit ctermfg=16 ctermbg=87
-  hi Visual ctermfg=60
+  hi Visual cterm=NONE ctermfg=60 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=16
   hi WarningMsg ctermbg=16
   hi cursorim ctermfg=80 ctermbg=60
-  hi lcursor ctermfg=80 ctermbg=60
+  hi lCursor ctermfg=80 ctermbg=60
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Boolean ctermfg=3
@@ -157,11 +157,11 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=12 ctermbg=0
   hi Title ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=12
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=0
   hi WarningMsg ctermbg=0
   hi cursorim ctermfg=2 ctermbg=3
-  hi lcursor ctermfg=2 ctermbg=3
+  hi lCursor ctermfg=2 ctermbg=3
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=3
@@ -188,11 +188,11 @@ else " 8 colors
   hi TabLineSel ctermfg=7 ctermbg=0
   hi Title ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=0
   hi WarningMsg ctermbg=0
   hi cursorim ctermfg=2 ctermbg=3
-  hi lcursor ctermfg=2 ctermbg=3
+  hi lCursor ctermfg=2 ctermbg=3
 endif
 
 

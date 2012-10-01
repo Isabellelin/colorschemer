@@ -4,7 +4,7 @@
 " Name: selenitic
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:07
+" Date: 2012-09-29 13:43:46
 "----------------------------------------------------------
 
 set background=dark
@@ -40,7 +40,7 @@ if has("gui_running")
   hi WarningMsg guifg=#7A987A
   hi htmlArg guifg=#DFDFBF
   hi htmlTagName guifg=#EFC986
-  hi xmlCData guifg=#808080
+  hi xmlCDATA guifg=#808080
   hi xmlTagName guifg=#EFC986
 elseif &t_Co == 256
   hi Normal ctermfg=187 ctermbg=236
@@ -51,10 +51,11 @@ elseif &t_Co == 256
   hi Number ctermfg=67
   hi String ctermfg=180
   hi Structure ctermfg=116
+  hi Visual cterm=NONE ctermbg=8
   hi VisualNOS ctermbg=241
   hi htmlArg ctermfg=187
   hi htmlTagName ctermfg=222
-  hi xmlCData ctermfg=244
+  hi xmlCDATA ctermfg=244
   hi xmlTagName ctermfg=222
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
@@ -65,10 +66,11 @@ elseif &t_Co == 88
   hi Number ctermfg=38
   hi String ctermfg=57
   hi Structure ctermfg=42
+  hi Visual cterm=NONE ctermbg=81
   hi VisualNOS ctermbg=81
   hi htmlArg ctermfg=86
   hi htmlTagName ctermfg=73
-  hi xmlCData ctermfg=83
+  hi xmlCDATA ctermfg=83
   hi xmlTagName ctermfg=73
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=2
@@ -79,10 +81,11 @@ elseif &t_Co == 16
   hi Number ctermfg=8
   hi String ctermfg=8
   hi Structure ctermfg=12
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=6
   hi htmlArg ctermfg=7
   hi htmlTagName ctermfg=7
-  hi xmlCData ctermfg=8
+  hi xmlCDATA ctermfg=8
   hi xmlTagName ctermfg=7
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
@@ -93,10 +96,11 @@ else " 8 colors
   hi Number ctermfg=7
   hi String ctermfg=7
   hi Structure ctermfg=7
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=6
   hi htmlArg ctermfg=7
   hi htmlTagName ctermfg=7
-  hi xmlCData ctermfg=3
+  hi xmlCDATA ctermfg=3
   hi xmlTagName ctermfg=7
 endif
 

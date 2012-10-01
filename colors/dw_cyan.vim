@@ -4,7 +4,7 @@
 " Name: dw_cyan
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:56
+" Date: 2012-09-29 13:34:02
 "----------------------------------------------------------
 
 set background=dark
@@ -87,7 +87,7 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=231 ctermbg=16
   hi TabLineSel ctermfg=16 ctermbg=37
   hi VertSplit ctermfg=231 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi WarningMsg ctermbg=102
   hi cDefine ctermfg=51
   hi cInclude ctermfg=231
@@ -117,7 +117,7 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=79 ctermbg=16
   hi TabLineSel ctermfg=16 ctermbg=21
   hi VertSplit ctermfg=79 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi WarningMsg ctermbg=83
   hi cDefine ctermfg=31
   hi cInclude ctermfg=79
@@ -147,7 +147,7 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=15 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=6
   hi VertSplit ctermfg=15 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=8
   hi cDefine ctermfg=14
   hi cInclude ctermfg=15
@@ -177,7 +177,7 @@ else " 8 colors
   hi TabLineFill ctermfg=7 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=6
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=3
   hi cDefine ctermfg=6
   hi cInclude ctermfg=7

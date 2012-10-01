@@ -4,7 +4,7 @@
 " Name: vimhut
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:06
+" Date: 2012-09-29 13:47:37
 "----------------------------------------------------------
 
 set background=light
@@ -46,7 +46,7 @@ if has("gui_running")
   hi PmenuThumb guifg=#cccccc guibg=#cccccc
   hi PreProc guifg=#400080 guibg=bg
   hi Question gui=NONE guifg=#006800 guibg=bg
-  hi Search guibg=#d8d828
+  hi Search guifg=NONE guibg=#d8d828
   hi SignColumn guifg=#660000 guibg=bg
   hi Special guifg=#62499c guibg=bg
   hi SpecialChar guifg=#62499c guibg=bg
@@ -65,7 +65,7 @@ if has("gui_running")
   hi Underlined guifg=#804040 guibg=bg
   hi VertSplit gui=NONE guifg=fg guibg=#999999
   hi Visual guibg=#b3b3b3
-  hi VisualNOS guibg=#ceacac
+  hi VisualNOS gui=NONE guibg=#ceacac
   hi WarningMsg guifg=#900000 guibg=bg
   hi WildMenu gui=underline guifg=fg guibg=bg
   hi cursorim guifg=#ffffff guibg=#003300
@@ -91,6 +91,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=252
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialChar ctermfg=61 ctermbg=bg
   hi SpecialComment ctermfg=89 ctermbg=bg
@@ -105,6 +106,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=fg ctermbg=246
+  hi Visual cterm=NONE ctermbg=7
   hi VisualNOS ctermbg=181
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=231 ctermbg=22
@@ -130,6 +132,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=58
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialChar ctermfg=81 ctermbg=bg
   hi SpecialComment ctermfg=32 ctermbg=bg
@@ -144,6 +147,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=fg ctermbg=84
+  hi Visual cterm=NONE ctermbg=87
   hi VisualNOS ctermbg=85
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=79 ctermbg=16
@@ -169,6 +173,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=7
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialChar ctermfg=5 ctermbg=bg
   hi SpecialComment ctermfg=1 ctermbg=bg
@@ -183,6 +188,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=fg ctermbg=8
+  hi Visual cterm=NONE ctermbg=11
   hi VisualNOS ctermbg=8
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=15 ctermbg=2
@@ -208,6 +214,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=7
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialChar ctermfg=5 ctermbg=bg
   hi SpecialComment ctermfg=1 ctermbg=bg
@@ -222,6 +229,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=fg ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi VisualNOS ctermbg=7
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=7 ctermbg=2

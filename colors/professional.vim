@@ -4,7 +4,7 @@
 " Name: professional
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:44
+" Date: 2012-09-29 13:41:57
 "----------------------------------------------------------
 
 set background=light
@@ -30,7 +30,7 @@ if has("gui_running")
   hi Number guifg=#9933ff
   hi Operator guifg=#ff0000
   hi PreProc guifg=#993300
-  hi Search guibg=#ffff00
+  hi Search guifg=NONE guibg=#ffff00
   hi Statement gui=NONE guifg=orange
   hi StatusLine gui=NONE guifg=#ffffff guibg=#006666
   hi StatusLineNC gui=NONE guifg=#ffffff guibg=#666633
@@ -40,7 +40,7 @@ if has("gui_running")
   hi Typedef guifg=#c000c8
   hi VertSplit gui=NONE guifg=#ffffff guibg=#006666
   hi browseDirectory guifg=#660000 guibg=#ffffff
-  hi lcursor guibg=Cyan
+  hi lCursor guifg=NONE guibg=Cyan
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=230
   hi Boolean ctermfg=19
@@ -52,14 +52,16 @@ elseif &t_Co == 256
   hi LineNr ctermbg=23
   hi Number ctermfg=99
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=23
   hi StatusLineNC ctermfg=231 ctermbg=241
   hi String ctermfg=22
   hi Title ctermbg=231
   hi Typedef ctermfg=128
   hi VertSplit ctermfg=231 ctermbg=23
+  hi Visual cterm=NONE ctermbg=7
   hi browseDirectory ctermfg=52 ctermbg=231
-  hi lcursor ctermbg=51
+  hi lCursor ctermfg=NONE ctermbg=51
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=78
   hi Boolean ctermfg=17
@@ -71,14 +73,16 @@ elseif &t_Co == 88
   hi LineNr ctermbg=21
   hi Number ctermfg=35
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=21
   hi StatusLineNC ctermfg=79 ctermbg=81
   hi String ctermfg=20
   hi Title ctermbg=79
   hi Typedef ctermfg=50
   hi VertSplit ctermfg=79 ctermbg=21
+  hi Visual cterm=NONE ctermbg=87
   hi browseDirectory ctermfg=32 ctermbg=79
-  hi lcursor ctermbg=31
+  hi lCursor ctermfg=NONE ctermbg=31
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Boolean ctermfg=4
@@ -90,14 +94,16 @@ elseif &t_Co == 16
   hi LineNr ctermbg=6
   hi Number ctermfg=13
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=6
   hi StatusLineNC ctermfg=15 ctermbg=3
   hi String ctermfg=2
   hi Title ctermbg=15
   hi Typedef ctermfg=5
   hi VertSplit ctermfg=15 ctermbg=6
+  hi Visual cterm=NONE ctermbg=11
   hi browseDirectory ctermfg=1 ctermbg=15
-  hi lcursor ctermbg=14
+  hi lCursor ctermfg=NONE ctermbg=14
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=4
@@ -109,14 +115,16 @@ else " 8 colors
   hi LineNr ctermbg=6
   hi Number ctermfg=5
   hi Operator ctermfg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=6
   hi StatusLineNC ctermfg=7 ctermbg=3
   hi String ctermfg=2
   hi Title ctermbg=7
   hi Typedef ctermfg=5
   hi VertSplit ctermfg=7 ctermbg=6
+  hi Visual cterm=NONE ctermbg=7
   hi browseDirectory ctermfg=1 ctermbg=7
-  hi lcursor ctermbg=6
+  hi lCursor ctermfg=NONE ctermbg=6
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: atom
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:38
+" Date: 2012-09-29 13:30:35
 "----------------------------------------------------------
 
 set background=dark
@@ -71,7 +71,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=249 ctermbg=234
   hi StatusLineNC ctermfg=244 ctermbg=236
   hi VertSplit ctermfg=234 ctermbg=234
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi diffAdded ctermfg=34 ctermbg=234
   hi diffRemoved ctermfg=160 ctermbg=234
 elseif &t_Co == 88
@@ -89,7 +89,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=85 ctermbg=80
   hi StatusLineNC ctermfg=83 ctermbg=80
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi diffAdded ctermfg=24 ctermbg=80
   hi diffRemoved ctermfg=48 ctermbg=80
 elseif &t_Co == 16
@@ -107,7 +107,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=8 ctermbg=0
   hi StatusLineNC ctermfg=8 ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi diffAdded ctermfg=2 ctermbg=0
   hi diffRemoved ctermfg=9 ctermbg=0
 else " 8 colors
@@ -125,7 +125,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=3 ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi diffAdded ctermfg=2 ctermbg=0
   hi diffRemoved ctermfg=1 ctermbg=0
 endif

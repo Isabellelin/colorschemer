@@ -4,7 +4,7 @@
 " Name: bvemu
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:13
+" Date: 2012-09-29 13:31:19
 "----------------------------------------------------------
 
 set background=dark
@@ -22,7 +22,7 @@ if has("gui_running")
   hi Comment guifg=#887C6B
   hi Conditional guifg=#DA3287
   hi Constant guifg=#8CD0D3
-  hi Cursor guifg=bg guibg=#a3e3ed
+  hi Cursor guibg=#a3e3ed
   hi CursorColumn guibg=#202438
   hi CursorLine guibg=#202438
   hi Debug guifg=#cca3b3
@@ -67,6 +67,9 @@ if has("gui_running")
   hi SpecialChar guifg=#FBEC5D
   hi SpecialComment guifg=#F5DA9F
   hi SpecialKey guifg=#405060
+  hi SpellBad guibg=#ff0000
+  hi SpellCap guibg=#5c5cff
+  hi SpellLocal guibg=#00ffff
   hi Statement gui=NONE guifg=#BDCB28
   hi StatusLine gui=bold guifg=#e0e0e0 guibg=#363946
   hi StatusLineNC gui=NONE guifg=#767986 guibg=#363946
@@ -141,9 +144,9 @@ elseif &t_Co == 256
   hi SpecialChar ctermfg=181
   hi SpecialComment ctermfg=181
   hi SpecialKey ctermfg=237
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=150
   hi StatusLine cterm=bold ctermfg=254 ctermbg=237
@@ -161,7 +164,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=115
   hi Underlined ctermfg=253
   hi VertSplit cterm=NONE ctermfg=242 ctermbg=237
-  hi Visual ctermbg=24
+  hi Visual cterm=NONE ctermbg=24
   hi VisualNOS cterm=underline ctermfg=253
   hi WarningMsg ctermfg=173
   hi WildMenu cterm=bold ctermfg=16 ctermbg=186
@@ -219,9 +222,9 @@ elseif &t_Co == 88
   hi SpecialChar ctermfg=85
   hi SpecialComment ctermfg=85
   hi SpecialKey ctermfg=80
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=39
+  hi SpellLocal cterm=undercurl ctermbg=31
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=57
   hi StatusLine cterm=bold ctermfg=87 ctermbg=80
@@ -239,7 +242,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=42
   hi Underlined ctermfg=86
   hi VertSplit cterm=NONE ctermfg=82 ctermbg=80
-  hi Visual ctermbg=21
+  hi Visual cterm=NONE ctermbg=21
   hi VisualNOS cterm=underline ctermfg=86
   hi WarningMsg ctermfg=53
   hi WildMenu cterm=bold ctermfg=16 ctermbg=57
@@ -297,9 +300,9 @@ elseif &t_Co == 16
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=10
   hi StatusLine cterm=bold ctermfg=11 ctermbg=2
@@ -317,7 +320,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=10
   hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=2
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi VisualNOS cterm=underline ctermfg=12
   hi WarningMsg ctermfg=8
   hi WildMenu cterm=bold ctermfg=0 ctermbg=10
@@ -375,9 +378,9 @@ else " 8 colors
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=1
+  hi SpellCap cterm=undercurl ctermbg=5
+  hi SpellLocal cterm=undercurl ctermbg=6
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=7
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
@@ -395,7 +398,7 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=7
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=2
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi VisualNOS cterm=underline ctermfg=7
   hi WarningMsg ctermfg=3
   hi WildMenu cterm=bold ctermfg=0 ctermbg=7

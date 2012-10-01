@@ -4,7 +4,7 @@
 " Name: phphaxor
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:32
+" Date: 2012-09-29 13:41:41
 "----------------------------------------------------------
 
 set background=dark
@@ -45,114 +45,114 @@ if has("gui_running")
   hi js guifg=IndianRed
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment cterm=bold ctermfg=6
+  hi Comment cterm=bold ctermfg=3
   hi Constant ctermfg=7
   hi Cursor cterm=bold ctermfg=0 ctermbg=10
   hi CursorLine ctermbg=16
   hi Defined cterm=bold ctermfg=14
-  hi Directory cterm=bold ctermfg=6
+  hi Directory cterm=bold ctermfg=3
   hi Error cterm=bold ctermfg=7 ctermbg=1
   hi Function cterm=bold ctermfg=14
   hi Identifier cterm=NONE ctermfg=7
   hi Include cterm=bold ctermfg=12
-  hi LineNr cterm=bold ctermfg=242
+  hi LineNr cterm=bold ctermfg=8
   hi MatchParen cterm=bold ctermfg=13 ctermbg=8
-  hi ModeMsg ctermfg=224 ctermbg=16
+  hi ModeMsg ctermfg=12 ctermbg=16
   hi MoreMsg cterm=bold ctermfg=2
   hi PreProc cterm=bold ctermfg=7
   hi Question cterm=bold
   hi Search ctermfg=10
   hi Special ctermfg=2
-  hi Statement cterm=bold ctermfg=14
+  hi Statement cterm=bold
   hi StorageClass cterm=bold ctermfg=13
   hi String ctermfg=7
   hi Todo ctermbg=7
   hi Type ctermfg=7
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi htm ctermfg=8
   hi js ctermfg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi Comment cterm=bold ctermfg=6
+  hi Comment cterm=bold ctermfg=56
   hi Constant ctermfg=87
   hi Cursor cterm=bold ctermfg=16 ctermbg=28
   hi CursorLine ctermbg=16
   hi Defined cterm=bold ctermfg=31
-  hi Directory cterm=bold ctermfg=6
+  hi Directory cterm=bold ctermfg=56
   hi Error cterm=bold ctermfg=87 ctermbg=48
   hi Function cterm=bold ctermfg=31
   hi Identifier cterm=NONE ctermfg=87
   hi Include cterm=bold ctermfg=39
-  hi LineNr cterm=bold ctermfg=82
+  hi LineNr cterm=bold ctermfg=81
   hi MatchParen cterm=bold ctermfg=67 ctermbg=81
-  hi ModeMsg ctermfg=74 ctermbg=16
+  hi ModeMsg ctermfg=39 ctermbg=16
   hi MoreMsg cterm=bold ctermfg=24
   hi PreProc cterm=bold ctermfg=87
   hi Question cterm=bold
   hi Search ctermfg=28
   hi Special ctermfg=24
-  hi Statement cterm=bold ctermfg=31
+  hi Statement cterm=bold
   hi StorageClass cterm=bold ctermfg=67
   hi String ctermfg=87
   hi Todo ctermbg=87
   hi Type ctermfg=87
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi htm ctermfg=81
   hi js ctermfg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Comment cterm=bold ctermfg=6
+  hi Comment cterm=bold ctermfg=3
   hi Constant ctermfg=11
   hi Cursor cterm=bold ctermfg=0 ctermbg=2
   hi CursorLine ctermbg=0
   hi Defined cterm=bold ctermfg=14
-  hi Directory cterm=bold ctermfg=6
+  hi Directory cterm=bold ctermfg=3
   hi Error cterm=bold ctermfg=11 ctermbg=9
   hi Function cterm=bold ctermfg=14
   hi Identifier cterm=NONE ctermfg=11
   hi Include cterm=bold ctermfg=12
-  hi LineNr cterm=bold ctermfg=3
+  hi LineNr cterm=bold ctermfg=2
   hi MatchParen cterm=bold ctermfg=13 ctermbg=2
-  hi ModeMsg ctermfg=11 ctermbg=0
+  hi ModeMsg ctermfg=12 ctermbg=0
   hi MoreMsg cterm=bold ctermfg=2
   hi PreProc cterm=bold ctermfg=11
   hi Question cterm=bold
   hi Search ctermfg=2
   hi Special ctermfg=2
-  hi Statement cterm=bold ctermfg=14
+  hi Statement cterm=bold
   hi StorageClass cterm=bold ctermfg=13
   hi String ctermfg=11
   hi Todo ctermbg=11
   hi Type ctermfg=11
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi htm ctermfg=2
   hi js ctermfg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment cterm=bold ctermfg=6
+  hi Comment cterm=bold ctermfg=3
   hi Constant ctermfg=7
   hi Cursor cterm=bold ctermfg=0 ctermbg=2
   hi CursorLine ctermbg=0
   hi Defined cterm=bold ctermfg=6
-  hi Directory cterm=bold ctermfg=6
+  hi Directory cterm=bold ctermfg=3
   hi Error cterm=bold ctermfg=7 ctermbg=1
   hi Function cterm=bold ctermfg=6
   hi Identifier cterm=NONE ctermfg=7
   hi Include cterm=bold ctermfg=5
-  hi LineNr cterm=bold ctermfg=3
+  hi LineNr cterm=bold ctermfg=2
   hi MatchParen cterm=bold ctermfg=5 ctermbg=2
-  hi ModeMsg ctermfg=7 ctermbg=0
+  hi ModeMsg ctermfg=5 ctermbg=0
   hi MoreMsg cterm=bold ctermfg=2
   hi PreProc cterm=bold ctermfg=7
   hi Question cterm=bold
   hi Search ctermfg=2
   hi Special ctermfg=2
-  hi Statement cterm=bold ctermfg=6
+  hi Statement cterm=bold
   hi StorageClass cterm=bold ctermfg=5
   hi String ctermfg=7
   hi Todo ctermbg=7
   hi Type ctermfg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi htm ctermfg=2
   hi js ctermfg=2
 endif
@@ -172,7 +172,7 @@ hi! link htmlCssDefinition htm
 hi! link htmlCssStyleComment htm
 hi! link htmlEndTag htm
 hi! link htmlEvent js
-hi! link htmlEventDq js
+hi! link htmlEventDQ js
 hi! link htmlEventSQ js
 hi! link htmlH1 htm
 hi! link htmlH2 htm
@@ -207,33 +207,33 @@ hi! link htmlUnderlineBoldItalic htm
 hi! link htmlUnderlineItalic htm
 hi! link htmlUnderlineItalicBold htm
 hi! link htmlValue htm
-hi! link javaScriptBoolean js
 hi! link javaScriptBraces js
 hi! link javaScriptBranch js
 hi! link javaScriptComment js
 hi! link javaScriptCommentSkip js
-hi! link javaScriptConditional js
 hi! link javaScriptConstant js
 hi! link javaScriptDebug js
 hi! link javaScriptDeprecated js
 hi! link javaScriptException js
 hi! link javaScriptExpression js
-hi! link javaScriptFunction js
-hi! link javaScriptGlobal js
-hi! link javaScriptIdentifier js
 hi! link javaScriptLabel js
 hi! link javaScriptLineComment js
-hi! link javaScriptMember js
-hi! link javaScriptMessage js
 hi! link javaScriptNumber js
-hi! link javaScriptOperator js
-hi! link javaScriptParens js
-hi! link javaScriptRepeat js
 hi! link javaScriptReserved js
-hi! link javaScriptSpecial js
 hi! link javaScriptSpecialCharacter js
-hi! link javaScriptStatement js
-hi! link javaScriptType js
 hi! link javaScriptValue js
+hi! link javascriptBoolean js
+hi! link javascriptConditional js
+hi! link javascriptFunction js
+hi! link javascriptGlobal js
+hi! link javascriptIdentifier js
+hi! link javascriptMember js
+hi! link javascriptMessage js
 hi! link javascriptNull js
+hi! link javascriptOperator js
+hi! link javascriptParens js
+hi! link javascriptRepeat js
+hi! link javascriptSpecial js
+hi! link javascriptStatement js
+hi! link javascriptType js
 

@@ -4,7 +4,7 @@
 " Name: mdark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:19
+" Date: 2012-09-29 13:38:43
 "----------------------------------------------------------
 
 set background=dark
@@ -98,7 +98,7 @@ if has("gui_running")
   hi htmlTitle guifg=#66CC66
   hi iCursor guibg=#BABDB6
   hi javaScriptBraces guifg=#888A85
-  hi javaScriptOperator guifg=#888A85
+  hi javascriptOperator guifg=#888A85
   hi phpArrayPair guifg=#888A85
   hi phpAssignByRef guifg=#888A85
   hi phpFunctions guifg=#406A5C
@@ -116,19 +116,14 @@ elseif &t_Co == 256
   hi Normal ctermfg=250 ctermbg=235
   hi Boolean ctermfg=239
   hi Character ctermfg=168
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=27
   hi Cursor ctermbg=250
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=236
   hi Debug ctermfg=228
   hi Define ctermfg=202
   hi Delimiter ctermfg=146
-  hi Directory ctermfg=14
   hi Exception ctermfg=103
   hi Float ctermfg=72
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi Function ctermfg=103
   hi IncSearch ctermfg=215 ctermbg=236
   hi Include ctermfg=167
@@ -137,38 +132,25 @@ elseif &t_Co == 256
   hi LineNr ctermbg=16
   hi Macro ctermfg=173
   hi MatchParen ctermfg=236
-  hi MoreMsg ctermfg=10
   hi NonText ctermbg=236
   hi Number ctermfg=65
   hi Operator ctermfg=132
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
   hi PmenuThumb ctermfg=231
   hi PreCondit ctermfg=215
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
   hi Repeat ctermfg=26
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
   hi SpecialChar ctermfg=168
   hi SpecialComment ctermfg=202
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=236 ctermbg=250
   hi StatusLineNC ctermfg=236 ctermbg=102
   hi StorageClass ctermfg=60
   hi String ctermfg=181
   hi Structure ctermfg=241
-  hi TabLine ctermbg=8
   hi TabLineFill ctermfg=233
   hi TabLineSel ctermfg=255 ctermbg=240
   hi Tag ctermfg=203
-  hi Title ctermfg=13
-  hi Type ctermfg=10
   hi Typedef ctermfg=103
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=240 ctermbg=102
-  hi Visual ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=8
   hi cssBraces ctermfg=102
   hi cssIdentifier ctermfg=215
   hi cssPseudoClassId ctermfg=255
@@ -183,7 +165,7 @@ elseif &t_Co == 256
   hi htmlTitle ctermfg=77
   hi iCursor ctermbg=250
   hi javaScriptBraces ctermfg=102
-  hi javaScriptOperator ctermfg=102
+  hi javascriptOperator ctermfg=102
   hi phpArrayPair ctermfg=102
   hi phpAssignByRef ctermfg=102
   hi phpFunctions ctermfg=59
@@ -201,19 +183,14 @@ elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=80
   hi Boolean ctermfg=81
   hi Character ctermfg=53
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=23
   hi Cursor ctermbg=85
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
   hi Debug ctermfg=77
   hi Define ctermfg=68
   hi Delimiter ctermfg=85
-  hi Directory ctermfg=31
   hi Exception ctermfg=38
   hi Float ctermfg=41
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi Function ctermfg=38
   hi IncSearch ctermfg=72 ctermbg=80
   hi Include ctermfg=52
@@ -222,38 +199,25 @@ elseif &t_Co == 88
   hi LineNr ctermbg=16
   hi Macro ctermfg=52
   hi MatchParen ctermfg=80
-  hi MoreMsg ctermfg=28
   hi NonText ctermbg=80
   hi Number ctermfg=81
   hi Operator ctermfg=53
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
   hi PmenuThumb ctermfg=79
   hi PreCondit ctermfg=72
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
   hi Repeat ctermfg=22
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
   hi SpecialChar ctermfg=53
   hi SpecialComment ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=80 ctermbg=85
   hi StatusLineNC ctermfg=80 ctermbg=83
   hi StorageClass ctermfg=81
   hi String ctermfg=53
   hi Structure ctermfg=81
-  hi TabLine ctermbg=81
   hi TabLineFill ctermfg=16
   hi TabLineSel ctermfg=87 ctermbg=81
   hi Tag ctermfg=65
-  hi Title ctermfg=67
-  hi Type ctermfg=28
   hi Typedef ctermfg=83
-  hi Underlined ctermfg=39
   hi VertSplit ctermfg=81 ctermbg=83
-  hi Visual ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=81
   hi cssBraces ctermfg=83
   hi cssIdentifier ctermfg=72
   hi cssPseudoClassId ctermfg=87
@@ -268,7 +232,7 @@ elseif &t_Co == 88
   hi htmlTitle ctermfg=41
   hi iCursor ctermbg=85
   hi javaScriptBraces ctermfg=83
-  hi javaScriptOperator ctermfg=83
+  hi javascriptOperator ctermfg=83
   hi phpArrayPair ctermfg=83
   hi phpAssignByRef ctermfg=83
   hi phpFunctions ctermfg=81
@@ -286,19 +250,14 @@ elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=2
   hi Character ctermfg=8
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=6
   hi Cursor ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi Debug ctermfg=11
   hi Define ctermfg=9
   hi Delimiter ctermfg=8
-  hi Directory ctermfg=14
   hi Exception ctermfg=8
   hi Float ctermfg=10
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=8
   hi IncSearch ctermfg=8 ctermbg=2
   hi Include ctermfg=3
@@ -307,38 +266,25 @@ elseif &t_Co == 16
   hi LineNr ctermbg=0
   hi Macro ctermfg=3
   hi MatchParen ctermfg=2
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=2
   hi Number ctermfg=6
   hi Operator ctermfg=8
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
   hi PmenuThumb ctermfg=15
   hi PreCondit ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
   hi Repeat ctermfg=6
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
   hi SpecialChar ctermfg=8
   hi SpecialComment ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=2 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=8
   hi StorageClass ctermfg=6
   hi String ctermfg=8
   hi Structure ctermfg=6
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=11 ctermbg=2
   hi Tag ctermfg=9
-  hi Title ctermfg=13
-  hi Type ctermfg=2
   hi Typedef ctermfg=8
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=2 ctermbg=8
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=2
   hi cssBraces ctermfg=8
   hi cssIdentifier ctermfg=8
   hi cssPseudoClassId ctermfg=11
@@ -353,7 +299,7 @@ elseif &t_Co == 16
   hi htmlTitle ctermfg=10
   hi iCursor ctermbg=7
   hi javaScriptBraces ctermfg=8
-  hi javaScriptOperator ctermfg=8
+  hi javascriptOperator ctermfg=8
   hi phpArrayPair ctermfg=8
   hi phpAssignByRef ctermfg=8
   hi phpFunctions ctermfg=6
@@ -371,19 +317,14 @@ else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=2
   hi Character ctermfg=7
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=6
   hi Cursor ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi Debug ctermfg=7
   hi Define ctermfg=3
   hi Delimiter ctermfg=7
-  hi Directory ctermfg=6
   hi Exception ctermfg=7
   hi Float ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=7
   hi IncSearch ctermfg=7 ctermbg=2
   hi Include ctermfg=3
@@ -392,38 +333,25 @@ else " 8 colors
   hi LineNr ctermbg=0
   hi Macro ctermfg=3
   hi MatchParen ctermfg=2
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=2
   hi Number ctermfg=6
   hi Operator ctermfg=5
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
   hi PmenuThumb ctermfg=7
   hi PreCondit ctermfg=7
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
   hi Repeat ctermfg=6
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=2 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=3
   hi StorageClass ctermfg=6
   hi String ctermfg=7
   hi Structure ctermfg=6
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=7 ctermbg=2
   hi Tag ctermfg=5
-  hi Title ctermfg=5
-  hi Type ctermfg=2
   hi Typedef ctermfg=7
-  hi Underlined ctermfg=5
   hi VertSplit ctermfg=2 ctermbg=3
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermbg=2
   hi cssBraces ctermfg=3
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7
@@ -438,7 +366,7 @@ else " 8 colors
   hi htmlTitle ctermfg=7
   hi iCursor ctermbg=7
   hi javaScriptBraces ctermfg=3
-  hi javaScriptOperator ctermfg=3
+  hi javascriptOperator ctermfg=3
   hi phpArrayPair ctermfg=3
   hi phpAssignByRef ctermfg=3
   hi phpFunctions ctermfg=6

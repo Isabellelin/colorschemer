@@ -4,7 +4,7 @@
 " Name: werks
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:29
+" Date: 2012-09-29 13:48:04
 "----------------------------------------------------------
 
 set background=dark
@@ -60,7 +60,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=16 ctermbg=250
   hi StatusLineNC ctermfg=241 ctermbg=250
   hi VertSplit ctermfg=241 ctermbg=250
-  hi Visual ctermfg=224
+  hi Visual cterm=NONE ctermfg=224 ctermbg=8
   hi VisualNOS ctermfg=231
   hi iCursor ctermfg=16 ctermbg=224
 elseif &t_Co == 88
@@ -75,7 +75,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=16 ctermbg=85
   hi StatusLineNC ctermfg=81 ctermbg=85
   hi VertSplit ctermfg=81 ctermbg=85
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=81
   hi VisualNOS ctermfg=79
   hi iCursor ctermfg=16 ctermbg=87
 elseif &t_Co == 16
@@ -90,7 +90,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=11
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
   hi VisualNOS ctermfg=15
   hi iCursor ctermfg=0 ctermbg=11
 else " 8 colors
@@ -105,7 +105,7 @@ else " 8 colors
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=7
   hi iCursor ctermfg=0 ctermbg=7
 endif

@@ -4,7 +4,7 @@
 " Name: quagmire
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:02
+" Date: 2012-09-29 13:42:21
 "----------------------------------------------------------
 
 set background=dark
@@ -77,6 +77,7 @@ elseif &t_Co == 256
   hi StorageClass ctermfg=95
   hi String ctermfg=239
   hi TabLineSel ctermfg=238 ctermbg=bg
+  hi Visual cterm=NONE ctermbg=8
   hi htmlTag ctermfg=153
   hi htmlTitle ctermfg=fg
   hi tmeSupport ctermfg=95
@@ -99,6 +100,7 @@ elseif &t_Co == 88
   hi StorageClass ctermfg=82
   hi String ctermfg=81
   hi TabLineSel ctermfg=81 ctermbg=bg
+  hi Visual cterm=NONE ctermbg=81
   hi htmlTag ctermfg=43
   hi htmlTitle ctermfg=fg
   hi tmeSupport ctermfg=82
@@ -121,6 +123,7 @@ elseif &t_Co == 16
   hi StorageClass ctermfg=3
   hi String ctermfg=2
   hi TabLineSel ctermfg=2 ctermbg=bg
+  hi Visual cterm=NONE ctermbg=2
   hi htmlTag ctermfg=12
   hi htmlTitle ctermfg=fg
   hi tmeSupport ctermfg=3
@@ -143,6 +146,7 @@ else " 8 colors
   hi StorageClass ctermfg=3
   hi String ctermfg=2
   hi TabLineSel ctermfg=2 ctermbg=bg
+  hi Visual cterm=NONE ctermbg=2
   hi htmlTag ctermfg=7
   hi htmlTitle ctermfg=fg
   hi tmeSupport ctermfg=3

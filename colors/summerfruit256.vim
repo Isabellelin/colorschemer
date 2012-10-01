@@ -4,7 +4,7 @@
 " Name: summerfruit256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:17
+" Date: 2012-09-29 13:45:17
 "----------------------------------------------------------
 
 set background=light
@@ -62,224 +62,228 @@ if has("gui_running")
   hi pythonBuiltinObj guifg=#2b6ba2
   hi pythonClass guifg=#ff0086
   hi pythonCoding guifg=#ff0086
+  hi pythonDocTest guifg=#2f5f49
   hi pythonDocTest2 guifg=#3b916a
-  hi pythonDoctest guifg=#2f5f49
   hi pythonExClass guifg=#66cd66
   hi pythonException guifg=#ee0000
   hi pythonFunction guifg=#ee0000
   hi pythonRun guifg=#ff0086
 elseif &t_Co == 256
-  hi Normal ctermfg=16 ctermbg=231
-  hi Comment cterm=bold ctermfg=34
-  hi Constant ctermfg=32
-  hi CursorLine ctermbg=153
-  hi Error ctermfg=231 ctermbg=160
-  hi Folded ctermfg=31 ctermbg=188
-  hi Function ctermfg=198
-  hi Identifier ctermfg=198
-  hi IncSearch ctermfg=66 ctermbg=222
-  hi Label ctermfg=198
-  hi LineNr cterm=bold ctermfg=254 ctermbg=32
-  hi NonText ctermfg=32 ctermbg=152
-  hi Number ctermfg=33
-  hi Pmenu ctermfg=231 ctermbg=160
-  hi PreProc ctermfg=196
-  hi Search ctermfg=88 ctermbg=214
-  hi Special ctermfg=208
-  hi Statement ctermfg=202
-  hi StatusLine cterm=bold ctermfg=231 ctermbg=41
-  hi StatusLineNC ctermfg=151 ctermbg=71
-  hi String ctermfg=32
-  hi Title ctermfg=16
-  hi Todo cterm=bold ctermfg=160 ctermbg=194
-  hi Type ctermfg=65
-  hi VertSplit ctermfg=31 ctermbg=31
-  hi htmlEndTag ctermfg=39
-  hi htmlSpecialTagName ctermfg=34
-  hi htmlTag ctermfg=39
-  hi htmlTagN ctermfg=34
-  hi htmlTagName ctermfg=34
-  hi jinjaAttribute ctermfg=172 ctermbg=230
-  hi jinjaComment cterm=italic ctermfg=28 ctermbg=16
-  hi jinjaFilter ctermfg=198 ctermbg=230
-  hi jinjaNumber cterm=bold ctermfg=124 ctermbg=230
-  hi jinjaOperator ctermfg=231 ctermbg=230
-  hi jinjaRaw ctermfg=247 ctermbg=230
-  hi jinjaSpecial ctermfg=33 ctermbg=230
-  hi jinjaStatement cterm=bold ctermfg=202 ctermbg=230
-  hi jinjaString ctermfg=32 ctermbg=230
-  hi jinjaTagBlock cterm=bold ctermfg=196 ctermbg=230
-  hi jinjaVarBlock ctermfg=196 ctermbg=230
-  hi jinjaVariable ctermfg=112 ctermbg=230
-  hi pythonBuiltinFunc ctermfg=25
-  hi pythonBuiltinObj ctermfg=25
-  hi pythonClass ctermfg=198
-  hi pythonCoding ctermfg=198
-  hi pythonDocTest2 ctermfg=29
-  hi pythonDoctest ctermfg=22
-  hi pythonExClass ctermfg=77
-  hi pythonException ctermfg=196
-  hi pythonFunction ctermfg=196
-  hi pythonRun ctermfg=198
-elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi Comment cterm=bold ctermfg=24
+  hi Comment cterm=bold ctermfg=20
   hi Constant ctermfg=22
   hi CursorLine ctermbg=59
   hi Error ctermfg=79 ctermbg=48
-  hi Folded ctermfg=22 ctermbg=86
+  hi Folded ctermfg=21 ctermbg=59
   hi Function ctermfg=65
   hi Identifier ctermfg=65
-  hi IncSearch ctermfg=83 ctermbg=73
+  hi IncSearch ctermfg=37 ctermbg=77
   hi Label ctermfg=65
   hi LineNr cterm=bold ctermfg=87 ctermbg=22
-  hi NonText ctermfg=22 ctermbg=86
+  hi NonText ctermfg=22 ctermbg=59
   hi Number ctermfg=23
   hi Pmenu ctermfg=79 ctermbg=48
-  hi PreProc ctermfg=9
+  hi PreProc ctermfg=64
   hi Search ctermfg=32 ctermbg=72
   hi Special ctermfg=68
   hi Statement ctermfg=68
   hi StatusLine cterm=bold ctermfg=79 ctermbg=25
-  hi StatusLineNC ctermfg=85 ctermbg=81
+  hi StatusLineNC ctermfg=41 ctermbg=41
   hi String ctermfg=22
   hi Title ctermfg=16
   hi Todo cterm=bold ctermfg=48 ctermbg=62
-  hi Type ctermfg=81
-  hi VertSplit ctermfg=22 ctermbg=22
+  hi Type ctermfg=82
+  hi VertSplit ctermfg=21 ctermbg=21
+  hi Visual cterm=NONE ctermbg=7
   hi htmlEndTag ctermfg=27
-  hi htmlSpecialTagName ctermfg=24
+  hi htmlSpecialTagName ctermfg=37
   hi htmlTag ctermfg=27
-  hi htmlTagN ctermfg=24
-  hi htmlTagName ctermfg=24
+  hi htmlTagN ctermfg=37
+  hi htmlTagName ctermfg=37
   hi jinjaAttribute ctermfg=52 ctermbg=78
   hi jinjaComment cterm=italic ctermfg=20 ctermbg=16
   hi jinjaFilter ctermfg=65 ctermbg=78
-  hi jinjaNumber cterm=bold ctermfg=48 ctermbg=78
+  hi jinjaNumber cterm=bold ctermfg=49 ctermbg=78
   hi jinjaOperator ctermfg=79 ctermbg=78
   hi jinjaRaw ctermfg=84 ctermbg=78
   hi jinjaSpecial ctermfg=23 ctermbg=78
   hi jinjaStatement cterm=bold ctermfg=68 ctermbg=78
   hi jinjaString ctermfg=22 ctermbg=78
-  hi jinjaTagBlock cterm=bold ctermfg=9 ctermbg=78
-  hi jinjaVarBlock ctermfg=9 ctermbg=78
+  hi jinjaTagBlock cterm=bold ctermfg=64 ctermbg=78
+  hi jinjaVarBlock ctermfg=64 ctermbg=78
   hi jinjaVariable ctermfg=40 ctermbg=78
-  hi pythonBuiltinFunc ctermfg=22
-  hi pythonBuiltinObj ctermfg=22
+  hi pythonBuiltinFunc ctermfg=21
+  hi pythonBuiltinObj ctermfg=21
   hi pythonClass ctermfg=65
   hi pythonCoding ctermfg=65
+  hi pythonDocTest ctermfg=21
   hi pythonDocTest2 ctermfg=21
-  hi pythonDoctest ctermfg=20
   hi pythonExClass ctermfg=41
-  hi pythonException ctermfg=9
-  hi pythonFunction ctermfg=9
+  hi pythonException ctermfg=64
+  hi pythonFunction ctermfg=64
   hi pythonRun ctermfg=65
+elseif &t_Co == 88
+  hi Normal ctermfg=16 ctermbg=42
+  hi Comment cterm=bold ctermfg=4
+  hi Constant ctermfg=20
+  hi CursorLine ctermbg=81
+  hi Error ctermfg=42 ctermbg=29
+  hi Folded ctermfg=19 ctermbg=81
+  hi Function ctermfg=81
+  hi Identifier ctermfg=81
+  hi IncSearch ctermfg=6 ctermbg=41
+  hi Label ctermfg=81
+  hi LineNr cterm=bold ctermfg=47 ctermbg=20
+  hi NonText ctermfg=20 ctermbg=81
+  hi Number ctermfg=21
+  hi Pmenu ctermfg=42 ctermbg=29
+  hi PreProc ctermfg=36
+  hi Search ctermfg=22 ctermbg=41
+  hi Special ctermfg=38
+  hi Statement ctermfg=38
+  hi StatusLine cterm=bold ctermfg=42 ctermbg=22
+  hi StatusLineNC ctermfg=25 ctermbg=25
+  hi String ctermfg=20
+  hi Title ctermfg=16
+  hi Todo cterm=bold ctermfg=29 ctermbg=38
+  hi Type ctermfg=44
+  hi VertSplit ctermfg=19 ctermbg=19
+  hi Visual cterm=NONE ctermbg=87
+  hi htmlEndTag ctermfg=23
+  hi htmlSpecialTagName ctermfg=6
+  hi htmlTag ctermfg=23
+  hi htmlTagN ctermfg=6
+  hi htmlTagName ctermfg=6
+  hi jinjaAttribute ctermfg=32 ctermbg=41
+  hi jinjaComment cterm=italic ctermfg=4 ctermbg=16
+  hi jinjaFilter ctermfg=81 ctermbg=41
+  hi jinjaNumber cterm=bold ctermfg=30 ctermbg=41
+  hi jinjaOperator ctermfg=42 ctermbg=41
+  hi jinjaRaw ctermfg=45 ctermbg=41
+  hi jinjaSpecial ctermfg=21 ctermbg=41
+  hi jinjaStatement cterm=bold ctermfg=38 ctermbg=41
+  hi jinjaString ctermfg=20 ctermbg=41
+  hi jinjaTagBlock cterm=bold ctermfg=36 ctermbg=41
+  hi jinjaVarBlock ctermfg=36 ctermbg=41
+  hi jinjaVariable ctermfg=24 ctermbg=41
+  hi pythonBuiltinFunc ctermfg=19
+  hi pythonBuiltinObj ctermfg=19
+  hi pythonClass ctermfg=81
+  hi pythonCoding ctermfg=81
+  hi pythonDocTest ctermfg=19
+  hi pythonDocTest2 ctermfg=19
+  hi pythonExClass ctermfg=25
+  hi pythonException ctermfg=36
+  hi pythonFunction ctermfg=36
+  hi pythonRun ctermfg=81
 elseif &t_Co == 16
-  hi Normal ctermfg=0 ctermbg=15
-  hi Comment cterm=bold ctermfg=2
-  hi Constant ctermfg=6
-  hi CursorLine ctermbg=12
-  hi Error ctermfg=15 ctermbg=9
-  hi Folded ctermfg=6 ctermbg=12
-  hi Function ctermfg=5
-  hi Identifier ctermfg=5
-  hi IncSearch ctermfg=6 ctermbg=11
-  hi Label ctermfg=5
-  hi LineNr cterm=bold ctermfg=11 ctermbg=6
-  hi NonText ctermfg=6 ctermbg=12
+  hi Normal ctermfg=0 ctermbg=10
+  hi Comment cterm=bold ctermfg=4
+  hi Constant ctermfg=2
+  hi CursorLine ctermbg=3
+  hi Error ctermfg=10 ctermbg=6
+  hi Folded ctermfg=4 ctermbg=3
+  hi Function ctermfg=3
+  hi Identifier ctermfg=3
+  hi IncSearch ctermfg=6 ctermbg=10
+  hi Label ctermfg=3
+  hi LineNr cterm=bold ctermfg=14 ctermbg=2
+  hi NonText ctermfg=2 ctermbg=3
   hi Number ctermfg=6
-  hi Pmenu ctermfg=15 ctermbg=9
-  hi PreProc ctermfg=9
-  hi Search ctermfg=1 ctermbg=3
-  hi Special ctermfg=3
-  hi Statement ctermfg=9
-  hi StatusLine cterm=bold ctermfg=15 ctermbg=6
-  hi StatusLineNC ctermfg=7 ctermbg=8
-  hi String ctermfg=6
+  hi Pmenu ctermfg=10 ctermbg=6
+  hi PreProc ctermfg=3
+  hi Search ctermfg=6 ctermbg=8
+  hi Special ctermfg=8
+  hi Statement ctermfg=8
+  hi StatusLine cterm=bold ctermfg=10 ctermbg=6
+  hi StatusLineNC ctermfg=6 ctermbg=6
+  hi String ctermfg=2
   hi Title ctermfg=0
-  hi Todo cterm=bold ctermfg=9 ctermbg=11
+  hi Todo cterm=bold ctermfg=6 ctermbg=8
   hi Type ctermfg=3
-  hi VertSplit ctermfg=6 ctermbg=6
+  hi VertSplit ctermfg=4 ctermbg=4
+  hi Visual cterm=NONE ctermbg=11
   hi htmlEndTag ctermfg=6
-  hi htmlSpecialTagName ctermfg=2
+  hi htmlSpecialTagName ctermfg=6
   hi htmlTag ctermfg=6
-  hi htmlTagN ctermfg=2
-  hi htmlTagName ctermfg=2
-  hi jinjaAttribute ctermfg=3 ctermbg=11
-  hi jinjaComment cterm=italic ctermfg=2 ctermbg=0
-  hi jinjaFilter ctermfg=5 ctermbg=11
-  hi jinjaNumber cterm=bold ctermfg=1 ctermbg=11
-  hi jinjaOperator ctermfg=15 ctermbg=11
-  hi jinjaRaw ctermfg=8 ctermbg=11
-  hi jinjaSpecial ctermfg=6 ctermbg=11
-  hi jinjaStatement cterm=bold ctermfg=9 ctermbg=11
-  hi jinjaString ctermfg=6 ctermbg=11
-  hi jinjaTagBlock cterm=bold ctermfg=9 ctermbg=11
-  hi jinjaVarBlock ctermfg=9 ctermbg=11
-  hi jinjaVariable ctermfg=3 ctermbg=11
-  hi pythonBuiltinFunc ctermfg=6
-  hi pythonBuiltinObj ctermfg=6
-  hi pythonClass ctermfg=5
-  hi pythonCoding ctermfg=5
-  hi pythonDocTest2 ctermfg=6
-  hi pythonDoctest ctermfg=2
-  hi pythonExClass ctermfg=10
-  hi pythonException ctermfg=9
-  hi pythonFunction ctermfg=9
-  hi pythonRun ctermfg=5
+  hi htmlTagN ctermfg=6
+  hi htmlTagName ctermfg=6
+  hi jinjaAttribute ctermfg=1 ctermbg=10
+  hi jinjaComment cterm=italic ctermfg=4 ctermbg=0
+  hi jinjaFilter ctermfg=3 ctermbg=10
+  hi jinjaNumber cterm=bold ctermfg=6 ctermbg=10
+  hi jinjaOperator ctermfg=10 ctermbg=10
+  hi jinjaRaw ctermfg=10 ctermbg=10
+  hi jinjaSpecial ctermfg=6 ctermbg=10
+  hi jinjaStatement cterm=bold ctermfg=8 ctermbg=10
+  hi jinjaString ctermfg=2 ctermbg=10
+  hi jinjaTagBlock cterm=bold ctermfg=3 ctermbg=10
+  hi jinjaVarBlock ctermfg=3 ctermbg=10
+  hi jinjaVariable ctermfg=2 ctermbg=10
+  hi pythonBuiltinFunc ctermfg=4
+  hi pythonBuiltinObj ctermfg=4
+  hi pythonClass ctermfg=3
+  hi pythonCoding ctermfg=3
+  hi pythonDocTest ctermfg=4
+  hi pythonDocTest2 ctermfg=4
+  hi pythonExClass ctermfg=6
+  hi pythonException ctermfg=3
+  hi pythonFunction ctermfg=3
+  hi pythonRun ctermfg=3
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi Comment cterm=bold ctermfg=2
-  hi Constant ctermfg=6
-  hi CursorLine ctermbg=7
-  hi Error ctermfg=7 ctermbg=1
-  hi Folded ctermfg=6 ctermbg=7
-  hi Function ctermfg=5
-  hi Identifier ctermfg=5
-  hi IncSearch ctermfg=6 ctermbg=7
-  hi Label ctermfg=5
-  hi LineNr cterm=bold ctermfg=7 ctermbg=6
-  hi NonText ctermfg=6 ctermbg=7
+  hi Comment cterm=bold ctermfg=4
+  hi Constant ctermfg=2
+  hi CursorLine ctermbg=3
+  hi Error ctermfg=7 ctermbg=6
+  hi Folded ctermfg=4 ctermbg=3
+  hi Function ctermfg=3
+  hi Identifier ctermfg=3
+  hi IncSearch ctermfg=6 ctermbg=3
+  hi Label ctermfg=3
+  hi LineNr cterm=bold ctermfg=7 ctermbg=2
+  hi NonText ctermfg=2 ctermbg=3
   hi Number ctermfg=6
-  hi Pmenu ctermfg=7 ctermbg=1
-  hi PreProc ctermfg=1
-  hi Search ctermfg=1 ctermbg=3
-  hi Special ctermfg=3
-  hi Statement ctermfg=3
+  hi Pmenu ctermfg=7 ctermbg=6
+  hi PreProc ctermfg=3
+  hi Search ctermfg=6 ctermbg=6
+  hi Special ctermfg=6
+  hi Statement ctermfg=6
   hi StatusLine cterm=bold ctermfg=7 ctermbg=6
-  hi StatusLineNC ctermfg=7 ctermbg=3
-  hi String ctermfg=6
+  hi StatusLineNC ctermfg=6 ctermbg=6
+  hi String ctermfg=2
   hi Title ctermfg=0
-  hi Todo cterm=bold ctermfg=1 ctermbg=7
+  hi Todo cterm=bold ctermfg=6 ctermbg=5
   hi Type ctermfg=3
-  hi VertSplit ctermfg=6 ctermbg=6
+  hi VertSplit ctermfg=4 ctermbg=4
+  hi Visual cterm=NONE ctermbg=7
   hi htmlEndTag ctermfg=6
-  hi htmlSpecialTagName ctermfg=2
+  hi htmlSpecialTagName ctermfg=6
   hi htmlTag ctermfg=6
-  hi htmlTagN ctermfg=2
-  hi htmlTagName ctermfg=2
-  hi jinjaAttribute ctermfg=3 ctermbg=7
-  hi jinjaComment cterm=italic ctermfg=2 ctermbg=0
-  hi jinjaFilter ctermfg=5 ctermbg=7
-  hi jinjaNumber cterm=bold ctermfg=1 ctermbg=7
-  hi jinjaOperator ctermfg=7 ctermbg=7
-  hi jinjaRaw ctermfg=7 ctermbg=7
-  hi jinjaSpecial ctermfg=6 ctermbg=7
-  hi jinjaStatement cterm=bold ctermfg=3 ctermbg=7
-  hi jinjaString ctermfg=6 ctermbg=7
-  hi jinjaTagBlock cterm=bold ctermfg=1 ctermbg=7
-  hi jinjaVarBlock ctermfg=1 ctermbg=7
-  hi jinjaVariable ctermfg=3 ctermbg=7
-  hi pythonBuiltinFunc ctermfg=6
-  hi pythonBuiltinObj ctermfg=6
-  hi pythonClass ctermfg=5
-  hi pythonCoding ctermfg=5
-  hi pythonDocTest2 ctermfg=6
-  hi pythonDoctest ctermfg=2
-  hi pythonExClass ctermfg=3
-  hi pythonException ctermfg=1
-  hi pythonFunction ctermfg=1
-  hi pythonRun ctermfg=5
+  hi htmlTagN ctermfg=6
+  hi htmlTagName ctermfg=6
+  hi jinjaAttribute ctermfg=1 ctermbg=6
+  hi jinjaComment cterm=italic ctermfg=4 ctermbg=0
+  hi jinjaFilter ctermfg=3 ctermbg=6
+  hi jinjaNumber cterm=bold ctermfg=6 ctermbg=6
+  hi jinjaOperator ctermfg=7 ctermbg=6
+  hi jinjaRaw ctermfg=6 ctermbg=6
+  hi jinjaSpecial ctermfg=6 ctermbg=6
+  hi jinjaStatement cterm=bold ctermfg=6 ctermbg=6
+  hi jinjaString ctermfg=2 ctermbg=6
+  hi jinjaTagBlock cterm=bold ctermfg=3 ctermbg=6
+  hi jinjaVarBlock ctermfg=3 ctermbg=6
+  hi jinjaVariable ctermfg=2 ctermbg=6
+  hi pythonBuiltinFunc ctermfg=4
+  hi pythonBuiltinObj ctermfg=4
+  hi pythonClass ctermfg=3
+  hi pythonCoding ctermfg=3
+  hi pythonDocTest ctermfg=4
+  hi pythonDocTest2 ctermfg=4
+  hi pythonExClass ctermfg=6
+  hi pythonException ctermfg=3
+  hi pythonFunction ctermfg=3
+  hi pythonRun ctermfg=3
 endif
 
 

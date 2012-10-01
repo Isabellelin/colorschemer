@@ -4,7 +4,7 @@
 " Name: tangolight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:34
+" Date: 2012-09-29 13:45:39
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,6 @@ if has("gui_running")
   hi Normal guifg=#eeeeec guibg=#171717
   hi Comment guifg=#729FCF
   hi Constant guifg=#ef2929
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guifg=#000000 guibg=#D3D7CF
   hi CursorLine guifg=#000000 guibg=#D3D7CF
   hi DiffAdd guibg=#729FCF
@@ -57,43 +56,38 @@ if has("gui_running")
   hi VisualNOS gui=underline
   hi WarningMsg guifg=#ef2929
   hi WildMenu guifg=#2E3436 guibg=#EDD400
-  hi lcursor guifg=bg guibg=fg
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=233
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorColumn ctermfg=16
   hi CursorLine ctermfg=16 ctermbg=252
   hi FoldColumn ctermfg=4 ctermbg=7
-  hi Folded ctermfg=248
+  hi Folded ctermfg=7
   hi LineNr ctermbg=235
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorColumn ctermfg=16
   hi CursorLine ctermfg=16 ctermbg=86
   hi FoldColumn ctermfg=19 ctermbg=87
-  hi Folded ctermfg=84
+  hi Folded ctermfg=87
   hi LineNr ctermbg=80
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorColumn ctermfg=0
   hi CursorLine ctermfg=0 ctermbg=12
   hi FoldColumn ctermfg=4 ctermbg=11
-  hi Folded ctermfg=8
+  hi Folded ctermfg=11
   hi LineNr ctermbg=0
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorColumn ctermfg=0
   hi CursorLine ctermfg=0 ctermbg=7
   hi FoldColumn ctermfg=4 ctermbg=7
   hi Folded ctermfg=7
   hi LineNr ctermbg=0
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

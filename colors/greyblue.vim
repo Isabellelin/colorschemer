@@ -4,7 +4,7 @@
 " Name: greyblue
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:07
+" Date: 2012-09-29 13:35:43
 "----------------------------------------------------------
 
 set background=dark
@@ -60,7 +60,7 @@ if has("gui_running")
   hi htmlLink gui=underline guifg=#ffff00
   hi htmlUnderline gui=underline
   hi htmlUnderlineItalic gui=underline,italic
-  hi lcursor guifg=#070707 guibg=#7fff00
+  hi lCursor guifg=#070707 guibg=#7fff00
 elseif &t_Co == 256
   hi Normal ctermfg=145 ctermbg=232
   hi Comment ctermfg=NONE
@@ -94,12 +94,12 @@ elseif &t_Co == 256
   hi Type ctermfg=NONE
   hi Underlined ctermfg=NONE
   hi VertSplit ctermfg=232 ctermbg=252
-  hi Visual ctermfg=248 ctermbg=NONE
+  hi Visual cterm=NONE ctermfg=248 ctermbg=236
   hi WarningMsg ctermfg=NONE
   hi WildMenu ctermfg=NONE ctermbg=NONE
   hi cursorim ctermfg=232 ctermbg=118
   hi htmlLink ctermfg=226
-  hi lcursor ctermfg=232 ctermbg=118
+  hi lCursor ctermfg=232 ctermbg=118
 elseif &t_Co == 88
   hi Normal ctermfg=84 ctermbg=16
   hi Comment ctermfg=NONE
@@ -133,12 +133,12 @@ elseif &t_Co == 88
   hi Type ctermfg=NONE
   hi Underlined ctermfg=NONE
   hi VertSplit ctermfg=16 ctermbg=58
-  hi Visual ctermfg=84 ctermbg=NONE
+  hi Visual cterm=NONE ctermfg=84 ctermbg=80
   hi WarningMsg ctermfg=NONE
   hi WildMenu ctermfg=NONE ctermbg=NONE
   hi cursorim ctermfg=16 ctermbg=44
   hi htmlLink ctermfg=76
-  hi lcursor ctermfg=16 ctermbg=44
+  hi lCursor ctermfg=16 ctermbg=44
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi Comment ctermfg=NONE
@@ -172,12 +172,12 @@ elseif &t_Co == 16
   hi Type ctermfg=NONE
   hi Underlined ctermfg=NONE
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=8 ctermbg=NONE
+  hi Visual cterm=NONE ctermfg=8 ctermbg=2
   hi WarningMsg ctermfg=NONE
   hi WildMenu ctermfg=NONE ctermbg=NONE
   hi cursorim ctermfg=0 ctermbg=3
   hi htmlLink ctermfg=11
-  hi lcursor ctermfg=0 ctermbg=3
+  hi lCursor ctermfg=0 ctermbg=3
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=NONE
@@ -211,12 +211,12 @@ else " 8 colors
   hi Type ctermfg=NONE
   hi Underlined ctermfg=NONE
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=7 ctermbg=NONE
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WarningMsg ctermfg=NONE
   hi WildMenu ctermfg=NONE ctermbg=NONE
   hi cursorim ctermfg=0 ctermbg=3
   hi htmlLink ctermfg=3
-  hi lcursor ctermfg=0 ctermbg=3
+  hi lCursor ctermfg=0 ctermbg=3
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: wombat256mod
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:49
+" Date: 2012-09-29 13:48:29
 "----------------------------------------------------------
 
 set background=dark
@@ -48,7 +48,7 @@ if has("gui_running")
   hi Type gui=NONE guifg=#d4d987
   hi VertSplit gui=NONE guifg=#444444 guibg=#444444
   hi Visual guifg=#c3c6ca guibg=#554d4b
-  hi VisualNOS guifg=#c3c6ca guibg=#303030
+  hi VisualNOS gui=NONE guifg=#c3c6ca guibg=#303030
   hi WarningMsg guifg=#ff5f55
 elseif &t_Co == 256
   hi Normal ctermfg=252 ctermbg=234
@@ -82,8 +82,8 @@ elseif &t_Co == 256
   hi Todo ctermfg=101
   hi Type ctermfg=186
   hi VertSplit cterm=NONE ctermfg=238 ctermbg=238
-  hi Visual ctermfg=251 ctermbg=239
-  hi VisualNOS ctermfg=251 ctermbg=236
+  hi Visual cterm=NONE ctermfg=251 ctermbg=239
+  hi VisualNOS cterm=NONE ctermfg=251 ctermbg=236
   hi WarningMsg ctermfg=203
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
@@ -117,8 +117,8 @@ elseif &t_Co == 88
   hi Todo ctermfg=83
   hi Type ctermfg=57
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=58 ctermbg=81
-  hi VisualNOS ctermfg=58 ctermbg=80
+  hi Visual cterm=NONE ctermfg=58 ctermbg=81
+  hi VisualNOS cterm=NONE ctermfg=58 ctermbg=80
   hi WarningMsg ctermfg=69
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
@@ -152,8 +152,8 @@ elseif &t_Co == 16
   hi Todo ctermfg=3
   hi Type ctermfg=10
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
-  hi VisualNOS ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
+  hi VisualNOS cterm=NONE ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=9
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -187,8 +187,8 @@ else " 8 colors
   hi Todo ctermfg=3
   hi Type ctermfg=7
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
-  hi VisualNOS ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
+  hi VisualNOS cterm=NONE ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=3
 endif
 

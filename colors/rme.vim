@@ -4,7 +4,7 @@
 " Name: rme
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:39
+" Date: 2012-09-29 13:43:09
 "----------------------------------------------------------
 
 set background=light
@@ -30,51 +30,51 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=0 ctermbg=252
   hi Comment ctermfg=18
-  hi Constant ctermfg=242
-  hi Error ctermfg=11
-  hi Identifier ctermfg=12
-  hi Search ctermfg=0 ctermbg=14
-  hi Special ctermfg=130
-  hi Statement ctermfg=9
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=242
+  hi Constant ctermfg=8
+  hi Error ctermfg=14
+  hi Identifier ctermfg=9
+  hi Search ctermbg=11
+  hi Special ctermfg=6
+  hi Statement ctermfg=12
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=8
   hi Tag ctermfg=2
-  hi Visual ctermfg=11 ctermbg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=12
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=86
   hi Comment ctermfg=17
-  hi Constant ctermfg=82
-  hi Error ctermfg=76
-  hi Identifier ctermfg=39
-  hi Search ctermfg=16 ctermbg=31
-  hi Special ctermfg=52
-  hi Statement ctermfg=9
-  hi StatusLine cterm=NONE ctermfg=76 ctermbg=82
+  hi Constant ctermfg=81
+  hi Error ctermfg=31
+  hi Identifier ctermfg=9
+  hi Search ctermbg=76
+  hi Special ctermfg=6
+  hi Statement ctermfg=39
+  hi StatusLine cterm=NONE ctermfg=31 ctermbg=81
   hi Tag ctermfg=24
-  hi Visual ctermfg=76 ctermbg=9
+  hi Visual cterm=NONE ctermfg=31 ctermbg=39
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=7
   hi Comment ctermfg=4
-  hi Constant ctermfg=3
-  hi Error ctermfg=11
-  hi Identifier ctermfg=12
-  hi Search ctermfg=0 ctermbg=14
-  hi Special ctermfg=3
-  hi Statement ctermfg=9
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=3
+  hi Constant ctermfg=2
+  hi Error ctermfg=14
+  hi Identifier ctermfg=9
+  hi Search ctermbg=11
+  hi Special ctermfg=6
+  hi Statement ctermfg=12
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=2
   hi Tag ctermfg=2
-  hi Visual ctermfg=11 ctermbg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=12
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Comment ctermfg=4
-  hi Constant ctermfg=3
-  hi Error ctermfg=3
-  hi Identifier ctermfg=5
-  hi Search ctermfg=0 ctermbg=6
-  hi Special ctermfg=3
-  hi Statement ctermfg=1
-  hi StatusLine cterm=NONE ctermfg=3 ctermbg=3
+  hi Constant ctermfg=2
+  hi Error ctermfg=6
+  hi Identifier ctermfg=1
+  hi Search ctermbg=3
+  hi Special ctermfg=6
+  hi Statement ctermfg=5
+  hi StatusLine cterm=NONE ctermfg=6 ctermbg=2
   hi Tag ctermfg=2
-  hi Visual ctermfg=3 ctermbg=1
+  hi Visual cterm=NONE ctermfg=6 ctermbg=5
 endif
 
 hi! link ErrorMsg Visual

@@ -4,7 +4,7 @@
 " Name: zenesque
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:22
+" Date: 2012-09-29 13:49:11
 "----------------------------------------------------------
 
 set background=light
@@ -22,7 +22,6 @@ if has("gui_running")
   hi Comment gui=italic guifg=#797979
   hi Conditional gui=bold guifg=#4d4d4d
   hi Constant gui=bold guifg=#353535
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=#e1e1d0
   hi CursorLine guibg=#e1e1d0
   hi DiffAdd guibg=#d1d1d1
@@ -74,7 +73,6 @@ if has("gui_running")
   hi cssBraces guifg=fg guibg=bg
   hi cursorim guifg=bg guibg=fg
   hi htmlLink gui=underline,italic guifg=#666666
-  hi lcursor guifg=bg guibg=fg
   hi pythonDecorator gui=bold guifg=#3b3b3b
   hi qfError gui=undercurl guifg=fg guibg=#c4c2c2
   hi qfFileName gui=italic guifg=#6a6a6a
@@ -83,7 +81,6 @@ elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=253
   hi Boolean ctermfg=59
   hi Conditional ctermfg=8
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=253
   hi DiffText ctermfg=16
   hi Directory ctermbg=bg
@@ -98,7 +95,7 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=231
   hi PmenuThumb ctermfg=231
   hi Question ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=242
   hi StatusLine ctermfg=254 ctermbg=102
   hi StatusLineNC ctermfg=244 ctermbg=250
@@ -109,12 +106,11 @@ elseif &t_Co == 256
   hi VertSplit ctermfg=250 ctermbg=250
   hi VimCommentTitle ctermfg=59 ctermbg=bg
   hi VimError ctermfg=249 ctermbg=236
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=240
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=241
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=237
   hi qfError ctermfg=fg ctermbg=251
   hi qfFileName ctermfg=242
@@ -123,7 +119,6 @@ elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Boolean ctermfg=81
   hi Conditional ctermfg=81
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=86
   hi DiffText ctermfg=16
   hi Directory ctermbg=bg
@@ -138,7 +133,7 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=79
   hi PmenuThumb ctermfg=79
   hi Question ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=82
   hi StatusLine ctermfg=87 ctermbg=83
   hi StatusLineNC ctermfg=83 ctermbg=85
@@ -149,12 +144,11 @@ elseif &t_Co == 88
   hi VertSplit ctermfg=85 ctermbg=85
   hi VimCommentTitle ctermfg=81 ctermbg=bg
   hi VimError ctermfg=85 ctermbg=80
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=81
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=81
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=80
   hi qfError ctermfg=fg ctermbg=85
   hi qfFileName ctermfg=82
@@ -163,7 +157,6 @@ elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Boolean ctermfg=3
   hi Conditional ctermfg=2
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=11
   hi DiffText ctermfg=0
   hi Directory ctermbg=bg
@@ -178,7 +171,7 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=15
   hi PmenuThumb ctermfg=15
   hi Question ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=3
   hi StatusLine ctermfg=11 ctermbg=8
   hi StatusLineNC ctermfg=8 ctermbg=7
@@ -189,12 +182,11 @@ elseif &t_Co == 16
   hi VertSplit ctermfg=7 ctermbg=7
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=3
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=3
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=2
   hi qfError ctermfg=fg ctermbg=7
   hi qfFileName ctermfg=3
@@ -203,7 +195,6 @@ else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=3
   hi Conditional ctermfg=2
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=7
   hi DiffText ctermfg=0
   hi Directory ctermbg=bg
@@ -218,7 +209,7 @@ else " 8 colors
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=7
   hi Question ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=3
   hi StatusLine ctermfg=7 ctermbg=3
   hi StatusLineNC ctermfg=3 ctermbg=7
@@ -229,12 +220,11 @@ else " 8 colors
   hi VertSplit ctermfg=7 ctermbg=7
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=3
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=3
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=2
   hi qfError ctermfg=fg ctermbg=7
   hi qfFileName ctermfg=3
@@ -263,10 +253,10 @@ hi! link htmlEndTag htmlTagName
 hi! link htmlScriptTag htmlTagName
 hi! link htmlSpecialTagName htmlTagName
 hi! link htmlTagN htmlTagName
-hi! link javaScriptFunction Statement
-hi! link javaScriptMember Statement
 hi! link javaScriptValue Constant
 hi! link javaType Statement
+hi! link javascriptFunction Statement
+hi! link javascriptMember Statement
 hi! link objcClass Type
 hi! link objcMessageName Identifier
 hi! link objcMethodArg Normal

@@ -4,7 +4,7 @@
 " Name: made_of_code
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:00
+" Date: 2012-09-29 13:38:17
 "----------------------------------------------------------
 
 set background=dark
@@ -23,7 +23,7 @@ if has("gui_running")
   hi Comment gui=italic guifg=#c050c2 guibg=#000000
   hi Conditional guifg=#ff3854
   hi Constant guifg=#0a9cff
-  hi Cursor guibg=#00ffff
+  hi Cursor guifg=NONE guibg=#00ffff
   hi CursorColumn guibg=#212231
   hi CursorLine guibg=#212231
   hi Define guifg=#ff3854
@@ -74,8 +74,8 @@ if has("gui_running")
   hi htmlSpecialChar guifg=#0a9cff
   hi htmlTag guifg=#45c1ea
   hi htmlTagName guifg=#45c1ea
-  hi javaScriptFunction guifg=#99cf50
   hi javaScriptRailsFunction guifg=#f1d950
+  hi javascriptFunction guifg=#99cf50
   hi rubyBlockParameter guifg=#588aff
   hi rubyClass guifg=#ff3854
   hi rubyClassVariable guifg=#588aff
@@ -108,17 +108,15 @@ elseif &t_Co == 256
   hi Character ctermfg=39
   hi ColorColumn ctermbg=17
   hi Comment ctermfg=133 ctermbg=0
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=203
   hi Constant ctermfg=39
-  hi Cursor ctermbg=51
+  hi Cursor ctermfg=NONE ctermbg=51
   hi CursorColumn ctermbg=17
   hi CursorLine cterm=NONE ctermbg=17
   hi Define ctermfg=203
   hi Directory ctermfg=39
   hi ErrorMsg ctermfg=NONE ctermbg=NONE
   hi Float ctermfg=39
-  hi FoldColumn ctermbg=8
   hi Folded ctermfg=133 ctermbg=16
   hi Function ctermfg=81
   hi Identifier cterm=NONE ctermfg=113
@@ -127,17 +125,13 @@ elseif &t_Co == 256
   hi Label ctermfg=119 ctermbg=16
   hi LineNr ctermfg=102 ctermbg=17
   hi MatchParen ctermfg=203 ctermbg=NONE
-  hi MoreMsg ctermfg=10
   hi NonText ctermfg=59 ctermbg=16
   hi Number ctermfg=39
   hi Operator ctermfg=203
   hi Pmenu ctermfg=81 ctermbg=NONE
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=NONE ctermbg=24
   hi PreProc ctermfg=203
-  hi Question ctermfg=10
   hi Search ctermfg=NONE ctermbg=23
-  hi SignColumn ctermbg=8
   hi Special ctermfg=231
   hi SpecialKey ctermfg=59 ctermbg=17
   hi Statement ctermfg=203
@@ -145,14 +139,13 @@ elseif &t_Co == 256
   hi StatusLineNC cterm=NONE ctermfg=231 ctermbg=59
   hi StorageClass ctermfg=113
   hi String ctermfg=119 ctermbg=16
-  hi TabLine ctermbg=8
   hi Tag ctermfg=81
   hi Title cterm=bold ctermfg=231
   hi Todo cterm=bold,reverse ctermfg=133 ctermbg=0
   hi Type ctermfg=81
   hi Underlined ctermfg=NONE
   hi VertSplit cterm=NONE ctermfg=59 ctermbg=59
-  hi Visual ctermbg=24
+  hi Visual cterm=NONE ctermbg=24
   hi WarningMsg ctermfg=NONE
   hi cssClassName ctermfg=81
   hi cssColor ctermfg=39
@@ -168,8 +161,8 @@ elseif &t_Co == 256
   hi htmlSpecialChar ctermfg=39
   hi htmlTag ctermfg=74
   hi htmlTagName ctermfg=74
-  hi javaScriptFunction ctermfg=113
   hi javaScriptRailsFunction ctermfg=221
+  hi javascriptFunction ctermfg=113
   hi rubyBlockParameter ctermfg=69
   hi rubyClass ctermfg=203
   hi rubyClassVariable ctermfg=69
@@ -202,17 +195,15 @@ elseif &t_Co == 88
   hi Character ctermfg=27
   hi ColorColumn ctermbg=17
   hi Comment ctermfg=84 ctermbg=16
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=69
   hi Constant ctermfg=27
-  hi Cursor ctermbg=31
+  hi Cursor ctermfg=NONE ctermbg=31
   hi CursorColumn ctermbg=17
   hi CursorLine cterm=NONE ctermbg=17
   hi Define ctermfg=69
   hi Directory ctermfg=27
   hi ErrorMsg ctermfg=NONE ctermbg=NONE
   hi Float ctermfg=27
-  hi FoldColumn ctermbg=81
   hi Folded ctermfg=84 ctermbg=16
   hi Function ctermfg=43
   hi Identifier cterm=NONE ctermfg=41
@@ -221,17 +212,13 @@ elseif &t_Co == 88
   hi Label ctermfg=45 ctermbg=16
   hi LineNr ctermfg=83 ctermbg=17
   hi MatchParen ctermfg=69 ctermbg=NONE
-  hi MoreMsg ctermfg=28
   hi NonText ctermfg=81 ctermbg=16
   hi Number ctermfg=27
   hi Operator ctermfg=69
   hi Pmenu ctermfg=43 ctermbg=NONE
-  hi PmenuSbar ctermbg=87
   hi PmenuSel ctermfg=NONE ctermbg=21
   hi PreProc ctermfg=69
-  hi Question ctermfg=28
   hi Search ctermfg=NONE ctermbg=21
-  hi SignColumn ctermbg=81
   hi Special ctermfg=79
   hi SpecialKey ctermfg=81 ctermbg=17
   hi Statement ctermfg=69
@@ -239,14 +226,13 @@ elseif &t_Co == 88
   hi StatusLineNC cterm=NONE ctermfg=79 ctermbg=81
   hi StorageClass ctermfg=41
   hi String ctermfg=45 ctermbg=16
-  hi TabLine ctermbg=81
   hi Tag ctermfg=43
   hi Title cterm=bold ctermfg=79
   hi Todo cterm=bold,reverse ctermfg=84 ctermbg=16
   hi Type ctermfg=43
   hi Underlined ctermfg=NONE
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
-  hi Visual ctermbg=21
+  hi Visual cterm=NONE ctermbg=21
   hi WarningMsg ctermfg=NONE
   hi cssClassName ctermfg=43
   hi cssColor ctermfg=27
@@ -262,8 +248,8 @@ elseif &t_Co == 88
   hi htmlSpecialChar ctermfg=27
   hi htmlTag ctermfg=42
   hi htmlTagName ctermfg=42
-  hi javaScriptFunction ctermfg=41
   hi javaScriptRailsFunction ctermfg=73
+  hi javascriptFunction ctermfg=41
   hi rubyBlockParameter ctermfg=39
   hi rubyClass ctermfg=69
   hi rubyClassVariable ctermfg=39
@@ -296,17 +282,15 @@ elseif &t_Co == 16
   hi Character ctermfg=6
   hi ColorColumn ctermbg=4
   hi Comment ctermfg=8 ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=9
   hi Constant ctermfg=6
-  hi Cursor ctermbg=14
+  hi Cursor ctermfg=NONE ctermbg=14
   hi CursorColumn ctermbg=4
   hi CursorLine cterm=NONE ctermbg=4
   hi Define ctermfg=9
   hi Directory ctermfg=6
   hi ErrorMsg ctermfg=NONE ctermbg=NONE
   hi Float ctermfg=6
-  hi FoldColumn ctermbg=2
   hi Folded ctermfg=8 ctermbg=0
   hi Function ctermfg=12
   hi Identifier cterm=NONE ctermfg=10
@@ -315,17 +299,13 @@ elseif &t_Co == 16
   hi Label ctermfg=10 ctermbg=0
   hi LineNr ctermfg=8 ctermbg=4
   hi MatchParen ctermfg=9 ctermbg=NONE
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=3 ctermbg=0
   hi Number ctermfg=6
   hi Operator ctermfg=9
   hi Pmenu ctermfg=12 ctermbg=NONE
-  hi PmenuSbar ctermbg=11
   hi PmenuSel ctermfg=NONE ctermbg=6
   hi PreProc ctermfg=9
-  hi Question ctermfg=2
   hi Search ctermfg=NONE ctermbg=6
-  hi SignColumn ctermbg=2
   hi Special ctermfg=15
   hi SpecialKey ctermfg=3 ctermbg=4
   hi Statement ctermfg=9
@@ -333,14 +313,13 @@ elseif &t_Co == 16
   hi StatusLineNC cterm=NONE ctermfg=15 ctermbg=3
   hi StorageClass ctermfg=10
   hi String ctermfg=10 ctermbg=0
-  hi TabLine ctermbg=2
   hi Tag ctermfg=12
   hi Title cterm=bold ctermfg=15
   hi Todo cterm=bold,reverse ctermfg=8 ctermbg=0
   hi Type ctermfg=12
   hi Underlined ctermfg=NONE
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi WarningMsg ctermfg=NONE
   hi cssClassName ctermfg=12
   hi cssColor ctermfg=6
@@ -356,8 +335,8 @@ elseif &t_Co == 16
   hi htmlSpecialChar ctermfg=6
   hi htmlTag ctermfg=8
   hi htmlTagName ctermfg=8
-  hi javaScriptFunction ctermfg=10
   hi javaScriptRailsFunction ctermfg=11
+  hi javascriptFunction ctermfg=10
   hi rubyBlockParameter ctermfg=12
   hi rubyClass ctermfg=9
   hi rubyClassVariable ctermfg=12
@@ -390,17 +369,15 @@ else " 8 colors
   hi Character ctermfg=6
   hi ColorColumn ctermbg=4
   hi Comment ctermfg=7 ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
   hi Constant ctermfg=6
-  hi Cursor ctermbg=6
+  hi Cursor ctermfg=NONE ctermbg=6
   hi CursorColumn ctermbg=4
   hi CursorLine cterm=NONE ctermbg=4
   hi Define ctermfg=3
   hi Directory ctermfg=6
   hi ErrorMsg ctermfg=NONE ctermbg=NONE
   hi Float ctermfg=6
-  hi FoldColumn ctermbg=2
   hi Folded ctermfg=7 ctermbg=0
   hi Function ctermfg=7
   hi Identifier cterm=NONE ctermfg=3
@@ -409,17 +386,13 @@ else " 8 colors
   hi Label ctermfg=3 ctermbg=0
   hi LineNr ctermfg=3 ctermbg=4
   hi MatchParen ctermfg=3 ctermbg=NONE
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=3 ctermbg=0
   hi Number ctermfg=6
   hi Operator ctermfg=3
   hi Pmenu ctermfg=7 ctermbg=NONE
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=NONE ctermbg=6
   hi PreProc ctermfg=3
-  hi Question ctermfg=2
   hi Search ctermfg=NONE ctermbg=6
-  hi SignColumn ctermbg=2
   hi Special ctermfg=7
   hi SpecialKey ctermfg=3 ctermbg=4
   hi Statement ctermfg=3
@@ -427,14 +400,13 @@ else " 8 colors
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=3
   hi StorageClass ctermfg=3
   hi String ctermfg=3 ctermbg=0
-  hi TabLine ctermbg=2
   hi Tag ctermfg=7
   hi Title cterm=bold ctermfg=7
   hi Todo cterm=bold,reverse ctermfg=7 ctermbg=0
   hi Type ctermfg=7
   hi Underlined ctermfg=NONE
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi WarningMsg ctermfg=NONE
   hi cssClassName ctermfg=7
   hi cssColor ctermfg=6
@@ -450,8 +422,8 @@ else " 8 colors
   hi htmlSpecialChar ctermfg=6
   hi htmlTag ctermfg=7
   hi htmlTagName ctermfg=7
-  hi javaScriptFunction ctermfg=3
   hi javaScriptRailsFunction ctermfg=7
+  hi javascriptFunction ctermfg=3
   hi rubyBlockParameter ctermfg=6
   hi rubyClass ctermfg=3
   hi rubyClassVariable ctermfg=6

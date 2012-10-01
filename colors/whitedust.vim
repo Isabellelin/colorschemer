@@ -4,7 +4,7 @@
 " Name: whitedust
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:36
+" Date: 2012-09-29 13:48:13
 "----------------------------------------------------------
 
 set background=light
@@ -72,7 +72,7 @@ if has("gui_running")
   hi Typedef gui=bold,underline guifg=#000000
   hi VertSplit guifg=#CCCCCC guibg=#333333
   hi Visual gui=reverse guifg=#CCCCCC guibg=#0E7369
-  hi VisualNOS gui=bold,underline guifg=#CCCCCC guibg=#0E7369
+  hi VisualNOS guifg=#CCCCCC guibg=#0E7369
   hi WarningMsg gui=bold guifg=#000000 guibg=#CCCCCC
   hi WildMenu guifg=#FFFFFF guibg=#235C5C
 elseif &t_Co == 256
@@ -99,7 +99,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=16
   hi PreCondit ctermfg=23
   hi Repeat ctermfg=52
-  hi Search ctermfg=231
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=23
   hi SpecialComment ctermfg=23
   hi StatusLine ctermfg=252 ctermbg=23
@@ -111,7 +111,7 @@ elseif &t_Co == 256
   hi Title ctermbg=252
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=252 ctermbg=236
-  hi Visual ctermfg=252
+  hi Visual cterm=NONE ctermfg=252 ctermbg=7
   hi VisualNOS ctermfg=252 ctermbg=23
   hi WarningMsg ctermbg=252
 elseif &t_Co == 88
@@ -138,7 +138,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=16
   hi PreCondit ctermfg=81
   hi Repeat ctermfg=32
-  hi Search ctermfg=79
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=81
   hi SpecialComment ctermfg=81
   hi StatusLine ctermfg=58 ctermbg=21
@@ -150,7 +150,7 @@ elseif &t_Co == 88
   hi Title ctermbg=58
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=58 ctermbg=80
-  hi Visual ctermfg=58
+  hi Visual cterm=NONE ctermfg=58 ctermbg=87
   hi VisualNOS ctermfg=58 ctermbg=21
   hi WarningMsg ctermbg=58
 elseif &t_Co == 16
@@ -177,7 +177,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=0
   hi PreCondit ctermfg=6
   hi Repeat ctermfg=1
-  hi Search ctermfg=15
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=6
   hi SpecialComment ctermfg=6
   hi StatusLine ctermfg=7 ctermbg=6
@@ -189,7 +189,7 @@ elseif &t_Co == 16
   hi Title ctermbg=7
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=7 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=11
   hi VisualNOS ctermfg=7 ctermbg=6
   hi WarningMsg ctermbg=7
 else " 8 colors
@@ -216,7 +216,7 @@ else " 8 colors
   hi Operator ctermfg=0
   hi PreCondit ctermfg=6
   hi Repeat ctermfg=1
-  hi Search ctermfg=7
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=6
   hi SpecialComment ctermfg=6
   hi StatusLine ctermfg=7 ctermbg=6
@@ -228,7 +228,7 @@ else " 8 colors
   hi Title ctermbg=7
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=7 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi VisualNOS ctermfg=7 ctermbg=6
   hi WarningMsg ctermbg=7
 endif

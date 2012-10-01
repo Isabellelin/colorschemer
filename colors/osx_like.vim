@@ -4,7 +4,7 @@
 " Name: osx_like
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:12
+" Date: 2012-09-29 13:41:15
 "----------------------------------------------------------
 
 set background=light
@@ -39,9 +39,6 @@ if has("gui_running")
   hi Search guifg=Black
   hi Special guifg=RoyalBlue4
   hi SpecialKey guifg=RoyalBlue4
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement guifg=Sienna4
   hi StatusLine gui=bold guifg=#829db9 guibg=Black
   hi StatusLineNC gui=bold guifg=#829db9 guibg=#666666
@@ -64,127 +61,71 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=231
   hi Boolean ctermfg=28
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=231 ctermbg=16
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi IncSearch ctermfg=231 ctermbg=16
   hi Label ctermfg=94
-  hi LineNr ctermfg=3 ctermbg=250
+  hi LineNr ctermbg=250
   hi NonText ctermbg=250
   hi Number ctermfg=28
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=fg ctermbg=7
+  hi PmenuSbar ctermfg=fg
   hi PmenuThumb ctermfg=fg
-  hi Search ctermfg=16
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=109 ctermbg=16
   hi StatusLineNC ctermfg=109 ctermbg=241
   hi String ctermfg=28
   hi VertSplit ctermfg=248 ctermbg=242
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi Boolean ctermfg=20
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=79 ctermbg=16
-  hi CursorLineNr ctermfg=56
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
   hi IncSearch ctermfg=79 ctermbg=16
   hi Label ctermfg=36
-  hi LineNr ctermfg=56 ctermbg=85
+  hi LineNr ctermbg=85
   hi NonText ctermbg=85
   hi Number ctermfg=20
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermfg=fg ctermbg=87
+  hi PmenuSbar ctermfg=fg
   hi PmenuThumb ctermfg=fg
-  hi Search ctermfg=16
-  hi SignColumn ctermbg=87
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=56
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=38 ctermbg=16
   hi StatusLineNC ctermfg=38 ctermbg=81
   hi String ctermfg=20
   hi VertSplit ctermfg=84 ctermbg=82
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Boolean ctermfg=2
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=15 ctermbg=0
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
   hi IncSearch ctermfg=15 ctermbg=0
   hi Label ctermfg=3
-  hi LineNr ctermfg=3 ctermbg=7
+  hi LineNr ctermbg=7
   hi NonText ctermbg=7
   hi Number ctermfg=2
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=fg ctermbg=11
+  hi PmenuSbar ctermfg=fg
   hi PmenuThumb ctermfg=fg
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=11
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=8 ctermbg=0
   hi StatusLineNC ctermfg=8 ctermbg=3
   hi String ctermfg=2
   hi VertSplit ctermfg=8 ctermbg=3
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=2
-  hi ColorColumn ctermbg=1
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=7 ctermbg=0
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi IncSearch ctermfg=7 ctermbg=0
   hi Label ctermfg=3
-  hi LineNr ctermfg=3 ctermbg=7
+  hi LineNr ctermbg=7
   hi NonText ctermbg=7
   hi Number ctermfg=2
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermfg=fg ctermbg=7
+  hi PmenuSbar ctermfg=fg
   hi PmenuThumb ctermfg=fg
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=7 ctermbg=3
   hi String ctermfg=2
   hi VertSplit ctermfg=7 ctermbg=3
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
 endif
 
 

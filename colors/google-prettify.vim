@@ -4,7 +4,7 @@
 " Name: google-prettify
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:53
+" Date: 2012-09-29 13:35:24
 "----------------------------------------------------------
 
 set background=light
@@ -25,6 +25,7 @@ if has("gui_running")
   hi Function guifg=#660066 guibg=bg
   hi Identifier guifg=#000000 guibg=bg
   hi Operator guifg=#666600 guibg=bg
+  hi Search guifg=NONE
   hi Special guifg=#666600 guibg=bg
   hi Statement gui=NONE guifg=#000088 guibg=bg
   hi StatusLine gui=NONE guifg=fg guibg=#cccccc
@@ -56,11 +57,13 @@ elseif &t_Co == 256
   hi Function ctermfg=53 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Operator ctermfg=58 ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=fg ctermbg=252
   hi String ctermfg=28 ctermbg=bg
   hi Type ctermbg=bg
+  hi Visual cterm=NONE ctermbg=7
   hi cssBoxProp ctermfg=16 ctermbg=bg
   hi cssBraces ctermfg=58 ctermbg=bg
   hi cssClassName ctermfg=28 ctermbg=bg
@@ -87,11 +90,13 @@ elseif &t_Co == 88
   hi Function ctermfg=33 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Operator ctermfg=36 ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=fg ctermbg=58
   hi String ctermfg=20 ctermbg=bg
   hi Type ctermbg=bg
+  hi Visual cterm=NONE ctermbg=87
   hi cssBoxProp ctermfg=16 ctermbg=bg
   hi cssBraces ctermfg=36 ctermbg=bg
   hi cssClassName ctermfg=20 ctermbg=bg
@@ -118,11 +123,13 @@ elseif &t_Co == 16
   hi Function ctermfg=5 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Operator ctermfg=3 ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=fg ctermbg=7
   hi String ctermfg=2 ctermbg=bg
   hi Type ctermbg=bg
+  hi Visual cterm=NONE ctermbg=11
   hi cssBoxProp ctermfg=0 ctermbg=bg
   hi cssBraces ctermfg=3 ctermbg=bg
   hi cssClassName ctermfg=2 ctermbg=bg
@@ -149,11 +156,13 @@ else " 8 colors
   hi Function ctermfg=5 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Operator ctermfg=3 ctermbg=bg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=fg ctermbg=7
   hi String ctermfg=2 ctermbg=bg
   hi Type ctermbg=bg
+  hi Visual cterm=NONE ctermbg=7
   hi cssBoxProp ctermfg=0 ctermbg=bg
   hi cssBraces ctermfg=3 ctermbg=bg
   hi cssClassName ctermfg=2 ctermbg=bg
@@ -188,6 +197,6 @@ hi! link htmlEndTag htmlTag
 hi! link htmlTagN htmlTag
 hi! link htmlTagName htmlTag
 hi! link javaFold Special
-hi! link javaScriptIdentifier Statement
 hi! link javaScriptNumber Number
+hi! link javascriptIdentifier Statement
 

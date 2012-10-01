@@ -4,7 +4,7 @@
 " Name: xoria256m
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:02
+" Date: 2012-09-29 13:48:46
 "----------------------------------------------------------
 
 set background=dark
@@ -59,7 +59,7 @@ if has("gui_running")
   hi Underlined guifg=#00afff
   hi VertSplit gui=NONE guifg=#3a3a3a guibg=#3a3a3a
   hi Visual guifg=#005f87 guibg=#afd7ff
-  hi VisualNOS guifg=#005f87 guibg=#afd7ff
+  hi VisualNOS gui=NONE guifg=#005f87 guibg=#afd7ff
   hi WildMenu gui=bold guifg=#000000 guibg=#d7d700
   hi diffAdded guifg=#afd787
   hi diffRemoved guifg=#d78787
@@ -76,6 +76,7 @@ elseif &t_Co == 256
   hi DiffDelete ctermfg=0 ctermbg=246
   hi DiffText cterm=NONE ctermfg=0 ctermbg=174
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=248 ctermbg=0
   hi Folded ctermfg=255 ctermbg=60
   hi Identifier cterm=NONE ctermfg=182
@@ -94,20 +95,20 @@ elseif &t_Co == 256
   hi SignColumn ctermfg=248
   hi Special ctermfg=179
   hi SpecialKey ctermfg=77
-  hi SpellBad cterm=standout ctermfg=9 ctermbg=0
-  hi SpellCap cterm=underline ctermfg=9 ctermbg=0
+  hi SpellBad cterm=standout ctermfg=12 ctermbg=0
+  hi SpellCap cterm=underline ctermfg=12 ctermbg=0
   hi Statement ctermfg=67
   hi StatusLine cterm=bold ctermbg=239
   hi StatusLineNC cterm=NONE ctermbg=237
-  hi TabLine ctermfg=248
+  hi TabLine ctermfg=248 ctermbg=242
   hi TabLineFill cterm=underline ctermfg=248 ctermbg=242
   hi Title ctermfg=255
   hi Todo ctermfg=15 ctermbg=1
   hi Type ctermfg=83
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=237 ctermbg=237
-  hi Visual ctermfg=24 ctermbg=153
-  hi VisualNOS ctermfg=24 ctermbg=153
+  hi Visual cterm=NONE ctermfg=24 ctermbg=153
+  hi VisualNOS cterm=NONE ctermfg=24 ctermbg=153
   hi WildMenu cterm=bold ctermbg=184
   hi diffAdded ctermfg=150
   hi diffRemoved ctermfg=174
@@ -124,6 +125,7 @@ elseif &t_Co == 88
   hi DiffDelete ctermfg=16 ctermbg=83
   hi DiffText cterm=NONE ctermfg=16 ctermbg=53
   hi Error ctermbg=48
+  hi ErrorMsg ctermbg=48
   hi FoldColumn ctermfg=84 ctermbg=16
   hi Folded ctermfg=87 ctermbg=81
   hi Identifier cterm=NONE ctermfg=86
@@ -142,20 +144,20 @@ elseif &t_Co == 88
   hi SignColumn ctermfg=84
   hi Special ctermfg=57
   hi SpecialKey ctermfg=41
-  hi SpellBad cterm=standout ctermfg=9 ctermbg=16
-  hi SpellCap cterm=underline ctermfg=9 ctermbg=16
+  hi SpellBad cterm=standout ctermfg=39 ctermbg=16
+  hi SpellCap cterm=underline ctermfg=39 ctermbg=16
   hi Statement ctermfg=38
   hi StatusLine cterm=bold ctermbg=81
   hi StatusLineNC cterm=NONE ctermbg=80
-  hi TabLine ctermfg=84
+  hi TabLine ctermfg=84 ctermbg=82
   hi TabLineFill cterm=underline ctermfg=84 ctermbg=82
   hi Title ctermfg=87
   hi Todo ctermfg=79 ctermbg=48
   hi Type ctermfg=45
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=21 ctermbg=59
-  hi VisualNOS ctermfg=21 ctermbg=59
+  hi Visual cterm=NONE ctermfg=21 ctermbg=59
+  hi VisualNOS cterm=NONE ctermfg=21 ctermbg=59
   hi WildMenu cterm=bold ctermbg=56
   hi diffAdded ctermfg=57
   hi diffRemoved ctermfg=53
@@ -172,6 +174,7 @@ elseif &t_Co == 16
   hi DiffDelete ctermfg=0 ctermbg=8
   hi DiffText cterm=NONE ctermfg=0 ctermbg=8
   hi Error ctermbg=9
+  hi ErrorMsg ctermbg=9
   hi FoldColumn ctermfg=8 ctermbg=0
   hi Folded ctermfg=11 ctermbg=5
   hi Identifier cterm=NONE ctermfg=7
@@ -190,20 +193,20 @@ elseif &t_Co == 16
   hi SignColumn ctermfg=8
   hi Special ctermfg=8
   hi SpecialKey ctermfg=10
-  hi SpellBad cterm=standout ctermfg=9 ctermbg=0
-  hi SpellCap cterm=underline ctermfg=9 ctermbg=0
+  hi SpellBad cterm=standout ctermfg=12 ctermbg=0
+  hi SpellCap cterm=underline ctermfg=12 ctermbg=0
   hi Statement ctermfg=8
   hi StatusLine cterm=bold ctermbg=2
   hi StatusLineNC cterm=NONE ctermbg=2
-  hi TabLine ctermfg=8
+  hi TabLine ctermfg=8 ctermbg=3
   hi TabLineFill cterm=underline ctermfg=8 ctermbg=3
   hi Title ctermfg=11
   hi Todo ctermfg=15 ctermbg=9
   hi Type ctermfg=10
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=12
-  hi VisualNOS ctermfg=6 ctermbg=12
+  hi Visual cterm=NONE ctermfg=6 ctermbg=12
+  hi VisualNOS cterm=NONE ctermfg=6 ctermbg=12
   hi WildMenu cterm=bold ctermbg=3
   hi diffAdded ctermfg=10
   hi diffRemoved ctermfg=8
@@ -220,6 +223,7 @@ else " 8 colors
   hi DiffDelete ctermfg=0 ctermbg=7
   hi DiffText cterm=NONE ctermfg=0 ctermbg=7
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=0
   hi Folded ctermfg=7 ctermbg=5
   hi Identifier cterm=NONE ctermfg=7
@@ -238,20 +242,20 @@ else " 8 colors
   hi SignColumn ctermfg=7
   hi Special ctermfg=7
   hi SpecialKey ctermfg=3
-  hi SpellBad cterm=standout ctermfg=1 ctermbg=0
-  hi SpellCap cterm=underline ctermfg=1 ctermbg=0
+  hi SpellBad cterm=standout ctermfg=5 ctermbg=0
+  hi SpellCap cterm=underline ctermfg=5 ctermbg=0
   hi Statement ctermfg=6
   hi StatusLine cterm=bold ctermbg=2
   hi StatusLineNC cterm=NONE ctermbg=2
-  hi TabLine ctermfg=7
+  hi TabLine ctermfg=7 ctermbg=3
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=3
   hi Title ctermfg=7
   hi Todo ctermfg=7 ctermbg=1
   hi Type ctermfg=3
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=7
-  hi VisualNOS ctermfg=6 ctermbg=7
+  hi Visual cterm=NONE ctermfg=6 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=6 ctermbg=7
   hi WildMenu cterm=bold ctermbg=3
   hi diffAdded ctermfg=7
   hi diffRemoved ctermfg=7

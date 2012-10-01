@@ -4,7 +4,7 @@
 " Name: hhpink
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:34
+" Date: 2012-09-29 13:36:20
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#bb7899 guibg=#40202a
   hi Comment guifg=#884830 guibg=bg
   hi Constant guifg=#882223 guibg=bg
-  hi Cursor gui=underline guifg=bg guibg=#cc7990
+  hi Cursor gui=underline guibg=#cc7990
   hi DiffAdd gui=underline guifg=bg guibg=#cc22c2
   hi DiffChange gui=underline guifg=bg guibg=#aa5572
   hi DiffDelete gui=NONE guifg=bg guibg=#aa3822
@@ -65,7 +65,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=138 ctermbg=235
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=174
+  hi Cursor ctermbg=174
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
   hi DiffText ctermfg=bg
@@ -88,7 +88,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=bg ctermbg=233
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=8
   hi WarningMsg ctermbg=169
   hi cursorim ctermfg=fg ctermbg=95
   hi htmlBold ctermfg=bg ctermbg=133
@@ -103,7 +103,7 @@ elseif &t_Co == 88
   hi Normal ctermfg=53 ctermbg=80
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=53
+  hi Cursor ctermbg=53
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
   hi DiffText ctermfg=bg
@@ -126,7 +126,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=bg ctermbg=16
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=81
   hi WarningMsg ctermbg=54
   hi cursorim ctermfg=fg ctermbg=81
   hi htmlBold ctermfg=bg ctermbg=84
@@ -141,7 +141,7 @@ elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=8
+  hi Cursor ctermbg=8
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
   hi DiffText ctermfg=bg
@@ -164,7 +164,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=bg ctermbg=0
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=2
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=fg ctermbg=3
   hi htmlBold ctermfg=bg ctermbg=8
@@ -179,7 +179,7 @@ else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=7
+  hi Cursor ctermbg=7
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
   hi DiffText ctermfg=bg
@@ -202,7 +202,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=bg ctermbg=0
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=2
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=fg ctermbg=3
   hi htmlBold ctermfg=bg ctermbg=7

@@ -4,7 +4,7 @@
 " Name: tango_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:32
+" Date: 2012-09-29 13:45:37
 "----------------------------------------------------------
 
 set background=dark
@@ -41,97 +41,97 @@ if has("gui_running")
   hi Type guifg=#d3d7cf
   hi VertSplit guifg=#eeeeec guibg=#eeeeec
   hi Visual guifg=#d3d7cf guibg=#4e9a06
-  hi lcursor guibg=#d3d7cf
+  hi lCursor guibg=#d3d7cf
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=16
-  hi Constant ctermfg=130
+  hi Constant ctermfg=6
   hi Cursor ctermbg=252
-  hi DiffAdd ctermfg=248 ctermbg=12
-  hi DiffChange ctermfg=248 ctermbg=242
-  hi DiffDelete ctermfg=248 ctermbg=NONE
-  hi DiffText cterm=NONE ctermfg=248 ctermbg=11
+  hi DiffAdd ctermfg=7 ctermbg=9
+  hi DiffChange ctermfg=7 ctermbg=8
+  hi DiffDelete ctermfg=7 ctermbg=NONE
+  hi DiffText cterm=NONE ctermfg=7 ctermbg=14
   hi Folded ctermfg=15 ctermbg=13
   hi Identifier ctermfg=2
-  hi IncSearch cterm=NONE ctermfg=11 ctermbg=10
-  hi NonText ctermfg=242 ctermbg=16
-  hi Number ctermfg=4
-  hi PreProc ctermfg=1
-  hi Search ctermfg=248 ctermbg=12
+  hi IncSearch cterm=NONE ctermfg=14 ctermbg=10
+  hi NonText ctermfg=8 ctermbg=16
+  hi Number ctermfg=1
+  hi PreProc ctermfg=4
+  hi Search ctermfg=7 ctermbg=9
   hi Special ctermfg=13
   hi Statement ctermfg=10
   hi StatusLine cterm=bold ctermfg=15 ctermbg=10
   hi StatusLineNC ctermfg=7 ctermbg=2
   hi Title cterm=bold ctermfg=15
   hi Todo ctermfg=15 ctermbg=10
-  hi Type cterm=bold ctermfg=248
+  hi Type cterm=bold ctermfg=7
   hi VertSplit ctermfg=255 ctermbg=255
-  hi Visual cterm=reverse ctermfg=121 ctermbg=15
-  hi lcursor ctermbg=252
+  hi Visual ctermfg=10 ctermbg=15
+  hi lCursor ctermbg=252
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi Constant ctermfg=52
+  hi Constant ctermfg=6
   hi Cursor ctermbg=86
-  hi DiffAdd ctermfg=84 ctermbg=39
-  hi DiffChange ctermfg=84 ctermbg=82
-  hi DiffDelete ctermfg=84 ctermbg=NONE
-  hi DiffText cterm=NONE ctermfg=84 ctermbg=76
+  hi DiffAdd ctermfg=87 ctermbg=9
+  hi DiffChange ctermfg=87 ctermbg=81
+  hi DiffDelete ctermfg=87 ctermbg=NONE
+  hi DiffText cterm=NONE ctermfg=87 ctermbg=31
   hi Folded ctermfg=79 ctermbg=67
   hi Identifier ctermfg=24
-  hi IncSearch cterm=NONE ctermfg=76 ctermbg=28
-  hi NonText ctermfg=82 ctermbg=16
-  hi Number ctermfg=19
-  hi PreProc ctermfg=48
-  hi Search ctermfg=84 ctermbg=39
+  hi IncSearch cterm=NONE ctermfg=31 ctermbg=28
+  hi NonText ctermfg=81 ctermbg=16
+  hi Number ctermfg=48
+  hi PreProc ctermfg=19
+  hi Search ctermfg=87 ctermbg=9
   hi Special ctermfg=67
   hi Statement ctermfg=28
   hi StatusLine cterm=bold ctermfg=79 ctermbg=28
   hi StatusLineNC ctermfg=87 ctermbg=24
   hi Title cterm=bold ctermfg=79
   hi Todo ctermfg=79 ctermbg=28
-  hi Type cterm=bold ctermfg=84
+  hi Type cterm=bold ctermfg=87
   hi VertSplit ctermfg=87 ctermbg=87
-  hi Visual cterm=reverse ctermfg=46 ctermbg=79
-  hi lcursor ctermbg=86
+  hi Visual ctermfg=28 ctermbg=79
+  hi lCursor ctermbg=86
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Constant ctermfg=3
+  hi Constant ctermfg=6
   hi Cursor ctermbg=12
-  hi DiffAdd ctermfg=8 ctermbg=12
-  hi DiffChange ctermfg=8 ctermbg=3
-  hi DiffDelete ctermfg=8 ctermbg=NONE
-  hi DiffText cterm=NONE ctermfg=8 ctermbg=11
+  hi DiffAdd ctermfg=11 ctermbg=9
+  hi DiffChange ctermfg=11 ctermbg=2
+  hi DiffDelete ctermfg=11 ctermbg=NONE
+  hi DiffText cterm=NONE ctermfg=11 ctermbg=14
   hi Folded ctermfg=15 ctermbg=13
   hi Identifier ctermfg=2
-  hi IncSearch cterm=NONE ctermfg=11 ctermbg=2
-  hi NonText ctermfg=3 ctermbg=0
-  hi Number ctermfg=4
-  hi PreProc ctermfg=9
-  hi Search ctermfg=8 ctermbg=12
+  hi IncSearch cterm=NONE ctermfg=14 ctermbg=2
+  hi NonText ctermfg=2 ctermbg=0
+  hi Number ctermfg=9
+  hi PreProc ctermfg=4
+  hi Search ctermfg=11 ctermbg=9
   hi Special ctermfg=13
   hi Statement ctermfg=2
   hi StatusLine cterm=bold ctermfg=15 ctermbg=2
   hi StatusLineNC ctermfg=11 ctermbg=2
   hi Title cterm=bold ctermfg=15
   hi Todo ctermfg=15 ctermbg=2
-  hi Type cterm=bold ctermfg=8
+  hi Type cterm=bold ctermfg=11
   hi VertSplit ctermfg=11 ctermbg=11
-  hi Visual cterm=reverse ctermfg=10 ctermbg=15
-  hi lcursor ctermbg=12
+  hi Visual ctermfg=2 ctermbg=15
+  hi lCursor ctermbg=12
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Constant ctermfg=3
+  hi Constant ctermfg=6
   hi Cursor ctermbg=7
-  hi DiffAdd ctermfg=7 ctermbg=5
-  hi DiffChange ctermfg=7 ctermbg=3
+  hi DiffAdd ctermfg=7 ctermbg=1
+  hi DiffChange ctermfg=7 ctermbg=2
   hi DiffDelete ctermfg=7 ctermbg=NONE
-  hi DiffText cterm=NONE ctermfg=7 ctermbg=3
+  hi DiffText cterm=NONE ctermfg=7 ctermbg=6
   hi Folded ctermfg=7 ctermbg=5
   hi Identifier ctermfg=2
-  hi IncSearch cterm=NONE ctermfg=3 ctermbg=2
-  hi NonText ctermfg=3 ctermbg=0
-  hi Number ctermfg=4
-  hi PreProc ctermfg=1
-  hi Search ctermfg=7 ctermbg=5
+  hi IncSearch cterm=NONE ctermfg=6 ctermbg=2
+  hi NonText ctermfg=2 ctermbg=0
+  hi Number ctermfg=1
+  hi PreProc ctermfg=4
+  hi Search ctermfg=7 ctermbg=1
   hi Special ctermfg=5
   hi Statement ctermfg=2
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
@@ -140,8 +140,8 @@ else " 8 colors
   hi Todo ctermfg=7 ctermbg=2
   hi Type cterm=bold ctermfg=7
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual cterm=reverse ctermfg=7 ctermbg=7
-  hi lcursor ctermbg=7
+  hi Visual ctermfg=2 ctermbg=7
+  hi lCursor ctermbg=7
 endif
 
 

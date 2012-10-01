@@ -4,7 +4,7 @@
 " Name: neon
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:11
+" Date: 2012-09-29 13:39:52
 "----------------------------------------------------------
 
 set background=dark
@@ -35,7 +35,6 @@ if has("gui_running")
   hi ModeMsg guifg=#a0d0ff
   hi MoreMsg guifg=#70ffc0 guibg=#8040ff
   hi NonText guifg=#d84070 guibg=#383838
-  hi PmenuSel guifg=#4d4d4d
   hi PreProc guifg=#ffa8ff
   hi Question guifg=#e8e800
   hi Search guifg=#ffffa8 guibg=#808000
@@ -50,147 +49,79 @@ if has("gui_running")
   hi Underlined guifg=fg
   hi VertSplit gui=NONE guifg=#707070 guibg=#c4c4c4
   hi Visual guifg=#b0ffb0 guibg=#008000
-  hi VisualNOS guifg=#ffe8c8 guibg=#c06800
+  hi VisualNOS gui=NONE guifg=#ffe8c8 guibg=#c06800
   hi WarningMsg gui=bold guifg=#ffa0ff
   hi WildMenu guifg=#000000 guibg=#ff80c0
   hi cursorim guifg=#ffffff guibg=#8800ff
-  hi lcursor guifg=#ffffff guibg=#8800ff
+  hi lCursor guifg=#ffffff guibg=#8800ff
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=236
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=85 ctermbg=99
-  hi CursorColumn ctermbg=8
   hi DiffAdd ctermfg=153
   hi DiffChange ctermfg=167
   hi DiffText ctermfg=213
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi IncSearch ctermfg=123 ctermbg=25
   hi ModeMsg ctermfg=153
-  hi MoreMsg ctermfg=10 ctermbg=99
+  hi MoreMsg ctermbg=99
   hi NonText ctermbg=237
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=16 ctermbg=251
   hi StatusLineNC ctermfg=242 ctermbg=251
-  hi TabLine ctermbg=8
-  hi Title ctermfg=13
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=242 ctermbg=251
-  hi Visual ctermfg=157 ctermbg=8
+  hi Visual cterm=NONE ctermfg=157 ctermbg=8
   hi VisualNOS ctermfg=224 ctermbg=130
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=231 ctermbg=93
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=46 ctermbg=35
-  hi CursorColumn ctermbg=81
   hi DiffAdd ctermfg=43
   hi DiffChange ctermfg=49
   hi DiffText ctermfg=71
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi IncSearch ctermfg=47 ctermbg=22
   hi ModeMsg ctermfg=43
-  hi MoreMsg ctermfg=28 ctermbg=35
+  hi MoreMsg ctermbg=35
   hi NonText ctermbg=80
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=16 ctermbg=58
   hi StatusLineNC ctermfg=82 ctermbg=58
-  hi TabLine ctermbg=81
-  hi Title ctermfg=67
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
   hi VertSplit ctermfg=82 ctermbg=58
-  hi Visual ctermfg=62 ctermbg=81
+  hi Visual cterm=NONE ctermfg=62 ctermbg=81
   hi VisualNOS ctermfg=78 ctermbg=52
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=10 ctermbg=5
-  hi CursorColumn ctermbg=2
   hi DiffAdd ctermfg=12
   hi DiffChange ctermfg=5
   hi DiffText ctermfg=13
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=14 ctermbg=6
   hi ModeMsg ctermfg=12
-  hi MoreMsg ctermfg=2 ctermbg=5
+  hi MoreMsg ctermbg=5
   hi NonText ctermbg=2
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
-  hi TabLine ctermbg=2
-  hi Title ctermfg=13
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=10 ctermbg=2
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
   hi VisualNOS ctermfg=11 ctermbg=3
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=7 ctermbg=5
-  hi CursorColumn ctermbg=2
   hi DiffAdd ctermfg=7
   hi DiffChange ctermfg=5
   hi DiffText ctermfg=7
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=7 ctermbg=6
   hi ModeMsg ctermfg=7
-  hi MoreMsg ctermfg=2 ctermbg=5
+  hi MoreMsg ctermbg=5
   hi NonText ctermbg=2
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
-  hi TabLine ctermbg=2
-  hi Title ctermfg=5
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=7 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=3
-  hi WarningMsg ctermfg=1
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 

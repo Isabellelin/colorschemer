@@ -4,10 +4,10 @@
 " Name: norwaytoday
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:48
+" Date: 2012-09-29 13:40:43
 "----------------------------------------------------------
 
-set background=light
+set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -16,194 +16,113 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
-  hi ColorColumn guibg=DarkRed
-  hi Comment guifg=#80a0ff
-  hi Constant guifg=#ffa0a0
-  hi CursorColumn guibg=Grey40
-  hi CursorLine guibg=Grey40
-  hi CursorLineNr guifg=Yellow
-  hi DiffAdd guibg=DarkBlue
-  hi DiffChange guibg=DarkMagenta
-  hi DiffDelete guibg=DarkCyan
-  hi Directory guifg=Cyan
-  hi FoldColumn guifg=Cyan
-  hi Folded guifg=Cyan guibg=DarkGrey
-  hi Identifier guifg=#40ffff
-  hi LineNr guifg=Yellow
-  hi MatchParen guibg=DarkCyan
-  hi Pmenu guibg=Magenta
-  hi PmenuSel guifg=#4d4d4d guibg=DarkGrey
-  hi PmenuThumb guibg=White
-  hi PreProc guifg=#ff80ff
-  hi Question guifg=Green
-  hi Search guifg=Black
-  hi SignColumn guifg=Cyan
-  hi Special guifg=Orange
-  hi SpecialKey guifg=Cyan
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
-  hi Statement guifg=#ffff60
-  hi TabLine guifg=#ffffff guibg=DarkGrey
-  hi Type guifg=#60ff60
-  hi Underlined guifg=#80a0ff
-  hi Visual guibg=DarkGrey
+  hi Normal guifg=#FFFFFF guibg=#121E31
+  hi Comment gui=italic guifg=#428BDD
+  hi Constant guifg=#B53B3C
+  hi Cursor guibg=#FFFF00
+  hi Define guifg=#F8BB00
+  hi Error guifg=#FFFFFF guibg=#990000
+  hi Folded guifg=white guibg=black
+  hi Function gui=italic guifg=#FFFFFF
+  hi Identifier gui=bold guifg=#EDDD3D
+  hi Include guifg=#F8BB00
+  hi Keyword guifg=#F8BB00
+  hi LineNr guifg=#FFFFFF guibg=#121E31
+  hi Number guifg=#EDDD3D
+  hi Pmenu guifg=grey80 guibg=grey20
+  hi PmenuSbar guibg=#dcdccc
+  hi PmenuSel guifg=grey10
+  hi PmenuThumb guifg=#dcdccc
+  hi Search guibg=#685D9C
+  hi Statement gui=NONE guifg=#F8BB00
+  hi String guifg=#E2CE00
+  hi Title guifg=#FFFFFF
+  hi Type gui=NONE guifg=#8AA6C1
+  hi Visual guibg=#685D9C
+  hi xmlAttrib guifg=#007C00
+  hi xmlComment guifg=#7F7F7F
+  hi xmlEndTag guifg=#F8BB00
+  hi xmlEntity guifg=#99006B
+  hi xmlTag guifg=#F8BB00
+  hi xmlTagName guifg=#F8BB00
 elseif &t_Co == 256
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=14
-  hi Conceal ctermbg=8
-  hi Constant ctermfg=13
-  hi CursorColumn ctermbg=8
-  hi CursorLine ctermbg=241
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=14
-  hi FoldColumn ctermfg=14 ctermbg=8
-  hi Folded ctermfg=14 ctermbg=8
-  hi Identifier cterm=bold ctermfg=14
-  hi Ignore ctermfg=0
-  hi LineNr ctermfg=11
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=10
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8 ctermbg=0
-  hi PmenuThumb ctermbg=15
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=11
-  hi TabLine ctermfg=15 ctermbg=8
-  hi Title ctermfg=13
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
-  hi Visual ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Normal ctermfg=231 ctermbg=234
+  hi Cursor ctermbg=226
+  hi Define ctermfg=214
+  hi Function ctermfg=231
+  hi Include ctermfg=214
+  hi Keyword ctermfg=214
+  hi LineNr ctermbg=234
+  hi Number ctermfg=221
+  hi PmenuThumb ctermfg=253
+  hi String ctermfg=184
+  hi Visual cterm=NONE ctermbg=8
+  hi xmlAttrib ctermfg=28
+  hi xmlComment ctermfg=244
+  hi xmlEndTag ctermfg=214
+  hi xmlEntity ctermfg=89
+  hi xmlTag ctermfg=214
+  hi xmlTagName ctermfg=214
 elseif &t_Co == 88
-  hi ColorColumn ctermbg=48
-  hi Comment ctermfg=31
-  hi Conceal ctermbg=81
-  hi Constant ctermfg=67
-  hi CursorColumn ctermbg=81
-  hi CursorLine ctermbg=81
-  hi CursorLineNr ctermfg=76
-  hi DiffAdd ctermbg=48
-  hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=31
-  hi FoldColumn ctermfg=31 ctermbg=81
-  hi Folded ctermfg=31 ctermbg=81
-  hi Identifier cterm=bold ctermfg=31
-  hi Ignore ctermfg=16
-  hi LineNr ctermfg=76
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=28
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81 ctermbg=16
-  hi PmenuThumb ctermbg=79
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
-  hi Search ctermfg=16
-  hi SignColumn ctermfg=31 ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=76
-  hi TabLine ctermfg=79 ctermbg=81
-  hi Title ctermfg=67
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
-  hi Visual ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Normal ctermfg=79 ctermbg=80
+  hi Cursor ctermbg=76
+  hi Define ctermfg=72
+  hi Function ctermfg=79
+  hi Include ctermfg=72
+  hi Keyword ctermfg=72
+  hi LineNr ctermbg=80
+  hi Number ctermfg=72
+  hi PmenuThumb ctermfg=86
+  hi String ctermfg=56
+  hi Visual cterm=NONE ctermbg=81
+  hi xmlAttrib ctermfg=20
+  hi xmlComment ctermfg=83
+  hi xmlEndTag ctermfg=72
+  hi xmlEntity ctermfg=33
+  hi xmlTag ctermfg=72
+  hi xmlTagName ctermfg=72
 elseif &t_Co == 16
-  hi ColorColumn ctermbg=9
-  hi Comment ctermfg=14
-  hi Conceal ctermbg=2
-  hi Constant ctermfg=13
-  hi CursorColumn ctermbg=2
-  hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=14
-  hi FoldColumn ctermfg=14 ctermbg=2
-  hi Folded ctermfg=14 ctermbg=2
-  hi Identifier cterm=bold ctermfg=14
-  hi Ignore ctermfg=0
-  hi LineNr ctermfg=11
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=2
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2 ctermbg=0
-  hi PmenuThumb ctermbg=15
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=11
-  hi TabLine ctermfg=15 ctermbg=2
-  hi Title ctermfg=13
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Normal ctermfg=15 ctermbg=0
+  hi Cursor ctermbg=11
+  hi Define ctermfg=3
+  hi Function ctermfg=15
+  hi Include ctermfg=3
+  hi Keyword ctermfg=3
+  hi LineNr ctermbg=0
+  hi Number ctermfg=10
+  hi PmenuThumb ctermfg=7
+  hi String ctermfg=3
+  hi Visual cterm=NONE ctermbg=2
+  hi xmlAttrib ctermfg=2
+  hi xmlComment ctermfg=8
+  hi xmlEndTag ctermfg=3
+  hi xmlEntity ctermfg=5
+  hi xmlTag ctermfg=3
+  hi xmlTagName ctermfg=3
 else " 8 colors
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=6
-  hi Conceal ctermbg=2
-  hi Constant ctermfg=5
-  hi CursorColumn ctermbg=2
-  hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
-  hi FoldColumn ctermfg=6 ctermbg=2
-  hi Folded ctermfg=6 ctermbg=2
-  hi Identifier cterm=bold ctermfg=6
-  hi Ignore ctermfg=0
-  hi LineNr ctermfg=3
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=2
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2 ctermbg=0
-  hi PmenuThumb ctermbg=7
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=6 ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
-  hi TabLine ctermfg=7 ctermbg=2
-  hi Title ctermfg=5
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Normal ctermfg=7 ctermbg=0
+  hi Cursor ctermbg=3
+  hi Define ctermfg=3
+  hi Function ctermfg=7
+  hi Include ctermfg=3
+  hi Keyword ctermfg=3
+  hi LineNr ctermbg=0
+  hi Number ctermfg=7
+  hi PmenuThumb ctermfg=7
+  hi String ctermfg=3
+  hi Visual cterm=NONE ctermbg=2
+  hi xmlAttrib ctermfg=2
+  hi xmlComment ctermfg=3
+  hi xmlEndTag ctermfg=3
+  hi xmlEntity ctermfg=5
+  hi xmlTag ctermfg=3
+  hi xmlTagName ctermfg=3
 endif
 
+hi! link htmlArg xmlAttrib
+hi! link htmlComment xmlComment
+hi! link htmlEndTag xmlEndTag
+hi! link htmlString xmlEntity
+hi! link htmlTag xmlTag
+hi! link htmlTagName xmlTagName
 

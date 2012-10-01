@@ -4,7 +4,7 @@
 " Name: spiderhawk
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:05
+" Date: 2012-09-29 13:45:02
 "----------------------------------------------------------
 
 set background=dark
@@ -22,12 +22,16 @@ if has("gui_running")
   hi Folded gui=italic guifg=#ffffff guibg=#333333
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=16
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: bjornenki-colorscheme
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:52
+" Date: 2012-09-29 13:30:51
 "----------------------------------------------------------
 
 set background=dark
@@ -69,205 +69,209 @@ if has("gui_running")
   hi javaDocSeeTag guifg=#CCCCCC
   hi javaScriptNumber gui=underline guifg=#53bcff
 elseif &t_Co == 256
-  hi Normal ctermfg=12 ctermbg=0
-  hi Blue_bg ctermfg=81 ctermbg=21
+  hi Normal ctermfg=9 ctermbg=0
+  hi Blue_bg ctermfg=9 ctermbg=21
   hi Boolean ctermfg=15
-  hi Comment ctermfg=15 ctermbg=81
+  hi Comment ctermfg=15 ctermbg=9
   hi Conditional ctermfg=15
-  hi Constant ctermfg=14
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn ctermbg=NONE
   hi CursorLine cterm=NONE ctermbg=233
   hi Define ctermfg=10
   hi Delimiter ctermfg=15
-  hi ErrorMsg ctermbg=9
-  hi Exception ctermfg=11
+  hi ErrorMsg ctermbg=12
+  hi Exception ctermfg=14
   hi Folded ctermfg=NONE ctermbg=NONE
   hi Function ctermfg=10
-  hi Green_bg ctermfg=81 ctermbg=46
+  hi Green_bg ctermfg=9 ctermbg=46
   hi Identifier cterm=NONE
   hi Include ctermfg=10
   hi Keyword ctermfg=15
   hi LineNr ctermfg=10 ctermbg=0
-  hi MatchParen ctermfg=15 ctermbg=242
-  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=14
+  hi MatchParen ctermfg=15 ctermbg=8
+  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=11
   hi NonText ctermfg=10 ctermbg=0
-  hi Number ctermfg=14
+  hi Number ctermfg=11
   hi Operator ctermfg=13
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
   hi PreProc ctermfg=10
-  hi Red_bg ctermfg=81 ctermbg=9
+  hi Red_bg ctermfg=9 ctermbg=9
   hi Repeat ctermfg=15
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=15
   hi SpecialKey ctermfg=NONE ctermbg=236
   hi Statement cterm=bold ctermfg=15
-  hi StatusLine cterm=NONE ctermfg=15 ctermbg=242
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=242
+  hi StatusLine cterm=NONE ctermfg=15 ctermbg=8
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=8
   hi StorageClass ctermfg=13
-  hi String cterm=italic ctermfg=12
+  hi String cterm=italic ctermfg=9
   hi Title cterm=bold ctermfg=15
-  hi Todo ctermfg=9 ctermbg=NONE
+  hi Todo ctermfg=12 ctermbg=NONE
   hi Type ctermfg=13
-  hi VertSplit cterm=NONE ctermfg=242 ctermbg=242
-  hi WarningMsg ctermfg=15 ctermbg=9
-  hi htmlEndTag ctermfg=11
-  hi htmlTag ctermfg=11
-  hi htmlTagName ctermfg=11
-  hi javaDocSeeTag ctermfg=242
-  hi javaScriptNumber ctermfg=14
+  hi VertSplit cterm=NONE ctermfg=8 ctermbg=8
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermfg=15 ctermbg=12
+  hi htmlEndTag ctermfg=14
+  hi htmlTag ctermfg=14
+  hi htmlTagName ctermfg=14
+  hi javaDocSeeTag ctermfg=8
+  hi javaScriptNumber ctermfg=11
 elseif &t_Co == 88
-  hi Normal ctermfg=39 ctermbg=16
-  hi Blue_bg ctermfg=43 ctermbg=19
+  hi Normal ctermfg=9 ctermbg=16
+  hi Blue_bg ctermfg=9 ctermbg=19
   hi Boolean ctermfg=79
-  hi Comment ctermfg=79 ctermbg=43
+  hi Comment ctermfg=79 ctermbg=9
   hi Conditional ctermfg=79
-  hi Constant ctermfg=31
+  hi Constant ctermfg=76
   hi Cursor cterm=reverse ctermfg=16 ctermbg=79
   hi CursorColumn ctermbg=NONE
   hi CursorLine cterm=NONE ctermbg=16
   hi Define ctermfg=28
   hi Delimiter ctermfg=79
-  hi ErrorMsg ctermbg=9
-  hi Exception ctermfg=76
+  hi ErrorMsg ctermbg=39
+  hi Exception ctermfg=31
   hi Folded ctermfg=NONE ctermbg=NONE
   hi Function ctermfg=28
-  hi Green_bg ctermfg=43 ctermbg=28
+  hi Green_bg ctermfg=9 ctermbg=28
   hi Identifier cterm=NONE
   hi Include ctermfg=28
   hi Keyword ctermfg=79
   hi LineNr ctermfg=28 ctermbg=16
-  hi MatchParen ctermfg=79 ctermbg=82
-  hi ModeMsg cterm=NONE ctermfg=16 ctermbg=31
+  hi MatchParen ctermfg=79 ctermbg=81
+  hi ModeMsg cterm=NONE ctermfg=16 ctermbg=76
   hi NonText ctermfg=28 ctermbg=16
-  hi Number ctermfg=31
+  hi Number ctermfg=76
   hi Operator ctermfg=67
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=16 ctermbg=79
   hi PmenuSel ctermfg=NONE ctermbg=NONE
   hi PreProc ctermfg=28
-  hi Red_bg ctermfg=43 ctermbg=9
+  hi Red_bg ctermfg=9 ctermbg=9
   hi Repeat ctermfg=79
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=79
   hi SpecialKey ctermfg=NONE ctermbg=80
   hi Statement cterm=bold ctermfg=79
-  hi StatusLine cterm=NONE ctermfg=79 ctermbg=82
-  hi StatusLineNC cterm=NONE ctermfg=39 ctermbg=82
+  hi StatusLine cterm=NONE ctermfg=79 ctermbg=81
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=81
   hi StorageClass ctermfg=67
-  hi String cterm=italic ctermfg=39
+  hi String cterm=italic ctermfg=9
   hi Title cterm=bold ctermfg=79
-  hi Todo ctermfg=9 ctermbg=NONE
+  hi Todo ctermfg=39 ctermbg=NONE
   hi Type ctermfg=67
-  hi VertSplit cterm=NONE ctermfg=82 ctermbg=82
-  hi WarningMsg ctermfg=79 ctermbg=9
-  hi htmlEndTag ctermfg=76
-  hi htmlTag ctermfg=76
-  hi htmlTagName ctermfg=76
-  hi javaDocSeeTag ctermfg=82
-  hi javaScriptNumber ctermfg=31
+  hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermfg=79 ctermbg=39
+  hi htmlEndTag ctermfg=31
+  hi htmlTag ctermfg=31
+  hi htmlTagName ctermfg=31
+  hi javaDocSeeTag ctermfg=81
+  hi javaScriptNumber ctermfg=76
 elseif &t_Co == 16
-  hi Normal ctermfg=12 ctermbg=0
-  hi Blue_bg ctermfg=12 ctermbg=4
+  hi Normal ctermfg=9 ctermbg=0
+  hi Blue_bg ctermfg=9 ctermbg=4
   hi Boolean ctermfg=15
-  hi Comment ctermfg=15 ctermbg=12
+  hi Comment ctermfg=15 ctermbg=9
   hi Conditional ctermfg=15
-  hi Constant ctermfg=14
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn ctermbg=NONE
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=2
   hi Delimiter ctermfg=15
-  hi ErrorMsg ctermbg=9
-  hi Exception ctermfg=11
+  hi ErrorMsg ctermbg=12
+  hi Exception ctermfg=14
   hi Folded ctermfg=NONE ctermbg=NONE
   hi Function ctermfg=2
-  hi Green_bg ctermfg=12 ctermbg=2
+  hi Green_bg ctermfg=9 ctermbg=2
   hi Identifier cterm=NONE
   hi Include ctermfg=2
   hi Keyword ctermfg=15
   hi LineNr ctermfg=2 ctermbg=0
-  hi MatchParen ctermfg=15 ctermbg=3
-  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=14
+  hi MatchParen ctermfg=15 ctermbg=2
+  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=11
   hi NonText ctermfg=2 ctermbg=0
-  hi Number ctermfg=14
+  hi Number ctermfg=11
   hi Operator ctermfg=13
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
   hi PreProc ctermfg=2
-  hi Red_bg ctermfg=12 ctermbg=9
+  hi Red_bg ctermfg=9 ctermbg=9
   hi Repeat ctermfg=15
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=15
   hi SpecialKey ctermfg=NONE ctermbg=2
   hi Statement cterm=bold ctermfg=15
-  hi StatusLine cterm=NONE ctermfg=15 ctermbg=3
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=3
+  hi StatusLine cterm=NONE ctermfg=15 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=2
   hi StorageClass ctermfg=13
-  hi String cterm=italic ctermfg=12
+  hi String cterm=italic ctermfg=9
   hi Title cterm=bold ctermfg=15
-  hi Todo ctermfg=9 ctermbg=NONE
+  hi Todo ctermfg=12 ctermbg=NONE
   hi Type ctermfg=13
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi WarningMsg ctermfg=15 ctermbg=9
-  hi htmlEndTag ctermfg=11
-  hi htmlTag ctermfg=11
-  hi htmlTagName ctermfg=11
-  hi javaDocSeeTag ctermfg=3
-  hi javaScriptNumber ctermfg=14
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=15 ctermbg=12
+  hi htmlEndTag ctermfg=14
+  hi htmlTag ctermfg=14
+  hi htmlTagName ctermfg=14
+  hi javaDocSeeTag ctermfg=2
+  hi javaScriptNumber ctermfg=11
 else " 8 colors
-  hi Normal ctermfg=5 ctermbg=0
-  hi Blue_bg ctermfg=7 ctermbg=4
+  hi Normal ctermfg=1 ctermbg=0
+  hi Blue_bg ctermfg=1 ctermbg=4
   hi Boolean ctermfg=7
-  hi Comment ctermfg=7 ctermbg=7
+  hi Comment ctermfg=7 ctermbg=1
   hi Conditional ctermfg=7
-  hi Constant ctermfg=6
+  hi Constant ctermfg=3
   hi Cursor cterm=reverse ctermfg=0 ctermbg=7
   hi CursorColumn ctermbg=NONE
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=2
   hi Delimiter ctermfg=7
-  hi ErrorMsg ctermbg=1
-  hi Exception ctermfg=3
+  hi ErrorMsg ctermbg=5
+  hi Exception ctermfg=6
   hi Folded ctermfg=NONE ctermbg=NONE
   hi Function ctermfg=2
-  hi Green_bg ctermfg=7 ctermbg=2
+  hi Green_bg ctermfg=1 ctermbg=2
   hi Identifier cterm=NONE
   hi Include ctermfg=2
   hi Keyword ctermfg=7
   hi LineNr ctermfg=2 ctermbg=0
-  hi MatchParen ctermfg=7 ctermbg=3
-  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=6
+  hi MatchParen ctermfg=7 ctermbg=2
+  hi ModeMsg cterm=NONE ctermfg=0 ctermbg=3
   hi NonText ctermfg=2 ctermbg=0
-  hi Number ctermfg=6
+  hi Number ctermfg=3
   hi Operator ctermfg=5
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=7
   hi PmenuSel ctermfg=NONE ctermbg=NONE
   hi PreProc ctermfg=2
-  hi Red_bg ctermfg=7 ctermbg=1
+  hi Red_bg ctermfg=1 ctermbg=1
   hi Repeat ctermfg=7
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=7
   hi SpecialKey ctermfg=NONE ctermbg=2
   hi Statement cterm=bold ctermfg=7
-  hi StatusLine cterm=NONE ctermfg=7 ctermbg=3
-  hi StatusLineNC cterm=NONE ctermfg=5 ctermbg=3
+  hi StatusLine cterm=NONE ctermfg=7 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=1 ctermbg=2
   hi StorageClass ctermfg=5
-  hi String cterm=italic ctermfg=5
+  hi String cterm=italic ctermfg=1
   hi Title cterm=bold ctermfg=7
-  hi Todo ctermfg=1 ctermbg=NONE
+  hi Todo ctermfg=5 ctermbg=NONE
   hi Type ctermfg=5
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi WarningMsg ctermfg=7 ctermbg=1
-  hi htmlEndTag ctermfg=3
-  hi htmlTag ctermfg=3
-  hi htmlTagName ctermfg=3
-  hi javaDocSeeTag ctermfg=3
-  hi javaScriptNumber ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=7 ctermbg=5
+  hi htmlEndTag ctermfg=6
+  hi htmlTag ctermfg=6
+  hi htmlTagName ctermfg=6
+  hi javaDocSeeTag ctermfg=2
+  hi javaScriptNumber ctermfg=3
 endif
 
 hi! link Character Red_bg

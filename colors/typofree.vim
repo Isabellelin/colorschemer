@@ -4,7 +4,7 @@
 " Name: typofree
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:37
+" Date: 2012-09-29 13:47:00
 "----------------------------------------------------------
 
 set background=light
@@ -22,7 +22,6 @@ if has("gui_running")
   hi Comment guifg=#80a0ff
   hi Conditional guifg=#af5f00
   hi Constant guifg=#ffa0a0
-  hi Cursor guifg=#af5f00
   hi CursorColumn guibg=Grey40
   hi CursorLine guibg=Grey40
   hi CursorLineNr guifg=Yellow
@@ -56,9 +55,6 @@ if has("gui_running")
   hi Special guifg=Orange
   hi SpecialChar guifg=#870000
   hi SpecialKey guifg=Cyan
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement guifg=#ffff60
   hi StatusLine guifg=#ff8700 guibg=#303030
   hi StatusLineNC guifg=#875f00 guibg=#1c1c1c
@@ -76,15 +72,14 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=247
   hi Boolean ctermfg=127
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=240
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=130
   hi Constant ctermfg=127
   hi Cursor ctermfg=130
   hi CursorColumn ctermbg=234
   hi CursorLine ctermbg=241
-  hi CursorLineNr ctermfg=11
+  hi CursorLineNr ctermfg=14
   hi Define ctermfg=28
   hi DiffAdd ctermbg=22
   hi DiffChange ctermbg=NONE
@@ -102,7 +97,7 @@ elseif &t_Co == 256
   hi Include ctermfg=28
   hi Label ctermfg=130
   hi LineNr ctermfg=238
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi ModeMsg cterm=NONE ctermfg=65
   hi MoreMsg ctermfg=65
   hi NonText ctermfg=236
@@ -116,13 +111,11 @@ elseif &t_Co == 256
   hi Question ctermfg=65
   hi Repeat ctermfg=130
   hi Search ctermfg=209 ctermbg=88
-  hi SignColumn ctermfg=14 ctermbg=8
+  hi SignColumn ctermfg=11 ctermbg=8
   hi Special ctermfg=88
   hi SpecialChar ctermfg=88
   hi SpecialKey ctermfg=127
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi Statement ctermfg=130
   hi StatusLine cterm=NONE ctermfg=208 ctermbg=236
   hi StatusLineNC cterm=NONE ctermfg=94 ctermbg=234
   hi StorageClass ctermfg=28
@@ -135,22 +128,21 @@ elseif &t_Co == 256
   hi Todo cterm=underline ctermfg=208 ctermbg=NONE
   hi Type ctermfg=28
   hi Typedef ctermfg=28
-  hi Underlined ctermfg=12
+  hi Underlined ctermfg=9
   hi VertSplit cterm=NONE ctermfg=240 ctermbg=234
-  hi Visual ctermfg=231 ctermbg=60
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=231 ctermbg=60
+  hi WarningMsg ctermfg=12
 elseif &t_Co == 88
   hi Normal ctermfg=84
   hi Boolean ctermfg=50
-  hi ColorColumn ctermbg=48
+  hi ColorColumn ctermbg=19
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=52
   hi Constant ctermfg=50
   hi Cursor ctermfg=52
   hi CursorColumn ctermbg=80
   hi CursorLine ctermbg=81
-  hi CursorLineNr ctermfg=76
+  hi CursorLineNr ctermfg=31
   hi Define ctermfg=20
   hi DiffAdd ctermbg=20
   hi DiffChange ctermbg=NONE
@@ -168,7 +160,7 @@ elseif &t_Co == 88
   hi Include ctermfg=20
   hi Label ctermfg=52
   hi LineNr ctermfg=80
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=56
   hi ModeMsg cterm=NONE ctermfg=81
   hi MoreMsg ctermfg=81
   hi NonText ctermfg=80
@@ -182,13 +174,11 @@ elseif &t_Co == 88
   hi Question ctermfg=81
   hi Repeat ctermfg=52
   hi Search ctermfg=69 ctermbg=32
-  hi SignColumn ctermfg=31 ctermbg=81
+  hi SignColumn ctermfg=76 ctermbg=81
   hi Special ctermfg=32
   hi SpecialChar ctermfg=32
   hi SpecialKey ctermfg=50
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
+  hi Statement ctermfg=52
   hi StatusLine cterm=NONE ctermfg=68 ctermbg=80
   hi StatusLineNC cterm=NONE ctermfg=36 ctermbg=80
   hi StorageClass ctermfg=20
@@ -201,22 +191,21 @@ elseif &t_Co == 88
   hi Todo cterm=underline ctermfg=68 ctermbg=NONE
   hi Type ctermfg=20
   hi Typedef ctermfg=20
-  hi Underlined ctermfg=39
+  hi Underlined ctermfg=9
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=80
-  hi Visual ctermfg=79 ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
+  hi WarningMsg ctermfg=39
 elseif &t_Co == 16
   hi Normal ctermfg=8
   hi Boolean ctermfg=5
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
   hi Constant ctermfg=5
   hi Cursor ctermfg=3
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=11
+  hi CursorLineNr ctermfg=14
   hi Define ctermfg=2
   hi DiffAdd ctermbg=2
   hi DiffChange ctermbg=NONE
@@ -234,7 +223,7 @@ elseif &t_Co == 16
   hi Include ctermfg=2
   hi Label ctermfg=3
   hi LineNr ctermfg=2
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi ModeMsg cterm=NONE ctermfg=3
   hi MoreMsg ctermfg=3
   hi NonText ctermfg=0
@@ -248,13 +237,11 @@ elseif &t_Co == 16
   hi Question ctermfg=3
   hi Repeat ctermfg=3
   hi Search ctermfg=8 ctermbg=1
-  hi SignColumn ctermfg=14 ctermbg=2
+  hi SignColumn ctermfg=11 ctermbg=2
   hi Special ctermfg=1
   hi SpecialChar ctermfg=1
   hi SpecialKey ctermfg=5
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi Statement ctermfg=3
   hi StatusLine cterm=NONE ctermfg=3 ctermbg=0
   hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=0
   hi StorageClass ctermfg=2
@@ -267,22 +254,21 @@ elseif &t_Co == 16
   hi Todo cterm=underline ctermfg=3 ctermbg=NONE
   hi Type ctermfg=2
   hi Typedef ctermfg=2
-  hi Underlined ctermfg=12
+  hi Underlined ctermfg=9
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=0
-  hi Visual ctermfg=15 ctermbg=5
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=15 ctermbg=5
+  hi WarningMsg ctermfg=12
 else " 8 colors
   hi Normal ctermfg=7
   hi Boolean ctermfg=5
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
   hi Constant ctermfg=5
   hi Cursor ctermfg=3
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=2
   hi DiffAdd ctermbg=2
   hi DiffChange ctermbg=NONE
@@ -300,7 +286,7 @@ else " 8 colors
   hi Include ctermfg=2
   hi Label ctermfg=3
   hi LineNr ctermfg=2
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi ModeMsg cterm=NONE ctermfg=3
   hi MoreMsg ctermfg=3
   hi NonText ctermfg=0
@@ -314,13 +300,11 @@ else " 8 colors
   hi Question ctermfg=3
   hi Repeat ctermfg=3
   hi Search ctermfg=3 ctermbg=1
-  hi SignColumn ctermfg=6 ctermbg=2
+  hi SignColumn ctermfg=3 ctermbg=2
   hi Special ctermfg=1
   hi SpecialChar ctermfg=1
   hi SpecialKey ctermfg=5
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
+  hi Statement ctermfg=3
   hi StatusLine cterm=NONE ctermfg=3 ctermbg=0
   hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=0
   hi StorageClass ctermfg=2
@@ -333,10 +317,10 @@ else " 8 colors
   hi Todo cterm=underline ctermfg=3 ctermbg=NONE
   hi Type ctermfg=2
   hi Typedef ctermfg=2
-  hi Underlined ctermfg=5
+  hi Underlined ctermfg=1
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=5
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermfg=7 ctermbg=5
+  hi WarningMsg ctermfg=5
 endif
 
 

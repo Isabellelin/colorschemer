@@ -4,7 +4,7 @@
 " Name: leglight2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:32
+" Date: 2012-09-29 13:37:40
 "----------------------------------------------------------
 
 set background=light
@@ -168,7 +168,7 @@ elseif &t_Co == 256
   hi VertSplit cterm=NONE ctermfg=24 ctermbg=231
   hi VimCommentTitle ctermfg=102 ctermbg=231
   hi VimError ctermfg=231 ctermbg=9
-  hi Visual ctermfg=21 ctermbg=231
+  hi Visual cterm=NONE ctermfg=21 ctermbg=231
   hi WarningMsg ctermfg=196 ctermbg=231
   hi WildMenu ctermfg=16 ctermbg=231
   hi cursorim ctermfg=18 ctermbg=252
@@ -250,7 +250,7 @@ elseif &t_Co == 88
   hi VertSplit cterm=NONE ctermfg=21 ctermbg=79
   hi VimCommentTitle ctermfg=83 ctermbg=79
   hi VimError ctermfg=79 ctermbg=9
-  hi Visual ctermfg=19 ctermbg=79
+  hi Visual cterm=NONE ctermfg=19 ctermbg=79
   hi WarningMsg ctermfg=9 ctermbg=79
   hi WildMenu ctermfg=16 ctermbg=79
   hi cursorim ctermfg=17 ctermbg=86
@@ -332,7 +332,7 @@ elseif &t_Co == 16
   hi VertSplit cterm=NONE ctermfg=6 ctermbg=15
   hi VimCommentTitle ctermfg=8 ctermbg=15
   hi VimError ctermfg=15 ctermbg=9
-  hi Visual ctermfg=4 ctermbg=15
+  hi Visual cterm=NONE ctermfg=4 ctermbg=15
   hi WarningMsg ctermfg=9 ctermbg=15
   hi WildMenu ctermfg=0 ctermbg=15
   hi cursorim ctermfg=4 ctermbg=7
@@ -414,7 +414,7 @@ else " 8 colors
   hi VertSplit cterm=NONE ctermfg=6 ctermbg=7
   hi VimCommentTitle ctermfg=6 ctermbg=7
   hi VimError ctermfg=7 ctermbg=1
-  hi Visual ctermfg=4 ctermbg=7
+  hi Visual cterm=NONE ctermfg=4 ctermbg=7
   hi WarningMsg ctermfg=1 ctermbg=7
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=4 ctermbg=7

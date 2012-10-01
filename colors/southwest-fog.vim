@@ -4,7 +4,7 @@
 " Name: southwest-fog
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:02
+" Date: 2012-09-29 13:44:58
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#acb9c7 guibg=#26292e
   hi Comment gui=italic guifg=#5a6c60 guibg=bg
   hi Constant guifg=#b1c7ad
-  hi Cursor guifg=bg guibg=#73b87f
+  hi Cursor guibg=#73b87f
   hi CursorColumn guibg=#30333a
   hi CursorLine guibg=#30333a
   hi DiffAdd guifg=bg guibg=#70869d
@@ -66,7 +66,7 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=146 ctermbg=235
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=72
+  hi Cursor ctermbg=72
   hi CursorLine ctermbg=236
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
@@ -87,7 +87,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=233 ctermbg=145
   hi Title ctermbg=bg
   hi VertSplit ctermfg=234 ctermbg=234
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=8
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=181
   hi markdownUrl ctermfg=66 ctermbg=bg
@@ -96,7 +96,7 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=80
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=41
+  hi Cursor ctermbg=41
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
@@ -117,7 +117,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=16 ctermbg=85
   hi Title ctermbg=bg
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=81
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=85
   hi markdownUrl ctermfg=83 ctermbg=bg
@@ -126,7 +126,7 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=10
+  hi Cursor ctermbg=10
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
@@ -147,7 +147,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=0 ctermbg=8
   hi Title ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=2
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=7
   hi markdownUrl ctermfg=8 ctermbg=bg
@@ -156,7 +156,7 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=7
+  hi Cursor ctermbg=7
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=bg
   hi DiffChange ctermfg=bg
@@ -177,7 +177,7 @@ else " 8 colors
   hi TabLineSel ctermfg=0 ctermbg=7
   hi Title ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=bg
+  hi Visual cterm=NONE ctermfg=bg ctermbg=2
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=7
   hi markdownUrl ctermfg=6 ctermbg=bg
@@ -185,7 +185,7 @@ else " 8 colors
   hi treeFlag ctermfg=6 ctermbg=bg
 endif
 
-hi! link erubyDelimiter PreProc
+hi! link eRubyDelimiter PreProc
 hi! link hamlAttributes htmlArg
 hi! link hamlClassChar hamlClass
 hi! link hamlIdChar hamlId
@@ -197,8 +197,8 @@ hi! link htmlEndTag Statement
 hi! link htmlTag Statement
 hi! link htmlTagName Statement
 hi! link javaScriptFuncName Function
-hi! link javaScriptFunction Statement
 hi! link javaScriptLabel PreProc
+hi! link javascriptFunction Statement
 hi! link makeCommands Statement
 hi! link markdownCode Statement
 hi! link markdownCodeBlock Statement

@@ -4,10 +4,10 @@
 " Name: twilight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:30
+" Date: 2012-09-29 13:46:51
 "----------------------------------------------------------
 
-set background=light
+set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -16,412 +16,384 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
-  hi Normal guifg=#ffffff
-  hi Assignment guifg=#ff00ff
-  hi BuiltinFunc guifg=#ff00ff
-  hi BuiltinObj guifg=#00ffff
-  hi CalOperator guifg=#ffff00
-  hi ColorColumn guibg=DarkRed
-  hi Comment guifg=#80a0ff
-  hi Constant guifg=#ffa0a0
-  hi CursorColumn guibg=Grey40
-  hi CursorLine guibg=Grey40
-  hi CursorLineNr guifg=Yellow
-  hi DbgBreakPt guibg=#cd00cd
-  hi DbgCurrent guifg=#ffffff guibg=#0000ee
-  hi Decorator guifg=#00ff00
-  hi Definition guifg=#ffff00
-  hi Delimiter guifg=#e5e5e5
-  hi DiffAdd guifg=#ffffff guibg=DarkBlue
-  hi DiffChange guifg=#ffffff guibg=DarkMagenta
-  hi DiffDelete gui=NONE guibg=DarkCyan
-  hi DiffText gui=reverse guifg=#ffff00
-  hi Directory guifg=Cyan
-  hi DottedName guifg=#00ff00
-  hi Entity guifg=#ffff00
-  hi FoldColumn guifg=Cyan
-  hi Folded gui=italic guifg=Cyan guibg=DarkGrey
-  hi Function guifg=#ffff00
-  hi Identifier guifg=#40ffff
-  hi Import guifg=#cdcd00
-  hi LineNr guifg=Yellow
-  hi MatchParen gui=bold guibg=DarkCyan
-  hi NonText gui=NONE
-  hi Number guifg=#ff0000
-  hi Operator guifg=#00ffff
-  hi ParamName guifg=#5c5cff
-  hi Pmenu guifg=#ffffff guibg=Magenta
-  hi PmenuSel guibg=DarkGrey
-  hi PmenuThumb guibg=White
-  hi PreProc guifg=#ff80ff
-  hi PreciseJumpTarget guifg=#ffffff guibg=#00ff00
-  hi Question gui=NONE guifg=Green
-  hi Search gui=underline guifg=Black
-  hi SignColumn guifg=Cyan
-  hi Special guifg=Orange
-  hi SpecialKey guifg=Cyan
-  hi SpellBad gui=underline guibg=#cd0000
-  hi SpellCap gui=underline guibg=#5c5cff
-  hi SpellLocal gui=underline guibg=#00ff00
-  hi SpellRare gui=underline guibg=#cd00cd
-  hi Statement gui=NONE guifg=#ffff60
-  hi StatusLine gui=italic guifg=#000000 guibg=#ffffff
-  hi StatusLineNC gui=italic guifg=#ffffff guibg=#000000
-  hi StorageClass guifg=#ff0000
-  hi String guifg=#00ff00
-  hi StringDelimiter guifg=#00cd00
-  hi Structure guifg=#00ffff
-  hi Superclass guifg=#ff00ff
-  hi TabLine gui=italic guifg=NONE guibg=DarkGrey
-  hi TabLineFill gui=NONE guibg=#000000
-  hi TabLineSel gui=bold,italic guifg=#000000 guibg=#ffffff
-  hi Todo gui=bold
-  hi Type gui=NONE guifg=#60ff60
-  hi Underlined guifg=#80a0ff
-  hi VertSplit gui=italic guifg=#000000 guibg=#000000
-  hi Visual guibg=DarkGrey
-  hi rubyClass guifg=#0000ee
-  hi rubyControl guifg=#5c5cff
-  hi rubyIdentifier guifg=#00ffff
-  hi rubyInstanceVariable guifg=#00ffff
-  hi rubyPredefinedIdentifier guifg=#ff0000
-  hi rubyRegexp guifg=#cd00cd
-  hi rubyRegexpDelimiter guifg=#ff00ff
-  hi rubyRegexpSpecial guifg=#ff00ff
-  hi rubySymbol guifg=#5c5cff
+  hi Normal guifg=#e8e8d3 guibg=#151515
+  hi Assignment guifg=#ffaf5f
+  hi ColorColumn guibg=#000000
+  hi Comment guifg=#5f5f5f
+  hi Constant guifg=#cf6a4c
+  hi Cursor guifg=NONE guibg=#b0d0f0
+  hi CursorColumn guibg=#1c1c1c
+  hi CursorLine guibg=#1c1c1c
+  hi Decorator guifg=#57d700
+  hi Definition guifg=#f8ed97
+  hi Delimiter guifg=#668799
+  hi DiffAdd guifg=#D2EBBE guibg=#437019
+  hi DiffChange guibg=#2B5B77
+  hi DiffDelete gui=NONE guifg=#40000A guibg=#700009
+  hi DiffText gui=reverse guifg=#8fbfdc guibg=#000000
+  hi Directory guifg=#dad085
+  hi Entity guifg=#ffb964
+  hi ErrorMsg guifg=NONE guibg=#902020
+  hi FoldColumn guifg=#535D66 guibg=#1f1f1f
+  hi Folded gui=italic guifg=#a0a8b0 guibg=#384048
+  hi Function guifg=#ffb964
+  hi Identifier guifg=#c6b6ee
+  hi Import guifg=#cda869
+  hi LineNr guifg=#4e4e4e guibg=#262626
+  hi MatchParen gui=bold guifg=#ffffff guibg=#80a090
+  hi NonText gui=NONE guifg=#606060 guibg=#151515
+  hi Number guifg=#ca6f4c
+  hi Operator guifg=#afd7ff
+  hi Pmenu guifg=#ffffff guibg=#606060
+  hi PmenuSel guifg=#101010 guibg=#eeeeee
+  hi PreProc guifg=#8fbfdc
+  hi Question gui=NONE guifg=#65C254
+  hi Search gui=underline guifg=#f0a0c0 guibg=#302028
+  hi SignColumn guifg=#777777 guibg=#333333
+  hi Special guifg=#799d6a
+  hi SpecialKey guifg=#444444 guibg=#1c1c1c
+  hi SpellBad gui=underline guibg=#902020
+  hi SpellCap gui=underline guibg=#0000df
+  hi SpellLocal gui=underline guibg=#2D7067
+  hi SpellRare gui=underline guibg=#540063
+  hi Statement gui=NONE guifg=#87afd7
+  hi StatusLine gui=italic guifg=#000000 guibg=#dddddd
+  hi StatusLineNC gui=italic guifg=#ffffff guibg=#403c41
+  hi StorageClass guifg=#c59f6f
+  hi String guifg=#99ad6a
+  hi Structure guifg=#8fbfdc
+  hi TabLine gui=italic guifg=#000000 guibg=#b0b8c0
+  hi TabLineFill gui=NONE guifg=#9098a0
+  hi TabLineSel gui=bold,italic guifg=#000000 guibg=#f0f0f0
+  hi Title guifg=#70b950
+  hi Todo gui=bold guifg=#808080 guibg=NONE
+  hi Type gui=NONE guifg=#ffb964
+  hi VertSplit gui=italic guifg=#777777 guibg=#403c41
+  hi Visual guibg=#404040
+  hi WildMenu guifg=#f0a0c0 guibg=#302028
+  hi builtinFunc guifg=#dad085
+  hi builtinObj guifg=#9b859d
+  hi calOperator guifg=#af5f00
+  hi dbgBreakPt guibg=#4F0037
+  hi dbgCurrent guifg=#DEEBFE guibg=#345FA8
+  hi dottedName guifg=#57d700
+  hi paramName guifg=#5f87d7
+  hi preciseJumpTarget guifg=#B9ED67 guibg=#405026
+  hi rubyClass guifg=#447799
+  hi rubyControl guifg=#7597c6
+  hi rubyIdentifier guifg=#c6b6fe
+  hi rubyInstanceVariable guifg=#c6b6fe
+  hi rubyPredefinedIdentifier guifg=#de5577
+  hi rubyRegexp guifg=#dd0093
+  hi rubyRegexpDelimiter guifg=#540063
+  hi rubyRegexpSpecial guifg=#a40073
+  hi rubySymbol guifg=#7697d6
+  hi stringDelimiter guifg=#556633
+  hi superclass guifg=#9b5c2e
 elseif &t_Co == 256
-  hi Normal ctermfg=15
-  hi Assignment ctermfg=13
-  hi BuiltinFunc ctermfg=13
-  hi BuiltinObj ctermfg=14
-  hi CalOperator ctermfg=11
-  hi ColorColumn ctermbg=0
-  hi Comment ctermfg=8
-  hi Conceal ctermbg=8
-  hi Constant ctermfg=9
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=11
-  hi DbgBreakPt ctermbg=5
-  hi DbgCurrent ctermfg=15 ctermbg=4
-  hi Decorator ctermfg=10
-  hi Definition ctermfg=11
-  hi Delimiter ctermfg=7
-  hi DiffAdd ctermfg=15 ctermbg=2
-  hi DiffChange ctermfg=15 ctermbg=4
-  hi DiffDelete ctermfg=1 ctermbg=1
-  hi DiffText cterm=reverse ctermfg=11 ctermbg=NONE
-  hi Directory ctermfg=11
-  hi DottedName ctermfg=10
-  hi Entity ctermfg=11
-  hi ErrorMsg ctermfg=NONE
-  hi FoldColumn ctermfg=NONE ctermbg=0
-  hi Folded ctermfg=0 ctermbg=NONE
-  hi Function ctermfg=11
-  hi Identifier ctermfg=14
-  hi Ignore ctermfg=0
-  hi Import ctermfg=3
-  hi LineNr ctermfg=8
-  hi MatchParen cterm=bold ctermbg=6
-  hi MoreMsg ctermfg=10
-  hi NonText ctermfg=0
-  hi Number ctermfg=9
-  hi Operator ctermfg=14
-  hi ParamName ctermfg=12
-  hi Pmenu ctermfg=15 ctermbg=0
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermbg=15
-  hi PmenuThumb ctermbg=15
-  hi PreProc ctermfg=12
-  hi PreciseJumpTarget ctermfg=15 ctermbg=10
-  hi Question ctermfg=10
-  hi Search cterm=underline ctermfg=13 ctermbg=NONE
-  hi SignColumn ctermfg=NONE ctermbg=0
-  hi Special ctermfg=10
-  hi SpecialKey ctermfg=0
-  hi SpellBad cterm=underline ctermbg=1
-  hi SpellCap cterm=underline ctermbg=12
-  hi SpellLocal cterm=underline ctermbg=10
-  hi SpellRare cterm=underline ctermbg=5
-  hi Statement ctermfg=4
-  hi StatusLine cterm=NONE ctermfg=0 ctermbg=15
-  hi StatusLineNC cterm=NONE ctermfg=15 ctermbg=0
-  hi StorageClass ctermfg=9
-  hi String ctermfg=10
-  hi StringDelimiter ctermfg=2
-  hi Structure ctermfg=14
-  hi Superclass ctermfg=13
-  hi TabLine cterm=NONE ctermfg=NONE ctermbg=0
-  hi TabLineFill cterm=NONE ctermbg=0
-  hi TabLineSel ctermfg=0 ctermbg=15
-  hi Title cterm=bold ctermfg=10
-  hi Todo cterm=bold ctermfg=15 ctermbg=0
-  hi Type ctermfg=11
-  hi Underlined ctermfg=12
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=0
-  hi WarningMsg ctermfg=9
-  hi WildMenu ctermfg=13 ctermbg=NONE
-  hi rubyClass ctermfg=4
-  hi rubyControl ctermfg=12
-  hi rubyIdentifier ctermfg=14
-  hi rubyInstanceVariable ctermfg=14
-  hi rubyPredefinedIdentifier ctermfg=9
-  hi rubyRegexp ctermfg=5
-  hi rubyRegexpDelimiter ctermfg=13
-  hi rubyRegexpSpecial ctermfg=13
-  hi rubySymbol ctermfg=12
-elseif &t_Co == 88
-  hi Normal ctermfg=79
-  hi Assignment ctermfg=67
-  hi BuiltinFunc ctermfg=67
-  hi BuiltinObj ctermfg=31
-  hi CalOperator ctermfg=76
+  hi Normal ctermfg=78 ctermbg=233
+  hi Assignment ctermfg=73
   hi ColorColumn ctermbg=16
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
-  hi Constant ctermfg=9
-  hi CursorColumn ctermbg=16
-  hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=76
-  hi DbgBreakPt ctermbg=50
-  hi DbgCurrent ctermfg=79 ctermbg=19
-  hi Decorator ctermfg=28
-  hi Definition ctermfg=76
-  hi Delimiter ctermfg=87
-  hi DiffAdd ctermfg=79 ctermbg=24
-  hi DiffChange ctermfg=79 ctermbg=19
-  hi DiffDelete ctermfg=48 ctermbg=48
-  hi DiffText cterm=reverse ctermfg=76 ctermbg=NONE
-  hi Directory ctermfg=76
-  hi DottedName ctermfg=28
-  hi Entity ctermfg=76
-  hi ErrorMsg ctermfg=NONE
-  hi FoldColumn ctermfg=NONE ctermbg=16
-  hi Folded ctermfg=16 ctermbg=NONE
-  hi Function ctermfg=76
-  hi Identifier ctermfg=31
-  hi Ignore ctermfg=16
-  hi Import ctermfg=56
-  hi LineNr ctermfg=81
-  hi MatchParen cterm=bold ctermbg=6
-  hi MoreMsg ctermfg=28
-  hi NonText ctermfg=16
-  hi Number ctermfg=9
-  hi Operator ctermfg=31
-  hi ParamName ctermfg=39
-  hi Pmenu ctermfg=79 ctermbg=16
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermbg=79
-  hi PmenuThumb ctermbg=79
-  hi PreProc ctermfg=39
-  hi PreciseJumpTarget ctermfg=79 ctermbg=28
-  hi Question ctermfg=28
-  hi Search cterm=underline ctermfg=67 ctermbg=NONE
-  hi SignColumn ctermfg=NONE ctermbg=16
-  hi Special ctermfg=28
-  hi SpecialKey ctermfg=16
-  hi SpellBad cterm=underline ctermbg=48
-  hi SpellCap cterm=underline ctermbg=39
-  hi SpellLocal cterm=underline ctermbg=28
-  hi SpellRare cterm=underline ctermbg=50
-  hi Statement ctermfg=19
-  hi StatusLine cterm=NONE ctermfg=16 ctermbg=79
-  hi StatusLineNC cterm=NONE ctermfg=79 ctermbg=16
-  hi StorageClass ctermfg=9
-  hi String ctermfg=28
-  hi StringDelimiter ctermfg=24
-  hi Structure ctermfg=31
-  hi Superclass ctermfg=67
-  hi TabLine cterm=NONE ctermfg=NONE ctermbg=16
-  hi TabLineFill cterm=NONE ctermbg=16
-  hi TabLineSel ctermfg=16 ctermbg=79
-  hi Title cterm=bold ctermfg=28
-  hi Todo cterm=bold ctermfg=79 ctermbg=16
-  hi Type ctermfg=76
-  hi Underlined ctermfg=39
-  hi VertSplit cterm=NONE ctermfg=16 ctermbg=16
-  hi Visual ctermbg=16
-  hi WarningMsg ctermfg=9
-  hi WildMenu ctermfg=67 ctermbg=NONE
+  hi Constant ctermfg=53
+  hi Cursor ctermfg=NONE ctermbg=59
+  hi CursorColumn ctermbg=234
+  hi CursorLine cterm=NONE ctermbg=234
+  hi Decorator ctermfg=40
+  hi Definition ctermfg=77
+  hi Delimiter ctermfg=37
+  hi DiffAdd ctermfg=62 ctermbg=20
+  hi DiffChange ctermbg=21
+  hi DiffDelete ctermfg=16 ctermbg=32
+  hi DiffText cterm=reverse ctermfg=81 ctermbg=16
+  hi Directory ctermfg=57
+  hi Entity ctermfg=73
+  hi ErrorMsg ctermfg=NONE ctermbg=32
+  hi FoldColumn ctermfg=81 ctermbg=234
+  hi Folded ctermfg=38 ctermbg=236
+  hi Function ctermfg=73
+  hi Identifier cterm=NONE ctermfg=59
+  hi Import ctermfg=53
+  hi LineNr ctermfg=81 ctermbg=233
+  hi MatchParen cterm=bold ctermfg=79 ctermbg=37
+  hi NonText ctermfg=81 ctermbg=233
+  hi Number ctermfg=53
+  hi Operator ctermfg=59
+  hi Pmenu ctermfg=79 ctermbg=81
+  hi PmenuSel ctermfg=16 ctermbg=87
+  hi PreProc ctermfg=42
+  hi Question ctermfg=41
+  hi Search cterm=underline ctermfg=70 ctermbg=80
+  hi SignColumn ctermfg=82 ctermbg=236
+  hi Special ctermfg=37
+  hi SpecialKey ctermfg=80 ctermbg=234
+  hi SpellBad cterm=underline ctermbg=32
+  hi SpellCap cterm=underline ctermbg=18
+  hi SpellLocal cterm=underline ctermbg=21
+  hi SpellRare cterm=underline ctermbg=33
+  hi Statement ctermfg=42
+  hi StatusLine cterm=NONE ctermfg=16 ctermbg=87
+  hi StatusLineNC cterm=NONE ctermfg=79 ctermbg=235
+  hi StorageClass ctermfg=53
+  hi String ctermfg=41
+  hi Structure ctermfg=42
+  hi TabLine cterm=NONE ctermfg=16 ctermbg=85
+  hi TabLineFill cterm=NONE ctermfg=37
+  hi TabLineSel ctermfg=16 ctermbg=87
+  hi Title cterm=bold ctermfg=41
+  hi Todo cterm=bold ctermfg=83 ctermbg=NONE
+  hi Type ctermfg=73
+  hi VertSplit cterm=NONE ctermfg=82 ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
+  hi WildMenu ctermfg=70 ctermbg=80
+  hi builtinFunc ctermfg=57
+  hi builtinObj ctermfg=37
+  hi calOperator ctermfg=52
+  hi dbgBreakPt ctermbg=53
+  hi dbgCurrent ctermfg=63 ctermbg=21
+  hi dottedName ctermfg=40
+  hi paramName ctermfg=38
+  hi preciseJumpTarget ctermfg=61 ctermbg=20
+  hi rubyClass ctermfg=21
+  hi rubyControl ctermfg=38
+  hi rubyIdentifier ctermfg=59
+  hi rubyInstanceVariable ctermfg=59
+  hi rubyPredefinedIdentifier ctermfg=53
+  hi rubyRegexp ctermfg=49
+  hi rubyRegexpDelimiter ctermfg=33
+  hi rubyRegexpSpecial ctermfg=33
+  hi rubySymbol ctermfg=38
+  hi stringDelimiter ctermfg=36
+  hi superclass ctermfg=36
+elseif &t_Co == 88
+  hi Normal ctermfg=41 ctermbg=16
+  hi Assignment ctermfg=84
+  hi ColorColumn ctermbg=16
+  hi Comment ctermfg=43
+  hi Constant ctermfg=33
+  hi Cursor ctermfg=NONE ctermbg=81
+  hi CursorColumn ctermbg=80
+  hi CursorLine cterm=NONE ctermbg=80
+  hi Decorator ctermfg=24
+  hi Definition ctermfg=41
+  hi Delimiter ctermfg=6
+  hi DiffAdd ctermfg=38 ctermbg=4
+  hi DiffChange ctermbg=19
+  hi DiffDelete ctermfg=16 ctermbg=22
+  hi DiffText cterm=reverse ctermfg=43 ctermbg=16
+  hi Directory ctermfg=35
+  hi Entity ctermfg=84
+  hi ErrorMsg ctermfg=NONE ctermbg=22
+  hi FoldColumn ctermfg=43 ctermbg=80
+  hi Folded ctermfg=6 ctermbg=80
+  hi Function ctermfg=84
+  hi Identifier cterm=NONE ctermfg=81
+  hi Import ctermfg=33
+  hi LineNr ctermfg=43 ctermbg=16
+  hi MatchParen cterm=bold ctermfg=42 ctermbg=6
+  hi NonText ctermfg=43 ctermbg=16
+  hi Number ctermfg=33
+  hi Operator ctermfg=81
+  hi Pmenu ctermfg=42 ctermbg=43
+  hi PmenuSel ctermfg=16 ctermbg=47
+  hi PreProc ctermfg=25
+  hi Question ctermfg=25
+  hi Search cterm=underline ctermfg=40 ctermbg=42
+  hi SignColumn ctermfg=44 ctermbg=80
+  hi Special ctermfg=6
+  hi SpecialKey ctermfg=42 ctermbg=80
+  hi SpellBad cterm=underline ctermbg=22
+  hi SpellCap cterm=underline ctermbg=17
+  hi SpellLocal cterm=underline ctermbg=19
+  hi SpellRare cterm=underline ctermbg=23
+  hi Statement ctermfg=25
+  hi StatusLine cterm=NONE ctermfg=16 ctermbg=47
+  hi StatusLineNC cterm=NONE ctermfg=42 ctermbg=80
+  hi StorageClass ctermfg=33
+  hi String ctermfg=25
+  hi Structure ctermfg=25
+  hi TabLine cterm=NONE ctermfg=16 ctermbg=46
+  hi TabLineFill cterm=NONE ctermfg=6
+  hi TabLineSel ctermfg=16 ctermbg=47
+  hi Title cterm=bold ctermfg=25
+  hi Todo cterm=bold ctermfg=45 ctermbg=NONE
+  hi Type ctermfg=84
+  hi VertSplit cterm=NONE ctermfg=44 ctermbg=42
+  hi Visual cterm=NONE ctermbg=42
+  hi WildMenu ctermfg=40 ctermbg=42
+  hi builtinFunc ctermfg=35
+  hi builtinObj ctermfg=6
+  hi calOperator ctermfg=32
+  hi dbgBreakPt ctermbg=33
+  hi dbgCurrent ctermfg=39 ctermbg=19
+  hi dottedName ctermfg=24
+  hi paramName ctermfg=6
+  hi preciseJumpTarget ctermfg=81 ctermbg=4
   hi rubyClass ctermfg=19
-  hi rubyControl ctermfg=39
-  hi rubyIdentifier ctermfg=31
-  hi rubyInstanceVariable ctermfg=31
-  hi rubyPredefinedIdentifier ctermfg=9
-  hi rubyRegexp ctermfg=50
-  hi rubyRegexpDelimiter ctermfg=67
-  hi rubyRegexpSpecial ctermfg=67
-  hi rubySymbol ctermfg=39
+  hi rubyControl ctermfg=6
+  hi rubyIdentifier ctermfg=81
+  hi rubyInstanceVariable ctermfg=81
+  hi rubyPredefinedIdentifier ctermfg=33
+  hi rubyRegexp ctermfg=30
+  hi rubyRegexpDelimiter ctermfg=23
+  hi rubyRegexpSpecial ctermfg=23
+  hi rubySymbol ctermfg=6
+  hi stringDelimiter ctermfg=25
+  hi superclass ctermfg=25
 elseif &t_Co == 16
-  hi Normal ctermfg=15
-  hi Assignment ctermfg=13
-  hi BuiltinFunc ctermfg=13
-  hi BuiltinObj ctermfg=14
-  hi CalOperator ctermfg=11
+  hi Normal ctermfg=10 ctermbg=0
+  hi Assignment ctermfg=8
   hi ColorColumn ctermbg=0
-  hi Comment ctermfg=2
-  hi Conceal ctermbg=2
-  hi Constant ctermfg=9
+  hi Comment ctermfg=12
+  hi Constant ctermfg=5
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=11
-  hi DbgBreakPt ctermbg=13
-  hi DbgCurrent ctermfg=15 ctermbg=4
   hi Decorator ctermfg=2
-  hi Definition ctermfg=11
-  hi Delimiter ctermfg=11
-  hi DiffAdd ctermfg=15 ctermbg=2
-  hi DiffChange ctermfg=15 ctermbg=4
-  hi DiffDelete ctermfg=9 ctermbg=9
-  hi DiffText cterm=reverse ctermfg=11 ctermbg=NONE
-  hi Directory ctermfg=11
-  hi DottedName ctermfg=2
-  hi Entity ctermfg=11
-  hi ErrorMsg ctermfg=NONE
-  hi FoldColumn ctermfg=NONE ctermbg=0
-  hi Folded ctermfg=0 ctermbg=NONE
-  hi Function ctermfg=11
-  hi Identifier ctermfg=14
-  hi Ignore ctermfg=0
-  hi Import ctermfg=3
-  hi LineNr ctermfg=2
-  hi MatchParen cterm=bold ctermbg=6
-  hi MoreMsg ctermfg=2
-  hi NonText ctermfg=0
-  hi Number ctermfg=9
-  hi Operator ctermfg=14
-  hi ParamName ctermfg=12
-  hi Pmenu ctermfg=15 ctermbg=0
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermbg=15
-  hi PmenuThumb ctermbg=15
-  hi PreProc ctermfg=12
-  hi PreciseJumpTarget ctermfg=15 ctermbg=2
-  hi Question ctermfg=2
-  hi Search cterm=underline ctermfg=13 ctermbg=NONE
-  hi SignColumn ctermfg=NONE ctermbg=0
-  hi Special ctermfg=2
-  hi SpecialKey ctermfg=0
-  hi SpellBad cterm=underline ctermbg=9
-  hi SpellCap cterm=underline ctermbg=12
-  hi SpellLocal cterm=underline ctermbg=2
-  hi SpellRare cterm=underline ctermbg=13
-  hi Statement ctermfg=4
-  hi StatusLine cterm=NONE ctermfg=0 ctermbg=15
-  hi StatusLineNC cterm=NONE ctermfg=15 ctermbg=0
-  hi StorageClass ctermfg=9
-  hi String ctermfg=2
-  hi StringDelimiter ctermfg=2
-  hi Structure ctermfg=14
-  hi Superclass ctermfg=13
-  hi TabLine cterm=NONE ctermfg=NONE ctermbg=0
-  hi TabLineFill cterm=NONE ctermbg=0
-  hi TabLineSel ctermfg=0 ctermbg=15
-  hi Title cterm=bold ctermfg=2
-  hi Todo cterm=bold ctermfg=15 ctermbg=0
-  hi Type ctermfg=11
-  hi Underlined ctermfg=12
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=0
-  hi WarningMsg ctermfg=9
-  hi WildMenu ctermfg=13 ctermbg=NONE
+  hi Definition ctermfg=10
+  hi Delimiter ctermfg=6
+  hi DiffAdd ctermfg=8 ctermbg=4
+  hi DiffChange ctermbg=4
+  hi DiffDelete ctermfg=0 ctermbg=6
+  hi DiffText cterm=reverse ctermfg=12 ctermbg=0
+  hi Directory ctermfg=5
+  hi Entity ctermfg=8
+  hi ErrorMsg ctermfg=NONE ctermbg=6
+  hi FoldColumn ctermfg=12 ctermbg=0
+  hi Folded ctermfg=6 ctermbg=0
+  hi Function ctermfg=8
+  hi Identifier cterm=NONE ctermfg=3
+  hi Import ctermfg=5
+  hi LineNr ctermfg=12 ctermbg=0
+  hi MatchParen cterm=bold ctermfg=10 ctermbg=6
+  hi NonText ctermfg=12 ctermbg=0
+  hi Number ctermfg=5
+  hi Operator ctermfg=3
+  hi Pmenu ctermfg=10 ctermbg=12
+  hi PmenuSel ctermfg=0 ctermbg=14
+  hi PreProc ctermfg=6
+  hi Question ctermfg=6
+  hi Search cterm=underline ctermfg=3 ctermbg=12
+  hi SignColumn ctermfg=3 ctermbg=0
+  hi Special ctermfg=6
+  hi SpecialKey ctermfg=12 ctermbg=0
+  hi SpellBad cterm=underline ctermbg=6
+  hi SpellCap cterm=underline ctermbg=4
+  hi SpellLocal cterm=underline ctermbg=4
+  hi SpellRare cterm=underline ctermbg=6
+  hi Statement ctermfg=6
+  hi StatusLine cterm=NONE ctermfg=0 ctermbg=14
+  hi StatusLineNC cterm=NONE ctermfg=10 ctermbg=0
+  hi StorageClass ctermfg=5
+  hi String ctermfg=6
+  hi Structure ctermfg=6
+  hi TabLine cterm=NONE ctermfg=0 ctermbg=10
+  hi TabLineFill cterm=NONE ctermfg=6
+  hi TabLineSel ctermfg=0 ctermbg=14
+  hi Title cterm=bold ctermfg=6
+  hi Todo cterm=bold ctermfg=10 ctermbg=NONE
+  hi Type ctermfg=8
+  hi VertSplit cterm=NONE ctermfg=3 ctermbg=12
+  hi Visual cterm=NONE ctermbg=12
+  hi WildMenu ctermfg=3 ctermbg=12
+  hi builtinFunc ctermfg=5
+  hi builtinObj ctermfg=6
+  hi calOperator ctermfg=1
+  hi dbgBreakPt ctermbg=5
+  hi dbgCurrent ctermfg=12 ctermbg=4
+  hi dottedName ctermfg=2
+  hi paramName ctermfg=6
+  hi preciseJumpTarget ctermfg=8 ctermbg=4
   hi rubyClass ctermfg=4
-  hi rubyControl ctermfg=12
-  hi rubyIdentifier ctermfg=14
-  hi rubyInstanceVariable ctermfg=14
-  hi rubyPredefinedIdentifier ctermfg=9
-  hi rubyRegexp ctermfg=13
-  hi rubyRegexpDelimiter ctermfg=13
-  hi rubyRegexpSpecial ctermfg=13
-  hi rubySymbol ctermfg=12
+  hi rubyControl ctermfg=6
+  hi rubyIdentifier ctermfg=3
+  hi rubyInstanceVariable ctermfg=3
+  hi rubyPredefinedIdentifier ctermfg=5
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyRegexpSpecial ctermfg=6
+  hi rubySymbol ctermfg=6
+  hi stringDelimiter ctermfg=6
+  hi superclass ctermfg=6
 else " 8 colors
-  hi Normal ctermfg=7
-  hi Assignment ctermfg=5
-  hi BuiltinFunc ctermfg=5
-  hi BuiltinObj ctermfg=6
-  hi CalOperator ctermfg=3
+  hi Normal ctermfg=6 ctermbg=0
+  hi Assignment ctermfg=7
   hi ColorColumn ctermbg=0
-  hi Comment ctermfg=2
-  hi Conceal ctermbg=2
-  hi Constant ctermfg=1
+  hi Comment ctermfg=7
+  hi Constant ctermfg=5
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
-  hi DbgBreakPt ctermbg=5
-  hi DbgCurrent ctermfg=7 ctermbg=4
   hi Decorator ctermfg=2
   hi Definition ctermfg=3
-  hi Delimiter ctermfg=7
-  hi DiffAdd ctermfg=7 ctermbg=2
-  hi DiffChange ctermfg=7 ctermbg=4
-  hi DiffDelete ctermfg=1 ctermbg=1
-  hi DiffText cterm=reverse ctermfg=3 ctermbg=NONE
-  hi Directory ctermfg=3
-  hi DottedName ctermfg=2
-  hi Entity ctermfg=3
-  hi ErrorMsg ctermfg=NONE
-  hi FoldColumn ctermfg=NONE ctermbg=0
-  hi Folded ctermfg=0 ctermbg=NONE
-  hi Function ctermfg=3
-  hi Identifier ctermfg=6
-  hi Ignore ctermfg=0
-  hi Import ctermfg=3
-  hi LineNr ctermfg=2
-  hi MatchParen cterm=bold ctermbg=6
-  hi MoreMsg ctermfg=2
-  hi NonText ctermfg=0
-  hi Number ctermfg=1
-  hi Operator ctermfg=6
-  hi ParamName ctermfg=5
-  hi Pmenu ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermbg=7
-  hi PmenuThumb ctermbg=7
-  hi PreProc ctermfg=5
-  hi PreciseJumpTarget ctermfg=7 ctermbg=2
-  hi Question ctermfg=2
-  hi Search cterm=underline ctermfg=5 ctermbg=NONE
-  hi SignColumn ctermfg=NONE ctermbg=0
-  hi Special ctermfg=2
-  hi SpecialKey ctermfg=0
-  hi SpellBad cterm=underline ctermbg=1
-  hi SpellCap cterm=underline ctermbg=5
-  hi SpellLocal cterm=underline ctermbg=2
-  hi SpellRare cterm=underline ctermbg=5
-  hi Statement ctermfg=4
+  hi Delimiter ctermfg=6
+  hi DiffAdd ctermfg=5 ctermbg=4
+  hi DiffChange ctermbg=4
+  hi DiffDelete ctermfg=0 ctermbg=6
+  hi DiffText cterm=reverse ctermfg=7 ctermbg=0
+  hi Directory ctermfg=5
+  hi Entity ctermfg=7
+  hi ErrorMsg ctermfg=NONE ctermbg=6
+  hi FoldColumn ctermfg=7 ctermbg=0
+  hi Folded ctermfg=6 ctermbg=0
+  hi Function ctermfg=7
+  hi Identifier cterm=NONE ctermfg=3
+  hi Import ctermfg=5
+  hi LineNr ctermfg=7 ctermbg=0
+  hi MatchParen cterm=bold ctermfg=7 ctermbg=6
+  hi NonText ctermfg=7 ctermbg=0
+  hi Number ctermfg=5
+  hi Operator ctermfg=3
+  hi Pmenu ctermfg=7 ctermbg=7
+  hi PmenuSel ctermfg=0 ctermbg=7
+  hi PreProc ctermfg=6
+  hi Question ctermfg=6
+  hi Search cterm=underline ctermfg=3 ctermbg=7
+  hi SignColumn ctermfg=3 ctermbg=0
+  hi Special ctermfg=6
+  hi SpecialKey ctermfg=7 ctermbg=0
+  hi SpellBad cterm=underline ctermbg=6
+  hi SpellCap cterm=underline ctermbg=4
+  hi SpellLocal cterm=underline ctermbg=4
+  hi SpellRare cterm=underline ctermbg=6
+  hi Statement ctermfg=6
   hi StatusLine cterm=NONE ctermfg=0 ctermbg=7
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=0
-  hi StorageClass ctermfg=1
-  hi String ctermfg=2
-  hi StringDelimiter ctermfg=2
+  hi StorageClass ctermfg=5
+  hi String ctermfg=6
   hi Structure ctermfg=6
-  hi Superclass ctermfg=5
-  hi TabLine cterm=NONE ctermfg=NONE ctermbg=0
-  hi TabLineFill cterm=NONE ctermbg=0
+  hi TabLine cterm=NONE ctermfg=0 ctermbg=7
+  hi TabLineFill cterm=NONE ctermfg=6
   hi TabLineSel ctermfg=0 ctermbg=7
-  hi Title cterm=bold ctermfg=2
-  hi Todo cterm=bold ctermfg=7 ctermbg=0
-  hi Type ctermfg=3
-  hi Underlined ctermfg=5
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=0
-  hi WarningMsg ctermfg=1
-  hi WildMenu ctermfg=5 ctermbg=NONE
+  hi Title cterm=bold ctermfg=6
+  hi Todo cterm=bold ctermfg=3 ctermbg=NONE
+  hi Type ctermfg=7
+  hi VertSplit cterm=NONE ctermfg=3 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
+  hi WildMenu ctermfg=3 ctermbg=7
+  hi builtinFunc ctermfg=5
+  hi builtinObj ctermfg=6
+  hi calOperator ctermfg=1
+  hi dbgBreakPt ctermbg=5
+  hi dbgCurrent ctermfg=5 ctermbg=4
+  hi dottedName ctermfg=2
+  hi paramName ctermfg=6
+  hi preciseJumpTarget ctermfg=5 ctermbg=4
   hi rubyClass ctermfg=4
-  hi rubyControl ctermfg=5
-  hi rubyIdentifier ctermfg=6
-  hi rubyInstanceVariable ctermfg=6
-  hi rubyPredefinedIdentifier ctermfg=1
-  hi rubyRegexp ctermfg=5
-  hi rubyRegexpDelimiter ctermfg=5
-  hi rubyRegexpSpecial ctermfg=5
-  hi rubySymbol ctermfg=5
+  hi rubyControl ctermfg=6
+  hi rubyIdentifier ctermfg=3
+  hi rubyInstanceVariable ctermfg=3
+  hi rubyPredefinedIdentifier ctermfg=5
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyRegexpSpecial ctermfg=6
+  hi rubySymbol ctermfg=6
+  hi stringDelimiter ctermfg=6
+  hi superclass ctermfg=6
 endif
 
 hi! link Error ErrorMsg
 hi! link MoreMsg Special
-hi! link TagListFileName Directory
 hi! link cOperator Constant
 hi! link cocoaClass objcClass
 hi! link cocoaFunction Function
@@ -442,17 +414,17 @@ hi! link phpArrayPair Operator
 hi! link phpBoolean Constant
 hi! link phpFunctions Function
 hi! link phpNull Constant
-hi! link phpQuoteDouble StringDelimiter
-hi! link phpQuoteSingle StringDelimiter
-hi! link phpSuperglobal Identifier
+hi! link phpQuoteDouble stringDelimiter
+hi! link phpQuoteSingle stringDelimiter
+hi! link phpSuperGlobal Identifier
 hi! link pythonAssignment Assignment
-hi! link pythonBuiltinFunc BuiltinFunc
-hi! link pythonBuiltinObj BuiltinObj
-hi! link pythonCalOperator CalOperator
+hi! link pythonBuiltinFunc builtinFunc
+hi! link pythonBuiltinObj builtinObj
+hi! link pythonCalOperator calOperator
 hi! link pythonDecorator Decorator
-hi! link pythonDottedName DottedName
+hi! link pythonDottedName dottedName
 hi! link pythonPrecondit Import
-hi! link pythonSuperclass Superclass
+hi! link pythonSuperclass superclass
 hi! link rubyConstant Type
 hi! link rubyFunction Function
 hi! link rubyGlobalVariable rubyInstanceVariable
@@ -460,6 +432,7 @@ hi! link rubyInterpolationDelimiter Identifier
 hi! link rubyModule rubyClass
 hi! link rubySharpBang Comment
 hi! link rubyString String
-hi! link rubyStringDelimiter StringDelimiter
+hi! link rubyStringDelimiter stringDelimiter
+hi! link tagListFileName Directory
 
 hi clear objcStatement

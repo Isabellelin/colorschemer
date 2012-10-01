@@ -4,7 +4,7 @@
 " Name: MountainDew
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:25
+" Date: 2012-09-29 13:30:21
 "----------------------------------------------------------
 
 set background=dark
@@ -62,7 +62,7 @@ if has("gui_running")
   hi Type guifg=#E12E2A
   hi VertSplit gui=NONE guifg=#60FF60 guibg=#017550
   hi Visual guifg=#FFFFFF guibg=#FFA500
-  hi VisualNOS gui=bold,underline guifg=#201a30 guibg=#a3a5FF
+  hi VisualNOS guifg=#201a30 guibg=#a3a5FF
   hi WarningMsg guifg=#E12E2A
   hi WildMenu gui=bold guifg=#FFFF60 guibg=#2FB457
 elseif &t_Co == 256
@@ -85,7 +85,7 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=29 ctermbg=29
   hi TabLineSel ctermfg=226 ctermbg=9
   hi VertSplit ctermfg=83 ctermbg=29
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi VisualNOS ctermfg=234 ctermbg=147
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=80
@@ -107,7 +107,7 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=21 ctermbg=21
   hi TabLineSel ctermfg=76 ctermbg=9
   hi VertSplit ctermfg=45 ctermbg=21
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=39
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=2
@@ -129,7 +129,7 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=6 ctermbg=6
   hi TabLineSel ctermfg=11 ctermbg=9
   hi VertSplit ctermfg=10 ctermbg=6
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=12
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
@@ -151,7 +151,7 @@ else " 8 colors
   hi TabLineFill ctermfg=6 ctermbg=6
   hi TabLineSel ctermfg=3 ctermbg=1
   hi VertSplit ctermfg=7 ctermbg=6
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=7
 endif
 

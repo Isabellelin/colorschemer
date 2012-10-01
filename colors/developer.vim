@@ -4,7 +4,7 @@
 " Name: developer
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:44
+" Date: 2012-09-29 13:33:44
 "----------------------------------------------------------
 
 set background=light
@@ -63,7 +63,6 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Boolean ctermfg=2
   hi Character ctermfg=4
-  hi Comment ctermfg=1
   hi Conditional ctermfg=2
   hi Constant ctermfg=2
   hi Cursor ctermbg=214
@@ -72,7 +71,7 @@ elseif &t_Co == 256
   hi Delimiter ctermfg=2
   hi Directory ctermfg=2
   hi Error ctermfg=5 ctermbg=4
-  hi ErrorMsg ctermfg=5 ctermbg=4
+  hi ErrorMsg ctermfg=5
   hi Exception ctermfg=2
   hi Float ctermfg=2
   hi FoldColumn ctermbg=0
@@ -103,11 +102,10 @@ elseif &t_Co == 256
   hi Todo ctermfg=5 ctermbg=4
   hi Typedef ctermfg=2
   hi User1 cterm=bold
-  hi Visual ctermfg=5 ctermbg=3
+  hi Visual cterm=NONE ctermfg=5 ctermbg=3
 elseif &t_Co == 88
   hi Boolean ctermfg=24
   hi Character ctermfg=19
-  hi Comment ctermfg=48
   hi Conditional ctermfg=24
   hi Constant ctermfg=24
   hi Cursor ctermbg=68
@@ -116,7 +114,7 @@ elseif &t_Co == 88
   hi Delimiter ctermfg=24
   hi Directory ctermfg=24
   hi Error ctermfg=50 ctermbg=19
-  hi ErrorMsg ctermfg=50 ctermbg=19
+  hi ErrorMsg ctermfg=50
   hi Exception ctermfg=24
   hi Float ctermfg=24
   hi FoldColumn ctermbg=16
@@ -147,11 +145,10 @@ elseif &t_Co == 88
   hi Todo ctermfg=50 ctermbg=19
   hi Typedef ctermfg=24
   hi User1 cterm=bold
-  hi Visual ctermfg=50 ctermbg=56
+  hi Visual cterm=NONE ctermfg=50 ctermbg=56
 elseif &t_Co == 16
   hi Boolean ctermfg=2
   hi Character ctermfg=4
-  hi Comment ctermfg=9
   hi Conditional ctermfg=2
   hi Constant ctermfg=2
   hi Cursor ctermbg=3
@@ -160,7 +157,7 @@ elseif &t_Co == 16
   hi Delimiter ctermfg=2
   hi Directory ctermfg=2
   hi Error ctermfg=13 ctermbg=4
-  hi ErrorMsg ctermfg=13 ctermbg=4
+  hi ErrorMsg ctermfg=13
   hi Exception ctermfg=2
   hi Float ctermfg=2
   hi FoldColumn ctermbg=0
@@ -191,11 +188,10 @@ elseif &t_Co == 16
   hi Todo ctermfg=13 ctermbg=4
   hi Typedef ctermfg=2
   hi User1 cterm=bold
-  hi Visual ctermfg=13 ctermbg=3
+  hi Visual cterm=NONE ctermfg=13 ctermbg=3
 else " 8 colors
   hi Boolean ctermfg=2
   hi Character ctermfg=4
-  hi Comment ctermfg=1
   hi Conditional ctermfg=2
   hi Constant ctermfg=2
   hi Cursor ctermbg=3
@@ -204,7 +200,7 @@ else " 8 colors
   hi Delimiter ctermfg=2
   hi Directory ctermfg=2
   hi Error ctermfg=5 ctermbg=4
-  hi ErrorMsg ctermfg=5 ctermbg=4
+  hi ErrorMsg ctermfg=5
   hi Exception ctermfg=2
   hi Float ctermfg=2
   hi FoldColumn ctermbg=0
@@ -235,7 +231,7 @@ else " 8 colors
   hi Todo ctermfg=5 ctermbg=4
   hi Typedef ctermfg=2
   hi User1 cterm=bold
-  hi Visual ctermfg=5 ctermbg=3
+  hi Visual cterm=NONE ctermfg=5 ctermbg=3
 endif
 
 

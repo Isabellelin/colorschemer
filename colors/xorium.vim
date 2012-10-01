@@ -4,7 +4,7 @@
 " Name: xorium
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:03
+" Date: 2012-09-29 13:48:48
 "----------------------------------------------------------
 
 set background=dark
@@ -121,13 +121,14 @@ elseif &t_Co == 256
   hi Statement ctermfg=227
   hi StatusLine cterm=bold ctermfg=15 ctermbg=239
   hi StatusLineNC cterm=NONE ctermfg=249 ctermbg=237
-  hi TabLine cterm=NONE ctermfg=252
+  hi TabLine cterm=NONE ctermfg=252 ctermbg=242
   hi TabLineFill cterm=NONE ctermfg=252 ctermbg=237
+  hi Title ctermfg=225
   hi Todo ctermfg=11 ctermbg=233
   hi Type ctermfg=104
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=237 ctermbg=237
-  hi Visual ctermfg=234 ctermbg=220
+  hi Visual cterm=NONE ctermfg=234 ctermbg=220
   hi VisualNOS ctermfg=234 ctermbg=200
   hi WildMenu cterm=bold ctermbg=150
   hi diffAdded ctermfg=150
@@ -187,13 +188,14 @@ elseif &t_Co == 88
   hi Statement ctermfg=77
   hi StatusLine cterm=bold ctermfg=79 ctermbg=81
   hi StatusLineNC cterm=NONE ctermfg=85 ctermbg=80
-  hi TabLine cterm=NONE ctermfg=86
+  hi TabLine cterm=NONE ctermfg=86 ctermbg=82
   hi TabLineFill cterm=NONE ctermfg=86 ctermbg=80
+  hi Title ctermfg=75
   hi Todo ctermfg=76 ctermbg=16
   hi Type ctermfg=38
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=80 ctermbg=72
+  hi Visual cterm=NONE ctermfg=80 ctermbg=72
   hi VisualNOS ctermfg=80 ctermbg=66
   hi WildMenu cterm=bold ctermbg=57
   hi diffAdded ctermfg=57
@@ -253,13 +255,14 @@ elseif &t_Co == 16
   hi Statement ctermfg=11
   hi StatusLine cterm=bold ctermfg=15 ctermbg=2
   hi StatusLineNC cterm=NONE ctermfg=8 ctermbg=2
-  hi TabLine cterm=NONE ctermfg=7
+  hi TabLine cterm=NONE ctermfg=7 ctermbg=3
   hi TabLineFill cterm=NONE ctermfg=7 ctermbg=2
+  hi Title ctermfg=15
   hi Todo ctermfg=11 ctermbg=0
   hi Type ctermfg=8
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=0 ctermbg=3
+  hi Visual cterm=NONE ctermfg=0 ctermbg=3
   hi VisualNOS ctermfg=0 ctermbg=13
   hi WildMenu cterm=bold ctermbg=10
   hi diffAdded ctermfg=10
@@ -319,13 +322,14 @@ else " 8 colors
   hi Statement ctermfg=7
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=2
-  hi TabLine cterm=NONE ctermfg=7
+  hi TabLine cterm=NONE ctermfg=7 ctermbg=3
   hi TabLineFill cterm=NONE ctermfg=7 ctermbg=2
+  hi Title ctermfg=7
   hi Todo ctermfg=3 ctermbg=0
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=0 ctermbg=3
+  hi Visual cterm=NONE ctermfg=0 ctermbg=3
   hi VisualNOS ctermfg=0 ctermbg=5
   hi WildMenu cterm=bold ctermbg=7
   hi diffAdded ctermfg=7

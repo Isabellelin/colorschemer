@@ -4,7 +4,7 @@
 " Name: kkruby
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:22
+" Date: 2012-09-29 13:37:26
 "----------------------------------------------------------
 
 set background=dark
@@ -90,13 +90,13 @@ if has("gui_running")
   hi htmlTagName guifg=#53ccc2
   hi javaScriptBlocks guifg=#A58B61
   hi javaScriptBrackets guifg=#53ccc2
-  hi javaScriptConditional guifg=#E8E297
-  hi javaScriptFunction guifg=#A082BD
   hi javaScriptLabel guifg=#e77481
-  hi javaScriptMember guifg=#CAaC81
   hi javaScriptNumber guifg=#CAaC81
-  hi javaScriptParens guifg=#53ccc2
-  hi javaScriptRepeat guifg=#A082BD
+  hi javascriptConditional guifg=#E8E297
+  hi javascriptFunction guifg=#A082BD
+  hi javascriptMember guifg=#CAaC81
+  hi javascriptParens guifg=#53ccc2
+  hi javascriptRepeat guifg=#A082BD
   hi phpConditional guifg=#A082BD
   hi phpKeyword guifg=#A082BD
   hi phpMemberSelector guifg=#b8b1d3
@@ -129,17 +129,17 @@ if has("gui_running")
   hi zshCommands guifg=#e77481
   hi zshKeyword guifg=#da6627
 elseif &t_Co == 256
-  hi Normal ctermfg=146 ctermbg=234
+  hi Normal ctermfg=146 ctermbg=233
   hi ColorColumn ctermbg=102
   hi Comment ctermfg=32
   hi Conditional ctermfg=146
   hi Constant ctermfg=180
   hi Cursor ctermbg=102
   hi CursorColumn ctermbg=102
-  hi CursorLine cterm=NONE ctermbg=235
+  hi CursorLine cterm=NONE ctermbg=16
   hi Define ctermfg=139
   hi DiffAdd ctermbg=22
-  hi DiffChange ctermbg=94
+  hi DiffChange ctermbg=52
   hi DiffDelete ctermfg=17 ctermbg=52
   hi DiffText cterm=NONE ctermbg=17
   hi Directory ctermfg=166
@@ -150,31 +150,31 @@ elseif &t_Co == 256
   hi Include ctermfg=166
   hi LineNr ctermfg=102
   hi MatchParen ctermbg=196
-  hi ModeMsg ctermfg=10
-  hi MoreMsg ctermfg=10
+  hi ModeMsg ctermfg=115
+  hi MoreMsg ctermfg=115
   hi NonText ctermfg=196
   hi Operator ctermfg=79
   hi Pmenu ctermfg=146 ctermbg=196
   hi PmenuSel cterm=reverse ctermfg=146 ctermbg=196
   hi PreProc ctermfg=139
-  hi Question ctermfg=10
+  hi Question ctermfg=115
   hi Repeat ctermfg=146
   hi Search ctermbg=186
   hi Special ctermfg=167
   hi SpecialKey ctermfg=196
   hi Statement ctermfg=146
-  hi StatusLine cterm=reverse ctermfg=239 ctermbg=146
-  hi StatusLineNC ctermfg=234 ctermbg=32
+  hi StatusLine cterm=reverse ctermfg=23 ctermbg=146
+  hi StatusLineNC ctermfg=16 ctermbg=32
   hi String ctermfg=107
   hi Structure ctermfg=139
   hi TabLine ctermfg=146 ctermbg=233
   hi TabLineFill cterm=underline ctermfg=146 ctermbg=233
-  hi TabLineSel cterm=NONE ctermfg=146 ctermbg=239
+  hi TabLineSel cterm=NONE ctermfg=146 ctermbg=60
   hi Title ctermfg=32
   hi Todo ctermfg=32 ctermbg=233
   hi Type ctermfg=166
   hi VertSplit cterm=NONE ctermfg=240 ctermbg=240
-  hi Visual ctermbg=236
+  hi Visual cterm=NONE ctermbg=196
   hi WarningMsg ctermfg=174
   hi cConditional ctermfg=139
   hi cRepeat ctermfg=139
@@ -191,9 +191,9 @@ elseif &t_Co == 256
   hi cssIdentifier ctermfg=174
   hi cssPseudoClass ctermfg=139
   hi cssTagName ctermfg=186
-  hi diffAdded ctermfg=10
+  hi diffAdded ctermfg=115
   hi diffRemoved ctermfg=174
-  hi gitcommitSelectedFile ctermfg=10
+  hi gitcommitSelectedFile ctermfg=115
   hi gitcommitUntrackedFile ctermfg=174
   hi hamlAttributesDelimiter ctermfg=79
   hi hamlTag ctermfg=180
@@ -203,13 +203,13 @@ elseif &t_Co == 256
   hi htmlTagName ctermfg=79
   hi javaScriptBlocks ctermfg=137
   hi javaScriptBrackets ctermfg=79
-  hi javaScriptConditional ctermfg=186
-  hi javaScriptFunction ctermfg=139
   hi javaScriptLabel ctermfg=174
-  hi javaScriptMember ctermfg=180
   hi javaScriptNumber ctermfg=180
-  hi javaScriptParens ctermfg=79
-  hi javaScriptRepeat ctermfg=139
+  hi javascriptConditional ctermfg=186
+  hi javascriptFunction ctermfg=139
+  hi javascriptMember ctermfg=180
+  hi javascriptParens ctermfg=79
+  hi javascriptRepeat ctermfg=139
   hi phpConditional ctermfg=139
   hi phpKeyword ctermfg=139
   hi phpMemberSelector ctermfg=146
@@ -242,17 +242,17 @@ elseif &t_Co == 256
   hi zshCommands ctermfg=174
   hi zshKeyword ctermfg=166
 elseif &t_Co == 88
-  hi Normal ctermfg=85 ctermbg=80
+  hi Normal ctermfg=85 ctermbg=16
   hi ColorColumn ctermbg=83
   hi Comment ctermfg=22
   hi Conditional ctermfg=85
   hi Constant ctermfg=57
   hi Cursor ctermbg=83
   hi CursorColumn ctermbg=83
-  hi CursorLine cterm=NONE ctermbg=80
+  hi CursorLine cterm=NONE ctermbg=16
   hi Define ctermfg=84
   hi DiffAdd ctermbg=20
-  hi DiffChange ctermbg=36
+  hi DiffChange ctermbg=32
   hi DiffDelete ctermfg=17 ctermbg=32
   hi DiffText cterm=NONE ctermbg=17
   hi Directory ctermfg=52
@@ -263,21 +263,21 @@ elseif &t_Co == 88
   hi Include ctermfg=52
   hi LineNr ctermfg=83
   hi MatchParen ctermbg=9
-  hi ModeMsg ctermfg=28
-  hi MoreMsg ctermfg=28
+  hi ModeMsg ctermfg=42
+  hi MoreMsg ctermfg=42
   hi NonText ctermfg=9
   hi Operator ctermfg=42
   hi Pmenu ctermfg=85 ctermbg=9
   hi PmenuSel cterm=reverse ctermfg=85 ctermbg=9
   hi PreProc ctermfg=84
-  hi Question ctermfg=28
+  hi Question ctermfg=42
   hi Repeat ctermfg=85
   hi Search ctermbg=57
   hi Special ctermfg=53
   hi SpecialKey ctermfg=9
   hi Statement ctermfg=85
-  hi StatusLine cterm=reverse ctermfg=81 ctermbg=85
-  hi StatusLineNC ctermfg=80 ctermbg=22
+  hi StatusLine cterm=reverse ctermfg=21 ctermbg=85
+  hi StatusLineNC ctermfg=16 ctermbg=22
   hi String ctermfg=41
   hi Structure ctermfg=84
   hi TabLine ctermfg=85 ctermbg=16
@@ -287,7 +287,7 @@ elseif &t_Co == 88
   hi Todo ctermfg=22 ctermbg=16
   hi Type ctermfg=52
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=9
   hi WarningMsg ctermfg=53
   hi cConditional ctermfg=84
   hi cRepeat ctermfg=84
@@ -304,9 +304,9 @@ elseif &t_Co == 88
   hi cssIdentifier ctermfg=53
   hi cssPseudoClass ctermfg=84
   hi cssTagName ctermfg=57
-  hi diffAdded ctermfg=28
+  hi diffAdded ctermfg=42
   hi diffRemoved ctermfg=53
-  hi gitcommitSelectedFile ctermfg=28
+  hi gitcommitSelectedFile ctermfg=42
   hi gitcommitUntrackedFile ctermfg=53
   hi hamlAttributesDelimiter ctermfg=42
   hi hamlTag ctermfg=57
@@ -316,13 +316,13 @@ elseif &t_Co == 88
   hi htmlTagName ctermfg=42
   hi javaScriptBlocks ctermfg=53
   hi javaScriptBrackets ctermfg=42
-  hi javaScriptConditional ctermfg=57
-  hi javaScriptFunction ctermfg=84
   hi javaScriptLabel ctermfg=53
-  hi javaScriptMember ctermfg=57
   hi javaScriptNumber ctermfg=57
-  hi javaScriptParens ctermfg=42
-  hi javaScriptRepeat ctermfg=84
+  hi javascriptConditional ctermfg=57
+  hi javascriptFunction ctermfg=84
+  hi javascriptMember ctermfg=57
+  hi javascriptParens ctermfg=42
+  hi javascriptRepeat ctermfg=84
   hi phpConditional ctermfg=84
   hi phpKeyword ctermfg=84
   hi phpMemberSelector ctermfg=85
@@ -365,7 +365,7 @@ elseif &t_Co == 16
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=8
   hi DiffAdd ctermbg=2
-  hi DiffChange ctermbg=3
+  hi DiffChange ctermbg=1
   hi DiffDelete ctermfg=4 ctermbg=1
   hi DiffText cterm=NONE ctermbg=4
   hi Directory ctermfg=3
@@ -376,31 +376,31 @@ elseif &t_Co == 16
   hi Include ctermfg=3
   hi LineNr ctermfg=8
   hi MatchParen ctermbg=9
-  hi ModeMsg ctermfg=2
-  hi MoreMsg ctermfg=2
+  hi ModeMsg ctermfg=10
+  hi MoreMsg ctermfg=10
   hi NonText ctermfg=9
   hi Operator ctermfg=10
   hi Pmenu ctermfg=7 ctermbg=9
   hi PmenuSel cterm=reverse ctermfg=7 ctermbg=9
   hi PreProc ctermfg=8
-  hi Question ctermfg=2
+  hi Question ctermfg=10
   hi Repeat ctermfg=7
   hi Search ctermbg=10
   hi Special ctermfg=8
   hi SpecialKey ctermfg=9
   hi Statement ctermfg=7
-  hi StatusLine cterm=reverse ctermfg=2 ctermbg=7
+  hi StatusLine cterm=reverse ctermfg=6 ctermbg=7
   hi StatusLineNC ctermfg=0 ctermbg=6
   hi String ctermfg=8
   hi Structure ctermfg=8
   hi TabLine ctermfg=7 ctermbg=0
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=0
-  hi TabLineSel cterm=NONE ctermfg=7 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=7 ctermbg=5
   hi Title ctermfg=6
   hi Todo ctermfg=6 ctermbg=0
   hi Type ctermfg=3
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=9
   hi WarningMsg ctermfg=8
   hi cConditional ctermfg=8
   hi cRepeat ctermfg=8
@@ -417,9 +417,9 @@ elseif &t_Co == 16
   hi cssIdentifier ctermfg=8
   hi cssPseudoClass ctermfg=8
   hi cssTagName ctermfg=10
-  hi diffAdded ctermfg=2
+  hi diffAdded ctermfg=10
   hi diffRemoved ctermfg=8
-  hi gitcommitSelectedFile ctermfg=2
+  hi gitcommitSelectedFile ctermfg=10
   hi gitcommitUntrackedFile ctermfg=8
   hi hamlAttributesDelimiter ctermfg=10
   hi hamlTag ctermfg=8
@@ -429,13 +429,13 @@ elseif &t_Co == 16
   hi htmlTagName ctermfg=10
   hi javaScriptBlocks ctermfg=8
   hi javaScriptBrackets ctermfg=10
-  hi javaScriptConditional ctermfg=10
-  hi javaScriptFunction ctermfg=8
   hi javaScriptLabel ctermfg=8
-  hi javaScriptMember ctermfg=8
   hi javaScriptNumber ctermfg=8
-  hi javaScriptParens ctermfg=10
-  hi javaScriptRepeat ctermfg=8
+  hi javascriptConditional ctermfg=10
+  hi javascriptFunction ctermfg=8
+  hi javascriptMember ctermfg=8
+  hi javascriptParens ctermfg=10
+  hi javascriptRepeat ctermfg=8
   hi phpConditional ctermfg=8
   hi phpKeyword ctermfg=8
   hi phpMemberSelector ctermfg=7
@@ -478,7 +478,7 @@ else " 8 colors
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=7
   hi DiffAdd ctermbg=2
-  hi DiffChange ctermbg=3
+  hi DiffChange ctermbg=1
   hi DiffDelete ctermfg=4 ctermbg=1
   hi DiffText cterm=NONE ctermbg=4
   hi Directory ctermfg=3
@@ -489,31 +489,31 @@ else " 8 colors
   hi Include ctermfg=3
   hi LineNr ctermfg=3
   hi MatchParen ctermbg=1
-  hi ModeMsg ctermfg=2
-  hi MoreMsg ctermfg=2
+  hi ModeMsg ctermfg=7
+  hi MoreMsg ctermfg=7
   hi NonText ctermfg=1
   hi Operator ctermfg=7
   hi Pmenu ctermfg=7 ctermbg=1
   hi PmenuSel cterm=reverse ctermfg=7 ctermbg=1
   hi PreProc ctermfg=7
-  hi Question ctermfg=2
+  hi Question ctermfg=7
   hi Repeat ctermfg=7
   hi Search ctermbg=7
   hi Special ctermfg=3
   hi SpecialKey ctermfg=1
   hi Statement ctermfg=7
-  hi StatusLine cterm=reverse ctermfg=2 ctermbg=7
+  hi StatusLine cterm=reverse ctermfg=6 ctermbg=7
   hi StatusLineNC ctermfg=0 ctermbg=6
   hi String ctermfg=3
   hi Structure ctermfg=7
   hi TabLine ctermfg=7 ctermbg=0
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=0
-  hi TabLineSel cterm=NONE ctermfg=7 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=7 ctermbg=5
   hi Title ctermfg=6
   hi Todo ctermfg=6 ctermbg=0
   hi Type ctermfg=3
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=1
   hi WarningMsg ctermfg=7
   hi cConditional ctermfg=7
   hi cRepeat ctermfg=7
@@ -530,9 +530,9 @@ else " 8 colors
   hi cssIdentifier ctermfg=7
   hi cssPseudoClass ctermfg=7
   hi cssTagName ctermfg=7
-  hi diffAdded ctermfg=2
+  hi diffAdded ctermfg=7
   hi diffRemoved ctermfg=7
-  hi gitcommitSelectedFile ctermfg=2
+  hi gitcommitSelectedFile ctermfg=7
   hi gitcommitUntrackedFile ctermfg=7
   hi hamlAttributesDelimiter ctermfg=7
   hi hamlTag ctermfg=7
@@ -542,13 +542,13 @@ else " 8 colors
   hi htmlTagName ctermfg=7
   hi javaScriptBlocks ctermfg=3
   hi javaScriptBrackets ctermfg=7
-  hi javaScriptConditional ctermfg=7
-  hi javaScriptFunction ctermfg=7
   hi javaScriptLabel ctermfg=7
-  hi javaScriptMember ctermfg=7
   hi javaScriptNumber ctermfg=7
-  hi javaScriptParens ctermfg=7
-  hi javaScriptRepeat ctermfg=7
+  hi javascriptConditional ctermfg=7
+  hi javascriptFunction ctermfg=7
+  hi javascriptMember ctermfg=7
+  hi javascriptParens ctermfg=7
+  hi javascriptRepeat ctermfg=7
   hi phpConditional ctermfg=7
   hi phpKeyword ctermfg=7
   hi phpMemberSelector ctermfg=7

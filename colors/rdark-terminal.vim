@@ -4,7 +4,7 @@
 " Name: rdark-terminal
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:20
+" Date: 2012-09-29 13:42:44
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,6 @@ if has("gui_running")
   hi Normal guifg=#d0d0d0 guibg=#000000
   hi Comment guibg=#000000
   hi Constant guibg=#000000
-  hi Cursor guifg=#000000 guibg=#afafaf
   hi CursorColumn guifg=#d0d0d0
   hi CursorLine guibg=NONE
   hi DiffAdd guifg=#87d75f
@@ -90,8 +89,7 @@ if has("gui_running")
   hi htmlTitle guifg=#87d75f guibg=#000000
   hi iCursor guifg=#d0d0d0 guibg=#afafaf
   hi javaScriptBraces guifg=#878787 guibg=#000000
-  hi javaScriptOperator guifg=#878787 guibg=#000000
-  hi lcursor guifg=#000000 guibg=#afafaf
+  hi javascriptOperator guifg=#878787 guibg=#000000
   hi phpArrayPair guifg=#878787 guibg=#000000
   hi phpAssignByRef guifg=#878787 guibg=#000000
   hi phpFunctions guifg=#d7d7d7 guibg=#000000
@@ -106,7 +104,7 @@ if has("gui_running")
   hi phpUnknownSelector guifg=#878787 guibg=#000000
   hi phpVarSelector guifg=#afafaf guibg=#000000
   hi pythonFunction guifg=#d0d0d0 guibg=#000000
-  hi vimAutoEvent guifg=#d0d0d0 guibg=#000000
+  hi vimAutoevent guifg=#d0d0d0 guibg=#000000
   hi vimFold guifg=#d0d0d0 guibg=#000000
   hi vimFuncName guifg=#d0d0d0 guibg=#000000
 elseif &t_Co == 256
@@ -164,8 +162,8 @@ elseif &t_Co == 256
   hi Type ctermfg=188 ctermbg=0
   hi Underlined ctermfg=111 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=59 ctermbg=102
-  hi Visual ctermfg=255 ctermbg=102
-  hi VisualNOS cterm=bold,underline ctermfg=252 ctermbg=0
+  hi Visual cterm=NONE ctermfg=255 ctermbg=102
+  hi VisualNOS ctermfg=252 ctermbg=0
   hi WarningMsg ctermfg=196 ctermbg=0
   hi WildMenu ctermfg=255 ctermbg=233
   hi cBitField ctermfg=252 ctermbg=0
@@ -193,8 +191,8 @@ elseif &t_Co == 256
   hi htmlTitle ctermfg=113 ctermbg=0
   hi iCursor ctermfg=252 ctermbg=145
   hi javaScriptBraces ctermfg=102 ctermbg=0
-  hi javaScriptOperator ctermfg=102 ctermbg=0
-  hi lcursor ctermfg=16 ctermbg=145
+  hi javascriptOperator ctermfg=102 ctermbg=0
+  hi lCursor ctermfg=16 ctermbg=145
   hi phpArrayPair ctermfg=102 ctermbg=0
   hi phpAssignByRef ctermfg=102 ctermbg=0
   hi phpFunctions ctermfg=188 ctermbg=0
@@ -209,7 +207,7 @@ elseif &t_Co == 256
   hi phpUnknownSelector ctermfg=102 ctermbg=0
   hi phpVarSelector ctermfg=145 ctermbg=0
   hi pythonFunction ctermfg=252 ctermbg=0
-  hi vimAutoEvent ctermfg=252 ctermbg=0
+  hi vimAutoevent ctermfg=252 ctermbg=0
   hi vimFold ctermfg=252 ctermbg=0
   hi vimFuncName ctermfg=252 ctermbg=0
 elseif &t_Co == 88
@@ -267,8 +265,8 @@ elseif &t_Co == 88
   hi Type ctermfg=86 ctermbg=16
   hi Underlined ctermfg=43 ctermbg=16
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=83
-  hi Visual ctermfg=87 ctermbg=83
-  hi VisualNOS cterm=bold,underline ctermfg=86 ctermbg=16
+  hi Visual cterm=NONE ctermfg=87 ctermbg=83
+  hi VisualNOS ctermfg=86 ctermbg=16
   hi WarningMsg ctermfg=9 ctermbg=16
   hi WildMenu ctermfg=87 ctermbg=16
   hi cBitField ctermfg=86 ctermbg=16
@@ -296,8 +294,8 @@ elseif &t_Co == 88
   hi htmlTitle ctermfg=41 ctermbg=16
   hi iCursor ctermfg=86 ctermbg=85
   hi javaScriptBraces ctermfg=83 ctermbg=16
-  hi javaScriptOperator ctermfg=83 ctermbg=16
-  hi lcursor ctermfg=16 ctermbg=85
+  hi javascriptOperator ctermfg=83 ctermbg=16
+  hi lCursor ctermfg=16 ctermbg=85
   hi phpArrayPair ctermfg=83 ctermbg=16
   hi phpAssignByRef ctermfg=83 ctermbg=16
   hi phpFunctions ctermfg=86 ctermbg=16
@@ -312,7 +310,7 @@ elseif &t_Co == 88
   hi phpUnknownSelector ctermfg=83 ctermbg=16
   hi phpVarSelector ctermfg=85 ctermbg=16
   hi pythonFunction ctermfg=86 ctermbg=16
-  hi vimAutoEvent ctermfg=86 ctermbg=16
+  hi vimAutoevent ctermfg=86 ctermbg=16
   hi vimFold ctermfg=86 ctermbg=16
   hi vimFuncName ctermfg=86 ctermbg=16
 elseif &t_Co == 16
@@ -370,8 +368,8 @@ elseif &t_Co == 16
   hi Type ctermfg=12 ctermbg=0
   hi Underlined ctermfg=12 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=8
-  hi Visual ctermfg=11 ctermbg=8
-  hi VisualNOS cterm=bold,underline ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=11 ctermbg=8
+  hi VisualNOS ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=9 ctermbg=0
   hi WildMenu ctermfg=11 ctermbg=0
   hi cBitField ctermfg=7 ctermbg=0
@@ -399,8 +397,8 @@ elseif &t_Co == 16
   hi htmlTitle ctermfg=10 ctermbg=0
   hi iCursor ctermfg=7 ctermbg=8
   hi javaScriptBraces ctermfg=8 ctermbg=0
-  hi javaScriptOperator ctermfg=8 ctermbg=0
-  hi lcursor ctermfg=0 ctermbg=8
+  hi javascriptOperator ctermfg=8 ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=8
   hi phpArrayPair ctermfg=8 ctermbg=0
   hi phpAssignByRef ctermfg=8 ctermbg=0
   hi phpFunctions ctermfg=12 ctermbg=0
@@ -415,7 +413,7 @@ elseif &t_Co == 16
   hi phpUnknownSelector ctermfg=8 ctermbg=0
   hi phpVarSelector ctermfg=8 ctermbg=0
   hi pythonFunction ctermfg=7 ctermbg=0
-  hi vimAutoEvent ctermfg=7 ctermbg=0
+  hi vimAutoevent ctermfg=7 ctermbg=0
   hi vimFold ctermfg=7 ctermbg=0
   hi vimFuncName ctermfg=7 ctermbg=0
 else " 8 colors
@@ -473,8 +471,8 @@ else " 8 colors
   hi Type ctermfg=7 ctermbg=0
   hi Underlined ctermfg=7 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi Visual ctermfg=7 ctermbg=3
-  hi VisualNOS cterm=bold,underline ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=7 ctermbg=3
+  hi VisualNOS ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=1 ctermbg=0
   hi WildMenu ctermfg=7 ctermbg=0
   hi cBitField ctermfg=7 ctermbg=0
@@ -502,8 +500,8 @@ else " 8 colors
   hi htmlTitle ctermfg=3 ctermbg=0
   hi iCursor ctermfg=7 ctermbg=7
   hi javaScriptBraces ctermfg=3 ctermbg=0
-  hi javaScriptOperator ctermfg=3 ctermbg=0
-  hi lcursor ctermfg=0 ctermbg=7
+  hi javascriptOperator ctermfg=3 ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=7
   hi phpArrayPair ctermfg=3 ctermbg=0
   hi phpAssignByRef ctermfg=3 ctermbg=0
   hi phpFunctions ctermfg=7 ctermbg=0
@@ -518,7 +516,7 @@ else " 8 colors
   hi phpUnknownSelector ctermfg=3 ctermbg=0
   hi phpVarSelector ctermfg=7 ctermbg=0
   hi pythonFunction ctermfg=7 ctermbg=0
-  hi vimAutoEvent ctermfg=7 ctermbg=0
+  hi vimAutoevent ctermfg=7 ctermbg=0
   hi vimFold ctermfg=7 ctermbg=0
   hi vimFuncName ctermfg=7 ctermbg=0
 endif

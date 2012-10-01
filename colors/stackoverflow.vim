@@ -4,7 +4,7 @@
 " Name: stackoverflow
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:08
+" Date: 2012-09-29 13:45:06
 "----------------------------------------------------------
 
 set background=light
@@ -22,7 +22,7 @@ if has("gui_running")
   hi Comment guifg=#808080
   hi Conditional guifg=#000052
   hi Constant guifg=#800000
-  hi Cursor guifg=bg guibg=#F4A83D
+  hi Cursor guibg=#F4A83D
   hi CursorLine gui=reverse
   hi DiffAdd guibg=#9d9d9d
   hi DiffChange guibg=#d1d1d1
@@ -86,8 +86,7 @@ if has("gui_running")
   hi htmlTagName guifg=#800000
   hi javaFold guifg=#257E9F
   hi javaParenT guifg=fg
-  hi javaScriptType guifg=#257E9F
-  hi lcursor guifg=bg guibg=fg
+  hi javascriptType guifg=#257E9F
   hi mTag guifg=#257E9F
   hi nTag guifg=fg
   hi pythonDecorator gui=bold guifg=#3b3b3b
@@ -98,7 +97,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=254
   hi Boolean ctermfg=59
   hi Conditional ctermfg=17
-  hi Cursor ctermfg=bg ctermbg=215
+  hi Cursor ctermbg=215
   hi DiffText ctermfg=16
   hi Directory ctermbg=bg
   hi Function ctermfg=fg
@@ -112,7 +111,7 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=231
   hi PmenuThumb ctermfg=231
   hi Question ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=251
   hi StatusLine ctermfg=fg ctermbg=179
   hi StatusLineNC ctermfg=244 ctermbg=250
@@ -123,7 +122,7 @@ elseif &t_Co == 256
   hi VertSplit ctermfg=250 ctermbg=250
   hi VimCommentTitle ctermfg=59 ctermbg=bg
   hi VimError ctermfg=249 ctermbg=236
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=240
   hi cBlock ctermfg=31
   hi cssBraces ctermfg=fg ctermbg=bg
@@ -140,8 +139,7 @@ elseif &t_Co == 256
   hi htmlTagName ctermfg=88
   hi javaFold ctermfg=31
   hi javaParenT ctermfg=fg
-  hi javaScriptType ctermfg=31
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi javascriptType ctermfg=31
   hi mTag ctermfg=31
   hi nTag ctermfg=fg
   hi pythonDecorator ctermfg=237
@@ -152,7 +150,7 @@ elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Boolean ctermfg=81
   hi Conditional ctermfg=17
-  hi Cursor ctermfg=bg ctermbg=68
+  hi Cursor ctermbg=68
   hi DiffText ctermfg=16
   hi Directory ctermbg=bg
   hi Function ctermfg=fg
@@ -166,7 +164,7 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=79
   hi PmenuThumb ctermfg=79
   hi Question ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=58
   hi StatusLine ctermfg=fg ctermbg=57
   hi StatusLineNC ctermfg=83 ctermbg=85
@@ -177,7 +175,7 @@ elseif &t_Co == 88
   hi VertSplit ctermfg=85 ctermbg=85
   hi VimCommentTitle ctermfg=81 ctermbg=bg
   hi VimError ctermfg=85 ctermbg=80
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=81
   hi cBlock ctermfg=21
   hi cssBraces ctermfg=fg ctermbg=bg
@@ -194,8 +192,7 @@ elseif &t_Co == 88
   hi htmlTagName ctermfg=32
   hi javaFold ctermfg=21
   hi javaParenT ctermfg=fg
-  hi javaScriptType ctermfg=21
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi javascriptType ctermfg=21
   hi mTag ctermfg=21
   hi nTag ctermfg=fg
   hi pythonDecorator ctermfg=80
@@ -206,7 +203,7 @@ elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Boolean ctermfg=3
   hi Conditional ctermfg=4
-  hi Cursor ctermfg=bg ctermbg=8
+  hi Cursor ctermbg=8
   hi DiffText ctermfg=0
   hi Directory ctermbg=bg
   hi Function ctermfg=fg
@@ -220,7 +217,7 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=15
   hi PmenuThumb ctermfg=15
   hi Question ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=fg ctermbg=8
   hi StatusLineNC ctermfg=8 ctermbg=7
@@ -231,7 +228,7 @@ elseif &t_Co == 16
   hi VertSplit ctermfg=7 ctermbg=7
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=3
   hi cBlock ctermfg=6
   hi cssBraces ctermfg=fg ctermbg=bg
@@ -248,8 +245,7 @@ elseif &t_Co == 16
   hi htmlTagName ctermfg=1
   hi javaFold ctermfg=6
   hi javaParenT ctermfg=fg
-  hi javaScriptType ctermfg=6
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi javascriptType ctermfg=6
   hi mTag ctermfg=6
   hi nTag ctermfg=fg
   hi pythonDecorator ctermfg=2
@@ -260,7 +256,7 @@ else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=3
   hi Conditional ctermfg=4
-  hi Cursor ctermfg=bg ctermbg=3
+  hi Cursor ctermbg=3
   hi DiffText ctermfg=0
   hi Directory ctermbg=bg
   hi Function ctermfg=fg
@@ -274,7 +270,7 @@ else " 8 colors
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=7
   hi Question ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=fg ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
@@ -285,7 +281,7 @@ else " 8 colors
   hi VertSplit ctermfg=7 ctermbg=7
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=3
   hi cBlock ctermfg=6
   hi cssBraces ctermfg=fg ctermbg=bg
@@ -302,8 +298,7 @@ else " 8 colors
   hi htmlTagName ctermfg=1
   hi javaFold ctermfg=6
   hi javaParenT ctermfg=fg
-  hi javaScriptType ctermfg=6
-  hi lcursor ctermfg=bg ctermbg=fg
+  hi javascriptType ctermfg=6
   hi mTag ctermfg=6
   hi nTag ctermfg=fg
   hi pythonDecorator ctermfg=2
@@ -350,11 +345,11 @@ hi! link javaCharacter Statement
 hi! link javaConstant Statement
 hi! link javaExternal Statement
 hi! link javaNumber Constant
-hi! link javaScriptFunction Statement
-hi! link javaScriptMember Statement
 hi! link javaScriptValue Constant
 hi! link javaSpecialChar Constant
 hi! link javaType Statement
+hi! link javascriptFunction Statement
+hi! link javascriptMember Statement
 hi! link objcClass Type
 hi! link objcMessageName Identifier
 hi! link objcMethodArg Normal

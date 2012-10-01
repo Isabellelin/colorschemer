@@ -4,7 +4,7 @@
 " Name: manxome
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:04
+" Date: 2012-09-29 13:38:23
 "----------------------------------------------------------
 
 set background=dark

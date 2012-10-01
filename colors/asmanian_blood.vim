@@ -4,7 +4,7 @@
 " Name: asmanian_blood
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:35
+" Date: 2012-09-29 13:30:32
 "----------------------------------------------------------
 
 set background=dark
@@ -73,6 +73,7 @@ elseif &t_Co == 256
   hi Type ctermbg=232
   hi Underlined ctermbg=232
   hi VertSplit ctermfg=232 ctermbg=234
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=16
   hi Comment ctermbg=16
@@ -100,6 +101,7 @@ elseif &t_Co == 88
   hi Type ctermbg=16
   hi Underlined ctermbg=16
   hi VertSplit ctermfg=16 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi Comment ctermbg=0
@@ -127,6 +129,7 @@ elseif &t_Co == 16
   hi Type ctermbg=0
   hi Underlined ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=0
@@ -154,6 +157,7 @@ else " 8 colors
   hi Type ctermbg=0
   hi Underlined ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

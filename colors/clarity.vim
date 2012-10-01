@@ -4,7 +4,7 @@
 " Name: clarity
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:34
+" Date: 2012-09-29 13:31:56
 "----------------------------------------------------------
 
 set background=dark
@@ -87,7 +87,7 @@ elseif &t_Co == 256
   hi Title ctermbg=bg
   hi Type ctermbg=bg
   hi Typedef ctermfg=230 ctermbg=bg
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi WarningMsg ctermbg=88
   hi browseSuffixes ctermfg=187 ctermbg=bg
   hi cursorim ctermfg=244 ctermbg=221
@@ -123,7 +123,7 @@ elseif &t_Co == 88
   hi Title ctermbg=bg
   hi Type ctermbg=bg
   hi Typedef ctermfg=78 ctermbg=bg
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi WarningMsg ctermbg=32
   hi browseSuffixes ctermfg=58 ctermbg=bg
   hi cursorim ctermfg=83 ctermbg=73
@@ -159,7 +159,7 @@ elseif &t_Co == 16
   hi Title ctermbg=bg
   hi Type ctermbg=bg
   hi Typedef ctermfg=11 ctermbg=bg
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi WarningMsg ctermbg=1
   hi browseSuffixes ctermfg=7 ctermbg=bg
   hi cursorim ctermfg=8 ctermbg=11
@@ -195,7 +195,7 @@ else " 8 colors
   hi Title ctermbg=bg
   hi Type ctermbg=bg
   hi Typedef ctermfg=7 ctermbg=bg
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WarningMsg ctermbg=1
   hi browseSuffixes ctermfg=7 ctermbg=bg
   hi cursorim ctermfg=3 ctermbg=7

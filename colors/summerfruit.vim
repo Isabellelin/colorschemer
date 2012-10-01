@@ -4,7 +4,7 @@
 " Name: summerfruit
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:15
+" Date: 2012-09-29 13:45:15
 "----------------------------------------------------------
 
 set background=light
@@ -64,8 +64,8 @@ if has("gui_running")
   hi pythonBuiltinObj gui=bold guifg=#2b6ba2
   hi pythonClass gui=bold guifg=#ff0086
   hi pythonCoding guifg=#ff0086
+  hi pythonDocTest guifg=#2f5f49
   hi pythonDocTest2 guifg=#3b916a
-  hi pythonDoctest guifg=#2f5f49
   hi pythonExClass gui=bold guifg=#66cd66
   hi pythonException gui=bold guifg=#ee0000
   hi pythonFunction gui=bold guifg=#ee0000
@@ -81,11 +81,12 @@ elseif &t_Co == 256
   hi LineNr ctermbg=67
   hi NonText ctermbg=152
   hi Number ctermfg=33
-  hi Search ctermfg=88
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=77
   hi StatusLineNC ctermfg=115 ctermbg=71
   hi String ctermfg=32
   hi VertSplit ctermfg=67 ctermbg=67
+  hi Visual cterm=NONE ctermbg=7
   hi htmlEndTag ctermfg=39
   hi htmlSpecialTagName ctermfg=71
   hi htmlTag ctermfg=39
@@ -107,8 +108,8 @@ elseif &t_Co == 256
   hi pythonBuiltinObj ctermfg=25
   hi pythonClass ctermfg=198
   hi pythonCoding ctermfg=198
+  hi pythonDocTest ctermfg=238
   hi pythonDocTest2 ctermfg=65
-  hi pythonDoctest ctermfg=238
   hi pythonExClass ctermfg=77
   hi pythonException ctermfg=9
   hi pythonFunction ctermfg=9
@@ -124,11 +125,12 @@ elseif &t_Co == 88
   hi LineNr ctermbg=22
   hi NonText ctermbg=87
   hi Number ctermfg=23
-  hi Search ctermfg=32
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=25
   hi StatusLineNC ctermfg=41 ctermbg=82
   hi String ctermfg=22
   hi VertSplit ctermfg=21 ctermbg=21
+  hi Visual cterm=NONE ctermbg=87
   hi htmlEndTag ctermfg=27
   hi htmlSpecialTagName ctermfg=81
   hi htmlTag ctermfg=27
@@ -150,8 +152,8 @@ elseif &t_Co == 88
   hi pythonBuiltinObj ctermfg=21
   hi pythonClass ctermfg=65
   hi pythonCoding ctermfg=65
+  hi pythonDocTest ctermfg=81
   hi pythonDocTest2 ctermfg=82
-  hi pythonDoctest ctermfg=81
   hi pythonExClass ctermfg=41
   hi pythonException ctermfg=9
   hi pythonFunction ctermfg=9
@@ -167,11 +169,12 @@ elseif &t_Co == 16
   hi LineNr ctermbg=6
   hi NonText ctermbg=12
   hi Number ctermfg=6
-  hi Search ctermfg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=6
   hi StatusLineNC ctermfg=8 ctermbg=6
   hi String ctermfg=6
   hi VertSplit ctermfg=6 ctermbg=6
+  hi Visual cterm=NONE ctermbg=11
   hi htmlEndTag ctermfg=6
   hi htmlSpecialTagName ctermfg=3
   hi htmlTag ctermfg=6
@@ -193,8 +196,8 @@ elseif &t_Co == 16
   hi pythonBuiltinObj ctermfg=6
   hi pythonClass ctermfg=5
   hi pythonCoding ctermfg=5
+  hi pythonDocTest ctermfg=2
   hi pythonDocTest2 ctermfg=6
-  hi pythonDoctest ctermfg=2
   hi pythonExClass ctermfg=10
   hi pythonException ctermfg=9
   hi pythonFunction ctermfg=9
@@ -210,11 +213,12 @@ else " 8 colors
   hi LineNr ctermbg=6
   hi NonText ctermbg=7
   hi Number ctermfg=6
-  hi Search ctermfg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=6
   hi StatusLineNC ctermfg=7 ctermbg=6
   hi String ctermfg=6
   hi VertSplit ctermfg=6 ctermbg=6
+  hi Visual cterm=NONE ctermbg=7
   hi htmlEndTag ctermfg=6
   hi htmlSpecialTagName ctermfg=3
   hi htmlTag ctermfg=6
@@ -236,8 +240,8 @@ else " 8 colors
   hi pythonBuiltinObj ctermfg=6
   hi pythonClass ctermfg=5
   hi pythonCoding ctermfg=5
+  hi pythonDocTest ctermfg=2
   hi pythonDocTest2 ctermfg=6
-  hi pythonDoctest ctermfg=2
   hi pythonExClass ctermfg=7
   hi pythonException ctermfg=1
   hi pythonFunction ctermfg=1

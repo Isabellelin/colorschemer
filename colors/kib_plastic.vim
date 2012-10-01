@@ -4,7 +4,7 @@
 " Name: kib_plastic
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:19
+" Date: 2012-09-29 13:37:22
 "----------------------------------------------------------
 
 set background=light
@@ -110,7 +110,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=215
   hi PreCondit ctermfg=94
   hi Repeat ctermfg=76
-  hi Search ctermfg=178
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=64
   hi SpecialComment ctermfg=64
   hi StatusLine ctermfg=236 ctermbg=102
@@ -121,7 +121,7 @@ elseif &t_Co == 256
   hi Tag ctermfg=64
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=236 ctermbg=102
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=7
   hi pythonComment ctermfg=27
   hi pythonConditional ctermfg=172
   hi pythonImport ctermfg=92
@@ -158,7 +158,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=72
   hi PreCondit ctermfg=36
   hi Repeat ctermfg=40
-  hi Search ctermfg=52
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=36
   hi SpecialComment ctermfg=36
   hi StatusLine ctermfg=80 ctermbg=83
@@ -169,7 +169,7 @@ elseif &t_Co == 88
   hi Tag ctermfg=36
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=80 ctermbg=83
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
   hi pythonComment ctermfg=23
   hi pythonConditional ctermfg=52
   hi pythonImport ctermfg=34
@@ -206,7 +206,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=8
   hi PreCondit ctermfg=3
   hi Repeat ctermfg=3
-  hi Search ctermfg=3
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=3
   hi StatusLine ctermfg=2 ctermbg=8
@@ -217,7 +217,7 @@ elseif &t_Co == 16
   hi Tag ctermfg=3
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=2 ctermbg=8
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
   hi pythonComment ctermfg=6
   hi pythonConditional ctermfg=3
   hi pythonImport ctermfg=5
@@ -254,7 +254,7 @@ else " 8 colors
   hi Operator ctermfg=7
   hi PreCondit ctermfg=3
   hi Repeat ctermfg=3
-  hi Search ctermfg=3
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=3
   hi StatusLine ctermfg=2 ctermbg=3
@@ -265,7 +265,7 @@ else " 8 colors
   hi Tag ctermfg=3
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=2 ctermbg=3
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi pythonComment ctermfg=6
   hi pythonConditional ctermfg=3
   hi pythonImport ctermfg=5

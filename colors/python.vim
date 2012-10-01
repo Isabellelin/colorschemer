@@ -4,7 +4,7 @@
 " Name: python
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:01
+" Date: 2012-09-29 13:42:19
 "----------------------------------------------------------
 
 set background=light
@@ -50,7 +50,7 @@ if has("gui_running")
   hi PreProc guifg=SkyBlue1
   hi Question guifg=SeaGreen2 guibg=bg
   hi Repeat guifg=SeaGreen2 guibg=bg
-  hi Search guibg=LightSkyBlue4
+  hi Search guifg=NONE guibg=LightSkyBlue4
   hi Special gui=bold guifg=#ddb100
   hi SpecialKey guifg=#324262 guibg=#103040
   hi Statement gui=NONE guifg=#669907
@@ -66,7 +66,7 @@ if has("gui_running")
   hi Underlined guifg=honeydew4 guibg=bg
   hi VertSplit gui=NONE guifg=black guibg=#c8d6b3
   hi Visual gui=reverse guifg=SeaGreen guibg=WHITE
-  hi VisualNOS gui=bold,underline guifg=fg guibg=bg
+  hi VisualNOS guifg=fg guibg=bg
   hi WarningMsg gui=bold guifg=FireBrick1 guibg=bg
   hi WildMenu gui=bold guibg=Chartreuse
   hi cursorim gui=bold guifg=white guibg=PaleTurquoise3
@@ -96,6 +96,7 @@ elseif &t_Co == 256
   hi PreCondit ctermfg=153 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=84 ctermbg=bg
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=236
   hi StatusLine ctermfg=16 ctermbg=187
   hi StatusLineNC ctermfg=16 ctermbg=187
@@ -106,7 +107,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=179 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=187
-  hi Visual ctermfg=29
+  hi Visual cterm=NONE ctermfg=29 ctermbg=7
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=231 ctermbg=116
@@ -136,6 +137,7 @@ elseif &t_Co == 88
   hi PreCondit ctermfg=43 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=45 ctermbg=bg
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=80
   hi StatusLine ctermfg=16 ctermbg=58
   hi StatusLineNC ctermfg=16 ctermbg=58
@@ -146,7 +148,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=52 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=58
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=87
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=79 ctermbg=42
@@ -176,6 +178,7 @@ elseif &t_Co == 16
   hi PreCondit ctermfg=12 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=10 ctermbg=bg
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=0 ctermbg=7
@@ -186,7 +189,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=8 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=6
+  hi Visual cterm=NONE ctermfg=6 ctermbg=11
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=15 ctermbg=12
@@ -216,6 +219,7 @@ else " 8 colors
   hi PreCondit ctermfg=7 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=6 ctermbg=bg
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=0 ctermbg=7
@@ -226,7 +230,7 @@ else " 8 colors
   hi Typedef ctermfg=3 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=6
+  hi Visual cterm=NONE ctermfg=6 ctermbg=7
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=7 ctermbg=7

@@ -4,7 +4,7 @@
 " Name: rainbow_fine_blue
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:08
+" Date: 2012-09-29 13:42:29
 "----------------------------------------------------------
 
 set background=light
@@ -53,7 +53,7 @@ if has("gui_running")
   hi WarningMsg guifg=#ff0070 guibg=#ffe0f4
   hi WildMenu gui=bold guifg=#f8f8f8 guibg=#00aacc
   hi cursorim guifg=#f8f8f8 guibg=#8000ff
-  hi lcursor guifg=#f8f8f8 guibg=#8000ff
+  hi lCursor guifg=#f8f8f8 guibg=#8000ff
 elseif &t_Co == 256
   hi Normal ctermfg=238 ctermbg=231
   hi Constant ctermbg=255
@@ -64,16 +64,16 @@ elseif &t_Co == 256
   hi IncSearch ctermfg=238 ctermbg=87
   hi ModeMsg ctermfg=27
   hi NonText ctermbg=255
-  hi Search ctermfg=238
+  hi Search ctermfg=NONE
   hi Special ctermbg=195
   hi StatusLine ctermfg=231 ctermbg=238
   hi StatusLineNC ctermfg=250 ctermbg=238
   hi Title ctermbg=195
   hi VertSplit ctermfg=231 ctermbg=238
-  hi Visual ctermfg=238
+  hi Visual cterm=NONE ctermfg=238 ctermbg=7
   hi WarningMsg ctermbg=225
   hi cursorim ctermfg=231 ctermbg=93
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=79
   hi Constant ctermbg=87
@@ -84,16 +84,16 @@ elseif &t_Co == 88
   hi IncSearch ctermfg=81 ctermbg=31
   hi ModeMsg ctermfg=23
   hi NonText ctermbg=87
-  hi Search ctermfg=81
+  hi Search ctermfg=NONE
   hi Special ctermbg=63
   hi StatusLine ctermfg=79 ctermbg=81
   hi StatusLineNC ctermfg=85 ctermbg=81
   hi Title ctermbg=63
   hi VertSplit ctermfg=79 ctermbg=81
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=87
   hi WarningMsg ctermbg=75
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=15
   hi Constant ctermbg=14
@@ -104,16 +104,16 @@ elseif &t_Co == 16
   hi IncSearch ctermfg=4 ctermbg=14
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=14
-  hi Search ctermfg=4
+  hi Search ctermfg=NONE
   hi Special ctermbg=14
   hi StatusLine ctermfg=15 ctermbg=4
   hi StatusLineNC ctermfg=7 ctermbg=4
   hi Title ctermbg=14
   hi VertSplit ctermfg=15 ctermbg=4
-  hi Visual ctermfg=4
+  hi Visual cterm=NONE ctermfg=4 ctermbg=11
   hi WarningMsg ctermbg=15
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
   hi Constant ctermbg=7
@@ -124,16 +124,16 @@ else " 8 colors
   hi IncSearch ctermfg=4 ctermbg=7
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=7
-  hi Search ctermfg=4
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=4
   hi StatusLineNC ctermfg=7 ctermbg=4
   hi Title ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=4
-  hi Visual ctermfg=4
+  hi Visual cterm=NONE ctermfg=4 ctermbg=7
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 

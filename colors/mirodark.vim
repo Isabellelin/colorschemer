@@ -4,10 +4,10 @@
 " Name: mirodark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:32
+" Date: 2012-09-29 13:39:00
 "----------------------------------------------------------
 
-set background=light
+set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -16,476 +16,339 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
-  hi Normal guifg=#ffffff
-  hi Boolean guifg=#cdcd00
-  hi ColorColumn guibg=DarkRed
-  hi Comment guifg=#80a0ff
-  hi Conditional guifg=#00ffff
-  hi Constant guifg=#ffa0a0
-  hi Cursor guibg=#4d4d4d
-  hi CursorColumn guibg=Grey40
-  hi CursorLine guibg=Grey40
-  hi CursorLineNr guifg=Yellow
-  hi Debug guifg=#cd0000
-  hi Define guifg=#00cd00
-  hi Delimiter guifg=#5c5cff
-  hi DiffAdd guibg=DarkBlue
-  hi DiffChange guibg=DarkMagenta
-  hi DiffDelete guibg=DarkCyan
-  hi Directory guifg=Cyan
-  hi Exception guifg=#cd0000
-  hi Float guifg=#cdcd00
-  hi FoldColumn guifg=Cyan
-  hi Folded guifg=Cyan guibg=DarkGrey
-  hi Function guifg=#ffff00
-  hi Identifier guifg=#40ffff
-  hi IncSearch guifg=#cd0000 guibg=#ffffff
-  hi Include guifg=#cd00cd
-  hi Keyword guifg=#ff0000
-  hi Label guifg=#ff00ff
-  hi LineNr guifg=Yellow
-  hi Macro guifg=#ff00ff
-  hi MatchParen guifg=#000000 guibg=DarkCyan
-  hi ModeMsg guifg=#ff00ff
-  hi Number guifg=#00ffff
-  hi Operator guifg=#cdcd00
-  hi Pmenu guifg=#00cd00 guibg=Magenta
-  hi PmenuSel guifg=#cd0000 guibg=DarkGrey
-  hi PmenuThumb guibg=White
-  hi PreCondit guifg=#ff00ff
-  hi PreProc guifg=#ff80ff
-  hi Question guifg=Green guibg=#ffffff
-  hi Repeat guifg=#ff0000
-  hi Search guifg=Black
-  hi SignColumn guifg=Cyan
-  hi Special guifg=Orange
-  hi SpecialChar guifg=#ff0000
-  hi SpecialComment guifg=#ff0000
-  hi SpecialKey guifg=Cyan
-  hi SpellBad gui=NONE guibg=NONE
-  hi SpellCap gui=NONE guibg=NONE
-  hi SpellLocal gui=NONE guibg=NONE
-  hi SpellRare gui=NONE guibg=NONE
-  hi Statement guifg=#ffff60
-  hi StatusLine guifg=#000000 guibg=#e5e5e5
-  hi StatusLineNC guifg=#000000 guibg=#4d4d4d
-  hi StorageClass guifg=#ffff00
-  hi String guifg=#00cd00
-  hi Structure guifg=#cd00cd
-  hi TabLine guifg=#4d4d4d guibg=DarkGrey
-  hi TabLineFill guifg=#000000
-  hi TabLineSel guifg=#e5e5e5 guibg=#000000
-  hi Tag guifg=#ffff00
-  hi Type guifg=#60ff60
-  hi Typedef guifg=#00cdcd
-  hi Underlined guifg=#80a0ff
-  hi VertSplit guifg=#000000 guibg=#4d4d4d
-  hi VimCommentTitle guifg=#00ff00
-  hi Visual guifg=#4d4d4d guibg=DarkGrey
-  hi WarningMsg guibg=#ffffff
-  hi diffAdded guifg=#0000ee
-  hi diffChanged guifg=#00cdcd
-  hi diffLine guifg=#00ff00
-  hi diffNewFile guifg=#00cd00
-  hi diffOldFile guifg=#00cd00
-  hi diffOldLine guifg=#00cd00
-  hi diffRemoved guifg=#cd0000
-  hi helpHyperTextJump guifg=#ffff00
-  hi htmlEndTag guifg=#00cdcd
-  hi htmlTag guifg=#00cdcd
-  hi htmlTagName guifg=#ffff00
-  hi javaScriptNumber guifg=#ffff00
-  hi perlSharpBang guifg=#00ff00
-  hi perlStatement guifg=#ff00ff
-  hi perlStatementStorage guifg=#cd0000
-  hi perlVarPlain guifg=#cdcd00
-  hi perlVarPlain2 guifg=#ffff00
-  hi rubySharpBang guifg=#00ff00
-  hi vimFold guifg=#000000 guibg=#ffffff
+  hi Normal guifg=#c0c0c0 guibg=#121212
+  hi Boolean guifg=#914e89
+  hi Comment guifg=#899ca1
+  hi Conditional guifg=#47959e
+  hi Constant guifg=#7f62b3
+  hi Cursor guibg=#5e5e5e
+  hi CursorColumn guibg=#3d3d3d
+  hi CursorLine guibg=#3d3d3d
+  hi Debug guifg=#8a2f58
+  hi Define guifg=#287373
+  hi Delimiter guifg=#4779b3
+  hi Directory guifg=#2b7694
+  hi ErrorMsg guifg=#8a2f58 guibg=NONE
+  hi Exception guifg=#8a2f58
+  hi Float guifg=#914e89
+  hi Folded guifg=#899ca1 guibg=#3d3d3d
+  hi Function guifg=#bf85cc
+  hi Identifier guifg=#7f62b3
+  hi Ignore guifg=#5e5e5e
+  hi IncSearch guifg=#8a2f58 guibg=#c0c0c0
+  hi Include guifg=#5e468c
+  hi Keyword guifg=#cf4f88
+  hi Label guifg=#7f62b3
+  hi LineNr guifg=#5e5e5e
+  hi Macro guifg=#7f62b3
+  hi MatchParen guifg=#3d3d3d guibg=#899ca1
+  hi ModeMsg guifg=#7f62b3
+  hi MoreMsg guifg=#7f62b3
+  hi NonText guifg=#2b7694
+  hi Number guifg=#47959e
+  hi Operator guifg=#914e89
+  hi Pmenu guifg=#287373 guibg=#c0c0c0
+  hi PmenuSel guifg=#8a2f58 guibg=#c0c0c0
+  hi PreCondit guifg=#7f62b3
+  hi PreProc guifg=#53a6a6
+  hi Question guifg=#53a6a6 guibg=#c0c0c0
+  hi Repeat guifg=#cf4f88
+  hi Search guifg=#8a2f58 guibg=#c0c0c0
+  hi Special guifg=#53a6a6
+  hi SpecialChar guifg=#cf4f88
+  hi SpecialComment guifg=#cf4f88
+  hi SpecialKey guifg=#bf85cc
+  hi SpellBad gui=underline guibg=NONE
+  hi SpellCap gui=underline guibg=NONE
+  hi SpellLocal gui=underline guibg=NONE
+  hi SpellRare gui=underline guibg=NONE
+  hi Statement guifg=#395573
+  hi StatusLine guifg=#3d3d3d guibg=#899ca1
+  hi StatusLineNC guifg=#3d3d3d guibg=#5e5e5e
+  hi StorageClass guifg=#bf85cc
+  hi String guifg=#287373
+  hi Structure guifg=#5e468c
+  hi TabLine guifg=#5e5e5e guibg=#3d3d3d
+  hi TabLineFill guifg=#3d3d3d
+  hi TabLineSel guifg=#899ca1 guibg=#3d3d3d
+  hi Tag guifg=#bf85cc
+  hi Title guifg=#914e89
+  hi Todo guifg=#cf4f88 guibg=NONE
+  hi Type guifg=#2b7694
+  hi Typedef guifg=#2b7694
+  hi Underlined guifg=#395573
+  hi VertSplit guifg=#3d3d3d guibg=#5e5e5e
+  hi VimCommentTitle guifg=#53a6a6
+  hi Visual guifg=#5e5e5e guibg=#c0c0c0
+  hi WarningMsg guifg=#8a2f58 guibg=#c0c0c0
+  hi WildMenu guifg=#5e468c guibg=#c0c0c0
+  hi diffAdded guifg=#395573
+  hi diffChanged guifg=#2b7694
+  hi diffLine guifg=#53a6a6
+  hi diffNewFile guifg=#287373
+  hi diffOldFile guifg=#287373
+  hi diffOldLine guifg=#287373
+  hi diffRemoved guifg=#8a2f58
+  hi helpHyperTextJump guifg=#bf85cc
+  hi htmlEndTag guifg=#2b7694
+  hi htmlTag guifg=#2b7694
+  hi htmlTagName guifg=#bf85cc
+  hi javaScriptNumber guifg=#bf85cc
+  hi perlSharpBang gui=standout guifg=#53a6a6
+  hi perlStatement guifg=#7f62b3
+  hi perlStatementStorage guifg=#8a2f58
+  hi perlVarPlain guifg=#914e89
+  hi perlVarPlain2 guifg=#bf85cc
+  hi rubySharpBang gui=standout guifg=#53a6a6
+  hi vimFold guifg=#3d3d3d guibg=#c0c0c0
 elseif &t_Co == 256
-  hi Normal ctermfg=15
-  hi Boolean ctermfg=3
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=7
-  hi Conceal ctermbg=8
-  hi Conditional ctermfg=14
-  hi Constant ctermfg=13
-  hi Cursor ctermbg=8
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=11
-  hi Debug ctermfg=1
-  hi Define ctermfg=2
-  hi Delimiter ctermfg=12
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=1 ctermbg=NONE
-  hi Exception ctermfg=1
-  hi Float ctermfg=3
-  hi FoldColumn ctermfg=14 ctermbg=8
-  hi Folded ctermfg=7 ctermbg=0
-  hi Function ctermfg=11
-  hi Identifier cterm=bold ctermfg=13
-  hi Ignore ctermfg=8
-  hi IncSearch ctermfg=1 ctermbg=15
-  hi Include ctermfg=5
-  hi Keyword ctermfg=9
-  hi Label ctermfg=13
-  hi LineNr ctermfg=8
-  hi Macro ctermfg=13
-  hi MatchParen ctermfg=0 ctermbg=7
-  hi ModeMsg ctermfg=13
-  hi MoreMsg ctermfg=13
-  hi NonText ctermfg=6
-  hi Number ctermfg=14
-  hi Operator ctermfg=3
-  hi Pmenu ctermfg=2 ctermbg=15
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=1 ctermbg=15
-  hi PmenuThumb ctermbg=15
-  hi PreCondit ctermfg=13
-  hi PreProc ctermfg=10
-  hi Question ctermfg=10 ctermbg=15
-  hi Repeat ctermfg=9
-  hi Search ctermfg=1 ctermbg=15
-  hi SignColumn ctermfg=14 ctermbg=8
-  hi Special ctermfg=10
-  hi SpecialChar ctermfg=9
-  hi SpecialComment ctermfg=9
-  hi SpecialKey ctermfg=11
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement ctermfg=4
-  hi StatusLine ctermfg=0 ctermbg=7
-  hi StatusLineNC ctermfg=0 ctermbg=8
-  hi StorageClass ctermfg=11
-  hi String ctermfg=2
-  hi Structure ctermfg=5
-  hi TabLine ctermfg=8 ctermbg=0
-  hi TabLineFill ctermfg=0
-  hi TabLineSel ctermfg=7 ctermbg=0
-  hi Tag ctermfg=11
-  hi Title ctermfg=3
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=6
-  hi Typedef ctermfg=6
-  hi Underlined ctermfg=4
-  hi VertSplit ctermfg=0 ctermbg=8
-  hi VimCommentTitle ctermfg=10
-  hi Visual ctermfg=8 ctermbg=15
-  hi WarningMsg ctermbg=15
-  hi WildMenu ctermfg=5 ctermbg=15
-  hi diffAdded ctermfg=4
-  hi diffChanged ctermfg=6
-  hi diffLine ctermfg=10
-  hi diffNewFile ctermfg=2
-  hi diffOldFile ctermfg=2
-  hi diffOldLine ctermfg=2
-  hi diffRemoved ctermfg=1
-  hi helpHyperTextJump ctermfg=11
-  hi htmlEndTag ctermfg=6
-  hi htmlTag ctermfg=6
-  hi htmlTagName ctermfg=11
-  hi javaScriptNumber ctermfg=11
-  hi perlSharpBang cterm=standout ctermfg=10
-  hi perlStatement ctermfg=13
-  hi perlStatementStorage ctermfg=1
-  hi perlVarPlain ctermfg=3
-  hi perlVarPlain2 ctermfg=11
-  hi rubySharpBang cterm=standout ctermfg=10
-  hi vimFold ctermfg=0 ctermbg=15
+  hi Normal ctermfg=250 ctermbg=233
+  hi Boolean ctermfg=96
+  hi Conditional ctermfg=67
+  hi Cursor ctermbg=59
+  hi CursorLine ctermbg=237
+  hi Debug ctermfg=89
+  hi Define ctermfg=23
+  hi Delimiter ctermfg=67
+  hi Exception ctermfg=89
+  hi Float ctermfg=96
+  hi Function ctermfg=140
+  hi IncSearch ctermfg=89 ctermbg=250
+  hi Include ctermfg=60
+  hi Keyword ctermfg=168
+  hi Label ctermfg=97
+  hi Macro ctermfg=97
+  hi MatchParen ctermfg=237
+  hi ModeMsg ctermfg=97
+  hi Number ctermfg=67
+  hi Operator ctermfg=96
+  hi PreCondit ctermfg=97
+  hi Question ctermbg=250
+  hi Repeat ctermfg=168
+  hi SpecialChar ctermfg=168
+  hi SpecialComment ctermfg=168
+  hi SpellBad ctermbg=NONE
+  hi SpellCap ctermbg=NONE
+  hi SpellLocal ctermbg=NONE
+  hi SpellRare ctermbg=NONE
+  hi StatusLine ctermfg=237 ctermbg=247
+  hi StatusLineNC ctermfg=237 ctermbg=59
+  hi StorageClass ctermfg=140
+  hi String ctermfg=23
+  hi Structure ctermfg=60
+  hi TabLineFill ctermfg=237
+  hi TabLineSel ctermfg=247 ctermbg=237
+  hi Tag ctermfg=140
+  hi Typedef ctermfg=30
+  hi VertSplit ctermfg=237 ctermbg=59
+  hi VimCommentTitle ctermfg=73
+  hi Visual cterm=NONE ctermfg=59 ctermbg=8
+  hi WarningMsg ctermbg=250
+  hi diffAdded ctermfg=240
+  hi diffChanged ctermfg=30
+  hi diffLine ctermfg=73
+  hi diffNewFile ctermfg=23
+  hi diffOldFile ctermfg=23
+  hi diffOldLine ctermfg=23
+  hi diffRemoved ctermfg=89
+  hi helpHyperTextJump ctermfg=140
+  hi htmlEndTag ctermfg=30
+  hi htmlTag ctermfg=30
+  hi htmlTagName ctermfg=140
+  hi javaScriptNumber ctermfg=140
+  hi perlSharpBang ctermfg=73
+  hi perlStatement ctermfg=97
+  hi perlStatementStorage ctermfg=89
+  hi perlVarPlain ctermfg=96
+  hi perlVarPlain2 ctermfg=140
+  hi rubySharpBang ctermfg=73
+  hi vimFold ctermfg=237 ctermbg=250
 elseif &t_Co == 88
-  hi Normal ctermfg=79
-  hi Boolean ctermfg=56
-  hi ColorColumn ctermbg=48
-  hi Comment ctermfg=87
-  hi Conceal ctermbg=81
-  hi Conditional ctermfg=31
-  hi Constant ctermfg=67
+  hi Normal ctermfg=85 ctermbg=16
+  hi Boolean ctermfg=83
+  hi Conditional ctermfg=83
   hi Cursor ctermbg=81
-  hi CursorColumn ctermbg=16
-  hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=76
-  hi Debug ctermfg=48
-  hi Define ctermfg=24
-  hi Delimiter ctermfg=39
-  hi DiffAdd ctermbg=48
-  hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=48 ctermbg=NONE
-  hi Exception ctermfg=48
-  hi Float ctermfg=56
-  hi FoldColumn ctermfg=31 ctermbg=81
-  hi Folded ctermfg=87 ctermbg=16
-  hi Function ctermfg=76
-  hi Identifier cterm=bold ctermfg=67
-  hi Ignore ctermfg=81
-  hi IncSearch ctermfg=48 ctermbg=79
-  hi Include ctermfg=50
-  hi Keyword ctermfg=9
-  hi Label ctermfg=67
-  hi LineNr ctermfg=81
-  hi Macro ctermfg=67
-  hi MatchParen ctermfg=16 ctermbg=87
-  hi ModeMsg ctermfg=67
-  hi MoreMsg ctermfg=67
-  hi NonText ctermfg=6
-  hi Number ctermfg=31
-  hi Operator ctermfg=56
-  hi Pmenu ctermfg=24 ctermbg=79
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=48 ctermbg=79
-  hi PmenuThumb ctermbg=79
-  hi PreCondit ctermfg=67
-  hi PreProc ctermfg=28
-  hi Question ctermfg=28 ctermbg=79
-  hi Repeat ctermfg=9
-  hi Search ctermfg=48 ctermbg=79
-  hi SignColumn ctermfg=31 ctermbg=81
-  hi Special ctermfg=28
-  hi SpecialChar ctermfg=9
-  hi SpecialComment ctermfg=9
-  hi SpecialKey ctermfg=76
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement ctermfg=19
-  hi StatusLine ctermfg=16 ctermbg=87
-  hi StatusLineNC ctermfg=16 ctermbg=81
-  hi StorageClass ctermfg=76
-  hi String ctermfg=24
-  hi Structure ctermfg=50
-  hi TabLine ctermfg=81 ctermbg=16
-  hi TabLineFill ctermfg=16
-  hi TabLineSel ctermfg=87 ctermbg=16
-  hi Tag ctermfg=76
-  hi Title ctermfg=56
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=6
-  hi Typedef ctermfg=6
-  hi Underlined ctermfg=19
-  hi VertSplit ctermfg=16 ctermbg=81
-  hi VimCommentTitle ctermfg=28
-  hi Visual ctermfg=81 ctermbg=79
-  hi WarningMsg ctermbg=79
-  hi WildMenu ctermfg=50 ctermbg=79
-  hi diffAdded ctermfg=19
-  hi diffChanged ctermfg=6
-  hi diffLine ctermfg=28
-  hi diffNewFile ctermfg=24
-  hi diffOldFile ctermfg=24
-  hi diffOldLine ctermfg=24
-  hi diffRemoved ctermfg=48
-  hi helpHyperTextJump ctermfg=76
-  hi htmlEndTag ctermfg=6
-  hi htmlTag ctermfg=6
-  hi htmlTagName ctermfg=76
-  hi javaScriptNumber ctermfg=76
-  hi perlSharpBang cterm=standout ctermfg=28
-  hi perlStatement ctermfg=67
-  hi perlStatementStorage ctermfg=48
-  hi perlVarPlain ctermfg=56
-  hi perlVarPlain2 ctermfg=76
-  hi rubySharpBang cterm=standout ctermfg=28
-  hi vimFold ctermfg=16 ctermbg=79
+  hi CursorLine ctermbg=80
+  hi Debug ctermfg=81
+  hi Define ctermfg=82
+  hi Delimiter ctermfg=38
+  hi Exception ctermfg=81
+  hi Float ctermfg=83
+  hi Function ctermfg=54
+  hi IncSearch ctermfg=81 ctermbg=85
+  hi Include ctermfg=81
+  hi Keyword ctermfg=53
+  hi Label ctermfg=38
+  hi Macro ctermfg=38
+  hi MatchParen ctermfg=80
+  hi ModeMsg ctermfg=38
+  hi Number ctermfg=83
+  hi Operator ctermfg=83
+  hi PreCondit ctermfg=38
+  hi Question ctermbg=85
+  hi Repeat ctermfg=53
+  hi SpecialChar ctermfg=53
+  hi SpecialComment ctermfg=53
+  hi SpellBad ctermbg=NONE
+  hi SpellCap ctermbg=NONE
+  hi SpellLocal ctermbg=NONE
+  hi SpellRare ctermbg=NONE
+  hi StatusLine ctermfg=80 ctermbg=84
+  hi StatusLineNC ctermfg=80 ctermbg=81
+  hi StorageClass ctermfg=54
+  hi String ctermfg=82
+  hi Structure ctermfg=81
+  hi TabLineFill ctermfg=80
+  hi TabLineSel ctermfg=84 ctermbg=80
+  hi Tag ctermfg=54
+  hi Typedef ctermfg=21
+  hi VertSplit ctermfg=80 ctermbg=81
+  hi VimCommentTitle ctermfg=84
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
+  hi WarningMsg ctermbg=85
+  hi diffAdded ctermfg=81
+  hi diffChanged ctermfg=21
+  hi diffLine ctermfg=84
+  hi diffNewFile ctermfg=82
+  hi diffOldFile ctermfg=82
+  hi diffOldLine ctermfg=82
+  hi diffRemoved ctermfg=81
+  hi helpHyperTextJump ctermfg=54
+  hi htmlEndTag ctermfg=21
+  hi htmlTag ctermfg=21
+  hi htmlTagName ctermfg=54
+  hi javaScriptNumber ctermfg=54
+  hi perlSharpBang ctermfg=84
+  hi perlStatement ctermfg=38
+  hi perlStatementStorage ctermfg=81
+  hi perlVarPlain ctermfg=83
+  hi perlVarPlain2 ctermfg=54
+  hi rubySharpBang ctermfg=84
+  hi vimFold ctermfg=80 ctermbg=85
 elseif &t_Co == 16
-  hi Normal ctermfg=15
-  hi Boolean ctermfg=3
-  hi ColorColumn ctermbg=9
-  hi Comment ctermfg=11
-  hi Conceal ctermbg=2
-  hi Conditional ctermfg=14
-  hi Constant ctermfg=13
-  hi Cursor ctermbg=2
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=11
-  hi Debug ctermfg=9
-  hi Define ctermfg=2
-  hi Delimiter ctermfg=12
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=9 ctermbg=NONE
-  hi Exception ctermfg=9
-  hi Float ctermfg=3
-  hi FoldColumn ctermfg=14 ctermbg=2
-  hi Folded ctermfg=11 ctermbg=0
-  hi Function ctermfg=11
-  hi Identifier cterm=bold ctermfg=13
-  hi Ignore ctermfg=2
-  hi IncSearch ctermfg=9 ctermbg=15
-  hi Include ctermfg=13
-  hi Keyword ctermfg=9
-  hi Label ctermfg=13
-  hi LineNr ctermfg=2
-  hi Macro ctermfg=13
-  hi MatchParen ctermfg=0 ctermbg=11
-  hi ModeMsg ctermfg=13
-  hi MoreMsg ctermfg=13
-  hi NonText ctermfg=6
-  hi Number ctermfg=14
-  hi Operator ctermfg=3
-  hi Pmenu ctermfg=2 ctermbg=15
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=9 ctermbg=15
-  hi PmenuThumb ctermbg=15
-  hi PreCondit ctermfg=13
-  hi PreProc ctermfg=2
-  hi Question ctermfg=2 ctermbg=15
-  hi Repeat ctermfg=9
-  hi Search ctermfg=9 ctermbg=15
-  hi SignColumn ctermfg=14 ctermbg=2
-  hi Special ctermfg=2
-  hi SpecialChar ctermfg=9
-  hi SpecialComment ctermfg=9
-  hi SpecialKey ctermfg=11
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement ctermfg=4
-  hi StatusLine ctermfg=0 ctermbg=11
-  hi StatusLineNC ctermfg=0 ctermbg=2
-  hi StorageClass ctermfg=11
-  hi String ctermfg=2
-  hi Structure ctermfg=13
-  hi TabLine ctermfg=2 ctermbg=0
-  hi TabLineFill ctermfg=0
-  hi TabLineSel ctermfg=11 ctermbg=0
-  hi Tag ctermfg=11
-  hi Title ctermfg=3
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=6
-  hi Typedef ctermfg=6
-  hi Underlined ctermfg=4
-  hi VertSplit ctermfg=0 ctermbg=2
-  hi VimCommentTitle ctermfg=2
-  hi Visual ctermfg=2 ctermbg=15
-  hi WarningMsg ctermbg=15
-  hi WildMenu ctermfg=13 ctermbg=15
-  hi diffAdded ctermfg=4
-  hi diffChanged ctermfg=6
-  hi diffLine ctermfg=2
-  hi diffNewFile ctermfg=2
-  hi diffOldFile ctermfg=2
-  hi diffOldLine ctermfg=2
-  hi diffRemoved ctermfg=9
-  hi helpHyperTextJump ctermfg=11
-  hi htmlEndTag ctermfg=6
-  hi htmlTag ctermfg=6
-  hi htmlTagName ctermfg=11
-  hi javaScriptNumber ctermfg=11
-  hi perlSharpBang cterm=standout ctermfg=2
-  hi perlStatement ctermfg=13
-  hi perlStatementStorage ctermfg=9
-  hi perlVarPlain ctermfg=3
-  hi perlVarPlain2 ctermfg=11
-  hi rubySharpBang cterm=standout ctermfg=2
-  hi vimFold ctermfg=0 ctermbg=15
-else " 8 colors
-  hi Normal ctermfg=7
-  hi Boolean ctermfg=3
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=7
-  hi Conceal ctermbg=2
+  hi Normal ctermfg=7 ctermbg=0
+  hi Boolean ctermfg=5
   hi Conditional ctermfg=6
-  hi Constant ctermfg=5
-  hi Cursor ctermbg=2
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
-  hi Debug ctermfg=1
-  hi Define ctermfg=2
-  hi Delimiter ctermfg=5
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=1 ctermbg=NONE
-  hi Exception ctermfg=1
-  hi Float ctermfg=3
-  hi FoldColumn ctermfg=6 ctermbg=2
-  hi Folded ctermfg=7 ctermbg=0
-  hi Function ctermfg=3
-  hi Identifier cterm=bold ctermfg=5
-  hi Ignore ctermfg=2
-  hi IncSearch ctermfg=1 ctermbg=7
+  hi Cursor ctermbg=3
+  hi CursorLine ctermbg=2
+  hi Debug ctermfg=5
+  hi Define ctermfg=6
+  hi Delimiter ctermfg=6
+  hi Exception ctermfg=5
+  hi Float ctermfg=5
+  hi Function ctermfg=7
+  hi IncSearch ctermfg=5 ctermbg=7
   hi Include ctermfg=5
-  hi Keyword ctermfg=1
-  hi Label ctermfg=5
-  hi LineNr ctermfg=2
-  hi Macro ctermfg=5
-  hi MatchParen ctermfg=0 ctermbg=7
-  hi ModeMsg ctermfg=5
-  hi MoreMsg ctermfg=5
-  hi NonText ctermfg=6
+  hi Keyword ctermfg=5
+  hi Label ctermfg=8
+  hi Macro ctermfg=8
+  hi MatchParen ctermfg=2
+  hi ModeMsg ctermfg=8
   hi Number ctermfg=6
-  hi Operator ctermfg=3
-  hi Pmenu ctermfg=2 ctermbg=7
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=1 ctermbg=7
-  hi PmenuThumb ctermbg=7
-  hi PreCondit ctermfg=5
-  hi PreProc ctermfg=2
-  hi Question ctermfg=2 ctermbg=7
-  hi Repeat ctermfg=1
-  hi Search ctermfg=1 ctermbg=7
-  hi SignColumn ctermfg=6 ctermbg=2
-  hi Special ctermfg=2
-  hi SpecialChar ctermfg=1
-  hi SpecialComment ctermfg=1
-  hi SpecialKey ctermfg=3
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement ctermfg=4
-  hi StatusLine ctermfg=0 ctermbg=7
-  hi StatusLineNC ctermfg=0 ctermbg=2
-  hi StorageClass ctermfg=3
-  hi String ctermfg=2
+  hi Operator ctermfg=5
+  hi PreCondit ctermfg=8
+  hi Question ctermbg=7
+  hi Repeat ctermfg=5
+  hi SpecialChar ctermfg=5
+  hi SpecialComment ctermfg=5
+  hi SpellBad ctermbg=NONE
+  hi SpellCap ctermbg=NONE
+  hi SpellLocal ctermbg=NONE
+  hi SpellRare ctermbg=NONE
+  hi StatusLine ctermfg=2 ctermbg=8
+  hi StatusLineNC ctermfg=2 ctermbg=3
+  hi StorageClass ctermfg=7
+  hi String ctermfg=6
   hi Structure ctermfg=5
-  hi TabLine ctermfg=2 ctermbg=0
-  hi TabLineFill ctermfg=0
-  hi TabLineSel ctermfg=7 ctermbg=0
-  hi Tag ctermfg=3
-  hi Title ctermfg=3
-  hi Todo ctermfg=1 ctermbg=NONE
-  hi Type ctermfg=6
+  hi TabLineFill ctermfg=2
+  hi TabLineSel ctermfg=8 ctermbg=2
+  hi Tag ctermfg=7
   hi Typedef ctermfg=6
-  hi Underlined ctermfg=4
-  hi VertSplit ctermfg=0 ctermbg=2
-  hi VimCommentTitle ctermfg=2
-  hi Visual ctermfg=2 ctermbg=7
+  hi VertSplit ctermfg=2 ctermbg=3
+  hi VimCommentTitle ctermfg=8
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=7
-  hi WildMenu ctermfg=5 ctermbg=7
-  hi diffAdded ctermfg=4
+  hi diffAdded ctermfg=6
   hi diffChanged ctermfg=6
-  hi diffLine ctermfg=2
-  hi diffNewFile ctermfg=2
-  hi diffOldFile ctermfg=2
-  hi diffOldLine ctermfg=2
-  hi diffRemoved ctermfg=1
-  hi helpHyperTextJump ctermfg=3
+  hi diffLine ctermfg=8
+  hi diffNewFile ctermfg=6
+  hi diffOldFile ctermfg=6
+  hi diffOldLine ctermfg=6
+  hi diffRemoved ctermfg=5
+  hi helpHyperTextJump ctermfg=7
   hi htmlEndTag ctermfg=6
   hi htmlTag ctermfg=6
-  hi htmlTagName ctermfg=3
-  hi javaScriptNumber ctermfg=3
-  hi perlSharpBang cterm=standout ctermfg=2
+  hi htmlTagName ctermfg=7
+  hi javaScriptNumber ctermfg=7
+  hi perlSharpBang ctermfg=8
+  hi perlStatement ctermfg=8
+  hi perlStatementStorage ctermfg=5
+  hi perlVarPlain ctermfg=5
+  hi perlVarPlain2 ctermfg=7
+  hi rubySharpBang ctermfg=8
+  hi vimFold ctermfg=2 ctermbg=7
+else " 8 colors
+  hi Normal ctermfg=7 ctermbg=0
+  hi Boolean ctermfg=5
+  hi Conditional ctermfg=6
+  hi Cursor ctermbg=3
+  hi CursorLine ctermbg=2
+  hi Debug ctermfg=5
+  hi Define ctermfg=6
+  hi Delimiter ctermfg=6
+  hi Exception ctermfg=5
+  hi Float ctermfg=5
+  hi Function ctermfg=7
+  hi IncSearch ctermfg=5 ctermbg=7
+  hi Include ctermfg=5
+  hi Keyword ctermfg=5
+  hi Label ctermfg=5
+  hi Macro ctermfg=5
+  hi MatchParen ctermfg=2
+  hi ModeMsg ctermfg=5
+  hi Number ctermfg=6
+  hi Operator ctermfg=5
+  hi PreCondit ctermfg=5
+  hi Question ctermbg=7
+  hi Repeat ctermfg=5
+  hi SpecialChar ctermfg=5
+  hi SpecialComment ctermfg=5
+  hi SpellBad ctermbg=NONE
+  hi SpellCap ctermbg=NONE
+  hi SpellLocal ctermbg=NONE
+  hi SpellRare ctermbg=NONE
+  hi StatusLine ctermfg=2 ctermbg=7
+  hi StatusLineNC ctermfg=2 ctermbg=3
+  hi StorageClass ctermfg=7
+  hi String ctermfg=6
+  hi Structure ctermfg=5
+  hi TabLineFill ctermfg=2
+  hi TabLineSel ctermfg=7 ctermbg=2
+  hi Tag ctermfg=7
+  hi Typedef ctermfg=6
+  hi VertSplit ctermfg=2 ctermbg=3
+  hi VimCommentTitle ctermfg=6
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
+  hi WarningMsg ctermbg=7
+  hi diffAdded ctermfg=6
+  hi diffChanged ctermfg=6
+  hi diffLine ctermfg=6
+  hi diffNewFile ctermfg=6
+  hi diffOldFile ctermfg=6
+  hi diffOldLine ctermfg=6
+  hi diffRemoved ctermfg=5
+  hi helpHyperTextJump ctermfg=7
+  hi htmlEndTag ctermfg=6
+  hi htmlTag ctermfg=6
+  hi htmlTagName ctermfg=7
+  hi javaScriptNumber ctermfg=7
+  hi perlSharpBang ctermfg=6
   hi perlStatement ctermfg=5
-  hi perlStatementStorage ctermfg=1
-  hi perlVarPlain ctermfg=3
-  hi perlVarPlain2 ctermfg=3
-  hi rubySharpBang cterm=standout ctermfg=2
-  hi vimFold ctermfg=0 ctermbg=7
+  hi perlStatementStorage ctermfg=5
+  hi perlVarPlain ctermfg=5
+  hi perlVarPlain2 ctermfg=7
+  hi rubySharpBang ctermfg=6
+  hi vimFold ctermfg=2 ctermbg=7
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: astroboy
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:37
+" Date: 2012-09-29 13:30:33
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,7 @@ if has("gui_running")
   hi Character guifg=#f8f888 guibg=bg
   hi Comment guifg=#d8d8d8 guibg=bg
   hi Constant guifg=#f8f888 guibg=bg
-  hi Cursor guifg=bg guibg=#66ff66
+  hi Cursor guibg=#66ff66
   hi CursorColumn guibg=#131313
   hi CursorLine guibg=#131313
   hi Debug guifg=#f888f8 guibg=bg
@@ -67,7 +67,7 @@ if has("gui_running")
   hi Underlined guifg=#f8f888 guibg=bg
   hi VertSplit gui=NONE guifg=#000000 guibg=#68f868
   hi Visual guibg=#007000
-  hi VisualNOS guibg=#000070
+  hi VisualNOS gui=NONE guibg=#000070
   hi WarningMsg guifg=bg guibg=#f8f888
   hi WildMenu gui=underline guifg=#78f8c8 guibg=bg
   hi cursorim guifg=bg guibg=#66ccff
@@ -76,7 +76,7 @@ elseif &t_Co == 256
   hi Character ctermfg=228 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=83
+  hi Cursor ctermbg=83
   hi CursorLine ctermbg=233
   hi Debug ctermfg=213 ctermbg=bg
   hi Delimiter ctermfg=254 ctermbg=bg
@@ -106,6 +106,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=83
+  hi Visual cterm=NONE ctermbg=8
   hi VisualNOS ctermbg=17
   hi WarningMsg ctermbg=228
   hi cursorim ctermfg=bg ctermbg=81
@@ -114,7 +115,7 @@ elseif &t_Co == 88
   hi Character ctermfg=77 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=45
+  hi Cursor ctermbg=45
   hi CursorLine ctermbg=16
   hi Debug ctermfg=71 ctermbg=bg
   hi Delimiter ctermfg=87 ctermbg=bg
@@ -144,6 +145,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=45
+  hi Visual cterm=NONE ctermbg=81
   hi VisualNOS ctermbg=17
   hi WarningMsg ctermbg=77
   hi cursorim ctermfg=bg ctermbg=43
@@ -152,7 +154,7 @@ elseif &t_Co == 16
   hi Character ctermfg=11 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=10
+  hi Cursor ctermbg=10
   hi CursorLine ctermbg=0
   hi Debug ctermfg=15 ctermbg=bg
   hi Delimiter ctermfg=11 ctermbg=bg
@@ -182,6 +184,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=10
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=4
   hi WarningMsg ctermbg=11
   hi cursorim ctermfg=bg ctermbg=12
@@ -190,7 +193,7 @@ else " 8 colors
   hi Character ctermfg=7 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=7
+  hi Cursor ctermbg=7
   hi CursorLine ctermbg=0
   hi Debug ctermfg=7 ctermbg=bg
   hi Delimiter ctermfg=7 ctermbg=bg
@@ -220,6 +223,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=4
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=bg ctermbg=7

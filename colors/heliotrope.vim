@@ -4,7 +4,7 @@
 " Name: heliotrope
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:19
+" Date: 2012-09-29 13:36:00
 "----------------------------------------------------------
 
 set background=light
@@ -42,6 +42,7 @@ if has("gui_running")
   hi Pmenu gui=bold guifg=white guibg=#B92503
   hi PreProc gui=bold guifg=#111111
   hi Repeat gui=bold guifg=#222222
+  hi Search guifg=NONE
   hi Special guifg=#007633
   hi SpecialKey gui=bold guifg=#994400 guibg=#e8e8e8
   hi Statement guifg=#111111
@@ -57,7 +58,7 @@ if has("gui_running")
   hi Type guifg=#0d4c15
   hi Underlined guifg=#202020
   hi VertSplit gui=bold guifg=#82b687 guibg=#82b687
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
   hi mbechanged gui=bold guifg=#B92503 guibg=#e3f8f2
   hi mbenormal guifg=#333333 guibg=#e3f8f2
   hi mbevisiblechanged gui=bold guifg=#880000 guibg=#82b687
@@ -77,6 +78,7 @@ elseif &t_Co == 256
   hi Number ctermfg=23
   hi Operator ctermfg=235
   hi Repeat ctermfg=235
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=254
   hi StatusLine ctermfg=232 ctermbg=108
   hi StatusLineNC ctermfg=232 ctermbg=108
@@ -85,7 +87,8 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=231
   hi TabLineSel ctermfg=231 ctermbg=161
   hi VertSplit ctermfg=108 ctermbg=108
-  hi lcursor ctermfg=16 ctermbg=231
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=16 ctermbg=231
   hi mbechanged ctermfg=124 ctermbg=255
   hi mbenormal ctermfg=236 ctermbg=255
   hi mbevisiblechanged ctermfg=88 ctermbg=108
@@ -105,6 +108,7 @@ elseif &t_Co == 88
   hi Number ctermfg=17
   hi Operator ctermfg=80
   hi Repeat ctermfg=80
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=87
   hi StatusLine ctermfg=16 ctermbg=41
   hi StatusLineNC ctermfg=16 ctermbg=41
@@ -113,7 +117,8 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=79
   hi TabLineSel ctermfg=79 ctermbg=48
   hi VertSplit ctermfg=41 ctermbg=41
-  hi lcursor ctermfg=16 ctermbg=79
+  hi Visual cterm=NONE ctermbg=87
+  hi lCursor ctermfg=16 ctermbg=79
   hi mbechanged ctermfg=48 ctermbg=87
   hi mbenormal ctermfg=80 ctermbg=87
   hi mbevisiblechanged ctermfg=32 ctermbg=41
@@ -133,6 +138,7 @@ elseif &t_Co == 16
   hi Number ctermfg=4
   hi Operator ctermfg=0
   hi Repeat ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=11
   hi StatusLine ctermfg=0 ctermbg=10
   hi StatusLineNC ctermfg=0 ctermbg=10
@@ -141,7 +147,8 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=15
   hi TabLineSel ctermfg=15 ctermbg=9
   hi VertSplit ctermfg=10 ctermbg=10
-  hi lcursor ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=11
+  hi lCursor ctermfg=0 ctermbg=15
   hi mbechanged ctermfg=1 ctermbg=14
   hi mbenormal ctermfg=2 ctermbg=14
   hi mbevisiblechanged ctermfg=1 ctermbg=10
@@ -161,6 +168,7 @@ else " 8 colors
   hi Number ctermfg=4
   hi Operator ctermfg=0
   hi Repeat ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=0 ctermbg=7
@@ -169,7 +177,8 @@ else " 8 colors
   hi TabLineFill ctermfg=7
   hi TabLineSel ctermfg=7 ctermbg=1
   hi VertSplit ctermfg=7 ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
   hi mbechanged ctermfg=1 ctermbg=7
   hi mbenormal ctermfg=2 ctermbg=7
   hi mbevisiblechanged ctermfg=1 ctermbg=7

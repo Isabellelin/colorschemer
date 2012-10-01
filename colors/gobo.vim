@@ -4,7 +4,7 @@
 " Name: gobo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:49
+" Date: 2012-09-29 13:35:18
 "----------------------------------------------------------
 
 set background=light
@@ -21,6 +21,7 @@ if has("gui_running")
   hi Constant gui=bold guifg=#CC0099
   hi Operator guifg=#CC0099
   hi PreProc guifg=#0066FF
+  hi Search guifg=NONE
   hi Special guifg=#6600CC
   hi Statement guifg=#3399FF
   hi Type guifg=#6600CC
@@ -28,19 +29,23 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=233 ctermbg=231
   hi Operator ctermfg=162
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Search ctermfg=NONE
+  hi Visual ctermbg=NONE
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi Operator ctermfg=49
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Search ctermfg=NONE
+  hi Visual ctermbg=NONE
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Operator ctermfg=5
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Search ctermfg=NONE
+  hi Visual ctermbg=NONE
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Operator ctermfg=5
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Search ctermfg=NONE
+  hi Visual ctermbg=NONE
 endif
 
 

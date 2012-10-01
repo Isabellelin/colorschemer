@@ -4,7 +4,7 @@
 " Name: wombat256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:47
+" Date: 2012-09-29 13:48:27
 "----------------------------------------------------------
 
 set background=dark
@@ -46,125 +46,125 @@ if has("gui_running")
   hi Visual guifg=#ecee90 guibg=#597418
   hi WarningMsg guifg=#ff0000
 elseif &t_Co == 256
-  hi Normal ctermfg=251 ctermbg=234
-  hi Comment ctermfg=143
-  hi Constant ctermfg=173
-  hi Cursor ctermfg=234 ctermbg=228
-  hi CursorColumn ctermbg=235
-  hi CursorLine cterm=NONE ctermbg=235
-  hi Folded ctermfg=145 ctermbg=237
-  hi Function ctermfg=192
-  hi Identifier cterm=NONE ctermfg=192
-  hi Keyword ctermfg=111
-  hi LineNr ctermfg=101 ctermbg=232
-  hi MatchParen cterm=bold ctermfg=228 ctermbg=101
-  hi Number ctermfg=173
-  hi Pmenu ctermfg=230 ctermbg=237
-  hi PmenuSel ctermfg=232 ctermbg=192
-  hi PreProc ctermfg=173
-  hi Search ctermfg=177 ctermbg=240
-  hi Special ctermfg=223
-  hi SpecialKey ctermfg=241 ctermbg=235
-  hi Statement ctermfg=111
-  hi StatusLine cterm=NONE ctermfg=230 ctermbg=237
-  hi StatusLineNC cterm=NONE ctermfg=101 ctermbg=237
-  hi String ctermfg=113
-  hi Title cterm=bold ctermfg=230
-  hi Todo ctermfg=101
-  hi Type ctermfg=192
-  hi VertSplit cterm=NONE ctermfg=237 ctermbg=237
-  hi Visual ctermfg=228 ctermbg=64
-  hi WarningMsg ctermfg=196
-elseif &t_Co == 88
-  hi Normal ctermfg=58 ctermbg=80
-  hi Comment ctermfg=84
+  hi Normal ctermfg=86 ctermbg=80
+  hi Comment ctermfg=57
   hi Constant ctermfg=53
   hi Cursor ctermfg=80 ctermbg=77
   hi CursorColumn ctermbg=80
   hi CursorLine cterm=NONE ctermbg=80
-  hi Folded ctermfg=85 ctermbg=80
+  hi Folded ctermfg=38 ctermbg=17
   hi Function ctermfg=61
   hi Identifier cterm=NONE ctermfg=61
   hi Keyword ctermfg=43
-  hi LineNr ctermfg=83 ctermbg=16
-  hi MatchParen cterm=bold ctermfg=77 ctermbg=83
+  hi LineNr ctermfg=37 ctermbg=16
+  hi MatchParen cterm=bold ctermfg=77 ctermbg=37
   hi Number ctermfg=53
-  hi Pmenu ctermfg=78 ctermbg=80
+  hi Pmenu ctermfg=79 ctermbg=80
   hi PmenuSel ctermfg=16 ctermbg=61
   hi PreProc ctermfg=53
   hi Search ctermfg=55 ctermbg=81
   hi Special ctermfg=74
-  hi SpecialKey ctermfg=81 ctermbg=80
+  hi SpecialKey ctermfg=82 ctermbg=80
   hi Statement ctermfg=43
-  hi StatusLine cterm=NONE ctermfg=78 ctermbg=80
-  hi StatusLineNC cterm=NONE ctermfg=83 ctermbg=80
+  hi StatusLine cterm=NONE ctermfg=79 ctermbg=80
+  hi StatusLineNC cterm=NONE ctermfg=37 ctermbg=80
   hi String ctermfg=41
-  hi Title cterm=bold ctermfg=78
-  hi Todo ctermfg=83
+  hi Title cterm=bold ctermfg=79
+  hi Todo ctermfg=37
   hi Type ctermfg=61
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=77 ctermbg=36
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=77 ctermbg=36
+  hi WarningMsg ctermfg=64
+elseif &t_Co == 88
+  hi Normal ctermfg=46 ctermbg=42
+  hi Comment ctermfg=35
+  hi Constant ctermfg=33
+  hi Cursor ctermfg=42 ctermbg=41
+  hi CursorColumn ctermbg=42
+  hi CursorLine cterm=NONE ctermbg=42
+  hi Folded ctermfg=6 ctermbg=17
+  hi Function ctermfg=81
+  hi Identifier cterm=NONE ctermfg=81
+  hi Keyword ctermfg=6
+  hi LineNr ctermfg=6 ctermbg=16
+  hi MatchParen cterm=bold ctermfg=41 ctermbg=6
+  hi Number ctermfg=33
+  hi Pmenu ctermfg=42 ctermbg=42
+  hi PmenuSel ctermfg=16 ctermbg=81
+  hi PreProc ctermfg=33
+  hi Search ctermfg=34 ctermbg=43
+  hi Special ctermfg=42
+  hi SpecialKey ctermfg=44 ctermbg=42
+  hi Statement ctermfg=6
+  hi StatusLine cterm=NONE ctermfg=42 ctermbg=42
+  hi StatusLineNC cterm=NONE ctermfg=6 ctermbg=42
+  hi String ctermfg=25
+  hi Title cterm=bold ctermfg=42
+  hi Todo ctermfg=6
+  hi Type ctermfg=81
+  hi VertSplit cterm=NONE ctermfg=42 ctermbg=42
+  hi Visual cterm=NONE ctermfg=41 ctermbg=25
+  hi WarningMsg ctermfg=36
 elseif &t_Co == 16
-  hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=8
-  hi Constant ctermfg=8
-  hi Cursor ctermfg=0 ctermbg=11
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi Folded ctermfg=8 ctermbg=2
-  hi Function ctermfg=10
-  hi Identifier cterm=NONE ctermfg=10
-  hi Keyword ctermfg=12
-  hi LineNr ctermfg=3 ctermbg=0
-  hi MatchParen cterm=bold ctermfg=11 ctermbg=3
-  hi Number ctermfg=8
-  hi Pmenu ctermfg=11 ctermbg=2
-  hi PmenuSel ctermfg=0 ctermbg=10
-  hi PreProc ctermfg=8
-  hi Search ctermfg=14 ctermbg=2
-  hi Special ctermfg=11
-  hi SpecialKey ctermfg=3 ctermbg=0
-  hi Statement ctermfg=12
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=2
-  hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=2
-  hi String ctermfg=10
-  hi Title cterm=bold ctermfg=11
-  hi Todo ctermfg=3
-  hi Type ctermfg=10
-  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11 ctermbg=3
-  hi WarningMsg ctermfg=9
+  hi Normal ctermfg=12 ctermbg=12
+  hi Comment ctermfg=5
+  hi Constant ctermfg=5
+  hi Cursor ctermfg=12 ctermbg=10
+  hi CursorColumn ctermbg=12
+  hi CursorLine cterm=NONE ctermbg=12
+  hi Folded ctermfg=6 ctermbg=4
+  hi Function ctermfg=8
+  hi Identifier cterm=NONE ctermfg=8
+  hi Keyword ctermfg=6
+  hi LineNr ctermfg=6 ctermbg=0
+  hi MatchParen cterm=bold ctermfg=10 ctermbg=6
+  hi Number ctermfg=5
+  hi Pmenu ctermfg=10 ctermbg=12
+  hi PmenuSel ctermfg=0 ctermbg=8
+  hi PreProc ctermfg=5
+  hi Search ctermfg=5 ctermbg=12
+  hi Special ctermfg=8
+  hi SpecialKey ctermfg=3 ctermbg=12
+  hi Statement ctermfg=6
+  hi StatusLine cterm=NONE ctermfg=10 ctermbg=12
+  hi StatusLineNC cterm=NONE ctermfg=6 ctermbg=12
+  hi String ctermfg=6
+  hi Title cterm=bold ctermfg=10
+  hi Todo ctermfg=6
+  hi Type ctermfg=8
+  hi VertSplit cterm=NONE ctermfg=12 ctermbg=12
+  hi Visual cterm=NONE ctermfg=10 ctermbg=6
+  hi WarningMsg ctermfg=3
 else " 8 colors
-  hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=7
-  hi Constant ctermfg=3
-  hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=0
-  hi CursorLine cterm=NONE ctermbg=0
-  hi Folded ctermfg=7 ctermbg=2
-  hi Function ctermfg=7
-  hi Identifier cterm=NONE ctermfg=7
-  hi Keyword ctermfg=7
-  hi LineNr ctermfg=3 ctermbg=0
-  hi MatchParen cterm=bold ctermfg=7 ctermbg=3
-  hi Number ctermfg=3
-  hi Pmenu ctermfg=7 ctermbg=2
-  hi PmenuSel ctermfg=0 ctermbg=7
-  hi PreProc ctermfg=3
-  hi Search ctermfg=7 ctermbg=2
+  hi Normal ctermfg=7 ctermbg=7
+  hi Comment ctermfg=5
+  hi Constant ctermfg=5
+  hi Cursor ctermfg=7 ctermbg=3
+  hi CursorColumn ctermbg=7
+  hi CursorLine cterm=NONE ctermbg=7
+  hi Folded ctermfg=6 ctermbg=4
+  hi Function ctermfg=5
+  hi Identifier cterm=NONE ctermfg=5
+  hi Keyword ctermfg=6
+  hi LineNr ctermfg=6 ctermbg=0
+  hi MatchParen cterm=bold ctermfg=3 ctermbg=6
+  hi Number ctermfg=5
+  hi Pmenu ctermfg=7 ctermbg=7
+  hi PmenuSel ctermfg=0 ctermbg=5
+  hi PreProc ctermfg=5
+  hi Search ctermfg=5 ctermbg=7
   hi Special ctermfg=7
-  hi SpecialKey ctermfg=3 ctermbg=0
-  hi Statement ctermfg=7
-  hi StatusLine cterm=NONE ctermfg=7 ctermbg=2
-  hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=2
-  hi String ctermfg=3
+  hi SpecialKey ctermfg=3 ctermbg=7
+  hi Statement ctermfg=6
+  hi StatusLine cterm=NONE ctermfg=7 ctermbg=7
+  hi StatusLineNC cterm=NONE ctermfg=6 ctermbg=7
+  hi String ctermfg=6
   hi Title cterm=bold ctermfg=7
-  hi Todo ctermfg=3
-  hi Type ctermfg=7
-  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=3
-  hi WarningMsg ctermfg=1
+  hi Todo ctermfg=6
+  hi Type ctermfg=5
+  hi VertSplit cterm=NONE ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermfg=3 ctermbg=6
+  hi WarningMsg ctermfg=3
 endif
 
 hi! link FoldColumn Folded

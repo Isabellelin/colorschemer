@@ -4,7 +4,7 @@
 " Name: fokus
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:32
+" Date: 2012-09-29 13:34:55
 "----------------------------------------------------------
 
 set background=light
@@ -64,8 +64,8 @@ if has("gui_running")
   hi WarningMsg guifg=#ff0000 guibg=#ffe4e4
   hi WildMenu gui=bold guifg=#f8f8f8 guibg=#ff4080
   hi cursorim guifg=#f8f8f8 guibg=#8000ff
-  hi javaScriptParens guifg=#bbbbbb
-  hi lcursor guifg=#f8f8f8 guibg=#8000ff
+  hi javascriptParens guifg=#bbbbbb
+  hi lCursor guifg=#f8f8f8 guibg=#8000ff
   hi phpDefineClassName guifg=#ff4080
   hi phpParent guifg=#B8CDE6
   hi phpStringDouble guifg=#009900
@@ -94,15 +94,16 @@ elseif &t_Co == 256
   hi ModeMsg ctermfg=204
   hi Operator ctermfg=174
   hi Repeat ctermfg=21
-  hi Search ctermfg=238
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=238
   hi StatusLineNC ctermfg=238 ctermbg=250
   hi String ctermfg=107
   hi VertSplit ctermfg=250 ctermbg=250
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=224
   hi cursorim ctermfg=231 ctermbg=93
-  hi javaScriptParens ctermfg=250
-  hi lcursor ctermfg=231 ctermbg=93
+  hi javascriptParens ctermfg=250
+  hi lCursor ctermfg=231 ctermbg=93
   hi phpDefineClassName ctermfg=204
   hi phpParent ctermfg=152
   hi phpStringDouble ctermfg=28
@@ -131,15 +132,16 @@ elseif &t_Co == 88
   hi ModeMsg ctermfg=65
   hi Operator ctermfg=53
   hi Repeat ctermfg=19
-  hi Search ctermfg=8
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=8
   hi StatusLineNC ctermfg=8 ctermbg=85
   hi String ctermfg=83
   hi VertSplit ctermfg=85 ctermbg=85
+  hi Visual cterm=NONE ctermbg=87
   hi WarningMsg ctermbg=87
   hi cursorim ctermfg=79 ctermbg=35
-  hi javaScriptParens ctermfg=85
-  hi lcursor ctermfg=79 ctermbg=35
+  hi javascriptParens ctermfg=85
+  hi lCursor ctermfg=79 ctermbg=35
   hi phpDefineClassName ctermfg=65
   hi phpParent ctermfg=58
   hi phpStringDouble ctermfg=20
@@ -168,15 +170,16 @@ elseif &t_Co == 16
   hi ModeMsg ctermfg=5
   hi Operator ctermfg=8
   hi Repeat ctermfg=4
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=2
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi String ctermfg=3
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=11
   hi WarningMsg ctermbg=11
   hi cursorim ctermfg=15 ctermbg=5
-  hi javaScriptParens ctermfg=7
-  hi lcursor ctermfg=15 ctermbg=5
+  hi javascriptParens ctermfg=7
+  hi lCursor ctermfg=15 ctermbg=5
   hi phpDefineClassName ctermfg=5
   hi phpParent ctermfg=12
   hi phpStringDouble ctermfg=2
@@ -205,15 +208,16 @@ else " 8 colors
   hi ModeMsg ctermfg=5
   hi Operator ctermfg=7
   hi Repeat ctermfg=4
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi String ctermfg=3
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=7 ctermbg=5
-  hi javaScriptParens ctermfg=7
-  hi lcursor ctermfg=7 ctermbg=5
+  hi javascriptParens ctermfg=7
+  hi lCursor ctermfg=7 ctermbg=5
   hi phpDefineClassName ctermfg=5
   hi phpParent ctermfg=7
   hi phpStringDouble ctermfg=2
@@ -242,7 +246,7 @@ hi! link htmlString xmlString
 hi! link htmlTag xmlTag
 hi! link htmlTagN htmlTagName
 hi! link htmlTagName xmlTagName
-hi! link javaScriptBraces javaScriptFunction
+hi! link javaScriptBraces javascriptFunction
 hi! link phpArray phpFunctions
 hi! link phpBoolean Boolean
 hi! link phpBrace phpParent
@@ -255,7 +259,7 @@ hi! link phpQuoteDouble Delimiter
 hi! link phpQuoteSingle Delimiter
 hi! link phpRelation phpOperator
 hi! link phpSemicolon phpParent
-hi! link phpSuperglobal Type
+hi! link phpSuperGlobal Type
 hi! link phpVarSelector Comment
 hi! link railsMethod xmlTagName
 hi! link rubyBeginEnd rubyIdentifier

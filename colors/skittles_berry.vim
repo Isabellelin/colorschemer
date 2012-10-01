@@ -4,7 +4,7 @@
 " Name: skittles_berry
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:37
+" Date: 2012-09-29 13:44:24
 "----------------------------------------------------------
 
 set background=dark
@@ -69,9 +69,9 @@ if has("gui_running")
   hi SpecialChar gui=bold guifg=#ff8700
   hi SpecialComment gui=bold guifg=#5f8787
   hi SpecialKey guifg=#262626
-  hi SpellBad guifg=#eeeeee
-  hi SpellCap guifg=#eeeeee
-  hi SpellLocal guifg=#eeeeee
+  hi SpellBad guifg=#eeeeee guibg=#ff0000
+  hi SpellCap guifg=#eeeeee guibg=#5c5cff
+  hi SpellLocal guifg=#eeeeee guibg=#00ffff
   hi SpellRare guifg=#eeeeee
   hi Statement guifg=#ff5f00 guibg=#121212
   hi StatusLine guifg=#5f8787
@@ -98,6 +98,7 @@ elseif &t_Co == 256
   hi Boolean ctermfg=93
   hi Character ctermfg=228
   hi Comment ctermfg=66
+  hi Conceal ctermbg=242
   hi Conditional ctermfg=124
   hi Constant ctermfg=91
   hi Cursor ctermfg=7 ctermbg=26
@@ -146,9 +147,9 @@ elseif &t_Co == 256
   hi SpecialChar ctermfg=208
   hi SpecialComment ctermfg=66
   hi SpecialKey ctermfg=235
-  hi SpellBad ctermfg=255
-  hi SpellCap ctermfg=255
-  hi SpellLocal ctermfg=255
+  hi SpellBad ctermfg=255 ctermbg=9
+  hi SpellCap ctermfg=255 ctermbg=12
+  hi SpellLocal ctermfg=255 ctermbg=14
   hi SpellRare ctermfg=255
   hi Statement ctermfg=202 ctermbg=233
   hi StatusLine ctermfg=66
@@ -156,16 +157,17 @@ elseif &t_Co == 256
   hi StorageClass ctermfg=208
   hi String ctermfg=112
   hi Structure ctermfg=81
-  hi TabLine ctermfg=255
+  hi TabLine ctermfg=255 ctermbg=242
   hi TabLineFill ctermfg=255
   hi TabLineSel ctermfg=255
   hi Tag ctermfg=117
   hi Title ctermfg=209
+  hi Todo ctermbg=11
   hi Type ctermfg=81
   hi Typedef ctermfg=81
   hi Underlined ctermfg=8
   hi VertSplit ctermfg=8 ctermbg=232
-  hi Visual ctermfg=255 ctermbg=95
+  hi Visual cterm=NONE ctermfg=255 ctermbg=95
   hi VisualNOS ctermfg=255 ctermbg=95
   hi WarningMsg ctermfg=15 ctermbg=236
   hi WildMenu ctermfg=81 ctermbg=233
@@ -174,6 +176,7 @@ elseif &t_Co == 88
   hi Boolean ctermfg=35
   hi Character ctermfg=77
   hi Comment ctermfg=83
+  hi Conceal ctermbg=82
   hi Conditional ctermfg=48
   hi Constant ctermfg=34
   hi Cursor ctermfg=87 ctermbg=22
@@ -222,9 +225,9 @@ elseif &t_Co == 88
   hi SpecialChar ctermfg=68
   hi SpecialComment ctermfg=83
   hi SpecialKey ctermfg=80
-  hi SpellBad ctermfg=87
-  hi SpellCap ctermfg=87
-  hi SpellLocal ctermfg=87
+  hi SpellBad ctermfg=87 ctermbg=9
+  hi SpellCap ctermfg=87 ctermbg=39
+  hi SpellLocal ctermfg=87 ctermbg=31
   hi SpellRare ctermfg=87
   hi Statement ctermfg=68 ctermbg=16
   hi StatusLine ctermfg=83
@@ -232,16 +235,17 @@ elseif &t_Co == 88
   hi StorageClass ctermfg=68
   hi String ctermfg=40
   hi Structure ctermfg=43
-  hi TabLine ctermfg=87
+  hi TabLine ctermfg=87 ctermbg=82
   hi TabLineFill ctermfg=87
   hi TabLineSel ctermfg=87
   hi Tag ctermfg=43
   hi Title ctermfg=69
+  hi Todo ctermbg=76
   hi Type ctermfg=43
   hi Typedef ctermfg=43
   hi Underlined ctermfg=81
   hi VertSplit ctermfg=81 ctermbg=16
-  hi Visual ctermfg=87 ctermbg=81
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
   hi VisualNOS ctermfg=87 ctermbg=81
   hi WarningMsg ctermfg=79 ctermbg=80
   hi WildMenu ctermfg=43 ctermbg=16
@@ -250,6 +254,7 @@ elseif &t_Co == 16
   hi Boolean ctermfg=5
   hi Character ctermfg=11
   hi Comment ctermfg=6
+  hi Conceal ctermbg=3
   hi Conditional ctermfg=1
   hi Constant ctermfg=5
   hi Cursor ctermfg=11 ctermbg=6
@@ -298,9 +303,9 @@ elseif &t_Co == 16
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=6
   hi SpecialKey ctermfg=0
-  hi SpellBad ctermfg=11
-  hi SpellCap ctermfg=11
-  hi SpellLocal ctermfg=11
+  hi SpellBad ctermfg=11 ctermbg=9
+  hi SpellCap ctermfg=11 ctermbg=12
+  hi SpellLocal ctermfg=11 ctermbg=14
   hi SpellRare ctermfg=11
   hi Statement ctermfg=9 ctermbg=0
   hi StatusLine ctermfg=6
@@ -308,16 +313,17 @@ elseif &t_Co == 16
   hi StorageClass ctermfg=3
   hi String ctermfg=3
   hi Structure ctermfg=12
-  hi TabLine ctermfg=11
+  hi TabLine ctermfg=11 ctermbg=3
   hi TabLineFill ctermfg=11
   hi TabLineSel ctermfg=11
   hi Tag ctermfg=12
   hi Title ctermfg=8
+  hi Todo ctermbg=11
   hi Type ctermfg=12
   hi Typedef ctermfg=12
   hi Underlined ctermfg=2
   hi VertSplit ctermfg=2 ctermbg=0
-  hi Visual ctermfg=11 ctermbg=3
+  hi Visual cterm=NONE ctermfg=11 ctermbg=3
   hi VisualNOS ctermfg=11 ctermbg=3
   hi WarningMsg ctermfg=15 ctermbg=0
   hi WildMenu ctermfg=12 ctermbg=0
@@ -326,6 +332,7 @@ else " 8 colors
   hi Boolean ctermfg=5
   hi Character ctermfg=7
   hi Comment ctermfg=6
+  hi Conceal ctermbg=3
   hi Conditional ctermfg=1
   hi Constant ctermfg=5
   hi Cursor ctermfg=7 ctermbg=6
@@ -374,9 +381,9 @@ else " 8 colors
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=6
   hi SpecialKey ctermfg=0
-  hi SpellBad ctermfg=7
-  hi SpellCap ctermfg=7
-  hi SpellLocal ctermfg=7
+  hi SpellBad ctermfg=7 ctermbg=1
+  hi SpellCap ctermfg=7 ctermbg=5
+  hi SpellLocal ctermfg=7 ctermbg=6
   hi SpellRare ctermfg=7
   hi Statement ctermfg=3 ctermbg=0
   hi StatusLine ctermfg=6
@@ -384,16 +391,17 @@ else " 8 colors
   hi StorageClass ctermfg=3
   hi String ctermfg=3
   hi Structure ctermfg=7
-  hi TabLine ctermfg=7
+  hi TabLine ctermfg=7 ctermbg=3
   hi TabLineFill ctermfg=7
   hi TabLineSel ctermfg=7
   hi Tag ctermfg=7
   hi Title ctermfg=3
+  hi Todo ctermbg=3
   hi Type ctermfg=7
   hi Typedef ctermfg=7
   hi Underlined ctermfg=2
   hi VertSplit ctermfg=2 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=3
+  hi Visual cterm=NONE ctermfg=7 ctermbg=3
   hi VisualNOS ctermfg=7 ctermbg=3
   hi WarningMsg ctermfg=7 ctermbg=0
   hi WildMenu ctermfg=7 ctermbg=0

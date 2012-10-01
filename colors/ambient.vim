@@ -4,7 +4,7 @@
 " Name: ambient
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:31
+" Date: 2012-09-29 13:30:28
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,7 @@ if has("gui_running")
   hi Boolean guifg=#89d958
   hi Comment guifg=#7c7c7c
   hi Constant guifg=#d9c634
-  hi Cursor guibg=#4c4c4c
+  hi Cursor guifg=NONE guibg=#4c4c4c
   hi CursorColumn guibg=#3c3c3c
   hi CursorLine guibg=#3c3c3c
   hi Folded guifg=#37c6e5 guibg=#3c3c3c
@@ -51,7 +51,7 @@ elseif &t_Co == 256
   hi Boolean ctermfg=113
   hi Comment ctermfg=8
   hi Constant ctermfg=185
-  hi Cursor ctermbg=239
+  hi Cursor ctermfg=NONE ctermbg=239
   hi CursorColumn ctermbg=237
   hi CursorLine ctermbg=237
   hi Folded ctermfg=80 ctermbg=237
@@ -75,14 +75,14 @@ elseif &t_Co == 256
   hi Todo ctermfg=234 ctermbg=185
   hi Type ctermfg=178
   hi VertSplit ctermfg=234 ctermbg=237
-  hi Visual ctermfg=15 ctermbg=239
+  hi Visual cterm=NONE ctermfg=15 ctermbg=239
   hi pythonOperator ctermfg=209
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Boolean ctermfg=41
   hi Comment ctermfg=81
   hi Constant ctermfg=57
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorColumn ctermbg=80
   hi CursorLine ctermbg=80
   hi Folded ctermfg=42 ctermbg=80
@@ -106,14 +106,14 @@ elseif &t_Co == 88
   hi Todo ctermfg=80 ctermbg=57
   hi Type ctermfg=56
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=79 ctermbg=81
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi pythonOperator ctermfg=69
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Boolean ctermfg=10
   hi Comment ctermfg=2
   hi Constant ctermfg=10
-  hi Cursor ctermbg=2
+  hi Cursor ctermfg=NONE ctermbg=2
   hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=2
   hi Folded ctermfg=12 ctermbg=2
@@ -137,14 +137,14 @@ elseif &t_Co == 16
   hi Todo ctermfg=0 ctermbg=10
   hi Type ctermfg=3
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=15 ctermbg=2
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi pythonOperator ctermfg=8
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=3
   hi Comment ctermfg=2
   hi Constant ctermfg=7
-  hi Cursor ctermbg=2
+  hi Cursor ctermfg=NONE ctermbg=2
   hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=2
   hi Folded ctermfg=7 ctermbg=2
@@ -168,7 +168,7 @@ else " 8 colors
   hi Todo ctermfg=0 ctermbg=7
   hi Type ctermfg=3
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi pythonOperator ctermfg=3
 endif
 

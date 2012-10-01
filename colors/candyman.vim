@@ -4,7 +4,7 @@
 " Name: candyman
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:22
+" Date: 2012-09-29 13:31:36
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#e8e8d3 guibg=#151515
   hi Comment gui=italic guifg=#888888
   hi Constant guifg=#cf6a4c
-  hi Cursor guibg=#996699
+  hi Cursor guifg=NONE guibg=#996699
   hi CursorColumn guibg=#5a5a5a
   hi CursorLine guibg=#5a5a5a
   hi Delimiter guifg=#668799
@@ -48,7 +48,6 @@ if has("gui_running")
   hi StatusLineNC gui=italic guifg=#484848 guibg=#1a1f26
   hi StorageClass guifg=#c59f6f
   hi String guifg=#99ad6a
-  hi StringDelimiter guifg=#556633
   hi Structure guifg=#79a5bf
   hi TabLine gui=italic guifg=#262626 guibg=#b0b8c0
   hi TabLineFill gui=NONE guifg=#9098a0
@@ -68,11 +67,12 @@ if has("gui_running")
   hi rubyRegexpDelimiter guifg=#540063
   hi rubyRegexpSpecial guifg=#a40073
   hi rubySymbol guifg=#7697d6
+  hi stringDelimiter guifg=#556633
 elseif &t_Co == 256
   hi Normal ctermfg=188 ctermbg=232
   hi Comment ctermfg=244
   hi Constant ctermfg=167
-  hi Cursor ctermbg=96
+  hi Cursor ctermfg=NONE ctermbg=96
   hi CursorColumn ctermbg=239
   hi CursorLine cterm=NONE ctermbg=239
   hi Delimiter ctermfg=66
@@ -101,7 +101,6 @@ elseif &t_Co == 256
   hi StatusLineNC cterm=NONE ctermfg=237 ctermbg=16
   hi StorageClass ctermfg=179
   hi String ctermfg=107
-  hi StringDelimiter ctermfg=58
   hi Structure ctermfg=109
   hi TabLine cterm=NONE ctermfg=234 ctermbg=145
   hi TabLineFill cterm=NONE ctermfg=103
@@ -111,7 +110,7 @@ elseif &t_Co == 256
   hi Todo cterm=bold ctermfg=88
   hi Type ctermfg=179
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=16
-  hi Visual ctermbg=53
+  hi Visual cterm=NONE ctermbg=53
   hi rubyClass ctermfg=30
   hi rubyControl ctermfg=104
   hi rubyIdentifier ctermfg=183
@@ -121,11 +120,12 @@ elseif &t_Co == 256
   hi rubyRegexpDelimiter ctermfg=53
   hi rubyRegexpSpecial ctermfg=126
   hi rubySymbol ctermfg=104
+  hi stringDelimiter ctermfg=58
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=16
   hi Comment ctermfg=83
   hi Constant ctermfg=53
-  hi Cursor ctermbg=83
+  hi Cursor ctermfg=NONE ctermbg=83
   hi CursorColumn ctermbg=81
   hi CursorLine cterm=NONE ctermbg=81
   hi Delimiter ctermfg=83
@@ -154,7 +154,6 @@ elseif &t_Co == 88
   hi StatusLineNC cterm=NONE ctermfg=80 ctermbg=16
   hi StorageClass ctermfg=57
   hi String ctermfg=41
-  hi StringDelimiter ctermfg=36
   hi Structure ctermfg=84
   hi TabLine cterm=NONE ctermfg=80 ctermbg=85
   hi TabLineFill cterm=NONE ctermfg=38
@@ -164,7 +163,7 @@ elseif &t_Co == 88
   hi Todo cterm=bold ctermfg=32
   hi Type ctermfg=57
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=16
-  hi Visual ctermbg=33
+  hi Visual cterm=NONE ctermbg=33
   hi rubyClass ctermfg=21
   hi rubyControl ctermfg=38
   hi rubyIdentifier ctermfg=59
@@ -174,11 +173,12 @@ elseif &t_Co == 88
   hi rubyRegexpDelimiter ctermfg=33
   hi rubyRegexpSpecial ctermfg=49
   hi rubySymbol ctermfg=38
+  hi stringDelimiter ctermfg=36
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Comment ctermfg=8
   hi Constant ctermfg=8
-  hi Cursor ctermbg=5
+  hi Cursor ctermfg=NONE ctermbg=5
   hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=2
   hi Delimiter ctermfg=6
@@ -207,7 +207,6 @@ elseif &t_Co == 16
   hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=0
   hi StorageClass ctermfg=8
   hi String ctermfg=8
-  hi StringDelimiter ctermfg=3
   hi Structure ctermfg=8
   hi TabLine cterm=NONE ctermfg=0 ctermbg=8
   hi TabLineFill cterm=NONE ctermfg=8
@@ -217,7 +216,7 @@ elseif &t_Co == 16
   hi Todo cterm=bold ctermfg=1
   hi Type ctermfg=8
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=5
+  hi Visual cterm=NONE ctermbg=5
   hi rubyClass ctermfg=6
   hi rubyControl ctermfg=8
   hi rubyIdentifier ctermfg=14
@@ -227,11 +226,12 @@ elseif &t_Co == 16
   hi rubyRegexpDelimiter ctermfg=5
   hi rubyRegexpSpecial ctermfg=5
   hi rubySymbol ctermfg=8
+  hi stringDelimiter ctermfg=3
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=3
   hi Constant ctermfg=3
-  hi Cursor ctermbg=5
+  hi Cursor ctermfg=NONE ctermbg=5
   hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=2
   hi Delimiter ctermfg=6
@@ -260,7 +260,6 @@ else " 8 colors
   hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=0
   hi StorageClass ctermfg=7
   hi String ctermfg=3
-  hi StringDelimiter ctermfg=3
   hi Structure ctermfg=7
   hi TabLine cterm=NONE ctermfg=0 ctermbg=7
   hi TabLineFill cterm=NONE ctermfg=7
@@ -270,7 +269,7 @@ else " 8 colors
   hi Todo cterm=bold ctermfg=1
   hi Type ctermfg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=5
+  hi Visual cterm=NONE ctermbg=5
   hi rubyClass ctermfg=6
   hi rubyControl ctermfg=7
   hi rubyIdentifier ctermfg=7
@@ -280,10 +279,10 @@ else " 8 colors
   hi rubyRegexpDelimiter ctermfg=5
   hi rubyRegexpSpecial ctermfg=5
   hi rubySymbol ctermfg=7
+  hi stringDelimiter ctermfg=3
 endif
 
 hi! link Operator Normal
-hi! link TagListFileName Directory
 hi! link cocoaClass objcClass
 hi! link cocoaFunction Function
 hi! link diffAdded String
@@ -301,13 +300,14 @@ hi! link phpArrayPair Operator
 hi! link phpBoolean Constant
 hi! link phpFunctions Function
 hi! link phpNull Constant
-hi! link phpQuoteDouble StringDelimiter
-hi! link phpQuoteSingle StringDelimiter
-hi! link phpSuperglobal Identifier
+hi! link phpQuoteDouble stringDelimiter
+hi! link phpQuoteSingle stringDelimiter
+hi! link phpSuperGlobal Identifier
 hi! link rubyGlobalVariable rubyInstanceVariable
 hi! link rubyInterpolationDelimiter Identifier
 hi! link rubyModule rubyClass
 hi! link rubySharpBang Comment
 hi! link rubyString String
-hi! link rubyStringDelimiter StringDelimiter
+hi! link rubyStringDelimiter stringDelimiter
+hi! link tagListFileName Directory
 

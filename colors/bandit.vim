@@ -4,7 +4,7 @@
 " Name: bandit
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:44
+" Date: 2012-09-29 13:30:42
 "----------------------------------------------------------
 
 set background=light
@@ -47,13 +47,14 @@ if has("gui_running")
   hi MatchParen gui=underline guifg=Yellow guibg=NONE
   hi Member guifg=DarkGrey
   hi Method guifg=#009966
-  hi NonIndentTabError gui=undercurl guifg=#5c5cff guibg=#ff0000
+  hi NonIndentTabError gui=undercurl guifg=#ff0000 guibg=#5c5cff
   hi NonText gui=NONE guifg=#AAAAAA
   hi Operator guifg=#222288
   hi Pmenu guifg=#442206 guibg=#b2b253
   hi PreCondit gui=bold guifg=#5f5fb2
   hi PreProc gui=bold guifg=Blue
   hi Repeat guifg=#5f5fb2
+  hi Search guifg=NONE
   hi SignColumn guifg=NONE guibg=LightGrey
   hi Special guifg=Red
   hi SpecialChar guifg=#AA0000
@@ -87,280 +88,288 @@ if has("gui_running")
   hi htmlH6 guifg=#5f5f5f
 elseif &t_Co == 256
   hi Normal ctermfg=0 ctermbg=15
-  hi Character ctermfg=130
-  hi Class ctermfg=12
+  hi Character ctermfg=6
+  hi Class ctermfg=9
   hi Comment ctermfg=10
-  hi Conditional ctermfg=12
-  hi Constant ctermfg=11
-  hi Define cterm=bold ctermfg=12
-  hi DefinedName ctermfg=12
-  hi Delimiter ctermfg=6
-  hi DoxygenKeyword ctermfg=12
-  hi DoxygenLink ctermfg=12
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=14
+  hi Define cterm=bold ctermfg=9
+  hi DefinedName ctermfg=9
+  hi Delimiter ctermfg=3
+  hi DoxygenKeyword ctermfg=9
+  hi DoxygenLink ctermfg=9
   hi DoxygenTable ctermfg=10
-  hi DoxygenTableLines ctermfg=12
-  hi EnumerationName ctermfg=12
-  hi EnumerationValue ctermfg=12
-  hi Exception ctermfg=12
-  hi Function ctermfg=14
-  hi GlobalConstant ctermfg=11
-  hi GlobalVariable ctermfg=14
-  hi Identifier ctermfg=12
-  hi Ignore ctermfg=242
-  hi Include cterm=bold ctermfg=12
-  hi Label ctermfg=12
-  hi LineNr ctermfg=12 ctermbg=248
+  hi DoxygenTableLines ctermfg=9
+  hi EnumerationName ctermfg=9
+  hi EnumerationValue ctermfg=9
+  hi Exception ctermfg=9
+  hi Function ctermfg=11
+  hi GlobalConstant ctermfg=14
+  hi GlobalVariable ctermfg=11
+  hi Identifier ctermfg=9
+  hi Ignore ctermfg=8
+  hi Include cterm=bold ctermfg=9
+  hi Label ctermfg=9
+  hi LineNr ctermfg=9 ctermbg=7
   hi LintComment ctermfg=10
-  hi LocalVariable ctermfg=14
-  hi Macro cterm=bold ctermfg=12
-  hi MatchParen cterm=underline ctermfg=11 ctermbg=NONE
-  hi Member ctermfg=242
-  hi Method ctermfg=14
-  hi NonIndentTabError cterm=undercurl ctermfg=12 ctermbg=9
-  hi Operator ctermfg=12
-  hi Pmenu ctermbg=11
-  hi PreCondit cterm=bold ctermfg=12
-  hi PreProc cterm=bold ctermfg=12
-  hi Repeat ctermfg=12
-  hi SignColumn ctermfg=12 ctermbg=7
-  hi Special ctermfg=9
-  hi SpecialChar ctermfg=12
-  hi SpecialKey ctermfg=12
-  hi Statement ctermfg=12
+  hi LocalVariable ctermfg=11
+  hi Macro cterm=bold ctermfg=9
+  hi MatchParen cterm=underline ctermfg=14 ctermbg=NONE
+  hi Member ctermfg=8
+  hi Method ctermfg=11
+  hi NonIndentTabError cterm=undercurl ctermfg=9 ctermbg=12
+  hi Operator ctermfg=9
+  hi Pmenu ctermbg=14
+  hi PreCondit cterm=bold ctermfg=9
+  hi PreProc cterm=bold ctermfg=9
+  hi Repeat ctermfg=9
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=9
+  hi Special ctermfg=12
+  hi SpecialChar ctermfg=9
+  hi SpecialKey ctermfg=9
+  hi Statement ctermfg=9
   hi StatusLine cterm=NONE ctermfg=15 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=242
-  hi StorageClass ctermfg=12
-  hi String ctermfg=130
-  hi Structure ctermfg=12
-  hi Title cterm=bold ctermfg=12
-  hi Todo ctermfg=12
-  hi Type ctermfg=12
-  hi Union ctermfg=242
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=8
+  hi StorageClass ctermfg=9
+  hi String ctermfg=6
+  hi Structure ctermfg=9
+  hi Title cterm=bold ctermfg=9
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Union ctermfg=8
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=7
   hi doxygencomment ctermfg=10
-  hi hlLevel0 ctermfg=6
-  hi hlLevel1 ctermfg=6
-  hi hlLevel2 ctermfg=6
-  hi hlLevel3 ctermfg=6
-  hi hlLevel4 ctermfg=6
-  hi hlLevel5 ctermfg=6
-  hi hlLevel6 ctermfg=6
-  hi hlLevel7 ctermfg=6
-  hi hlLevel8 ctermfg=6
-  hi hlLevel9 ctermfg=6
-  hi htmlH1 ctermfg=12
-  hi htmlH2 ctermfg=12
-  hi htmlH3 ctermfg=12
-  hi htmlH4 ctermfg=12
-  hi htmlH5 ctermfg=12
-  hi htmlH6 ctermfg=12
+  hi hlLevel0 ctermfg=3
+  hi hlLevel1 ctermfg=3
+  hi hlLevel2 ctermfg=3
+  hi hlLevel3 ctermfg=3
+  hi hlLevel4 ctermfg=3
+  hi hlLevel5 ctermfg=3
+  hi hlLevel6 ctermfg=3
+  hi hlLevel7 ctermfg=3
+  hi hlLevel8 ctermfg=3
+  hi hlLevel9 ctermfg=3
+  hi htmlH1 ctermfg=9
+  hi htmlH2 ctermfg=9
+  hi htmlH3 ctermfg=9
+  hi htmlH4 ctermfg=9
+  hi htmlH5 ctermfg=9
+  hi htmlH6 ctermfg=9
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi Character ctermfg=52
-  hi Class ctermfg=39
+  hi Character ctermfg=6
+  hi Class ctermfg=9
   hi Comment ctermfg=28
-  hi Conditional ctermfg=39
-  hi Constant ctermfg=76
-  hi Define cterm=bold ctermfg=39
-  hi DefinedName ctermfg=39
-  hi Delimiter ctermfg=6
-  hi DoxygenKeyword ctermfg=39
-  hi DoxygenLink ctermfg=39
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=31
+  hi Define cterm=bold ctermfg=9
+  hi DefinedName ctermfg=9
+  hi Delimiter ctermfg=56
+  hi DoxygenKeyword ctermfg=9
+  hi DoxygenLink ctermfg=9
   hi DoxygenTable ctermfg=28
-  hi DoxygenTableLines ctermfg=39
-  hi EnumerationName ctermfg=39
-  hi EnumerationValue ctermfg=39
-  hi Exception ctermfg=39
-  hi Function ctermfg=31
-  hi GlobalConstant ctermfg=76
-  hi GlobalVariable ctermfg=31
-  hi Identifier ctermfg=39
-  hi Ignore ctermfg=82
-  hi Include cterm=bold ctermfg=39
-  hi Label ctermfg=39
-  hi LineNr ctermfg=39 ctermbg=84
+  hi DoxygenTableLines ctermfg=9
+  hi EnumerationName ctermfg=9
+  hi EnumerationValue ctermfg=9
+  hi Exception ctermfg=9
+  hi Function ctermfg=76
+  hi GlobalConstant ctermfg=31
+  hi GlobalVariable ctermfg=76
+  hi Identifier ctermfg=9
+  hi Ignore ctermfg=81
+  hi Include cterm=bold ctermfg=9
+  hi Label ctermfg=9
+  hi LineNr ctermfg=9 ctermbg=87
   hi LintComment ctermfg=28
-  hi LocalVariable ctermfg=31
-  hi Macro cterm=bold ctermfg=39
-  hi MatchParen cterm=underline ctermfg=76 ctermbg=NONE
-  hi Member ctermfg=82
-  hi Method ctermfg=31
-  hi NonIndentTabError cterm=undercurl ctermfg=39 ctermbg=9
-  hi Operator ctermfg=39
-  hi Pmenu ctermbg=76
-  hi PreCondit cterm=bold ctermfg=39
-  hi PreProc cterm=bold ctermfg=39
-  hi Repeat ctermfg=39
-  hi SignColumn ctermfg=39 ctermbg=87
-  hi Special ctermfg=9
-  hi SpecialChar ctermfg=39
-  hi SpecialKey ctermfg=39
-  hi Statement ctermfg=39
+  hi LocalVariable ctermfg=76
+  hi Macro cterm=bold ctermfg=9
+  hi MatchParen cterm=underline ctermfg=31 ctermbg=NONE
+  hi Member ctermfg=81
+  hi Method ctermfg=76
+  hi NonIndentTabError cterm=undercurl ctermfg=9 ctermbg=39
+  hi Operator ctermfg=9
+  hi Pmenu ctermbg=31
+  hi PreCondit cterm=bold ctermfg=9
+  hi PreProc cterm=bold ctermfg=9
+  hi Repeat ctermfg=9
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=9
+  hi Special ctermfg=39
+  hi SpecialChar ctermfg=9
+  hi SpecialKey ctermfg=9
+  hi Statement ctermfg=9
   hi StatusLine cterm=NONE ctermfg=79 ctermbg=16
-  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=82
-  hi StorageClass ctermfg=39
-  hi String ctermfg=52
-  hi Structure ctermfg=39
-  hi Title cterm=bold ctermfg=39
-  hi Todo ctermfg=39
-  hi Type ctermfg=39
-  hi Union ctermfg=82
+  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=81
+  hi StorageClass ctermfg=9
+  hi String ctermfg=6
+  hi Structure ctermfg=9
+  hi Title cterm=bold ctermfg=9
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Union ctermfg=81
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=79
+  hi Visual cterm=NONE ctermbg=87
   hi doxygencomment ctermfg=28
-  hi hlLevel0 ctermfg=6
-  hi hlLevel1 ctermfg=6
-  hi hlLevel2 ctermfg=6
-  hi hlLevel3 ctermfg=6
-  hi hlLevel4 ctermfg=6
-  hi hlLevel5 ctermfg=6
-  hi hlLevel6 ctermfg=6
-  hi hlLevel7 ctermfg=6
-  hi hlLevel8 ctermfg=6
-  hi hlLevel9 ctermfg=6
-  hi htmlH1 ctermfg=39
-  hi htmlH2 ctermfg=39
-  hi htmlH3 ctermfg=39
-  hi htmlH4 ctermfg=39
-  hi htmlH5 ctermfg=39
-  hi htmlH6 ctermfg=39
+  hi hlLevel0 ctermfg=56
+  hi hlLevel1 ctermfg=56
+  hi hlLevel2 ctermfg=56
+  hi hlLevel3 ctermfg=56
+  hi hlLevel4 ctermfg=56
+  hi hlLevel5 ctermfg=56
+  hi hlLevel6 ctermfg=56
+  hi hlLevel7 ctermfg=56
+  hi hlLevel8 ctermfg=56
+  hi hlLevel9 ctermfg=56
+  hi htmlH1 ctermfg=9
+  hi htmlH2 ctermfg=9
+  hi htmlH3 ctermfg=9
+  hi htmlH4 ctermfg=9
+  hi htmlH5 ctermfg=9
+  hi htmlH6 ctermfg=9
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi Character ctermfg=3
-  hi Class ctermfg=12
+  hi Character ctermfg=6
+  hi Class ctermfg=9
   hi Comment ctermfg=2
-  hi Conditional ctermfg=12
-  hi Constant ctermfg=11
-  hi Define cterm=bold ctermfg=12
-  hi DefinedName ctermfg=12
-  hi Delimiter ctermfg=6
-  hi DoxygenKeyword ctermfg=12
-  hi DoxygenLink ctermfg=12
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=14
+  hi Define cterm=bold ctermfg=9
+  hi DefinedName ctermfg=9
+  hi Delimiter ctermfg=3
+  hi DoxygenKeyword ctermfg=9
+  hi DoxygenLink ctermfg=9
   hi DoxygenTable ctermfg=2
-  hi DoxygenTableLines ctermfg=12
-  hi EnumerationName ctermfg=12
-  hi EnumerationValue ctermfg=12
-  hi Exception ctermfg=12
-  hi Function ctermfg=14
-  hi GlobalConstant ctermfg=11
-  hi GlobalVariable ctermfg=14
-  hi Identifier ctermfg=12
-  hi Ignore ctermfg=3
-  hi Include cterm=bold ctermfg=12
-  hi Label ctermfg=12
-  hi LineNr ctermfg=12 ctermbg=8
+  hi DoxygenTableLines ctermfg=9
+  hi EnumerationName ctermfg=9
+  hi EnumerationValue ctermfg=9
+  hi Exception ctermfg=9
+  hi Function ctermfg=11
+  hi GlobalConstant ctermfg=14
+  hi GlobalVariable ctermfg=11
+  hi Identifier ctermfg=9
+  hi Ignore ctermfg=2
+  hi Include cterm=bold ctermfg=9
+  hi Label ctermfg=9
+  hi LineNr ctermfg=9 ctermbg=11
   hi LintComment ctermfg=2
-  hi LocalVariable ctermfg=14
-  hi Macro cterm=bold ctermfg=12
-  hi MatchParen cterm=underline ctermfg=11 ctermbg=NONE
-  hi Member ctermfg=3
-  hi Method ctermfg=14
-  hi NonIndentTabError cterm=undercurl ctermfg=12 ctermbg=9
-  hi Operator ctermfg=12
-  hi Pmenu ctermbg=11
-  hi PreCondit cterm=bold ctermfg=12
-  hi PreProc cterm=bold ctermfg=12
-  hi Repeat ctermfg=12
-  hi SignColumn ctermfg=12 ctermbg=11
-  hi Special ctermfg=9
-  hi SpecialChar ctermfg=12
-  hi SpecialKey ctermfg=12
-  hi Statement ctermfg=12
+  hi LocalVariable ctermfg=11
+  hi Macro cterm=bold ctermfg=9
+  hi MatchParen cterm=underline ctermfg=14 ctermbg=NONE
+  hi Member ctermfg=2
+  hi Method ctermfg=11
+  hi NonIndentTabError cterm=undercurl ctermfg=9 ctermbg=12
+  hi Operator ctermfg=9
+  hi Pmenu ctermbg=14
+  hi PreCondit cterm=bold ctermfg=9
+  hi PreProc cterm=bold ctermfg=9
+  hi Repeat ctermfg=9
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=9
+  hi Special ctermfg=12
+  hi SpecialChar ctermfg=9
+  hi SpecialKey ctermfg=9
+  hi Statement ctermfg=9
   hi StatusLine cterm=NONE ctermfg=15 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=3
-  hi StorageClass ctermfg=12
-  hi String ctermfg=3
-  hi Structure ctermfg=12
-  hi Title cterm=bold ctermfg=12
-  hi Todo ctermfg=12
-  hi Type ctermfg=12
-  hi Union ctermfg=3
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=2
+  hi StorageClass ctermfg=9
+  hi String ctermfg=6
+  hi Structure ctermfg=9
+  hi Title cterm=bold ctermfg=9
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Union ctermfg=2
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=11
   hi doxygencomment ctermfg=2
-  hi hlLevel0 ctermfg=6
-  hi hlLevel1 ctermfg=6
-  hi hlLevel2 ctermfg=6
-  hi hlLevel3 ctermfg=6
-  hi hlLevel4 ctermfg=6
-  hi hlLevel5 ctermfg=6
-  hi hlLevel6 ctermfg=6
-  hi hlLevel7 ctermfg=6
-  hi hlLevel8 ctermfg=6
-  hi hlLevel9 ctermfg=6
-  hi htmlH1 ctermfg=12
-  hi htmlH2 ctermfg=12
-  hi htmlH3 ctermfg=12
-  hi htmlH4 ctermfg=12
-  hi htmlH5 ctermfg=12
-  hi htmlH6 ctermfg=12
+  hi hlLevel0 ctermfg=3
+  hi hlLevel1 ctermfg=3
+  hi hlLevel2 ctermfg=3
+  hi hlLevel3 ctermfg=3
+  hi hlLevel4 ctermfg=3
+  hi hlLevel5 ctermfg=3
+  hi hlLevel6 ctermfg=3
+  hi hlLevel7 ctermfg=3
+  hi hlLevel8 ctermfg=3
+  hi hlLevel9 ctermfg=3
+  hi htmlH1 ctermfg=9
+  hi htmlH2 ctermfg=9
+  hi htmlH3 ctermfg=9
+  hi htmlH4 ctermfg=9
+  hi htmlH5 ctermfg=9
+  hi htmlH6 ctermfg=9
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi Character ctermfg=3
-  hi Class ctermfg=5
+  hi Character ctermfg=6
+  hi Class ctermfg=1
   hi Comment ctermfg=2
-  hi Conditional ctermfg=5
-  hi Constant ctermfg=3
-  hi Define cterm=bold ctermfg=5
-  hi DefinedName ctermfg=5
-  hi Delimiter ctermfg=6
-  hi DoxygenKeyword ctermfg=5
-  hi DoxygenLink ctermfg=5
+  hi Conditional ctermfg=1
+  hi Constant ctermfg=6
+  hi Define cterm=bold ctermfg=1
+  hi DefinedName ctermfg=1
+  hi Delimiter ctermfg=3
+  hi DoxygenKeyword ctermfg=1
+  hi DoxygenLink ctermfg=1
   hi DoxygenTable ctermfg=2
-  hi DoxygenTableLines ctermfg=5
-  hi EnumerationName ctermfg=5
-  hi EnumerationValue ctermfg=5
-  hi Exception ctermfg=5
-  hi Function ctermfg=6
-  hi GlobalConstant ctermfg=3
-  hi GlobalVariable ctermfg=6
-  hi Identifier ctermfg=5
-  hi Ignore ctermfg=3
-  hi Include cterm=bold ctermfg=5
-  hi Label ctermfg=5
-  hi LineNr ctermfg=5 ctermbg=7
+  hi DoxygenTableLines ctermfg=1
+  hi EnumerationName ctermfg=1
+  hi EnumerationValue ctermfg=1
+  hi Exception ctermfg=1
+  hi Function ctermfg=3
+  hi GlobalConstant ctermfg=6
+  hi GlobalVariable ctermfg=3
+  hi Identifier ctermfg=1
+  hi Ignore ctermfg=2
+  hi Include cterm=bold ctermfg=1
+  hi Label ctermfg=1
+  hi LineNr ctermfg=1 ctermbg=7
   hi LintComment ctermfg=2
-  hi LocalVariable ctermfg=6
-  hi Macro cterm=bold ctermfg=5
-  hi MatchParen cterm=underline ctermfg=3 ctermbg=NONE
-  hi Member ctermfg=3
-  hi Method ctermfg=6
-  hi NonIndentTabError cterm=undercurl ctermfg=5 ctermbg=1
-  hi Operator ctermfg=5
-  hi Pmenu ctermbg=3
-  hi PreCondit cterm=bold ctermfg=5
-  hi PreProc cterm=bold ctermfg=5
-  hi Repeat ctermfg=5
-  hi SignColumn ctermfg=5 ctermbg=7
-  hi Special ctermfg=1
-  hi SpecialChar ctermfg=5
-  hi SpecialKey ctermfg=5
-  hi Statement ctermfg=5
+  hi LocalVariable ctermfg=3
+  hi Macro cterm=bold ctermfg=1
+  hi MatchParen cterm=underline ctermfg=6 ctermbg=NONE
+  hi Member ctermfg=2
+  hi Method ctermfg=3
+  hi NonIndentTabError cterm=undercurl ctermfg=1 ctermbg=5
+  hi Operator ctermfg=1
+  hi Pmenu ctermbg=6
+  hi PreCondit cterm=bold ctermfg=1
+  hi PreProc cterm=bold ctermfg=1
+  hi Repeat ctermfg=1
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=1
+  hi Special ctermfg=5
+  hi SpecialChar ctermfg=1
+  hi SpecialKey ctermfg=1
+  hi Statement ctermfg=1
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=3
-  hi StorageClass ctermfg=5
-  hi String ctermfg=3
-  hi Structure ctermfg=5
-  hi Title cterm=bold ctermfg=5
-  hi Todo ctermfg=5
-  hi Type ctermfg=5
-  hi Union ctermfg=3
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=2
+  hi StorageClass ctermfg=1
+  hi String ctermfg=6
+  hi Structure ctermfg=1
+  hi Title cterm=bold ctermfg=1
+  hi Todo ctermfg=1
+  hi Type ctermfg=1
+  hi Union ctermfg=2
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi doxygencomment ctermfg=2
-  hi hlLevel0 ctermfg=6
-  hi hlLevel1 ctermfg=6
-  hi hlLevel2 ctermfg=6
-  hi hlLevel3 ctermfg=6
-  hi hlLevel4 ctermfg=6
-  hi hlLevel5 ctermfg=6
-  hi hlLevel6 ctermfg=6
-  hi hlLevel7 ctermfg=6
-  hi hlLevel8 ctermfg=6
-  hi hlLevel9 ctermfg=6
-  hi htmlH1 ctermfg=5
-  hi htmlH2 ctermfg=5
-  hi htmlH3 ctermfg=5
-  hi htmlH4 ctermfg=5
-  hi htmlH5 ctermfg=5
-  hi htmlH6 ctermfg=5
+  hi hlLevel0 ctermfg=3
+  hi hlLevel1 ctermfg=3
+  hi hlLevel2 ctermfg=3
+  hi hlLevel3 ctermfg=3
+  hi hlLevel4 ctermfg=3
+  hi hlLevel5 ctermfg=3
+  hi hlLevel6 ctermfg=3
+  hi hlLevel7 ctermfg=3
+  hi hlLevel8 ctermfg=3
+  hi hlLevel9 ctermfg=3
+  hi htmlH1 ctermfg=1
+  hi htmlH2 ctermfg=1
+  hi htmlH3 ctermfg=1
+  hi htmlH4 ctermfg=1
+  hi htmlH5 ctermfg=1
+  hi htmlH6 ctermfg=1
 endif
 
 hi! link Boolean Number

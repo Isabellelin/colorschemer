@@ -4,7 +4,7 @@
 " Name: aiseered
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:30
+" Date: 2012-09-29 13:30:27
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Character guifg=#ffaa00
   hi Comment guifg=#ffffff
   hi Constant guifg=#88ddee
-  hi Cursor guifg=bg guibg=fg
   hi Error guifg=red guibg=white
   hi ErrorMsg guibg=red
   hi Identifier guifg=#cfcfcf
@@ -36,43 +35,43 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=9 ctermbg=52
   hi Character ctermfg=214
-  hi Cursor ctermfg=bg ctermbg=fg
   hi ErrorMsg ctermfg=1
   hi Number ctermfg=117
-  hi Search ctermfg=1 ctermbg=224
+  hi Search ctermfg=4 ctermbg=12
   hi SpecialChar ctermfg=214
   hi StorageClass ctermfg=182
   hi String ctermfg=222
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=9 ctermbg=32
   hi Character ctermfg=68
-  hi Cursor ctermfg=bg ctermbg=fg
   hi ErrorMsg ctermfg=48
   hi Number ctermfg=43
-  hi Search ctermfg=48 ctermbg=74
+  hi Search ctermfg=19 ctermbg=39
   hi SpecialChar ctermfg=68
   hi StorageClass ctermfg=54
   hi String ctermfg=73
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=9 ctermbg=1
   hi Character ctermfg=3
-  hi Cursor ctermfg=bg ctermbg=fg
   hi ErrorMsg ctermfg=9
   hi Number ctermfg=12
-  hi Search ctermfg=9 ctermbg=11
+  hi Search ctermfg=4 ctermbg=12
   hi SpecialChar ctermfg=3
   hi StorageClass ctermfg=7
   hi String ctermfg=7
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=1 ctermbg=1
   hi Character ctermfg=3
-  hi Cursor ctermfg=bg ctermbg=fg
   hi ErrorMsg ctermfg=1
   hi Number ctermfg=7
-  hi Search ctermfg=1 ctermbg=7
+  hi Search ctermfg=4 ctermbg=5
   hi SpecialChar ctermfg=3
   hi StorageClass ctermfg=7
   hi String ctermfg=7
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: fnaqevan
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:30
+" Date: 2012-09-29 13:34:51
 "----------------------------------------------------------
 
 set background=dark
@@ -48,11 +48,11 @@ if has("gui_running")
   hi Type gui=NONE guifg=#40D040 guibg=#000000
   hi VertSplit gui=NONE guifg=#F0F0F0 guibg=#1f1f1f
   hi Visual guifg=#40C940 guibg=#005900
-  hi VisualNOS guifg=#40C940 guibg=#005900
+  hi VisualNOS gui=NONE guifg=#40C940 guibg=#005900
   hi WarningMsg guifg=#FFFF00 guibg=#707000
   hi WildMenu guifg=#FFEE60 guibg=#5f5f5f
   hi iCursor guifg=#000000 guibg=#FFEE00
-  hi lcursor guifg=#000000 guibg=#40D040
+  hi lCursor guifg=#000000 guibg=#40D040
   hi nCursor guifg=#000000 guibg=#FFFFFF
   hi rCursor guifg=#000000 guibg=#00CCFF
 elseif &t_Co == 256
@@ -80,11 +80,11 @@ elseif &t_Co == 256
   hi Title ctermbg=16
   hi Type ctermbg=16
   hi VertSplit ctermfg=255 ctermbg=234
-  hi Visual ctermfg=77
+  hi Visual cterm=NONE ctermfg=77 ctermbg=8
   hi VisualNOS ctermfg=77 ctermbg=22
   hi WarningMsg ctermbg=58
   hi iCursor ctermfg=16 ctermbg=226
-  hi lcursor ctermfg=16 ctermbg=77
+  hi lCursor ctermfg=16 ctermbg=77
   hi nCursor ctermfg=16 ctermbg=231
   hi rCursor ctermfg=16 ctermbg=45
 elseif &t_Co == 88
@@ -112,11 +112,11 @@ elseif &t_Co == 88
   hi Title ctermbg=16
   hi Type ctermbg=16
   hi VertSplit ctermfg=87 ctermbg=80
-  hi Visual ctermfg=24
+  hi Visual cterm=NONE ctermfg=24 ctermbg=81
   hi VisualNOS ctermfg=24 ctermbg=20
   hi WarningMsg ctermbg=36
   hi iCursor ctermfg=16 ctermbg=76
-  hi lcursor ctermfg=16 ctermbg=24
+  hi lCursor ctermfg=16 ctermbg=24
   hi nCursor ctermfg=16 ctermbg=79
   hi rCursor ctermfg=16 ctermbg=27
 elseif &t_Co == 16
@@ -144,11 +144,11 @@ elseif &t_Co == 16
   hi Title ctermbg=0
   hi Type ctermbg=0
   hi VertSplit ctermfg=15 ctermbg=0
-  hi Visual ctermfg=10
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
   hi VisualNOS ctermfg=10 ctermbg=2
   hi WarningMsg ctermbg=3
   hi iCursor ctermfg=0 ctermbg=3
-  hi lcursor ctermfg=0 ctermbg=10
+  hi lCursor ctermfg=0 ctermbg=10
   hi nCursor ctermfg=0 ctermbg=15
   hi rCursor ctermfg=0 ctermbg=6
 else " 8 colors
@@ -176,11 +176,11 @@ else " 8 colors
   hi Title ctermbg=0
   hi Type ctermbg=0
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi VisualNOS ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=3
   hi iCursor ctermfg=0 ctermbg=3
-  hi lcursor ctermfg=0 ctermbg=3
+  hi lCursor ctermfg=0 ctermbg=3
   hi nCursor ctermfg=0 ctermbg=7
   hi rCursor ctermfg=0 ctermbg=6
 endif

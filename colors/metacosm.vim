@@ -4,7 +4,7 @@
 " Name: metacosm
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:22
+" Date: 2012-09-29 13:38:47
 "----------------------------------------------------------
 
 set background=dark
@@ -83,17 +83,15 @@ if has("gui_running")
   hi VisualNOS gui=underline guifg=black guibg=yellow
   hi WarningMsg gui=bold guifg=pink guibg=black
   hi WildMenu guifg=black guibg=cyan
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=16
   hi Boolean ctermfg=217 ctermbg=235
   hi Character ctermfg=217 ctermbg=235
   hi Comment ctermbg=16
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=227 ctermbg=16
   hi Constant ctermbg=235
   hi Cursor ctermfg=16 ctermbg=231
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=232
   hi Debug ctermfg=214 ctermbg=16
   hi Define ctermfg=213 ctermbg=16
@@ -101,11 +99,9 @@ elseif &t_Co == 256
   hi DiffAdd ctermfg=231
   hi DiffChange ctermfg=231
   hi DiffText ctermfg=231
-  hi Directory ctermfg=14 ctermbg=16
+  hi Directory ctermbg=16
   hi Exception ctermfg=227 ctermbg=16
   hi Float ctermfg=217 ctermbg=235
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi Function ctermfg=87 ctermbg=16
   hi Identifier ctermbg=16
   hi Ignore ctermbg=16
@@ -117,48 +113,41 @@ elseif &t_Co == 256
   hi Macro ctermfg=213 ctermbg=16
   hi MatchParen ctermfg=226
   hi ModeMsg ctermfg=231 ctermbg=16
-  hi MoreMsg ctermfg=10 ctermbg=16
+  hi MoreMsg ctermbg=16
   hi NonText ctermbg=16
   hi Number ctermfg=217 ctermbg=235
   hi Operator ctermfg=227 ctermbg=16
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
   hi PreCondit ctermfg=213 ctermbg=16
-  hi PreProc ctermfg=12 ctermbg=16
-  hi Question ctermfg=10 ctermbg=16
+  hi PreProc ctermbg=16
+  hi Question ctermbg=16
   hi Repeat ctermfg=227 ctermbg=16
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9 ctermbg=16
+  hi Special ctermbg=16
   hi SpecialChar ctermfg=214 ctermbg=16
   hi SpecialComment ctermfg=111 ctermbg=16
-  hi SpecialKey ctermfg=12 ctermbg=16
+  hi SpecialKey ctermbg=16
   hi Statement ctermbg=16
   hi StatusLine ctermfg=231 ctermbg=16
   hi StatusLineNC ctermfg=243 ctermbg=16
   hi StorageClass ctermfg=83 ctermbg=16
   hi String ctermfg=217 ctermbg=235
   hi Structure ctermfg=83 ctermbg=16
-  hi TabLine ctermbg=8
   hi Tag ctermfg=214 ctermbg=16
-  hi Title ctermfg=13
-  hi Type ctermfg=10 ctermbg=16
+  hi Type ctermbg=16
   hi Typedef ctermfg=83 ctermbg=16
-  hi Underlined ctermfg=12 ctermbg=16
+  hi Underlined ctermbg=16
   hi VertSplit ctermfg=243 ctermbg=16
-  hi Visual ctermfg=16 ctermbg=8
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi VisualNOS ctermfg=16 ctermbg=226
-  hi WarningMsg ctermfg=9 ctermbg=16
-  hi lcursor ctermfg=16 ctermbg=231
+  hi WarningMsg ctermbg=16
+  hi lCursor ctermfg=16 ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
   hi Boolean ctermfg=69 ctermbg=80
   hi Character ctermfg=69 ctermbg=80
   hi Comment ctermbg=16
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=77 ctermbg=16
   hi Constant ctermbg=80
   hi Cursor ctermfg=16 ctermbg=79
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=16
   hi Debug ctermfg=68 ctermbg=16
   hi Define ctermfg=71 ctermbg=16
@@ -166,11 +155,9 @@ elseif &t_Co == 88
   hi DiffAdd ctermfg=79
   hi DiffChange ctermfg=79
   hi DiffText ctermfg=79
-  hi Directory ctermfg=31 ctermbg=16
+  hi Directory ctermbg=16
   hi Exception ctermfg=77 ctermbg=16
   hi Float ctermfg=69 ctermbg=80
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi Function ctermfg=31 ctermbg=16
   hi Identifier ctermbg=16
   hi Ignore ctermbg=16
@@ -182,48 +169,41 @@ elseif &t_Co == 88
   hi Macro ctermfg=71 ctermbg=16
   hi MatchParen ctermfg=76
   hi ModeMsg ctermfg=79 ctermbg=16
-  hi MoreMsg ctermfg=28 ctermbg=16
+  hi MoreMsg ctermbg=16
   hi NonText ctermbg=16
   hi Number ctermfg=69 ctermbg=80
   hi Operator ctermfg=77 ctermbg=16
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
   hi PreCondit ctermfg=71 ctermbg=16
-  hi PreProc ctermfg=39 ctermbg=16
-  hi Question ctermfg=28 ctermbg=16
+  hi PreProc ctermbg=16
+  hi Question ctermbg=16
   hi Repeat ctermfg=77 ctermbg=16
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9 ctermbg=16
+  hi Special ctermbg=16
   hi SpecialChar ctermfg=68 ctermbg=16
   hi SpecialComment ctermfg=39 ctermbg=16
-  hi SpecialKey ctermfg=39 ctermbg=16
+  hi SpecialKey ctermbg=16
   hi Statement ctermbg=16
   hi StatusLine ctermfg=79 ctermbg=16
   hi StatusLineNC ctermfg=82 ctermbg=16
   hi StorageClass ctermfg=45 ctermbg=16
   hi String ctermfg=69 ctermbg=80
   hi Structure ctermfg=45 ctermbg=16
-  hi TabLine ctermbg=81
   hi Tag ctermfg=68 ctermbg=16
-  hi Title ctermfg=67
-  hi Type ctermfg=28 ctermbg=16
+  hi Type ctermbg=16
   hi Typedef ctermfg=45 ctermbg=16
-  hi Underlined ctermfg=39 ctermbg=16
+  hi Underlined ctermbg=16
   hi VertSplit ctermfg=82 ctermbg=16
-  hi Visual ctermfg=16 ctermbg=81
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi VisualNOS ctermfg=16 ctermbg=76
-  hi WarningMsg ctermfg=9 ctermbg=16
-  hi lcursor ctermfg=16 ctermbg=79
+  hi WarningMsg ctermbg=16
+  hi lCursor ctermfg=16 ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Boolean ctermfg=8 ctermbg=0
   hi Character ctermfg=8 ctermbg=0
   hi Comment ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=11 ctermbg=0
   hi Constant ctermbg=0
   hi Cursor ctermfg=0 ctermbg=15
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi Debug ctermfg=3 ctermbg=0
   hi Define ctermfg=15 ctermbg=0
@@ -231,11 +211,9 @@ elseif &t_Co == 16
   hi DiffAdd ctermfg=15
   hi DiffChange ctermfg=15
   hi DiffText ctermfg=15
-  hi Directory ctermfg=14 ctermbg=0
+  hi Directory ctermbg=0
   hi Exception ctermfg=11 ctermbg=0
   hi Float ctermfg=8 ctermbg=0
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=14 ctermbg=0
   hi Identifier ctermbg=0
   hi Ignore ctermbg=0
@@ -247,48 +225,41 @@ elseif &t_Co == 16
   hi Macro ctermfg=15 ctermbg=0
   hi MatchParen ctermfg=11
   hi ModeMsg ctermfg=15 ctermbg=0
-  hi MoreMsg ctermfg=2 ctermbg=0
+  hi MoreMsg ctermbg=0
   hi NonText ctermbg=0
   hi Number ctermfg=8 ctermbg=0
   hi Operator ctermfg=11 ctermbg=0
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
   hi PreCondit ctermfg=15 ctermbg=0
-  hi PreProc ctermfg=12 ctermbg=0
-  hi Question ctermfg=2 ctermbg=0
+  hi PreProc ctermbg=0
+  hi Question ctermbg=0
   hi Repeat ctermfg=11 ctermbg=0
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9 ctermbg=0
+  hi Special ctermbg=0
   hi SpecialChar ctermfg=3 ctermbg=0
   hi SpecialComment ctermfg=12 ctermbg=0
-  hi SpecialKey ctermfg=12 ctermbg=0
+  hi SpecialKey ctermbg=0
   hi Statement ctermbg=0
   hi StatusLine ctermfg=15 ctermbg=0
   hi StatusLineNC ctermfg=8 ctermbg=0
   hi StorageClass ctermfg=10 ctermbg=0
   hi String ctermfg=8 ctermbg=0
   hi Structure ctermfg=10 ctermbg=0
-  hi TabLine ctermbg=2
   hi Tag ctermfg=3 ctermbg=0
-  hi Title ctermfg=13
-  hi Type ctermfg=2 ctermbg=0
+  hi Type ctermbg=0
   hi Typedef ctermfg=10 ctermbg=0
-  hi Underlined ctermfg=12 ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=8 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=11
-  hi WarningMsg ctermfg=9 ctermbg=0
-  hi lcursor ctermfg=0 ctermbg=15
+  hi WarningMsg ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7 ctermbg=0
   hi Character ctermfg=7 ctermbg=0
   hi Comment ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7 ctermbg=0
   hi Constant ctermbg=0
   hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi Debug ctermfg=3 ctermbg=0
   hi Define ctermfg=7 ctermbg=0
@@ -296,11 +267,9 @@ else " 8 colors
   hi DiffAdd ctermfg=7
   hi DiffChange ctermfg=7
   hi DiffText ctermfg=7
-  hi Directory ctermfg=6 ctermbg=0
+  hi Directory ctermbg=0
   hi Exception ctermfg=7 ctermbg=0
   hi Float ctermfg=7 ctermbg=0
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=7 ctermbg=0
   hi Identifier ctermbg=0
   hi Ignore ctermbg=0
@@ -312,38 +281,33 @@ else " 8 colors
   hi Macro ctermfg=7 ctermbg=0
   hi MatchParen ctermfg=3
   hi ModeMsg ctermfg=7 ctermbg=0
-  hi MoreMsg ctermfg=2 ctermbg=0
+  hi MoreMsg ctermbg=0
   hi NonText ctermbg=0
   hi Number ctermfg=7 ctermbg=0
   hi Operator ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
   hi PreCondit ctermfg=7 ctermbg=0
-  hi PreProc ctermfg=5 ctermbg=0
-  hi Question ctermfg=2 ctermbg=0
+  hi PreProc ctermbg=0
+  hi Question ctermbg=0
   hi Repeat ctermfg=7 ctermbg=0
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1 ctermbg=0
+  hi Special ctermbg=0
   hi SpecialChar ctermfg=3 ctermbg=0
   hi SpecialComment ctermfg=7 ctermbg=0
-  hi SpecialKey ctermfg=5 ctermbg=0
+  hi SpecialKey ctermbg=0
   hi Statement ctermbg=0
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=3 ctermbg=0
   hi StorageClass ctermfg=7 ctermbg=0
   hi String ctermfg=7 ctermbg=0
   hi Structure ctermfg=7 ctermbg=0
-  hi TabLine ctermbg=2
   hi Tag ctermfg=3 ctermbg=0
-  hi Title ctermfg=5
-  hi Type ctermfg=2 ctermbg=0
+  hi Type ctermbg=0
   hi Typedef ctermfg=7 ctermbg=0
-  hi Underlined ctermfg=5 ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=3 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=3
-  hi WarningMsg ctermfg=1 ctermbg=0
-  hi lcursor ctermfg=0 ctermbg=7
+  hi WarningMsg ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 

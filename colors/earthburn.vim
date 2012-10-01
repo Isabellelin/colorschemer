@@ -4,7 +4,7 @@
 " Name: earthburn
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:05
+" Date: 2012-09-29 13:34:16
 "----------------------------------------------------------
 
 set background=light
@@ -42,7 +42,7 @@ if has("gui_running")
   hi PreProc guifg=#64634B
   hi Question gui=NONE guifg=gray10 guibg=#B3C71E
   hi Repeat guifg=#480000
-  hi Search guibg=#F0D890
+  hi Search guifg=NONE guibg=#F0D890
   hi Special guifg=#808000
   hi SpecialKey gui=italic guifg=gray60
   hi Statement gui=NONE guifg=#605118
@@ -60,7 +60,7 @@ if has("gui_running")
   hi Visual guibg=#F0F0C0
   hi WarningMsg guifg=#600000 guibg=#d8d4d4
   hi htmlTag guifg=#755C3B
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
   hi rubyAccess guifg=#939264
   hi rubyException guifg=#8C4D38
   hi rubyPredefinedConstant guifg=gray40
@@ -78,15 +78,17 @@ elseif &t_Co == 256
   hi MoreMsg ctermbg=148
   hi Question ctermbg=148
   hi Repeat ctermfg=52
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=102
   hi StatusLineNC ctermfg=241 ctermbg=248
   hi String ctermfg=100
   hi TabLineFill ctermfg=249 ctermbg=249
   hi TabLineSel ctermfg=7 ctermbg=138
   hi VertSplit ctermfg=248 ctermbg=248
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=188
   hi htmlTag ctermfg=95
-  hi lcursor ctermfg=16 ctermbg=231
+  hi lCursor ctermfg=16 ctermbg=231
   hi rubyAccess ctermfg=101
   hi rubyException ctermfg=95
   hi rubyPredefinedConstant ctermfg=241
@@ -104,15 +106,17 @@ elseif &t_Co == 88
   hi MoreMsg ctermbg=56
   hi Question ctermbg=56
   hi Repeat ctermfg=32
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=87 ctermbg=83
   hi StatusLineNC ctermfg=81 ctermbg=84
   hi String ctermfg=36
   hi TabLineFill ctermfg=85 ctermbg=85
   hi TabLineSel ctermfg=87 ctermbg=84
   hi VertSplit ctermfg=84 ctermbg=84
+  hi Visual cterm=NONE ctermbg=87
   hi WarningMsg ctermbg=86
   hi htmlTag ctermfg=81
-  hi lcursor ctermfg=16 ctermbg=79
+  hi lCursor ctermfg=16 ctermbg=79
   hi rubyAccess ctermfg=83
   hi rubyException ctermfg=81
   hi rubyPredefinedConstant ctermfg=81
@@ -130,15 +134,17 @@ elseif &t_Co == 16
   hi MoreMsg ctermbg=3
   hi Question ctermbg=3
   hi Repeat ctermfg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=11 ctermbg=8
   hi StatusLineNC ctermfg=3 ctermbg=8
   hi String ctermfg=3
   hi TabLineFill ctermfg=8 ctermbg=8
   hi TabLineSel ctermfg=11 ctermbg=8
   hi VertSplit ctermfg=8 ctermbg=8
+  hi Visual cterm=NONE ctermbg=11
   hi WarningMsg ctermbg=12
   hi htmlTag ctermfg=3
-  hi lcursor ctermfg=0 ctermbg=15
+  hi lCursor ctermfg=0 ctermbg=15
   hi rubyAccess ctermfg=8
   hi rubyException ctermfg=3
   hi rubyPredefinedConstant ctermfg=3
@@ -156,15 +162,17 @@ else " 8 colors
   hi MoreMsg ctermbg=3
   hi Question ctermbg=3
   hi Repeat ctermfg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=3
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi String ctermfg=3
   hi TabLineFill ctermfg=7 ctermbg=7
   hi TabLineSel ctermfg=7 ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=7
   hi htmlTag ctermfg=3
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
   hi rubyAccess ctermfg=3
   hi rubyException ctermfg=3
   hi rubyPredefinedConstant ctermfg=3

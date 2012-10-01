@@ -4,7 +4,7 @@
 " Name: symfony_light
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:20
+" Date: 2012-09-29 13:45:22
 "----------------------------------------------------------
 
 set background=dark
@@ -48,9 +48,9 @@ if has("gui_running")
   hi PreProc guifg=#E6E1DC
   hi Search guifg=#000000 guibg=#c0c000
   hi Special guifg=#ffcc66
-  hi SpellBad guifg=#D70000 guibg=#ffd7d7
-  hi SpellCap gui=underline guifg=#D0D0FF guibg=#5fd7ff
-  hi SpellRare gui=underline guifg=#D75F87 guibg=#ffd7ff
+  hi SpellBad guifg=#D70000
+  hi SpellCap gui=underline guifg=#D0D0FF
+  hi SpellRare gui=underline guifg=#D75F87
   hi Statement guifg=#ff8400 guibg=bg
   hi StorageClass guifg=#ffcc66
   hi String guifg=#99ff00
@@ -59,17 +59,15 @@ if has("gui_running")
   hi Title guifg=#FFFFFF
   hi Type guifg=#da4939
   hi Visual guibg=#5A647E
-  hi VisualNOS gui=bold,underline
-  hi lcursor guifg=bg guibg=fg
 elseif &t_Co == 256
   hi Normal ctermfg=15 ctermbg=235
-  hi ColorColumn ctermbg=224
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=133
   hi Constant ctermfg=67
   hi Cursor ctermfg=0 ctermbg=15
   hi CursorColumn ctermbg=241
   hi CursorLine ctermbg=0
-  hi CursorLineNr ctermfg=130
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=221
   hi DiffAdd ctermfg=254 ctermbg=71
   hi DiffChange ctermbg=52
@@ -103,10 +101,10 @@ elseif &t_Co == 256
   hi SignColumn ctermfg=51 ctermbg=250
   hi Special ctermfg=221
   hi SpecialKey ctermfg=51
-  hi SpellBad cterm=undercurl ctermfg=160 ctermbg=224
-  hi SpellCap cterm=underline ctermfg=189 ctermbg=81
+  hi SpellBad cterm=undercurl ctermfg=160
+  hi SpellCap cterm=underline ctermfg=189
   hi SpellLocal cterm=undercurl
-  hi SpellRare cterm=underline ctermfg=168 ctermbg=225
+  hi SpellRare cterm=underline ctermfg=168
   hi Statement ctermfg=208 ctermbg=235
   hi StorageClass ctermfg=221
   hi String ctermfg=118
@@ -116,20 +114,19 @@ elseif &t_Co == 256
   hi Todo ctermfg=21 ctermbg=226
   hi Type ctermfg=167
   hi Underlined ctermfg=111
-  hi Visual ctermbg=60
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=60
   hi WarningMsg ctermfg=196
   hi WildMenu ctermbg=226
-  hi lcursor ctermfg=15 ctermbg=235
+  hi lCursor ctermfg=15 ctermbg=235
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=80
-  hi ColorColumn ctermbg=74
+  hi ColorColumn ctermbg=39
   hi Comment ctermfg=84
   hi Constant ctermfg=38
   hi Cursor ctermfg=16 ctermbg=79
   hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=16
-  hi CursorLineNr ctermfg=52
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=73
   hi DiffAdd ctermfg=87 ctermbg=81
   hi DiffChange ctermbg=32
@@ -163,10 +160,10 @@ elseif &t_Co == 88
   hi SignColumn ctermfg=31 ctermbg=85
   hi Special ctermfg=73
   hi SpecialKey ctermfg=31
-  hi SpellBad cterm=undercurl ctermfg=48 ctermbg=74
-  hi SpellCap cterm=underline ctermfg=59 ctermbg=43
+  hi SpellBad cterm=undercurl ctermfg=48
+  hi SpellCap cterm=underline ctermfg=59
   hi SpellLocal cterm=undercurl
-  hi SpellRare cterm=underline ctermfg=53 ctermbg=75
+  hi SpellRare cterm=underline ctermfg=53
   hi Statement ctermfg=68 ctermbg=80
   hi StorageClass ctermfg=73
   hi String ctermfg=44
@@ -176,20 +173,19 @@ elseif &t_Co == 88
   hi Todo ctermfg=19 ctermbg=76
   hi Type ctermfg=53
   hi Underlined ctermfg=43
-  hi Visual ctermbg=81
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=81
   hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=76
-  hi lcursor ctermfg=79 ctermbg=80
+  hi lCursor ctermfg=79 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
-  hi ColorColumn ctermbg=11
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=8
   hi Constant ctermfg=8
   hi Cursor ctermfg=0 ctermbg=15
   hi CursorColumn ctermbg=3
   hi CursorLine ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=11
   hi DiffAdd ctermfg=11 ctermbg=8
   hi DiffChange ctermbg=1
@@ -223,10 +219,10 @@ elseif &t_Co == 16
   hi SignColumn ctermfg=14 ctermbg=7
   hi Special ctermfg=11
   hi SpecialKey ctermfg=14
-  hi SpellBad cterm=undercurl ctermfg=9 ctermbg=11
-  hi SpellCap cterm=underline ctermfg=14 ctermbg=12
+  hi SpellBad cterm=undercurl ctermfg=9
+  hi SpellCap cterm=underline ctermfg=14
   hi SpellLocal cterm=undercurl
-  hi SpellRare cterm=underline ctermfg=8 ctermbg=15
+  hi SpellRare cterm=underline ctermfg=8
   hi Statement ctermfg=3 ctermbg=0
   hi StorageClass ctermfg=11
   hi String ctermfg=3
@@ -236,20 +232,19 @@ elseif &t_Co == 16
   hi Todo ctermfg=4 ctermbg=11
   hi Type ctermfg=8
   hi Underlined ctermfg=12
-  hi Visual ctermbg=5
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=5
   hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=11
-  hi lcursor ctermfg=15 ctermbg=0
+  hi lCursor ctermfg=15 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi ColorColumn ctermbg=7
+  hi ColorColumn ctermbg=5
   hi Comment ctermfg=7
   hi Constant ctermfg=6
   hi Cursor ctermfg=0 ctermbg=7
   hi CursorColumn ctermbg=3
   hi CursorLine ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=7
   hi DiffAdd ctermfg=7 ctermbg=3
   hi DiffChange ctermbg=1
@@ -283,10 +278,10 @@ else " 8 colors
   hi SignColumn ctermfg=6 ctermbg=7
   hi Special ctermfg=7
   hi SpecialKey ctermfg=6
-  hi SpellBad cterm=undercurl ctermfg=1 ctermbg=7
-  hi SpellCap cterm=underline ctermfg=7 ctermbg=7
+  hi SpellBad cterm=undercurl ctermfg=1
+  hi SpellCap cterm=underline ctermfg=7
   hi SpellLocal cterm=undercurl
-  hi SpellRare cterm=underline ctermfg=5 ctermbg=7
+  hi SpellRare cterm=underline ctermfg=5
   hi Statement ctermfg=3 ctermbg=0
   hi StorageClass ctermfg=7
   hi String ctermfg=3
@@ -296,11 +291,10 @@ else " 8 colors
   hi Todo ctermfg=4 ctermbg=3
   hi Type ctermfg=3
   hi Underlined ctermfg=7
-  hi Visual ctermbg=5
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=5
   hi WarningMsg ctermfg=1
   hi WildMenu ctermbg=3
-  hi lcursor ctermfg=7 ctermbg=0
+  hi lCursor ctermfg=7 ctermbg=0
 endif
 
 

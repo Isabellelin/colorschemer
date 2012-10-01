@@ -4,7 +4,7 @@
 " Name: abbott
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:28
+" Date: 2012-09-29 13:30:24
 "----------------------------------------------------------
 
 set background=dark
@@ -65,7 +65,7 @@ if has("gui_running")
   hi Underlined guifg=#e6a2f3
   hi VertSplit gui=NONE guifg=#1f1912 guibg=#d5fac8
   hi Visual guifg=#1f1912 guibg=#94d900
-  hi VisualNOS guifg=#1f1912 guibg=#d8ff84
+  hi VisualNOS gui=NONE guifg=#1f1912 guibg=#d8ff84
   hi WarningMsg guifg=#1f1912 guibg=#ec6c99
   hi WildMenu guifg=#1f1912 guibg=#d5fac8
   hi cursorim gui=reverse guifg=fg guibg=bg
@@ -87,7 +87,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=234 ctermbg=117
   hi Tag ctermfg=183
   hi VertSplit ctermfg=234 ctermbg=194
-  hi Visual ctermfg=234
+  hi Visual cterm=NONE ctermfg=234 ctermbg=8
   hi VisualNOS ctermfg=234 ctermbg=192
   hi WarningMsg ctermbg=204
   hi cursorim ctermfg=fg ctermbg=bg
@@ -109,7 +109,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=80 ctermbg=43
   hi Tag ctermfg=55
   hi VertSplit ctermfg=80 ctermbg=62
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=61
   hi WarningMsg ctermbg=69
   hi cursorim ctermfg=fg ctermbg=bg
@@ -131,7 +131,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=0 ctermbg=12
   hi Tag ctermfg=14
   hi VertSplit ctermfg=0 ctermbg=11
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=10
   hi WarningMsg ctermbg=8
   hi cursorim ctermfg=fg ctermbg=bg
@@ -153,7 +153,7 @@ else " 8 colors
   hi TabLineSel ctermfg=0 ctermbg=7
   hi Tag ctermfg=7
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=7
   hi WarningMsg ctermbg=7
   hi cursorim ctermfg=fg ctermbg=bg

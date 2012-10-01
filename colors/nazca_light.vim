@@ -4,7 +4,7 @@
 " Name: nazca_light
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:05
+" Date: 2012-09-29 13:39:45
 "----------------------------------------------------------
 
 set background=dark
@@ -94,20 +94,19 @@ if has("gui_running")
   hi rubyStringDelimiter guifg=#336633
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=233
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=8
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=68
   hi Constant ctermfg=114
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=233
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=37
-  hi DiffAdd ctermbg=9
+  hi DiffAdd ctermbg=12
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi Directory ctermfg=4
+  hi DiffDelete ctermbg=11
+  hi Directory ctermfg=1
   hi Error ctermbg=88
   hi ErrorMsg cterm=bold ctermbg=203
   hi FoldColumn ctermfg=248 ctermbg=238
@@ -130,7 +129,7 @@ elseif &t_Co == 256
   hi PreProc ctermfg=117
   hi Question ctermfg=2
   hi Search cterm=underline ctermbg=229
-  hi SignColumn ctermfg=4 ctermbg=7
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special ctermfg=173
   hi SpecialKey ctermfg=239 ctermbg=0
   hi Statement ctermfg=68
@@ -143,9 +142,9 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=229
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=203
-  hi WildMenu ctermfg=28
+  hi WildMenu ctermfg=28 ctermbg=11
   hi cssBoxProp ctermfg=180
   hi cssIdentifier ctermfg=151
   hi cssPseudoClassId ctermfg=152
@@ -174,20 +173,19 @@ elseif &t_Co == 256
   hi rubyStringDelimiter ctermfg=238
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=39
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=38
   hi Constant ctermfg=41
   hi Cursor cterm=reverse ctermfg=16 ctermbg=76
   hi CursorColumn cterm=bold ctermbg=16
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=56
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=6
-  hi DiffAdd ctermbg=9
+  hi DiffAdd ctermbg=39
   hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
-  hi Directory ctermfg=19
+  hi DiffDelete ctermbg=76
+  hi Directory ctermfg=48
   hi Error ctermbg=32
   hi ErrorMsg cterm=bold ctermbg=69
   hi FoldColumn ctermfg=84 ctermbg=80
@@ -210,7 +208,7 @@ elseif &t_Co == 88
   hi PreProc ctermfg=43
   hi Question ctermfg=24
   hi Search cterm=underline ctermbg=78
-  hi SignColumn ctermfg=19 ctermbg=87
+  hi SignColumn ctermfg=48 ctermbg=87
   hi Special ctermfg=53
   hi SpecialKey ctermfg=81 ctermbg=16
   hi Statement ctermfg=38
@@ -223,9 +221,9 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=78
   hi Underlined ctermfg=50
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=69
-  hi WildMenu ctermfg=20
+  hi WildMenu ctermfg=20 ctermbg=76
   hi cssBoxProp ctermfg=57
   hi cssIdentifier ctermfg=85
   hi cssPseudoClassId ctermfg=86
@@ -254,20 +252,19 @@ elseif &t_Co == 88
   hi rubyStringDelimiter ctermfg=80
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=8
   hi Constant ctermfg=10
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=6
-  hi DiffAdd ctermbg=9
+  hi DiffAdd ctermbg=12
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi Directory ctermfg=4
+  hi DiffDelete ctermbg=11
+  hi Directory ctermfg=9
   hi Error ctermbg=1
   hi ErrorMsg cterm=bold ctermbg=9
   hi FoldColumn ctermfg=8 ctermbg=2
@@ -290,7 +287,7 @@ elseif &t_Co == 16
   hi PreProc ctermfg=12
   hi Question ctermfg=2
   hi Search cterm=underline ctermbg=11
-  hi SignColumn ctermfg=4 ctermbg=11
+  hi SignColumn ctermfg=9 ctermbg=11
   hi Special ctermfg=8
   hi SpecialKey ctermfg=2 ctermbg=0
   hi Statement ctermfg=8
@@ -303,9 +300,9 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=11
   hi Underlined ctermfg=13
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=11
   hi cssBoxProp ctermfg=8
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=12
@@ -334,20 +331,19 @@ elseif &t_Co == 16
   hi rubyStringDelimiter ctermfg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=5
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=6
   hi Constant ctermfg=7
   hi Cursor cterm=reverse ctermfg=0 ctermbg=3
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=6
-  hi DiffAdd ctermbg=1
+  hi DiffAdd ctermbg=5
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=4
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=1
   hi Error ctermbg=1
   hi ErrorMsg cterm=bold ctermbg=3
   hi FoldColumn ctermfg=7 ctermbg=2
@@ -370,7 +366,7 @@ else " 8 colors
   hi PreProc ctermfg=7
   hi Question ctermfg=2
   hi Search cterm=underline ctermbg=7
-  hi SignColumn ctermfg=4 ctermbg=7
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special ctermfg=3
   hi SpecialKey ctermfg=2 ctermbg=0
   hi Statement ctermfg=6
@@ -383,9 +379,9 @@ else " 8 colors
   hi Type cterm=bold ctermfg=7
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=3
   hi cssBoxProp ctermfg=7
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7

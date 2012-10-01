@@ -4,7 +4,7 @@
 " Name: fu
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:40
+" Date: 2012-09-29 13:35:05
 "----------------------------------------------------------
 
 set background=dark
@@ -132,7 +132,7 @@ elseif &t_Co == 256
   hi Todo ctermfg=46 ctermbg=22
   hi Type ctermfg=111
   hi VertSplit ctermfg=237 ctermbg=237
-  hi Visual ctermfg=24 ctermbg=153
+  hi Visual cterm=NONE ctermfg=24 ctermbg=153
   hi VisualNOS ctermfg=24 ctermbg=153
   hi WildMenu ctermfg=255 ctermbg=33
   hi rubyBlockParameter ctermfg=27
@@ -196,7 +196,7 @@ elseif &t_Co == 88
   hi Todo ctermfg=28 ctermbg=20
   hi Type ctermfg=43
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=21 ctermbg=59
+  hi Visual cterm=NONE ctermfg=21 ctermbg=59
   hi VisualNOS ctermfg=21 ctermbg=59
   hi WildMenu ctermfg=87 ctermbg=23
   hi rubyBlockParameter ctermfg=23
@@ -260,7 +260,7 @@ elseif &t_Co == 16
   hi Todo ctermfg=2 ctermbg=2
   hi Type ctermfg=12
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=12
+  hi Visual cterm=NONE ctermfg=6 ctermbg=12
   hi VisualNOS ctermfg=6 ctermbg=12
   hi WildMenu ctermfg=11 ctermbg=6
   hi rubyBlockParameter ctermfg=6
@@ -324,7 +324,7 @@ else " 8 colors
   hi Todo ctermfg=2 ctermbg=2
   hi Type ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=7
+  hi Visual cterm=NONE ctermfg=6 ctermbg=7
   hi VisualNOS ctermfg=6 ctermbg=7
   hi WildMenu ctermfg=7 ctermbg=6
   hi rubyBlockParameter ctermfg=6

@@ -4,7 +4,7 @@
 " Name: wintersday
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:43
+" Date: 2012-09-29 13:48:23
 "----------------------------------------------------------
 
 set background=dark
@@ -66,7 +66,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=231 ctermbg=94
   hi StatusLineNC ctermfg=94 ctermbg=231
   hi VertSplit ctermfg=231 ctermbg=94
-  hi Visual ctermfg=153
+  hi Visual cterm=NONE ctermfg=153 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=58 ctermbg=16
   hi Cursor ctermfg=59 ctermbg=83
@@ -80,7 +80,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=79 ctermbg=32
   hi StatusLineNC ctermfg=32 ctermbg=79
   hi VertSplit ctermfg=79 ctermbg=32
-  hi Visual ctermfg=59
+  hi Visual cterm=NONE ctermfg=59 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=12 ctermbg=8
@@ -94,7 +94,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=15 ctermbg=1
   hi StatusLineNC ctermfg=1 ctermbg=15
   hi VertSplit ctermfg=15 ctermbg=1
-  hi Visual ctermfg=12
+  hi Visual cterm=NONE ctermfg=12 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=7 ctermbg=3
@@ -108,7 +108,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=1
   hi StatusLineNC ctermfg=1 ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=1
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 

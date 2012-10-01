@@ -4,7 +4,7 @@
 " Name: blazer
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:57
+" Date: 2012-09-29 13:30:55
 "----------------------------------------------------------
 
 set background=dark
@@ -100,7 +100,7 @@ elseif &t_Co == 256
   hi String ctermfg=107
   hi Title ctermfg=15
   hi Type ctermfg=167
-  hi Visual ctermbg=60
+  hi Visual cterm=NONE ctermbg=60
   hi mailEmail cterm=underline ctermfg=107
   hi mailHeaderKey ctermfg=221
   hi mailSubject ctermfg=107
@@ -157,7 +157,7 @@ elseif &t_Co == 88
   hi String ctermfg=41
   hi Title ctermfg=79
   hi Type ctermfg=53
-  hi Visual ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
   hi mailEmail cterm=underline ctermfg=41
   hi mailHeaderKey ctermfg=73
   hi mailSubject ctermfg=41
@@ -214,7 +214,7 @@ elseif &t_Co == 16
   hi String ctermfg=8
   hi Title ctermfg=15
   hi Type ctermfg=8
-  hi Visual ctermbg=5
+  hi Visual cterm=NONE ctermbg=5
   hi mailEmail cterm=underline ctermfg=8
   hi mailHeaderKey ctermfg=11
   hi mailSubject ctermfg=8
@@ -271,7 +271,7 @@ else " 8 colors
   hi String ctermfg=3
   hi Title ctermfg=7
   hi Type ctermfg=3
-  hi Visual ctermbg=5
+  hi Visual cterm=NONE ctermbg=5
   hi mailEmail cterm=underline ctermfg=3
   hi mailHeaderKey ctermfg=7
   hi mailSubject ctermfg=3

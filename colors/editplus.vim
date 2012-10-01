@@ -4,7 +4,7 @@
 " Name: editplus
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:09
+" Date: 2012-09-29 13:34:22
 "----------------------------------------------------------
 
 set background=light
@@ -112,7 +112,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=231
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi SpellBad ctermfg=9
@@ -129,7 +129,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=231 ctermbg=16
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=bg
   hi cssColor ctermfg=90 ctermbg=bg
   hi cssFunctionName ctermfg=9 ctermbg=bg
@@ -173,7 +173,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=79
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi SpellBad ctermfg=9
@@ -190,7 +190,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=79 ctermbg=16
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=bg
   hi cssColor ctermfg=33 ctermbg=bg
   hi cssFunctionName ctermfg=9 ctermbg=bg
@@ -234,7 +234,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=15
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi SpellBad ctermfg=9
@@ -251,7 +251,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=15 ctermbg=0
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=bg
   hi cssColor ctermfg=5 ctermbg=bg
   hi cssFunctionName ctermfg=9 ctermbg=bg
@@ -295,7 +295,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=7
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi SpellBad ctermfg=1
@@ -312,7 +312,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=bg
   hi cssColor ctermfg=5 ctermbg=bg
   hi cssFunctionName ctermfg=1 ctermbg=bg
@@ -344,23 +344,17 @@ hi! link NERDTreeBookmarksLeader Blank
 hi! link NERDTreeCWD Comment
 hi! link NERDTreeClosable NonText
 hi! link NERDTreeCurrentNode Normal
-hi! link NERDTreeDir Directory
-hi! link NERDTreeDirSlash Blank
 hi! link NERDTreeExecFile Normal
-hi! link NERDTreeFile Normal
 hi! link NERDTreeFlag Blank
-hi! link NERDTreeHelp Comment
 hi! link NERDTreeHelpCommand Identifier
 hi! link NERDTreeHelpKey Comment
 hi! link NERDTreeHelpTitle Normal
 hi! link NERDTreeLink Normal
 hi! link NERDTreeOpenable Type
-hi! link NERDTreePart NonText
 hi! link NERDTreePartFile NonText
 hi! link NERDTreeRO Normal
 hi! link NERDTreeToggleOff Type
 hi! link NERDTreeToggleOn Type
-hi! link NERDTreeUp Type
 hi! link cssAuralAttr Type
 hi! link cssAuralProp Keyword
 hi! link cssBoxAttr Type
@@ -410,4 +404,10 @@ hi! link cssUnicodeRange String
 hi! link htmlEndTag Keyword
 hi! link htmlString String
 hi! link htmlTag Keyword
+hi! link nerdtreeDir Directory
+hi! link nerdtreeDirSlash Blank
+hi! link nerdtreeFile Normal
+hi! link nerdtreeHelp Comment
+hi! link nerdtreePart NonText
+hi! link nerdtreeUp Type
 

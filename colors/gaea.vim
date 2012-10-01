@@ -4,7 +4,7 @@
 " Name: gaea
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:41
+" Date: 2012-09-29 13:35:07
 "----------------------------------------------------------
 
 set background=light
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Character guifg=tan3 guibg=bg
   hi Comment guifg=sienna guibg=bg
   hi Constant guifg=darkorange2 guibg=bg
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=lemonchiffon1
   hi CursorLine guibg=lemonchiffon1
   hi Debug guifg=grey40 guibg=bg
@@ -66,7 +65,7 @@ if has("gui_running")
   hi Underlined guifg=forestgreen guibg=bg
   hi VertSplit gui=NONE guifg=wheat2 guibg=burlywood4
   hi Visual guibg=khaki1
-  hi VisualNOS guibg=darkolivegreen1
+  hi VisualNOS gui=NONE guibg=darkolivegreen1
   hi WarningMsg guifg=red2 guibg=bg
   hi WildMenu guifg=gold guibg=indianred4
   hi cursorim guifg=bg guibg=darkred
@@ -75,7 +74,6 @@ elseif &t_Co == 256
   hi Character ctermfg=173 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=230
   hi Debug ctermfg=241 ctermbg=bg
   hi Directory ctermbg=bg
@@ -92,7 +90,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=65
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialComment ctermfg=167 ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -106,6 +104,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=223 ctermbg=95
+  hi Visual cterm=NONE ctermbg=7
   hi VisualNOS ctermbg=191
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=88
@@ -114,7 +113,6 @@ elseif &t_Co == 88
   hi Character ctermfg=52 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=78
   hi Debug ctermfg=81 ctermbg=bg
   hi Directory ctermbg=bg
@@ -131,7 +129,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=82
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialComment ctermfg=53 ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -145,6 +143,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=74 ctermbg=82
+  hi Visual cterm=NONE ctermbg=87
   hi VisualNOS ctermbg=61
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=32
@@ -153,7 +152,6 @@ elseif &t_Co == 16
   hi Character ctermfg=3 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=11
   hi Debug ctermfg=3 ctermbg=bg
   hi Directory ctermbg=bg
@@ -170,7 +168,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=3
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialComment ctermfg=3 ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -184,6 +182,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=3
+  hi Visual cterm=NONE ctermbg=11
   hi VisualNOS ctermbg=10
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=1
@@ -192,7 +191,6 @@ else " 8 colors
   hi Character ctermfg=3 ctermbg=bg
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=7
   hi Debug ctermfg=3 ctermbg=bg
   hi Directory ctermbg=bg
@@ -209,7 +207,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=3
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialComment ctermfg=3 ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -223,6 +221,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=3
+  hi Visual cterm=NONE ctermbg=7
   hi VisualNOS ctermbg=7
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=1

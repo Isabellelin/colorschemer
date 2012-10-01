@@ -4,7 +4,7 @@
 " Name: harlequin
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:17
+" Date: 2012-09-29 13:35:58
 "----------------------------------------------------------
 
 set background=dark
@@ -107,7 +107,7 @@ if has("gui_running")
   hi xmlEndTag guifg=#FFB829
   hi xmlEntity gui=bold guifg=#AE81FF
   hi xmlEntityPunct guifg=#AE81FF
-  hi xmlNamespace guifg=#FFB829
+  hi xmlNameSpace guifg=#FFB829
   hi xmlProcessingDelim guifg=#CB4154
   hi xmlTag guifg=#FFB829
   hi xmlTagName guifg=#FFB829
@@ -146,6 +146,7 @@ elseif &t_Co == 256
   hi Structure ctermfg=197
   hi Typedef ctermfg=197
   hi VertSplit ctermfg=244 ctermbg=232
+  hi Visual cterm=NONE ctermbg=8
   hi VisualNOS ctermbg=236
   hi htmlH1 ctermfg=fg
   hi htmlH2 ctermfg=fg
@@ -168,7 +169,7 @@ elseif &t_Co == 256
   hi xmlEndTag ctermfg=214
   hi xmlEntity ctermfg=141
   hi xmlEntityPunct ctermfg=141
-  hi xmlNamespace ctermfg=214
+  hi xmlNameSpace ctermfg=214
   hi xmlProcessingDelim ctermfg=167
   hi xmlTag ctermfg=214
   hi xmlTagName ctermfg=214
@@ -207,6 +208,7 @@ elseif &t_Co == 88
   hi Structure ctermfg=9
   hi Typedef ctermfg=9
   hi VertSplit ctermfg=83 ctermbg=16
+  hi Visual cterm=NONE ctermbg=81
   hi VisualNOS ctermbg=80
   hi htmlH1 ctermfg=fg
   hi htmlH2 ctermfg=fg
@@ -229,7 +231,7 @@ elseif &t_Co == 88
   hi xmlEndTag ctermfg=72
   hi xmlEntity ctermfg=55
   hi xmlEntityPunct ctermfg=55
-  hi xmlNamespace ctermfg=72
+  hi xmlNameSpace ctermfg=72
   hi xmlProcessingDelim ctermfg=49
   hi xmlTag ctermfg=72
   hi xmlTagName ctermfg=72
@@ -268,6 +270,7 @@ elseif &t_Co == 16
   hi Structure ctermfg=9
   hi Typedef ctermfg=9
   hi VertSplit ctermfg=8 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi htmlH1 ctermfg=fg
   hi htmlH2 ctermfg=fg
@@ -290,7 +293,7 @@ elseif &t_Co == 16
   hi xmlEndTag ctermfg=3
   hi xmlEntity ctermfg=12
   hi xmlEntityPunct ctermfg=12
-  hi xmlNamespace ctermfg=3
+  hi xmlNameSpace ctermfg=3
   hi xmlProcessingDelim ctermfg=5
   hi xmlTag ctermfg=3
   hi xmlTagName ctermfg=3
@@ -329,6 +332,7 @@ else " 8 colors
   hi Structure ctermfg=1
   hi Typedef ctermfg=1
   hi VertSplit ctermfg=3 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi htmlH1 ctermfg=fg
   hi htmlH2 ctermfg=fg
@@ -351,7 +355,7 @@ else " 8 colors
   hi xmlEndTag ctermfg=3
   hi xmlEntity ctermfg=7
   hi xmlEntityPunct ctermfg=7
-  hi xmlNamespace ctermfg=3
+  hi xmlNameSpace ctermfg=3
   hi xmlProcessingDelim ctermfg=5
   hi xmlTag ctermfg=3
   hi xmlTagName ctermfg=3

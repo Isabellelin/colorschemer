@@ -4,7 +4,7 @@
 " Name: warez
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:21
+" Date: 2012-09-29 13:47:55
 "----------------------------------------------------------
 
 set background=dark
@@ -79,7 +79,7 @@ if has("gui_running")
   hi Underlined gui=NONE guifg=#486981
   hi VertSplit gui=NONE guibg=#424242
   hi Visual guifg=#191919 guibg=#4E4E4E
-  hi VisualNOS guifg=#191919 guibg=#4E4E4E
+  hi VisualNOS gui=NONE guifg=#191919 guibg=#4E4E4E
   hi WarningMsg guifg=#191919 guibg=#4E4E4E
   hi WildMenu guifg=#191919 guibg=#32867F
   hi cursorim guifg=#191919 guibg=#afafd4
@@ -119,7 +119,7 @@ elseif &t_Co == 256
   hi Tag ctermfg=146
   hi Typedef ctermfg=110
   hi VertSplit ctermbg=238
-  hi Visual ctermfg=234
+  hi Visual cterm=NONE ctermfg=234 ctermbg=8
   hi VisualNOS ctermfg=234 ctermbg=239
   hi WarningMsg ctermbg=239
   hi cursorim ctermfg=234 ctermbg=146
@@ -159,7 +159,7 @@ elseif &t_Co == 88
   hi Tag ctermfg=85
   hi Typedef ctermfg=38
   hi VertSplit ctermbg=80
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=81
   hi WarningMsg ctermbg=81
   hi cursorim ctermfg=80 ctermbg=85
@@ -199,7 +199,7 @@ elseif &t_Co == 16
   hi Tag ctermfg=7
   hi Typedef ctermfg=8
   hi VertSplit ctermbg=2
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=2
   hi cursorim ctermfg=0 ctermbg=7
@@ -239,7 +239,7 @@ else " 8 colors
   hi Tag ctermfg=7
   hi Typedef ctermfg=7
   hi VertSplit ctermbg=2
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=2
   hi cursorim ctermfg=0 ctermbg=7
@@ -249,15 +249,15 @@ hi! link htmlEndTag Tag
 hi! link htmlString Constant
 hi! link htmlTag Tag
 hi! link htmlTagName Statement
-hi! link javaScriptConditional Conditional
-hi! link javaScriptGlobal Constant
-hi! link javaScriptIdentifier Identifier
 hi! link javaScriptNumber Number
-hi! link javaScriptOperator Operator
-hi! link javaScriptRepeat Repeat
-hi! link javaScriptStatement Statement
-hi! link javaScriptType Type
+hi! link javascriptConditional Conditional
+hi! link javascriptGlobal Constant
+hi! link javascriptIdentifier Identifier
+hi! link javascriptOperator Operator
 hi! link javascriptRegexpString String
+hi! link javascriptRepeat Repeat
+hi! link javascriptStatement Statement
+hi! link javascriptType Type
 hi! link phpIdentifier Identifier
 hi! link phpMethods Structure
 hi! link phpMethodsVar Structure

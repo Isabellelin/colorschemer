@@ -4,7 +4,7 @@
 " Name: railscasts_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:07
+" Date: 2012-09-29 13:42:27
 "----------------------------------------------------------
 
 set background=dark
@@ -66,6 +66,7 @@ elseif &t_Co == 256
   hi Number ctermfg=143
   hi PreCondit ctermfg=173
   hi String ctermfg=143
+  hi Visual cterm=NONE ctermbg=8
   hi xmlEndTag ctermfg=179
   hi xmlTag ctermfg=179
   hi xmlTagName ctermfg=179
@@ -84,6 +85,7 @@ elseif &t_Co == 88
   hi Number ctermfg=41
   hi PreCondit ctermfg=52
   hi String ctermfg=41
+  hi Visual cterm=NONE ctermbg=81
   hi xmlEndTag ctermfg=73
   hi xmlTag ctermfg=73
   hi xmlTagName ctermfg=73
@@ -102,6 +104,7 @@ elseif &t_Co == 16
   hi Number ctermfg=8
   hi PreCondit ctermfg=3
   hi String ctermfg=8
+  hi Visual cterm=NONE ctermbg=2
   hi xmlEndTag ctermfg=7
   hi xmlTag ctermfg=7
   hi xmlTagName ctermfg=7
@@ -120,6 +123,7 @@ else " 8 colors
   hi Number ctermfg=7
   hi PreCondit ctermfg=3
   hi String ctermfg=7
+  hi Visual cterm=NONE ctermbg=2
   hi xmlEndTag ctermfg=7
   hi xmlTag ctermfg=7
   hi xmlTagName ctermfg=7

@@ -4,7 +4,7 @@
 " Name: lilydjwg_green
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:46
+" Date: 2012-09-29 13:38:00
 "----------------------------------------------------------
 
 set background=light
@@ -64,7 +64,7 @@ if has("gui_running")
   hi Underlined guifg=#0088C5 guibg=#aef0da
   hi VertSplit guifg=#00c4ff guibg=blue
   hi Visual guifg=#9bedd1 guibg=#a4a4ff
-  hi VisualNOS gui=bold,underline guibg=#87ffd7
+  hi VisualNOS guibg=#87ffd7
   hi WarningMsg guifg=cyan guibg=darkblue
   hi WildMenu guifg=black guibg=yellow
   hi cursorim guibg=#87ffd7
@@ -92,6 +92,7 @@ elseif &t_Co == 256
   hi MoreMsg ctermfg=226
   hi NonText ctermfg=93 ctermbg=159
   hi Pmenu ctermbg=213
+  hi PmenuSbar ctermbg=248
   hi PmenuSel ctermbg=250
   hi PmenuThumb cterm=reverse ctermbg=122
   hi PreProc ctermfg=92 ctermbg=122
@@ -115,8 +116,8 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=214 ctermbg=122
   hi Underlined ctermfg=32 ctermbg=158
   hi VertSplit ctermfg=45 ctermbg=21
-  hi Visual ctermfg=122 ctermbg=147
-  hi VisualNOS cterm=bold,underline ctermbg=122
+  hi Visual cterm=NONE ctermfg=122 ctermbg=147
+  hi VisualNOS ctermbg=122
   hi WarningMsg ctermfg=51 ctermbg=18
   hi WildMenu ctermfg=16 ctermbg=226
   hi cursorim ctermbg=122
@@ -144,6 +145,7 @@ elseif &t_Co == 88
   hi MoreMsg ctermfg=76
   hi NonText ctermfg=35 ctermbg=63
   hi Pmenu ctermbg=71
+  hi PmenuSbar ctermbg=84
   hi PmenuSel ctermbg=85
   hi PmenuThumb cterm=reverse ctermbg=46
   hi PreProc ctermfg=34 ctermbg=46
@@ -167,8 +169,8 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=72 ctermbg=46
   hi Underlined ctermfg=22 ctermbg=62
   hi VertSplit ctermfg=27 ctermbg=19
-  hi Visual ctermfg=46 ctermbg=59
-  hi VisualNOS cterm=bold,underline ctermbg=46
+  hi Visual cterm=NONE ctermfg=46 ctermbg=59
+  hi VisualNOS ctermbg=46
   hi WarningMsg ctermfg=31 ctermbg=17
   hi WildMenu ctermfg=16 ctermbg=76
   hi cursorim ctermbg=46
@@ -196,6 +198,7 @@ elseif &t_Co == 16
   hi MoreMsg ctermfg=11
   hi NonText ctermfg=5 ctermbg=14
   hi Pmenu ctermbg=15
+  hi PmenuSbar ctermbg=8
   hi PmenuSel ctermbg=7
   hi PmenuThumb cterm=reverse ctermbg=12
   hi PreProc ctermfg=5 ctermbg=12
@@ -219,8 +222,8 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=3 ctermbg=12
   hi Underlined ctermfg=6 ctermbg=12
   hi VertSplit ctermfg=6 ctermbg=4
-  hi Visual ctermfg=12 ctermbg=12
-  hi VisualNOS cterm=bold,underline ctermbg=12
+  hi Visual cterm=NONE ctermfg=12 ctermbg=12
+  hi VisualNOS ctermbg=12
   hi WarningMsg ctermfg=14 ctermbg=4
   hi WildMenu ctermfg=0 ctermbg=11
   hi cursorim ctermbg=12
@@ -248,6 +251,7 @@ else " 8 colors
   hi MoreMsg ctermfg=3
   hi NonText ctermfg=5 ctermbg=7
   hi Pmenu ctermbg=7
+  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermbg=7
   hi PmenuThumb cterm=reverse ctermbg=7
   hi PreProc ctermfg=5 ctermbg=7
@@ -271,8 +275,8 @@ else " 8 colors
   hi Type cterm=bold ctermfg=3 ctermbg=7
   hi Underlined ctermfg=6 ctermbg=7
   hi VertSplit ctermfg=6 ctermbg=4
-  hi Visual ctermfg=7 ctermbg=7
-  hi VisualNOS cterm=bold,underline ctermbg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
+  hi VisualNOS ctermbg=7
   hi WarningMsg ctermfg=6 ctermbg=4
   hi WildMenu ctermfg=0 ctermbg=3
   hi cursorim ctermbg=7

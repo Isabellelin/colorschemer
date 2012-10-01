@@ -4,7 +4,7 @@
 " Name: nour
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:50
+" Date: 2012-09-29 13:40:45
 "----------------------------------------------------------
 
 set background=dark
@@ -40,7 +40,6 @@ if has("gui_running")
   hi MoreMsg guifg=#00ff00 guibg=#000000
   hi NonText guifg=#ffffff guibg=#000000
   hi Operator guifg=#696969
-  hi PmenuSel guifg=#4d4d4d
   hi PreProc guifg=#99ff99
   hi Question guifg=#00ff00
   hi Search gui=reverse guifg=NONE guibg=NONE
@@ -71,44 +70,31 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=16
   hi Boolean ctermfg=46
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=231 ctermbg=238
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=235
   hi DiffAdd ctermfg=46
   hi DiffChange ctermfg=46
   hi DiffText ctermfg=231
-  hi Directory ctermfg=14 ctermbg=16
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
+  hi Directory ctermbg=16
   hi Function ctermfg=111 ctermbg=16
   hi Identifier ctermbg=16
   hi IncSearch ctermfg=16 ctermbg=34
   hi LineNr ctermbg=16
   hi MatchParen ctermfg=46
   hi ModeMsg ctermfg=46 ctermbg=16
-  hi MoreMsg ctermfg=10 ctermbg=16
+  hi MoreMsg ctermbg=16
   hi NonText ctermbg=16
   hi Operator ctermfg=242
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9 ctermbg=16
-  hi SpecialKey ctermfg=12 ctermbg=16
+  hi Special ctermbg=16
+  hi SpecialKey ctermbg=16
   hi StatusLine ctermfg=16 ctermbg=118
   hi StatusLineNC ctermfg=16 ctermbg=208
   hi String ctermfg=221
-  hi TabLine ctermbg=8
   hi TabLineFill ctermfg=231 ctermbg=16
   hi TabLineSel ctermfg=16 ctermbg=34
-  hi Title ctermfg=13
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=231 ctermbg=16
-  hi Visual ctermfg=16 ctermbg=8
-  hi WarningMsg ctermfg=9 ctermbg=102
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
+  hi WarningMsg ctermbg=102
   hi cDefine ctermfg=46
   hi cInclude ctermfg=231
   hi mbenormal ctermfg=118 ctermbg=16
@@ -120,44 +106,31 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
   hi Boolean ctermfg=28
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=79 ctermbg=80
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=28
   hi DiffChange ctermfg=28
   hi DiffText ctermfg=79
-  hi Directory ctermfg=31 ctermbg=16
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
+  hi Directory ctermbg=16
   hi Function ctermfg=43 ctermbg=16
   hi Identifier ctermbg=16
   hi IncSearch ctermfg=16 ctermbg=24
   hi LineNr ctermbg=16
   hi MatchParen ctermfg=28
   hi ModeMsg ctermfg=28 ctermbg=16
-  hi MoreMsg ctermfg=28 ctermbg=16
+  hi MoreMsg ctermbg=16
   hi NonText ctermbg=16
   hi Operator ctermfg=82
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9 ctermbg=16
-  hi SpecialKey ctermfg=39 ctermbg=16
+  hi Special ctermbg=16
+  hi SpecialKey ctermbg=16
   hi StatusLine ctermfg=16 ctermbg=44
   hi StatusLineNC ctermfg=16 ctermbg=68
   hi String ctermfg=72
-  hi TabLine ctermbg=81
   hi TabLineFill ctermfg=79 ctermbg=16
   hi TabLineSel ctermfg=16 ctermbg=20
-  hi Title ctermfg=67
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
   hi VertSplit ctermfg=79 ctermbg=16
-  hi Visual ctermfg=16 ctermbg=81
-  hi WarningMsg ctermfg=9 ctermbg=83
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
+  hi WarningMsg ctermbg=83
   hi cDefine ctermfg=28
   hi cInclude ctermfg=79
   hi mbenormal ctermfg=44 ctermbg=16
@@ -169,44 +142,31 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=14 ctermbg=0
   hi Boolean ctermfg=2
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=15 ctermbg=2
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=2
   hi DiffChange ctermfg=2
   hi DiffText ctermfg=15
-  hi Directory ctermfg=14 ctermbg=0
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi Directory ctermbg=0
   hi Function ctermfg=12 ctermbg=0
   hi Identifier ctermbg=0
   hi IncSearch ctermfg=0 ctermbg=2
   hi LineNr ctermbg=0
   hi MatchParen ctermfg=2
   hi ModeMsg ctermfg=2 ctermbg=0
-  hi MoreMsg ctermfg=2 ctermbg=0
+  hi MoreMsg ctermbg=0
   hi NonText ctermbg=0
   hi Operator ctermfg=3
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9 ctermbg=0
-  hi SpecialKey ctermfg=12 ctermbg=0
+  hi Special ctermbg=0
+  hi SpecialKey ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=3
   hi StatusLineNC ctermfg=0 ctermbg=3
   hi String ctermfg=7
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=15 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=2
-  hi Title ctermfg=13
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=15 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
-  hi WarningMsg ctermfg=9 ctermbg=8
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
+  hi WarningMsg ctermbg=8
   hi cDefine ctermfg=2
   hi cInclude ctermfg=15
   hi mbenormal ctermfg=3 ctermbg=0
@@ -218,44 +178,31 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=2
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=7 ctermbg=2
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=2
   hi DiffChange ctermfg=2
   hi DiffText ctermfg=7
-  hi Directory ctermfg=6 ctermbg=0
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi Directory ctermbg=0
   hi Function ctermfg=7 ctermbg=0
   hi Identifier ctermbg=0
   hi IncSearch ctermfg=0 ctermbg=2
   hi LineNr ctermbg=0
   hi MatchParen ctermfg=2
   hi ModeMsg ctermfg=2 ctermbg=0
-  hi MoreMsg ctermfg=2 ctermbg=0
+  hi MoreMsg ctermbg=0
   hi NonText ctermbg=0
   hi Operator ctermfg=3
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1 ctermbg=0
-  hi SpecialKey ctermfg=5 ctermbg=0
+  hi Special ctermbg=0
+  hi SpecialKey ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=3
   hi StatusLineNC ctermfg=0 ctermbg=3
   hi String ctermfg=7
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=7 ctermbg=0
   hi TabLineSel ctermfg=0 ctermbg=2
-  hi Title ctermfg=5
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
-  hi WarningMsg ctermfg=1 ctermbg=3
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
+  hi WarningMsg ctermbg=3
   hi cDefine ctermfg=2
   hi cInclude ctermfg=7
   hi mbenormal ctermfg=3 ctermbg=0

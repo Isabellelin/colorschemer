@@ -4,7 +4,7 @@
 " Name: zellner
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:15
+" Date: 2012-09-29 13:49:02
 "----------------------------------------------------------
 
 set background=light
@@ -28,56 +28,60 @@ if has("gui_running")
   hi Visual guifg=Black guibg=Yellow
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=231
-  hi Comment ctermfg=9
+  hi Comment ctermfg=12
   hi Constant ctermfg=13
-  hi Identifier ctermfg=12
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
   hi PreProc ctermfg=13
-  hi Search ctermfg=0 ctermbg=14
+  hi Search ctermbg=11
   hi Special ctermfg=13
-  hi Statement ctermfg=1
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=242
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=8
   hi Tag ctermfg=2
-  hi Type ctermfg=12
-  hi Visual ctermfg=11 ctermbg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=12
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi Comment ctermfg=9
+  hi Comment ctermfg=39
   hi Constant ctermfg=67
-  hi Identifier ctermfg=39
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
   hi PreProc ctermfg=67
-  hi Search ctermfg=16 ctermbg=31
+  hi Search ctermbg=76
   hi Special ctermfg=67
-  hi Statement ctermfg=48
-  hi StatusLine cterm=NONE ctermfg=76 ctermbg=82
+  hi Statement ctermfg=19
+  hi StatusLine cterm=NONE ctermfg=31 ctermbg=81
   hi Tag ctermfg=24
-  hi Type ctermfg=39
-  hi Visual ctermfg=76 ctermbg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=31 ctermbg=39
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi Comment ctermfg=9
+  hi Comment ctermfg=12
   hi Constant ctermfg=13
-  hi Identifier ctermfg=12
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
   hi PreProc ctermfg=13
-  hi Search ctermfg=0 ctermbg=14
+  hi Search ctermbg=11
   hi Special ctermfg=13
-  hi Statement ctermfg=9
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=3
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=2
   hi Tag ctermfg=2
-  hi Type ctermfg=12
-  hi Visual ctermfg=11 ctermbg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=12
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi Comment ctermfg=1
+  hi Comment ctermfg=5
   hi Constant ctermfg=5
-  hi Identifier ctermfg=5
+  hi Error ctermbg=1
+  hi Identifier ctermfg=1
   hi PreProc ctermfg=5
-  hi Search ctermfg=0 ctermbg=6
+  hi Search ctermbg=3
   hi Special ctermfg=5
-  hi Statement ctermfg=1
-  hi StatusLine cterm=NONE ctermfg=3 ctermbg=3
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=6 ctermbg=2
   hi Tag ctermfg=2
-  hi Type ctermfg=5
-  hi Visual ctermfg=3 ctermbg=1
+  hi Type ctermfg=1
+  hi Visual cterm=NONE ctermfg=6 ctermbg=5
 endif
 
 hi! link ErrorMsg Visual

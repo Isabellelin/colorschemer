@@ -4,7 +4,7 @@
 " Name: gummybears
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:12
+" Date: 2012-09-29 13:35:50
 "----------------------------------------------------------
 
 set background=dark
@@ -41,7 +41,6 @@ if has("gui_running")
   hi Ignore guifg=#e2e4e5
   hi IncSearch gui=NONE guifg=#101314 guibg=#21d0eb
   hi Include guifg=#8fbfdc
-  hi JavaScriptStrings gui=italic guifg=#26b3ac
   hi Keyword gui=italic guifg=#ffb964
   hi LineNr guifg=#3D3D3D guibg=#000000
   hi LocalVariable guifg=#663d7a
@@ -81,6 +80,7 @@ if has("gui_running")
   hi htmlString guifg=#799668
   hi htmlTagName guifg=#b097b0
   hi javaDocSeeTag guifg=#CCCCCC
+  hi javascriptStringS gui=italic guifg=#26b3ac
   hi markdownBlockquote gui=bold guifg=#00ffff
   hi markdownBold gui=bold guifg=#878700
   hi markdownCode gui=bold guifg=#a7bee4 guibg=#3a3a3a
@@ -127,7 +127,6 @@ elseif &t_Co == 256
   hi Ignore ctermfg=250
   hi IncSearch cterm=NONE ctermfg=234 ctermbg=6
   hi Include ctermfg=75
-  hi JavaScriptStrings ctermfg=45
   hi Keyword cterm=bold ctermfg=214
   hi LineNr ctermfg=237 ctermbg=0
   hi LocalVariable ctermfg=96
@@ -155,9 +154,9 @@ elseif &t_Co == 256
   hi Todo cterm=bold ctermfg=89 ctermbg=227
   hi Type cterm=bold ctermfg=172
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=203
-  hi WildMenu ctermfg=28
+  hi WildMenu ctermfg=28 ctermbg=11
   hi cssBoxProp ctermfg=180
   hi cssIdentifier ctermfg=115
   hi cssPseudoClassId ctermfg=152
@@ -167,6 +166,7 @@ elseif &t_Co == 256
   hi htmlString ctermfg=100
   hi htmlTagName ctermfg=175
   hi javaDocSeeTag ctermfg=252
+  hi javascriptStringS ctermfg=45
   hi markdownBlockquote cterm=bold ctermfg=14
   hi markdownBold cterm=bold ctermfg=100
   hi markdownCode cterm=bold ctermfg=152 ctermbg=237
@@ -213,7 +213,6 @@ elseif &t_Co == 88
   hi Ignore ctermfg=85
   hi IncSearch cterm=NONE ctermfg=80 ctermbg=6
   hi Include ctermfg=43
-  hi JavaScriptStrings ctermfg=27
   hi Keyword cterm=bold ctermfg=72
   hi LineNr ctermfg=80 ctermbg=16
   hi LocalVariable ctermfg=83
@@ -241,9 +240,9 @@ elseif &t_Co == 88
   hi Todo cterm=bold ctermfg=33 ctermbg=77
   hi Type cterm=bold ctermfg=52
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=69
-  hi WildMenu ctermfg=20
+  hi WildMenu ctermfg=20 ctermbg=76
   hi cssBoxProp ctermfg=57
   hi cssIdentifier ctermfg=42
   hi cssPseudoClassId ctermfg=86
@@ -253,6 +252,7 @@ elseif &t_Co == 88
   hi htmlString ctermfg=36
   hi htmlTagName ctermfg=54
   hi javaDocSeeTag ctermfg=86
+  hi javascriptStringS ctermfg=27
   hi markdownBlockquote cterm=bold ctermfg=31
   hi markdownBold cterm=bold ctermfg=36
   hi markdownCode cterm=bold ctermfg=86 ctermbg=80
@@ -299,7 +299,6 @@ elseif &t_Co == 16
   hi Ignore ctermfg=7
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=6
   hi Include ctermfg=12
-  hi JavaScriptStrings ctermfg=6
   hi Keyword cterm=bold ctermfg=3
   hi LineNr ctermfg=2 ctermbg=0
   hi LocalVariable ctermfg=5
@@ -327,9 +326,9 @@ elseif &t_Co == 16
   hi Todo cterm=bold ctermfg=5 ctermbg=11
   hi Type cterm=bold ctermfg=3
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=11
   hi cssBoxProp ctermfg=8
   hi cssIdentifier ctermfg=10
   hi cssPseudoClassId ctermfg=12
@@ -339,6 +338,7 @@ elseif &t_Co == 16
   hi htmlString ctermfg=3
   hi htmlTagName ctermfg=8
   hi javaDocSeeTag ctermfg=7
+  hi javascriptStringS ctermfg=6
   hi markdownBlockquote cterm=bold ctermfg=14
   hi markdownBold cterm=bold ctermfg=3
   hi markdownCode cterm=bold ctermfg=12 ctermbg=2
@@ -385,7 +385,6 @@ else " 8 colors
   hi Ignore ctermfg=7
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=6
   hi Include ctermfg=7
-  hi JavaScriptStrings ctermfg=6
   hi Keyword cterm=bold ctermfg=3
   hi LineNr ctermfg=2 ctermbg=0
   hi LocalVariable ctermfg=5
@@ -413,9 +412,9 @@ else " 8 colors
   hi Todo cterm=bold ctermfg=5 ctermbg=7
   hi Type cterm=bold ctermfg=3
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=3
   hi cssBoxProp ctermfg=7
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7
@@ -425,6 +424,7 @@ else " 8 colors
   hi htmlString ctermfg=3
   hi htmlTagName ctermfg=7
   hi javaDocSeeTag ctermfg=7
+  hi javascriptStringS ctermfg=6
   hi markdownBlockquote cterm=bold ctermfg=6
   hi markdownBold cterm=bold ctermfg=3
   hi markdownCode cterm=bold ctermfg=7 ctermbg=2
@@ -465,7 +465,6 @@ hi! link SpecialComment Tag
 hi! link Structure Include
 hi! link Typedef Repeat
 hi! link Union Ignore
-hi! link VisualNOS Ignore
 hi! link csXmlTag Keyword
 hi! link cssColorProp cssBoxProp
 hi! link cssFontProp cssBoxProp

@@ -4,7 +4,7 @@
 " Name: beauty256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:49
+" Date: 2012-09-29 13:30:47
 "----------------------------------------------------------
 
 set background=light
@@ -70,8 +70,8 @@ elseif &t_Co == 256
   hi Cursor ctermfg=231 ctermbg=16
   hi Directory ctermfg=132
   hi Error ctermbg=197
-  hi FoldColumn ctermbg=7
-  hi Folded ctermfg=244 ctermbg=7
+  hi FoldColumn ctermfg=4
+  hi Folded ctermfg=244
   hi Identifier ctermfg=94
   hi Ignore ctermfg=231
   hi IncSearch ctermfg=231 ctermbg=16
@@ -84,8 +84,9 @@ elseif &t_Co == 256
   hi PmenuSel ctermfg=16 ctermbg=214
   hi PmenuThumb cterm=reverse ctermfg=fg
   hi PreProc ctermfg=12
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE ctermbg=11
   hi Special ctermfg=69
+  hi SpecialKey ctermfg=4
   hi Statement ctermfg=132
   hi StatusLine ctermfg=5 ctermbg=231
   hi StatusLineNC ctermfg=8 ctermbg=188
@@ -93,7 +94,8 @@ elseif &t_Co == 256
   hi Todo ctermbg=232
   hi Type ctermfg=62
   hi VertSplit cterm=bold ctermfg=231 ctermbg=8
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
+  hi WildMenu ctermbg=11
   hi djangoStatement ctermfg=22 ctermbg=150
   hi docCode ctermfg=34
   hi docSpecial ctermfg=69
@@ -107,8 +109,8 @@ elseif &t_Co == 88
   hi Cursor ctermfg=79 ctermbg=16
   hi Directory ctermfg=53
   hi Error ctermbg=65
-  hi FoldColumn ctermbg=87
-  hi Folded ctermfg=83 ctermbg=87
+  hi FoldColumn ctermfg=19
+  hi Folded ctermfg=83
   hi Identifier ctermfg=36
   hi Ignore ctermfg=79
   hi IncSearch ctermfg=79 ctermbg=16
@@ -121,8 +123,9 @@ elseif &t_Co == 88
   hi PmenuSel ctermfg=16 ctermbg=72
   hi PmenuThumb cterm=reverse ctermfg=fg
   hi PreProc ctermfg=39
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE ctermbg=76
   hi Special ctermfg=39
+  hi SpecialKey ctermfg=19
   hi Statement ctermfg=53
   hi StatusLine ctermfg=50 ctermbg=79
   hi StatusLineNC ctermfg=81 ctermbg=86
@@ -130,7 +133,8 @@ elseif &t_Co == 88
   hi Todo ctermbg=16
   hi Type ctermfg=38
   hi VertSplit cterm=bold ctermfg=79 ctermbg=81
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
+  hi WildMenu ctermbg=76
   hi djangoStatement ctermfg=20 ctermbg=57
   hi docCode ctermfg=20
   hi docSpecial ctermfg=39
@@ -144,8 +148,8 @@ elseif &t_Co == 16
   hi Cursor ctermfg=15 ctermbg=0
   hi Directory ctermfg=8
   hi Error ctermbg=9
-  hi FoldColumn ctermbg=11
-  hi Folded ctermfg=8 ctermbg=11
+  hi FoldColumn ctermfg=4
+  hi Folded ctermfg=8
   hi Identifier ctermfg=3
   hi Ignore ctermfg=15
   hi IncSearch ctermfg=15 ctermbg=0
@@ -158,8 +162,9 @@ elseif &t_Co == 16
   hi PmenuSel ctermfg=0 ctermbg=3
   hi PmenuThumb cterm=reverse ctermfg=fg
   hi PreProc ctermfg=12
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE ctermbg=11
   hi Special ctermfg=12
+  hi SpecialKey ctermfg=4
   hi Statement ctermfg=8
   hi StatusLine ctermfg=13 ctermbg=15
   hi StatusLineNC ctermfg=2 ctermbg=12
@@ -167,7 +172,8 @@ elseif &t_Co == 16
   hi Todo ctermbg=0
   hi Type ctermfg=8
   hi VertSplit cterm=bold ctermfg=15 ctermbg=2
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
+  hi WildMenu ctermbg=11
   hi djangoStatement ctermfg=2 ctermbg=10
   hi docCode ctermfg=2
   hi docSpecial ctermfg=6
@@ -181,8 +187,8 @@ else " 8 colors
   hi Cursor ctermfg=7 ctermbg=0
   hi Directory ctermfg=5
   hi Error ctermbg=5
-  hi FoldColumn ctermbg=7
-  hi Folded ctermfg=3 ctermbg=7
+  hi FoldColumn ctermfg=4
+  hi Folded ctermfg=3
   hi Identifier ctermfg=3
   hi Ignore ctermfg=7
   hi IncSearch ctermfg=7 ctermbg=0
@@ -195,8 +201,9 @@ else " 8 colors
   hi PmenuSel ctermfg=0 ctermbg=3
   hi PmenuThumb cterm=reverse ctermfg=fg
   hi PreProc ctermfg=5
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE ctermbg=3
   hi Special ctermfg=6
+  hi SpecialKey ctermfg=4
   hi Statement ctermfg=5
   hi StatusLine ctermfg=5 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=7
@@ -204,7 +211,8 @@ else " 8 colors
   hi Todo ctermbg=0
   hi Type ctermfg=5
   hi VertSplit cterm=bold ctermfg=7 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
+  hi WildMenu ctermbg=3
   hi djangoStatement ctermfg=2 ctermbg=7
   hi docCode ctermfg=2
   hi docSpecial ctermfg=6

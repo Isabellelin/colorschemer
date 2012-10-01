@@ -4,7 +4,7 @@
 " Name: maroloccio3
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:10
+" Date: 2012-09-29 13:38:31
 "----------------------------------------------------------
 
 set background=dark
@@ -44,7 +44,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=247 ctermbg=233
   hi StatusLineNC ctermfg=236 ctermbg=247
   hi VertSplit ctermfg=236 ctermbg=247
-  hi Visual ctermfg=233
+  hi Visual cterm=NONE ctermfg=233 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=84 ctermbg=16
   hi Cursor ctermfg=16 ctermbg=84
@@ -54,7 +54,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=84 ctermbg=16
   hi StatusLineNC ctermfg=80 ctermbg=84
   hi VertSplit ctermfg=80 ctermbg=84
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=8
@@ -64,7 +64,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=8 ctermbg=0
   hi StatusLineNC ctermfg=0 ctermbg=8
   hi VertSplit ctermfg=0 ctermbg=8
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=7
@@ -74,7 +74,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=0 ctermbg=7
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 hi! link CursorColumn CursorLine

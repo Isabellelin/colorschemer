@@ -4,7 +4,7 @@
 " Name: pychimp
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:56
+" Date: 2012-09-29 13:42:13
 "----------------------------------------------------------
 
 set background=light
@@ -71,7 +71,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=14
   hi Todo cterm=bold ctermfg=253 ctermbg=NONE
   hi VertSplit cterm=NONE ctermfg=232 ctermbg=244
-  hi Visual ctermfg=253 ctermbg=235
+  hi Visual cterm=NONE ctermfg=253 ctermbg=235
 elseif &t_Co == 88
   hi Normal ctermfg=86
   hi Boolean cterm=bold ctermfg=6
@@ -105,7 +105,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=31
   hi Todo cterm=bold ctermfg=86 ctermbg=NONE
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=83
-  hi Visual ctermfg=86 ctermbg=80
+  hi Visual cterm=NONE ctermfg=86 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=12
   hi Boolean cterm=bold ctermfg=6
@@ -139,7 +139,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=14
   hi Todo cterm=bold ctermfg=12 ctermbg=NONE
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=8
-  hi Visual ctermfg=12 ctermbg=0
+  hi Visual cterm=NONE ctermfg=12 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7
   hi Boolean cterm=bold ctermfg=6
@@ -173,7 +173,7 @@ else " 8 colors
   hi TabLineSel ctermfg=6
   hi Todo cterm=bold ctermfg=7 ctermbg=NONE
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=3
-  hi Visual ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=7 ctermbg=0
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: bensday
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:50
+" Date: 2012-09-29 13:30:48
 "----------------------------------------------------------
 
 set background=dark
@@ -32,84 +32,79 @@ if has("gui_running")
   hi User1 gui=bold guifg=white guibg=DarkBlue
   hi VertSplit guifg=LightGray guibg=DarkBlue
   hi Visual gui=reverse guifg=grey30 guibg=fg
-  hi VisualNOS gui=bold,underline
-  hi lcursor guifg=Black guibg=Cyan
+  hi lCursor guifg=Black guibg=Cyan
 elseif &t_Co == 256
-  hi Normal ctermfg=15 ctermbg=242
+  hi Normal ctermfg=15 ctermbg=8
   hi Cursor ctermfg=16 ctermbg=46
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=241
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=7
-  hi Folded ctermfg=4 ctermbg=7
-  hi Ignore ctermfg=242
+  hi DiffAdd ctermbg=1
+  hi FoldColumn ctermfg=1 ctermbg=7
+  hi Folded ctermfg=1 ctermbg=7
+  hi Ignore ctermfg=8
   hi LineNr ctermfg=10 ctermbg=234
-  hi NonText ctermfg=81 ctermbg=8
+  hi NonText ctermbg=8
   hi Statement cterm=bold
   hi StatusLine ctermfg=18 ctermbg=252
   hi StatusLineNC ctermfg=252 ctermbg=65
-  hi User1 cterm=bold,reverse ctermfg=9 ctermbg=18
+  hi User1 cterm=bold,reverse ctermfg=12 ctermbg=18
   hi VertSplit ctermfg=252 ctermbg=18
-  hi Visual cterm=reverse ctermfg=8
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=16 ctermbg=51
+  hi Visual ctermfg=8 ctermbg=8
+  hi lCursor ctermfg=16 ctermbg=51
 elseif &t_Co == 88
-  hi Normal ctermfg=79 ctermbg=82
+  hi Normal ctermfg=79 ctermbg=81
   hi Cursor ctermfg=16 ctermbg=28
   hi CursorColumn ctermbg=16
   hi CursorLine ctermbg=81
-  hi DiffAdd ctermbg=19
-  hi FoldColumn ctermfg=19 ctermbg=87
-  hi Folded ctermfg=19 ctermbg=87
-  hi Ignore ctermfg=82
+  hi DiffAdd ctermbg=48
+  hi FoldColumn ctermfg=48 ctermbg=87
+  hi Folded ctermfg=48 ctermbg=87
+  hi Ignore ctermfg=81
   hi LineNr ctermfg=28 ctermbg=80
-  hi NonText ctermfg=43 ctermbg=81
+  hi NonText ctermbg=81
   hi Statement cterm=bold
   hi StatusLine ctermfg=17 ctermbg=86
   hi StatusLineNC ctermfg=86 ctermbg=81
-  hi User1 cterm=bold,reverse ctermfg=9 ctermbg=17
+  hi User1 cterm=bold,reverse ctermfg=39 ctermbg=17
   hi VertSplit ctermfg=86 ctermbg=17
-  hi Visual cterm=reverse ctermfg=81
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=16 ctermbg=31
+  hi Visual ctermfg=81 ctermbg=81
+  hi lCursor ctermfg=16 ctermbg=31
 elseif &t_Co == 16
-  hi Normal ctermfg=15 ctermbg=3
+  hi Normal ctermfg=15 ctermbg=2
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=11
-  hi Folded ctermfg=4 ctermbg=11
-  hi Ignore ctermfg=3
+  hi DiffAdd ctermbg=9
+  hi FoldColumn ctermfg=9 ctermbg=11
+  hi Folded ctermfg=9 ctermbg=11
+  hi Ignore ctermfg=2
   hi LineNr ctermfg=2 ctermbg=0
-  hi NonText ctermfg=12 ctermbg=2
+  hi NonText ctermbg=2
   hi Statement cterm=bold
   hi StatusLine ctermfg=4 ctermbg=12
   hi StatusLineNC ctermfg=12 ctermbg=3
-  hi User1 cterm=bold,reverse ctermfg=9 ctermbg=4
+  hi User1 cterm=bold,reverse ctermfg=12 ctermbg=4
   hi VertSplit ctermfg=12 ctermbg=4
-  hi Visual cterm=reverse ctermfg=2
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=0 ctermbg=14
+  hi Visual ctermfg=2 ctermbg=2
+  hi lCursor ctermfg=0 ctermbg=14
 else " 8 colors
-  hi Normal ctermfg=7 ctermbg=3
+  hi Normal ctermfg=7 ctermbg=2
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=7
-  hi Folded ctermfg=4 ctermbg=7
-  hi Ignore ctermfg=3
+  hi DiffAdd ctermbg=1
+  hi FoldColumn ctermfg=1 ctermbg=7
+  hi Folded ctermfg=1 ctermbg=7
+  hi Ignore ctermfg=2
   hi LineNr ctermfg=2 ctermbg=0
-  hi NonText ctermfg=7 ctermbg=2
+  hi NonText ctermbg=2
   hi Statement cterm=bold
   hi StatusLine ctermfg=4 ctermbg=7
   hi StatusLineNC ctermfg=7 ctermbg=3
-  hi User1 cterm=bold,reverse ctermfg=1 ctermbg=4
+  hi User1 cterm=bold,reverse ctermfg=5 ctermbg=4
   hi VertSplit ctermfg=7 ctermbg=4
-  hi Visual cterm=reverse ctermfg=2
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=0 ctermbg=6
+  hi Visual ctermfg=2 ctermbg=2
+  hi lCursor ctermfg=0 ctermbg=6
 endif
 
 

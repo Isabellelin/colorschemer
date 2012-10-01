@@ -4,7 +4,7 @@
 " Name: graywh
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:00
+" Date: 2012-09-29 13:35:34
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Boolean gui=bold guifg=#5F87FF
   hi Comment gui=italic guifg=#AFFFAF
   hi Constant guifg=#FFAFAF
-  hi Cursor guifg=bg guibg=fg
   hi CursorLine guibg=#303030
   hi DiffAdd guifg=#000000 guibg=#123012
   hi DiffChange guibg=#121230
@@ -48,9 +47,9 @@ if has("gui_running")
   hi SignColumn guifg=#FFFF87 guibg=#444444
   hi Special guifg=#FF5F5F
   hi SpecialKey guifg=#4E4E4E guibg=bg
-  hi SpellBad guibg=#cd0000
-  hi SpellCap guibg=#0000ee
-  hi SpellLocal guibg=#00cdcd
+  hi SpellBad guibg=#0000ee
+  hi SpellCap guibg=#cd0000
+  hi SpellLocal guibg=#cdcd00
   hi SpellRare guibg=#cd00cd
   hi Statement gui=NONE guifg=#87AFFF
   hi String guifg=#FFAFFF
@@ -62,12 +61,10 @@ if has("gui_running")
   hi Type gui=NONE guifg=#FFFFAF
   hi Underlined guifg=#AFAFFF
   hi Visual gui=reverse guibg=NONE
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=#D7D700
   hi WildMenu guifg=bg guibg=#D7D700
   hi colorIndentLevel1 guibg=#121212
   hi colorIndentLevel2 guibg=#262626
-  hi lcursor guifg=bg guibg=fg
   hi mailEmail gui=underline guifg=#5F87FF
   hi mailQuoted1 guifg=#AFAFD7 guibg=#303030
   hi mailQuoted2 guifg=#D7AFAF guibg=#303030
@@ -77,233 +74,213 @@ if has("gui_running")
   hi mailQuoted6 guifg=#D7D7AF guibg=#303030
   hi mailSignature guifg=#8A8A8A
 elseif &t_Co == 256
-  hi Normal ctermfg=248 ctermbg=0
-  hi Boolean ctermfg=12
+  hi Normal ctermfg=7 ctermbg=0
+  hi Boolean ctermfg=9
   hi Comment ctermfg=10
-  hi Constant ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorLine ctermbg=242
+  hi Constant ctermfg=12
+  hi CursorLine ctermbg=8
   hi DiffAdd ctermfg=0 ctermbg=2
-  hi DiffChange ctermbg=4
-  hi DiffDelete ctermfg=0 ctermbg=1
-  hi DiffText cterm=NONE ctermfg=0 ctermbg=130
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=1 ctermbg=0
+  hi DiffChange ctermbg=1
+  hi DiffDelete ctermfg=0 ctermbg=4
+  hi DiffText cterm=NONE ctermfg=0 ctermbg=6
+  hi Directory ctermfg=3
+  hi ErrorMsg ctermfg=4 ctermbg=0
   hi FoldColumn ctermbg=0
   hi Folded ctermfg=13 ctermbg=0
-  hi Function ctermfg=14
+  hi Function ctermfg=11
   hi Identifier cterm=NONE
   hi LineNr ctermbg=235
-  hi MoreMsg ctermfg=10
-  hi NonText ctermfg=14 ctermbg=235
-  hi Operator ctermfg=12
-  hi Pmenu ctermfg=248 ctermbg=5
-  hi PmenuSbar ctermfg=248 ctermbg=242
-  hi PmenuSel ctermfg=248 ctermbg=242
+  hi NonText ctermfg=11 ctermbg=235
+  hi Operator ctermfg=9
+  hi Pmenu ctermfg=7 ctermbg=5
+  hi PmenuSbar ctermfg=7 ctermbg=8
+  hi PmenuSel ctermfg=7 ctermbg=8
   hi PmenuThumb cterm=reverse
-  hi PreProc ctermfg=6
-  hi Question ctermfg=10
-  hi SignColumn ctermfg=11 ctermbg=0
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=242 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=1
-  hi SpellCap cterm=underline ctermbg=4
-  hi SpellLocal cterm=underline ctermbg=6
+  hi PreProc ctermfg=3
+  hi SignColumn ctermfg=14 ctermbg=0
+  hi Special ctermfg=4
+  hi SpecialKey ctermfg=8 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=4
+  hi SpellCap cterm=underline ctermbg=1
+  hi SpellLocal cterm=underline ctermbg=3
   hi SpellRare cterm=underline ctermbg=5
-  hi Statement ctermfg=12
+  hi Statement ctermfg=9
   hi String ctermfg=13
-  hi TabLine cterm=NONE ctermfg=0 ctermbg=248
+  hi TabLine cterm=NONE ctermfg=0 ctermbg=7
   hi TabLineFill ctermfg=fg ctermbg=bg
   hi TabLineSel ctermfg=fg ctermbg=bg
-  hi Title ctermfg=13
-  hi Todo ctermfg=4
-  hi Type ctermfg=11
+  hi Todo ctermfg=1
+  hi Type ctermfg=14
   hi Underlined ctermfg=13
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=underline
-  hi WarningMsg ctermfg=130
+  hi WarningMsg ctermfg=6
   hi colorIndentLevel1 ctermbg=0
-  hi colorIndentLevel2 ctermbg=242
-  hi lcursor ctermfg=bg ctermbg=fg
-  hi mailEmail cterm=underline ctermfg=12
-  hi mailQuoted1 ctermfg=4 ctermbg=236
-  hi mailQuoted2 ctermfg=1 ctermbg=236
+  hi colorIndentLevel2 ctermbg=8
+  hi mailEmail cterm=underline ctermfg=9
+  hi mailQuoted1 ctermfg=1 ctermbg=236
+  hi mailQuoted2 ctermfg=4 ctermbg=236
   hi mailQuoted3 ctermfg=2 ctermbg=236
   hi mailQuoted4 ctermfg=5 ctermbg=236
-  hi mailQuoted5 ctermfg=6 ctermbg=236
-  hi mailQuoted6 ctermfg=130 ctermbg=236
-  hi mailSignature ctermfg=242
+  hi mailQuoted5 ctermfg=3 ctermbg=236
+  hi mailQuoted6 ctermfg=6 ctermbg=236
+  hi mailSignature ctermfg=8
 elseif &t_Co == 88
-  hi Normal ctermfg=84 ctermbg=16
-  hi Boolean ctermfg=39
+  hi Normal ctermfg=87 ctermbg=16
+  hi Boolean ctermfg=9
   hi Comment ctermfg=28
-  hi Constant ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorLine ctermbg=82
+  hi Constant ctermfg=39
+  hi CursorLine ctermbg=81
   hi DiffAdd ctermfg=16 ctermbg=24
-  hi DiffChange ctermbg=19
-  hi DiffDelete ctermfg=16 ctermbg=48
-  hi DiffText cterm=NONE ctermfg=16 ctermbg=52
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=48 ctermbg=16
+  hi DiffChange ctermbg=48
+  hi DiffDelete ctermfg=16 ctermbg=19
+  hi DiffText cterm=NONE ctermfg=16 ctermbg=6
+  hi Directory ctermfg=56
+  hi ErrorMsg ctermfg=19 ctermbg=16
   hi FoldColumn ctermbg=16
   hi Folded ctermfg=67 ctermbg=16
-  hi Function ctermfg=31
+  hi Function ctermfg=76
   hi Identifier cterm=NONE
   hi LineNr ctermbg=80
-  hi MoreMsg ctermfg=28
-  hi NonText ctermfg=31 ctermbg=80
-  hi Operator ctermfg=39
-  hi Pmenu ctermfg=84 ctermbg=50
-  hi PmenuSbar ctermfg=84 ctermbg=82
-  hi PmenuSel ctermfg=84 ctermbg=82
+  hi NonText ctermfg=76 ctermbg=80
+  hi Operator ctermfg=9
+  hi Pmenu ctermfg=87 ctermbg=50
+  hi PmenuSbar ctermfg=87 ctermbg=81
+  hi PmenuSel ctermfg=87 ctermbg=81
   hi PmenuThumb cterm=reverse
-  hi PreProc ctermfg=6
-  hi Question ctermfg=28
-  hi SignColumn ctermfg=76 ctermbg=16
-  hi Special ctermfg=48
-  hi SpecialKey ctermfg=82 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=48
-  hi SpellCap cterm=underline ctermbg=19
-  hi SpellLocal cterm=underline ctermbg=6
+  hi PreProc ctermfg=56
+  hi SignColumn ctermfg=31 ctermbg=16
+  hi Special ctermfg=19
+  hi SpecialKey ctermfg=81 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=19
+  hi SpellCap cterm=underline ctermbg=48
+  hi SpellLocal cterm=underline ctermbg=56
   hi SpellRare cterm=underline ctermbg=50
-  hi Statement ctermfg=39
+  hi Statement ctermfg=9
   hi String ctermfg=67
-  hi TabLine cterm=NONE ctermfg=16 ctermbg=84
+  hi TabLine cterm=NONE ctermfg=16 ctermbg=87
   hi TabLineFill ctermfg=fg ctermbg=bg
   hi TabLineSel ctermfg=fg ctermbg=bg
-  hi Title ctermfg=67
-  hi Todo ctermfg=19
-  hi Type ctermfg=76
+  hi Todo ctermfg=48
+  hi Type ctermfg=31
   hi Underlined ctermfg=67
-  hi Visual cterm=reverse ctermbg=16
+  hi Visual ctermbg=16
   hi VisualNOS cterm=underline
-  hi WarningMsg ctermfg=52
+  hi WarningMsg ctermfg=6
   hi colorIndentLevel1 ctermbg=16
-  hi colorIndentLevel2 ctermbg=82
-  hi lcursor ctermfg=bg ctermbg=fg
-  hi mailEmail cterm=underline ctermfg=39
-  hi mailQuoted1 ctermfg=19 ctermbg=80
-  hi mailQuoted2 ctermfg=48 ctermbg=80
+  hi colorIndentLevel2 ctermbg=81
+  hi mailEmail cterm=underline ctermfg=9
+  hi mailQuoted1 ctermfg=48 ctermbg=80
+  hi mailQuoted2 ctermfg=19 ctermbg=80
   hi mailQuoted3 ctermfg=24 ctermbg=80
   hi mailQuoted4 ctermfg=50 ctermbg=80
-  hi mailQuoted5 ctermfg=6 ctermbg=80
-  hi mailQuoted6 ctermfg=52 ctermbg=80
-  hi mailSignature ctermfg=82
+  hi mailQuoted5 ctermfg=56 ctermbg=80
+  hi mailQuoted6 ctermfg=6 ctermbg=80
+  hi mailSignature ctermfg=81
 elseif &t_Co == 16
-  hi Normal ctermfg=8 ctermbg=0
-  hi Boolean ctermfg=12
+  hi Normal ctermfg=11 ctermbg=0
+  hi Boolean ctermfg=9
   hi Comment ctermfg=2
-  hi Constant ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorLine ctermbg=3
+  hi Constant ctermfg=12
+  hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=0 ctermbg=2
-  hi DiffChange ctermbg=4
-  hi DiffDelete ctermfg=0 ctermbg=9
-  hi DiffText cterm=NONE ctermfg=0 ctermbg=3
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=9 ctermbg=0
+  hi DiffChange ctermbg=9
+  hi DiffDelete ctermfg=0 ctermbg=4
+  hi DiffText cterm=NONE ctermfg=0 ctermbg=6
+  hi Directory ctermfg=3
+  hi ErrorMsg ctermfg=4 ctermbg=0
   hi FoldColumn ctermbg=0
   hi Folded ctermfg=13 ctermbg=0
-  hi Function ctermfg=14
+  hi Function ctermfg=11
   hi Identifier cterm=NONE
   hi LineNr ctermbg=0
-  hi MoreMsg ctermfg=2
-  hi NonText ctermfg=14 ctermbg=0
-  hi Operator ctermfg=12
-  hi Pmenu ctermfg=8 ctermbg=13
-  hi PmenuSbar ctermfg=8 ctermbg=3
-  hi PmenuSel ctermfg=8 ctermbg=3
+  hi NonText ctermfg=11 ctermbg=0
+  hi Operator ctermfg=9
+  hi Pmenu ctermfg=11 ctermbg=13
+  hi PmenuSbar ctermfg=11 ctermbg=2
+  hi PmenuSel ctermfg=11 ctermbg=2
   hi PmenuThumb cterm=reverse
-  hi PreProc ctermfg=6
-  hi Question ctermfg=2
-  hi SignColumn ctermfg=11 ctermbg=0
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=3 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=9
-  hi SpellCap cterm=underline ctermbg=4
-  hi SpellLocal cterm=underline ctermbg=6
+  hi PreProc ctermfg=3
+  hi SignColumn ctermfg=14 ctermbg=0
+  hi Special ctermfg=4
+  hi SpecialKey ctermfg=2 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=4
+  hi SpellCap cterm=underline ctermbg=9
+  hi SpellLocal cterm=underline ctermbg=3
   hi SpellRare cterm=underline ctermbg=13
-  hi Statement ctermfg=12
+  hi Statement ctermfg=9
   hi String ctermfg=13
-  hi TabLine cterm=NONE ctermfg=0 ctermbg=8
+  hi TabLine cterm=NONE ctermfg=0 ctermbg=11
   hi TabLineFill ctermfg=fg ctermbg=bg
   hi TabLineSel ctermfg=fg ctermbg=bg
-  hi Title ctermfg=13
-  hi Todo ctermfg=4
-  hi Type ctermfg=11
+  hi Todo ctermfg=9
+  hi Type ctermfg=14
   hi Underlined ctermfg=13
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=underline
-  hi WarningMsg ctermfg=3
+  hi WarningMsg ctermfg=6
   hi colorIndentLevel1 ctermbg=0
-  hi colorIndentLevel2 ctermbg=3
-  hi lcursor ctermfg=bg ctermbg=fg
-  hi mailEmail cterm=underline ctermfg=12
-  hi mailQuoted1 ctermfg=4 ctermbg=0
-  hi mailQuoted2 ctermfg=9 ctermbg=0
+  hi colorIndentLevel2 ctermbg=2
+  hi mailEmail cterm=underline ctermfg=9
+  hi mailQuoted1 ctermfg=9 ctermbg=0
+  hi mailQuoted2 ctermfg=4 ctermbg=0
   hi mailQuoted3 ctermfg=2 ctermbg=0
   hi mailQuoted4 ctermfg=13 ctermbg=0
-  hi mailQuoted5 ctermfg=6 ctermbg=0
-  hi mailQuoted6 ctermfg=3 ctermbg=0
-  hi mailSignature ctermfg=3
+  hi mailQuoted5 ctermfg=3 ctermbg=0
+  hi mailQuoted6 ctermfg=6 ctermbg=0
+  hi mailSignature ctermfg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Boolean ctermfg=5
+  hi Boolean ctermfg=1
   hi Comment ctermfg=2
-  hi Constant ctermfg=1
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorLine ctermbg=3
+  hi Constant ctermfg=5
+  hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=0 ctermbg=2
-  hi DiffChange ctermbg=4
-  hi DiffDelete ctermfg=0 ctermbg=1
-  hi DiffText cterm=NONE ctermfg=0 ctermbg=3
-  hi Directory ctermfg=6
-  hi ErrorMsg ctermfg=1 ctermbg=0
+  hi DiffChange ctermbg=1
+  hi DiffDelete ctermfg=0 ctermbg=4
+  hi DiffText cterm=NONE ctermfg=0 ctermbg=6
+  hi Directory ctermfg=3
+  hi ErrorMsg ctermfg=4 ctermbg=0
   hi FoldColumn ctermbg=0
   hi Folded ctermfg=5 ctermbg=0
-  hi Function ctermfg=6
+  hi Function ctermfg=3
   hi Identifier cterm=NONE
   hi LineNr ctermbg=0
-  hi MoreMsg ctermfg=2
-  hi NonText ctermfg=6 ctermbg=0
-  hi Operator ctermfg=5
+  hi NonText ctermfg=3 ctermbg=0
+  hi Operator ctermfg=1
   hi Pmenu ctermfg=7 ctermbg=5
-  hi PmenuSbar ctermfg=7 ctermbg=3
-  hi PmenuSel ctermfg=7 ctermbg=3
+  hi PmenuSbar ctermfg=7 ctermbg=2
+  hi PmenuSel ctermfg=7 ctermbg=2
   hi PmenuThumb cterm=reverse
-  hi PreProc ctermfg=6
-  hi Question ctermfg=2
-  hi SignColumn ctermfg=3 ctermbg=0
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=3 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=1
-  hi SpellCap cterm=underline ctermbg=4
-  hi SpellLocal cterm=underline ctermbg=6
+  hi PreProc ctermfg=3
+  hi SignColumn ctermfg=6 ctermbg=0
+  hi Special ctermfg=4
+  hi SpecialKey ctermfg=2 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=4
+  hi SpellCap cterm=underline ctermbg=1
+  hi SpellLocal cterm=underline ctermbg=3
   hi SpellRare cterm=underline ctermbg=5
-  hi Statement ctermfg=5
+  hi Statement ctermfg=1
   hi String ctermfg=5
   hi TabLine cterm=NONE ctermfg=0 ctermbg=7
   hi TabLineFill ctermfg=fg ctermbg=bg
   hi TabLineSel ctermfg=fg ctermbg=bg
-  hi Title ctermfg=5
-  hi Todo ctermfg=4
-  hi Type ctermfg=3
+  hi Todo ctermfg=1
+  hi Type ctermfg=6
   hi Underlined ctermfg=5
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=underline
-  hi WarningMsg ctermfg=3
+  hi WarningMsg ctermfg=6
   hi colorIndentLevel1 ctermbg=0
-  hi colorIndentLevel2 ctermbg=3
-  hi lcursor ctermfg=bg ctermbg=fg
-  hi mailEmail cterm=underline ctermfg=5
-  hi mailQuoted1 ctermfg=4 ctermbg=0
-  hi mailQuoted2 ctermfg=1 ctermbg=0
+  hi colorIndentLevel2 ctermbg=2
+  hi mailEmail cterm=underline ctermfg=1
+  hi mailQuoted1 ctermfg=1 ctermbg=0
+  hi mailQuoted2 ctermfg=4 ctermbg=0
   hi mailQuoted3 ctermfg=2 ctermbg=0
   hi mailQuoted4 ctermfg=5 ctermbg=0
-  hi mailQuoted5 ctermfg=6 ctermbg=0
-  hi mailQuoted6 ctermfg=3 ctermbg=0
-  hi mailSignature ctermfg=3
+  hi mailQuoted5 ctermfg=3 ctermbg=0
+  hi mailQuoted6 ctermfg=6 ctermbg=0
+  hi mailSignature ctermfg=2
 endif
 
 hi! link Character String

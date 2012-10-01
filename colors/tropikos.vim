@@ -4,7 +4,7 @@
 " Name: tropikos
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:25
+" Date: 2012-09-29 13:46:44
 "----------------------------------------------------------
 
 set background=dark
@@ -65,9 +65,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=145 ctermbg=234
   hi ColumnMargin ctermbg=0
   hi Comment ctermfg=59
-  hi Conceal ctermbg=8
   hi Constant ctermfg=139
-  hi CursorColumn ctermbg=8
   hi CursorLine cterm=NONE ctermbg=238
   hi Delimiter ctermfg=145
   hi DiffAdd cterm=bold ctermfg=15 ctermbg=2
@@ -76,7 +74,7 @@ elseif &t_Co == 256
   hi DiffText ctermfg=8 ctermbg=3
   hi Directory ctermfg=99 ctermbg=234
   hi Error ctermfg=145 ctermbg=1
-  hi ErrorMsg ctermfg=145
+  hi ErrorMsg ctermfg=145 ctermbg=1
   hi FoldColumn ctermfg=155 ctermbg=59
   hi Folded ctermfg=155 ctermbg=59
   hi Identifier cterm=NONE ctermfg=139
@@ -88,16 +86,13 @@ elseif &t_Co == 256
   hi MatchParen ctermfg=145 ctermbg=59
   hi Method ctermfg=180
   hi ModeMsg ctermfg=10
-  hi MoreMsg ctermfg=10
   hi NonText cterm=bold ctermfg=59 ctermbg=236
   hi Number ctermfg=107
   hi Pmenu ctermfg=145 ctermbg=59
   hi PmenuSbar ctermfg=59 ctermbg=145
   hi PmenuSel ctermfg=59 ctermbg=145
   hi PreProc ctermfg=167
-  hi Question ctermfg=10
   hi Search ctermfg=145 ctermbg=59
-  hi SignColumn ctermbg=8
   hi Special ctermfg=6
   hi SpecialKey ctermfg=59
   hi SpellBad ctermfg=145 ctermbg=1
@@ -111,19 +106,14 @@ elseif &t_Co == 256
   hi String ctermfg=107
   hi Structure ctermfg=12
   hi Symbol ctermfg=180
-  hi TabLine ctermbg=8
   hi Title ctermfg=99
   hi Type ctermfg=139
-  hi Underlined ctermfg=12
-  hi Visual ctermfg=59 ctermbg=145
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=59 ctermbg=145
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=80
   hi ColumnMargin ctermbg=16
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
   hi Constant ctermfg=84
-  hi CursorColumn ctermbg=81
   hi CursorLine cterm=NONE ctermbg=80
   hi Delimiter ctermfg=85
   hi DiffAdd cterm=bold ctermfg=79 ctermbg=24
@@ -132,7 +122,7 @@ elseif &t_Co == 88
   hi DiffText ctermfg=81 ctermbg=56
   hi Directory ctermfg=39 ctermbg=80
   hi Error ctermfg=85 ctermbg=48
-  hi ErrorMsg ctermfg=85
+  hi ErrorMsg ctermfg=85 ctermbg=48
   hi FoldColumn ctermfg=61 ctermbg=81
   hi Folded ctermfg=61 ctermbg=81
   hi Identifier cterm=NONE ctermfg=84
@@ -144,16 +134,13 @@ elseif &t_Co == 88
   hi MatchParen ctermfg=85 ctermbg=81
   hi Method ctermfg=57
   hi ModeMsg ctermfg=28
-  hi MoreMsg ctermfg=28
   hi NonText cterm=bold ctermfg=81 ctermbg=80
   hi Number ctermfg=41
   hi Pmenu ctermfg=85 ctermbg=81
   hi PmenuSbar ctermfg=81 ctermbg=85
   hi PmenuSel ctermfg=81 ctermbg=85
   hi PreProc ctermfg=53
-  hi Question ctermfg=28
   hi Search ctermfg=85 ctermbg=81
-  hi SignColumn ctermbg=81
   hi Special ctermfg=6
   hi SpecialKey ctermfg=81
   hi SpellBad ctermfg=85 ctermbg=48
@@ -167,19 +154,14 @@ elseif &t_Co == 88
   hi String ctermfg=41
   hi Structure ctermfg=39
   hi Symbol ctermfg=57
-  hi TabLine ctermbg=81
   hi Title ctermfg=39
   hi Type ctermfg=84
-  hi Underlined ctermfg=39
-  hi Visual ctermfg=81 ctermbg=85
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=81 ctermbg=85
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi ColumnMargin ctermbg=0
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=8
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=2
   hi Delimiter ctermfg=8
   hi DiffAdd cterm=bold ctermfg=15 ctermbg=2
@@ -188,7 +170,7 @@ elseif &t_Co == 16
   hi DiffText ctermfg=2 ctermbg=3
   hi Directory ctermfg=12 ctermbg=0
   hi Error ctermfg=8 ctermbg=9
-  hi ErrorMsg ctermfg=8
+  hi ErrorMsg ctermfg=8 ctermbg=9
   hi FoldColumn ctermfg=10 ctermbg=3
   hi Folded ctermfg=10 ctermbg=3
   hi Identifier cterm=NONE ctermfg=8
@@ -200,16 +182,13 @@ elseif &t_Co == 16
   hi MatchParen ctermfg=8 ctermbg=3
   hi Method ctermfg=8
   hi ModeMsg ctermfg=2
-  hi MoreMsg ctermfg=2
   hi NonText cterm=bold ctermfg=3 ctermbg=0
   hi Number ctermfg=8
   hi Pmenu ctermfg=8 ctermbg=3
   hi PmenuSbar ctermfg=3 ctermbg=8
   hi PmenuSel ctermfg=3 ctermbg=8
   hi PreProc ctermfg=8
-  hi Question ctermfg=2
   hi Search ctermfg=8 ctermbg=3
-  hi SignColumn ctermbg=2
   hi Special ctermfg=6
   hi SpecialKey ctermfg=3
   hi SpellBad ctermfg=8 ctermbg=9
@@ -223,19 +202,14 @@ elseif &t_Co == 16
   hi String ctermfg=8
   hi Structure ctermfg=12
   hi Symbol ctermfg=8
-  hi TabLine ctermbg=2
   hi Title ctermfg=12
   hi Type ctermfg=8
-  hi Underlined ctermfg=12
-  hi Visual ctermfg=3 ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=3 ctermbg=8
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi ColumnMargin ctermbg=0
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=2
   hi Delimiter ctermfg=7
   hi DiffAdd cterm=bold ctermfg=7 ctermbg=2
@@ -244,7 +218,7 @@ else " 8 colors
   hi DiffText ctermfg=2 ctermbg=3
   hi Directory ctermfg=5 ctermbg=0
   hi Error ctermfg=7 ctermbg=1
-  hi ErrorMsg ctermfg=7
+  hi ErrorMsg ctermfg=7 ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=3
   hi Folded ctermfg=7 ctermbg=3
   hi Identifier cterm=NONE ctermfg=7
@@ -256,16 +230,13 @@ else " 8 colors
   hi MatchParen ctermfg=7 ctermbg=3
   hi Method ctermfg=7
   hi ModeMsg ctermfg=2
-  hi MoreMsg ctermfg=2
   hi NonText cterm=bold ctermfg=3 ctermbg=0
   hi Number ctermfg=3
   hi Pmenu ctermfg=7 ctermbg=3
   hi PmenuSbar ctermfg=3 ctermbg=7
   hi PmenuSel ctermfg=3 ctermbg=7
   hi PreProc ctermfg=3
-  hi Question ctermfg=2
   hi Search ctermfg=7 ctermbg=3
-  hi SignColumn ctermbg=2
   hi Special ctermfg=6
   hi SpecialKey ctermfg=3
   hi SpellBad ctermfg=7 ctermbg=1
@@ -279,12 +250,9 @@ else " 8 colors
   hi String ctermfg=3
   hi Structure ctermfg=5
   hi Symbol ctermfg=7
-  hi TabLine ctermbg=2
   hi Title ctermfg=5
   hi Type ctermfg=7
-  hi Underlined ctermfg=5
-  hi Visual ctermfg=3 ctermbg=7
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermfg=3 ctermbg=7
 endif
 
 hi! link cssBraces Normal
@@ -294,9 +262,9 @@ hi! link htmlArg Method
 hi! link htmlEndTag Method
 hi! link htmlTag Method
 hi! link javaScriptBraces Normal
-hi! link javaScriptFunction Keyword
-hi! link javaScriptMember Method
 hi! link javaScriptNumber Number
+hi! link javascriptFunction Keyword
+hi! link javascriptMember Method
 hi! link javascriptNull Method
 hi! link pythonFunction Method
 hi! link rubyBeginEnd Keyword

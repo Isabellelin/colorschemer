@@ -4,7 +4,7 @@
 " Name: skyweb
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:40
+" Date: 2012-09-29 13:44:29
 "----------------------------------------------------------
 
 set background=light
@@ -36,9 +36,6 @@ if has("gui_running")
   hi PreProc gui=bold guifg=#4D5D53
   hi Search guifg=#000000 guibg=#50C878
   hi Special gui=bold guifg=#40404F
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement guifg=#120A8F
   hi StatusLine gui=italic guifg=#000000 guibg=#B2BEB5
   hi StatusLineNC gui=italic guifg=#2F4F4F guibg=#B2BEB5
@@ -57,7 +54,7 @@ if has("gui_running")
   hi htmlStatement gui=bold guifg=#92000A
   hi htmlString guifg=#C80815
   hi javaScriptBlock gui=bold guifg=#0F4D92
-  hi javaScriptIdentifier guifg=#0F4D92
+  hi javascriptIdentifier guifg=#0F4D92
   hi phpFunctions gui=bold guifg=#191970
   hi phpIdentifier gui=bold guifg=#682860
   hi phpIntVar gui=bold guifg=#4B5320
@@ -66,35 +63,20 @@ if has("gui_running")
   hi phpVarSelector guifg=#0F4D92
 elseif &t_Co == 256
   hi Normal ctermfg=16
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=16 ctermbg=78
   hi CursorLine ctermbg=255
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=60
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
   hi Exception ctermfg=17
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=17
   hi Javascript ctermfg=53
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=16
   hi Operator ctermfg=17
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
-  hi Search ctermfg=16
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=16 ctermbg=249
   hi StatusLineNC ctermfg=239 ctermbg=249
   hi String ctermfg=17
   hi VimCommentTitle ctermfg=239
+  hi Visual cterm=NONE ctermbg=7
   hi cssAttr ctermfg=53
   hi helpExample ctermfg=239
   hi helpHyperTextJump ctermfg=18
@@ -104,7 +86,7 @@ elseif &t_Co == 256
   hi htmlStatement ctermfg=88
   hi htmlString ctermfg=160
   hi javaScriptBlock ctermfg=24
-  hi javaScriptIdentifier ctermfg=24
+  hi javascriptIdentifier ctermfg=24
   hi phpFunctions ctermfg=17
   hi phpIdentifier ctermfg=53
   hi phpIntVar ctermfg=239
@@ -113,35 +95,20 @@ elseif &t_Co == 256
   hi phpVarSelector ctermfg=24
 elseif &t_Co == 88
   hi Normal ctermfg=16
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=16 ctermbg=41
   hi CursorLine ctermbg=87
-  hi CursorLineNr ctermfg=56
   hi Delimiter ctermfg=81
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
   hi Exception ctermfg=17
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
   hi Function ctermfg=17
   hi Javascript ctermfg=81
-  hi LineNr ctermfg=56
   hi MatchParen ctermfg=16
   hi Operator ctermfg=17
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
-  hi Search ctermfg=16
-  hi SignColumn ctermbg=87
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=56
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=16 ctermbg=85
   hi StatusLineNC ctermfg=80 ctermbg=85
   hi String ctermfg=17
   hi VimCommentTitle ctermfg=80
+  hi Visual cterm=NONE ctermbg=87
   hi cssAttr ctermfg=81
   hi helpExample ctermfg=80
   hi helpHyperTextJump ctermfg=17
@@ -151,7 +118,7 @@ elseif &t_Co == 88
   hi htmlStatement ctermfg=32
   hi htmlString ctermfg=48
   hi javaScriptBlock ctermfg=21
-  hi javaScriptIdentifier ctermfg=21
+  hi javascriptIdentifier ctermfg=21
   hi phpFunctions ctermfg=17
   hi phpIdentifier ctermfg=81
   hi phpIntVar ctermfg=80
@@ -160,35 +127,20 @@ elseif &t_Co == 88
   hi phpVarSelector ctermfg=21
 elseif &t_Co == 16
   hi Normal ctermfg=0
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=0 ctermbg=10
   hi CursorLine ctermbg=15
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=6
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
   hi Exception ctermfg=4
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
   hi Function ctermfg=4
   hi Javascript ctermfg=5
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=0
   hi Operator ctermfg=4
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=11
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi String ctermfg=4
   hi VimCommentTitle ctermfg=2
+  hi Visual cterm=NONE ctermbg=11
   hi cssAttr ctermfg=5
   hi helpExample ctermfg=2
   hi helpHyperTextJump ctermfg=4
@@ -198,7 +150,7 @@ elseif &t_Co == 16
   hi htmlStatement ctermfg=1
   hi htmlString ctermfg=9
   hi javaScriptBlock ctermfg=6
-  hi javaScriptIdentifier ctermfg=6
+  hi javascriptIdentifier ctermfg=6
   hi phpFunctions ctermfg=4
   hi phpIdentifier ctermfg=5
   hi phpIntVar ctermfg=2
@@ -207,35 +159,20 @@ elseif &t_Co == 16
   hi phpVarSelector ctermfg=6
 else " 8 colors
   hi Normal ctermfg=0
-  hi ColorColumn ctermbg=1
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=0 ctermbg=6
   hi CursorLine ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=6
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
   hi Exception ctermfg=4
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=4
   hi Javascript ctermfg=5
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=0
   hi Operator ctermfg=4
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
-  hi Search ctermfg=0
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi String ctermfg=4
   hi VimCommentTitle ctermfg=2
+  hi Visual cterm=NONE ctermbg=7
   hi cssAttr ctermfg=5
   hi helpExample ctermfg=2
   hi helpHyperTextJump ctermfg=4
@@ -245,7 +182,7 @@ else " 8 colors
   hi htmlStatement ctermfg=1
   hi htmlString ctermfg=1
   hi javaScriptBlock ctermfg=6
-  hi javaScriptIdentifier ctermfg=6
+  hi javascriptIdentifier ctermfg=6
   hi phpFunctions ctermfg=4
   hi phpIdentifier ctermfg=5
   hi phpIntVar ctermfg=2
@@ -277,22 +214,22 @@ hi! link cssPrefix Type
 hi! link cssSpecial Special
 hi! link cssTagName htmlStatement
 hi! link cssUnits cssAttr
-hi! link htmlEventDq Special
+hi! link htmlEventDQ Special
 hi! link htmlScriptTag htmlEndTag
 hi! link htmlSpecialTagName htmlStatement
 hi! link htmlTag htmlEndTag
 hi! link htmlTagName htmlStatement
 hi! link htmlTitle Title
 hi! link htmlValue htmlString
-hi! link javaScriptBoolean Title
 hi! link javaScriptBracket Function
 hi! link javaScriptFuncBlock Javascript
 hi! link javaScriptFuncName Special
-hi! link javaScriptFunction Function
 hi! link javaScriptNumber String
 hi! link javaScriptParen Function
 hi! link javaScriptParenParent Function
-hi! link javaScriptType javaScriptIdentifier
+hi! link javascriptBoolean Title
+hi! link javascriptFunction Function
+hi! link javascriptType javascriptIdentifier
 hi! link phpBoolean Function
 hi! link phpFCKeyword phpFunctions
 hi! link phpFoldHtmlInside Normal
@@ -308,8 +245,8 @@ hi! link taskWorkingIcon Title
 hi! link taskWorkingItem Title
 hi! link vimGroup Special
 hi! link vimHiBang Special
-hi! link vimHighlight Statement
-hi! link vimMapRhs Function
+hi! link vimHighLight Statement
+hi! link vimMapRHS Function
 hi! link vimParenSep Function
 hi! link vimfunction Function
 

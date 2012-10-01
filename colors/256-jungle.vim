@@ -4,7 +4,7 @@
 " Name: 256-jungle
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:16
+" Date: 2012-09-29 13:30:11
 "----------------------------------------------------------
 
 set background=dark
@@ -17,7 +17,6 @@ let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
   hi Normal guifg=#dadada guibg=#1c1c1c
-  hi Cursor guifg=#dadada guibg=#5f00ff
   hi DiffText guifg=#d700ff
   hi Directory guibg=#e4e4e4
   hi LineNr guibg=#121212
@@ -66,7 +65,7 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=166
   hi Underline cterm=italic ctermfg=147
   hi VertSplit cterm=NONE ctermfg=239 ctermbg=239
-  hi Visual ctermfg=248 ctermbg=238
+  hi Visual cterm=NONE ctermfg=248 ctermbg=238
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
   hi Comment ctermfg=81
@@ -100,7 +99,7 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=52
   hi Underline cterm=italic ctermfg=59
   hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
-  hi Visual ctermfg=84 ctermbg=80
+  hi Visual cterm=NONE ctermfg=84 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Comment ctermfg=2
@@ -134,7 +133,7 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=3
   hi Underline cterm=italic ctermfg=12
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=8 ctermbg=2
+  hi Visual cterm=NONE ctermfg=8 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=2
@@ -168,7 +167,7 @@ else " 8 colors
   hi Type cterm=bold ctermfg=3
   hi Underline cterm=italic ctermfg=7
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 

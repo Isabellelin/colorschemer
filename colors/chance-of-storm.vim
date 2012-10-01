@@ -4,7 +4,7 @@
 " Name: chance-of-storm
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:26
+" Date: 2012-09-29 13:31:43
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#cacfd3 guibg=#181c20
   hi Comment gui=italic guifg=#69839a guibg=bg
   hi Constant guifg=#96defa
-  hi Cursor guifg=bg guibg=#8fdef9
+  hi Cursor guibg=#8fdef9
   hi CursorLine guibg=#2a2e31
   hi FoldColumn guifg=#1E415E guibg=#1A3951
   hi Folded guifg=#68CEE8 guibg=#1A3951
@@ -60,7 +60,7 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=252 ctermbg=234
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=117
+  hi Cursor ctermbg=117
   hi CursorLine ctermbg=236
   hi Function ctermfg=140
   hi Ignore ctermbg=bg
@@ -78,7 +78,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=233 ctermbg=145
   hi Title ctermbg=bg
   hi VertSplit ctermfg=232 ctermbg=232
-  hi Visual ctermfg=255
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=74
   hi markdownUrl ctermfg=66 ctermbg=bg
@@ -88,7 +88,7 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=43
+  hi Cursor ctermbg=43
   hi CursorLine ctermbg=80
   hi Function ctermfg=38
   hi Ignore ctermbg=bg
@@ -106,7 +106,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=16 ctermbg=85
   hi Title ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=16
-  hi Visual ctermfg=87
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=38
   hi markdownUrl ctermfg=83 ctermbg=bg
@@ -116,7 +116,7 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=12
+  hi Cursor ctermbg=12
   hi CursorLine ctermbg=0
   hi Function ctermfg=8
   hi Ignore ctermbg=bg
@@ -134,7 +134,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=0 ctermbg=8
   hi Title ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=14
+  hi Visual cterm=NONE ctermfg=14 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=8
   hi markdownUrl ctermfg=8 ctermbg=bg
@@ -144,7 +144,7 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=7
+  hi Cursor ctermbg=7
   hi CursorLine ctermbg=0
   hi Function ctermfg=7
   hi Ignore ctermbg=bg
@@ -162,7 +162,7 @@ else " 8 colors
   hi TabLineSel ctermfg=0 ctermbg=7
   hi Title ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi markdownLinkText ctermfg=6
   hi markdownUrl ctermfg=6 ctermbg=bg
@@ -171,7 +171,7 @@ else " 8 colors
   hi treeFlag ctermfg=6 ctermbg=bg
 endif
 
-hi! link erubyDelimiter PreProc
+hi! link eRubyDelimiter PreProc
 hi! link hamlAttributes htmlArg
 hi! link hamlClassChar hamlClass
 hi! link hamlIdChar hamlId
@@ -183,8 +183,8 @@ hi! link htmlEndTag Statement
 hi! link htmlTag Statement
 hi! link htmlTagName Statement
 hi! link javaScriptFuncName Function
-hi! link javaScriptFunction Statement
 hi! link javaScriptLabel PreProc
+hi! link javascriptFunction Statement
 hi! link makeCommands Statement
 hi! link markdownCode Statement
 hi! link markdownCodeBlock Statement

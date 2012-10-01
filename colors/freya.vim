@@ -4,7 +4,7 @@
 " Name: freya
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:34
+" Date: 2012-09-29 13:34:58
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,6 @@ if has("gui_running")
   hi Normal guifg=#dcdccc guibg=#2a2a2a
   hi Comment guifg=#c2b680 guibg=bg
   hi Constant guifg=#afe091 guibg=bg
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=#3f3f3f
   hi CursorLine guibg=#3f3f3f
   hi DiffAdd guifg=fg guibg=#008b00
@@ -61,7 +60,7 @@ if has("gui_running")
   hi Underlined guifg=#d4b064 guibg=bg
   hi VertSplit gui=NONE guifg=#f7f7f1 guibg=#564d43
   hi Visual guifg=#000000 guibg=#5f5f5f
-  hi VisualNOS gui=bold,underline guifg=#c0aa94 guibg=bg
+  hi VisualNOS guifg=#c0aa94 guibg=bg
   hi WarningMsg guifg=#f07070 guibg=bg
   hi WildMenu gui=bold guifg=bg guibg=#c0aa94
   hi htmlBold gui=bold guifg=fg guibg=bg
@@ -71,12 +70,11 @@ if has("gui_running")
   hi htmlItalic gui=italic guifg=fg guibg=bg
   hi htmlUnderline gui=underline guifg=fg guibg=bg
   hi htmlUnderlineItalic gui=underline,italic guifg=fg guibg=bg
-  hi lcursor guifg=bg guibg=#c0aa94
+  hi lCursor guibg=#c0aa94
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=237
   hi DiffAdd ctermfg=fg
   hi DiffChange ctermfg=fg
@@ -106,7 +104,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi VisualNOS ctermfg=144 ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=15 ctermbg=0
@@ -116,12 +114,11 @@ elseif &t_Co == 256
   hi htmlItalic ctermfg=15 ctermbg=0
   hi htmlUnderline ctermfg=15 ctermbg=0
   hi htmlUnderlineItalic ctermfg=15 ctermbg=0
-  hi lcursor ctermfg=bg ctermbg=144
+  hi lCursor ctermbg=144
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=fg
   hi DiffChange ctermfg=fg
@@ -151,7 +148,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=87
-  hi Visual ctermfg=16 ctermbg=87
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
   hi VisualNOS ctermfg=84 ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=79 ctermbg=16
@@ -161,12 +158,11 @@ elseif &t_Co == 88
   hi htmlItalic ctermfg=79 ctermbg=16
   hi htmlUnderline ctermfg=79 ctermbg=16
   hi htmlUnderlineItalic ctermfg=79 ctermbg=16
-  hi lcursor ctermfg=bg ctermbg=84
+  hi lCursor ctermbg=84
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=fg
   hi DiffChange ctermfg=fg
@@ -196,7 +192,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=11
-  hi Visual ctermfg=0 ctermbg=11
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
   hi VisualNOS ctermfg=8 ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=15 ctermbg=0
@@ -206,12 +202,11 @@ elseif &t_Co == 16
   hi htmlItalic ctermfg=15 ctermbg=0
   hi htmlUnderline ctermfg=15 ctermbg=0
   hi htmlUnderlineItalic ctermfg=15 ctermbg=0
-  hi lcursor ctermfg=bg ctermbg=8
+  hi lCursor ctermbg=8
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
   hi Constant ctermbg=bg
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=fg
   hi DiffChange ctermfg=fg
@@ -241,7 +236,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi VisualNOS ctermfg=7 ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=7 ctermbg=0
@@ -251,7 +246,7 @@ else " 8 colors
   hi htmlItalic ctermfg=7 ctermbg=0
   hi htmlUnderline ctermfg=7 ctermbg=0
   hi htmlUnderlineItalic ctermfg=7 ctermbg=0
-  hi lcursor ctermfg=bg ctermbg=7
+  hi lCursor ctermbg=7
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: rhinestones
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:35
+" Date: 2012-09-29 13:43:04
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#ffffff guibg=#262626
   hi Comment gui=italic guifg=#9e9e9e
   hi Constant guifg=#9dd700
-  hi Cursor guibg=#767676
+  hi Cursor guifg=NONE guibg=#767676
   hi CursorLine guibg=#202020
   hi Folded gui=italic guifg=#d0d0d0 guibg=#404040
   hi LineNr guifg=#585858 guibg=#121212
@@ -41,7 +41,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=235
   hi Comment ctermfg=247
   hi Constant ctermfg=112
-  hi Cursor ctermbg=243
+  hi Cursor ctermfg=NONE ctermbg=243
   hi CursorLine ctermbg=234
   hi Folded ctermfg=252 ctermbg=237
   hi LineNr ctermfg=240 ctermbg=233
@@ -57,12 +57,12 @@ elseif &t_Co == 256
   hi Title cterm=bold ctermfg=254
   hi Type ctermfg=220
   hi VertSplit ctermfg=236 ctermbg=236
-  hi Visual ctermfg=254 ctermbg=4
+  hi Visual cterm=NONE ctermfg=254 ctermbg=4
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermfg=84
   hi Constant ctermfg=40
-  hi Cursor ctermbg=82
+  hi Cursor ctermfg=NONE ctermbg=82
   hi CursorLine ctermbg=80
   hi Folded ctermfg=86 ctermbg=80
   hi LineNr ctermfg=81 ctermbg=16
@@ -78,12 +78,12 @@ elseif &t_Co == 88
   hi Title cterm=bold ctermfg=87
   hi Type ctermfg=72
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87 ctermbg=19
+  hi Visual cterm=NONE ctermfg=87 ctermbg=19
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=8
   hi Constant ctermfg=3
-  hi Cursor ctermbg=8
+  hi Cursor ctermfg=NONE ctermbg=8
   hi CursorLine ctermbg=0
   hi Folded ctermfg=7 ctermbg=2
   hi LineNr ctermfg=2 ctermbg=0
@@ -99,12 +99,12 @@ elseif &t_Co == 16
   hi Title cterm=bold ctermfg=11
   hi Type ctermfg=3
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=11 ctermbg=4
+  hi Visual cterm=NONE ctermfg=11 ctermbg=4
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=7
   hi Constant ctermfg=3
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi Folded ctermfg=7 ctermbg=2
   hi LineNr ctermfg=2 ctermbg=0
@@ -120,7 +120,7 @@ else " 8 colors
   hi Title cterm=bold ctermfg=7
   hi Type ctermfg=3
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermfg=7 ctermbg=4
 endif
 
 hi! link Character String

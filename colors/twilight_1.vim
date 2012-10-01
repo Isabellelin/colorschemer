@@ -4,7 +4,7 @@
 " Name: twilight_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:33
+" Date: 2012-09-29 13:46:55
 "----------------------------------------------------------
 
 set background=dark
@@ -58,171 +58,122 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=230 ctermbg=234
   hi Comment ctermbg=234
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=180 ctermbg=234
   hi Constant ctermbg=234
   hi Cursor ctermbg=153
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=235
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi Function ctermfg=248 ctermbg=234
   hi Identifier ctermbg=234
   hi LineNr ctermbg=237
   hi MatchParen ctermfg=231
-  hi MoreMsg ctermfg=10
   hi NonText ctermbg=236
   hi Operator ctermfg=185 ctermbg=234
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12 ctermbg=234
-  hi Question ctermfg=10
+  hi PreProc ctermbg=234
   hi Repeat ctermfg=180 ctermbg=234
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9 ctermbg=234
-  hi SpecialKey ctermfg=12 ctermbg=234
+  hi Special ctermbg=234
+  hi SpecialKey ctermbg=234
   hi Statement ctermbg=234
   hi StatusLine ctermfg=230 ctermbg=236
   hi StatusLineNC ctermfg=240 ctermbg=236
   hi String ctermfg=143 ctermbg=234
   hi Structure ctermfg=180 ctermbg=234
-  hi TabLine ctermbg=8
   hi TabLineFill ctermfg=247 ctermbg=234
   hi TabLineSel ctermfg=247 ctermbg=238
-  hi Title ctermfg=13 ctermbg=234
-  hi Type ctermfg=10 ctermbg=234
-  hi Underlined ctermfg=12 ctermbg=234
+  hi Title ctermbg=234
+  hi Type ctermbg=234
+  hi Underlined ctermbg=234
   hi VertSplit ctermfg=236 ctermbg=236
-  hi Visual ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=78 ctermbg=80
   hi Comment ctermbg=80
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=57 ctermbg=80
   hi Constant ctermbg=80
   hi Cursor ctermbg=59
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi Function ctermfg=84 ctermbg=80
   hi Identifier ctermbg=80
   hi LineNr ctermbg=80
   hi MatchParen ctermfg=79
-  hi MoreMsg ctermfg=28
   hi NonText ctermbg=80
   hi Operator ctermfg=73 ctermbg=80
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39 ctermbg=80
-  hi Question ctermfg=28
+  hi PreProc ctermbg=80
   hi Repeat ctermfg=57 ctermbg=80
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9 ctermbg=80
-  hi SpecialKey ctermfg=39 ctermbg=80
+  hi Special ctermbg=80
+  hi SpecialKey ctermbg=80
   hi Statement ctermbg=80
   hi StatusLine ctermfg=78 ctermbg=80
   hi StatusLineNC ctermfg=81 ctermbg=80
   hi String ctermfg=84 ctermbg=80
   hi Structure ctermfg=57 ctermbg=80
-  hi TabLine ctermbg=81
   hi TabLineFill ctermfg=84 ctermbg=80
   hi TabLineSel ctermfg=84 ctermbg=81
-  hi Title ctermfg=67 ctermbg=80
-  hi Type ctermfg=28 ctermbg=80
-  hi Underlined ctermfg=39 ctermbg=80
+  hi Title ctermbg=80
+  hi Type ctermbg=80
+  hi Underlined ctermbg=80
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7 ctermbg=0
   hi Constant ctermbg=0
   hi Cursor ctermbg=12
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=8 ctermbg=0
   hi Identifier ctermbg=0
   hi LineNr ctermbg=2
   hi MatchParen ctermfg=15
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=0
   hi Operator ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12 ctermbg=0
-  hi Question ctermfg=2
+  hi PreProc ctermbg=0
   hi Repeat ctermfg=7 ctermbg=0
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9 ctermbg=0
-  hi SpecialKey ctermfg=12 ctermbg=0
+  hi Special ctermbg=0
+  hi SpecialKey ctermbg=0
   hi Statement ctermbg=0
   hi StatusLine ctermfg=11 ctermbg=0
   hi StatusLineNC ctermfg=3 ctermbg=0
   hi String ctermfg=8 ctermbg=0
   hi Structure ctermfg=7 ctermbg=0
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=8 ctermbg=0
   hi TabLineSel ctermfg=8 ctermbg=2
-  hi Title ctermfg=13 ctermbg=0
-  hi Type ctermfg=2 ctermbg=0
-  hi Underlined ctermfg=12 ctermbg=0
+  hi Title ctermbg=0
+  hi Type ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=0
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7 ctermbg=0
   hi Constant ctermbg=0
   hi Cursor ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=7 ctermbg=0
   hi Identifier ctermbg=0
   hi LineNr ctermbg=2
   hi MatchParen ctermfg=7
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=0
   hi Operator ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5 ctermbg=0
-  hi Question ctermfg=2
+  hi PreProc ctermbg=0
   hi Repeat ctermfg=7 ctermbg=0
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1 ctermbg=0
-  hi SpecialKey ctermfg=5 ctermbg=0
+  hi Special ctermbg=0
+  hi SpecialKey ctermbg=0
   hi Statement ctermbg=0
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=3 ctermbg=0
   hi String ctermfg=7 ctermbg=0
   hi Structure ctermfg=7 ctermbg=0
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=7 ctermbg=0
   hi TabLineSel ctermfg=7 ctermbg=2
-  hi Title ctermfg=5 ctermbg=0
-  hi Type ctermfg=2 ctermbg=0
-  hi Underlined ctermfg=5 ctermbg=0
+  hi Title ctermbg=0
+  hi Type ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 
-hi clear TagListFileName
 hi clear cOperator
 hi clear cocoaClass
 hi clear cocoaFunction
@@ -246,7 +197,7 @@ hi clear phpFunctions
 hi clear phpNull
 hi clear phpQuoteDouble
 hi clear phpQuoteSingle
-hi clear phpSuperglobal
+hi clear phpSuperGlobal
 hi clear pythonAssignment
 hi clear pythonBuiltinFunc
 hi clear pythonBuiltinObj
@@ -263,3 +214,4 @@ hi clear rubyModule
 hi clear rubySharpBang
 hi clear rubyString
 hi clear rubyStringDelimiter
+hi clear tagListFileName

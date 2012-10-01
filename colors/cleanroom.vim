@@ -4,7 +4,7 @@
 " Name: cleanroom
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:37
+" Date: 2012-09-29 13:32:01
 "----------------------------------------------------------
 
 set background=light
@@ -50,7 +50,7 @@ if has("gui_running")
   hi PmenuThumb gui=bold guifg=#e0e5ee guibg=#c0c5dd
   hi PreProc gui=bold guifg=#6699dd
   hi Question gui=NONE guifg=black guibg=#edf5ff
-  hi Search guibg=#fcfcaa
+  hi Search guifg=NONE guibg=#fcfcaa
   hi SignColumn guifg=#666688 guibg=#f8f8f8
   hi Special guifg=#4477bb
   hi SpecialKey guifg=#aaaaaa guibg=#f8f8f8
@@ -80,11 +80,13 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=188
   hi PmenuThumb ctermfg=254
   hi Question ctermbg=255
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=231
   hi StatusLine ctermfg=240 ctermbg=254
   hi StatusLineNC ctermfg=102 ctermbg=255
   hi Title ctermbg=231
   hi VertSplit ctermfg=255 ctermbg=255
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=224
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
@@ -103,11 +105,13 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=86
   hi PmenuThumb ctermfg=87
   hi Question ctermbg=79
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=79
   hi StatusLine ctermfg=81 ctermbg=87
   hi StatusLineNC ctermfg=83 ctermbg=87
   hi Title ctermbg=79
   hi VertSplit ctermfg=87 ctermbg=87
+  hi Visual cterm=NONE ctermbg=87
   hi WarningMsg ctermbg=74
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
@@ -126,11 +130,13 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=12
   hi PmenuThumb ctermfg=14
   hi Question ctermbg=14
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=15
   hi StatusLine ctermfg=2 ctermbg=11
   hi StatusLineNC ctermfg=8 ctermbg=11
   hi Title ctermbg=15
   hi VertSplit ctermfg=11 ctermbg=11
+  hi Visual cterm=NONE ctermbg=11
   hi WarningMsg ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
@@ -149,11 +155,13 @@ else " 8 colors
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=7
   hi Question ctermbg=7
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=2 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi Title ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=7
 endif
 

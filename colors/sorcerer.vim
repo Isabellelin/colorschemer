@@ -4,7 +4,7 @@
 " Name: sorcerer
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:55
+" Date: 2012-09-29 13:44:49
 "----------------------------------------------------------
 
 set background=dark
@@ -21,7 +21,7 @@ if has("gui_running")
   hi ColorColumn guifg=#afafaf guibg=#1c1c1c
   hi Comment gui=italic guifg=#707670 guibg=#262626
   hi Constant guifg=#ff9800 guibg=#262626
-  hi Cursor guifg=#afafaf guibg=#626262
+  hi Cursor guifg=NONE guibg=#626262
   hi CursorColumn guifg=#afafaf guibg=#2d2d2d
   hi CursorLine guifg=#afafaf guibg=#2d2d2d
   hi DiffAdd guifg=#000000 guibg=#3cb371
@@ -87,7 +87,6 @@ if has("gui_running")
   hi diffOldFile gui=italic guifg=#88afcb guibg=#262626
   hi diffRemoved guifg=#aa4450
   hi iCursor guifg=#000000 guibg=#ff8787
-  hi lcursor guifg=#1c1c1c guibg=#afafaf
   hi nCursor guifg=#000000 guibg=#00ff00
   hi pythonClass guifg=#afafaf guibg=#262626
   hi pythonDecorator guifg=#888555 guibg=#262626
@@ -162,8 +161,8 @@ elseif &t_Co == 256
   hi Type ctermfg=103 ctermbg=235
   hi Underlined ctermfg=111 ctermbg=235
   hi VertSplit cterm=NONE ctermfg=102 ctermbg=102
-  hi Visual ctermfg=16 ctermbg=67
-  hi VisualNOS cterm=bold,underline ctermfg=145 ctermbg=235
+  hi Visual cterm=NONE ctermfg=16 ctermbg=67
+  hi VisualNOS ctermfg=145 ctermbg=235
   hi WarningMsg ctermfg=208 ctermbg=234
   hi WildMenu ctermfg=16 ctermbg=116
   hi cCursor cterm=reverse ctermfg=145 ctermbg=235
@@ -175,7 +174,7 @@ elseif &t_Co == 256
   hi diffOldFile ctermfg=67 ctermbg=235
   hi diffRemoved ctermfg=124
   hi iCursor ctermfg=16 ctermbg=210
-  hi lcursor ctermfg=234 ctermbg=145
+  hi lCursor ctermfg=234 ctermbg=145
   hi nCursor ctermfg=16 ctermbg=46
   hi pythonClass ctermfg=145 ctermbg=235
   hi pythonDecorator ctermfg=101 ctermbg=235
@@ -250,8 +249,8 @@ elseif &t_Co == 88
   hi Type ctermfg=38 ctermbg=80
   hi Underlined ctermfg=43 ctermbg=80
   hi VertSplit cterm=NONE ctermfg=83 ctermbg=83
-  hi Visual ctermfg=16 ctermbg=38
-  hi VisualNOS cterm=bold,underline ctermfg=85 ctermbg=80
+  hi Visual cterm=NONE ctermfg=16 ctermbg=38
+  hi VisualNOS ctermfg=85 ctermbg=80
   hi WarningMsg ctermfg=68 ctermbg=80
   hi WildMenu ctermfg=16 ctermbg=42
   hi cCursor cterm=reverse ctermfg=85 ctermbg=80
@@ -263,7 +262,7 @@ elseif &t_Co == 88
   hi diffOldFile ctermfg=38 ctermbg=80
   hi diffRemoved ctermfg=48
   hi iCursor ctermfg=16 ctermbg=69
-  hi lcursor ctermfg=80 ctermbg=85
+  hi lCursor ctermfg=80 ctermbg=85
   hi nCursor ctermfg=16 ctermbg=28
   hi pythonClass ctermfg=85 ctermbg=80
   hi pythonDecorator ctermfg=83 ctermbg=80
@@ -338,8 +337,8 @@ elseif &t_Co == 16
   hi Type ctermfg=8 ctermbg=0
   hi Underlined ctermfg=12 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=8 ctermbg=8
-  hi Visual ctermfg=0 ctermbg=8
-  hi VisualNOS cterm=bold,underline ctermfg=8 ctermbg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=8
+  hi VisualNOS ctermfg=8 ctermbg=0
   hi WarningMsg ctermfg=3 ctermbg=0
   hi WildMenu ctermfg=0 ctermbg=12
   hi cCursor cterm=reverse ctermfg=8 ctermbg=0
@@ -351,7 +350,7 @@ elseif &t_Co == 16
   hi diffOldFile ctermfg=8 ctermbg=0
   hi diffRemoved ctermfg=1
   hi iCursor ctermfg=0 ctermbg=8
-  hi lcursor ctermfg=0 ctermbg=8
+  hi lCursor ctermfg=0 ctermbg=8
   hi nCursor ctermfg=0 ctermbg=2
   hi pythonClass ctermfg=8 ctermbg=0
   hi pythonDecorator ctermfg=3 ctermbg=0
@@ -426,8 +425,8 @@ else " 8 colors
   hi Type ctermfg=7 ctermbg=0
   hi Underlined ctermfg=7 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi Visual ctermfg=0 ctermbg=6
-  hi VisualNOS cterm=bold,underline ctermfg=7 ctermbg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=6
+  hi VisualNOS ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=3 ctermbg=0
   hi WildMenu ctermfg=0 ctermbg=7
   hi cCursor cterm=reverse ctermfg=7 ctermbg=0
@@ -439,7 +438,7 @@ else " 8 colors
   hi diffOldFile ctermfg=6 ctermbg=0
   hi diffRemoved ctermfg=1
   hi iCursor ctermfg=0 ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
   hi nCursor ctermfg=0 ctermbg=2
   hi pythonClass ctermfg=7 ctermbg=0
   hi pythonDecorator ctermfg=3 ctermbg=0

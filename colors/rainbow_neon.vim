@@ -4,7 +4,7 @@
 " Name: rainbow_neon
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:11
+" Date: 2012-09-29 13:42:33
 "----------------------------------------------------------
 
 set background=dark
@@ -49,11 +49,11 @@ if has("gui_running")
   hi Underlined guifg=fg
   hi VertSplit gui=NONE guifg=#707070 guibg=#c4c4c4
   hi Visual guifg=#b0ffb0 guibg=#008000
-  hi VisualNOS guifg=#ffe8c8 guibg=#c06800
+  hi VisualNOS gui=NONE guifg=#ffe8c8 guibg=#c06800
   hi WarningMsg gui=bold guifg=#ffa0ff
   hi WildMenu guifg=#000000 guibg=#ff80c0
   hi cursorim guifg=#ffffff guibg=#8800ff
-  hi lcursor guifg=#ffffff guibg=#8800ff
+  hi lCursor guifg=#ffffff guibg=#8800ff
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=236
   hi Cursor ctermfg=85 ctermbg=99
@@ -67,10 +67,10 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=16 ctermbg=251
   hi StatusLineNC ctermfg=242 ctermbg=251
   hi VertSplit ctermfg=242 ctermbg=251
-  hi Visual ctermfg=157
+  hi Visual cterm=NONE ctermfg=157 ctermbg=8
   hi VisualNOS ctermfg=224 ctermbg=130
   hi cursorim ctermfg=231 ctermbg=93
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Cursor ctermfg=46 ctermbg=35
@@ -84,10 +84,10 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=16 ctermbg=58
   hi StatusLineNC ctermfg=82 ctermbg=58
   hi VertSplit ctermfg=82 ctermbg=58
-  hi Visual ctermfg=62
+  hi Visual cterm=NONE ctermfg=62 ctermbg=81
   hi VisualNOS ctermfg=78 ctermbg=52
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Cursor ctermfg=10 ctermbg=5
@@ -101,10 +101,10 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=10
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
   hi VisualNOS ctermfg=11 ctermbg=3
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=7 ctermbg=5
@@ -118,10 +118,10 @@ else " 8 colors
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=3
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 

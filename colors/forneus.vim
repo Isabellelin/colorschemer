@@ -4,7 +4,7 @@
 " Name: forneus
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:33
+" Date: 2012-09-29 13:34:56
 "----------------------------------------------------------
 
 set background=dark
@@ -63,7 +63,7 @@ if has("gui_running")
   hi WarningMsg guibg=#000000
   hi WildMenu guibg=#00CC00
   hi cLabel gui=bold,underline guifg=#005f5f
-  hi erubyDelimiter guifg=#ee0000
+  hi eRubyDelimiter guifg=#ee0000
   hi erubyRailsHelperMethod guibg=#333333
   hi htmlSpecialChar guifg=#cd0000
   hi htmlString guifg=#8700d7
@@ -122,19 +122,18 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=239 ctermbg=232
   hi StatusLineNC ctermfg=239 ctermbg=235
   hi String ctermfg=92
-  hi TabLine cterm=NONE
+  hi TabLine cterm=NONE ctermbg=242
   hi TabLineFill cterm=NONE ctermbg=242
   hi Title cterm=bold ctermfg=2
   hi Todo cterm=bold ctermfg=1 ctermbg=232
   hi Type ctermfg=208
   hi Underlined cterm=bold ctermfg=1
   hi VertSplit ctermfg=239 ctermbg=4
-  hi Visual ctermbg=237
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=237
   hi WarningMsg cterm=bold ctermfg=1 ctermbg=0
   hi WildMenu ctermbg=2
   hi cLabel cterm=bold,underline ctermfg=23
-  hi erubyDelimiter cterm=bold ctermfg=1
+  hi eRubyDelimiter cterm=bold ctermfg=1
   hi erubyRailsHelperMethod ctermbg=236
   hi htmlLinke cterm=underline
   hi htmlSpecialChar ctermfg=1
@@ -194,19 +193,18 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=81 ctermbg=16
   hi StatusLineNC ctermfg=81 ctermbg=80
   hi String ctermfg=34
-  hi TabLine cterm=NONE
+  hi TabLine cterm=NONE ctermbg=82
   hi TabLineFill cterm=NONE ctermbg=82
   hi Title cterm=bold ctermfg=24
   hi Todo cterm=bold ctermfg=48 ctermbg=16
   hi Type ctermfg=68
   hi Underlined cterm=bold ctermfg=48
   hi VertSplit ctermfg=81 ctermbg=19
-  hi Visual ctermbg=80
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=80
   hi WarningMsg cterm=bold ctermfg=48 ctermbg=16
   hi WildMenu ctermbg=24
   hi cLabel cterm=bold,underline ctermfg=21
-  hi erubyDelimiter cterm=bold ctermfg=48
+  hi eRubyDelimiter cterm=bold ctermfg=48
   hi erubyRailsHelperMethod ctermbg=80
   hi htmlLinke cterm=underline
   hi htmlSpecialChar ctermfg=48
@@ -266,19 +264,18 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=2 ctermbg=0
   hi StatusLineNC ctermfg=2 ctermbg=0
   hi String ctermfg=5
-  hi TabLine cterm=NONE
+  hi TabLine cterm=NONE ctermbg=3
   hi TabLineFill cterm=NONE ctermbg=3
   hi Title cterm=bold ctermfg=2
   hi Todo cterm=bold ctermfg=9 ctermbg=0
   hi Type ctermfg=3
   hi Underlined cterm=bold ctermfg=9
   hi VertSplit ctermfg=2 ctermbg=4
-  hi Visual ctermbg=2
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=9 ctermbg=0
   hi WildMenu ctermbg=2
   hi cLabel cterm=bold,underline ctermfg=6
-  hi erubyDelimiter cterm=bold ctermfg=9
+  hi eRubyDelimiter cterm=bold ctermfg=9
   hi erubyRailsHelperMethod ctermbg=2
   hi htmlLinke cterm=underline
   hi htmlSpecialChar ctermfg=9
@@ -338,19 +335,18 @@ else " 8 colors
   hi StatusLine ctermfg=2 ctermbg=0
   hi StatusLineNC ctermfg=2 ctermbg=0
   hi String ctermfg=5
-  hi TabLine cterm=NONE
+  hi TabLine cterm=NONE ctermbg=3
   hi TabLineFill cterm=NONE ctermbg=3
   hi Title cterm=bold ctermfg=2
   hi Todo cterm=bold ctermfg=1 ctermbg=0
   hi Type ctermfg=3
   hi Underlined cterm=bold ctermfg=1
   hi VertSplit ctermfg=2 ctermbg=4
-  hi Visual ctermbg=2
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=1 ctermbg=0
   hi WildMenu ctermbg=2
   hi cLabel cterm=bold,underline ctermfg=6
-  hi erubyDelimiter cterm=bold ctermfg=1
+  hi eRubyDelimiter cterm=bold ctermfg=1
   hi erubyRailsHelperMethod ctermbg=2
   hi htmlLinke cterm=underline
   hi htmlSpecialChar ctermfg=1

@@ -4,7 +4,7 @@
 " Name: colorful
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:49
+" Date: 2012-09-29 13:32:20
 "----------------------------------------------------------
 
 set background=light
@@ -45,10 +45,7 @@ if has("gui_running")
   hi PreProc guifg=#1071CE guibg=#E3EFFF
   hi Search guifg=DarkBlue guibg=#FFE270
   hi Special guifg=red2
-  hi SpellBad guibg=#5c5cff
-  hi SpellCap guibg=#ff0000
   hi SpellLocale gui=undercurl guibg=#ffff00
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=#F06F00 guibg=#FCECE0
   hi StatusLine gui=NONE guifg=WhiteSmoke guibg=SteelBlue
   hi StatusLineNC gui=NONE guifg=white guibg=LightBlue
@@ -75,46 +72,34 @@ elseif &t_Co == 256
   hi Normal ctermfg=18 ctermbg=255
   hi BrowseCurDirectory ctermfg=88 ctermbg=224
   hi BrowseFile ctermfg=18 ctermbg=195
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=8 ctermbg=231
-  hi Conceal ctermbg=8
-  hi Conditional ctermfg=1 ctermbg=255
-  hi Constant ctermfg=12 ctermbg=225
+  hi Conditional ctermfg=4 ctermbg=255
+  hi Constant ctermfg=9 ctermbg=225
   hi Cursor ctermfg=231 ctermbg=18
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermfg=22 ctermbg=13
-  hi DiffDelete ctermbg=14
+  hi DiffChange ctermfg=22
   hi DiffText ctermfg=202
   hi Directory ctermbg=224
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
-  hi Identifier ctermfg=12
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=3
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=201
-  hi LineNr ctermfg=3
-  hi MatchParen ctermfg=16 ctermbg=11
+  hi MatchParen ctermfg=16
   hi ModeMsg ctermfg=27
   hi NonText ctermbg=231
-  hi Number ctermfg=9 ctermbg=194
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=252 ctermbg=7
+  hi Number ctermfg=12 ctermbg=194
+  hi PmenuSbar ctermfg=252
   hi PmenuThumb cterm=reverse ctermfg=16
-  hi PreProc ctermfg=4 ctermbg=195
-  hi Search cterm=underline ctermfg=0 ctermbg=3
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=12
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=1 ctermbg=195
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=11
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=1 ctermbg=255
+  hi Statement ctermfg=4 ctermbg=255
   hi StatusLine ctermfg=255 ctermbg=67
   hi StatusLineNC ctermfg=231 ctermbg=152
   hi Tag ctermfg=2
-  hi Todo ctermfg=12
-  hi Type ctermfg=9 ctermbg=224
-  hi Visual ctermfg=11 ctermbg=0
-  hi VisualNOS ctermfg=11 ctermbg=0
+  hi Todo ctermfg=9
+  hi Type ctermfg=12 ctermbg=224
+  hi Visual cterm=NONE ctermfg=14 ctermbg=0
+  hi VisualNOS ctermfg=14 ctermbg=0
   hi browseDirectory ctermfg=4 ctermbg=224
   hi browseSuffixes ctermfg=244 ctermbg=bg
   hi cursorim ctermfg=231 ctermbg=93
@@ -124,46 +109,34 @@ elseif &t_Co == 88
   hi Normal ctermfg=17 ctermbg=79
   hi BrowseCurDirectory ctermfg=32 ctermbg=87
   hi BrowseFile ctermfg=17 ctermbg=87
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=81 ctermbg=79
-  hi Conceal ctermbg=81
-  hi Conditional ctermfg=48 ctermbg=87
-  hi Constant ctermfg=39 ctermbg=75
+  hi Conditional ctermfg=19 ctermbg=87
+  hi Constant ctermfg=9 ctermbg=75
   hi Cursor ctermfg=79 ctermbg=17
-  hi CursorLineNr ctermfg=56
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermfg=20 ctermbg=67
-  hi DiffDelete ctermbg=31
+  hi DiffChange ctermfg=20
   hi DiffText ctermfg=9
   hi Directory ctermbg=87
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
-  hi Identifier ctermfg=39
-  hi IncSearch cterm=underline ctermfg=16 ctermbg=56
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=16 ctermbg=6
   hi KDE ctermfg=67
-  hi LineNr ctermfg=56
-  hi MatchParen ctermfg=16 ctermbg=76
+  hi MatchParen ctermfg=16
   hi ModeMsg ctermfg=23
   hi NonText ctermbg=79
-  hi Number ctermfg=9 ctermbg=87
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermfg=58 ctermbg=87
+  hi Number ctermfg=39 ctermbg=87
+  hi PmenuSbar ctermfg=58
   hi PmenuThumb cterm=reverse ctermfg=16
-  hi PreProc ctermfg=19 ctermbg=87
-  hi Search cterm=underline ctermfg=16 ctermbg=56
-  hi SignColumn ctermbg=87
-  hi SpellBad ctermbg=39
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=48 ctermbg=87
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=76
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=48 ctermbg=87
+  hi Statement ctermfg=19 ctermbg=87
   hi StatusLine ctermfg=79 ctermbg=38
   hi StatusLineNC ctermfg=79 ctermbg=86
   hi Tag ctermfg=24
-  hi Todo ctermfg=39
-  hi Type ctermfg=9 ctermbg=87
-  hi Visual ctermfg=76 ctermbg=16
-  hi VisualNOS ctermfg=76 ctermbg=16
+  hi Todo ctermfg=9
+  hi Type ctermfg=39 ctermbg=87
+  hi Visual cterm=NONE ctermfg=31 ctermbg=16
+  hi VisualNOS ctermfg=31 ctermbg=16
   hi browseDirectory ctermfg=19 ctermbg=87
   hi browseSuffixes ctermfg=83 ctermbg=bg
   hi cursorim ctermfg=79 ctermbg=35
@@ -173,46 +146,34 @@ elseif &t_Co == 16
   hi Normal ctermfg=4 ctermbg=15
   hi BrowseCurDirectory ctermfg=1 ctermbg=11
   hi BrowseFile ctermfg=4 ctermbg=14
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=2 ctermbg=15
-  hi Conceal ctermbg=2
-  hi Conditional ctermfg=9 ctermbg=11
-  hi Constant ctermfg=12 ctermbg=15
+  hi Conditional ctermfg=4 ctermbg=11
+  hi Constant ctermfg=9 ctermbg=15
   hi Cursor ctermfg=15 ctermbg=4
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermfg=2 ctermbg=13
-  hi DiffDelete ctermbg=14
+  hi DiffChange ctermfg=2
   hi DiffText ctermfg=9
   hi Directory ctermbg=11
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
-  hi Identifier ctermfg=12
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=3
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=13
-  hi LineNr ctermfg=3
-  hi MatchParen ctermfg=0 ctermbg=11
+  hi MatchParen ctermfg=0
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=15
-  hi Number ctermfg=9 ctermbg=14
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=7 ctermbg=11
+  hi Number ctermfg=12 ctermbg=14
+  hi PmenuSbar ctermfg=7
   hi PmenuThumb cterm=reverse ctermfg=0
-  hi PreProc ctermfg=4 ctermbg=14
-  hi Search cterm=underline ctermfg=0 ctermbg=3
-  hi SignColumn ctermbg=11
-  hi SpellBad ctermbg=12
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=9 ctermbg=14
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=11
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=9 ctermbg=11
+  hi Statement ctermfg=4 ctermbg=11
   hi StatusLine ctermfg=15 ctermbg=6
   hi StatusLineNC ctermfg=15 ctermbg=12
   hi Tag ctermfg=2
-  hi Todo ctermfg=12
-  hi Type ctermfg=9 ctermbg=11
-  hi Visual ctermfg=11 ctermbg=0
-  hi VisualNOS ctermfg=11 ctermbg=0
+  hi Todo ctermfg=9
+  hi Type ctermfg=12 ctermbg=11
+  hi Visual cterm=NONE ctermfg=14 ctermbg=0
+  hi VisualNOS ctermfg=14 ctermbg=0
   hi browseDirectory ctermfg=4 ctermbg=11
   hi browseSuffixes ctermfg=8 ctermbg=bg
   hi cursorim ctermfg=15 ctermbg=5
@@ -222,46 +183,34 @@ else " 8 colors
   hi Normal ctermfg=4 ctermbg=7
   hi BrowseCurDirectory ctermfg=1 ctermbg=7
   hi BrowseFile ctermfg=4 ctermbg=7
-  hi ColorColumn ctermbg=1
   hi Comment ctermfg=2 ctermbg=7
-  hi Conceal ctermbg=2
-  hi Conditional ctermfg=1 ctermbg=7
-  hi Constant ctermfg=5 ctermbg=7
+  hi Conditional ctermfg=4 ctermbg=7
+  hi Constant ctermfg=1 ctermbg=7
   hi Cursor ctermfg=7 ctermbg=4
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermfg=2 ctermbg=5
-  hi DiffDelete ctermbg=6
+  hi DiffChange ctermfg=2
   hi DiffText ctermfg=1
   hi Directory ctermbg=7
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
-  hi Identifier ctermfg=5
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=3
+  hi Error ctermbg=1
+  hi Identifier ctermfg=1
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=5
-  hi LineNr ctermfg=3
-  hi MatchParen ctermfg=0 ctermbg=3
+  hi MatchParen ctermfg=0
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=7
-  hi Number ctermfg=1 ctermbg=7
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermfg=7 ctermbg=7
+  hi Number ctermfg=5 ctermbg=7
+  hi PmenuSbar ctermfg=7
   hi PmenuThumb cterm=reverse ctermfg=0
-  hi PreProc ctermfg=4 ctermbg=7
-  hi Search cterm=underline ctermfg=0 ctermbg=3
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=5
-  hi SpellCap ctermbg=1
+  hi PreProc ctermfg=1 ctermbg=7
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=3
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=1 ctermbg=7
+  hi Statement ctermfg=4 ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=6
   hi StatusLineNC ctermfg=7 ctermbg=7
   hi Tag ctermfg=2
-  hi Todo ctermfg=5
-  hi Type ctermfg=1 ctermbg=7
-  hi Visual ctermfg=3 ctermbg=0
-  hi VisualNOS ctermfg=3 ctermbg=0
+  hi Todo ctermfg=1
+  hi Type ctermfg=5 ctermbg=7
+  hi Visual cterm=NONE ctermfg=6 ctermbg=0
+  hi VisualNOS ctermfg=6 ctermbg=0
   hi browseDirectory ctermfg=4 ctermbg=7
   hi browseSuffixes ctermfg=3 ctermbg=bg
   hi cursorim ctermfg=7 ctermbg=5

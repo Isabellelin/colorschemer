@@ -4,7 +4,7 @@
 " Name: gravity
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:59
+" Date: 2012-09-29 13:35:32
 "----------------------------------------------------------
 
 set background=light
@@ -77,13 +77,13 @@ elseif &t_Co == 256
   hi Number ctermfg=160
   hi Operator ctermfg=238
   hi PmenuSbar ctermfg=16
-  hi Search ctermfg=231
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=236
   hi StatusLine ctermfg=231 ctermbg=237
   hi StatusLineNC ctermfg=231 ctermbg=60
   hi String ctermfg=160
   hi VertSplit ctermfg=60 ctermbg=60
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=9
 elseif &t_Co == 88
   hi Normal ctermfg=8 ctermbg=87
@@ -102,13 +102,13 @@ elseif &t_Co == 88
   hi Number ctermfg=48
   hi Operator ctermfg=8
   hi PmenuSbar ctermfg=16
-  hi Search ctermfg=79
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=80
   hi StatusLine ctermfg=79 ctermbg=80
   hi StatusLineNC ctermfg=79 ctermbg=81
   hi String ctermfg=48
   hi VertSplit ctermfg=81 ctermbg=81
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=9
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=15
@@ -127,13 +127,13 @@ elseif &t_Co == 16
   hi Number ctermfg=1
   hi Operator ctermfg=2
   hi PmenuSbar ctermfg=0
-  hi Search ctermfg=15
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=2
   hi StatusLine ctermfg=15 ctermbg=4
   hi StatusLineNC ctermfg=15 ctermbg=6
   hi String ctermfg=1
   hi VertSplit ctermfg=6 ctermbg=6
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=9
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
@@ -152,13 +152,13 @@ else " 8 colors
   hi Number ctermfg=1
   hi Operator ctermfg=2
   hi PmenuSbar ctermfg=0
-  hi Search ctermfg=7
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=2
   hi StatusLine ctermfg=7 ctermbg=4
   hi StatusLineNC ctermfg=7 ctermbg=6
   hi String ctermfg=1
   hi VertSplit ctermfg=6 ctermbg=6
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=1
 endif
 

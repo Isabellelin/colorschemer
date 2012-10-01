@@ -4,7 +4,7 @@
 " Name: doriath
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:50
+" Date: 2012-09-29 13:33:53
 "----------------------------------------------------------
 
 set background=dark
@@ -53,7 +53,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=16 ctermbg=151
   hi StatusLineNC ctermfg=244 ctermbg=151
   hi VertSplit ctermfg=244 ctermbg=250
-  hi Visual ctermfg=222
+  hi Visual cterm=NONE ctermfg=222 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=62 ctermbg=80
   hi Cursor ctermfg=80 ctermbg=45
@@ -64,7 +64,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=16 ctermbg=57
   hi StatusLineNC ctermfg=83 ctermbg=57
   hi VertSplit ctermfg=83 ctermbg=85
-  hi Visual ctermfg=73
+  hi Visual cterm=NONE ctermfg=73 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=10
@@ -75,7 +75,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=8 ctermbg=7
   hi VertSplit ctermfg=8 ctermbg=7
-  hi Visual ctermfg=10
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=7
@@ -86,7 +86,7 @@ else " 8 colors
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 

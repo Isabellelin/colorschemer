@@ -4,7 +4,7 @@
 " Name: evening_2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:21
+" Date: 2012-09-29 13:34:39
 "----------------------------------------------------------
 
 set background=dark
@@ -28,72 +28,67 @@ if has("gui_running")
   hi NonText guifg=LightBlue guibg=grey30
   hi Special guibg=grey25
   hi Visual guibg=grey40
-  hi VisualNOS gui=bold,underline
-  hi lcursor guifg=Black guibg=Cyan
+  hi lCursor guifg=Black guibg=Cyan
 elseif &t_Co == 256
-  hi Normal ctermfg=15 ctermbg=242
+  hi Normal ctermfg=15 ctermbg=8
   hi Constant ctermbg=238
   hi Cursor ctermfg=16 ctermbg=46
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=241
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=7
-  hi Folded ctermfg=4 ctermbg=7
-  hi Ignore ctermfg=242
-  hi NonText ctermfg=81 ctermbg=8
+  hi DiffAdd ctermbg=1
+  hi FoldColumn ctermfg=1 ctermbg=7
+  hi Folded ctermfg=1 ctermbg=7
+  hi Ignore ctermfg=8
+  hi NonText ctermbg=8
   hi Special ctermbg=238
   hi Statement cterm=bold
-  hi Visual ctermbg=0
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=16 ctermbg=51
+  hi Visual cterm=NONE ctermbg=0
+  hi lCursor ctermfg=16 ctermbg=51
 elseif &t_Co == 88
-  hi Normal ctermfg=79 ctermbg=82
+  hi Normal ctermfg=79 ctermbg=81
   hi Constant ctermbg=8
   hi Cursor ctermfg=16 ctermbg=28
   hi CursorColumn ctermbg=16
   hi CursorLine ctermbg=81
-  hi DiffAdd ctermbg=19
-  hi FoldColumn ctermfg=19 ctermbg=87
-  hi Folded ctermfg=19 ctermbg=87
-  hi Ignore ctermfg=82
-  hi NonText ctermfg=43 ctermbg=81
+  hi DiffAdd ctermbg=48
+  hi FoldColumn ctermfg=48 ctermbg=87
+  hi Folded ctermfg=48 ctermbg=87
+  hi Ignore ctermfg=81
+  hi NonText ctermbg=81
   hi Special ctermbg=8
   hi Statement cterm=bold
-  hi Visual ctermbg=16
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=16 ctermbg=31
+  hi Visual cterm=NONE ctermbg=16
+  hi lCursor ctermfg=16 ctermbg=31
 elseif &t_Co == 16
-  hi Normal ctermfg=15 ctermbg=3
+  hi Normal ctermfg=15 ctermbg=2
   hi Constant ctermbg=2
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=11
-  hi Folded ctermfg=4 ctermbg=11
-  hi Ignore ctermfg=3
-  hi NonText ctermfg=12 ctermbg=2
+  hi DiffAdd ctermbg=9
+  hi FoldColumn ctermfg=9 ctermbg=11
+  hi Folded ctermfg=9 ctermbg=11
+  hi Ignore ctermfg=2
+  hi NonText ctermbg=2
   hi Special ctermbg=2
   hi Statement cterm=bold
-  hi Visual ctermbg=0
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=0 ctermbg=14
+  hi Visual cterm=NONE ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=14
 else " 8 colors
-  hi Normal ctermfg=7 ctermbg=3
+  hi Normal ctermfg=7 ctermbg=2
   hi Constant ctermbg=2
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=3
-  hi DiffAdd ctermbg=4
-  hi FoldColumn ctermfg=4 ctermbg=7
-  hi Folded ctermfg=4 ctermbg=7
-  hi Ignore ctermfg=3
-  hi NonText ctermfg=7 ctermbg=2
+  hi DiffAdd ctermbg=1
+  hi FoldColumn ctermfg=1 ctermbg=7
+  hi Folded ctermfg=1 ctermbg=7
+  hi Ignore ctermfg=2
+  hi NonText ctermbg=2
   hi Special ctermbg=2
   hi Statement cterm=bold
-  hi Visual ctermbg=0
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermfg=0 ctermbg=6
+  hi Visual cterm=NONE ctermbg=0
+  hi lCursor ctermfg=0 ctermbg=6
 endif
 
 

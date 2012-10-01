@@ -4,7 +4,7 @@
 " Name: candy
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:20
+" Date: 2012-09-29 13:31:33
 "----------------------------------------------------------
 
 set background=dark
@@ -61,7 +61,7 @@ if has("gui_running")
   hi htmlLink gui=underline
   hi htmlUnderline gui=underline
   hi htmlUnderlineItalic gui=underline,italic
-  hi lcursor guifg=#ffffff guibg=#8800ff
+  hi lCursor guifg=#ffffff guibg=#8800ff
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=16
   hi Cursor ctermfg=51 ctermbg=29
@@ -74,9 +74,9 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=16 ctermbg=251
   hi StatusLineNC ctermfg=243 ctermbg=251
   hi VertSplit ctermfg=60 ctermbg=251
-  hi Visual ctermfg=254
+  hi Visual cterm=NONE ctermfg=254 ctermbg=8
   hi cursorim ctermfg=231 ctermbg=93
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Cursor ctermfg=31 ctermbg=21
@@ -89,9 +89,9 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=16 ctermbg=58
   hi StatusLineNC ctermfg=82 ctermbg=58
   hi VertSplit ctermfg=81 ctermbg=58
-  hi Visual ctermfg=87
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Cursor ctermfg=14 ctermbg=6
@@ -104,9 +104,9 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=5 ctermbg=7
   hi VertSplit ctermfg=5 ctermbg=7
-  hi Visual ctermfg=14
+  hi Visual cterm=NONE ctermfg=14 ctermbg=2
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=6 ctermbg=6
@@ -119,9 +119,9 @@ else " 8 colors
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=5 ctermbg=7
   hi VertSplit ctermfg=5 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 

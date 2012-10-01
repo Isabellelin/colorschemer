@@ -4,7 +4,7 @@
 " Name: buttercream
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:12
+" Date: 2012-09-29 13:31:18
 "----------------------------------------------------------
 
 set background=light
@@ -45,10 +45,9 @@ if has("gui_running")
   hi Todo gui=bold,underline guibg=#ccaa22
   hi Type guifg=DarkBlue
   hi Visual gui=reverse guifg=LightGrey
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=DarkBlue guibg=#9999cc
   hi WildMenu gui=underline
-  hi lcursor guifg=Black guibg=Cyan
+  hi lCursor guifg=Black guibg=Cyan
 elseif &t_Co == 256
   hi Normal ctermfg=237 ctermbg=230
   hi Cursor ctermfg=252 ctermbg=90
@@ -56,12 +55,12 @@ elseif &t_Co == 256
   hi NonText ctermbg=223
   hi Number ctermfg=21
   hi Operator ctermfg=22
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=248
   hi StorageClass ctermfg=125
-  hi Visual ctermfg=252
+  hi Visual cterm=NONE ctermfg=252 ctermbg=7
   hi WarningMsg ctermbg=104
-  hi lcursor ctermfg=16 ctermbg=51
+  hi lCursor ctermfg=16 ctermbg=51
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=78
   hi Cursor ctermfg=86 ctermbg=33
@@ -69,12 +68,12 @@ elseif &t_Co == 88
   hi NonText ctermbg=87
   hi Number ctermfg=19
   hi Operator ctermfg=20
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=84
   hi StorageClass ctermfg=33
-  hi Visual ctermfg=86
+  hi Visual cterm=NONE ctermfg=86 ctermbg=87
   hi WarningMsg ctermbg=38
-  hi lcursor ctermfg=16 ctermbg=31
+  hi lCursor ctermfg=16 ctermbg=31
 elseif &t_Co == 16
   hi Normal ctermfg=4 ctermbg=11
   hi Cursor ctermfg=12 ctermbg=5
@@ -82,12 +81,12 @@ elseif &t_Co == 16
   hi NonText ctermbg=11
   hi Number ctermfg=4
   hi Operator ctermfg=2
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=8
   hi StorageClass ctermfg=5
-  hi Visual ctermfg=12
+  hi Visual cterm=NONE ctermfg=12 ctermbg=11
   hi WarningMsg ctermbg=8
-  hi lcursor ctermfg=0 ctermbg=14
+  hi lCursor ctermfg=0 ctermbg=14
 else " 8 colors
   hi Normal ctermfg=4 ctermbg=7
   hi Cursor ctermfg=7 ctermbg=5
@@ -95,12 +94,12 @@ else " 8 colors
   hi NonText ctermbg=7
   hi Number ctermfg=4
   hi Operator ctermfg=2
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=7
   hi StorageClass ctermfg=5
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=6
+  hi lCursor ctermfg=0 ctermbg=6
 endif
 
 

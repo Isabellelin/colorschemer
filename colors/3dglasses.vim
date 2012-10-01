@@ -4,7 +4,7 @@
 " Name: 3dglasses
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:16
+" Date: 2012-09-29 13:30:11
 "----------------------------------------------------------
 
 set background=dark
@@ -83,7 +83,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=18 ctermbg=81
   hi Tooltip ctermfg=253 ctermbg=23
   hi VertSplit ctermfg=9 ctermbg=88
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=43 ctermbg=80
   hi Conditional ctermfg=21
@@ -104,7 +104,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=17 ctermbg=43
   hi Tooltip ctermfg=87 ctermbg=80
   hi VertSplit ctermfg=9 ctermbg=32
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Conditional ctermfg=6
@@ -125,7 +125,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=4 ctermbg=12
   hi Tooltip ctermfg=12 ctermbg=2
   hi VertSplit ctermfg=9 ctermbg=1
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Conditional ctermfg=6
@@ -146,7 +146,7 @@ else " 8 colors
   hi TabLineSel ctermfg=4 ctermbg=7
   hi Tooltip ctermfg=7 ctermbg=2
   hi VertSplit ctermfg=1 ctermbg=1
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 

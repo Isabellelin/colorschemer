@@ -4,7 +4,7 @@
 " Name: Slate
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:27
+" Date: 2012-09-29 13:30:23
 "----------------------------------------------------------
 
 set background=dark
@@ -44,7 +44,7 @@ elseif &t_Co == 256
   hi IncSearch ctermfg=226 ctermbg=21
   hi NonText ctermbg=237
   hi String ctermfg=217
-  hi Visual ctermfg=240
+  hi Visual cterm=NONE ctermfg=240 ctermbg=8
   hi WarningMsg ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=78 ctermbg=80
@@ -54,7 +54,7 @@ elseif &t_Co == 88
   hi IncSearch ctermfg=76 ctermbg=19
   hi NonText ctermbg=80
   hi String ctermfg=69
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
   hi WarningMsg ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=2
@@ -64,7 +64,7 @@ elseif &t_Co == 16
   hi IncSearch ctermfg=11 ctermbg=4
   hi NonText ctermbg=2
   hi String ctermfg=8
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
@@ -74,7 +74,7 @@ else " 8 colors
   hi IncSearch ctermfg=3 ctermbg=4
   hi NonText ctermbg=2
   hi String ctermfg=7
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=7
 endif
 

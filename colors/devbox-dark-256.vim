@@ -4,7 +4,7 @@
 " Name: devbox-dark-256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:41
+" Date: 2012-09-29 13:33:40
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Boolean guifg=#ff8700
   hi Character guifg=#afd75f
   hi Conditional guifg=#afd75f
-  hi Cursor guifg=#ffffff guibg=#ff0000
   hi Debug guifg=#ffffff
   hi Define guifg=#d75fd7
   hi Delimiter guifg=#ffffff
@@ -61,7 +60,7 @@ if has("gui_running")
   hi htmlItalic guifg=#dadada guibg=#262626
   hi htmlTagName guifg=#afd75f
   hi xmlAttrib guifg=#87afd7
-  hi xmlCData guifg=#949494
+  hi xmlCDATA guifg=#949494
   hi xmlTagName guifg=#afd75f
 elseif &t_Co == 256
   hi Normal ctermfg=253 ctermbg=235
@@ -70,7 +69,7 @@ elseif &t_Co == 256
   hi Comment ctermfg=66
   hi Conditional cterm=bold ctermfg=149
   hi Constant ctermfg=149
-  hi Cursor ctermfg=15 ctermbg=9
+  hi Cursor ctermfg=15 ctermbg=12
   hi CursorColumn ctermbg=236
   hi CursorLine cterm=NONE ctermbg=236
   hi Debug ctermfg=15
@@ -81,7 +80,7 @@ elseif &t_Co == 256
   hi DiffDelete cterm=bold ctermfg=239 ctermbg=66
   hi DiffText ctermfg=15 ctermbg=NONE
   hi Directory ctermfg=149
-  hi Error cterm=bold
+  hi Error cterm=bold ctermbg=9
   hi ErrorMsg cterm=bold ctermbg=9
   hi Exception ctermfg=170
   hi Float ctermfg=208
@@ -129,15 +128,15 @@ elseif &t_Co == 256
   hi Typedef ctermfg=149
   hi Underlined ctermfg=110
   hi VertSplit ctermfg=0 ctermbg=240
-  hi Visual ctermfg=15 ctermbg=239
-  hi VisualNOS ctermfg=15 ctermbg=239
+  hi Visual cterm=NONE ctermfg=15 ctermbg=239
+  hi VisualNOS cterm=NONE ctermfg=15 ctermbg=239
   hi WarningMsg ctermfg=9
   hi WildMenu ctermfg=15 ctermbg=236
   hi htmlArg ctermfg=110
   hi htmlItalic ctermfg=253 ctermbg=235
   hi htmlTagName ctermfg=149
   hi xmlAttrib ctermfg=110
-  hi xmlCData ctermfg=246
+  hi xmlCDATA ctermfg=246
   hi xmlTagName ctermfg=149
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
@@ -146,7 +145,7 @@ elseif &t_Co == 88
   hi Comment ctermfg=83
   hi Conditional cterm=bold ctermfg=57
   hi Constant ctermfg=57
-  hi Cursor ctermfg=79 ctermbg=9
+  hi Cursor ctermfg=79 ctermbg=39
   hi CursorColumn ctermbg=80
   hi CursorLine cterm=NONE ctermbg=80
   hi Debug ctermfg=79
@@ -157,7 +156,7 @@ elseif &t_Co == 88
   hi DiffDelete cterm=bold ctermfg=81 ctermbg=83
   hi DiffText ctermfg=79 ctermbg=NONE
   hi Directory ctermfg=57
-  hi Error cterm=bold
+  hi Error cterm=bold ctermbg=9
   hi ErrorMsg cterm=bold ctermbg=9
   hi Exception ctermfg=54
   hi Float ctermfg=68
@@ -205,15 +204,15 @@ elseif &t_Co == 88
   hi Typedef ctermfg=57
   hi Underlined ctermfg=42
   hi VertSplit ctermfg=16 ctermbg=81
-  hi Visual ctermfg=79 ctermbg=81
-  hi VisualNOS ctermfg=79 ctermbg=81
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
+  hi VisualNOS cterm=NONE ctermfg=79 ctermbg=81
   hi WarningMsg ctermfg=9
   hi WildMenu ctermfg=79 ctermbg=80
   hi htmlArg ctermfg=42
   hi htmlItalic ctermfg=86 ctermbg=80
   hi htmlTagName ctermfg=57
   hi xmlAttrib ctermfg=42
-  hi xmlCData ctermfg=83
+  hi xmlCDATA ctermfg=83
   hi xmlTagName ctermfg=57
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
@@ -222,7 +221,7 @@ elseif &t_Co == 16
   hi Comment ctermfg=6
   hi Conditional cterm=bold ctermfg=10
   hi Constant ctermfg=10
-  hi Cursor ctermfg=15 ctermbg=9
+  hi Cursor ctermfg=15 ctermbg=12
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Debug ctermfg=15
@@ -233,7 +232,7 @@ elseif &t_Co == 16
   hi DiffDelete cterm=bold ctermfg=2 ctermbg=6
   hi DiffText ctermfg=15 ctermbg=NONE
   hi Directory ctermfg=10
-  hi Error cterm=bold
+  hi Error cterm=bold ctermbg=9
   hi ErrorMsg cterm=bold ctermbg=9
   hi Exception ctermfg=7
   hi Float ctermfg=3
@@ -281,15 +280,15 @@ elseif &t_Co == 16
   hi Typedef ctermfg=10
   hi Underlined ctermfg=8
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=15 ctermbg=2
-  hi VisualNOS ctermfg=15 ctermbg=2
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
+  hi VisualNOS cterm=NONE ctermfg=15 ctermbg=2
   hi WarningMsg ctermfg=9
   hi WildMenu ctermfg=15 ctermbg=0
   hi htmlArg ctermfg=8
   hi htmlItalic ctermfg=12 ctermbg=0
   hi htmlTagName ctermfg=10
   hi xmlAttrib ctermfg=8
-  hi xmlCData ctermfg=8
+  hi xmlCDATA ctermfg=8
   hi xmlTagName ctermfg=10
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -298,7 +297,7 @@ else " 8 colors
   hi Comment ctermfg=6
   hi Conditional cterm=bold ctermfg=7
   hi Constant ctermfg=7
-  hi Cursor ctermfg=7 ctermbg=1
+  hi Cursor ctermfg=7 ctermbg=5
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Debug ctermfg=7
@@ -309,7 +308,7 @@ else " 8 colors
   hi DiffDelete cterm=bold ctermfg=2 ctermbg=6
   hi DiffText ctermfg=7 ctermbg=NONE
   hi Directory ctermfg=7
-  hi Error cterm=bold
+  hi Error cterm=bold ctermbg=1
   hi ErrorMsg cterm=bold ctermbg=1
   hi Exception ctermfg=7
   hi Float ctermfg=3
@@ -357,15 +356,15 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=7
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
-  hi VisualNOS ctermfg=7 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
+  hi VisualNOS cterm=NONE ctermfg=7 ctermbg=2
   hi WarningMsg ctermfg=1
   hi WildMenu ctermfg=7 ctermbg=0
   hi htmlArg ctermfg=7
   hi htmlItalic ctermfg=7 ctermbg=0
   hi htmlTagName ctermfg=7
   hi xmlAttrib ctermfg=7
-  hi xmlCData ctermfg=7
+  hi xmlCDATA ctermfg=7
   hi xmlTagName ctermfg=7
 endif
 

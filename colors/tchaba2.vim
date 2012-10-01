@@ -4,7 +4,7 @@
 " Name: tchaba2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:41
+" Date: 2012-09-29 13:45:48
 "----------------------------------------------------------
 
 set background=dark
@@ -46,6 +46,7 @@ elseif &t_Co == 256
   hi Conditional ctermfg=118
   hi Constant cterm=bold ctermfg=166
   hi Directory ctermfg=34
+  hi Error ctermbg=9
   hi ErrorMsg ctermfg=1 ctermbg=233
   hi Exception ctermfg=196
   hi Float ctermfg=166
@@ -74,7 +75,7 @@ elseif &t_Co == 256
   hi Title ctermfg=160
   hi Todo ctermbg=15
   hi Type ctermfg=118
-  hi Visual ctermfg=16 ctermbg=192
+  hi Visual cterm=NONE ctermfg=16 ctermbg=192
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=16
   hi Character ctermfg=38
@@ -82,6 +83,7 @@ elseif &t_Co == 88
   hi Conditional ctermfg=44
   hi Constant cterm=bold ctermfg=52
   hi Directory ctermfg=24
+  hi Error ctermbg=9
   hi ErrorMsg ctermfg=48 ctermbg=16
   hi Exception ctermfg=9
   hi Float ctermfg=52
@@ -110,7 +112,7 @@ elseif &t_Co == 88
   hi Title ctermfg=48
   hi Todo ctermbg=79
   hi Type ctermfg=44
-  hi Visual ctermfg=16 ctermbg=61
+  hi Visual cterm=NONE ctermfg=16 ctermbg=61
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Character ctermfg=8
@@ -118,6 +120,7 @@ elseif &t_Co == 16
   hi Conditional ctermfg=3
   hi Constant cterm=bold ctermfg=3
   hi Directory ctermfg=2
+  hi Error ctermbg=9
   hi ErrorMsg ctermfg=9 ctermbg=0
   hi Exception ctermfg=9
   hi Float ctermfg=3
@@ -146,7 +149,7 @@ elseif &t_Co == 16
   hi Title ctermfg=9
   hi Todo ctermbg=15
   hi Type ctermfg=3
-  hi Visual ctermfg=0 ctermbg=10
+  hi Visual cterm=NONE ctermfg=0 ctermbg=10
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Character ctermfg=6
@@ -154,6 +157,7 @@ else " 8 colors
   hi Conditional ctermfg=3
   hi Constant cterm=bold ctermfg=3
   hi Directory ctermfg=2
+  hi Error ctermbg=1
   hi ErrorMsg ctermfg=1 ctermbg=0
   hi Exception ctermfg=1
   hi Float ctermfg=3
@@ -182,7 +186,7 @@ else " 8 colors
   hi Title ctermfg=1
   hi Todo ctermbg=7
   hi Type ctermfg=3
-  hi Visual ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
 endif
 
 

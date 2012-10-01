@@ -4,7 +4,7 @@
 " Name: strawimodo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:13
+" Date: 2012-09-29 13:45:13
 "----------------------------------------------------------
 
 set background=dark
@@ -57,13 +57,13 @@ if has("gui_running")
   hi TabLine gui=italic guibg=#505050
   hi TabLineFill guifg=#303030
   hi TabLineSel guifg=#222222 guibg=#b2c867
-  hi TagListFileName gui=bold guifg=#b2c867
   hi Title gui=NONE guifg=#ffffff
   hi Todo gui=bold guifg=#000000 guibg=#ff855c
   hi Type guifg=#d78a42
   hi VertSplit gui=NONE guifg=#797979 guibg=#303030
   hi Visual guibg=#5a647e
   hi WarningMsg guifg=#000000 guibg=#ff855c
+  hi tagListFileName gui=bold guifg=#b2c867
 elseif &t_Co == 256
   hi Normal ctermfg=153 ctermbg=237
   hi Cursor ctermbg=231
@@ -88,9 +88,10 @@ elseif &t_Co == 256
   hi String ctermfg=149
   hi TabLineFill ctermfg=236
   hi TabLineSel ctermfg=235 ctermbg=149
-  hi TagListFileName ctermfg=149
   hi VertSplit ctermfg=243 ctermbg=236
+  hi Visual cterm=NONE ctermbg=8
   hi WarningMsg ctermbg=209
+  hi tagListFileName ctermfg=149
 elseif &t_Co == 88
   hi Normal ctermfg=59 ctermbg=80
   hi Cursor ctermbg=79
@@ -115,9 +116,10 @@ elseif &t_Co == 88
   hi String ctermfg=57
   hi TabLineFill ctermfg=80
   hi TabLineSel ctermfg=80 ctermbg=57
-  hi TagListFileName ctermfg=57
   hi VertSplit ctermfg=82 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
   hi WarningMsg ctermbg=69
+  hi tagListFileName ctermfg=57
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=2
   hi Cursor ctermbg=15
@@ -142,9 +144,10 @@ elseif &t_Co == 16
   hi String ctermfg=8
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=0 ctermbg=8
-  hi TagListFileName ctermfg=8
   hi VertSplit ctermfg=8 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg ctermbg=8
+  hi tagListFileName ctermfg=8
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
   hi Cursor ctermbg=7
@@ -169,9 +172,10 @@ else " 8 colors
   hi String ctermfg=7
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=0 ctermbg=7
-  hi TagListFileName ctermfg=7
   hi VertSplit ctermfg=3 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg ctermbg=3
+  hi tagListFileName ctermfg=7
 endif
 
 

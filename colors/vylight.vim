@@ -4,7 +4,7 @@
 " Name: vylight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:19
+" Date: 2012-09-29 13:47:53
 "----------------------------------------------------------
 
 set background=light
@@ -40,7 +40,7 @@ if has("gui_running")
   hi PmenuSel gui=bold guifg=white guibg=#3585ef
   hi PmenuThumb gui=bold guifg=#e0e5ee guibg=#c0c5dd
   hi PreProc guifg=#006633
-  hi Search guibg=#fcfcaa
+  hi Search guifg=NONE guibg=#fcfcaa
   hi Special guifg=#006633
   hi Statement gui=NONE guifg=#1a1a1a
   hi StatusLine gui=NONE guifg=#222222 guibg=#eeeeee
@@ -64,10 +64,12 @@ elseif &t_Co == 256
   hi Operator ctermfg=234
   hi PmenuSbar ctermfg=188
   hi PmenuThumb ctermfg=254
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=235 ctermbg=255
   hi StatusLineNC ctermfg=102 ctermbg=255
   hi Title ctermbg=231
   hi VertSplit ctermfg=255 ctermbg=255
+  hi Visual cterm=NONE ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi Conditional ctermfg=20
@@ -82,10 +84,12 @@ elseif &t_Co == 88
   hi Operator ctermfg=80
   hi PmenuSbar ctermfg=86
   hi PmenuThumb ctermfg=87
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=80 ctermbg=87
   hi StatusLineNC ctermfg=83 ctermbg=87
   hi Title ctermbg=79
   hi VertSplit ctermfg=87 ctermbg=87
+  hi Visual cterm=NONE ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Conditional ctermfg=2
@@ -100,10 +104,12 @@ elseif &t_Co == 16
   hi Operator ctermfg=0
   hi PmenuSbar ctermfg=12
   hi PmenuThumb ctermfg=14
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=11
   hi StatusLineNC ctermfg=8 ctermbg=11
   hi Title ctermbg=15
   hi VertSplit ctermfg=11 ctermbg=11
+  hi Visual cterm=NONE ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Conditional ctermfg=2
@@ -118,10 +124,12 @@ else " 8 colors
   hi Operator ctermfg=0
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=7
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi Title ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
 endif
 
 hi! link Function Normal

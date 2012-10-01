@@ -4,7 +4,7 @@
 " Name: perfect
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:27
+" Date: 2012-09-29 13:41:35
 "----------------------------------------------------------
 
 set background=light
@@ -90,7 +90,7 @@ if has("gui_running")
   hi Typedef guifg=#000000 guibg=#ffffff
   hi Underlined gui=NONE guifg=#000000 guibg=#ffffff
   hi VertSplit gui=NONE guifg=#eeeeee guibg=#eeeeee
-  hi VisualNOS guifg=#000000 guibg=#ffffff
+  hi VisualNOS gui=NONE guifg=#000000 guibg=#ffffff
   hi WarningMsg guifg=#000000 guibg=#ffffff
   hi WildMenu guifg=#000000 guibg=#ffffff
   hi cursorim guifg=#000000 guibg=#ffffff
@@ -169,7 +169,8 @@ elseif &t_Co == 256
   hi Typedef ctermfg=16 ctermbg=231
   hi Underlined cterm=NONE ctermfg=16 ctermbg=231
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=231
-  hi VisualNOS ctermfg=16 ctermbg=231
+  hi Visual cterm=NONE ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=16 ctermbg=231
   hi WarningMsg ctermfg=16 ctermbg=231
   hi WildMenu ctermfg=16 ctermbg=231
   hi cursorim ctermfg=16 ctermbg=231
@@ -248,7 +249,8 @@ elseif &t_Co == 88
   hi Typedef ctermfg=16 ctermbg=79
   hi Underlined cterm=NONE ctermfg=16 ctermbg=79
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=79
-  hi VisualNOS ctermfg=16 ctermbg=79
+  hi Visual cterm=NONE ctermbg=87
+  hi VisualNOS cterm=NONE ctermfg=16 ctermbg=79
   hi WarningMsg ctermfg=16 ctermbg=79
   hi WildMenu ctermfg=16 ctermbg=79
   hi cursorim ctermfg=16 ctermbg=79
@@ -327,7 +329,8 @@ elseif &t_Co == 16
   hi Typedef ctermfg=0 ctermbg=15
   hi Underlined cterm=NONE ctermfg=0 ctermbg=15
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=15
-  hi VisualNOS ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=11
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=15
   hi WarningMsg ctermfg=0 ctermbg=15
   hi WildMenu ctermfg=0 ctermbg=15
   hi cursorim ctermfg=0 ctermbg=15
@@ -406,7 +409,8 @@ else " 8 colors
   hi Typedef ctermfg=0 ctermbg=7
   hi Underlined cterm=NONE ctermfg=0 ctermbg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi VisualNOS ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=7
   hi WarningMsg ctermfg=0 ctermbg=7
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=0 ctermbg=7

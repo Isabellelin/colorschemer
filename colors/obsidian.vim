@@ -4,7 +4,7 @@
 " Name: obsidian
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:54
+" Date: 2012-09-29 13:40:51
 "----------------------------------------------------------
 
 set background=dark
@@ -67,6 +67,9 @@ if has("gui_running")
   hi SpecialChar guifg=#C00000
   hi SpecialComment guifg=#C00000
   hi SpecialKey guifg=#404040
+  hi SpellBad guibg=#ff0000
+  hi SpellCap guibg=#5c5cff
+  hi SpellLocal guibg=#00ffff
   hi Statement gui=NONE guifg=#8E79A5
   hi StatusLine gui=bold guifg=#508ED8 guibg=#1C2C3F
   hi StatusLineNC gui=NONE guifg=#78777f guibg=#302F2F
@@ -93,7 +96,6 @@ elseif &t_Co == 256
   hi Boolean ctermfg=116
   hi Character ctermfg=110
   hi Comment ctermfg=240
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=150
   hi Constant ctermfg=116
   hi Cursor ctermfg=235 ctermbg=153
@@ -142,9 +144,9 @@ elseif &t_Co == 256
   hi SpecialChar ctermfg=181
   hi SpecialComment ctermfg=181
   hi SpecialKey ctermfg=237
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=150
   hi StatusLine cterm=bold ctermfg=254 ctermbg=237
@@ -162,7 +164,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=115
   hi Underlined ctermfg=253
   hi VertSplit cterm=NONE ctermfg=242 ctermbg=237
-  hi Visual ctermbg=24
+  hi Visual cterm=NONE ctermbg=24
   hi VisualNOS cterm=underline ctermfg=253
   hi WarningMsg ctermfg=173
   hi WildMenu cterm=bold ctermfg=16 ctermbg=186
@@ -172,7 +174,6 @@ elseif &t_Co == 88
   hi Boolean ctermfg=42
   hi Character ctermfg=42
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=57
   hi Constant ctermfg=42
   hi Cursor ctermfg=80 ctermbg=59
@@ -221,9 +222,9 @@ elseif &t_Co == 88
   hi SpecialChar ctermfg=85
   hi SpecialComment ctermfg=85
   hi SpecialKey ctermfg=80
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=39
+  hi SpellLocal cterm=undercurl ctermbg=31
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=57
   hi StatusLine cterm=bold ctermfg=87 ctermbg=80
@@ -241,7 +242,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=42
   hi Underlined ctermfg=86
   hi VertSplit cterm=NONE ctermfg=82 ctermbg=80
-  hi Visual ctermbg=21
+  hi Visual cterm=NONE ctermbg=21
   hi VisualNOS cterm=underline ctermfg=86
   hi WarningMsg ctermfg=53
   hi WildMenu cterm=bold ctermfg=16 ctermbg=57
@@ -251,7 +252,6 @@ elseif &t_Co == 16
   hi Boolean ctermfg=12
   hi Character ctermfg=8
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=10
   hi Constant ctermfg=12
   hi Cursor ctermfg=0 ctermbg=12
@@ -300,9 +300,9 @@ elseif &t_Co == 16
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=10
   hi StatusLine cterm=bold ctermfg=11 ctermbg=2
@@ -320,7 +320,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=10
   hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=2
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi VisualNOS cterm=underline ctermfg=12
   hi WarningMsg ctermfg=8
   hi WildMenu cterm=bold ctermfg=0 ctermbg=10
@@ -330,7 +330,6 @@ else " 8 colors
   hi Boolean ctermfg=7
   hi Character ctermfg=7
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7
   hi Constant ctermfg=7
   hi Cursor ctermfg=0 ctermbg=7
@@ -379,9 +378,9 @@ else " 8 colors
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=1
+  hi SpellCap cterm=undercurl ctermbg=5
+  hi SpellLocal cterm=undercurl ctermbg=6
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=7
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
@@ -399,7 +398,7 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=7
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=2
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi VisualNOS cterm=underline ctermfg=7
   hi WarningMsg ctermfg=3
   hi WildMenu cterm=bold ctermfg=0 ctermbg=7

@@ -4,7 +4,7 @@
 " Name: pf_earth
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:29
+" Date: 2012-09-29 13:41:37
 "----------------------------------------------------------
 
 set background=dark
@@ -16,193 +16,219 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
-  hi Normal guifg=#ffffaf guibg=#080808
-  hi Cursor guifg=#3a3a3a guibg=#5f5fff
-  hi DiffAdd guifg=#ffffaf
-  hi DiffChange guifg=#ffffaf
-  hi DiffText guifg=#ffffaf
-  hi IncSearch guifg=#080808 guibg=#ffaf5f
-  hi LineNr guibg=#080808
-  hi ModeMsg guifg=#5f5fff
-  hi Number guifg=#005faf
-  hi StatusLine guifg=#808080 guibg=#262626
-  hi StatusLineNC guifg=#808080 guibg=#262626
-  hi String guifg=#ffaf5f guibg=#3a3a3a
-  hi Title guibg=#080808
-  hi VertSplit guifg=#808080 guibg=#444444
-  hi Visual guifg=#080808
-  hi WarningMsg guibg=#ff5f00
-  hi cursorim guifg=#3a3a3a guibg=#5f5fff
-  hi lcursor guifg=#3a3a3a guibg=#5f5fff
-  hi taglisttagname guifg=#00afaf
+  hi Normal guifg=#E7FFD8 guibg=#262320
+  hi Boolean gui=italic guifg=#B15A40
+  hi Comment gui=italic guifg=#4F4B42
+  hi Constant guifg=#ffcd8b
+  hi Cursor guifg=#404040 guibg=#D78332
+  hi CursorLine guibg=#222725
+  hi DiffAdd guifg=#ffffcd guibg=#00cd00
+  hi DiffChange guifg=#ffffcd guibg=#008bff
+  hi DiffDelete gui=NONE guifg=#ffffcd guibg=#cd0000
+  hi DiffText gui=NONE guifg=#ffffcd guibg=#00cd00
+  hi Directory guifg=#00ff8b
+  hi Error guifg=#ffffff guibg=#ff0000
+  hi ErrorMsg gui=bold guifg=#ffffff guibg=#ff3300
+  hi FoldColumn guifg=#8b8bcd guibg=#2e2e2e
+  hi Folded guifg=#cfcfcd guibg=#4b208f
+  hi Identifier guifg=#CEB429
+  hi Ignore guifg=#8b8bcd
+  hi IncSearch guifg=#66ffff
+  hi LineNr guifg=#595A48 guibg=#2E2A26
+  hi MatchParen gui=bold guifg=#00ff00 guibg=NONE
+  hi ModeMsg guifg=#7e7eae
+  hi MoreMsg guifg=#7e7eae
+  hi NonText guifg=#8b8bcd
+  hi Number guifg=#C0E06C
+  hi Operator guifg=#828A66
+  hi Pmenu guifg=#e0e0e0 guibg=#303840
+  hi PmenuSbar guibg=#505860
+  hi PmenuSel guifg=#cae682 guibg=#505860
+  hi PmenuThumb guibg=#808890
+  hi PreProc guifg=#838861
+  hi Question guifg=#ffcd00
+  hi Search guifg=#000000 guibg=#cae682
+  hi Special guifg=#c080d0
+  hi SpecialKey gui=bold guifg=#8b00cd
+  hi Statement gui=NONE guifg=#5FE8D0
+  hi StatusLine gui=NONE guifg=#b9b9b9 guibg=#2F2A26
+  hi StatusLineNC gui=NONE guifg=#474A39 guibg=#2F2A26
+  hi String guifg=#B99B74
+  hi Title guifg=#af4f4b guibg=#1e1e27
+  hi Todo gui=bold guifg=#FFFFFF guibg=bg
+  hi Type gui=NONE guifg=#ff8bff
+  hi Underlined gui=bold guifg=#ffffcd
+  hi VertSplit gui=NONE guifg=#b9b9b9 guibg=#3e3e5e
+  hi Visual guibg=#364458
+  hi WarningMsg gui=bold guifg=#ffffff guibg=#ff6600
+  hi WildMenu gui=bold guifg=#ffcd00 guibg=#1e1e2e
+  hi cursorim guifg=#404040 guibg=#8b8bff
+  hi lCursor guifg=#404040 guibg=#8b8bff
+  hi rubyBlockParameter guifg=#CC6BDC
+  hi rubyClass gui=italic guifg=#b3d38c
+  hi rubyClassVariable guifg=#CB9064
+  hi rubyConstant gui=italic guifg=#8EB564
+  hi rubyGlobalVariable guifg=#45B6DC
+  hi rubyInstanceVariable guifg=#C3BF55
+  hi rubyRegexp guifg=#B18A3D
+  hi rubyRegexpDelimiter guifg=#FF8000
+  hi rubySymbol gui=italic guifg=#DA8332
+  hi taglisttagname gui=bold guifg=#808bed
 elseif &t_Co == 256
-  hi Normal ctermfg=229 ctermbg=232
-  hi Comment ctermfg=130
-  hi Constant ctermfg=215
-  hi Cursor ctermfg=237 ctermbg=63
-  hi DiffAdd ctermfg=229 ctermbg=34
-  hi DiffChange ctermfg=229 ctermbg=27
-  hi DiffDelete ctermfg=229 ctermbg=124
-  hi DiffText cterm=NONE ctermfg=229 ctermbg=34
-  hi Directory ctermfg=47
-  hi Error ctermfg=231 ctermbg=196
-  hi ErrorMsg cterm=bold ctermfg=231 ctermbg=196
-  hi FoldColumn ctermfg=61 ctermbg=232
-  hi Folded ctermfg=229 ctermbg=57
-  hi Identifier cterm=NONE ctermfg=207
-  hi Ignore ctermfg=61
-  hi IncSearch cterm=bold ctermfg=232 ctermbg=215
-  hi LineNr ctermfg=61 ctermbg=232
-  hi ModeMsg ctermfg=63
-  hi MoreMsg cterm=bold ctermfg=63
-  hi NonText cterm=bold ctermfg=61
-  hi Number ctermfg=25
-  hi PreProc ctermfg=10
-  hi Question cterm=bold ctermfg=214
-  hi Search ctermfg=232 ctermbg=215
-  hi Special ctermfg=63
-  hi SpecialKey cterm=bold ctermfg=55
-  hi Statement ctermfg=37
-  hi StatusLine cterm=bold ctermfg=244 ctermbg=235
-  hi StatusLineNC cterm=NONE ctermfg=244 ctermbg=235
-  hi String ctermfg=215 ctermbg=237
-  hi Title cterm=bold ctermfg=130 ctermbg=232
-  hi Todo cterm=bold ctermfg=237 ctermbg=63
-  hi Type ctermfg=207
-  hi Underlined cterm=bold ctermfg=229
-  hi VertSplit cterm=NONE ctermfg=244 ctermbg=238
-  hi Visual ctermfg=232 ctermbg=215
-  hi WarningMsg cterm=bold ctermfg=231 ctermbg=202
-  hi WildMenu cterm=bold ctermfg=214 ctermbg=232
-  hi cursorim ctermfg=237 ctermbg=63
-  hi lcursor ctermfg=237 ctermbg=63
-  hi taglisttagname cterm=bold ctermfg=37
+  hi Normal ctermfg=194 ctermbg=235
+  hi Boolean ctermfg=131
+  hi Cursor ctermfg=238 ctermbg=173
+  hi CursorLine ctermbg=235
+  hi DiffAdd ctermfg=230
+  hi DiffChange ctermfg=230
+  hi DiffText ctermfg=230
+  hi IncSearch ctermfg=87
+  hi LineNr ctermbg=235
+  hi MatchParen cterm=bold ctermfg=46 ctermbg=NONE
+  hi ModeMsg ctermfg=103
+  hi Number ctermfg=207
+  hi Operator ctermfg=101
+  hi Pmenu ctermfg=253 ctermbg=233
+  hi PmenuSbar ctermbg=59
+  hi PmenuSel ctermfg=186 ctermbg=237
+  hi PmenuThumb ctermbg=102
+  hi Search ctermbg=195
+  hi StatusLine ctermfg=250 ctermbg=235
+  hi StatusLineNC ctermfg=238 ctermbg=235
+  hi String ctermfg=138
+  hi Title ctermbg=234
+  hi VertSplit ctermfg=250 ctermbg=238
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermbg=202
+  hi cursorim ctermfg=238 ctermbg=105
+  hi lCursor ctermfg=238 ctermbg=105
+  hi rubyBlockParameter ctermfg=170
+  hi rubyClass ctermfg=150
+  hi rubyClassVariable ctermfg=173
+  hi rubyConstant ctermfg=107
+  hi rubyGlobalVariable ctermfg=74
+  hi rubyInstanceVariable ctermfg=143
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubySymbol ctermfg=173
+  hi taglisttagname ctermfg=105
 elseif &t_Co == 88
-  hi Normal ctermfg=78 ctermbg=16
-  hi Comment ctermfg=52
-  hi Constant ctermfg=73
-  hi Cursor ctermfg=80 ctermbg=39
-  hi DiffAdd ctermfg=78 ctermbg=24
-  hi DiffChange ctermfg=78 ctermbg=23
-  hi DiffDelete ctermfg=78 ctermbg=48
-  hi DiffText cterm=NONE ctermfg=78 ctermbg=24
-  hi Directory ctermfg=29
-  hi Error ctermfg=79 ctermbg=9
-  hi ErrorMsg cterm=bold ctermfg=79 ctermbg=9
-  hi FoldColumn ctermfg=81 ctermbg=16
-  hi Folded ctermfg=78 ctermbg=35
-  hi Identifier cterm=NONE ctermfg=71
-  hi Ignore ctermfg=81
-  hi IncSearch cterm=bold ctermfg=16 ctermbg=73
-  hi LineNr ctermfg=81 ctermbg=16
-  hi ModeMsg ctermfg=39
-  hi MoreMsg cterm=bold ctermfg=39
-  hi NonText cterm=bold ctermfg=81
-  hi Number ctermfg=22
-  hi PreProc ctermfg=28
-  hi Question cterm=bold ctermfg=72
-  hi Search ctermfg=16 ctermbg=73
-  hi Special ctermfg=39
-  hi SpecialKey cterm=bold ctermfg=34
-  hi Statement ctermfg=6
-  hi StatusLine cterm=bold ctermfg=83 ctermbg=80
-  hi StatusLineNC cterm=NONE ctermfg=83 ctermbg=80
-  hi String ctermfg=73 ctermbg=80
-  hi Title cterm=bold ctermfg=52 ctermbg=16
-  hi Todo cterm=bold ctermfg=80 ctermbg=39
-  hi Type ctermfg=71
-  hi Underlined cterm=bold ctermfg=78
-  hi VertSplit cterm=NONE ctermfg=83 ctermbg=80
-  hi Visual ctermfg=16 ctermbg=73
-  hi WarningMsg cterm=bold ctermfg=79 ctermbg=68
-  hi WildMenu cterm=bold ctermfg=72 ctermbg=16
-  hi cursorim ctermfg=80 ctermbg=39
-  hi lcursor ctermfg=80 ctermbg=39
-  hi taglisttagname cterm=bold ctermfg=6
+  hi Normal ctermfg=78 ctermbg=80
+  hi Boolean ctermfg=81
+  hi Cursor ctermfg=8 ctermbg=52
+  hi CursorLine ctermbg=80
+  hi DiffAdd ctermfg=78
+  hi DiffChange ctermfg=78
+  hi DiffText ctermfg=78
+  hi IncSearch ctermfg=47
+  hi LineNr ctermbg=80
+  hi MatchParen cterm=bold ctermfg=28 ctermbg=NONE
+  hi ModeMsg ctermfg=38
+  hi Number ctermfg=71
+  hi Operator ctermfg=83
+  hi Pmenu ctermfg=86 ctermbg=16
+  hi PmenuSbar ctermbg=81
+  hi PmenuSel ctermfg=57 ctermbg=80
+  hi PmenuThumb ctermbg=83
+  hi Search ctermbg=63
+  hi StatusLine ctermfg=85 ctermbg=80
+  hi StatusLineNC ctermfg=80 ctermbg=80
+  hi String ctermfg=53
+  hi Title ctermbg=80
+  hi VertSplit ctermfg=85 ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermbg=68
+  hi cursorim ctermfg=8 ctermbg=39
+  hi lCursor ctermfg=8 ctermbg=39
+  hi rubyBlockParameter ctermfg=54
+  hi rubyClass ctermfg=57
+  hi rubyClassVariable ctermfg=53
+  hi rubyConstant ctermfg=41
+  hi rubyGlobalVariable ctermfg=6
+  hi rubyInstanceVariable ctermfg=57
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubySymbol ctermfg=52
+  hi taglisttagname ctermfg=39
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Comment ctermfg=3
-  hi Constant ctermfg=8
-  hi Cursor ctermfg=2 ctermbg=12
-  hi DiffAdd ctermfg=11 ctermbg=2
-  hi DiffChange ctermfg=11 ctermbg=6
-  hi DiffDelete ctermfg=11 ctermbg=1
-  hi DiffText cterm=NONE ctermfg=11 ctermbg=2
-  hi Directory ctermfg=6
-  hi Error ctermfg=15 ctermbg=9
-  hi ErrorMsg cterm=bold ctermfg=15 ctermbg=9
-  hi FoldColumn ctermfg=8 ctermbg=0
-  hi Folded ctermfg=11 ctermbg=5
-  hi Identifier cterm=NONE ctermfg=13
-  hi Ignore ctermfg=8
-  hi IncSearch cterm=bold ctermfg=0 ctermbg=8
-  hi LineNr ctermfg=8 ctermbg=0
-  hi ModeMsg ctermfg=12
-  hi MoreMsg cterm=bold ctermfg=12
-  hi NonText cterm=bold ctermfg=8
-  hi Number ctermfg=6
-  hi PreProc ctermfg=2
-  hi Question cterm=bold ctermfg=3
-  hi Search ctermfg=0 ctermbg=8
-  hi Special ctermfg=12
-  hi SpecialKey cterm=bold ctermfg=5
-  hi Statement ctermfg=6
-  hi StatusLine cterm=bold ctermfg=8 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=8 ctermbg=0
-  hi String ctermfg=8 ctermbg=2
-  hi Title cterm=bold ctermfg=3 ctermbg=0
-  hi Todo cterm=bold ctermfg=2 ctermbg=12
-  hi Type ctermfg=13
-  hi Underlined cterm=bold ctermfg=11
-  hi VertSplit cterm=NONE ctermfg=8 ctermbg=2
-  hi Visual ctermfg=0 ctermbg=8
-  hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
-  hi WildMenu cterm=bold ctermfg=3 ctermbg=0
+  hi Boolean ctermfg=3
+  hi Cursor ctermfg=2 ctermbg=3
+  hi CursorLine ctermbg=0
+  hi DiffAdd ctermfg=11
+  hi DiffChange ctermfg=11
+  hi DiffText ctermfg=11
+  hi IncSearch ctermfg=14
+  hi LineNr ctermbg=0
+  hi MatchParen cterm=bold ctermfg=2 ctermbg=NONE
+  hi ModeMsg ctermfg=8
+  hi Number ctermfg=13
+  hi Operator ctermfg=3
+  hi Pmenu ctermfg=12 ctermbg=0
+  hi PmenuSbar ctermbg=3
+  hi PmenuSel ctermfg=10 ctermbg=2
+  hi PmenuThumb ctermbg=8
+  hi Search ctermbg=14
+  hi StatusLine ctermfg=7 ctermbg=0
+  hi StatusLineNC ctermfg=2 ctermbg=0
+  hi String ctermfg=8
+  hi Title ctermbg=0
+  hi VertSplit ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermbg=9
   hi cursorim ctermfg=2 ctermbg=12
-  hi lcursor ctermfg=2 ctermbg=12
-  hi taglisttagname cterm=bold ctermfg=6
+  hi lCursor ctermfg=2 ctermbg=12
+  hi rubyBlockParameter ctermfg=7
+  hi rubyClass ctermfg=10
+  hi rubyClassVariable ctermfg=8
+  hi rubyConstant ctermfg=10
+  hi rubyGlobalVariable ctermfg=12
+  hi rubyInstanceVariable ctermfg=7
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubySymbol ctermfg=3
+  hi taglisttagname ctermfg=12
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=3
-  hi Constant ctermfg=7
-  hi Cursor ctermfg=2 ctermbg=5
-  hi DiffAdd ctermfg=7 ctermbg=2
-  hi DiffChange ctermfg=7 ctermbg=6
-  hi DiffDelete ctermfg=7 ctermbg=1
-  hi DiffText cterm=NONE ctermfg=7 ctermbg=2
-  hi Directory ctermfg=6
-  hi Error ctermfg=7 ctermbg=1
-  hi ErrorMsg cterm=bold ctermfg=7 ctermbg=1
-  hi FoldColumn ctermfg=5 ctermbg=0
-  hi Folded ctermfg=7 ctermbg=5
-  hi Identifier cterm=NONE ctermfg=7
-  hi Ignore ctermfg=5
-  hi IncSearch cterm=bold ctermfg=0 ctermbg=7
-  hi LineNr ctermfg=5 ctermbg=0
-  hi ModeMsg ctermfg=5
-  hi MoreMsg cterm=bold ctermfg=5
-  hi NonText cterm=bold ctermfg=5
-  hi Number ctermfg=6
-  hi PreProc ctermfg=2
-  hi Question cterm=bold ctermfg=3
-  hi Search ctermfg=0 ctermbg=7
-  hi Special ctermfg=5
-  hi SpecialKey cterm=bold ctermfg=5
-  hi Statement ctermfg=6
-  hi StatusLine cterm=bold ctermfg=3 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=0
-  hi String ctermfg=7 ctermbg=2
-  hi Title cterm=bold ctermfg=3 ctermbg=0
-  hi Todo cterm=bold ctermfg=2 ctermbg=5
-  hi Type ctermfg=7
-  hi Underlined cterm=bold ctermfg=7
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=2
-  hi Visual ctermfg=0 ctermbg=7
-  hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
-  hi WildMenu cterm=bold ctermfg=3 ctermbg=0
-  hi cursorim ctermfg=2 ctermbg=5
-  hi lcursor ctermfg=2 ctermbg=5
-  hi taglisttagname cterm=bold ctermfg=6
+  hi Boolean ctermfg=3
+  hi Cursor ctermfg=2 ctermbg=3
+  hi CursorLine ctermbg=0
+  hi DiffAdd ctermfg=7
+  hi DiffChange ctermfg=7
+  hi DiffText ctermfg=7
+  hi IncSearch ctermfg=7
+  hi LineNr ctermbg=0
+  hi MatchParen cterm=bold ctermfg=2 ctermbg=NONE
+  hi ModeMsg ctermfg=7
+  hi Number ctermfg=7
+  hi Operator ctermfg=3
+  hi Pmenu ctermfg=7 ctermbg=0
+  hi PmenuSbar ctermbg=3
+  hi PmenuSel ctermfg=7 ctermbg=2
+  hi PmenuThumb ctermbg=3
+  hi Search ctermbg=7
+  hi StatusLine ctermfg=7 ctermbg=0
+  hi StatusLineNC ctermfg=2 ctermbg=0
+  hi String ctermfg=7
+  hi Title ctermbg=0
+  hi VertSplit ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermbg=3
+  hi cursorim ctermfg=2 ctermbg=7
+  hi lCursor ctermfg=2 ctermbg=7
+  hi rubyBlockParameter ctermfg=7
+  hi rubyClass ctermfg=7
+  hi rubyClassVariable ctermfg=7
+  hi rubyConstant ctermfg=3
+  hi rubyGlobalVariable ctermfg=7
+  hi rubyInstanceVariable ctermfg=7
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubySymbol ctermfg=3
+  hi taglisttagname ctermfg=7
 endif
 
+hi! link rubyIdentifier Identifier
+hi! link rubyModule Keyword
+hi! link rubyOperator Operator
 

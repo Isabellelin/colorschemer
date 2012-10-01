@@ -4,7 +4,7 @@
 " Name: brookstream
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:09
+" Date: 2012-09-29 13:31:12
 "----------------------------------------------------------
 
 set background=dark
@@ -67,7 +67,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=231 ctermbg=239
   hi StatusLineNC ctermfg=16 ctermbg=250
   hi String ctermfg=67
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=16
   hi Boolean ctermfg=41
@@ -83,7 +83,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=79 ctermbg=80
   hi StatusLineNC ctermfg=16 ctermbg=85
   hi String ctermfg=38
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=10
@@ -99,7 +99,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=15 ctermbg=2
   hi StatusLineNC ctermfg=0 ctermbg=7
   hi String ctermfg=6
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
@@ -115,7 +115,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=0 ctermbg=7
   hi String ctermfg=6
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 

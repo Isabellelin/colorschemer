@@ -4,7 +4,7 @@
 " Name: tchaba
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:39
+" Date: 2012-09-29 13:45:46
 "----------------------------------------------------------
 
 set background=dark
@@ -58,7 +58,6 @@ if has("gui_running")
   hi Type guifg=#8144b4
   hi VertSplit guifg=gray50 guibg=#c2bfa5
   hi Visual guifg=khaki guibg=olivedrab
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=salmon
   hi WildMenu guifg=black guibg=yellow
 elseif &t_Co == 256
@@ -77,7 +76,7 @@ elseif &t_Co == 256
   hi Type ctermfg=160
   hi Underlined ctermfg=111
   hi VertSplit ctermfg=244 ctermbg=250
-  hi Visual ctermfg=222
+  hi Visual cterm=NONE ctermfg=222 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermfg=21
@@ -94,7 +93,7 @@ elseif &t_Co == 88
   hi Type ctermfg=48
   hi Underlined ctermfg=43
   hi VertSplit ctermfg=83 ctermbg=85
-  hi Visual ctermfg=73
+  hi Visual cterm=NONE ctermfg=73 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=6
@@ -111,7 +110,7 @@ elseif &t_Co == 16
   hi Type ctermfg=9
   hi Underlined ctermfg=12
   hi VertSplit ctermfg=8 ctermbg=7
-  hi Visual ctermfg=10
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=6
@@ -128,7 +127,7 @@ else " 8 colors
   hi Type ctermfg=1
   hi Underlined ctermfg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 hi! link Float Constant

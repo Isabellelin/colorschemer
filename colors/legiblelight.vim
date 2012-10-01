@@ -4,7 +4,7 @@
 " Name: legiblelight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:30
+" Date: 2012-09-29 13:37:38
 "----------------------------------------------------------
 
 set background=light
@@ -22,7 +22,7 @@ if has("gui_running")
   hi Comment gui=italic guifg=#556b2f guibg=bg
   hi Conditional gui=italic guifg=#003399 guibg=bg
   hi Constant guifg=#008000 guibg=bg
-  hi Cursor guifg=#696969 guibg=fg
+  hi Cursor guifg=#696969
   hi CursorColumn guifg=fg guibg=#dcdcdc
   hi CursorLine guifg=fg guibg=#dcdcdc
   hi Define gui=italic guifg=#9932cc guibg=bg
@@ -171,7 +171,7 @@ elseif &t_Co == 256
   hi VertSplit ctermfg=24 ctermbg=231
   hi VimCommentTitle ctermfg=102 ctermbg=bg
   hi VimError ctermfg=231 ctermbg=9
-  hi Visual ctermfg=21 ctermbg=231
+  hi Visual cterm=NONE ctermfg=21 ctermbg=231
   hi WarningMsg ctermfg=196 ctermbg=231
   hi WildMenu ctermfg=16 ctermbg=231
   hi cursorim ctermfg=18 ctermbg=231
@@ -255,7 +255,7 @@ elseif &t_Co == 88
   hi VertSplit ctermfg=21 ctermbg=79
   hi VimCommentTitle ctermfg=83 ctermbg=bg
   hi VimError ctermfg=79 ctermbg=9
-  hi Visual ctermfg=19 ctermbg=79
+  hi Visual cterm=NONE ctermfg=19 ctermbg=79
   hi WarningMsg ctermfg=9 ctermbg=79
   hi WildMenu ctermfg=16 ctermbg=79
   hi cursorim ctermfg=17 ctermbg=79
@@ -339,7 +339,7 @@ elseif &t_Co == 16
   hi VertSplit ctermfg=6 ctermbg=15
   hi VimCommentTitle ctermfg=8 ctermbg=bg
   hi VimError ctermfg=15 ctermbg=9
-  hi Visual ctermfg=4 ctermbg=15
+  hi Visual cterm=NONE ctermfg=4 ctermbg=15
   hi WarningMsg ctermfg=9 ctermbg=15
   hi WildMenu ctermfg=0 ctermbg=15
   hi cursorim ctermfg=4 ctermbg=15
@@ -423,7 +423,7 @@ else " 8 colors
   hi VertSplit ctermfg=6 ctermbg=7
   hi VimCommentTitle ctermfg=6 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=1
-  hi Visual ctermfg=4 ctermbg=7
+  hi Visual cterm=NONE ctermfg=4 ctermbg=7
   hi WarningMsg ctermfg=1 ctermbg=7
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=4 ctermbg=7

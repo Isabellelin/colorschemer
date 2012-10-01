@@ -4,7 +4,7 @@
 " Name: habiLight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:15
+" Date: 2012-09-29 13:35:54
 "----------------------------------------------------------
 
 set background=light
@@ -42,10 +42,7 @@ if has("gui_running")
   hi PreProc guifg=#1071CE
   hi Search guifg=Black guibg=#FFE568
   hi Special guifg=red2
-  hi SpellBad guibg=#5c5cff
-  hi SpellCap guibg=#ff0000
   hi SpellLocale gui=undercurl guibg=#ffff00
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=#F06F00
   hi StatusLine gui=bold guifg=white guibg=#56A0EE
   hi StatusLineNC gui=NONE guifg=#E9E9F4 guibg=#56A0EE
@@ -67,137 +64,125 @@ if has("gui_running")
   hi mySpecialSymbols guifg=magenta
 elseif &t_Co == 256
   hi Normal ctermfg=0 ctermbg=231
-  hi Comment ctermfg=242
-  hi Constant ctermfg=9
+  hi Comment ctermfg=8
+  hi Constant ctermfg=12
   hi Cursor ctermfg=16 ctermbg=214
   hi DiffChange ctermfg=22
   hi DiffText ctermfg=202
-  hi Identifier ctermfg=12
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=130
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=201
-  hi MatchParen ctermfg=16 ctermbg=11
+  hi MatchParen ctermfg=16
   hi ModeMsg ctermfg=27
   hi NonText ctermbg=255
-  hi Number ctermfg=9
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=252 ctermbg=7
+  hi Number ctermfg=12
+  hi PmenuSbar ctermfg=252
   hi PmenuThumb cterm=reverse ctermfg=16
-  hi PreProc ctermfg=4
-  hi Search cterm=underline ctermfg=0 ctermbg=130
-  hi SpellBad ctermbg=12
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=1
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=11
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=1
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=242
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=8
   hi StatusLineNC ctermfg=255 ctermbg=75
   hi Tag ctermfg=2
-  hi Todo ctermfg=12
-  hi Type ctermfg=12
-  hi Visual ctermfg=11 ctermbg=0
-  hi VisualNOS ctermfg=11 ctermbg=0
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=0
+  hi VisualNOS ctermfg=14 ctermbg=0
   hi cursorim ctermfg=231 ctermbg=93
   hi htmlLink ctermfg=21
   hi mySpecialSymbols ctermfg=201
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi Comment ctermfg=82
-  hi Constant ctermfg=9
+  hi Comment ctermfg=81
+  hi Constant ctermfg=39
   hi Cursor ctermfg=16 ctermbg=68
   hi DiffChange ctermfg=20
   hi DiffText ctermfg=9
-  hi Identifier ctermfg=39
-  hi IncSearch cterm=underline ctermfg=16 ctermbg=52
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=16 ctermbg=6
   hi KDE ctermfg=67
-  hi MatchParen ctermfg=16 ctermbg=76
+  hi MatchParen ctermfg=16
   hi ModeMsg ctermfg=23
   hi NonText ctermbg=87
-  hi Number ctermfg=9
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermfg=58 ctermbg=87
+  hi Number ctermfg=39
+  hi PmenuSbar ctermfg=58
   hi PmenuThumb cterm=reverse ctermfg=16
-  hi PreProc ctermfg=19
-  hi Search cterm=underline ctermfg=16 ctermbg=52
-  hi SpellBad ctermbg=39
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=48
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=76
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=48
-  hi StatusLine cterm=NONE ctermfg=76 ctermbg=82
+  hi Statement ctermfg=19
+  hi StatusLine cterm=NONE ctermfg=31 ctermbg=81
   hi StatusLineNC ctermfg=87 ctermbg=39
   hi Tag ctermfg=24
-  hi Todo ctermfg=39
-  hi Type ctermfg=39
-  hi Visual ctermfg=76 ctermbg=16
-  hi VisualNOS ctermfg=76 ctermbg=16
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=31 ctermbg=16
+  hi VisualNOS ctermfg=31 ctermbg=16
   hi cursorim ctermfg=79 ctermbg=35
   hi htmlLink ctermfg=19
   hi mySpecialSymbols ctermfg=67
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi Comment ctermfg=3
-  hi Constant ctermfg=9
+  hi Comment ctermfg=2
+  hi Constant ctermfg=12
   hi Cursor ctermfg=0 ctermbg=3
   hi DiffChange ctermfg=2
   hi DiffText ctermfg=9
-  hi Identifier ctermfg=12
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=3
+  hi Error ctermbg=9
+  hi Identifier ctermfg=9
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=13
-  hi MatchParen ctermfg=0 ctermbg=11
+  hi MatchParen ctermfg=0
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=14
-  hi Number ctermfg=9
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=7 ctermbg=11
+  hi Number ctermfg=12
+  hi PmenuSbar ctermfg=7
   hi PmenuThumb cterm=reverse ctermfg=0
-  hi PreProc ctermfg=4
-  hi Search cterm=underline ctermfg=0 ctermbg=3
-  hi SpellBad ctermbg=12
-  hi SpellCap ctermbg=9
+  hi PreProc ctermfg=9
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=11
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=9
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=3
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=2
   hi StatusLineNC ctermfg=14 ctermbg=12
   hi Tag ctermfg=2
-  hi Todo ctermfg=12
-  hi Type ctermfg=12
-  hi Visual ctermfg=11 ctermbg=0
-  hi VisualNOS ctermfg=11 ctermbg=0
+  hi Todo ctermfg=9
+  hi Type ctermfg=9
+  hi Visual cterm=NONE ctermfg=14 ctermbg=0
+  hi VisualNOS ctermfg=14 ctermbg=0
   hi cursorim ctermfg=15 ctermbg=5
   hi htmlLink ctermfg=4
   hi mySpecialSymbols ctermfg=13
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi Comment ctermfg=3
-  hi Constant ctermfg=1
+  hi Comment ctermfg=2
+  hi Constant ctermfg=5
   hi Cursor ctermfg=0 ctermbg=3
   hi DiffChange ctermfg=2
   hi DiffText ctermfg=1
-  hi Identifier ctermfg=5
-  hi IncSearch cterm=underline ctermfg=0 ctermbg=3
+  hi Error ctermbg=1
+  hi Identifier ctermfg=1
+  hi IncSearch cterm=underline ctermfg=0 ctermbg=6
   hi KDE ctermfg=5
-  hi MatchParen ctermfg=0 ctermbg=3
+  hi MatchParen ctermfg=0
   hi ModeMsg ctermfg=6
   hi NonText ctermbg=7
-  hi Number ctermfg=1
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermfg=7 ctermbg=7
+  hi Number ctermfg=5
+  hi PmenuSbar ctermfg=7
   hi PmenuThumb cterm=reverse ctermfg=0
-  hi PreProc ctermfg=4
-  hi Search cterm=underline ctermfg=0 ctermbg=3
-  hi SpellBad ctermbg=5
-  hi SpellCap ctermbg=1
+  hi PreProc ctermfg=1
+  hi Search cterm=underline ctermbg=6
   hi SpellLocale ctermbg=3
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=1
-  hi StatusLine cterm=NONE ctermfg=3 ctermbg=3
+  hi Statement ctermfg=4
+  hi StatusLine cterm=NONE ctermfg=6 ctermbg=2
   hi StatusLineNC ctermfg=7 ctermbg=7
   hi Tag ctermfg=2
-  hi Todo ctermfg=5
-  hi Type ctermfg=5
-  hi Visual ctermfg=3 ctermbg=0
-  hi VisualNOS ctermfg=3 ctermbg=0
+  hi Todo ctermfg=1
+  hi Type ctermfg=1
+  hi Visual cterm=NONE ctermfg=6 ctermbg=0
+  hi VisualNOS ctermfg=6 ctermbg=0
   hi cursorim ctermfg=7 ctermbg=5
   hi htmlLink ctermfg=4
   hi mySpecialSymbols ctermfg=5

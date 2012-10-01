@@ -4,7 +4,7 @@
 " Name: no_quarter
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:44
+" Date: 2012-09-29 13:40:38
 "----------------------------------------------------------
 
 set background=dark
@@ -57,13 +57,13 @@ if has("gui_running")
   hi Underlined guifg=#707070
   hi VertSplit gui=NONE guifg=#abac84 guibg=gray12
   hi Visual guifg=#b0ffb0 guibg=#008000
-  hi VisualNOS guifg=#ffe8c8 guibg=#c06800
+  hi VisualNOS gui=NONE guifg=#ffe8c8 guibg=#c06800
   hi WarningMsg gui=bold guifg=#ffa0ff
   hi WildMenu guifg=#000000 guibg=#abac84
   hi cursorim guifg=#ffffff guibg=#8800ff
   hi htmlTagName guifg=grey70 guibg=bg
   hi iCursor guifg=white guibg=green
-  hi lcursor guifg=#ffffff guibg=#8800ff
+  hi lCursor guifg=#ffffff guibg=#8800ff
   hi perlControl guifg=#c0c090 guibg=gray15
   hi perlFunctionName guifg=white guibg=bg
   hi perlIdentifier guifg=gray75
@@ -79,7 +79,7 @@ if has("gui_running")
   hi perlSpecialBEOM guifg=fg guibg=gray15
   hi perlStatement guifg=#c0c090
   hi perlStatementControl guifg=#dcdb6b guibg=bg
-  hi perlStatementFiledesc guifg=#a2c090 guibg=bg
+  hi perlStatementFileDesc guifg=#a2c090 guibg=bg
   hi perlStatementHash guifg=#c0c090 guibg=gray12
   hi perlStatementInclude guifg=#c0c090 guibg=bg
   hi perlStatementNew gui=underline guifg=#c0c090 guibg=bg
@@ -95,45 +95,29 @@ if has("gui_running")
   hi rightMargin guibg=#453030
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=233
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=238 ctermbg=226
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=234
   hi DiffAdd ctermfg=153
   hi DiffChange ctermfg=167
   hi DiffText ctermfg=213
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi IncSearch ctermfg=123 ctermbg=25
   hi LineNr ctermbg=234
   hi ModeMsg ctermfg=153
-  hi MoreMsg ctermfg=10 ctermbg=bg
+  hi MoreMsg ctermbg=bg
   hi MyTagListFileName ctermfg=fg ctermbg=238
   hi NonText ctermbg=bg
   hi OverLength ctermfg=fg ctermbg=8
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
   hi PmenuThumb ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=16 ctermbg=7
   hi StatusLineNC ctermfg=144 ctermbg=234
-  hi TabLine ctermbg=8
-  hi Title ctermfg=13 ctermbg=bg
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
+  hi Title ctermbg=bg
   hi VertSplit ctermfg=144 ctermbg=234
-  hi Visual ctermfg=157 ctermbg=8
+  hi Visual cterm=NONE ctermfg=157 ctermbg=8
   hi VisualNOS ctermfg=224 ctermbg=130
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=231 ctermbg=93
   hi htmlTagName ctermfg=249 ctermbg=bg
   hi iCursor ctermfg=231 ctermbg=46
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
   hi perlControl ctermfg=144 ctermbg=235
   hi perlFunctionName ctermfg=231 ctermbg=bg
   hi perlIdentifier ctermfg=250
@@ -149,7 +133,7 @@ elseif &t_Co == 256
   hi perlSpecialBEOM ctermfg=fg ctermbg=235
   hi perlStatement ctermfg=144
   hi perlStatementControl ctermfg=185 ctermbg=bg
-  hi perlStatementFiledesc ctermfg=144 ctermbg=bg
+  hi perlStatementFileDesc ctermfg=144 ctermbg=bg
   hi perlStatementHash ctermfg=144 ctermbg=234
   hi perlStatementInclude ctermfg=144 ctermbg=bg
   hi perlStatementNew ctermfg=144 ctermbg=bg
@@ -165,45 +149,29 @@ elseif &t_Co == 256
   hi rightMargin ctermbg=236
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=80 ctermbg=76
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=43
   hi DiffChange ctermfg=49
   hi DiffText ctermfg=71
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi IncSearch ctermfg=47 ctermbg=22
   hi LineNr ctermbg=80
   hi ModeMsg ctermfg=43
-  hi MoreMsg ctermfg=28 ctermbg=bg
+  hi MoreMsg ctermbg=bg
   hi MyTagListFileName ctermfg=fg ctermbg=8
   hi NonText ctermbg=bg
   hi OverLength ctermfg=fg ctermbg=81
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
   hi PmenuThumb ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=16 ctermbg=87
   hi StatusLineNC ctermfg=84 ctermbg=80
-  hi TabLine ctermbg=81
-  hi Title ctermfg=67 ctermbg=bg
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
+  hi Title ctermbg=bg
   hi VertSplit ctermfg=84 ctermbg=80
-  hi Visual ctermfg=62 ctermbg=81
+  hi Visual cterm=NONE ctermfg=62 ctermbg=81
   hi VisualNOS ctermfg=78 ctermbg=52
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=79 ctermbg=35
   hi htmlTagName ctermfg=85 ctermbg=bg
   hi iCursor ctermfg=79 ctermbg=28
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
   hi perlControl ctermfg=57 ctermbg=80
   hi perlFunctionName ctermfg=79 ctermbg=bg
   hi perlIdentifier ctermfg=85
@@ -219,7 +187,7 @@ elseif &t_Co == 88
   hi perlSpecialBEOM ctermfg=fg ctermbg=80
   hi perlStatement ctermfg=57
   hi perlStatementControl ctermfg=57 ctermbg=bg
-  hi perlStatementFiledesc ctermfg=41 ctermbg=bg
+  hi perlStatementFileDesc ctermfg=41 ctermbg=bg
   hi perlStatementHash ctermfg=57 ctermbg=80
   hi perlStatementInclude ctermfg=57 ctermbg=bg
   hi perlStatementNew ctermfg=57 ctermbg=bg
@@ -235,45 +203,29 @@ elseif &t_Co == 88
   hi rightMargin ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=2 ctermbg=11
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=12
   hi DiffChange ctermfg=5
   hi DiffText ctermfg=13
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=14 ctermbg=6
   hi LineNr ctermbg=0
   hi ModeMsg ctermfg=12
-  hi MoreMsg ctermfg=2 ctermbg=bg
+  hi MoreMsg ctermbg=bg
   hi MyTagListFileName ctermfg=fg ctermbg=2
   hi NonText ctermbg=bg
   hi OverLength ctermfg=fg ctermbg=2
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
   hi PmenuThumb ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=0 ctermbg=11
   hi StatusLineNC ctermfg=8 ctermbg=0
-  hi TabLine ctermbg=2
-  hi Title ctermfg=13 ctermbg=bg
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
+  hi Title ctermbg=bg
   hi VertSplit ctermfg=8 ctermbg=0
-  hi Visual ctermfg=10 ctermbg=2
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
   hi VisualNOS ctermfg=11 ctermbg=3
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=15 ctermbg=5
   hi htmlTagName ctermfg=8 ctermbg=bg
   hi iCursor ctermfg=15 ctermbg=2
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
   hi perlControl ctermfg=7 ctermbg=0
   hi perlFunctionName ctermfg=15 ctermbg=bg
   hi perlIdentifier ctermfg=7
@@ -289,7 +241,7 @@ elseif &t_Co == 16
   hi perlSpecialBEOM ctermfg=fg ctermbg=0
   hi perlStatement ctermfg=7
   hi perlStatementControl ctermfg=10 ctermbg=bg
-  hi perlStatementFiledesc ctermfg=8 ctermbg=bg
+  hi perlStatementFileDesc ctermfg=8 ctermbg=bg
   hi perlStatementHash ctermfg=7 ctermbg=0
   hi perlStatementInclude ctermfg=7 ctermbg=bg
   hi perlStatementNew ctermfg=7 ctermbg=bg
@@ -305,45 +257,29 @@ elseif &t_Co == 16
   hi rightMargin ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=2 ctermbg=3
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=7
   hi DiffChange ctermfg=5
   hi DiffText ctermfg=7
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=7 ctermbg=6
   hi LineNr ctermbg=0
   hi ModeMsg ctermfg=7
-  hi MoreMsg ctermfg=2 ctermbg=bg
+  hi MoreMsg ctermbg=bg
   hi MyTagListFileName ctermfg=fg ctermbg=2
   hi NonText ctermbg=bg
   hi OverLength ctermfg=fg ctermbg=2
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
   hi PmenuThumb ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=7 ctermbg=0
-  hi TabLine ctermbg=2
-  hi Title ctermfg=5 ctermbg=bg
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
+  hi Title ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=3
-  hi WarningMsg ctermfg=1
   hi cursorim ctermfg=7 ctermbg=5
   hi htmlTagName ctermfg=7 ctermbg=bg
   hi iCursor ctermfg=7 ctermbg=2
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
   hi perlControl ctermfg=7 ctermbg=0
   hi perlFunctionName ctermfg=7 ctermbg=bg
   hi perlIdentifier ctermfg=7
@@ -359,7 +295,7 @@ else " 8 colors
   hi perlSpecialBEOM ctermfg=fg ctermbg=0
   hi perlStatement ctermfg=7
   hi perlStatementControl ctermfg=7 ctermbg=bg
-  hi perlStatementFiledesc ctermfg=7 ctermbg=bg
+  hi perlStatementFileDesc ctermfg=7 ctermbg=bg
   hi perlStatementHash ctermfg=7 ctermbg=0
   hi perlStatementInclude ctermfg=7 ctermbg=bg
   hi perlStatementNew ctermfg=7 ctermbg=bg

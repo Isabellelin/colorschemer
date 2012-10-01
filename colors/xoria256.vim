@@ -4,7 +4,7 @@
 " Name: xoria256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:00
+" Date: 2012-09-29 13:48:43
 "----------------------------------------------------------
 
 set background=dark
@@ -95,6 +95,7 @@ elseif &t_Co == 256
   hi DiffText cterm=NONE ctermfg=234 ctermbg=174
   hi Directory ctermfg=110
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=247 ctermbg=233
   hi Folded ctermfg=255 ctermbg=60
   hi Identifier cterm=NONE ctermfg=182
@@ -120,13 +121,14 @@ elseif &t_Co == 256
   hi Statement ctermfg=110
   hi StatusLine cterm=bold ctermfg=15 ctermbg=239
   hi StatusLineNC cterm=NONE ctermfg=249 ctermbg=237
-  hi TabLine cterm=NONE ctermfg=252
+  hi TabLine cterm=NONE ctermfg=252 ctermbg=242
   hi TabLineFill cterm=NONE ctermfg=252 ctermbg=237
+  hi Title ctermfg=225
   hi Todo ctermbg=184
   hi Type ctermfg=146
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=237 ctermbg=237
-  hi Visual ctermfg=255 ctermbg=96
+  hi Visual cterm=NONE ctermfg=255 ctermbg=96
   hi VisualNOS ctermfg=255 ctermbg=60
   hi WildMenu cterm=bold ctermbg=150
   hi diffAdded ctermfg=150
@@ -160,6 +162,7 @@ elseif &t_Co == 88
   hi DiffText cterm=NONE ctermfg=80 ctermbg=53
   hi Directory ctermfg=42
   hi Error ctermbg=48
+  hi ErrorMsg ctermbg=48
   hi FoldColumn ctermfg=84 ctermbg=16
   hi Folded ctermfg=87 ctermbg=81
   hi Identifier cterm=NONE ctermfg=86
@@ -185,13 +188,14 @@ elseif &t_Co == 88
   hi Statement ctermfg=42
   hi StatusLine cterm=bold ctermfg=79 ctermbg=81
   hi StatusLineNC cterm=NONE ctermfg=85 ctermbg=80
-  hi TabLine cterm=NONE ctermfg=86
+  hi TabLine cterm=NONE ctermfg=86 ctermbg=82
   hi TabLineFill cterm=NONE ctermfg=86 ctermbg=80
+  hi Title ctermfg=75
   hi Todo ctermbg=56
   hi Type ctermfg=85
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87 ctermbg=83
+  hi Visual cterm=NONE ctermfg=87 ctermbg=83
   hi VisualNOS ctermfg=87 ctermbg=81
   hi WildMenu cterm=bold ctermbg=57
   hi diffAdded ctermfg=57
@@ -225,6 +229,7 @@ elseif &t_Co == 16
   hi DiffText cterm=NONE ctermfg=0 ctermbg=8
   hi Directory ctermfg=8
   hi Error ctermbg=9
+  hi ErrorMsg ctermbg=9
   hi FoldColumn ctermfg=8 ctermbg=0
   hi Folded ctermfg=11 ctermbg=5
   hi Identifier cterm=NONE ctermfg=7
@@ -250,13 +255,14 @@ elseif &t_Co == 16
   hi Statement ctermfg=8
   hi StatusLine cterm=bold ctermfg=15 ctermbg=2
   hi StatusLineNC cterm=NONE ctermfg=8 ctermbg=2
-  hi TabLine cterm=NONE ctermfg=7
+  hi TabLine cterm=NONE ctermfg=7 ctermbg=3
   hi TabLineFill cterm=NONE ctermfg=7 ctermbg=2
+  hi Title ctermfg=15
   hi Todo ctermbg=3
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11 ctermbg=5
+  hi Visual cterm=NONE ctermfg=11 ctermbg=5
   hi VisualNOS ctermfg=11 ctermbg=5
   hi WildMenu cterm=bold ctermbg=10
   hi diffAdded ctermfg=10
@@ -290,6 +296,7 @@ else " 8 colors
   hi DiffText cterm=NONE ctermfg=0 ctermbg=7
   hi Directory ctermfg=7
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=0
   hi Folded ctermfg=7 ctermbg=5
   hi Identifier cterm=NONE ctermfg=7
@@ -315,13 +322,14 @@ else " 8 colors
   hi Statement ctermfg=7
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=2
-  hi TabLine cterm=NONE ctermfg=7
+  hi TabLine cterm=NONE ctermfg=7 ctermbg=3
   hi TabLineFill cterm=NONE ctermfg=7 ctermbg=2
+  hi Title ctermfg=7
   hi Todo ctermbg=3
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=5
+  hi Visual cterm=NONE ctermfg=7 ctermbg=5
   hi VisualNOS ctermfg=7 ctermbg=5
   hi WildMenu cterm=bold ctermbg=7
   hi diffAdded ctermfg=7

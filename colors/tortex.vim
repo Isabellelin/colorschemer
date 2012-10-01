@@ -4,7 +4,7 @@
 " Name: tortex
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:16
+" Date: 2012-09-29 13:46:33
 "----------------------------------------------------------
 
 set background=dark
@@ -82,7 +82,6 @@ elseif &t_Co == 256
   hi BlockBraces cterm=bold ctermfg=226 ctermbg=16
   hi Class ctermfg=129 ctermbg=16
   hi Comment ctermfg=75 ctermbg=16
-  hi Conceal ctermbg=8
   hi Constant ctermfg=217
   hi Cursor ctermfg=0 ctermbg=46
   hi CursorColumn ctermbg=237
@@ -92,7 +91,6 @@ elseif &t_Co == 256
   hi DiffChange ctermfg=16 ctermbg=117
   hi DiffDelete ctermfg=16 ctermbg=243
   hi DiffText cterm=NONE ctermfg=16 ctermbg=205
-  hi Directory ctermfg=14
   hi EnumerationName ctermfg=201 ctermbg=16
   hi EnumerationValue ctermfg=210 ctermbg=16
   hi ErrorMsg ctermfg=231 ctermbg=196
@@ -114,24 +112,20 @@ elseif &t_Co == 256
   hi Operator ctermfg=226 ctermbg=16
   hi OperatorBold cterm=bold ctermfg=226 ctermbg=16
   hi Pmenu ctermfg=231 ctermbg=61
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=61 ctermbg=250
   hi PreCondit ctermfg=130 ctermbg=16
   hi PreProc ctermfg=171
   hi Question ctermfg=48 ctermbg=16
   hi Search ctermfg=252 ctermbg=61
-  hi SignColumn ctermbg=8
   hi Special ctermfg=214 ctermbg=16
   hi SpecialKey ctermfg=51 ctermbg=16
   hi Statement ctermfg=226 ctermbg=16
   hi StatusLine cterm=NONE ctermfg=231 ctermbg=18
   hi StdFunction cterm=bold ctermfg=177 ctermbg=16
   hi StdName cterm=bold ctermfg=69 ctermbg=16
-  hi TabLine ctermbg=8
   hi Title cterm=bold ctermfg=202 ctermbg=16
   hi Todo ctermfg=196 ctermbg=226
   hi Type ctermfg=82
-  hi Underlined ctermfg=12
   hi Union ctermfg=250 ctermbg=16
   hi UserLabel2 cterm=bold ctermfg=166 ctermbg=16
   hi Visual cterm=bold ctermfg=238 ctermbg=251
@@ -151,7 +145,6 @@ elseif &t_Co == 88
   hi BlockBraces cterm=bold ctermfg=76 ctermbg=16
   hi Class ctermfg=51 ctermbg=16
   hi Comment ctermfg=43 ctermbg=16
-  hi Conceal ctermbg=81
   hi Constant ctermfg=74
   hi Cursor ctermfg=16 ctermbg=28
   hi CursorColumn ctermbg=80
@@ -161,7 +154,6 @@ elseif &t_Co == 88
   hi DiffChange ctermfg=16 ctermbg=43
   hi DiffDelete ctermfg=16 ctermbg=82
   hi DiffText cterm=NONE ctermfg=16 ctermbg=70
-  hi Directory ctermfg=31
   hi EnumerationName ctermfg=67 ctermbg=16
   hi EnumerationValue ctermfg=69 ctermbg=16
   hi ErrorMsg ctermfg=79 ctermbg=9
@@ -183,24 +175,20 @@ elseif &t_Co == 88
   hi Operator ctermfg=76 ctermbg=16
   hi OperatorBold cterm=bold ctermfg=76 ctermbg=16
   hi Pmenu ctermfg=79 ctermbg=81
-  hi PmenuSbar ctermbg=87
   hi PmenuSel ctermfg=81 ctermbg=85
   hi PreCondit ctermfg=52 ctermbg=16
   hi PreProc ctermfg=55
   hi Question ctermfg=29 ctermbg=16
   hi Search ctermfg=86 ctermbg=81
-  hi SignColumn ctermbg=81
   hi Special ctermfg=72 ctermbg=16
   hi SpecialKey ctermfg=31 ctermbg=16
   hi Statement ctermfg=76 ctermbg=16
   hi StatusLine cterm=NONE ctermfg=79 ctermbg=17
   hi StdFunction cterm=bold ctermfg=55 ctermbg=16
   hi StdName cterm=bold ctermfg=39 ctermbg=16
-  hi TabLine ctermbg=81
   hi Title cterm=bold ctermfg=68 ctermbg=16
   hi Todo ctermfg=9 ctermbg=76
   hi Type ctermfg=44
-  hi Underlined ctermfg=39
   hi Union ctermfg=85 ctermbg=16
   hi UserLabel2 cterm=bold ctermfg=52 ctermbg=16
   hi Visual cterm=bold ctermfg=80 ctermbg=58
@@ -220,7 +208,6 @@ elseif &t_Co == 16
   hi BlockBraces cterm=bold ctermfg=11 ctermbg=0
   hi Class ctermfg=13 ctermbg=0
   hi Comment ctermfg=12 ctermbg=0
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=2
@@ -230,7 +217,6 @@ elseif &t_Co == 16
   hi DiffChange ctermfg=0 ctermbg=12
   hi DiffDelete ctermfg=0 ctermbg=8
   hi DiffText cterm=NONE ctermfg=0 ctermbg=8
-  hi Directory ctermfg=14
   hi EnumerationName ctermfg=13 ctermbg=0
   hi EnumerationValue ctermfg=8 ctermbg=0
   hi ErrorMsg ctermfg=15 ctermbg=9
@@ -252,24 +238,20 @@ elseif &t_Co == 16
   hi Operator ctermfg=11 ctermbg=0
   hi OperatorBold cterm=bold ctermfg=11 ctermbg=0
   hi Pmenu ctermfg=15 ctermbg=8
-  hi PmenuSbar ctermbg=11
   hi PmenuSel ctermfg=8 ctermbg=7
   hi PreCondit ctermfg=3 ctermbg=0
   hi PreProc ctermfg=13
   hi Question ctermfg=6 ctermbg=0
   hi Search ctermfg=7 ctermbg=8
-  hi SignColumn ctermbg=2
   hi Special ctermfg=3 ctermbg=0
   hi SpecialKey ctermfg=14 ctermbg=0
   hi Statement ctermfg=11 ctermbg=0
   hi StatusLine cterm=NONE ctermfg=15 ctermbg=4
   hi StdFunction cterm=bold ctermfg=14 ctermbg=0
   hi StdName cterm=bold ctermfg=12 ctermbg=0
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=9 ctermbg=0
   hi Todo ctermfg=9 ctermbg=11
   hi Type ctermfg=3
-  hi Underlined ctermfg=12
   hi Union ctermfg=7 ctermbg=0
   hi UserLabel2 cterm=bold ctermfg=3 ctermbg=0
   hi Visual cterm=bold ctermfg=2 ctermbg=7
@@ -289,7 +271,6 @@ else " 8 colors
   hi BlockBraces cterm=bold ctermfg=3 ctermbg=0
   hi Class ctermfg=5 ctermbg=0
   hi Comment ctermfg=7 ctermbg=0
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=2
@@ -299,7 +280,6 @@ else " 8 colors
   hi DiffChange ctermfg=0 ctermbg=7
   hi DiffDelete ctermfg=0 ctermbg=3
   hi DiffText cterm=NONE ctermfg=0 ctermbg=7
-  hi Directory ctermfg=6
   hi EnumerationName ctermfg=5 ctermbg=0
   hi EnumerationValue ctermfg=7 ctermbg=0
   hi ErrorMsg ctermfg=7 ctermbg=1
@@ -321,24 +301,20 @@ else " 8 colors
   hi Operator ctermfg=3 ctermbg=0
   hi OperatorBold cterm=bold ctermfg=3 ctermbg=0
   hi Pmenu ctermfg=7 ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=5 ctermbg=7
   hi PreCondit ctermfg=3 ctermbg=0
   hi PreProc ctermfg=7
   hi Question ctermfg=6 ctermbg=0
   hi Search ctermfg=7 ctermbg=5
-  hi SignColumn ctermbg=2
   hi Special ctermfg=3 ctermbg=0
   hi SpecialKey ctermfg=6 ctermbg=0
   hi Statement ctermfg=3 ctermbg=0
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=4
   hi StdFunction cterm=bold ctermfg=7 ctermbg=0
   hi StdName cterm=bold ctermfg=6 ctermbg=0
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=3 ctermbg=0
   hi Todo ctermfg=1 ctermbg=3
   hi Type ctermfg=3
-  hi Underlined ctermfg=5
   hi Union ctermfg=7 ctermbg=0
   hi UserLabel2 cterm=bold ctermfg=3 ctermbg=0
   hi Visual cterm=bold ctermfg=2 ctermbg=7

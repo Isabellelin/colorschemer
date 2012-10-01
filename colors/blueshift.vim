@@ -4,7 +4,7 @@
 " Name: blueshift
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:02
+" Date: 2012-09-29 13:31:01
 "----------------------------------------------------------
 
 set background=light
@@ -50,6 +50,7 @@ if has("gui_running")
   hi PreProc guifg=#1060a0
   hi Question guifg=black guibg=#ffbc29
   hi Repeat gui=bold guifg=#0048ff
+  hi Search guifg=NONE
   hi Special guifg=black guibg=white
   hi SpecialKey guifg=#1060a0 guibg=white
   hi Statement gui=NONE guifg=#0048ff
@@ -88,6 +89,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=16
   hi Question ctermbg=214
   hi Repeat ctermfg=27
+  hi Search ctermfg=NONE
   hi Special ctermbg=231
   hi SpecialKey ctermbg=231
   hi StatusLine ctermfg=231 ctermbg=103
@@ -97,7 +99,7 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=246
   hi TabLineSel ctermfg=16 ctermbg=255
   hi VertSplit ctermfg=145 ctermbg=145
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi Boolean ctermfg=23
@@ -119,6 +121,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=16
   hi Question ctermbg=72
   hi Repeat ctermfg=23
+  hi Search ctermfg=NONE
   hi Special ctermbg=79
   hi SpecialKey ctermbg=79
   hi StatusLine ctermfg=79 ctermbg=83
@@ -128,7 +131,7 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=84
   hi TabLineSel ctermfg=16 ctermbg=87
   hi VertSplit ctermfg=85 ctermbg=85
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Boolean ctermfg=6
@@ -150,6 +153,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=0
   hi Question ctermbg=3
   hi Repeat ctermfg=6
+  hi Search ctermfg=NONE
   hi Special ctermbg=15
   hi SpecialKey ctermbg=15
   hi StatusLine ctermfg=15 ctermbg=8
@@ -159,7 +163,7 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=8
   hi TabLineSel ctermfg=0 ctermbg=15
   hi VertSplit ctermfg=8 ctermbg=8
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=6
@@ -181,6 +185,7 @@ else " 8 colors
   hi Operator ctermfg=0
   hi Question ctermbg=3
   hi Repeat ctermfg=6
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=7
@@ -190,7 +195,7 @@ else " 8 colors
   hi TabLineFill ctermfg=7
   hi TabLineSel ctermfg=0 ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
 endif
 
 

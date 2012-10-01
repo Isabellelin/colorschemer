@@ -4,7 +4,7 @@
 " Name: ron
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:43
+" Date: 2012-09-29 13:43:15
 "----------------------------------------------------------
 
 set background=dark
@@ -53,7 +53,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=214
   hi StatusLine ctermfg=51 ctermbg=21
   hi StatusLineNC ctermfg=152 ctermbg=18
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
   hi WarningMsg ctermbg=46
   hi cIf0 ctermfg=250
 elseif &t_Co == 88
@@ -64,7 +64,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=68
   hi StatusLine ctermfg=31 ctermbg=19
   hi StatusLineNC ctermfg=86 ctermbg=17
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
   hi WarningMsg ctermbg=28
   hi cIf0 ctermfg=85
 elseif &t_Co == 16
@@ -75,7 +75,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=3
   hi StatusLine ctermfg=14 ctermbg=4
   hi StatusLineNC ctermfg=12 ctermbg=4
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
   hi WarningMsg ctermbg=2
   hi cIf0 ctermfg=7
 else " 8 colors
@@ -86,7 +86,7 @@ else " 8 colors
   hi Operator ctermfg=3
   hi StatusLine ctermfg=6 ctermbg=4
   hi StatusLineNC ctermfg=7 ctermbg=4
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
   hi WarningMsg ctermbg=2
   hi cIf0 ctermfg=7
 endif

@@ -4,7 +4,7 @@
 " Name: bluez
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:03
+" Date: 2012-09-29 13:31:02
 "----------------------------------------------------------
 
 set background=dark
@@ -22,7 +22,6 @@ if has("gui_running")
   hi Comment guibg=#000000
   hi Conditional guifg=#00afff guibg=#000000
   hi Constant guibg=#000000
-  hi Cursor guifg=#0000af guibg=#5f87d7
   hi Debug guifg=#5fd700 guibg=#000000
   hi Define guifg=#5f00af guibg=#000000
   hi Delimiter guifg=#5f5fd7 guibg=#000000
@@ -61,7 +60,6 @@ if has("gui_running")
   hi Underline guifg=#5faf00 guibg=#000000
   hi VertSplit guifg=#5f0000 guibg=#000000
   hi VimModeline guifg=#5fd75f guibg=#000000
-  hi lcursor guifg=#0000af guibg=#5f87ff
 elseif &t_Co == 256
   hi Normal ctermfg=47 ctermbg=0
   hi Boolean ctermfg=74 ctermbg=0
@@ -113,8 +111,9 @@ elseif &t_Co == 256
   hi Underline cterm=underline ctermfg=70 ctermbg=0
   hi VertSplit ctermfg=52 ctermbg=0
   hi VimModeline ctermfg=77 ctermbg=0
+  hi Visual cterm=NONE ctermbg=8
   hi WildMenu ctermfg=79 ctermbg=23
-  hi lcursor ctermfg=19 ctermbg=69
+  hi lCursor ctermfg=19 ctermbg=69
 elseif &t_Co == 88
   hi Normal ctermfg=29 ctermbg=16
   hi Boolean ctermfg=42 ctermbg=16
@@ -166,8 +165,9 @@ elseif &t_Co == 88
   hi Underline cterm=underline ctermfg=40 ctermbg=16
   hi VertSplit ctermfg=32 ctermbg=16
   hi VimModeline ctermfg=41 ctermbg=16
+  hi Visual cterm=NONE ctermbg=81
   hi WildMenu ctermfg=42 ctermbg=21
-  hi lcursor ctermfg=4 ctermbg=39
+  hi lCursor ctermfg=4 ctermbg=39
 elseif &t_Co == 16
   hi Normal ctermfg=6 ctermbg=0
   hi Boolean ctermfg=8 ctermbg=0
@@ -219,8 +219,9 @@ elseif &t_Co == 16
   hi Underline cterm=underline ctermfg=3 ctermbg=0
   hi VertSplit ctermfg=1 ctermbg=0
   hi VimModeline ctermfg=10 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi WildMenu ctermfg=10 ctermbg=6
-  hi lcursor ctermfg=4 ctermbg=12
+  hi lCursor ctermfg=4 ctermbg=12
 else " 8 colors
   hi Normal ctermfg=6 ctermbg=0
   hi Boolean ctermfg=7 ctermbg=0
@@ -272,8 +273,9 @@ else " 8 colors
   hi Underline cterm=underline ctermfg=3 ctermbg=0
   hi VertSplit ctermfg=1 ctermbg=0
   hi VimModeline ctermfg=3 ctermbg=0
+  hi Visual cterm=NONE ctermbg=2
   hi WildMenu ctermfg=7 ctermbg=6
-  hi lcursor ctermfg=4 ctermbg=6
+  hi lCursor ctermfg=4 ctermbg=6
 endif
 
 

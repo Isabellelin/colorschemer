@@ -4,7 +4,7 @@
 " Name: whitebox
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:34
+" Date: 2012-09-29 13:48:11
 "----------------------------------------------------------
 
 set background=light
@@ -45,7 +45,7 @@ if has("gui_running")
   hi PmenuThumb gui=reverse
   hi PreProc guifg=#d5459c
   hi Question guifg=seagreen
-  hi Search guibg=#aec4e2
+  hi Search guifg=NONE guibg=#aec4e2
   hi SignColumn guifg=darkblue guibg=grey
   hi Special guifg=slateblue
   hi SpecialKey guifg=blue
@@ -59,7 +59,6 @@ if has("gui_running")
   hi Underlined guifg=slateblue
   hi VertSplit guifg=#c1b6a1
   hi Visual guibg=#a0b8cc
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=red
   hi WildMenu guifg=black guibg=yellow
 elseif &t_Co == 256
@@ -68,36 +67,44 @@ elseif &t_Co == 256
   hi CursorLine ctermfg=41 ctermbg=7
   hi Function ctermfg=214
   hi IncSearch ctermfg=152 ctermbg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=235
   hi String ctermfg=202
   hi VertSplit ctermfg=249
+  hi Visual cterm=NONE ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=82
   hi Cursor ctermfg=79 ctermbg=23
   hi CursorLine ctermfg=25 ctermbg=87
   hi Function ctermfg=72
   hi IncSearch ctermfg=86 ctermbg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=80
   hi String ctermfg=9
   hi VertSplit ctermfg=85
+  hi Visual cterm=NONE ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=6
   hi Cursor ctermfg=15 ctermbg=6
   hi CursorLine ctermfg=6 ctermbg=11
   hi Function ctermfg=3
   hi IncSearch ctermfg=12 ctermbg=9
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0
   hi String ctermfg=9
   hi VertSplit ctermfg=7
+  hi Visual cterm=NONE ctermbg=11
 else " 8 colors
   hi Normal ctermfg=6
   hi Cursor ctermfg=7 ctermbg=6
   hi CursorLine ctermfg=6 ctermbg=7
   hi Function ctermfg=3
   hi IncSearch ctermfg=7 ctermbg=1
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0
   hi String ctermfg=1
   hi VertSplit ctermfg=7
+  hi Visual cterm=NONE ctermbg=7
 endif
 
 hi! link Float Constant

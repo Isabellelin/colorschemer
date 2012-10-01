@@ -4,7 +4,7 @@
 " Name: burnttoast256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:10
+" Date: 2012-09-29 13:31:14
 "----------------------------------------------------------
 
 set background=dark
@@ -36,8 +36,6 @@ if has("gui_running")
   hi Identifier guifg=#af5fd7
   hi Ignore guifg=#444444
   hi IncSearch gui=NONE guifg=#000000 guibg=#ffdfaf
-  hi IndentGuidesEven guifg=#3a3a3a guibg=#121212
-  hi IndentGuidesOdd guifg=#3a3a3a guibg=#262626
   hi LineNr guifg=#7f7f7f guibg=#121212
   hi MatchParen gui=bold guifg=#d7d7d7 guibg=#5f87d7
   hi NonText guifg=#3a3a3a
@@ -65,10 +63,12 @@ if has("gui_running")
   hi Underlined guifg=#00afff
   hi VertSplit gui=NONE guifg=#3a3a3a guibg=#3a3a3a
   hi Visual guifg=#005f87 guibg=#afd7ff
-  hi VisualNOS guifg=#005f87 guibg=#afd7ff
+  hi VisualNOS gui=NONE guifg=#005f87 guibg=#afd7ff
   hi WildMenu gui=bold guifg=#000000 guibg=#d7d700
   hi diffAdded guifg=#afd787
   hi diffRemoved guifg=#d78787
+  hi indentGuidesEven guifg=#3a3a3a guibg=#121212
+  hi indentGuidesOdd guifg=#3a3a3a guibg=#262626
 elseif &t_Co == 256
   hi Normal ctermfg=252 ctermbg=16
   hi ColorColumn ctermbg=233
@@ -83,14 +83,13 @@ elseif &t_Co == 256
   hi DiffDelete ctermfg=16 ctermbg=246
   hi DiffText cterm=NONE ctermfg=16 ctermbg=174
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=248 ctermbg=16
   hi Folded ctermfg=255 ctermbg=60
   hi GreenBar ctermbg=22
   hi Identifier cterm=NONE ctermfg=134
   hi Ignore ctermfg=238
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=223
-  hi IndentGuidesEven ctermfg=237 ctermbg=233
-  hi IndentGuidesOdd ctermfg=237 ctermbg=235
   hi LineNr ctermfg=8 ctermbg=233
   hi MatchParen cterm=bold ctermfg=188 ctermbg=68
   hi NonText ctermfg=237
@@ -111,17 +110,19 @@ elseif &t_Co == 256
   hi StatusLine cterm=bold ctermbg=239
   hi StatusLineNC cterm=NONE ctermbg=237
   hi String ctermfg=217
-  hi TabLine ctermfg=252
+  hi TabLine ctermfg=252 ctermbg=242
   hi TabLineFill cterm=underline ctermfg=252 ctermbg=242
   hi Todo ctermbg=36
   hi Type ctermfg=146
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=237 ctermbg=237
-  hi Visual ctermfg=24 ctermbg=153
-  hi VisualNOS ctermfg=24 ctermbg=153
+  hi Visual cterm=NONE ctermfg=24 ctermbg=153
+  hi VisualNOS cterm=NONE ctermfg=24 ctermbg=153
   hi WildMenu cterm=bold ctermbg=184
   hi diffAdded ctermfg=150
   hi diffRemoved ctermfg=174
+  hi indentGuidesEven ctermfg=237 ctermbg=233
+  hi indentGuidesOdd ctermfg=237 ctermbg=235
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=16
   hi ColorColumn ctermbg=16
@@ -136,14 +137,13 @@ elseif &t_Co == 88
   hi DiffDelete ctermfg=16 ctermbg=83
   hi DiffText cterm=NONE ctermfg=16 ctermbg=53
   hi Error ctermbg=48
+  hi ErrorMsg ctermbg=48
   hi FoldColumn ctermfg=84 ctermbg=16
   hi Folded ctermfg=87 ctermbg=81
   hi GreenBar ctermbg=20
   hi Identifier cterm=NONE ctermfg=54
   hi Ignore ctermfg=80
   hi IncSearch cterm=NONE ctermfg=16 ctermbg=74
-  hi IndentGuidesEven ctermfg=80 ctermbg=16
-  hi IndentGuidesOdd ctermfg=80 ctermbg=80
   hi LineNr ctermfg=81 ctermbg=16
   hi MatchParen cterm=bold ctermfg=86 ctermbg=38
   hi NonText ctermfg=80
@@ -164,17 +164,19 @@ elseif &t_Co == 88
   hi StatusLine cterm=bold ctermbg=81
   hi StatusLineNC cterm=NONE ctermbg=80
   hi String ctermfg=74
-  hi TabLine ctermfg=86
+  hi TabLine ctermfg=86 ctermbg=82
   hi TabLineFill cterm=underline ctermfg=86 ctermbg=82
   hi Todo ctermbg=25
   hi Type ctermfg=85
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=21 ctermbg=59
-  hi VisualNOS ctermfg=21 ctermbg=59
+  hi Visual cterm=NONE ctermfg=21 ctermbg=59
+  hi VisualNOS cterm=NONE ctermfg=21 ctermbg=59
   hi WildMenu cterm=bold ctermbg=56
   hi diffAdded ctermfg=57
   hi diffRemoved ctermfg=53
+  hi indentGuidesEven ctermfg=80 ctermbg=16
+  hi indentGuidesOdd ctermfg=80 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi ColorColumn ctermbg=0
@@ -189,14 +191,13 @@ elseif &t_Co == 16
   hi DiffDelete ctermfg=0 ctermbg=8
   hi DiffText cterm=NONE ctermfg=0 ctermbg=8
   hi Error ctermbg=9
+  hi ErrorMsg ctermbg=9
   hi FoldColumn ctermfg=8 ctermbg=0
   hi Folded ctermfg=11 ctermbg=5
   hi GreenBar ctermbg=2
   hi Identifier cterm=NONE ctermfg=8
   hi Ignore ctermfg=2
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=11
-  hi IndentGuidesEven ctermfg=2 ctermbg=0
-  hi IndentGuidesOdd ctermfg=2 ctermbg=0
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen cterm=bold ctermfg=12 ctermbg=8
   hi NonText ctermfg=2
@@ -217,17 +218,19 @@ elseif &t_Co == 16
   hi StatusLine cterm=bold ctermbg=2
   hi StatusLineNC cterm=NONE ctermbg=2
   hi String ctermfg=7
-  hi TabLine ctermfg=7
+  hi TabLine ctermfg=7 ctermbg=3
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=3
   hi Todo ctermbg=6
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=12
-  hi VisualNOS ctermfg=6 ctermbg=12
+  hi Visual cterm=NONE ctermfg=6 ctermbg=12
+  hi VisualNOS cterm=NONE ctermfg=6 ctermbg=12
   hi WildMenu cterm=bold ctermbg=3
   hi diffAdded ctermfg=10
   hi diffRemoved ctermfg=8
+  hi indentGuidesEven ctermfg=2 ctermbg=0
+  hi indentGuidesOdd ctermfg=2 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi ColorColumn ctermbg=0
@@ -242,14 +245,13 @@ else " 8 colors
   hi DiffDelete ctermfg=0 ctermbg=7
   hi DiffText cterm=NONE ctermfg=0 ctermbg=7
   hi Error ctermbg=1
+  hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=0
   hi Folded ctermfg=7 ctermbg=5
   hi GreenBar ctermbg=2
   hi Identifier cterm=NONE ctermfg=7
   hi Ignore ctermfg=2
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=7
-  hi IndentGuidesEven ctermfg=2 ctermbg=0
-  hi IndentGuidesOdd ctermfg=2 ctermbg=0
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen cterm=bold ctermfg=7 ctermbg=6
   hi NonText ctermfg=2
@@ -270,17 +272,19 @@ else " 8 colors
   hi StatusLine cterm=bold ctermbg=2
   hi StatusLineNC cterm=NONE ctermbg=2
   hi String ctermfg=7
-  hi TabLine ctermfg=7
+  hi TabLine ctermfg=7 ctermbg=3
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=3
   hi Todo ctermbg=6
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=7
-  hi VisualNOS ctermfg=6 ctermbg=7
+  hi Visual cterm=NONE ctermfg=6 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=6 ctermbg=7
   hi WildMenu cterm=bold ctermbg=3
   hi diffAdded ctermfg=7
   hi diffRemoved ctermfg=7
+  hi indentGuidesEven ctermfg=2 ctermbg=0
+  hi indentGuidesOdd ctermfg=2 ctermbg=0
 endif
 
 

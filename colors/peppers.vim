@@ -4,7 +4,7 @@
 " Name: peppers
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:26
+" Date: 2012-09-29 13:41:33
 "----------------------------------------------------------
 
 set background=dark
@@ -48,7 +48,7 @@ if has("gui_running")
   hi VertSplit gui=NONE guifg=SkyBlue guibg=black
   hi Visual guifg=Black guibg=Yellow
   hi browseDirectory guifg=DarkSlateGray1
-  hi lcursor guibg=Cyan
+  hi lCursor guifg=NONE guibg=Cyan
 elseif &t_Co == 256
   hi Normal ctermfg=106 ctermbg=16
   hi Boolean ctermfg=199
@@ -69,9 +69,9 @@ elseif &t_Co == 256
   hi Title ctermbg=231
   hi Typedef ctermfg=200
   hi VertSplit ctermfg=116 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi browseDirectory ctermfg=123
-  hi lcursor ctermbg=51
+  hi lCursor ctermfg=NONE ctermbg=51
 elseif &t_Co == 88
   hi Normal ctermfg=40 ctermbg=16
   hi Boolean ctermfg=65
@@ -92,9 +92,9 @@ elseif &t_Co == 88
   hi Title ctermbg=79
   hi Typedef ctermfg=66
   hi VertSplit ctermfg=43 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi browseDirectory ctermfg=47
-  hi lcursor ctermbg=31
+  hi lCursor ctermfg=NONE ctermbg=31
 elseif &t_Co == 16
   hi Normal ctermfg=3 ctermbg=0
   hi Boolean ctermfg=13
@@ -115,9 +115,9 @@ elseif &t_Co == 16
   hi Title ctermbg=15
   hi Typedef ctermfg=13
   hi VertSplit ctermfg=12 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi browseDirectory ctermfg=14
-  hi lcursor ctermbg=14
+  hi lCursor ctermfg=NONE ctermbg=14
 else " 8 colors
   hi Normal ctermfg=3 ctermbg=0
   hi Boolean ctermfg=5
@@ -138,9 +138,9 @@ else " 8 colors
   hi Title ctermbg=7
   hi Typedef ctermfg=5
   hi VertSplit ctermfg=7 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi browseDirectory ctermfg=7
-  hi lcursor ctermbg=6
+  hi lCursor ctermfg=NONE ctermbg=6
 endif
 
 

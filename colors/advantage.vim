@@ -4,7 +4,7 @@
 " Name: advantage
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:30
+" Date: 2012-09-29 13:30:26
 "----------------------------------------------------------
 
 set background=dark
@@ -48,7 +48,7 @@ if has("gui_running")
   hi VertSplit gui=NONE guifg=#075554 guibg=#C0FFFF
   hi Visual gui=bold guifg=black guibg=#84AF84
   hi WarningMsg gui=underline guifg=#F60000
-  hi lcursor guibg=SeaGreen1
+  hi lCursor guifg=NONE guibg=SeaGreen1
 elseif &t_Co == 256
   hi Normal ctermfg=44 ctermbg=232
   hi Cursor ctermfg=254 ctermbg=167
@@ -61,8 +61,8 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=51 ctermbg=30
   hi StatusLineNC ctermfg=242 ctermbg=23
   hi VertSplit ctermfg=23 ctermbg=159
-  hi Visual ctermfg=16
-  hi lcursor ctermbg=85
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
+  hi lCursor ctermfg=NONE ctermbg=85
 elseif &t_Co == 88
   hi Normal ctermfg=6 ctermbg=16
   hi Cursor ctermfg=87 ctermbg=48
@@ -75,8 +75,8 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=31 ctermbg=21
   hi StatusLineNC ctermfg=82 ctermbg=80
   hi VertSplit ctermfg=81 ctermbg=63
-  hi Visual ctermfg=16
-  hi lcursor ctermbg=45
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
+  hi lCursor ctermfg=NONE ctermbg=45
 elseif &t_Co == 16
   hi Normal ctermfg=6 ctermbg=0
   hi Cursor ctermfg=11 ctermbg=9
@@ -89,8 +89,8 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=14 ctermbg=6
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=14
-  hi Visual ctermfg=0
-  hi lcursor ctermbg=10
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
+  hi lCursor ctermfg=NONE ctermbg=10
 else " 8 colors
   hi Normal ctermfg=6 ctermbg=0
   hi Cursor ctermfg=7 ctermbg=1
@@ -103,8 +103,8 @@ else " 8 colors
   hi StatusLine ctermfg=6 ctermbg=6
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=7
-  hi Visual ctermfg=0
-  hi lcursor ctermbg=7
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
+  hi lCursor ctermfg=NONE ctermbg=7
 endif
 
 

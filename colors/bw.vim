@@ -4,7 +4,7 @@
 " Name: bw
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:13
+" Date: 2012-09-29 13:31:21
 "----------------------------------------------------------
 
 set background=light
@@ -16,6 +16,7 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
+  hi Search guifg=NONE
 elseif &t_Co == 256
   hi Comment cterm=bold ctermfg=NONE
   hi Constant cterm=underline ctermfg=NONE
@@ -35,7 +36,7 @@ elseif &t_Co == 256
   hi NonText cterm=bold ctermfg=NONE
   hi PreProc cterm=underline ctermfg=NONE
   hi Question cterm=standout ctermfg=NONE
-  hi Search cterm=reverse
+  hi Search cterm=reverse ctermfg=NONE
   hi Special cterm=bold ctermfg=NONE
   hi SpecialKey cterm=bold ctermfg=NONE
   hi Statement cterm=bold ctermfg=NONE
@@ -43,8 +44,7 @@ elseif &t_Co == 256
   hi Todo cterm=standout ctermfg=NONE
   hi Type cterm=underline ctermfg=NONE
   hi Underlined ctermfg=NONE
-  hi Visual cterm=reverse
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=7
   hi WarningMsg cterm=standout ctermfg=NONE
   hi WildMenu cterm=standout ctermfg=NONE
 elseif &t_Co == 88
@@ -66,7 +66,7 @@ elseif &t_Co == 88
   hi NonText cterm=bold ctermfg=NONE
   hi PreProc cterm=underline ctermfg=NONE
   hi Question cterm=standout ctermfg=NONE
-  hi Search cterm=reverse
+  hi Search cterm=reverse ctermfg=NONE
   hi Special cterm=bold ctermfg=NONE
   hi SpecialKey cterm=bold ctermfg=NONE
   hi Statement cterm=bold ctermfg=NONE
@@ -74,8 +74,7 @@ elseif &t_Co == 88
   hi Todo cterm=standout ctermfg=NONE
   hi Type cterm=underline ctermfg=NONE
   hi Underlined ctermfg=NONE
-  hi Visual cterm=reverse
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=87
   hi WarningMsg cterm=standout ctermfg=NONE
   hi WildMenu cterm=standout ctermfg=NONE
 elseif &t_Co == 16
@@ -97,7 +96,7 @@ elseif &t_Co == 16
   hi NonText cterm=bold ctermfg=NONE
   hi PreProc cterm=underline ctermfg=NONE
   hi Question cterm=standout ctermfg=NONE
-  hi Search cterm=reverse
+  hi Search cterm=reverse ctermfg=NONE
   hi Special cterm=bold ctermfg=NONE
   hi SpecialKey cterm=bold ctermfg=NONE
   hi Statement cterm=bold ctermfg=NONE
@@ -105,8 +104,7 @@ elseif &t_Co == 16
   hi Todo cterm=standout ctermfg=NONE
   hi Type cterm=underline ctermfg=NONE
   hi Underlined ctermfg=NONE
-  hi Visual cterm=reverse
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=11
   hi WarningMsg cterm=standout ctermfg=NONE
   hi WildMenu cterm=standout ctermfg=NONE
 else " 8 colors
@@ -128,7 +126,7 @@ else " 8 colors
   hi NonText cterm=bold ctermfg=NONE
   hi PreProc cterm=underline ctermfg=NONE
   hi Question cterm=standout ctermfg=NONE
-  hi Search cterm=reverse
+  hi Search cterm=reverse ctermfg=NONE
   hi Special cterm=bold ctermfg=NONE
   hi SpecialKey cterm=bold ctermfg=NONE
   hi Statement cterm=bold ctermfg=NONE
@@ -136,8 +134,7 @@ else " 8 colors
   hi Todo cterm=standout ctermfg=NONE
   hi Type cterm=underline ctermfg=NONE
   hi Underlined ctermfg=NONE
-  hi Visual cterm=reverse
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=7
   hi WarningMsg cterm=standout ctermfg=NONE
   hi WildMenu cterm=standout ctermfg=NONE
 endif

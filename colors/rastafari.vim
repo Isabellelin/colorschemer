@@ -4,7 +4,7 @@
 " Name: rastafari
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:15
+" Date: 2012-09-29 13:42:38
 "----------------------------------------------------------
 
 set background=dark
@@ -21,11 +21,11 @@ if has("gui_running")
   hi Conditional gui=bold guifg=#dddddd guibg=bg
   hi Constant guifg=#aa2222 guibg=bg
   hi Cursor guifg=#000000 guibg=#ff0000
-  hi CursorColumn guifg=#6c6c6c guibg=#111111
-  hi CursorLine guifg=#6c6c6c guibg=#111111
+  hi CursorColumn guifg=#4d4d4d guibg=#111111
+  hi CursorLine guifg=#4d4d4d guibg=#111111
   hi Define gui=bold guifg=#666666 guibg=bg
   hi DiffAdd gui=bold guifg=#ffff33 guibg=#404010
-  hi DiffChange gui=bold guifg=#6c6c6c guibg=#202020
+  hi DiffChange gui=bold guifg=#4d4d4d guibg=#202020
   hi DiffDelete guifg=#ff0000 guibg=#401010
   hi DiffText guifg=#3333ff guibg=#100040
   hi Directory gui=bold guifg=#ffff60 guibg=bg
@@ -107,7 +107,7 @@ if has("gui_running")
   hi doxygenspecialmultilinedesc guifg=#00aa00 guibg=bg
   hi helpHyperTextJump guifg=#ffaa00 guibg=bg
   hi htmlLink guifg=#3333ff guibg=bg
-  hi lcursor guifg=#000000 guibg=#80ff80
+  hi lCursor guifg=#000000 guibg=#80ff80
   hi netrwExe guifg=#aa2222 guibg=bg
   hi netrwList guifg=#aaaaaa guibg=#000000
   hi netrwSymLink guifg=#1111ff guibg=bg
@@ -120,7 +120,7 @@ if has("gui_running")
   hi perlVarPlain2 guifg=#aaaaaa guibg=bg
   hi rubySharpBang gui=bold guifg=#80ff80 guibg=bg
   hi vimFold guifg=#888888 guibg=#222222
-  hi vimHiCTermColor guifg=#ffff60 guibg=bg
+  hi vimHiCtermColor guifg=#ffff60 guibg=bg
   hi xmlAttrib gui=bold guifg=#666666 guibg=bg
   hi xmlEndTag gui=bold guifg=#ffffff guibg=bg
   hi xmlEntity guifg=#ff8800 guibg=bg
@@ -128,311 +128,87 @@ if has("gui_running")
   hi xmlTag gui=bold guifg=#ffffff guibg=bg
   hi xmlTagName gui=bold guifg=#ffffff guibg=bg
 elseif &t_Co == 256
-  hi Normal ctermfg=248 ctermbg=16
+  hi Normal ctermfg=7 ctermbg=16
   hi Comment ctermfg=2 ctermbg=bg
   hi Conditional cterm=bold ctermfg=15 ctermbg=bg
-  hi Constant ctermfg=1 ctermbg=bg
+  hi Constant ctermfg=4 ctermbg=bg
   hi Cursor ctermfg=16 ctermbg=9
-  hi CursorColumn ctermfg=242 ctermbg=248
-  hi CursorLine cterm=NONE ctermfg=242 ctermbg=248
-  hi Define cterm=bold ctermfg=242 ctermbg=bg
+  hi CursorColumn ctermfg=8 ctermbg=7
+  hi CursorLine cterm=NONE ctermfg=8 ctermbg=7
+  hi Define cterm=bold ctermfg=8 ctermbg=bg
   hi DiffAdd ctermfg=10
-  hi DiffChange ctermfg=242
-  hi DiffDelete ctermfg=9
-  hi DiffText cterm=NONE ctermfg=12
-  hi Directory ctermfg=11 ctermbg=bg
-  hi ErrorMsg ctermfg=11 ctermbg=9
+  hi DiffChange ctermfg=8
+  hi DiffDelete ctermfg=12
+  hi DiffText cterm=NONE ctermfg=9
+  hi Directory ctermfg=14 ctermbg=bg
+  hi ErrorMsg ctermfg=14 ctermbg=12
   hi FoldColumn cterm=bold ctermbg=0
   hi Folded cterm=reverse ctermbg=0
   hi Function ctermfg=15 ctermbg=bg
   hi Identifier ctermfg=15 ctermbg=bg
-  hi Ignore cterm=bold ctermfg=242 ctermbg=bg
-  hi IncSearch cterm=NONE ctermfg=15 ctermbg=14
-  hi Include cterm=bold ctermfg=242 ctermbg=bg
-  hi Label cterm=bold ctermfg=248 ctermbg=bg
+  hi Ignore cterm=bold ctermfg=8 ctermbg=bg
+  hi IncSearch cterm=NONE ctermfg=15 ctermbg=11
+  hi Include cterm=bold ctermfg=8 ctermbg=bg
+  hi Label cterm=bold ctermfg=7 ctermbg=bg
   hi LineNr ctermbg=bg
-  hi Macro cterm=bold ctermfg=242 ctermbg=bg
-  hi MatchParen ctermfg=248 ctermbg=12
-  hi MoreMsg cterm=bold ctermfg=10 ctermbg=bg
-  hi NonText ctermfg=11 ctermbg=bg
-  hi Number ctermfg=1 ctermbg=bg
+  hi Macro cterm=bold ctermfg=8 ctermbg=bg
+  hi MatchParen ctermfg=7 ctermbg=9
+  hi MoreMsg cterm=bold ctermbg=bg
+  hi NonText ctermfg=14 ctermbg=bg
+  hi Number ctermfg=4 ctermbg=bg
   hi Operator cterm=bold ctermfg=15 ctermbg=bg
   hi Pmenu ctermfg=10 ctermbg=10
-  hi PmenuSel cterm=bold ctermfg=11 ctermbg=9
-  hi PreCondit cterm=bold ctermfg=242 ctermbg=bg
-  hi PreProc cterm=bold ctermfg=242 ctermbg=bg
-  hi Question cterm=bold ctermbg=121
+  hi PmenuSel cterm=bold ctermfg=14 ctermbg=12
+  hi PreCondit cterm=bold ctermfg=8 ctermbg=bg
+  hi PreProc cterm=bold ctermfg=8 ctermbg=bg
+  hi Question cterm=bold ctermbg=10
   hi Repeat cterm=bold ctermfg=15 ctermbg=bg
-  hi Search ctermfg=15 ctermbg=12
+  hi Search ctermfg=15 ctermbg=9
   hi SignColumn ctermbg=0
-  hi Special ctermfg=130 ctermbg=bg
-  hi SpecialKey ctermfg=11 ctermbg=bg
+  hi Special ctermfg=6 ctermbg=bg
+  hi SpecialKey ctermfg=14 ctermbg=bg
   hi SpellBad cterm=underline ctermbg=NONE
   hi SpellCap cterm=underline ctermbg=NONE
   hi SpellLocal cterm=underline ctermbg=NONE
   hi SpellRare cterm=underline ctermbg=NONE
   hi Statement cterm=bold ctermfg=15 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=121 ctermbg=28
-  hi String ctermfg=1 ctermbg=bg
-  hi TabLine cterm=bold ctermfg=121 ctermbg=121
-  hi TabLineFill cterm=NONE ctermfg=121 ctermbg=10
-  hi TabLineSel cterm=NONE ctermfg=11 ctermbg=10
-  hi Title cterm=bold ctermfg=13 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=10 ctermbg=28
+  hi String ctermfg=4 ctermbg=bg
+  hi TabLine cterm=bold ctermfg=10 ctermbg=10
+  hi TabLineFill cterm=NONE ctermfg=10 ctermbg=10
+  hi TabLineSel cterm=NONE ctermfg=14 ctermbg=10
+  hi Title cterm=bold ctermbg=bg
   hi Type ctermfg=15 ctermbg=bg
-  hi User1 cterm=bold ctermfg=121 ctermbg=121
-  hi User2 cterm=bold ctermfg=11 ctermbg=121
-  hi User3 cterm=bold ctermfg=121 ctermbg=121
-  hi User4 cterm=bold ctermfg=121 ctermbg=121
-  hi VertSplit cterm=NONE ctermfg=121 ctermbg=10
-  hi VimCommentTitle ctermfg=121 ctermbg=bg
+  hi User1 cterm=bold ctermfg=10 ctermbg=10
+  hi User2 cterm=bold ctermfg=14 ctermbg=10
+  hi User3 cterm=bold ctermfg=10 ctermbg=10
+  hi User4 cterm=bold ctermfg=10 ctermbg=10
+  hi VertSplit cterm=NONE ctermfg=10 ctermbg=10
+  hi VimCommentTitle ctermfg=10 ctermbg=bg
   hi Visual cterm=bold ctermfg=10 ctermbg=10
-  hi WarningMsg cterm=bold ctermfg=11 ctermbg=121
-  hi WildMenu cterm=bold ctermfg=11 ctermbg=242
-  hi cOctalZero ctermfg=130 ctermbg=bg
-  hi cformat ctermfg=130 ctermbg=bg
-  hi confluenceHeading ctermfg=11 ctermbg=bg
-  hi confluenceHeadingMarker ctermfg=1 ctermbg=bg
+  hi WarningMsg cterm=bold ctermfg=14 ctermbg=10
+  hi WildMenu cterm=bold ctermfg=14 ctermbg=8
+  hi cOctalZero ctermfg=6 ctermbg=bg
+  hi cformat ctermfg=6 ctermbg=bg
+  hi confluenceHeading ctermfg=14 ctermbg=bg
+  hi confluenceHeadingMarker ctermfg=4 ctermbg=bg
   hi confluenceVerbatim ctermfg=15 ctermbg=bg
   hi cursorim ctermfg=16 ctermbg=33
   hi diffAdded ctermfg=10 ctermbg=bg
-  hi diffChanged ctermfg=12 ctermbg=bg
-  hi diffLine cterm=bold ctermfg=242 ctermbg=bg
-  hi diffNewFile ctermfg=242 ctermbg=bg
-  hi diffOldFile ctermfg=242 ctermbg=bg
-  hi diffOldLine ctermfg=242 ctermbg=bg
-  hi diffRemoved ctermfg=9 ctermbg=bg
-  hi doxygenArgumentWord ctermfg=12 ctermbg=bg
+  hi diffChanged ctermfg=9 ctermbg=bg
+  hi diffLine cterm=bold ctermfg=8 ctermbg=bg
+  hi diffNewFile ctermfg=8 ctermbg=bg
+  hi diffOldFile ctermfg=8 ctermbg=bg
+  hi diffOldLine ctermfg=8 ctermbg=bg
+  hi diffRemoved ctermfg=12 ctermbg=bg
+  hi doxygenArgumentWord ctermfg=9 ctermbg=bg
   hi doxygenBriefL ctermfg=2 ctermbg=bg
   hi doxygenBriefLine ctermfg=2 ctermbg=bg
-  hi doxygenCodeWord ctermfg=12 ctermbg=bg
+  hi doxygenCodeWord ctermfg=9 ctermbg=bg
   hi doxygenCommentL ctermfg=2 ctermbg=bg
-  hi doxygenHyperLink ctermfg=12 ctermbg=bg
-  hi doxygenParamDirection ctermfg=11 ctermbg=bg
-  hi doxygenParamName ctermfg=12 ctermbg=bg
-  hi doxygenPrevL ctermfg=121 ctermbg=bg
-  hi doxygenStart ctermfg=121 ctermbg=bg
-  hi doxygenStartL ctermfg=121 ctermbg=bg
-  hi doxygenbrief ctermfg=2 ctermbg=bg
-  hi doxygencomment ctermfg=121 ctermbg=bg
-  hi doxygenparam ctermfg=121 ctermbg=bg
-  hi doxygenspecial ctermfg=121 ctermbg=bg
-  hi doxygenspecialmultilinedesc ctermfg=2 ctermbg=bg
-  hi helpHyperTextJump ctermfg=130 ctermbg=bg
-  hi htmlLink ctermfg=81 ctermbg=bg
-  hi lcursor ctermfg=16 ctermbg=120
-  hi netrwExe ctermfg=1 ctermbg=bg
-  hi netrwList ctermfg=248 ctermbg=16
-  hi netrwSymLink ctermfg=12 ctermbg=bg
-  hi netrwTags cterm=bold ctermfg=242 ctermbg=bg
-  hi netrwTilde cterm=bold ctermfg=242 ctermbg=bg
-  hi perlSharpBang cterm=bold ctermfg=121 ctermbg=bg
-  hi perlStatement ctermfg=248 ctermbg=bg
-  hi perlStatementStorage ctermfg=15 ctermbg=bg
-  hi perlVarPlain ctermfg=248 ctermbg=bg
-  hi perlVarPlain2 ctermfg=248 ctermbg=bg
-  hi rubySharpBang cterm=bold ctermfg=121 ctermbg=bg
-  hi vimFold ctermfg=242 ctermbg=248
-  hi vimHiCTermColor ctermfg=11 ctermbg=bg
-  hi xmlAttrib cterm=bold ctermfg=242 ctermbg=bg
-  hi xmlEndTag cterm=bold ctermfg=15 ctermbg=bg
-  hi xmlEntity ctermfg=130 ctermbg=bg
-  hi xmlEntityPunct ctermfg=130 ctermbg=bg
-  hi xmlTag cterm=bold ctermfg=15 ctermbg=bg
-  hi xmlTagName cterm=bold ctermfg=15 ctermbg=bg
-elseif &t_Co == 88
-  hi Normal ctermfg=84 ctermbg=16
-  hi Comment ctermfg=24 ctermbg=bg
-  hi Conditional cterm=bold ctermfg=79 ctermbg=bg
-  hi Constant ctermfg=48 ctermbg=bg
-  hi Cursor ctermfg=16 ctermbg=9
-  hi CursorColumn ctermfg=82 ctermbg=84
-  hi CursorLine cterm=NONE ctermfg=82 ctermbg=84
-  hi Define cterm=bold ctermfg=82 ctermbg=bg
-  hi DiffAdd ctermfg=28
-  hi DiffChange ctermfg=82
-  hi DiffDelete ctermfg=9
-  hi DiffText cterm=NONE ctermfg=39
-  hi Directory ctermfg=76 ctermbg=bg
-  hi ErrorMsg ctermfg=76 ctermbg=9
-  hi FoldColumn cterm=bold ctermbg=16
-  hi Folded cterm=reverse ctermbg=16
-  hi Function ctermfg=79 ctermbg=bg
-  hi Identifier ctermfg=79 ctermbg=bg
-  hi Ignore cterm=bold ctermfg=82 ctermbg=bg
-  hi IncSearch cterm=NONE ctermfg=79 ctermbg=31
-  hi Include cterm=bold ctermfg=82 ctermbg=bg
-  hi Label cterm=bold ctermfg=84 ctermbg=bg
-  hi LineNr ctermbg=bg
-  hi Macro cterm=bold ctermfg=82 ctermbg=bg
-  hi MatchParen ctermfg=84 ctermbg=39
-  hi MoreMsg cterm=bold ctermfg=28 ctermbg=bg
-  hi NonText ctermfg=76 ctermbg=bg
-  hi Number ctermfg=48 ctermbg=bg
-  hi Operator cterm=bold ctermfg=79 ctermbg=bg
-  hi Pmenu ctermfg=28 ctermbg=28
-  hi PmenuSel cterm=bold ctermfg=76 ctermbg=9
-  hi PreCondit cterm=bold ctermfg=82 ctermbg=bg
-  hi PreProc cterm=bold ctermfg=82 ctermbg=bg
-  hi Question cterm=bold ctermbg=46
-  hi Repeat cterm=bold ctermfg=79 ctermbg=bg
-  hi Search ctermfg=79 ctermbg=39
-  hi SignColumn ctermbg=16
-  hi Special ctermfg=52 ctermbg=bg
-  hi SpecialKey ctermfg=76 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement cterm=bold ctermfg=79 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=46 ctermbg=20
-  hi String ctermfg=48 ctermbg=bg
-  hi TabLine cterm=bold ctermfg=46 ctermbg=46
-  hi TabLineFill cterm=NONE ctermfg=46 ctermbg=28
-  hi TabLineSel cterm=NONE ctermfg=76 ctermbg=28
-  hi Title cterm=bold ctermfg=67 ctermbg=bg
-  hi Type ctermfg=79 ctermbg=bg
-  hi User1 cterm=bold ctermfg=46 ctermbg=46
-  hi User2 cterm=bold ctermfg=76 ctermbg=46
-  hi User3 cterm=bold ctermfg=46 ctermbg=46
-  hi User4 cterm=bold ctermfg=46 ctermbg=46
-  hi VertSplit cterm=NONE ctermfg=46 ctermbg=28
-  hi VimCommentTitle ctermfg=46 ctermbg=bg
-  hi Visual cterm=bold ctermfg=28 ctermbg=28
-  hi WarningMsg cterm=bold ctermfg=76 ctermbg=46
-  hi WildMenu cterm=bold ctermfg=76 ctermbg=82
-  hi cOctalZero ctermfg=52 ctermbg=bg
-  hi cformat ctermfg=52 ctermbg=bg
-  hi confluenceHeading ctermfg=76 ctermbg=bg
-  hi confluenceHeadingMarker ctermfg=48 ctermbg=bg
-  hi confluenceVerbatim ctermfg=79 ctermbg=bg
-  hi cursorim ctermfg=16 ctermbg=23
-  hi diffAdded ctermfg=28 ctermbg=bg
-  hi diffChanged ctermfg=39 ctermbg=bg
-  hi diffLine cterm=bold ctermfg=82 ctermbg=bg
-  hi diffNewFile ctermfg=82 ctermbg=bg
-  hi diffOldFile ctermfg=82 ctermbg=bg
-  hi diffOldLine ctermfg=82 ctermbg=bg
-  hi diffRemoved ctermfg=9 ctermbg=bg
-  hi doxygenArgumentWord ctermfg=39 ctermbg=bg
-  hi doxygenBriefL ctermfg=24 ctermbg=bg
-  hi doxygenBriefLine ctermfg=24 ctermbg=bg
-  hi doxygenCodeWord ctermfg=39 ctermbg=bg
-  hi doxygenCommentL ctermfg=24 ctermbg=bg
-  hi doxygenHyperLink ctermfg=39 ctermbg=bg
-  hi doxygenParamDirection ctermfg=76 ctermbg=bg
-  hi doxygenParamName ctermfg=39 ctermbg=bg
-  hi doxygenPrevL ctermfg=46 ctermbg=bg
-  hi doxygenStart ctermfg=46 ctermbg=bg
-  hi doxygenStartL ctermfg=46 ctermbg=bg
-  hi doxygenbrief ctermfg=24 ctermbg=bg
-  hi doxygencomment ctermfg=46 ctermbg=bg
-  hi doxygenparam ctermfg=46 ctermbg=bg
-  hi doxygenspecial ctermfg=46 ctermbg=bg
-  hi doxygenspecialmultilinedesc ctermfg=24 ctermbg=bg
-  hi helpHyperTextJump ctermfg=52 ctermbg=bg
-  hi htmlLink ctermfg=43 ctermbg=bg
-  hi lcursor ctermfg=16 ctermbg=45
-  hi netrwExe ctermfg=48 ctermbg=bg
-  hi netrwList ctermfg=84 ctermbg=16
-  hi netrwSymLink ctermfg=39 ctermbg=bg
-  hi netrwTags cterm=bold ctermfg=82 ctermbg=bg
-  hi netrwTilde cterm=bold ctermfg=82 ctermbg=bg
-  hi perlSharpBang cterm=bold ctermfg=46 ctermbg=bg
-  hi perlStatement ctermfg=84 ctermbg=bg
-  hi perlStatementStorage ctermfg=79 ctermbg=bg
-  hi perlVarPlain ctermfg=84 ctermbg=bg
-  hi perlVarPlain2 ctermfg=84 ctermbg=bg
-  hi rubySharpBang cterm=bold ctermfg=46 ctermbg=bg
-  hi vimFold ctermfg=82 ctermbg=84
-  hi vimHiCTermColor ctermfg=76 ctermbg=bg
-  hi xmlAttrib cterm=bold ctermfg=82 ctermbg=bg
-  hi xmlEndTag cterm=bold ctermfg=79 ctermbg=bg
-  hi xmlEntity ctermfg=52 ctermbg=bg
-  hi xmlEntityPunct ctermfg=52 ctermbg=bg
-  hi xmlTag cterm=bold ctermfg=79 ctermbg=bg
-  hi xmlTagName cterm=bold ctermfg=79 ctermbg=bg
-elseif &t_Co == 16
-  hi Normal ctermfg=8 ctermbg=0
-  hi Comment ctermfg=2 ctermbg=bg
-  hi Conditional cterm=bold ctermfg=15 ctermbg=bg
-  hi Constant ctermfg=9 ctermbg=bg
-  hi Cursor ctermfg=0 ctermbg=9
-  hi CursorColumn ctermfg=3 ctermbg=8
-  hi CursorLine cterm=NONE ctermfg=3 ctermbg=8
-  hi Define cterm=bold ctermfg=3 ctermbg=bg
-  hi DiffAdd ctermfg=2
-  hi DiffChange ctermfg=3
-  hi DiffDelete ctermfg=9
-  hi DiffText cterm=NONE ctermfg=12
-  hi Directory ctermfg=11 ctermbg=bg
-  hi ErrorMsg ctermfg=11 ctermbg=9
-  hi FoldColumn cterm=bold ctermbg=0
-  hi Folded cterm=reverse ctermbg=0
-  hi Function ctermfg=15 ctermbg=bg
-  hi Identifier ctermfg=15 ctermbg=bg
-  hi Ignore cterm=bold ctermfg=3 ctermbg=bg
-  hi IncSearch cterm=NONE ctermfg=15 ctermbg=14
-  hi Include cterm=bold ctermfg=3 ctermbg=bg
-  hi Label cterm=bold ctermfg=8 ctermbg=bg
-  hi LineNr ctermbg=bg
-  hi Macro cterm=bold ctermfg=3 ctermbg=bg
-  hi MatchParen ctermfg=8 ctermbg=12
-  hi MoreMsg cterm=bold ctermfg=2 ctermbg=bg
-  hi NonText ctermfg=11 ctermbg=bg
-  hi Number ctermfg=9 ctermbg=bg
-  hi Operator cterm=bold ctermfg=15 ctermbg=bg
-  hi Pmenu ctermfg=2 ctermbg=2
-  hi PmenuSel cterm=bold ctermfg=11 ctermbg=9
-  hi PreCondit cterm=bold ctermfg=3 ctermbg=bg
-  hi PreProc cterm=bold ctermfg=3 ctermbg=bg
-  hi Question cterm=bold ctermbg=10
-  hi Repeat cterm=bold ctermfg=15 ctermbg=bg
-  hi Search ctermfg=15 ctermbg=12
-  hi SignColumn ctermbg=0
-  hi Special ctermfg=3 ctermbg=bg
-  hi SpecialKey ctermfg=11 ctermbg=bg
-  hi SpellBad cterm=underline ctermbg=NONE
-  hi SpellCap cterm=underline ctermbg=NONE
-  hi SpellLocal cterm=underline ctermbg=NONE
-  hi SpellRare cterm=underline ctermbg=NONE
-  hi Statement cterm=bold ctermfg=15 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=10 ctermbg=2
-  hi String ctermfg=9 ctermbg=bg
-  hi TabLine cterm=bold ctermfg=10 ctermbg=10
-  hi TabLineFill cterm=NONE ctermfg=10 ctermbg=2
-  hi TabLineSel cterm=NONE ctermfg=11 ctermbg=2
-  hi Title cterm=bold ctermfg=13 ctermbg=bg
-  hi Type ctermfg=15 ctermbg=bg
-  hi User1 cterm=bold ctermfg=10 ctermbg=10
-  hi User2 cterm=bold ctermfg=11 ctermbg=10
-  hi User3 cterm=bold ctermfg=10 ctermbg=10
-  hi User4 cterm=bold ctermfg=10 ctermbg=10
-  hi VertSplit cterm=NONE ctermfg=10 ctermbg=2
-  hi VimCommentTitle ctermfg=10 ctermbg=bg
-  hi Visual cterm=bold ctermfg=2 ctermbg=2
-  hi WarningMsg cterm=bold ctermfg=11 ctermbg=10
-  hi WildMenu cterm=bold ctermfg=11 ctermbg=3
-  hi cOctalZero ctermfg=3 ctermbg=bg
-  hi cformat ctermfg=3 ctermbg=bg
-  hi confluenceHeading ctermfg=11 ctermbg=bg
-  hi confluenceHeadingMarker ctermfg=9 ctermbg=bg
-  hi confluenceVerbatim ctermfg=15 ctermbg=bg
-  hi cursorim ctermfg=0 ctermbg=6
-  hi diffAdded ctermfg=2 ctermbg=bg
-  hi diffChanged ctermfg=12 ctermbg=bg
-  hi diffLine cterm=bold ctermfg=3 ctermbg=bg
-  hi diffNewFile ctermfg=3 ctermbg=bg
-  hi diffOldFile ctermfg=3 ctermbg=bg
-  hi diffOldLine ctermfg=3 ctermbg=bg
-  hi diffRemoved ctermfg=9 ctermbg=bg
-  hi doxygenArgumentWord ctermfg=12 ctermbg=bg
-  hi doxygenBriefL ctermfg=2 ctermbg=bg
-  hi doxygenBriefLine ctermfg=2 ctermbg=bg
-  hi doxygenCodeWord ctermfg=12 ctermbg=bg
-  hi doxygenCommentL ctermfg=2 ctermbg=bg
-  hi doxygenHyperLink ctermfg=12 ctermbg=bg
-  hi doxygenParamDirection ctermfg=11 ctermbg=bg
-  hi doxygenParamName ctermfg=12 ctermbg=bg
+  hi doxygenHyperLink ctermfg=9 ctermbg=bg
+  hi doxygenParamDirection ctermfg=14 ctermbg=bg
+  hi doxygenParamName ctermfg=9 ctermbg=bg
   hi doxygenPrevL ctermfg=10 ctermbg=bg
   hi doxygenStart ctermfg=10 ctermbg=bg
   hi doxygenStartL ctermfg=10 ctermbg=bg
@@ -441,138 +217,362 @@ elseif &t_Co == 16
   hi doxygenparam ctermfg=10 ctermbg=bg
   hi doxygenspecial ctermfg=10 ctermbg=bg
   hi doxygenspecialmultilinedesc ctermfg=2 ctermbg=bg
-  hi helpHyperTextJump ctermfg=3 ctermbg=bg
-  hi htmlLink ctermfg=12 ctermbg=bg
-  hi lcursor ctermfg=0 ctermbg=10
-  hi netrwExe ctermfg=9 ctermbg=bg
-  hi netrwList ctermfg=8 ctermbg=0
-  hi netrwSymLink ctermfg=12 ctermbg=bg
-  hi netrwTags cterm=bold ctermfg=3 ctermbg=bg
-  hi netrwTilde cterm=bold ctermfg=3 ctermbg=bg
+  hi helpHyperTextJump ctermfg=6 ctermbg=bg
+  hi htmlLink ctermfg=9 ctermbg=bg
+  hi lCursor ctermfg=16 ctermbg=120
+  hi netrwExe ctermfg=4 ctermbg=bg
+  hi netrwList ctermfg=7 ctermbg=16
+  hi netrwSymLink ctermfg=9 ctermbg=bg
+  hi netrwTags cterm=bold ctermfg=8 ctermbg=bg
+  hi netrwTilde cterm=bold ctermfg=8 ctermbg=bg
   hi perlSharpBang cterm=bold ctermfg=10 ctermbg=bg
-  hi perlStatement ctermfg=8 ctermbg=bg
+  hi perlStatement ctermfg=7 ctermbg=bg
   hi perlStatementStorage ctermfg=15 ctermbg=bg
-  hi perlVarPlain ctermfg=8 ctermbg=bg
-  hi perlVarPlain2 ctermfg=8 ctermbg=bg
+  hi perlVarPlain ctermfg=7 ctermbg=bg
+  hi perlVarPlain2 ctermfg=7 ctermbg=bg
   hi rubySharpBang cterm=bold ctermfg=10 ctermbg=bg
-  hi vimFold ctermfg=3 ctermbg=8
-  hi vimHiCTermColor ctermfg=11 ctermbg=bg
-  hi xmlAttrib cterm=bold ctermfg=3 ctermbg=bg
+  hi vimFold ctermfg=8 ctermbg=7
+  hi vimHiCtermColor ctermfg=14 ctermbg=bg
+  hi xmlAttrib cterm=bold ctermfg=8 ctermbg=bg
   hi xmlEndTag cterm=bold ctermfg=15 ctermbg=bg
-  hi xmlEntity ctermfg=3 ctermbg=bg
-  hi xmlEntityPunct ctermfg=3 ctermbg=bg
+  hi xmlEntity ctermfg=6 ctermbg=bg
+  hi xmlEntityPunct ctermfg=6 ctermbg=bg
+  hi xmlTag cterm=bold ctermfg=15 ctermbg=bg
+  hi xmlTagName cterm=bold ctermfg=15 ctermbg=bg
+elseif &t_Co == 88
+  hi Normal ctermfg=87 ctermbg=16
+  hi Comment ctermfg=24 ctermbg=bg
+  hi Conditional cterm=bold ctermfg=79 ctermbg=bg
+  hi Constant ctermfg=19 ctermbg=bg
+  hi Cursor ctermfg=16 ctermbg=9
+  hi CursorColumn ctermfg=81 ctermbg=87
+  hi CursorLine cterm=NONE ctermfg=81 ctermbg=87
+  hi Define cterm=bold ctermfg=81 ctermbg=bg
+  hi DiffAdd ctermfg=28
+  hi DiffChange ctermfg=81
+  hi DiffDelete ctermfg=39
+  hi DiffText cterm=NONE ctermfg=9
+  hi Directory ctermfg=31 ctermbg=bg
+  hi ErrorMsg ctermfg=31 ctermbg=39
+  hi FoldColumn cterm=bold ctermbg=16
+  hi Folded cterm=reverse ctermbg=16
+  hi Function ctermfg=79 ctermbg=bg
+  hi Identifier ctermfg=79 ctermbg=bg
+  hi Ignore cterm=bold ctermfg=81 ctermbg=bg
+  hi IncSearch cterm=NONE ctermfg=79 ctermbg=76
+  hi Include cterm=bold ctermfg=81 ctermbg=bg
+  hi Label cterm=bold ctermfg=87 ctermbg=bg
+  hi LineNr ctermbg=bg
+  hi Macro cterm=bold ctermfg=81 ctermbg=bg
+  hi MatchParen ctermfg=87 ctermbg=9
+  hi MoreMsg cterm=bold ctermbg=bg
+  hi NonText ctermfg=31 ctermbg=bg
+  hi Number ctermfg=19 ctermbg=bg
+  hi Operator cterm=bold ctermfg=79 ctermbg=bg
+  hi Pmenu ctermfg=28 ctermbg=28
+  hi PmenuSel cterm=bold ctermfg=31 ctermbg=39
+  hi PreCondit cterm=bold ctermfg=81 ctermbg=bg
+  hi PreProc cterm=bold ctermfg=81 ctermbg=bg
+  hi Question cterm=bold ctermbg=28
+  hi Repeat cterm=bold ctermfg=79 ctermbg=bg
+  hi Search ctermfg=79 ctermbg=9
+  hi SignColumn ctermbg=16
+  hi Special ctermfg=6 ctermbg=bg
+  hi SpecialKey ctermfg=31 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=NONE
+  hi SpellCap cterm=underline ctermbg=NONE
+  hi SpellLocal cterm=underline ctermbg=NONE
+  hi SpellRare cterm=underline ctermbg=NONE
+  hi Statement cterm=bold ctermfg=79 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=28 ctermbg=20
+  hi String ctermfg=19 ctermbg=bg
+  hi TabLine cterm=bold ctermfg=28 ctermbg=28
+  hi TabLineFill cterm=NONE ctermfg=28 ctermbg=28
+  hi TabLineSel cterm=NONE ctermfg=31 ctermbg=28
+  hi Title cterm=bold ctermbg=bg
+  hi Type ctermfg=79 ctermbg=bg
+  hi User1 cterm=bold ctermfg=28 ctermbg=28
+  hi User2 cterm=bold ctermfg=31 ctermbg=28
+  hi User3 cterm=bold ctermfg=28 ctermbg=28
+  hi User4 cterm=bold ctermfg=28 ctermbg=28
+  hi VertSplit cterm=NONE ctermfg=28 ctermbg=28
+  hi VimCommentTitle ctermfg=28 ctermbg=bg
+  hi Visual cterm=bold ctermfg=28 ctermbg=28
+  hi WarningMsg cterm=bold ctermfg=31 ctermbg=28
+  hi WildMenu cterm=bold ctermfg=31 ctermbg=81
+  hi cOctalZero ctermfg=6 ctermbg=bg
+  hi cformat ctermfg=6 ctermbg=bg
+  hi confluenceHeading ctermfg=31 ctermbg=bg
+  hi confluenceHeadingMarker ctermfg=19 ctermbg=bg
+  hi confluenceVerbatim ctermfg=79 ctermbg=bg
+  hi cursorim ctermfg=16 ctermbg=23
+  hi diffAdded ctermfg=28 ctermbg=bg
+  hi diffChanged ctermfg=9 ctermbg=bg
+  hi diffLine cterm=bold ctermfg=81 ctermbg=bg
+  hi diffNewFile ctermfg=81 ctermbg=bg
+  hi diffOldFile ctermfg=81 ctermbg=bg
+  hi diffOldLine ctermfg=81 ctermbg=bg
+  hi diffRemoved ctermfg=39 ctermbg=bg
+  hi doxygenArgumentWord ctermfg=9 ctermbg=bg
+  hi doxygenBriefL ctermfg=24 ctermbg=bg
+  hi doxygenBriefLine ctermfg=24 ctermbg=bg
+  hi doxygenCodeWord ctermfg=9 ctermbg=bg
+  hi doxygenCommentL ctermfg=24 ctermbg=bg
+  hi doxygenHyperLink ctermfg=9 ctermbg=bg
+  hi doxygenParamDirection ctermfg=31 ctermbg=bg
+  hi doxygenParamName ctermfg=9 ctermbg=bg
+  hi doxygenPrevL ctermfg=28 ctermbg=bg
+  hi doxygenStart ctermfg=28 ctermbg=bg
+  hi doxygenStartL ctermfg=28 ctermbg=bg
+  hi doxygenbrief ctermfg=24 ctermbg=bg
+  hi doxygencomment ctermfg=28 ctermbg=bg
+  hi doxygenparam ctermfg=28 ctermbg=bg
+  hi doxygenspecial ctermfg=28 ctermbg=bg
+  hi doxygenspecialmultilinedesc ctermfg=24 ctermbg=bg
+  hi helpHyperTextJump ctermfg=6 ctermbg=bg
+  hi htmlLink ctermfg=9 ctermbg=bg
+  hi lCursor ctermfg=16 ctermbg=45
+  hi netrwExe ctermfg=19 ctermbg=bg
+  hi netrwList ctermfg=87 ctermbg=16
+  hi netrwSymLink ctermfg=9 ctermbg=bg
+  hi netrwTags cterm=bold ctermfg=81 ctermbg=bg
+  hi netrwTilde cterm=bold ctermfg=81 ctermbg=bg
+  hi perlSharpBang cterm=bold ctermfg=28 ctermbg=bg
+  hi perlStatement ctermfg=87 ctermbg=bg
+  hi perlStatementStorage ctermfg=79 ctermbg=bg
+  hi perlVarPlain ctermfg=87 ctermbg=bg
+  hi perlVarPlain2 ctermfg=87 ctermbg=bg
+  hi rubySharpBang cterm=bold ctermfg=28 ctermbg=bg
+  hi vimFold ctermfg=81 ctermbg=87
+  hi vimHiCtermColor ctermfg=31 ctermbg=bg
+  hi xmlAttrib cterm=bold ctermfg=81 ctermbg=bg
+  hi xmlEndTag cterm=bold ctermfg=79 ctermbg=bg
+  hi xmlEntity ctermfg=6 ctermbg=bg
+  hi xmlEntityPunct ctermfg=6 ctermbg=bg
+  hi xmlTag cterm=bold ctermfg=79 ctermbg=bg
+  hi xmlTagName cterm=bold ctermfg=79 ctermbg=bg
+elseif &t_Co == 16
+  hi Normal ctermfg=11 ctermbg=0
+  hi Comment ctermfg=2 ctermbg=bg
+  hi Conditional cterm=bold ctermfg=15 ctermbg=bg
+  hi Constant ctermfg=4 ctermbg=bg
+  hi Cursor ctermfg=0 ctermbg=9
+  hi CursorColumn ctermfg=2 ctermbg=11
+  hi CursorLine cterm=NONE ctermfg=2 ctermbg=11
+  hi Define cterm=bold ctermfg=2 ctermbg=bg
+  hi DiffAdd ctermfg=2
+  hi DiffChange ctermfg=2
+  hi DiffDelete ctermfg=12
+  hi DiffText cterm=NONE ctermfg=9
+  hi Directory ctermfg=14 ctermbg=bg
+  hi ErrorMsg ctermfg=14 ctermbg=12
+  hi FoldColumn cterm=bold ctermbg=0
+  hi Folded cterm=reverse ctermbg=0
+  hi Function ctermfg=15 ctermbg=bg
+  hi Identifier ctermfg=15 ctermbg=bg
+  hi Ignore cterm=bold ctermfg=2 ctermbg=bg
+  hi IncSearch cterm=NONE ctermfg=15 ctermbg=11
+  hi Include cterm=bold ctermfg=2 ctermbg=bg
+  hi Label cterm=bold ctermfg=11 ctermbg=bg
+  hi LineNr ctermbg=bg
+  hi Macro cterm=bold ctermfg=2 ctermbg=bg
+  hi MatchParen ctermfg=11 ctermbg=9
+  hi MoreMsg cterm=bold ctermbg=bg
+  hi NonText ctermfg=14 ctermbg=bg
+  hi Number ctermfg=4 ctermbg=bg
+  hi Operator cterm=bold ctermfg=15 ctermbg=bg
+  hi Pmenu ctermfg=2 ctermbg=2
+  hi PmenuSel cterm=bold ctermfg=14 ctermbg=12
+  hi PreCondit cterm=bold ctermfg=2 ctermbg=bg
+  hi PreProc cterm=bold ctermfg=2 ctermbg=bg
+  hi Question cterm=bold ctermbg=2
+  hi Repeat cterm=bold ctermfg=15 ctermbg=bg
+  hi Search ctermfg=15 ctermbg=9
+  hi SignColumn ctermbg=0
+  hi Special ctermfg=6 ctermbg=bg
+  hi SpecialKey ctermfg=14 ctermbg=bg
+  hi SpellBad cterm=underline ctermbg=NONE
+  hi SpellCap cterm=underline ctermbg=NONE
+  hi SpellLocal cterm=underline ctermbg=NONE
+  hi SpellRare cterm=underline ctermbg=NONE
+  hi Statement cterm=bold ctermfg=15 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=2 ctermbg=2
+  hi String ctermfg=4 ctermbg=bg
+  hi TabLine cterm=bold ctermfg=2 ctermbg=2
+  hi TabLineFill cterm=NONE ctermfg=2 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=14 ctermbg=2
+  hi Title cterm=bold ctermbg=bg
+  hi Type ctermfg=15 ctermbg=bg
+  hi User1 cterm=bold ctermfg=2 ctermbg=2
+  hi User2 cterm=bold ctermfg=14 ctermbg=2
+  hi User3 cterm=bold ctermfg=2 ctermbg=2
+  hi User4 cterm=bold ctermfg=2 ctermbg=2
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi VimCommentTitle ctermfg=2 ctermbg=bg
+  hi Visual cterm=bold ctermfg=2 ctermbg=2
+  hi WarningMsg cterm=bold ctermfg=14 ctermbg=2
+  hi WildMenu cterm=bold ctermfg=14 ctermbg=2
+  hi cOctalZero ctermfg=6 ctermbg=bg
+  hi cformat ctermfg=6 ctermbg=bg
+  hi confluenceHeading ctermfg=14 ctermbg=bg
+  hi confluenceHeadingMarker ctermfg=4 ctermbg=bg
+  hi confluenceVerbatim ctermfg=15 ctermbg=bg
+  hi cursorim ctermfg=0 ctermbg=6
+  hi diffAdded ctermfg=2 ctermbg=bg
+  hi diffChanged ctermfg=9 ctermbg=bg
+  hi diffLine cterm=bold ctermfg=2 ctermbg=bg
+  hi diffNewFile ctermfg=2 ctermbg=bg
+  hi diffOldFile ctermfg=2 ctermbg=bg
+  hi diffOldLine ctermfg=2 ctermbg=bg
+  hi diffRemoved ctermfg=12 ctermbg=bg
+  hi doxygenArgumentWord ctermfg=9 ctermbg=bg
+  hi doxygenBriefL ctermfg=2 ctermbg=bg
+  hi doxygenBriefLine ctermfg=2 ctermbg=bg
+  hi doxygenCodeWord ctermfg=9 ctermbg=bg
+  hi doxygenCommentL ctermfg=2 ctermbg=bg
+  hi doxygenHyperLink ctermfg=9 ctermbg=bg
+  hi doxygenParamDirection ctermfg=14 ctermbg=bg
+  hi doxygenParamName ctermfg=9 ctermbg=bg
+  hi doxygenPrevL ctermfg=2 ctermbg=bg
+  hi doxygenStart ctermfg=2 ctermbg=bg
+  hi doxygenStartL ctermfg=2 ctermbg=bg
+  hi doxygenbrief ctermfg=2 ctermbg=bg
+  hi doxygencomment ctermfg=2 ctermbg=bg
+  hi doxygenparam ctermfg=2 ctermbg=bg
+  hi doxygenspecial ctermfg=2 ctermbg=bg
+  hi doxygenspecialmultilinedesc ctermfg=2 ctermbg=bg
+  hi helpHyperTextJump ctermfg=6 ctermbg=bg
+  hi htmlLink ctermfg=9 ctermbg=bg
+  hi lCursor ctermfg=0 ctermbg=10
+  hi netrwExe ctermfg=4 ctermbg=bg
+  hi netrwList ctermfg=11 ctermbg=0
+  hi netrwSymLink ctermfg=9 ctermbg=bg
+  hi netrwTags cterm=bold ctermfg=2 ctermbg=bg
+  hi netrwTilde cterm=bold ctermfg=2 ctermbg=bg
+  hi perlSharpBang cterm=bold ctermfg=2 ctermbg=bg
+  hi perlStatement ctermfg=11 ctermbg=bg
+  hi perlStatementStorage ctermfg=15 ctermbg=bg
+  hi perlVarPlain ctermfg=11 ctermbg=bg
+  hi perlVarPlain2 ctermfg=11 ctermbg=bg
+  hi rubySharpBang cterm=bold ctermfg=2 ctermbg=bg
+  hi vimFold ctermfg=2 ctermbg=11
+  hi vimHiCtermColor ctermfg=14 ctermbg=bg
+  hi xmlAttrib cterm=bold ctermfg=2 ctermbg=bg
+  hi xmlEndTag cterm=bold ctermfg=15 ctermbg=bg
+  hi xmlEntity ctermfg=6 ctermbg=bg
+  hi xmlEntityPunct ctermfg=6 ctermbg=bg
   hi xmlTag cterm=bold ctermfg=15 ctermbg=bg
   hi xmlTagName cterm=bold ctermfg=15 ctermbg=bg
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=2 ctermbg=bg
   hi Conditional cterm=bold ctermfg=7 ctermbg=bg
-  hi Constant ctermfg=1 ctermbg=bg
+  hi Constant ctermfg=4 ctermbg=bg
   hi Cursor ctermfg=0 ctermbg=1
-  hi CursorColumn ctermfg=3 ctermbg=7
-  hi CursorLine cterm=NONE ctermfg=3 ctermbg=7
-  hi Define cterm=bold ctermfg=3 ctermbg=bg
+  hi CursorColumn ctermfg=2 ctermbg=7
+  hi CursorLine cterm=NONE ctermfg=2 ctermbg=7
+  hi Define cterm=bold ctermfg=2 ctermbg=bg
   hi DiffAdd ctermfg=2
-  hi DiffChange ctermfg=3
-  hi DiffDelete ctermfg=1
-  hi DiffText cterm=NONE ctermfg=5
-  hi Directory ctermfg=3 ctermbg=bg
-  hi ErrorMsg ctermfg=3 ctermbg=1
+  hi DiffChange ctermfg=2
+  hi DiffDelete ctermfg=5
+  hi DiffText cterm=NONE ctermfg=1
+  hi Directory ctermfg=6 ctermbg=bg
+  hi ErrorMsg ctermfg=6 ctermbg=5
   hi FoldColumn cterm=bold ctermbg=0
   hi Folded cterm=reverse ctermbg=0
   hi Function ctermfg=7 ctermbg=bg
   hi Identifier ctermfg=7 ctermbg=bg
-  hi Ignore cterm=bold ctermfg=3 ctermbg=bg
-  hi IncSearch cterm=NONE ctermfg=7 ctermbg=6
-  hi Include cterm=bold ctermfg=3 ctermbg=bg
+  hi Ignore cterm=bold ctermfg=2 ctermbg=bg
+  hi IncSearch cterm=NONE ctermfg=7 ctermbg=3
+  hi Include cterm=bold ctermfg=2 ctermbg=bg
   hi Label cterm=bold ctermfg=7 ctermbg=bg
   hi LineNr ctermbg=bg
-  hi Macro cterm=bold ctermfg=3 ctermbg=bg
-  hi MatchParen ctermfg=7 ctermbg=5
-  hi MoreMsg cterm=bold ctermfg=2 ctermbg=bg
-  hi NonText ctermfg=3 ctermbg=bg
-  hi Number ctermfg=1 ctermbg=bg
+  hi Macro cterm=bold ctermfg=2 ctermbg=bg
+  hi MatchParen ctermfg=7 ctermbg=1
+  hi MoreMsg cterm=bold ctermbg=bg
+  hi NonText ctermfg=6 ctermbg=bg
+  hi Number ctermfg=4 ctermbg=bg
   hi Operator cterm=bold ctermfg=7 ctermbg=bg
   hi Pmenu ctermfg=2 ctermbg=2
-  hi PmenuSel cterm=bold ctermfg=3 ctermbg=1
-  hi PreCondit cterm=bold ctermfg=3 ctermbg=bg
-  hi PreProc cterm=bold ctermfg=3 ctermbg=bg
-  hi Question cterm=bold ctermbg=7
+  hi PmenuSel cterm=bold ctermfg=6 ctermbg=5
+  hi PreCondit cterm=bold ctermfg=2 ctermbg=bg
+  hi PreProc cterm=bold ctermfg=2 ctermbg=bg
+  hi Question cterm=bold ctermbg=2
   hi Repeat cterm=bold ctermfg=7 ctermbg=bg
-  hi Search ctermfg=7 ctermbg=5
+  hi Search ctermfg=7 ctermbg=1
   hi SignColumn ctermbg=0
-  hi Special ctermfg=3 ctermbg=bg
-  hi SpecialKey ctermfg=3 ctermbg=bg
+  hi Special ctermfg=6 ctermbg=bg
+  hi SpecialKey ctermfg=6 ctermbg=bg
   hi SpellBad cterm=underline ctermbg=NONE
   hi SpellCap cterm=underline ctermbg=NONE
   hi SpellLocal cterm=underline ctermbg=NONE
   hi SpellRare cterm=underline ctermbg=NONE
   hi Statement cterm=bold ctermfg=7 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=7 ctermbg=2
-  hi String ctermfg=1 ctermbg=bg
-  hi TabLine cterm=bold ctermfg=7 ctermbg=7
-  hi TabLineFill cterm=NONE ctermfg=7 ctermbg=2
-  hi TabLineSel cterm=NONE ctermfg=3 ctermbg=2
-  hi Title cterm=bold ctermfg=5 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=2 ctermbg=2
+  hi String ctermfg=4 ctermbg=bg
+  hi TabLine cterm=bold ctermfg=2 ctermbg=2
+  hi TabLineFill cterm=NONE ctermfg=2 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=6 ctermbg=2
+  hi Title cterm=bold ctermbg=bg
   hi Type ctermfg=7 ctermbg=bg
-  hi User1 cterm=bold ctermfg=7 ctermbg=7
-  hi User2 cterm=bold ctermfg=3 ctermbg=7
-  hi User3 cterm=bold ctermfg=7 ctermbg=7
-  hi User4 cterm=bold ctermfg=7 ctermbg=7
-  hi VertSplit cterm=NONE ctermfg=7 ctermbg=2
-  hi VimCommentTitle ctermfg=7 ctermbg=bg
+  hi User1 cterm=bold ctermfg=2 ctermbg=2
+  hi User2 cterm=bold ctermfg=6 ctermbg=2
+  hi User3 cterm=bold ctermfg=2 ctermbg=2
+  hi User4 cterm=bold ctermfg=2 ctermbg=2
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi VimCommentTitle ctermfg=2 ctermbg=bg
   hi Visual cterm=bold ctermfg=2 ctermbg=2
-  hi WarningMsg cterm=bold ctermfg=3 ctermbg=7
-  hi WildMenu cterm=bold ctermfg=3 ctermbg=3
-  hi cOctalZero ctermfg=3 ctermbg=bg
-  hi cformat ctermfg=3 ctermbg=bg
-  hi confluenceHeading ctermfg=3 ctermbg=bg
-  hi confluenceHeadingMarker ctermfg=1 ctermbg=bg
+  hi WarningMsg cterm=bold ctermfg=6 ctermbg=2
+  hi WildMenu cterm=bold ctermfg=6 ctermbg=2
+  hi cOctalZero ctermfg=6 ctermbg=bg
+  hi cformat ctermfg=6 ctermbg=bg
+  hi confluenceHeading ctermfg=6 ctermbg=bg
+  hi confluenceHeadingMarker ctermfg=4 ctermbg=bg
   hi confluenceVerbatim ctermfg=7 ctermbg=bg
   hi cursorim ctermfg=0 ctermbg=6
   hi diffAdded ctermfg=2 ctermbg=bg
-  hi diffChanged ctermfg=5 ctermbg=bg
-  hi diffLine cterm=bold ctermfg=3 ctermbg=bg
-  hi diffNewFile ctermfg=3 ctermbg=bg
-  hi diffOldFile ctermfg=3 ctermbg=bg
-  hi diffOldLine ctermfg=3 ctermbg=bg
-  hi diffRemoved ctermfg=1 ctermbg=bg
-  hi doxygenArgumentWord ctermfg=5 ctermbg=bg
+  hi diffChanged ctermfg=1 ctermbg=bg
+  hi diffLine cterm=bold ctermfg=2 ctermbg=bg
+  hi diffNewFile ctermfg=2 ctermbg=bg
+  hi diffOldFile ctermfg=2 ctermbg=bg
+  hi diffOldLine ctermfg=2 ctermbg=bg
+  hi diffRemoved ctermfg=5 ctermbg=bg
+  hi doxygenArgumentWord ctermfg=1 ctermbg=bg
   hi doxygenBriefL ctermfg=2 ctermbg=bg
   hi doxygenBriefLine ctermfg=2 ctermbg=bg
-  hi doxygenCodeWord ctermfg=5 ctermbg=bg
+  hi doxygenCodeWord ctermfg=1 ctermbg=bg
   hi doxygenCommentL ctermfg=2 ctermbg=bg
-  hi doxygenHyperLink ctermfg=5 ctermbg=bg
-  hi doxygenParamDirection ctermfg=3 ctermbg=bg
-  hi doxygenParamName ctermfg=5 ctermbg=bg
-  hi doxygenPrevL ctermfg=7 ctermbg=bg
-  hi doxygenStart ctermfg=7 ctermbg=bg
-  hi doxygenStartL ctermfg=7 ctermbg=bg
+  hi doxygenHyperLink ctermfg=1 ctermbg=bg
+  hi doxygenParamDirection ctermfg=6 ctermbg=bg
+  hi doxygenParamName ctermfg=1 ctermbg=bg
+  hi doxygenPrevL ctermfg=2 ctermbg=bg
+  hi doxygenStart ctermfg=2 ctermbg=bg
+  hi doxygenStartL ctermfg=2 ctermbg=bg
   hi doxygenbrief ctermfg=2 ctermbg=bg
-  hi doxygencomment ctermfg=7 ctermbg=bg
-  hi doxygenparam ctermfg=7 ctermbg=bg
-  hi doxygenspecial ctermfg=7 ctermbg=bg
+  hi doxygencomment ctermfg=2 ctermbg=bg
+  hi doxygenparam ctermfg=2 ctermbg=bg
+  hi doxygenspecial ctermfg=2 ctermbg=bg
   hi doxygenspecialmultilinedesc ctermfg=2 ctermbg=bg
-  hi helpHyperTextJump ctermfg=3 ctermbg=bg
-  hi htmlLink ctermfg=7 ctermbg=bg
-  hi lcursor ctermfg=0 ctermbg=7
-  hi netrwExe ctermfg=1 ctermbg=bg
+  hi helpHyperTextJump ctermfg=6 ctermbg=bg
+  hi htmlLink ctermfg=1 ctermbg=bg
+  hi lCursor ctermfg=0 ctermbg=7
+  hi netrwExe ctermfg=4 ctermbg=bg
   hi netrwList ctermfg=7 ctermbg=0
-  hi netrwSymLink ctermfg=5 ctermbg=bg
-  hi netrwTags cterm=bold ctermfg=3 ctermbg=bg
-  hi netrwTilde cterm=bold ctermfg=3 ctermbg=bg
-  hi perlSharpBang cterm=bold ctermfg=7 ctermbg=bg
+  hi netrwSymLink ctermfg=1 ctermbg=bg
+  hi netrwTags cterm=bold ctermfg=2 ctermbg=bg
+  hi netrwTilde cterm=bold ctermfg=2 ctermbg=bg
+  hi perlSharpBang cterm=bold ctermfg=2 ctermbg=bg
   hi perlStatement ctermfg=7 ctermbg=bg
   hi perlStatementStorage ctermfg=7 ctermbg=bg
   hi perlVarPlain ctermfg=7 ctermbg=bg
   hi perlVarPlain2 ctermfg=7 ctermbg=bg
-  hi rubySharpBang cterm=bold ctermfg=7 ctermbg=bg
-  hi vimFold ctermfg=3 ctermbg=7
-  hi vimHiCTermColor ctermfg=3 ctermbg=bg
-  hi xmlAttrib cterm=bold ctermfg=3 ctermbg=bg
+  hi rubySharpBang cterm=bold ctermfg=2 ctermbg=bg
+  hi vimFold ctermfg=2 ctermbg=7
+  hi vimHiCtermColor ctermfg=6 ctermbg=bg
+  hi xmlAttrib cterm=bold ctermfg=2 ctermbg=bg
   hi xmlEndTag cterm=bold ctermfg=7 ctermbg=bg
-  hi xmlEntity ctermfg=3 ctermbg=bg
-  hi xmlEntityPunct ctermfg=3 ctermbg=bg
+  hi xmlEntity ctermfg=6 ctermbg=bg
+  hi xmlEntityPunct ctermfg=6 ctermbg=bg
   hi xmlTag cterm=bold ctermfg=7 ctermbg=bg
   hi xmlTagName cterm=bold ctermfg=7 ctermbg=bg
 endif

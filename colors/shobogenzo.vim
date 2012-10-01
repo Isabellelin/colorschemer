@@ -4,7 +4,7 @@
 " Name: shobogenzo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:18
+" Date: 2012-09-29 13:44:00
 "----------------------------------------------------------
 
 set background=dark
@@ -65,20 +65,21 @@ if has("gui_running")
   hi WarningMsg guifg=#ffffff guibg=#ff5f00
   hi WildMenu guifg=#ffaf00 guibg=#080808
   hi cursorim guifg=#ffffff guibg=#ff5f00
-  hi lcursor guifg=#ffffff guibg=#ff5f00
+  hi lCursor guifg=#ffffff guibg=#ff5f00
   hi taglisttagname guifg=#005fd7
 elseif &t_Co == 256
   hi Normal ctermfg=229 ctermbg=0
   hi Comment ctermfg=195
-  hi Conceal ctermbg=82
   hi Constant ctermfg=73
   hi Cursor ctermfg=237 ctermbg=202
+  hi CursorColumn ctermbg=242
   hi CursorLine ctermbg=242
   hi DiffAdd ctermfg=229 ctermbg=34
   hi DiffChange ctermfg=229 ctermbg=32
   hi DiffDelete ctermfg=229 ctermbg=124
   hi DiffText ctermfg=229 ctermbg=34
   hi Directory ctermfg=47
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=196
   hi FoldColumn ctermfg=7 ctermbg=60
   hi Folded ctermfg=230 ctermbg=60
@@ -93,11 +94,14 @@ elseif &t_Co == 256
   hi NonText ctermfg=230 ctermbg=60
   hi Number ctermfg=146
   hi Pmenu ctermbg=95
+  hi PmenuSbar ctermbg=248
   hi PmenuSel ctermfg=15 ctermbg=60
   hi PmenuThumb cterm=reverse
+  hi PreProc ctermfg=81
   hi Question cterm=bold ctermfg=214
   hi Search ctermfg=232 ctermbg=215
   hi SignColumn ctermfg=60 ctermbg=7
+  hi Special ctermfg=224
   hi SpecialKey ctermfg=32
   hi SpellBad ctermbg=196
   hi SpellCap ctermfg=0 ctermbg=95
@@ -107,27 +111,31 @@ elseif &t_Co == 256
   hi StatusLine cterm=NONE ctermfg=229 ctermbg=95
   hi StatusLineNC cterm=NONE ctermfg=229 ctermbg=95
   hi String ctermfg=215 ctermbg=237
+  hi TabLine ctermbg=242
   hi Title cterm=bold ctermfg=130 ctermbg=232
+  hi Todo ctermbg=11
   hi Type ctermfg=175
+  hi Underlined ctermfg=81
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=229
-  hi Visual cterm=reverse ctermfg=80 ctermbg=59
+  hi Visual ctermfg=80 ctermbg=59
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=202
   hi WildMenu ctermfg=214 ctermbg=232
   hi cursorim ctermfg=237 ctermbg=202
-  hi lcursor ctermfg=237 ctermbg=202
+  hi lCursor ctermfg=237 ctermbg=202
   hi taglisttagname cterm=bold ctermfg=26
 elseif &t_Co == 88
   hi Normal ctermfg=78 ctermbg=16
   hi Comment ctermfg=63
-  hi Conceal ctermbg=44
   hi Constant ctermfg=84
   hi Cursor ctermfg=80 ctermbg=68
+  hi CursorColumn ctermbg=82
   hi CursorLine ctermbg=82
   hi DiffAdd ctermfg=78 ctermbg=24
   hi DiffChange ctermfg=78 ctermbg=22
   hi DiffDelete ctermfg=78 ctermbg=48
   hi DiffText ctermfg=78 ctermbg=24
   hi Directory ctermfg=29
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=9
   hi FoldColumn ctermfg=87 ctermbg=81
   hi Folded ctermfg=78 ctermbg=81
@@ -142,11 +150,14 @@ elseif &t_Co == 88
   hi NonText ctermfg=78 ctermbg=81
   hi Number ctermfg=85
   hi Pmenu ctermbg=81
+  hi PmenuSbar ctermbg=84
   hi PmenuSel ctermfg=79 ctermbg=81
   hi PmenuThumb cterm=reverse
+  hi PreProc ctermfg=43
   hi Question cterm=bold ctermfg=72
   hi Search ctermfg=16 ctermbg=73
   hi SignColumn ctermfg=81 ctermbg=87
+  hi Special ctermfg=74
   hi SpecialKey ctermfg=22
   hi SpellBad ctermbg=9
   hi SpellCap ctermfg=16 ctermbg=81
@@ -156,27 +167,31 @@ elseif &t_Co == 88
   hi StatusLine cterm=NONE ctermfg=78 ctermbg=81
   hi StatusLineNC cterm=NONE ctermfg=78 ctermbg=81
   hi String ctermfg=73 ctermbg=80
+  hi TabLine ctermbg=82
   hi Title cterm=bold ctermfg=52 ctermbg=16
+  hi Todo ctermbg=76
   hi Type ctermfg=54
+  hi Underlined ctermfg=43
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=78
-  hi Visual cterm=reverse ctermfg=42 ctermbg=81
+  hi Visual ctermfg=42 ctermbg=81
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=68
   hi WildMenu ctermfg=72 ctermbg=16
   hi cursorim ctermfg=80 ctermbg=68
-  hi lcursor ctermfg=80 ctermbg=68
+  hi lCursor ctermfg=80 ctermbg=68
   hi taglisttagname cterm=bold ctermfg=22
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=14
-  hi Conceal ctermbg=3
   hi Constant ctermfg=8
   hi Cursor ctermfg=2 ctermbg=9
+  hi CursorColumn ctermbg=3
   hi CursorLine ctermbg=3
   hi DiffAdd ctermfg=11 ctermbg=2
   hi DiffChange ctermfg=11 ctermbg=6
   hi DiffDelete ctermfg=11 ctermbg=1
   hi DiffText ctermfg=11 ctermbg=2
   hi Directory ctermfg=6
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=9
   hi FoldColumn ctermfg=11 ctermbg=5
   hi Folded ctermfg=11 ctermbg=5
@@ -191,11 +206,14 @@ elseif &t_Co == 16
   hi NonText ctermfg=11 ctermbg=5
   hi Number ctermfg=7
   hi Pmenu ctermbg=3
+  hi PmenuSbar ctermbg=8
   hi PmenuSel ctermfg=15 ctermbg=5
   hi PmenuThumb cterm=reverse
+  hi PreProc ctermfg=12
   hi Question cterm=bold ctermfg=3
   hi Search ctermfg=0 ctermbg=8
   hi SignColumn ctermfg=5 ctermbg=11
+  hi Special ctermfg=11
   hi SpecialKey ctermfg=6
   hi SpellBad ctermbg=9
   hi SpellCap ctermfg=0 ctermbg=3
@@ -205,27 +223,31 @@ elseif &t_Co == 16
   hi StatusLine cterm=NONE ctermfg=11 ctermbg=3
   hi StatusLineNC cterm=NONE ctermfg=11 ctermbg=3
   hi String ctermfg=8 ctermbg=2
+  hi TabLine ctermbg=3
   hi Title cterm=bold ctermfg=3 ctermbg=0
+  hi Todo ctermbg=11
   hi Type ctermfg=8
+  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=11
-  hi Visual cterm=reverse ctermfg=12 ctermbg=3
+  hi Visual ctermfg=12 ctermbg=3
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
   hi WildMenu ctermfg=3 ctermbg=0
   hi cursorim ctermfg=2 ctermbg=9
-  hi lcursor ctermfg=2 ctermbg=9
+  hi lCursor ctermfg=2 ctermbg=9
   hi taglisttagname cterm=bold ctermfg=6
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=7
-  hi Conceal ctermbg=3
   hi Constant ctermfg=7
   hi Cursor ctermfg=2 ctermbg=3
+  hi CursorColumn ctermbg=3
   hi CursorLine ctermbg=3
   hi DiffAdd ctermfg=7 ctermbg=2
   hi DiffChange ctermfg=7 ctermbg=6
   hi DiffDelete ctermfg=7 ctermbg=1
   hi DiffText ctermfg=7 ctermbg=2
   hi Directory ctermfg=6
+  hi Error ctermbg=1
   hi ErrorMsg ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=5
   hi Folded ctermfg=7 ctermbg=5
@@ -240,11 +262,14 @@ else " 8 colors
   hi NonText ctermfg=7 ctermbg=5
   hi Number ctermfg=7
   hi Pmenu ctermbg=3
+  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=7 ctermbg=5
   hi PmenuThumb cterm=reverse
+  hi PreProc ctermfg=7
   hi Question cterm=bold ctermfg=3
   hi Search ctermfg=0 ctermbg=7
   hi SignColumn ctermfg=5 ctermbg=7
+  hi Special ctermfg=7
   hi SpecialKey ctermfg=6
   hi SpellBad ctermbg=1
   hi SpellCap ctermfg=0 ctermbg=3
@@ -254,14 +279,17 @@ else " 8 colors
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=3
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=3
   hi String ctermfg=7 ctermbg=2
+  hi TabLine ctermbg=3
   hi Title cterm=bold ctermfg=3 ctermbg=0
+  hi Todo ctermbg=3
   hi Type ctermfg=7
+  hi Underlined ctermfg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi Visual cterm=reverse ctermfg=7 ctermbg=3
+  hi Visual ctermfg=7 ctermbg=3
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
   hi WildMenu ctermfg=3 ctermbg=0
   hi cursorim ctermfg=2 ctermbg=3
-  hi lcursor ctermfg=2 ctermbg=3
+  hi lCursor ctermfg=2 ctermbg=3
   hi taglisttagname cterm=bold ctermfg=6
 endif
 

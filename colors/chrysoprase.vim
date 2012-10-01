@@ -4,7 +4,7 @@
 " Name: chrysoprase
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:32
+" Date: 2012-09-29 13:31:54
 "----------------------------------------------------------
 
 set background=light
@@ -42,6 +42,7 @@ if has("gui_running")
   hi Pmenu guifg=#222222 guibg=#990000
   hi PreProc gui=bold guifg=#111111
   hi Repeat gui=bold guifg=#222222
+  hi Search guifg=NONE
   hi Special guifg=#dd1144
   hi SpecialKey gui=bold guifg=#994400 guibg=#e8e8e8
   hi Statement guifg=#111111
@@ -57,7 +58,7 @@ if has("gui_running")
   hi Type guifg=#445588
   hi Underlined guifg=#202020
   hi VertSplit gui=NONE guifg=#111111 guibg=#a0b0c0
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=255
   hi Conditional ctermfg=235
@@ -73,6 +74,7 @@ elseif &t_Co == 256
   hi Number ctermfg=24
   hi Operator ctermfg=235
   hi Repeat ctermfg=235
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=254
   hi StatusLine ctermfg=231 ctermbg=103
   hi StatusLineNC ctermfg=231 ctermbg=145
@@ -81,7 +83,8 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=246
   hi TabLineSel ctermfg=231 ctermbg=161
   hi VertSplit ctermfg=233 ctermbg=145
-  hi lcursor ctermfg=16 ctermbg=231
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=16 ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Conditional ctermfg=80
@@ -97,6 +100,7 @@ elseif &t_Co == 88
   hi Number ctermfg=21
   hi Operator ctermfg=80
   hi Repeat ctermfg=80
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=87
   hi StatusLine ctermfg=79 ctermbg=83
   hi StatusLineNC ctermfg=79 ctermbg=85
@@ -105,7 +109,8 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=84
   hi TabLineSel ctermfg=79 ctermbg=48
   hi VertSplit ctermfg=16 ctermbg=85
-  hi lcursor ctermfg=16 ctermbg=79
+  hi Visual cterm=NONE ctermbg=87
+  hi lCursor ctermfg=16 ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Conditional ctermfg=0
@@ -121,6 +126,7 @@ elseif &t_Co == 16
   hi Number ctermfg=6
   hi Operator ctermfg=0
   hi Repeat ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=11
   hi StatusLine ctermfg=15 ctermbg=8
   hi StatusLineNC ctermfg=15 ctermbg=8
@@ -129,7 +135,8 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=8
   hi TabLineSel ctermfg=15 ctermbg=9
   hi VertSplit ctermfg=0 ctermbg=8
-  hi lcursor ctermfg=0 ctermbg=15
+  hi Visual cterm=NONE ctermbg=11
+  hi lCursor ctermfg=0 ctermbg=15
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Conditional ctermfg=0
@@ -145,6 +152,7 @@ else " 8 colors
   hi Number ctermfg=6
   hi Operator ctermfg=0
   hi Repeat ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=7
   hi StatusLineNC ctermfg=7 ctermbg=7
@@ -153,7 +161,8 @@ else " 8 colors
   hi TabLineFill ctermfg=7
   hi TabLineSel ctermfg=7 ctermbg=1
   hi VertSplit ctermfg=0 ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 

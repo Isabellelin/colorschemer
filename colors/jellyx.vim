@@ -4,7 +4,7 @@
 " Name: jellyx
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:06
+" Date: 2012-09-29 13:37:06
 "----------------------------------------------------------
 
 set background=dark
@@ -103,11 +103,12 @@ elseif &t_Co == 256
   hi TabLine cterm=NONE ctermfg=249 ctermbg=236
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=0
   hi TabLineSel ctermbg=0
+  hi Title ctermfg=225
   hi Todo cterm=bold ctermfg=184 ctermbg=0
   hi Type ctermfg=146
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermfg=252 ctermbg=96
+  hi Visual cterm=NONE ctermfg=252 ctermbg=96
   hi VisualNOS ctermfg=252 ctermbg=60
   hi WildMenu cterm=bold ctermbg=150
   hi diffAdded ctermfg=150
@@ -151,11 +152,12 @@ elseif &t_Co == 88
   hi TabLine cterm=NONE ctermfg=85 ctermbg=80
   hi TabLineFill cterm=NONE ctermfg=16 ctermbg=16
   hi TabLineSel ctermbg=16
+  hi Title ctermfg=75
   hi Todo cterm=bold ctermfg=56 ctermbg=16
   hi Type ctermfg=85
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=86 ctermbg=83
+  hi Visual cterm=NONE ctermfg=86 ctermbg=83
   hi VisualNOS ctermfg=86 ctermbg=81
   hi WildMenu cterm=bold ctermbg=57
   hi diffAdded ctermfg=57
@@ -199,11 +201,12 @@ elseif &t_Co == 16
   hi TabLine cterm=NONE ctermfg=8 ctermbg=0
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=0
   hi TabLineSel ctermbg=0
+  hi Title ctermfg=15
   hi Todo cterm=bold ctermfg=3 ctermbg=0
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=5
+  hi Visual cterm=NONE ctermfg=7 ctermbg=5
   hi VisualNOS ctermfg=7 ctermbg=5
   hi WildMenu cterm=bold ctermbg=10
   hi diffAdded ctermfg=10
@@ -247,11 +250,12 @@ else " 8 colors
   hi TabLine cterm=NONE ctermfg=7 ctermbg=0
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=0
   hi TabLineSel ctermbg=0
+  hi Title ctermfg=7
   hi Todo cterm=bold ctermfg=3 ctermbg=0
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=5
+  hi Visual cterm=NONE ctermfg=7 ctermbg=5
   hi VisualNOS ctermfg=7 ctermbg=5
   hi WildMenu cterm=bold ctermbg=7
   hi diffAdded ctermfg=7

@@ -4,7 +4,7 @@
 " Name: guardian
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:09
+" Date: 2012-09-29 13:35:47
 "----------------------------------------------------------
 
 set background=dark
@@ -79,12 +79,11 @@ elseif &t_Co == 256
   hi Cursor ctermfg=15 ctermbg=4
   hi Debug ctermfg=12 ctermbg=8
   hi Delimiter ctermfg=15 ctermbg=1
-  hi DiffAdd ctermfg=15
+  hi DiffAdd ctermfg=15 ctermbg=1
   hi DiffChange ctermfg=15 ctermbg=2
   hi DiffDelete ctermfg=15 ctermbg=4
   hi DiffText ctermfg=15 ctermbg=4
   hi Directory ctermfg=10 ctermbg=0
-  hi Error ctermbg=12
   hi ErrorMsg ctermfg=12 ctermbg=0
   hi Exception ctermfg=10 ctermbg=0
   hi Float ctermfg=15 ctermbg=1
@@ -101,13 +100,13 @@ elseif &t_Co == 256
   hi Number ctermfg=15 ctermbg=1
   hi Operator ctermfg=15 ctermbg=6
   hi PreProc ctermfg=14 ctermbg=4
-  hi Question ctermfg=10 ctermbg=0
+  hi Question ctermbg=0
   hi Repeat ctermfg=14 ctermbg=4
   hi Special ctermfg=15 ctermbg=1
   hi SpecialChar ctermfg=15 ctermbg=1
   hi SpecialComment ctermfg=15 ctermbg=1
   hi SpecialKey ctermfg=15 ctermbg=0
-  hi Statement ctermfg=14 ctermbg=0
+  hi Statement ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=14
   hi StatusLineNC ctermfg=11 ctermbg=4
   hi StorageClass ctermfg=10 ctermbg=0
@@ -119,9 +118,9 @@ elseif &t_Co == 256
   hi Todo ctermfg=12 ctermbg=1
   hi Type ctermfg=12 ctermbg=0
   hi Typedef ctermfg=10 ctermbg=0
-  hi Underlined ctermfg=9 ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=11 ctermbg=4
-  hi Visual ctermfg=15 ctermbg=9
+  hi Visual cterm=NONE ctermfg=15 ctermbg=9
   hi htmlH2 ctermfg=15 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
@@ -133,12 +132,11 @@ elseif &t_Co == 88
   hi Cursor ctermfg=79 ctermbg=19
   hi Debug ctermfg=39 ctermbg=81
   hi Delimiter ctermfg=79 ctermbg=48
-  hi DiffAdd ctermfg=79
+  hi DiffAdd ctermfg=79 ctermbg=48
   hi DiffChange ctermfg=79 ctermbg=24
   hi DiffDelete ctermfg=79 ctermbg=19
   hi DiffText ctermfg=79 ctermbg=19
   hi Directory ctermfg=28 ctermbg=16
-  hi Error ctermbg=39
   hi ErrorMsg ctermfg=39 ctermbg=16
   hi Exception ctermfg=28 ctermbg=16
   hi Float ctermfg=79 ctermbg=48
@@ -155,13 +153,13 @@ elseif &t_Co == 88
   hi Number ctermfg=79 ctermbg=48
   hi Operator ctermfg=79 ctermbg=6
   hi PreProc ctermfg=31 ctermbg=19
-  hi Question ctermfg=28 ctermbg=16
+  hi Question ctermbg=16
   hi Repeat ctermfg=31 ctermbg=19
   hi Special ctermfg=79 ctermbg=48
   hi SpecialChar ctermfg=79 ctermbg=48
   hi SpecialComment ctermfg=79 ctermbg=48
   hi SpecialKey ctermfg=79 ctermbg=16
-  hi Statement ctermfg=31 ctermbg=16
+  hi Statement ctermbg=16
   hi StatusLine ctermfg=16 ctermbg=31
   hi StatusLineNC ctermfg=76 ctermbg=19
   hi StorageClass ctermfg=28 ctermbg=16
@@ -173,9 +171,9 @@ elseif &t_Co == 88
   hi Todo ctermfg=39 ctermbg=48
   hi Type ctermfg=39 ctermbg=16
   hi Typedef ctermfg=28 ctermbg=16
-  hi Underlined ctermfg=9 ctermbg=16
+  hi Underlined ctermbg=16
   hi VertSplit ctermfg=76 ctermbg=19
-  hi Visual ctermfg=79 ctermbg=9
+  hi Visual cterm=NONE ctermfg=79 ctermbg=9
   hi htmlH2 ctermfg=79 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
@@ -187,12 +185,11 @@ elseif &t_Co == 16
   hi Cursor ctermfg=15 ctermbg=4
   hi Debug ctermfg=12 ctermbg=2
   hi Delimiter ctermfg=15 ctermbg=9
-  hi DiffAdd ctermfg=15
+  hi DiffAdd ctermfg=15 ctermbg=9
   hi DiffChange ctermfg=15 ctermbg=2
   hi DiffDelete ctermfg=15 ctermbg=4
   hi DiffText ctermfg=15 ctermbg=4
   hi Directory ctermfg=2 ctermbg=0
-  hi Error ctermbg=12
   hi ErrorMsg ctermfg=12 ctermbg=0
   hi Exception ctermfg=2 ctermbg=0
   hi Float ctermfg=15 ctermbg=9
@@ -209,13 +206,13 @@ elseif &t_Co == 16
   hi Number ctermfg=15 ctermbg=9
   hi Operator ctermfg=15 ctermbg=6
   hi PreProc ctermfg=14 ctermbg=4
-  hi Question ctermfg=2 ctermbg=0
+  hi Question ctermbg=0
   hi Repeat ctermfg=14 ctermbg=4
   hi Special ctermfg=15 ctermbg=9
   hi SpecialChar ctermfg=15 ctermbg=9
   hi SpecialComment ctermfg=15 ctermbg=9
   hi SpecialKey ctermfg=15 ctermbg=0
-  hi Statement ctermfg=14 ctermbg=0
+  hi Statement ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=14
   hi StatusLineNC ctermfg=11 ctermbg=4
   hi StorageClass ctermfg=2 ctermbg=0
@@ -227,9 +224,9 @@ elseif &t_Co == 16
   hi Todo ctermfg=12 ctermbg=9
   hi Type ctermfg=12 ctermbg=0
   hi Typedef ctermfg=2 ctermbg=0
-  hi Underlined ctermfg=9 ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=11 ctermbg=4
-  hi Visual ctermfg=15 ctermbg=9
+  hi Visual cterm=NONE ctermfg=15 ctermbg=9
   hi htmlH2 ctermfg=15 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -241,12 +238,11 @@ else " 8 colors
   hi Cursor ctermfg=7 ctermbg=4
   hi Debug ctermfg=5 ctermbg=2
   hi Delimiter ctermfg=7 ctermbg=1
-  hi DiffAdd ctermfg=7
+  hi DiffAdd ctermfg=7 ctermbg=1
   hi DiffChange ctermfg=7 ctermbg=2
   hi DiffDelete ctermfg=7 ctermbg=4
   hi DiffText ctermfg=7 ctermbg=4
   hi Directory ctermfg=2 ctermbg=0
-  hi Error ctermbg=5
   hi ErrorMsg ctermfg=5 ctermbg=0
   hi Exception ctermfg=2 ctermbg=0
   hi Float ctermfg=7 ctermbg=1
@@ -263,13 +259,13 @@ else " 8 colors
   hi Number ctermfg=7 ctermbg=1
   hi Operator ctermfg=7 ctermbg=6
   hi PreProc ctermfg=6 ctermbg=4
-  hi Question ctermfg=2 ctermbg=0
+  hi Question ctermbg=0
   hi Repeat ctermfg=6 ctermbg=4
   hi Special ctermfg=7 ctermbg=1
   hi SpecialChar ctermfg=7 ctermbg=1
   hi SpecialComment ctermfg=7 ctermbg=1
   hi SpecialKey ctermfg=7 ctermbg=0
-  hi Statement ctermfg=6 ctermbg=0
+  hi Statement ctermbg=0
   hi StatusLine ctermfg=0 ctermbg=6
   hi StatusLineNC ctermfg=3 ctermbg=4
   hi StorageClass ctermfg=2 ctermbg=0
@@ -281,9 +277,9 @@ else " 8 colors
   hi Todo ctermfg=5 ctermbg=1
   hi Type ctermfg=5 ctermbg=0
   hi Typedef ctermfg=2 ctermbg=0
-  hi Underlined ctermfg=1 ctermbg=0
+  hi Underlined ctermbg=0
   hi VertSplit ctermfg=3 ctermbg=4
-  hi Visual ctermfg=7 ctermbg=1
+  hi Visual cterm=NONE ctermfg=7 ctermbg=1
   hi htmlH2 ctermfg=7 ctermbg=2
 endif
 

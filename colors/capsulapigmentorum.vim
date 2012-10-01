@@ -4,7 +4,7 @@
 " Name: capsulapigmentorum
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:23
+" Date: 2012-09-29 13:31:37
 "----------------------------------------------------------
 
 set background=dark
@@ -71,7 +71,7 @@ elseif &t_Co == 256
   hi Tag ctermfg=9
   hi Type ctermbg=234
   hi Underlined ctermbg=234
-  hi Visual ctermfg=234
+  hi Visual cterm=NONE ctermfg=234 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermbg=80
@@ -97,7 +97,7 @@ elseif &t_Co == 88
   hi Tag ctermfg=9
   hi Type ctermbg=80
   hi Underlined ctermbg=80
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Comment ctermbg=0
@@ -123,7 +123,7 @@ elseif &t_Co == 16
   hi Tag ctermfg=9
   hi Type ctermbg=0
   hi Underlined ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=0
@@ -149,7 +149,7 @@ else " 8 colors
   hi Tag ctermfg=1
   hi Type ctermbg=0
   hi Underlined ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 hi! link CursorColumn CursorLine

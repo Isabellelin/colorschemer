@@ -4,7 +4,7 @@
 " Name: blackdust
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:55
+" Date: 2012-09-29 13:30:53
 "----------------------------------------------------------
 
 set background=dark
@@ -72,7 +72,7 @@ if has("gui_running")
   hi Typedef gui=bold,underline guifg=#ffffff
   hi VertSplit guifg=#333333 guibg=#cccccc
   hi Visual gui=reverse guifg=#333333 guibg=#f18c96
-  hi VisualNOS gui=bold,underline guifg=#333333 guibg=#f18c96
+  hi VisualNOS guifg=#333333 guibg=#f18c96
   hi WarningMsg gui=bold guifg=#ffffff guibg=#333333
   hi WildMenu guifg=#000000 guibg=#dca3a3
 elseif &t_Co == 256
@@ -110,7 +110,7 @@ elseif &t_Co == 256
   hi Title ctermbg=236
   hi Typedef ctermfg=231
   hi VertSplit ctermfg=236 ctermbg=252
-  hi Visual ctermfg=236
+  hi Visual cterm=NONE ctermfg=236 ctermbg=8
   hi VisualNOS ctermfg=236 ctermbg=210
   hi WarningMsg ctermbg=236
 elseif &t_Co == 88
@@ -148,7 +148,7 @@ elseif &t_Co == 88
   hi Title ctermbg=80
   hi Typedef ctermfg=79
   hi VertSplit ctermfg=80 ctermbg=58
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=69
   hi WarningMsg ctermbg=80
 elseif &t_Co == 16
@@ -186,7 +186,7 @@ elseif &t_Co == 16
   hi Title ctermbg=2
   hi Typedef ctermfg=15
   hi VertSplit ctermfg=2 ctermbg=7
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=2 ctermbg=8
   hi WarningMsg ctermbg=2
 else " 8 colors
@@ -224,7 +224,7 @@ else " 8 colors
   hi Title ctermbg=2
   hi Typedef ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=7
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=2 ctermbg=7
   hi WarningMsg ctermbg=2
 endif

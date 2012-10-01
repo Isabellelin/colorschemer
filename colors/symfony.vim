@@ -4,7 +4,7 @@
 " Name: symfony
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:20
+" Date: 2012-09-29 13:45:21
 "----------------------------------------------------------
 
 set background=dark
@@ -55,8 +55,6 @@ if has("gui_running")
   hi Title guifg=#FFFFFF
   hi Type guifg=#da4939
   hi Visual guibg=#5A647E
-  hi VisualNOS gui=bold,underline
-  hi lcursor guifg=bg guibg=fg
 elseif &t_Co == 256
   hi Normal ctermfg=15 ctermbg=235
   hi Comment ctermfg=133
@@ -110,11 +108,10 @@ elseif &t_Co == 256
   hi Todo ctermfg=21 ctermbg=226
   hi Type ctermfg=167
   hi Underlined ctermfg=111
-  hi Visual ctermbg=60
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=60
   hi WarningMsg ctermfg=196
   hi WildMenu ctermbg=226
-  hi lcursor ctermfg=15 ctermbg=235
+  hi lCursor ctermfg=15 ctermbg=235
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=80
   hi Comment ctermfg=84
@@ -168,11 +165,10 @@ elseif &t_Co == 88
   hi Todo ctermfg=19 ctermbg=76
   hi Type ctermfg=53
   hi Underlined ctermfg=43
-  hi Visual ctermbg=81
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=81
   hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=76
-  hi lcursor ctermfg=79 ctermbg=80
+  hi lCursor ctermfg=79 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Comment ctermfg=8
@@ -226,11 +222,10 @@ elseif &t_Co == 16
   hi Todo ctermfg=4 ctermbg=11
   hi Type ctermfg=8
   hi Underlined ctermfg=12
-  hi Visual ctermbg=5
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=5
   hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=11
-  hi lcursor ctermfg=15 ctermbg=0
+  hi lCursor ctermfg=15 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=7
@@ -284,11 +279,10 @@ else " 8 colors
   hi Todo ctermfg=4 ctermbg=3
   hi Type ctermfg=3
   hi Underlined ctermfg=7
-  hi Visual ctermbg=5
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermbg=5
   hi WarningMsg ctermfg=1
   hi WildMenu ctermbg=3
-  hi lcursor ctermfg=7 ctermbg=0
+  hi lCursor ctermfg=7 ctermbg=0
 endif
 
 

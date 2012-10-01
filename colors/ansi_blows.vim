@@ -4,7 +4,7 @@
 " Name: ansi_blows
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:33
+" Date: 2012-09-29 13:30:30
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,6 @@ if has("gui_running")
   hi Normal guifg=#aaaaaa guibg=#000000
   hi Comment guifg=#44ffff
   hi Constant guifg=#ff44ff
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guifg=#ffffff guibg=fg
   hi CursorLine gui=underline guibg=bg
   hi DiffAdd guibg=#1d28d2
@@ -63,10 +62,9 @@ if has("gui_running")
   hi VisualNOS gui=underline guifg=#ffffff
   hi WarningMsg guifg=#dc3244
   hi WildMenu guifg=bg guibg=#aa5500
-  hi lcursor guifg=bg guibg=fg
 elseif &t_Co == 256
   hi Normal ctermfg=248 ctermbg=16
-  hi Cursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi Cursor cterm=reverse
   hi CursorColumn cterm=bold ctermfg=7 ctermbg=7
   hi CursorLine ctermbg=bg
   hi DiffText ctermfg=231
@@ -84,13 +82,13 @@ elseif &t_Co == 256
   hi StatusLine cterm=reverse
   hi TabLineSel ctermfg=231
   hi Underlined cterm=bold,underline
-  hi Visual cterm=reverse
+  hi Visual ctermbg=8
   hi VisualNOS ctermfg=231
   hi WildMenu ctermbg=3
-  hi lcursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi lCursor cterm=reverse
 elseif &t_Co == 88
   hi Normal ctermfg=84 ctermbg=16
-  hi Cursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi Cursor cterm=reverse
   hi CursorColumn cterm=bold ctermfg=87 ctermbg=87
   hi CursorLine ctermbg=bg
   hi DiffText ctermfg=79
@@ -108,13 +106,13 @@ elseif &t_Co == 88
   hi StatusLine cterm=reverse
   hi TabLineSel ctermfg=79
   hi Underlined cterm=bold,underline
-  hi Visual cterm=reverse
+  hi Visual ctermbg=81
   hi VisualNOS ctermfg=79
   hi WildMenu ctermbg=56
-  hi lcursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi lCursor cterm=reverse
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
-  hi Cursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi Cursor cterm=reverse
   hi CursorColumn cterm=bold ctermfg=11 ctermbg=11
   hi CursorLine ctermbg=bg
   hi DiffText ctermfg=15
@@ -132,13 +130,13 @@ elseif &t_Co == 16
   hi StatusLine cterm=reverse
   hi TabLineSel ctermfg=15
   hi Underlined cterm=bold,underline
-  hi Visual cterm=reverse
+  hi Visual ctermbg=2
   hi VisualNOS ctermfg=15
   hi WildMenu ctermbg=3
-  hi lcursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi lCursor cterm=reverse
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Cursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi Cursor cterm=reverse
   hi CursorColumn cterm=bold ctermfg=7 ctermbg=7
   hi CursorLine ctermbg=bg
   hi DiffText ctermfg=7
@@ -156,10 +154,10 @@ else " 8 colors
   hi StatusLine cterm=reverse
   hi TabLineSel ctermfg=7
   hi Underlined cterm=bold,underline
-  hi Visual cterm=reverse
+  hi Visual ctermbg=2
   hi VisualNOS ctermfg=7
   hi WildMenu ctermbg=3
-  hi lcursor cterm=reverse ctermfg=bg ctermbg=fg
+  hi lCursor cterm=reverse
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: ego
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:11
+" Date: 2012-09-29 13:34:25
 "----------------------------------------------------------
 
 set background=dark
@@ -76,7 +76,7 @@ if has("gui_running")
   hi Underlined guifg=honeydew4 guibg=bg
   hi VertSplit gui=NONE guifg=black guibg=grey60
   hi Visual gui=reverse guifg=SeaGreen guibg=#ffffff
-  hi VisualNOS gui=bold,underline guifg=fg guibg=bg
+  hi VisualNOS guifg=fg guibg=bg
   hi WarningMsg gui=bold guifg=FireBrick1 guibg=bg
   hi WildMenu gui=bold guibg=Chartreuse
   hi cursorim gui=bold guifg=#ffffff guibg=#8DA1A1
@@ -133,7 +133,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=117 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=246
-  hi Visual ctermfg=29
+  hi Visual cterm=NONE ctermfg=29 ctermbg=8
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=231 ctermbg=247
@@ -190,7 +190,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=43 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=84
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=79 ctermbg=84
@@ -247,7 +247,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=12 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=8
-  hi Visual ctermfg=6
+  hi Visual cterm=NONE ctermfg=6 ctermbg=2
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=15 ctermbg=8
@@ -304,7 +304,7 @@ else " 8 colors
   hi Typedef ctermfg=7 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=6
+  hi Visual cterm=NONE ctermfg=6 ctermbg=2
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=7 ctermbg=7

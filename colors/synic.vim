@@ -4,7 +4,7 @@
 " Name: synic
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:22
+" Date: 2012-09-29 13:45:24
 "----------------------------------------------------------
 
 set background=dark
@@ -64,7 +64,7 @@ if has("gui_running")
   hi VisualNOS gui=underline guifg=fg guibg=bg
   hi WarningMsg guifg=Tomato3 guibg=Black
   hi WildMenu guibg=SkyBlue4
-  hi lcursor guifg=Black guibg=Lavender
+  hi lCursor guifg=Black guibg=Lavender
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=16
   hi Comment ctermfg=76 ctermbg=bg
@@ -116,11 +116,11 @@ elseif &t_Co == 256
   hi Type ctermfg=223 ctermbg=bg
   hi Underlined ctermfg=231 ctermbg=bg
   hi VertSplit cterm=NONE ctermfg=66 ctermbg=16
-  hi Visual cterm=reverse ctermfg=66 ctermbg=16
+  hi Visual ctermfg=66 ctermbg=16
   hi VisualNOS cterm=underline ctermfg=231 ctermbg=bg
   hi WarningMsg ctermfg=167 ctermbg=16
   hi WildMenu ctermfg=16 ctermbg=60
-  hi lcursor ctermfg=16 ctermbg=255
+  hi lCursor ctermfg=16 ctermbg=255
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
   hi Comment ctermfg=40 ctermbg=bg
@@ -172,11 +172,11 @@ elseif &t_Co == 88
   hi Type ctermfg=74 ctermbg=bg
   hi Underlined ctermfg=79 ctermbg=bg
   hi VertSplit cterm=NONE ctermfg=83 ctermbg=16
-  hi Visual cterm=reverse ctermfg=83 ctermbg=16
+  hi Visual ctermfg=83 ctermbg=16
   hi VisualNOS cterm=underline ctermfg=79 ctermbg=bg
   hi WarningMsg ctermfg=53 ctermbg=16
   hi WildMenu ctermfg=16 ctermbg=81
-  hi lcursor ctermfg=16 ctermbg=87
+  hi lCursor ctermfg=16 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Comment ctermfg=3 ctermbg=bg
@@ -228,11 +228,11 @@ elseif &t_Co == 16
   hi Type ctermfg=11 ctermbg=bg
   hi Underlined ctermfg=15 ctermbg=bg
   hi VertSplit cterm=NONE ctermfg=6 ctermbg=0
-  hi Visual cterm=reverse ctermfg=6 ctermbg=0
+  hi Visual ctermfg=6 ctermbg=0
   hi VisualNOS cterm=underline ctermfg=15 ctermbg=bg
   hi WarningMsg ctermfg=8 ctermbg=0
   hi WildMenu ctermfg=0 ctermbg=5
-  hi lcursor ctermfg=0 ctermbg=11
+  hi lCursor ctermfg=0 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=3 ctermbg=bg
@@ -284,11 +284,11 @@ else " 8 colors
   hi Type ctermfg=7 ctermbg=bg
   hi Underlined ctermfg=7 ctermbg=bg
   hi VertSplit cterm=NONE ctermfg=6 ctermbg=0
-  hi Visual cterm=reverse ctermfg=6 ctermbg=0
+  hi Visual ctermfg=6 ctermbg=0
   hi VisualNOS cterm=underline ctermfg=7 ctermbg=bg
   hi WarningMsg ctermfg=3 ctermbg=0
   hi WildMenu ctermfg=0 ctermbg=5
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 

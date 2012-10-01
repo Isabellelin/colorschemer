@@ -4,7 +4,7 @@
 " Name: White
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:27
+" Date: 2012-09-29 13:30:23
 "----------------------------------------------------------
 
 set background=light
@@ -28,7 +28,7 @@ if has("gui_running")
   hi NonText guifg=grey50 guibg=grey95
   hi Outline_2_match guifg=blue3 guibg=grey83
   hi PreProc guifg=DeepPink4
-  hi Search guibg=LightBlue
+  hi Search guifg=NONE guibg=LightBlue
   hi Special guifg=DodgerBlue4
   hi Statement guifg=MidnightBlue
   hi String guifg=darkorange4
@@ -43,8 +43,9 @@ elseif &t_Co == 256
   hi IncSearch ctermfg=fg ctermbg=226
   hi NonText ctermbg=255
   hi Outline_2_match ctermfg=20 ctermbg=188
+  hi Search ctermfg=NONE
   hi String ctermfg=94
-  hi Visual ctermfg=fg
+  hi Visual cterm=NONE ctermfg=fg ctermbg=7
   hi WarningMsg ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
@@ -54,8 +55,9 @@ elseif &t_Co == 88
   hi IncSearch ctermfg=fg ctermbg=76
   hi NonText ctermbg=87
   hi Outline_2_match ctermfg=4 ctermbg=86
+  hi Search ctermfg=NONE
   hi String ctermfg=32
-  hi Visual ctermfg=fg
+  hi Visual cterm=NONE ctermfg=fg ctermbg=87
   hi WarningMsg ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
@@ -65,8 +67,9 @@ elseif &t_Co == 16
   hi IncSearch ctermfg=fg ctermbg=3
   hi NonText ctermbg=15
   hi Outline_2_match ctermfg=4 ctermbg=12
+  hi Search ctermfg=NONE
   hi String ctermfg=1
-  hi Visual ctermfg=fg
+  hi Visual cterm=NONE ctermfg=fg ctermbg=11
   hi WarningMsg ctermbg=15
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
@@ -76,8 +79,9 @@ else " 8 colors
   hi IncSearch ctermfg=fg ctermbg=3
   hi NonText ctermbg=7
   hi Outline_2_match ctermfg=4 ctermbg=7
+  hi Search ctermfg=NONE
   hi String ctermfg=1
-  hi Visual ctermfg=fg
+  hi Visual cterm=NONE ctermfg=fg ctermbg=7
   hi WarningMsg ctermbg=7
 endif
 

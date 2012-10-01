@@ -4,7 +4,7 @@
 " Name: gummybears_light
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:12
+" Date: 2012-09-29 13:35:51
 "----------------------------------------------------------
 
 set background=dark
@@ -43,7 +43,6 @@ if has("gui_running")
   hi Ignore guifg=#e2e4e5
   hi IncSearch gui=NONE guifg=#101314 guibg=#21d0eb
   hi Include guifg=#8fbfdc
-  hi JavaScriptStrings gui=italic guifg=#26b3ac
   hi Keyword gui=italic guifg=#ffb964
   hi LineNr guifg=#3D3D3D guibg=#000000
   hi LocalVariable guifg=#663d7a
@@ -63,9 +62,6 @@ if has("gui_running")
   hi SignColumn guifg=DarkBlue
   hi Special guifg=#458c27
   hi SpecialKey guifg=#505050 guibg=#000000
-  hi SpellBad guibg=#ffd7d7
-  hi SpellCap guibg=#5fd7ff
-  hi SpellRare guibg=#ffd7ff
   hi Statement gui=italic guifg=#6894de
   hi StatusLine gui=NONE guifg=#9cffd3 guibg=#202020
   hi StatusLineNC gui=bold guifg=#000000 guibg=#202020
@@ -90,6 +86,7 @@ if has("gui_running")
   hi htmlString guifg=#799668
   hi htmlTagName guifg=#b097b0
   hi javaDocSeeTag guifg=#CCCCCC
+  hi javascriptStringS gui=italic guifg=#26b3ac
   hi markdownBlockquote gui=bold guifg=#00ffff
   hi markdownBold gui=bold guifg=#878700
   hi markdownCode gui=bold guifg=#a7bee4 guibg=#3a3a3a
@@ -114,14 +111,14 @@ elseif &t_Co == 256
   hi Normal ctermfg=251 ctermbg=233
   hi Boolean ctermfg=75
   hi Character ctermfg=209
-  hi ColorColumn ctermbg=224
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=240
   hi Conditional ctermfg=214
   hi Constant cterm=bold ctermfg=130
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=233
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=130
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=74
   hi DiffAdd ctermfg=250 ctermbg=22
   hi DiffChange ctermfg=250 ctermbg=93
@@ -138,7 +135,6 @@ elseif &t_Co == 256
   hi Ignore ctermfg=250
   hi IncSearch cterm=NONE ctermfg=234 ctermbg=6
   hi Include ctermfg=75
-  hi JavaScriptStrings ctermfg=45
   hi Keyword cterm=bold ctermfg=214
   hi LineNr ctermfg=237 ctermbg=0
   hi LocalVariable ctermfg=96
@@ -156,12 +152,9 @@ elseif &t_Co == 256
   hi Question ctermfg=44
   hi Repeat ctermfg=166
   hi Search cterm=underline ctermfg=176 ctermbg=53
-  hi SignColumn ctermfg=4 ctermbg=248
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special ctermfg=31
   hi SpecialKey ctermfg=239 ctermbg=0
-  hi SpellBad ctermbg=224
-  hi SpellCap ctermbg=81
-  hi SpellRare ctermbg=225
   hi Statement ctermfg=75
   hi StatusLine cterm=NONE ctermfg=85 ctermbg=234
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=234
@@ -174,9 +167,9 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=172
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=203
-  hi WildMenu ctermfg=28
+  hi WildMenu ctermfg=28 ctermbg=11
   hi cssBoxProp ctermfg=180
   hi cssIdentifier ctermfg=115
   hi cssPseudoClassId ctermfg=152
@@ -186,6 +179,7 @@ elseif &t_Co == 256
   hi htmlString ctermfg=100
   hi htmlTagName ctermfg=175
   hi javaDocSeeTag ctermfg=252
+  hi javascriptStringS ctermfg=45
   hi markdownBlockquote cterm=bold ctermfg=14
   hi markdownBold cterm=bold ctermfg=100
   hi markdownCode cterm=bold ctermfg=152 ctermbg=237
@@ -210,14 +204,14 @@ elseif &t_Co == 88
   hi Normal ctermfg=58 ctermbg=16
   hi Boolean ctermfg=43
   hi Character ctermfg=69
-  hi ColorColumn ctermbg=74
+  hi ColorColumn ctermbg=39
   hi Comment ctermfg=81
   hi Conditional ctermfg=72
   hi Constant cterm=bold ctermfg=52
   hi Cursor cterm=reverse ctermfg=16 ctermbg=76
   hi CursorColumn cterm=bold ctermbg=16
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=52
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=42
   hi DiffAdd ctermfg=85 ctermbg=20
   hi DiffChange ctermfg=85 ctermbg=35
@@ -234,7 +228,6 @@ elseif &t_Co == 88
   hi Ignore ctermfg=85
   hi IncSearch cterm=NONE ctermfg=80 ctermbg=6
   hi Include ctermfg=43
-  hi JavaScriptStrings ctermfg=27
   hi Keyword cterm=bold ctermfg=72
   hi LineNr ctermfg=80 ctermbg=16
   hi LocalVariable ctermfg=83
@@ -252,12 +245,9 @@ elseif &t_Co == 88
   hi Question ctermfg=6
   hi Repeat ctermfg=52
   hi Search cterm=underline ctermfg=54 ctermbg=33
-  hi SignColumn ctermfg=19 ctermbg=84
+  hi SignColumn ctermfg=48 ctermbg=87
   hi Special ctermfg=22
   hi SpecialKey ctermfg=81 ctermbg=16
-  hi SpellBad ctermbg=74
-  hi SpellCap ctermbg=43
-  hi SpellRare ctermbg=75
   hi Statement ctermfg=43
   hi StatusLine cterm=NONE ctermfg=46 ctermbg=80
   hi StatusLineNC cterm=bold ctermfg=16 ctermbg=80
@@ -270,9 +260,9 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=52
   hi Underlined ctermfg=50
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=69
-  hi WildMenu ctermfg=20
+  hi WildMenu ctermfg=20 ctermbg=76
   hi cssBoxProp ctermfg=57
   hi cssIdentifier ctermfg=42
   hi cssPseudoClassId ctermfg=86
@@ -282,6 +272,7 @@ elseif &t_Co == 88
   hi htmlString ctermfg=36
   hi htmlTagName ctermfg=54
   hi javaDocSeeTag ctermfg=86
+  hi javascriptStringS ctermfg=27
   hi markdownBlockquote cterm=bold ctermfg=31
   hi markdownBold cterm=bold ctermfg=36
   hi markdownCode cterm=bold ctermfg=86 ctermbg=80
@@ -306,14 +297,14 @@ elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=12
   hi Character ctermfg=8
-  hi ColorColumn ctermbg=11
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=2
   hi Conditional ctermfg=3
   hi Constant cterm=bold ctermfg=3
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=8
   hi DiffAdd ctermfg=7 ctermbg=2
   hi DiffChange ctermfg=7 ctermbg=5
@@ -330,7 +321,6 @@ elseif &t_Co == 16
   hi Ignore ctermfg=7
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=6
   hi Include ctermfg=12
-  hi JavaScriptStrings ctermfg=6
   hi Keyword cterm=bold ctermfg=3
   hi LineNr ctermfg=2 ctermbg=0
   hi LocalVariable ctermfg=5
@@ -348,12 +338,9 @@ elseif &t_Co == 16
   hi Question ctermfg=6
   hi Repeat ctermfg=3
   hi Search cterm=underline ctermfg=7 ctermbg=5
-  hi SignColumn ctermfg=4 ctermbg=8
+  hi SignColumn ctermfg=9 ctermbg=11
   hi Special ctermfg=6
   hi SpecialKey ctermfg=2 ctermbg=0
-  hi SpellBad ctermbg=11
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=15
   hi Statement ctermfg=12
   hi StatusLine cterm=NONE ctermfg=10 ctermbg=0
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=0
@@ -366,9 +353,9 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=3
   hi Underlined ctermfg=13
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=11
   hi cssBoxProp ctermfg=8
   hi cssIdentifier ctermfg=10
   hi cssPseudoClassId ctermfg=12
@@ -378,6 +365,7 @@ elseif &t_Co == 16
   hi htmlString ctermfg=3
   hi htmlTagName ctermfg=8
   hi javaDocSeeTag ctermfg=7
+  hi javascriptStringS ctermfg=6
   hi markdownBlockquote cterm=bold ctermfg=14
   hi markdownBold cterm=bold ctermfg=3
   hi markdownCode cterm=bold ctermfg=12 ctermbg=2
@@ -402,14 +390,14 @@ else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
   hi Character ctermfg=3
-  hi ColorColumn ctermbg=7
+  hi ColorColumn ctermbg=5
   hi Comment ctermfg=2
   hi Conditional ctermfg=3
   hi Constant cterm=bold ctermfg=3
   hi Cursor cterm=reverse ctermfg=0 ctermbg=3
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Delimiter ctermfg=7
   hi DiffAdd ctermfg=7 ctermbg=2
   hi DiffChange ctermfg=7 ctermbg=5
@@ -426,7 +414,6 @@ else " 8 colors
   hi Ignore ctermfg=7
   hi IncSearch cterm=NONE ctermfg=0 ctermbg=6
   hi Include ctermfg=7
-  hi JavaScriptStrings ctermfg=6
   hi Keyword cterm=bold ctermfg=3
   hi LineNr ctermfg=2 ctermbg=0
   hi LocalVariable ctermfg=5
@@ -444,12 +431,9 @@ else " 8 colors
   hi Question ctermfg=6
   hi Repeat ctermfg=3
   hi Search cterm=underline ctermfg=7 ctermbg=5
-  hi SignColumn ctermfg=4 ctermbg=7
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special ctermfg=6
   hi SpecialKey ctermfg=2 ctermbg=0
-  hi SpellBad ctermbg=7
-  hi SpellCap ctermbg=7
-  hi SpellRare ctermbg=7
   hi Statement ctermfg=7
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=0
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=0
@@ -462,9 +446,9 @@ else " 8 colors
   hi Type cterm=bold ctermfg=3
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=3
   hi cssBoxProp ctermfg=7
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7
@@ -474,6 +458,7 @@ else " 8 colors
   hi htmlString ctermfg=3
   hi htmlTagName ctermfg=7
   hi javaDocSeeTag ctermfg=7
+  hi javascriptStringS ctermfg=6
   hi markdownBlockquote cterm=bold ctermfg=6
   hi markdownBold cterm=bold ctermfg=3
   hi markdownCode cterm=bold ctermfg=7 ctermbg=2
@@ -514,7 +499,6 @@ hi! link SpecialComment Tag
 hi! link Structure Include
 hi! link Typedef Repeat
 hi! link Union Ignore
-hi! link VisualNOS Ignore
 hi! link csXmlTag Keyword
 hi! link cssColorProp cssBoxProp
 hi! link cssFontProp cssBoxProp

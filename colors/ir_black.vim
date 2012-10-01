@@ -4,7 +4,7 @@
 " Name: ir_black
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:00
+" Date: 2012-09-29 13:36:56
 "----------------------------------------------------------
 
 set background=dark
@@ -63,176 +63,176 @@ if has("gui_running")
   hi rubyStringDelimiter guifg=#336633
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=16
-  hi Comment ctermfg=242
-  hi Conditional ctermfg=12
-  hi Constant ctermfg=14
+  hi Comment ctermfg=8
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=233
-  hi Delimiter ctermfg=14
-  hi ErrorMsg ctermbg=9
+  hi Delimiter ctermfg=11
+  hi ErrorMsg ctermbg=12
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=130
+  hi Function ctermfg=6
   hi Identifier cterm=NONE
-  hi Keyword ctermfg=12
-  hi LineNr ctermfg=242 ctermbg=16
-  hi MatchParen ctermfg=15 ctermbg=242
-  hi ModeMsg ctermfg=0 ctermbg=14
+  hi Keyword ctermfg=9
+  hi LineNr ctermfg=8 ctermbg=16
+  hi MatchParen ctermfg=15 ctermbg=8
+  hi ModeMsg ctermfg=0 ctermbg=11
   hi NonText ctermfg=0 ctermbg=16
   hi Number ctermfg=13
   hi Operator ctermfg=15
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=12
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=15
   hi SpecialKey ctermfg=NONE ctermbg=236
-  hi Statement ctermfg=81
-  hi StatusLine cterm=NONE ctermfg=15 ctermbg=242
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=242
+  hi Statement ctermfg=9
+  hi StatusLine cterm=NONE ctermfg=15 ctermbg=8
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=8
   hi String ctermfg=10
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=11
-  hi VertSplit cterm=NONE ctermfg=242 ctermbg=242
-  hi WarningMsg ctermfg=15 ctermbg=9
-  hi javaDocSeeTag ctermfg=242
-  hi rubyControl ctermfg=12
-  hi rubyEscape ctermfg=14
-  hi rubyInterpolationDelimiter ctermfg=12
-  hi rubyRegexp ctermfg=130
-  hi rubyRegexpDelimiter ctermfg=130
-  hi rubyStringDelimiter ctermfg=121
+  hi Todo ctermfg=12 ctermbg=NONE
+  hi Type ctermfg=14
+  hi VertSplit cterm=NONE ctermfg=8 ctermbg=8
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermfg=15 ctermbg=12
+  hi javaDocSeeTag ctermfg=8
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=11
+  hi rubyInterpolationDelimiter ctermfg=9
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyStringDelimiter ctermfg=10
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi Comment ctermfg=82
-  hi Conditional ctermfg=39
-  hi Constant ctermfg=31
+  hi Comment ctermfg=81
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=76
   hi Cursor cterm=reverse ctermfg=16 ctermbg=79
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=16
-  hi Delimiter ctermfg=31
-  hi ErrorMsg ctermbg=9
+  hi Delimiter ctermfg=76
+  hi ErrorMsg ctermbg=39
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=52
+  hi Function ctermfg=6
   hi Identifier cterm=NONE
-  hi Keyword ctermfg=39
-  hi LineNr ctermfg=82 ctermbg=16
-  hi MatchParen ctermfg=79 ctermbg=82
-  hi ModeMsg ctermfg=16 ctermbg=31
+  hi Keyword ctermfg=9
+  hi LineNr ctermfg=81 ctermbg=16
+  hi MatchParen ctermfg=79 ctermbg=81
+  hi ModeMsg ctermfg=16 ctermbg=76
   hi NonText ctermfg=16 ctermbg=16
   hi Number ctermfg=67
   hi Operator ctermfg=79
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=16 ctermbg=79
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=39
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=79
   hi SpecialKey ctermfg=NONE ctermbg=80
-  hi Statement ctermfg=43
-  hi StatusLine cterm=NONE ctermfg=79 ctermbg=82
-  hi StatusLineNC cterm=NONE ctermfg=39 ctermbg=82
+  hi Statement ctermfg=9
+  hi StatusLine cterm=NONE ctermfg=79 ctermbg=81
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=81
   hi String ctermfg=28
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=76
-  hi VertSplit cterm=NONE ctermfg=82 ctermbg=82
-  hi WarningMsg ctermfg=79 ctermbg=9
-  hi javaDocSeeTag ctermfg=82
-  hi rubyControl ctermfg=39
-  hi rubyEscape ctermfg=31
-  hi rubyInterpolationDelimiter ctermfg=39
-  hi rubyRegexp ctermfg=52
-  hi rubyRegexpDelimiter ctermfg=52
-  hi rubyStringDelimiter ctermfg=46
+  hi Todo ctermfg=39 ctermbg=NONE
+  hi Type ctermfg=31
+  hi VertSplit cterm=NONE ctermfg=81 ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermfg=79 ctermbg=39
+  hi javaDocSeeTag ctermfg=81
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=76
+  hi rubyInterpolationDelimiter ctermfg=9
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyStringDelimiter ctermfg=28
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Comment ctermfg=3
-  hi Conditional ctermfg=12
-  hi Constant ctermfg=14
+  hi Comment ctermfg=2
+  hi Conditional ctermfg=9
+  hi Constant ctermfg=11
   hi Cursor cterm=reverse ctermfg=0 ctermbg=15
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=0
-  hi Delimiter ctermfg=14
-  hi ErrorMsg ctermbg=9
+  hi Delimiter ctermfg=11
+  hi ErrorMsg ctermbg=12
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=3
+  hi Function ctermfg=6
   hi Identifier cterm=NONE
-  hi Keyword ctermfg=12
-  hi LineNr ctermfg=3 ctermbg=0
-  hi MatchParen ctermfg=15 ctermbg=3
-  hi ModeMsg ctermfg=0 ctermbg=14
+  hi Keyword ctermfg=9
+  hi LineNr ctermfg=2 ctermbg=0
+  hi MatchParen ctermfg=15 ctermbg=2
+  hi ModeMsg ctermfg=0 ctermbg=11
   hi NonText ctermfg=0 ctermbg=0
   hi Number ctermfg=13
   hi Operator ctermfg=15
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=12
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=15
   hi SpecialKey ctermfg=NONE ctermbg=2
-  hi Statement ctermfg=12
-  hi StatusLine cterm=NONE ctermfg=15 ctermbg=3
-  hi StatusLineNC cterm=NONE ctermfg=12 ctermbg=3
+  hi Statement ctermfg=9
+  hi StatusLine cterm=NONE ctermfg=15 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=9 ctermbg=2
   hi String ctermfg=2
   hi Title ctermfg=NONE
-  hi Todo ctermfg=9 ctermbg=NONE
-  hi Type ctermfg=11
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi WarningMsg ctermfg=15 ctermbg=9
-  hi javaDocSeeTag ctermfg=3
-  hi rubyControl ctermfg=12
-  hi rubyEscape ctermfg=14
-  hi rubyInterpolationDelimiter ctermfg=12
-  hi rubyRegexp ctermfg=3
-  hi rubyRegexpDelimiter ctermfg=3
-  hi rubyStringDelimiter ctermfg=10
+  hi Todo ctermfg=12 ctermbg=NONE
+  hi Type ctermfg=14
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=15 ctermbg=12
+  hi javaDocSeeTag ctermfg=2
+  hi rubyControl ctermfg=9
+  hi rubyEscape ctermfg=11
+  hi rubyInterpolationDelimiter ctermfg=9
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyStringDelimiter ctermfg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=3
-  hi Conditional ctermfg=5
-  hi Constant ctermfg=6
+  hi Comment ctermfg=2
+  hi Conditional ctermfg=1
+  hi Constant ctermfg=3
   hi Cursor cterm=reverse ctermfg=0 ctermbg=7
   hi CursorColumn cterm=bold ctermbg=NONE
   hi CursorLine cterm=bold ctermbg=0
-  hi Delimiter ctermfg=6
-  hi ErrorMsg ctermbg=1
+  hi Delimiter ctermfg=3
+  hi ErrorMsg ctermbg=5
   hi Folded ctermfg=NONE ctermbg=NONE
-  hi Function ctermfg=3
+  hi Function ctermfg=6
   hi Identifier cterm=NONE
-  hi Keyword ctermfg=5
-  hi LineNr ctermfg=3 ctermbg=0
-  hi MatchParen ctermfg=7 ctermbg=3
-  hi ModeMsg ctermfg=0 ctermbg=6
+  hi Keyword ctermfg=1
+  hi LineNr ctermfg=2 ctermbg=0
+  hi MatchParen ctermfg=7 ctermbg=2
+  hi ModeMsg ctermfg=0 ctermbg=3
   hi NonText ctermfg=0 ctermbg=0
   hi Number ctermfg=5
   hi Operator ctermfg=7
   hi Pmenu ctermfg=NONE ctermbg=NONE
   hi PmenuSbar ctermfg=0 ctermbg=7
   hi PmenuSel ctermfg=NONE ctermbg=NONE
-  hi PreProc ctermfg=5
   hi Search cterm=underline ctermfg=NONE ctermbg=NONE
   hi Special ctermfg=7
   hi SpecialKey ctermfg=NONE ctermbg=2
-  hi Statement ctermfg=7
-  hi StatusLine cterm=NONE ctermfg=7 ctermbg=3
-  hi StatusLineNC cterm=NONE ctermfg=5 ctermbg=3
+  hi Statement ctermfg=1
+  hi StatusLine cterm=NONE ctermfg=7 ctermbg=2
+  hi StatusLineNC cterm=NONE ctermfg=1 ctermbg=2
   hi String ctermfg=2
   hi Title ctermfg=NONE
-  hi Todo ctermfg=1 ctermbg=NONE
-  hi Type ctermfg=3
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=3
-  hi WarningMsg ctermfg=7 ctermbg=1
-  hi javaDocSeeTag ctermfg=3
-  hi rubyControl ctermfg=5
-  hi rubyEscape ctermfg=6
-  hi rubyInterpolationDelimiter ctermfg=5
-  hi rubyRegexp ctermfg=3
-  hi rubyRegexpDelimiter ctermfg=3
-  hi rubyStringDelimiter ctermfg=7
+  hi Todo ctermfg=5 ctermbg=NONE
+  hi Type ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=7 ctermbg=5
+  hi javaDocSeeTag ctermfg=2
+  hi rubyControl ctermfg=1
+  hi rubyEscape ctermfg=3
+  hi rubyInterpolationDelimiter ctermfg=1
+  hi rubyRegexp ctermfg=6
+  hi rubyRegexpDelimiter ctermfg=6
+  hi rubyStringDelimiter ctermfg=2
 endif
 
 hi! link csXmlTag Keyword

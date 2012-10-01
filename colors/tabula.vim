@@ -4,7 +4,7 @@
 " Name: tabula
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:24
+" Date: 2012-09-29 13:45:26
 "----------------------------------------------------------
 
 set background=dark
@@ -158,11 +158,11 @@ elseif &t_Co == 256
   hi DiffDelete ctermfg=1 ctermbg=7
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
-  hi Error ctermfg=11
-  hi ErrorMsg ctermfg=7
+  hi Error ctermfg=11 ctermbg=9
+  hi ErrorMsg ctermfg=7 ctermbg=1
   hi Float ctermfg=123
-  hi FoldColumn ctermbg=240
-  hi Folded ctermbg=240
+  hi FoldColumn ctermfg=14 ctermbg=240
+  hi Folded ctermfg=14 ctermbg=240
   hi Identifier cterm=NONE ctermfg=215
   hi Ignore ctermfg=23
   hi IncSearch cterm=NONE ctermfg=252 ctermbg=22
@@ -191,6 +191,7 @@ elseif &t_Co == 256
   hi Special ctermfg=45
   hi SpecialKey ctermbg=23
   hi SpellLocal ctermbg=0
+  hi Statement ctermfg=11
   hi StatusLine cterm=reverse ctermfg=16 ctermbg=0
   hi StatusLineNC ctermfg=72 ctermbg=23
   hi String ctermfg=123
@@ -219,6 +220,7 @@ elseif &t_Co == 256
   hi UT8 ctermfg=84
   hi UT9 ctermfg=84
   hi VertSplit ctermfg=72 ctermbg=23
+  hi Visual cterm=NONE ctermbg=8
   hi WarningMsg ctermfg=18 ctermbg=11
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi htmlH1 cterm=bold,underline ctermfg=2
@@ -275,11 +277,11 @@ elseif &t_Co == 88
   hi DiffDelete ctermfg=48 ctermbg=87
   hi DiffText cterm=NONE ctermfg=19 ctermbg=56
   hi Directory ctermfg=24
-  hi Error ctermfg=76
-  hi ErrorMsg ctermfg=87
+  hi Error ctermfg=76 ctermbg=9
+  hi ErrorMsg ctermfg=87 ctermbg=48
   hi Float ctermfg=47
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
+  hi FoldColumn ctermfg=31 ctermbg=81
+  hi Folded ctermfg=31 ctermbg=81
   hi Identifier cterm=NONE ctermfg=73
   hi Ignore ctermfg=21
   hi IncSearch cterm=NONE ctermfg=86 ctermbg=20
@@ -308,6 +310,7 @@ elseif &t_Co == 88
   hi Special ctermfg=27
   hi SpecialKey ctermbg=81
   hi SpellLocal ctermbg=16
+  hi Statement ctermfg=76
   hi StatusLine cterm=reverse ctermfg=16 ctermbg=16
   hi StatusLineNC ctermfg=41 ctermbg=21
   hi String ctermfg=47
@@ -336,6 +339,7 @@ elseif &t_Co == 88
   hi UT8 ctermfg=45
   hi UT9 ctermfg=45
   hi VertSplit ctermfg=41 ctermbg=21
+  hi Visual cterm=NONE ctermbg=81
   hi WarningMsg ctermfg=17 ctermbg=76
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi htmlH1 cterm=bold,underline ctermfg=24
@@ -392,11 +396,11 @@ elseif &t_Co == 16
   hi DiffDelete ctermfg=9 ctermbg=11
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
-  hi Error ctermfg=11
-  hi ErrorMsg ctermfg=11
+  hi Error ctermfg=11 ctermbg=9
+  hi ErrorMsg ctermfg=11 ctermbg=9
   hi Float ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi FoldColumn ctermfg=14 ctermbg=2
+  hi Folded ctermfg=14 ctermbg=2
   hi Identifier cterm=NONE ctermfg=8
   hi Ignore ctermfg=6
   hi IncSearch cterm=NONE ctermfg=7 ctermbg=2
@@ -425,6 +429,7 @@ elseif &t_Co == 16
   hi Special ctermfg=6
   hi SpecialKey ctermbg=6
   hi SpellLocal ctermbg=0
+  hi Statement ctermfg=11
   hi StatusLine cterm=reverse ctermfg=0 ctermbg=0
   hi StatusLineNC ctermfg=8 ctermbg=6
   hi String ctermfg=14
@@ -453,6 +458,7 @@ elseif &t_Co == 16
   hi UT8 ctermfg=10
   hi UT9 ctermfg=10
   hi VertSplit ctermfg=8 ctermbg=6
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg ctermfg=4 ctermbg=11
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi htmlH1 cterm=bold,underline ctermfg=2
@@ -509,11 +515,11 @@ else " 8 colors
   hi DiffDelete ctermfg=1 ctermbg=7
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
-  hi Error ctermfg=3
-  hi ErrorMsg ctermfg=7
+  hi Error ctermfg=3 ctermbg=1
+  hi ErrorMsg ctermfg=7 ctermbg=1
   hi Float ctermfg=7
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi FoldColumn ctermfg=6 ctermbg=2
+  hi Folded ctermfg=6 ctermbg=2
   hi Identifier cterm=NONE ctermfg=7
   hi Ignore ctermfg=6
   hi IncSearch cterm=NONE ctermfg=7 ctermbg=2
@@ -542,6 +548,7 @@ else " 8 colors
   hi Special ctermfg=6
   hi SpecialKey ctermbg=6
   hi SpellLocal ctermbg=0
+  hi Statement ctermfg=3
   hi StatusLine cterm=reverse ctermfg=0 ctermbg=0
   hi StatusLineNC ctermfg=6 ctermbg=6
   hi String ctermfg=7
@@ -570,6 +577,7 @@ else " 8 colors
   hi UT8 ctermfg=6
   hi UT9 ctermfg=6
   hi VertSplit ctermfg=6 ctermbg=6
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg ctermfg=4 ctermbg=3
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi htmlH1 cterm=bold,underline ctermfg=2

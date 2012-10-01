@@ -4,7 +4,7 @@
 " Name: lemon256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:33
+" Date: 2012-09-29 13:37:42
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Boolean guifg=#af87ff
   hi Character guifg=#d7d75f
   hi Conditional guifg=#5f87d7
-  hi Cursor guifg=#4d4d4d guibg=#5c5cff
   hi Debug guifg=#bcbcbc
   hi Define guifg=#5fd7ff
   hi Delimiter guifg=#8a8a8a
@@ -28,7 +27,6 @@ if has("gui_running")
   hi Exception guifg=#87d700
   hi Float guifg=#af87ff
   hi Function guifg=#afff00
-  hi HelpHyperTextEntry guifg=#00cd00
   hi IncSearch guifg=#afaf87 guibg=#000000
   hi Keyword guifg=#d7005f
   hi Label guifg=#d7d75f
@@ -63,6 +61,7 @@ if has("gui_running")
   hi WarningMsg guibg=#303030
   hi helpExample guifg=#d7af00
   hi helpHyperTextJump guifg=#0087ff
+  hi helpHypertextEntry guifg=#00cd00
   hi helpOption guifg=#00cdcd
   hi htmlStatement guifg=#87afd7
 elseif &t_Co == 256
@@ -80,17 +79,16 @@ elseif &t_Co == 256
   hi Delimiter ctermfg=245
   hi DiffAdd ctermbg=0
   hi DiffChange ctermfg=244 ctermbg=0
-  hi DiffDelete ctermfg=9 ctermbg=0
+  hi DiffDelete ctermbg=0
   hi DiffText ctermbg=0
   hi Directory cterm=bold ctermfg=112
   hi Error ctermfg=1 ctermbg=10
-  hi ErrorMsg cterm=bold ctermfg=0
+  hi ErrorMsg cterm=bold ctermfg=0 ctermbg=1
   hi Exception cterm=bold ctermfg=112
   hi Float ctermfg=141
-  hi FoldColumn ctermfg=10 ctermbg=8
+  hi FoldColumn ctermfg=10
   hi Folded ctermfg=8 ctermbg=10
   hi Function ctermfg=154
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=172
   hi Ignore ctermfg=244
   hi IncSearch ctermfg=144 ctermbg=16
@@ -106,7 +104,7 @@ elseif &t_Co == 256
   hi Number ctermfg=141
   hi Operator cterm=bold ctermfg=68
   hi Pmenu ctermbg=12
-  hi PmenuSbar ctermfg=12 ctermbg=7
+  hi PmenuSbar ctermfg=12
   hi PmenuSel ctermfg=7 ctermbg=10
   hi PmenuThumb ctermfg=0
   hi PreCondit cterm=bold ctermfg=112
@@ -139,12 +137,13 @@ elseif &t_Co == 256
   hi Typedef ctermfg=81
   hi Underlined ctermfg=244
   hi VertSplit cterm=bold ctermfg=10 ctermbg=0
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi VisualNOS ctermbg=237
   hi WarningMsg cterm=bold ctermfg=231 ctermbg=236
   hi WildMenu ctermbg=7
   hi helpExample ctermfg=178
   hi helpHyperTextJump ctermfg=33
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=110
 elseif &t_Co == 88
@@ -162,17 +161,16 @@ elseif &t_Co == 88
   hi Delimiter ctermfg=83
   hi DiffAdd ctermbg=16
   hi DiffChange ctermfg=83 ctermbg=16
-  hi DiffDelete ctermfg=9 ctermbg=16
+  hi DiffDelete ctermbg=16
   hi DiffText ctermbg=16
   hi Directory cterm=bold ctermfg=40
   hi Error ctermfg=48 ctermbg=28
-  hi ErrorMsg cterm=bold ctermfg=16
+  hi ErrorMsg cterm=bold ctermfg=16 ctermbg=48
   hi Exception cterm=bold ctermfg=40
   hi Float ctermfg=55
-  hi FoldColumn ctermfg=28 ctermbg=81
+  hi FoldColumn ctermfg=28
   hi Folded ctermfg=81 ctermbg=28
   hi Function ctermfg=60
-  hi HelpHyperTextEntry ctermfg=24
   hi Identifier ctermfg=52
   hi Ignore ctermfg=83
   hi IncSearch ctermfg=84 ctermbg=16
@@ -188,7 +186,7 @@ elseif &t_Co == 88
   hi Number ctermfg=55
   hi Operator cterm=bold ctermfg=38
   hi Pmenu ctermbg=39
-  hi PmenuSbar ctermfg=39 ctermbg=87
+  hi PmenuSbar ctermfg=39
   hi PmenuSel ctermfg=87 ctermbg=28
   hi PmenuThumb ctermfg=16
   hi PreCondit cterm=bold ctermfg=40
@@ -221,12 +219,13 @@ elseif &t_Co == 88
   hi Typedef ctermfg=43
   hi Underlined ctermfg=83
   hi VertSplit cterm=bold ctermfg=28 ctermbg=16
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi VisualNOS ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=80
   hi WildMenu ctermbg=87
   hi helpExample ctermfg=56
   hi helpHyperTextJump ctermfg=23
+  hi helpHypertextEntry ctermfg=24
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=42
 elseif &t_Co == 16
@@ -244,17 +243,16 @@ elseif &t_Co == 16
   hi Delimiter ctermfg=8
   hi DiffAdd ctermbg=0
   hi DiffChange ctermfg=8 ctermbg=0
-  hi DiffDelete ctermfg=9 ctermbg=0
+  hi DiffDelete ctermbg=0
   hi DiffText ctermbg=0
   hi Directory cterm=bold ctermfg=3
   hi Error ctermfg=9 ctermbg=2
-  hi ErrorMsg cterm=bold ctermfg=0
+  hi ErrorMsg cterm=bold ctermfg=0 ctermbg=9
   hi Exception cterm=bold ctermfg=3
   hi Float ctermfg=12
-  hi FoldColumn ctermfg=2 ctermbg=2
+  hi FoldColumn ctermfg=2
   hi Folded ctermfg=2 ctermbg=2
   hi Function ctermfg=3
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=3
   hi Ignore ctermfg=8
   hi IncSearch ctermfg=8 ctermbg=0
@@ -270,7 +268,7 @@ elseif &t_Co == 16
   hi Number ctermfg=12
   hi Operator cterm=bold ctermfg=8
   hi Pmenu ctermbg=12
-  hi PmenuSbar ctermfg=12 ctermbg=11
+  hi PmenuSbar ctermfg=12
   hi PmenuSel ctermfg=11 ctermbg=2
   hi PmenuThumb ctermfg=0
   hi PreCondit cterm=bold ctermfg=3
@@ -303,12 +301,13 @@ elseif &t_Co == 16
   hi Typedef ctermfg=12
   hi Underlined ctermfg=8
   hi VertSplit cterm=bold ctermfg=2 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=0
   hi WildMenu ctermbg=11
   hi helpExample ctermfg=3
   hi helpHyperTextJump ctermfg=6
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=8
 else " 8 colors
@@ -326,17 +325,16 @@ else " 8 colors
   hi Delimiter ctermfg=3
   hi DiffAdd ctermbg=0
   hi DiffChange ctermfg=3 ctermbg=0
-  hi DiffDelete ctermfg=1 ctermbg=0
+  hi DiffDelete ctermbg=0
   hi DiffText ctermbg=0
   hi Directory cterm=bold ctermfg=3
   hi Error ctermfg=1 ctermbg=2
-  hi ErrorMsg cterm=bold ctermfg=0
+  hi ErrorMsg cterm=bold ctermfg=0 ctermbg=1
   hi Exception cterm=bold ctermfg=3
   hi Float ctermfg=7
-  hi FoldColumn ctermfg=2 ctermbg=2
+  hi FoldColumn ctermfg=2
   hi Folded ctermfg=2 ctermbg=2
   hi Function ctermfg=3
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=3
   hi Ignore ctermfg=3
   hi IncSearch ctermfg=7 ctermbg=0
@@ -352,7 +350,7 @@ else " 8 colors
   hi Number ctermfg=7
   hi Operator cterm=bold ctermfg=6
   hi Pmenu ctermbg=5
-  hi PmenuSbar ctermfg=5 ctermbg=7
+  hi PmenuSbar ctermfg=5
   hi PmenuSel ctermfg=7 ctermbg=2
   hi PmenuThumb ctermfg=0
   hi PreCondit cterm=bold ctermfg=3
@@ -385,12 +383,13 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=3
   hi VertSplit cterm=bold ctermfg=2 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=0
   hi WildMenu ctermbg=7
   hi helpExample ctermfg=3
   hi helpHyperTextJump ctermfg=6
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=7
 endif

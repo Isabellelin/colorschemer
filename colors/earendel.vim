@@ -4,7 +4,7 @@
 " Name: earendel
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:02
+" Date: 2012-09-29 13:34:11
 "----------------------------------------------------------
 
 set background=light
@@ -46,7 +46,7 @@ if has("gui_running")
   hi PmenuThumb guifg=fg guibg=#c7cfe2
   hi PreProc guifg=#a33243 guibg=bg
   hi Question guifg=#4a4a4a guibg=bg
-  hi Search guibg=#fee481
+  hi Search guifg=NONE guibg=#fee481
   hi SignColumn guifg=#656565 guibg=bg
   hi Special guifg=#844631 guibg=bg
   hi SpecialKey guifg=#844631 guibg=bg
@@ -62,7 +62,7 @@ if has("gui_running")
   hi Underlined guifg=#272fc2 guibg=bg
   hi VertSplit gui=NONE guifg=#384547 guibg=#bcc7de
   hi Visual guifg=#000000 guibg=#bfbfbf
-  hi VisualNOS gui=bold,underline guifg=#324263 guibg=bg
+  hi VisualNOS guifg=#324263 guibg=bg
   hi WarningMsg gui=bold guifg=#ca001f guibg=bg
   hi WildMenu gui=bold guifg=fg guibg=#fedc56
   hi htmlBold gui=bold guifg=fg guibg=bg
@@ -72,7 +72,7 @@ if has("gui_running")
   hi htmlItalic gui=italic guifg=fg guibg=bg
   hi htmlUnderline gui=underline guifg=fg guibg=bg
   hi htmlUnderlineItalic gui=underline,italic guifg=fg guibg=bg
-  hi lcursor guifg=#ffffff guibg=#79bf21
+  hi lCursor guifg=#ffffff guibg=#79bf21
 elseif &t_Co == 256
   hi Normal ctermfg=0 ctermbg=15
   hi ColorColumn ctermfg=0 ctermbg=7
@@ -98,6 +98,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=fg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi SignColumn ctermbg=15
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -109,7 +110,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermfg=0 ctermbg=15
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi VisualNOS ctermfg=0 ctermbg=8
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=0 ctermbg=15
@@ -119,7 +120,7 @@ elseif &t_Co == 256
   hi htmlItalic ctermfg=0 ctermbg=15
   hi htmlUnderline ctermfg=0 ctermbg=15
   hi htmlUnderlineItalic ctermfg=0 ctermbg=15
-  hi lcursor ctermfg=231 ctermbg=106
+  hi lCursor ctermfg=231 ctermbg=106
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi ColorColumn ctermfg=16 ctermbg=87
@@ -145,6 +146,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=fg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi SignColumn ctermbg=79
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -156,7 +158,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermfg=16 ctermbg=79
   hi VertSplit ctermfg=16 ctermbg=87
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
   hi VisualNOS ctermfg=16 ctermbg=81
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=16 ctermbg=79
@@ -166,7 +168,7 @@ elseif &t_Co == 88
   hi htmlItalic ctermfg=16 ctermbg=79
   hi htmlUnderline ctermfg=16 ctermbg=79
   hi htmlUnderlineItalic ctermfg=16 ctermbg=79
-  hi lcursor ctermfg=79 ctermbg=40
+  hi lCursor ctermfg=79 ctermbg=40
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi ColorColumn ctermfg=0 ctermbg=11
@@ -192,6 +194,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=fg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi SignColumn ctermbg=15
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -203,7 +206,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermfg=0 ctermbg=15
   hi VertSplit ctermfg=0 ctermbg=11
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
   hi VisualNOS ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=0 ctermbg=15
@@ -213,7 +216,7 @@ elseif &t_Co == 16
   hi htmlItalic ctermfg=0 ctermbg=15
   hi htmlUnderline ctermfg=0 ctermbg=15
   hi htmlUnderlineItalic ctermfg=0 ctermbg=15
-  hi lcursor ctermfg=15 ctermbg=3
+  hi lCursor ctermfg=15 ctermbg=3
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi ColorColumn ctermfg=0 ctermbg=7
@@ -239,6 +242,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=fg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
+  hi Search ctermfg=NONE
   hi SignColumn ctermbg=7
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
@@ -250,7 +254,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermfg=0 ctermbg=7
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi VisualNOS ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi htmlBold ctermfg=0 ctermbg=7
@@ -260,7 +264,7 @@ else " 8 colors
   hi htmlItalic ctermfg=0 ctermbg=7
   hi htmlUnderline ctermfg=0 ctermbg=7
   hi htmlUnderlineItalic ctermfg=0 ctermbg=7
-  hi lcursor ctermfg=7 ctermbg=3
+  hi lCursor ctermfg=7 ctermbg=3
 endif
 
 hi! link bbcodeBold htmlBold

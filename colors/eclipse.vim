@@ -4,7 +4,7 @@
 " Name: eclipse
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:06
+" Date: 2012-09-29 13:34:17
 "----------------------------------------------------------
 
 set background=light
@@ -39,7 +39,7 @@ if has("gui_running")
   hi Number guifg=#0000ff guibg=bg
   hi Pmenu guifg=#ffffff
   hi PmenuSbar guifg=#ffffff
-  hi PmenuThumb guifg=#ff0000
+  hi PmenuThumb guifg=#5c5cff
   hi PreProc guifg=#683821 guibg=bg
   hi Question gui=NONE guifg=#8000ff guibg=bg
   hi Search guifg=#544060 guibg=#f0c0ff
@@ -58,9 +58,9 @@ if has("gui_running")
   hi WarningMsg guifg=#f8f8f8 guibg=#4040ff
   hi WildMenu guifg=#f8f8f8 guibg=#ff3030
   hi cursorim guifg=#ffffff guibg=#8040ff
-  hi lcursor guifg=#ffffff guibg=#8040ff
+  hi lCursor guifg=#ffffff guibg=#8040ff
 elseif &t_Co == 256
-  hi Normal ctermfg=248 ctermbg=231
+  hi Normal ctermfg=7 ctermbg=231
   hi Comment ctermfg=2 ctermbg=bg
   hi Constant ctermfg=15 ctermbg=bg
   hi Cursor ctermfg=231 ctermbg=33
@@ -80,28 +80,28 @@ elseif &t_Co == 256
   hi NonText ctermbg=254
   hi Number ctermfg=15 ctermbg=bg
   hi Pmenu ctermfg=15 ctermbg=10
-  hi PmenuSbar ctermfg=15 ctermbg=9
+  hi PmenuSbar ctermfg=15 ctermbg=12
   hi PmenuSel ctermbg=15
-  hi PmenuThumb ctermfg=9 ctermbg=15
+  hi PmenuThumb ctermfg=12 ctermbg=15
   hi PreProc ctermfg=10 ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=240 ctermbg=1
+  hi Search ctermfg=NONE ctermbg=1
   hi Special ctermbg=bg
-  hi SpecialKey ctermbg=bg
+  hi SpecialKey ctermfg=4 ctermbg=bg
   hi Statement ctermfg=15 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=15 ctermbg=12
-  hi StatusLineNC cterm=NONE ctermfg=242 ctermbg=12
-  hi String ctermfg=11 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=15 ctermbg=9
+  hi StatusLineNC cterm=NONE ctermfg=8 ctermbg=9
+  hi String ctermfg=14 ctermbg=bg
   hi Title ctermbg=bg
-  hi Type ctermfg=121 ctermbg=bg
+  hi Type ctermfg=10 ctermbg=bg
   hi Underlined ctermbg=bg
-  hi VertSplit cterm=NONE ctermfg=242 ctermbg=12
-  hi Visual ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=8 ctermbg=9
+  hi Visual cterm=NONE ctermfg=3 ctermbg=7
   hi WarningMsg ctermbg=63
   hi cursorim ctermfg=231 ctermbg=99
-  hi lcursor ctermfg=231 ctermbg=99
+  hi lCursor ctermfg=231 ctermbg=99
 elseif &t_Co == 88
-  hi Normal ctermfg=84 ctermbg=79
+  hi Normal ctermfg=87 ctermbg=79
   hi Comment ctermfg=24 ctermbg=bg
   hi Constant ctermfg=79 ctermbg=bg
   hi Cursor ctermfg=79 ctermbg=23
@@ -121,28 +121,28 @@ elseif &t_Co == 88
   hi NonText ctermbg=87
   hi Number ctermfg=79 ctermbg=bg
   hi Pmenu ctermfg=79 ctermbg=28
-  hi PmenuSbar ctermfg=79 ctermbg=9
+  hi PmenuSbar ctermfg=79 ctermbg=39
   hi PmenuSel ctermbg=79
-  hi PmenuThumb ctermfg=9 ctermbg=79
+  hi PmenuThumb ctermfg=39 ctermbg=79
   hi PreProc ctermfg=28 ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=81 ctermbg=48
+  hi Search ctermfg=NONE ctermbg=48
   hi Special ctermbg=bg
-  hi SpecialKey ctermbg=bg
+  hi SpecialKey ctermfg=19 ctermbg=bg
   hi Statement ctermfg=79 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=79 ctermbg=39
-  hi StatusLineNC cterm=NONE ctermfg=82 ctermbg=39
-  hi String ctermfg=76 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=79 ctermbg=9
+  hi StatusLineNC cterm=NONE ctermfg=81 ctermbg=9
+  hi String ctermfg=31 ctermbg=bg
   hi Title ctermbg=bg
-  hi Type ctermfg=46 ctermbg=bg
+  hi Type ctermfg=28 ctermbg=bg
   hi Underlined ctermbg=bg
-  hi VertSplit cterm=NONE ctermfg=82 ctermbg=39
-  hi Visual ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=81 ctermbg=9
+  hi Visual cterm=NONE ctermfg=56 ctermbg=87
   hi WarningMsg ctermbg=19
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
-  hi Normal ctermfg=8 ctermbg=15
+  hi Normal ctermfg=11 ctermbg=15
   hi Comment ctermfg=2 ctermbg=bg
   hi Constant ctermfg=15 ctermbg=bg
   hi Cursor ctermfg=15 ctermbg=6
@@ -162,26 +162,26 @@ elseif &t_Co == 16
   hi NonText ctermbg=11
   hi Number ctermfg=15 ctermbg=bg
   hi Pmenu ctermfg=15 ctermbg=2
-  hi PmenuSbar ctermfg=15 ctermbg=9
+  hi PmenuSbar ctermfg=15 ctermbg=12
   hi PmenuSel ctermbg=15
-  hi PmenuThumb ctermfg=9 ctermbg=15
+  hi PmenuThumb ctermfg=12 ctermbg=15
   hi PreProc ctermfg=2 ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=5 ctermbg=9
+  hi Search ctermfg=NONE ctermbg=9
   hi Special ctermbg=bg
-  hi SpecialKey ctermbg=bg
+  hi SpecialKey ctermfg=4 ctermbg=bg
   hi Statement ctermfg=15 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=15 ctermbg=12
-  hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=12
-  hi String ctermfg=11 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=15 ctermbg=9
+  hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=9
+  hi String ctermfg=14 ctermbg=bg
   hi Title ctermbg=bg
-  hi Type ctermfg=10 ctermbg=bg
+  hi Type ctermfg=2 ctermbg=bg
   hi Underlined ctermbg=bg
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=12
-  hi Visual ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=9
+  hi Visual cterm=NONE ctermfg=3 ctermbg=11
   hi WarningMsg ctermbg=4
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=7
   hi Comment ctermfg=2 ctermbg=bg
@@ -203,28 +203,26 @@ else " 8 colors
   hi NonText ctermbg=7
   hi Number ctermfg=7 ctermbg=bg
   hi Pmenu ctermfg=7 ctermbg=2
-  hi PmenuSbar ctermfg=7 ctermbg=1
+  hi PmenuSbar ctermfg=7 ctermbg=5
   hi PmenuSel ctermbg=7
-  hi PmenuThumb ctermfg=1 ctermbg=7
+  hi PmenuThumb ctermfg=5 ctermbg=7
   hi PreProc ctermfg=2 ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=5 ctermbg=1
+  hi Search ctermfg=NONE ctermbg=1
   hi Special ctermbg=bg
-  hi SpecialKey ctermbg=bg
+  hi SpecialKey ctermfg=4 ctermbg=bg
   hi Statement ctermfg=7 ctermbg=bg
-  hi StatusLine cterm=bold ctermfg=7 ctermbg=5
-  hi StatusLineNC cterm=NONE ctermfg=3 ctermbg=5
-  hi String ctermfg=3 ctermbg=bg
+  hi StatusLine cterm=bold ctermfg=7 ctermbg=1
+  hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=1
+  hi String ctermfg=6 ctermbg=bg
   hi Title ctermbg=bg
-  hi Type ctermfg=7 ctermbg=bg
+  hi Type ctermfg=2 ctermbg=bg
   hi Underlined ctermbg=bg
-  hi VertSplit cterm=NONE ctermfg=3 ctermbg=5
-  hi Visual ctermfg=6
+  hi VertSplit cterm=NONE ctermfg=2 ctermbg=1
+  hi Visual cterm=NONE ctermfg=3 ctermbg=7
   hi WarningMsg ctermbg=4
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
-hi! link Conditional Repeat
-hi! link Delimiter Normal
 

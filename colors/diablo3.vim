@@ -4,7 +4,7 @@
 " Name: diablo3
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:45
+" Date: 2012-09-29 13:33:46
 "----------------------------------------------------------
 
 set background=dark
@@ -40,7 +40,6 @@ if has("gui_running")
   hi FoldColumn guifg=#465457 guibg=#000000
   hi Folded guifg=#465457 guibg=#000000
   hi Function guifg=#cbfe28
-  hi HelpHyperTextEntry guifg=#00cd00
   hi Identifier guifg=#ff9900
   hi Ignore guifg=#808080 guibg=bg
   hi IncSearch guifg=#c4be89 guibg=#000000
@@ -89,6 +88,7 @@ if has("gui_running")
   hi WildMenu guifg=#66d9ef guibg=#000000
   hi helpExample guifg=#d7af00
   hi helpHyperTextJump guifg=#0087ff
+  hi helpHypertextEntry guifg=#00cd00
   hi helpOption guifg=#00cdcd
   hi htmlStatement guifg=#99b5d9
 elseif &t_Co == 256
@@ -116,7 +116,6 @@ elseif &t_Co == 256
   hi FoldColumn ctermfg=239 ctermbg=16
   hi Folded ctermfg=239 ctermbg=16
   hi Function ctermfg=154
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=172
   hi Ignore ctermfg=244 ctermbg=bg
   hi IncSearch ctermfg=144 ctermbg=16
@@ -162,12 +161,13 @@ elseif &t_Co == 256
   hi Typedef ctermfg=81
   hi Underlined ctermfg=244
   hi VertSplit cterm=bold ctermfg=244 ctermbg=232
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi VisualNOS ctermbg=237
   hi WarningMsg cterm=bold ctermfg=231 ctermbg=236
   hi WildMenu ctermfg=81 ctermbg=16
   hi helpExample ctermfg=178
   hi helpHyperTextJump ctermfg=33
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=110
 elseif &t_Co == 88
@@ -195,7 +195,6 @@ elseif &t_Co == 88
   hi FoldColumn ctermfg=81 ctermbg=16
   hi Folded ctermfg=81 ctermbg=16
   hi Function ctermfg=60
-  hi HelpHyperTextEntry ctermfg=24
   hi Identifier ctermfg=52
   hi Ignore ctermfg=83 ctermbg=bg
   hi IncSearch ctermfg=84 ctermbg=16
@@ -241,12 +240,13 @@ elseif &t_Co == 88
   hi Typedef ctermfg=43
   hi Underlined ctermfg=83
   hi VertSplit cterm=bold ctermfg=83 ctermbg=16
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi VisualNOS ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=80
   hi WildMenu ctermfg=43 ctermbg=16
   hi helpExample ctermfg=56
   hi helpHyperTextJump ctermfg=23
+  hi helpHypertextEntry ctermfg=24
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=42
 elseif &t_Co == 16
@@ -274,7 +274,6 @@ elseif &t_Co == 16
   hi FoldColumn ctermfg=2 ctermbg=0
   hi Folded ctermfg=2 ctermbg=0
   hi Function ctermfg=3
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=3
   hi Ignore ctermfg=8 ctermbg=bg
   hi IncSearch ctermfg=8 ctermbg=0
@@ -320,12 +319,13 @@ elseif &t_Co == 16
   hi Typedef ctermfg=12
   hi Underlined ctermfg=8
   hi VertSplit cterm=bold ctermfg=8 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=0
   hi WildMenu ctermfg=12 ctermbg=0
   hi helpExample ctermfg=3
   hi helpHyperTextJump ctermfg=6
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=8
 else " 8 colors
@@ -353,7 +353,6 @@ else " 8 colors
   hi FoldColumn ctermfg=2 ctermbg=0
   hi Folded ctermfg=2 ctermbg=0
   hi Function ctermfg=3
-  hi HelpHyperTextEntry ctermfg=2
   hi Identifier ctermfg=3
   hi Ignore ctermfg=3 ctermbg=bg
   hi IncSearch ctermfg=7 ctermbg=0
@@ -399,12 +398,13 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=3
   hi VertSplit cterm=bold ctermfg=3 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=0
   hi WildMenu ctermfg=7 ctermbg=0
   hi helpExample ctermfg=3
   hi helpHyperTextJump ctermfg=6
+  hi helpHypertextEntry ctermfg=2
   hi helpOption ctermfg=6
   hi htmlStatement ctermfg=7
 endif

@@ -4,7 +4,7 @@
 " Name: brown
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:09
+" Date: 2012-09-29 13:31:13
 "----------------------------------------------------------
 
 set background=light
@@ -49,108 +49,108 @@ if has("gui_running")
   hi WildMenu guifg=#f9d7a6 guibg=#8e6837
 elseif &t_Co == 256
   hi Normal ctermfg=95 ctermbg=180
-  hi Comment ctermfg=9
+  hi Comment ctermfg=12
   hi Constant ctermfg=15
   hi Cursor ctermfg=180 ctermbg=58
   hi DiffAdd ctermfg=0 ctermbg=10
   hi DiffChange ctermfg=15 ctermbg=10
-  hi DiffDelete ctermfg=130 ctermbg=NONE
+  hi DiffDelete ctermfg=6 ctermbg=NONE
   hi DiffText ctermfg=10 ctermbg=0
   hi Directory ctermfg=10
   hi Identifier ctermfg=10
   hi IncSearch ctermfg=223 ctermbg=95
-  hi ModeMsg ctermfg=14
-  hi NonText ctermfg=242
+  hi ModeMsg ctermfg=11
+  hi NonText ctermfg=8
   hi PreProc ctermfg=15
   hi Scrollbar ctermfg=137 ctermbg=180
-  hi Search ctermfg=11 ctermbg=14
-  hi Special ctermfg=11
+  hi Search ctermfg=14 ctermbg=11
+  hi Special ctermfg=14
   hi SpecialKey ctermfg=15
-  hi Statement ctermfg=14
+  hi Statement ctermfg=11
   hi StatusLine ctermfg=2 ctermbg=0
-  hi StatusLineNC ctermfg=6 ctermbg=0
+  hi StatusLineNC ctermfg=3 ctermbg=0
   hi Title ctermfg=2
-  hi Type ctermfg=11
+  hi Type ctermfg=14
   hi VertSplit ctermfg=0 ctermbg=10
-  hi Visual ctermfg=6 ctermbg=0
+  hi Visual cterm=NONE ctermfg=3 ctermbg=0
 elseif &t_Co == 88
   hi Normal ctermfg=81 ctermbg=57
-  hi Comment ctermfg=9
+  hi Comment ctermfg=39
   hi Constant ctermfg=79
   hi Cursor ctermfg=57 ctermbg=80
   hi DiffAdd ctermfg=16 ctermbg=28
   hi DiffChange ctermfg=79 ctermbg=28
-  hi DiffDelete ctermfg=52 ctermbg=NONE
+  hi DiffDelete ctermfg=6 ctermbg=NONE
   hi DiffText ctermfg=28 ctermbg=16
   hi Directory ctermfg=28
   hi Identifier ctermfg=28
   hi IncSearch ctermfg=73 ctermbg=36
-  hi ModeMsg ctermfg=31
-  hi NonText ctermfg=82
+  hi ModeMsg ctermfg=76
+  hi NonText ctermfg=81
   hi PreProc ctermfg=79
   hi Scrollbar ctermfg=53 ctermbg=57
-  hi Search ctermfg=76 ctermbg=31
-  hi Special ctermfg=76
+  hi Search ctermfg=31 ctermbg=76
+  hi Special ctermfg=31
   hi SpecialKey ctermfg=79
-  hi Statement ctermfg=31
+  hi Statement ctermfg=76
   hi StatusLine ctermfg=24 ctermbg=16
-  hi StatusLineNC ctermfg=6 ctermbg=16
+  hi StatusLineNC ctermfg=56 ctermbg=16
   hi Title ctermfg=24
-  hi Type ctermfg=76
+  hi Type ctermfg=31
   hi VertSplit ctermfg=16 ctermbg=28
-  hi Visual ctermfg=6 ctermbg=16
+  hi Visual cterm=NONE ctermfg=56 ctermbg=16
 elseif &t_Co == 16
   hi Normal ctermfg=3 ctermbg=7
-  hi Comment ctermfg=9
+  hi Comment ctermfg=12
   hi Constant ctermfg=15
   hi Cursor ctermfg=7 ctermbg=1
   hi DiffAdd ctermfg=0 ctermbg=2
   hi DiffChange ctermfg=15 ctermbg=2
-  hi DiffDelete ctermfg=3 ctermbg=NONE
+  hi DiffDelete ctermfg=6 ctermbg=NONE
   hi DiffText ctermfg=2 ctermbg=0
   hi Directory ctermfg=2
   hi Identifier ctermfg=2
   hi IncSearch ctermfg=11 ctermbg=3
-  hi ModeMsg ctermfg=14
-  hi NonText ctermfg=3
+  hi ModeMsg ctermfg=11
+  hi NonText ctermfg=2
   hi PreProc ctermfg=15
   hi Scrollbar ctermfg=8 ctermbg=7
-  hi Search ctermfg=11 ctermbg=14
-  hi Special ctermfg=11
+  hi Search ctermfg=14 ctermbg=11
+  hi Special ctermfg=14
   hi SpecialKey ctermfg=15
-  hi Statement ctermfg=14
+  hi Statement ctermfg=11
   hi StatusLine ctermfg=2 ctermbg=0
-  hi StatusLineNC ctermfg=6 ctermbg=0
+  hi StatusLineNC ctermfg=3 ctermbg=0
   hi Title ctermfg=2
-  hi Type ctermfg=11
+  hi Type ctermfg=14
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=0
+  hi Visual cterm=NONE ctermfg=3 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=3 ctermbg=7
-  hi Comment ctermfg=1
+  hi Comment ctermfg=5
   hi Constant ctermfg=7
   hi Cursor ctermfg=7 ctermbg=1
   hi DiffAdd ctermfg=0 ctermbg=2
   hi DiffChange ctermfg=7 ctermbg=2
-  hi DiffDelete ctermfg=3 ctermbg=NONE
+  hi DiffDelete ctermfg=6 ctermbg=NONE
   hi DiffText ctermfg=2 ctermbg=0
   hi Directory ctermfg=2
   hi Identifier ctermfg=2
   hi IncSearch ctermfg=7 ctermbg=3
-  hi ModeMsg ctermfg=6
-  hi NonText ctermfg=3
+  hi ModeMsg ctermfg=3
+  hi NonText ctermfg=2
   hi PreProc ctermfg=7
   hi Scrollbar ctermfg=3 ctermbg=7
-  hi Search ctermfg=3 ctermbg=6
-  hi Special ctermfg=3
+  hi Search ctermfg=6 ctermbg=3
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=7
-  hi Statement ctermfg=6
+  hi Statement ctermfg=3
   hi StatusLine ctermfg=2 ctermbg=0
-  hi StatusLineNC ctermfg=6 ctermbg=0
+  hi StatusLineNC ctermfg=3 ctermbg=0
   hi Title ctermfg=2
-  hi Type ctermfg=3
+  hi Type ctermfg=6
   hi VertSplit ctermfg=0 ctermbg=2
-  hi Visual ctermfg=6 ctermbg=0
+  hi Visual cterm=NONE ctermfg=3 ctermbg=0
 endif
 
 

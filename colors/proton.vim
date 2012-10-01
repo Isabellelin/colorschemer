@@ -4,7 +4,7 @@
 " Name: proton
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:46
+" Date: 2012-09-29 13:41:59
 "----------------------------------------------------------
 
 set background=light
@@ -81,7 +81,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=131 ctermbg=255
   hi PreProc ctermbg=253
   hi Repeat ctermfg=65 ctermbg=254
-  hi Search ctermfg=231
+  hi Search ctermfg=NONE
   hi Special ctermbg=255
   hi SpecialKey ctermbg=254
   hi Statement ctermbg=254
@@ -93,7 +93,7 @@ elseif &t_Co == 256
   hi Type ctermbg=255
   hi Underlined ctermbg=255
   hi VertSplit ctermfg=246 ctermbg=242
-  hi Visual ctermfg=59
+  hi Visual cterm=NONE ctermfg=59 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=8 ctermbg=87
   hi Comment ctermbg=87
@@ -119,7 +119,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=36 ctermbg=87
   hi PreProc ctermbg=87
   hi Repeat ctermfg=81 ctermbg=87
-  hi Search ctermfg=79
+  hi Search ctermfg=NONE
   hi Special ctermbg=87
   hi SpecialKey ctermbg=87
   hi Statement ctermbg=87
@@ -131,7 +131,7 @@ elseif &t_Co == 88
   hi Type ctermbg=87
   hi Underlined ctermbg=87
   hi VertSplit ctermfg=83 ctermbg=82
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=15
   hi Comment ctermbg=15
@@ -157,7 +157,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=3 ctermbg=15
   hi PreProc ctermbg=12
   hi Repeat ctermfg=3 ctermbg=11
-  hi Search ctermfg=15
+  hi Search ctermfg=NONE
   hi Special ctermbg=11
   hi SpecialKey ctermbg=11
   hi Statement ctermbg=11
@@ -169,7 +169,7 @@ elseif &t_Co == 16
   hi Type ctermbg=15
   hi Underlined ctermbg=15
   hi VertSplit ctermfg=8 ctermbg=3
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
   hi Comment ctermbg=7
@@ -195,7 +195,7 @@ else " 8 colors
   hi Operator ctermfg=3 ctermbg=7
   hi PreProc ctermbg=7
   hi Repeat ctermfg=3 ctermbg=7
-  hi Search ctermfg=7
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi SpecialKey ctermbg=7
   hi Statement ctermbg=7
@@ -207,7 +207,7 @@ else " 8 colors
   hi Type ctermbg=7
   hi Underlined ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=3
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=7
 endif
 
 

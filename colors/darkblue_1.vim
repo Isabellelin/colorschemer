@@ -4,7 +4,7 @@
 " Name: darkblue_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:11
+" Date: 2012-09-29 13:32:54
 "----------------------------------------------------------
 
 set background=dark
@@ -59,15 +59,14 @@ if has("gui_running")
   hi Type guifg=#ff9933
   hi VertSplit guifg=#00c4ff guibg=#0000ff
   hi Visual guibg=#223344
+  hi VisualNOS gui=NONE
   hi WarningMsg guifg=#ffa500 guibg=#000080
   hi cursorim guifg=#00aaff guibg=#ff66ff
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=234
   hi Comment ctermfg=63
-  hi Conceal ctermbg=8
   hi Constant ctermfg=112
   hi Cursor ctermfg=231 ctermbg=24
-  hi CursorColumn ctermbg=8
   hi CursorLine cterm=NONE ctermbg=236
   hi CursorLineNr ctermfg=25 ctermbg=236
   hi DiffAdd ctermfg=16 ctermbg=46
@@ -109,18 +108,16 @@ elseif &t_Co == 256
   hi Title ctermfg=227
   hi Todo cterm=bold,underline ctermfg=196 ctermbg=234
   hi Type ctermfg=208
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=81 ctermbg=21
-  hi Visual ctermbg=236
+  hi Visual cterm=NONE ctermbg=236
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=214 ctermbg=18
   hi cursorim ctermfg=39 ctermbg=207
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermfg=39
-  hi Conceal ctermbg=81
   hi Constant ctermfg=40
   hi Cursor ctermfg=79 ctermbg=21
-  hi CursorColumn ctermbg=81
   hi CursorLine cterm=NONE ctermbg=80
   hi CursorLineNr ctermfg=22 ctermbg=80
   hi DiffAdd ctermfg=16 ctermbg=28
@@ -162,18 +159,16 @@ elseif &t_Co == 88
   hi Title ctermfg=77
   hi Todo cterm=bold,underline ctermfg=9 ctermbg=80
   hi Type ctermfg=68
-  hi Underlined ctermfg=39
   hi VertSplit ctermfg=43 ctermbg=19
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=72 ctermbg=17
   hi cursorim ctermfg=27 ctermbg=71
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=12
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=15 ctermbg=6
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=0
   hi CursorLineNr ctermfg=6 ctermbg=0
   hi DiffAdd ctermfg=0 ctermbg=2
@@ -215,18 +210,16 @@ elseif &t_Co == 16
   hi Title ctermfg=11
   hi Todo cterm=bold,underline ctermfg=9 ctermbg=0
   hi Type ctermfg=3
-  hi Underlined ctermfg=12
   hi VertSplit ctermfg=12 ctermbg=4
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=0
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=3 ctermbg=4
   hi cursorim ctermfg=6 ctermbg=13
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=5
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=7 ctermbg=6
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=0
   hi CursorLineNr ctermfg=6 ctermbg=0
   hi DiffAdd ctermfg=0 ctermbg=2
@@ -268,9 +261,9 @@ else " 8 colors
   hi Title ctermfg=7
   hi Todo cterm=bold,underline ctermfg=1 ctermbg=0
   hi Type ctermfg=3
-  hi Underlined ctermfg=5
   hi VertSplit ctermfg=7 ctermbg=4
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=0
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=3 ctermbg=4
   hi cursorim ctermfg=6 ctermbg=7
 endif

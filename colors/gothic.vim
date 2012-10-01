@@ -4,7 +4,7 @@
 " Name: gothic
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:56
+" Date: 2012-09-29 13:35:29
 "----------------------------------------------------------
 
 set background=dark
@@ -31,60 +31,52 @@ if has("gui_running")
   hi Visual guifg=Grey25
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=4
-  hi Constant ctermfg=9
+  hi Comment ctermfg=1
+  hi Constant ctermfg=12
   hi Cursor ctermfg=0 ctermbg=7
-  hi Function ctermfg=14
+  hi Function ctermfg=11
   hi Identifier cterm=NONE
   hi PreProc ctermfg=13
-  hi Search ctermfg=7 ctermbg=12
-  hi Special ctermfg=9
-  hi Statement ctermfg=130
-  hi StatusLine ctermfg=15 ctermbg=12
-  hi Type ctermfg=10
-  hi Visual cterm=reverse ctermfg=238
+  hi Search ctermfg=7 ctermbg=9
+  hi Statement ctermfg=6
+  hi StatusLine ctermfg=15 ctermbg=9
+  hi Visual ctermfg=238 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi Comment ctermfg=19
-  hi Constant ctermfg=9
+  hi Comment ctermfg=48
+  hi Constant ctermfg=39
   hi Cursor ctermfg=16 ctermbg=87
-  hi Function ctermfg=31
+  hi Function ctermfg=76
   hi Identifier cterm=NONE
   hi PreProc ctermfg=67
-  hi Search ctermfg=87 ctermbg=39
-  hi Special ctermfg=9
-  hi Statement ctermfg=52
-  hi StatusLine ctermfg=79 ctermbg=39
-  hi Type ctermfg=28
-  hi Visual cterm=reverse ctermfg=8
+  hi Search ctermfg=87 ctermbg=9
+  hi Statement ctermfg=6
+  hi StatusLine ctermfg=79 ctermbg=9
+  hi Visual ctermfg=8 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Comment ctermfg=4
-  hi Constant ctermfg=9
+  hi Comment ctermfg=9
+  hi Constant ctermfg=12
   hi Cursor ctermfg=0 ctermbg=11
-  hi Function ctermfg=14
+  hi Function ctermfg=11
   hi Identifier cterm=NONE
   hi PreProc ctermfg=13
-  hi Search ctermfg=11 ctermbg=12
-  hi Special ctermfg=9
-  hi Statement ctermfg=3
-  hi StatusLine ctermfg=15 ctermbg=12
-  hi Type ctermfg=2
-  hi Visual cterm=reverse ctermfg=2
+  hi Search ctermfg=11 ctermbg=9
+  hi Statement ctermfg=6
+  hi StatusLine ctermfg=15 ctermbg=9
+  hi Visual ctermfg=2 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=4
-  hi Constant ctermfg=1
+  hi Comment ctermfg=1
+  hi Constant ctermfg=5
   hi Cursor ctermfg=0 ctermbg=7
-  hi Function ctermfg=6
+  hi Function ctermfg=3
   hi Identifier cterm=NONE
   hi PreProc ctermfg=5
-  hi Search ctermfg=7 ctermbg=5
-  hi Special ctermfg=1
-  hi Statement ctermfg=3
-  hi StatusLine ctermfg=7 ctermbg=5
-  hi Type ctermfg=2
-  hi Visual cterm=reverse ctermfg=2
+  hi Search ctermfg=7 ctermbg=1
+  hi Statement ctermfg=6
+  hi StatusLine ctermfg=7 ctermbg=1
+  hi Visual ctermfg=2 ctermbg=2
 endif
 
 

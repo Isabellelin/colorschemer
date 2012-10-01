@@ -4,7 +4,7 @@
 " Name: spectro
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:03
+" Date: 2012-09-29 13:45:00
 "----------------------------------------------------------
 
 set background=dark
@@ -63,7 +63,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=231 ctermbg=73
   hi User2 ctermfg=231 ctermbg=73
   hi VertSplit ctermfg=23 ctermbg=253
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi diffAdded ctermfg=71
   hi diffChanged ctermfg=143
   hi diffLine ctermfg=73
@@ -81,7 +81,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=79 ctermbg=22
   hi User2 ctermfg=79 ctermbg=22
   hi VertSplit ctermfg=21 ctermbg=86
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi diffAdded ctermfg=40
   hi diffChanged ctermfg=56
   hi diffLine ctermfg=6
@@ -99,7 +99,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=15 ctermbg=6
   hi User2 ctermfg=15 ctermbg=6
   hi VertSplit ctermfg=6 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi diffAdded ctermfg=3
   hi diffChanged ctermfg=7
   hi diffLine ctermfg=7
@@ -117,7 +117,7 @@ else " 8 colors
   hi TabLineSel ctermfg=7 ctermbg=6
   hi User2 ctermfg=7 ctermbg=6
   hi VertSplit ctermfg=6 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi diffAdded ctermfg=3
   hi diffChanged ctermfg=7
   hi diffLine ctermfg=7
@@ -129,7 +129,6 @@ hi! link Character Special
 hi! link Debug Constant
 hi! link SpecialComment Constant
 hi! link String Special
-hi! link User2 TabLineSel
 hi! link cformat Special
 hi! link cspecialcharacter Special
 

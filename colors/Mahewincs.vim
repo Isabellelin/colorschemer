@@ -4,7 +4,7 @@
 " Name: Mahewincs
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:25
+" Date: 2012-09-29 13:30:21
 "----------------------------------------------------------
 
 set background=dark
@@ -95,7 +95,7 @@ if has("gui_running")
   hi doxygenspecial guifg=#fdd090
   hi doxygenspecialmultilinedesc guifg=#ad600b
   hi doxygenspecialonelinedesc guifg=#ad600b
-  hi lcursor guifg=#404040 guibg=#8fff8b
+  hi lCursor guifg=#404040 guibg=#8fff8b
   hi mbechanged guifg=#eeeeee guibg=#2e2e3f
   hi mbenormal guifg=#cfbfad guibg=#2e2e3f
   hi mbevisiblechanged guifg=#eeeeee guibg=#4e4e8f
@@ -169,7 +169,7 @@ elseif &t_Co == 256
   hi User4 ctermfg=51 ctermbg=18
   hi User5 ctermfg=120 ctermbg=18
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=20
-  hi Visual ctermfg=11 ctermbg=20
+  hi Visual cterm=NONE ctermfg=11 ctermbg=20
   hi WarningMsg ctermfg=11 ctermbg=20
   hi WildMenu ctermfg=11 ctermbg=20
   hi cformat ctermfg=176 ctermbg=238
@@ -183,7 +183,7 @@ elseif &t_Co == 256
   hi doxygenspecial ctermfg=222
   hi doxygenspecialmultilinedesc ctermfg=130
   hi doxygenspecialonelinedesc ctermfg=130
-  hi lcursor ctermfg=238 ctermbg=120
+  hi lCursor ctermfg=238 ctermbg=120
   hi mbechanged ctermfg=255 ctermbg=237
   hi mbenormal ctermfg=187 ctermbg=237
   hi mbevisiblechanged ctermfg=255 ctermbg=60
@@ -257,7 +257,7 @@ elseif &t_Co == 88
   hi User4 ctermfg=31 ctermbg=17
   hi User5 ctermfg=45 ctermbg=17
   hi VertSplit cterm=NONE ctermfg=76 ctermbg=4
-  hi Visual ctermfg=76 ctermbg=4
+  hi Visual cterm=NONE ctermfg=76 ctermbg=4
   hi WarningMsg ctermfg=76 ctermbg=4
   hi WildMenu ctermfg=76 ctermbg=4
   hi cformat ctermfg=54 ctermbg=80
@@ -271,7 +271,7 @@ elseif &t_Co == 88
   hi doxygenspecial ctermfg=73
   hi doxygenspecialmultilinedesc ctermfg=52
   hi doxygenspecialonelinedesc ctermfg=52
-  hi lcursor ctermfg=80 ctermbg=45
+  hi lCursor ctermfg=80 ctermbg=45
   hi mbechanged ctermfg=87 ctermbg=80
   hi mbenormal ctermfg=86 ctermbg=80
   hi mbevisiblechanged ctermfg=87 ctermbg=81
@@ -345,7 +345,7 @@ elseif &t_Co == 16
   hi User4 ctermfg=14 ctermbg=4
   hi User5 ctermfg=10 ctermbg=4
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=4
-  hi Visual ctermfg=11 ctermbg=4
+  hi Visual cterm=NONE ctermfg=11 ctermbg=4
   hi WarningMsg ctermfg=11 ctermbg=4
   hi WildMenu ctermfg=11 ctermbg=4
   hi cformat ctermfg=7 ctermbg=2
@@ -359,7 +359,7 @@ elseif &t_Co == 16
   hi doxygenspecial ctermfg=11
   hi doxygenspecialmultilinedesc ctermfg=3
   hi doxygenspecialonelinedesc ctermfg=3
-  hi lcursor ctermfg=2 ctermbg=10
+  hi lCursor ctermfg=2 ctermbg=10
   hi mbechanged ctermfg=11 ctermbg=2
   hi mbenormal ctermfg=7 ctermbg=2
   hi mbevisiblechanged ctermfg=11 ctermbg=5
@@ -433,7 +433,7 @@ else " 8 colors
   hi User4 ctermfg=6 ctermbg=4
   hi User5 ctermfg=7 ctermbg=4
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=4
-  hi Visual ctermfg=3 ctermbg=4
+  hi Visual cterm=NONE ctermfg=3 ctermbg=4
   hi WarningMsg ctermfg=3 ctermbg=4
   hi WildMenu ctermfg=3 ctermbg=4
   hi cformat ctermfg=7 ctermbg=2
@@ -447,7 +447,7 @@ else " 8 colors
   hi doxygenspecial ctermfg=7
   hi doxygenspecialmultilinedesc ctermfg=3
   hi doxygenspecialonelinedesc ctermfg=3
-  hi lcursor ctermfg=2 ctermbg=7
+  hi lCursor ctermfg=2 ctermbg=7
   hi mbechanged ctermfg=7 ctermbg=2
   hi mbenormal ctermfg=7 ctermbg=2
   hi mbevisiblechanged ctermfg=7 ctermbg=5

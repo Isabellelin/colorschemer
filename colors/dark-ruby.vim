@@ -4,7 +4,7 @@
 " Name: dark-ruby
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:06
+" Date: 2012-09-29 13:32:46
 "----------------------------------------------------------
 
 set background=light
@@ -42,9 +42,6 @@ if has("gui_running")
   hi SignColumn guifg=Cyan
   hi Special guifg=#d0d0d0
   hi SpecialKey guifg=Cyan
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement guifg=#0087d7
   hi TabLine guifg=#ffffff guibg=DarkGrey
   hi Todo guifg=red
@@ -110,46 +107,39 @@ if has("gui_running")
   hi rubySymbol guifg=#d75f5f
   hi rubyTodo guifg=#00af00
 elseif &t_Co == 256
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=2
-  hi Conceal ctermbg=8
   hi Constant ctermfg=185
   hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=241
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=1
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=14
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11
   hi Error ctermfg=160 ctermbg=NONE
-  hi FoldColumn ctermfg=14 ctermbg=8
-  hi Folded ctermfg=14 ctermbg=8
+  hi FoldColumn ctermfg=11 ctermbg=8
+  hi Folded ctermfg=11 ctermbg=8
   hi Identifier cterm=bold ctermfg=252
-  hi Ignore ctermfg=9
+  hi Ignore ctermfg=12
   hi LineNr ctermfg=252
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi MoreMsg ctermfg=10
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=8 ctermbg=0
   hi PmenuThumb ctermbg=15
   hi PreProc ctermfg=252
   hi Question ctermfg=10
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=8
+  hi SignColumn ctermfg=11 ctermbg=8
   hi Special ctermfg=252
-  hi SpecialKey ctermfg=12
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi SpecialKey ctermfg=9
   hi Statement ctermfg=32
   hi TabLine ctermfg=15 ctermbg=8
   hi Title ctermfg=13
-  hi Todo ctermfg=9
+  hi Todo ctermfg=12
   hi Type ctermfg=167
-  hi Underlined ctermfg=9
-  hi Visual ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Underlined ctermfg=12
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermfg=12
   hi htmlEndTag ctermfg=25
   hi htmlH1 ctermfg=25
   hi htmlTag ctermfg=25
@@ -157,98 +147,91 @@ elseif &t_Co == 256
   hi railsMethod ctermfg=107
   hi railsUserClass ctermfg=107
   hi railsUserMethod ctermfg=107
-  hi rubyASCIICode ctermfg=9
+  hi rubyASCIICode ctermfg=12
   hi rubyAccess ctermfg=32
   hi rubyAttribute ctermfg=252
-  hi rubyBeginEnd ctermfg=9
+  hi rubyBeginEnd ctermfg=12
   hi rubyBlock ctermfg=252
-  hi rubyBlockArgument ctermfg=9
+  hi rubyBlockArgument ctermfg=12
   hi rubyBlockParameter ctermfg=252
   hi rubyBoolean ctermfg=252
   hi rubyClass ctermfg=25
-  hi rubyClassDeclaration ctermfg=9
-  hi rubyClassVariable ctermfg=9
+  hi rubyClassDeclaration ctermfg=12
+  hi rubyClassVariable ctermfg=12
   hi rubyComment ctermfg=28
   hi rubyConditional ctermfg=81
   hi rubyConstant ctermfg=252
   hi rubyControl ctermfg=81
-  hi rubyData ctermfg=9
+  hi rubyData ctermfg=12
   hi rubyDefine ctermfg=32
-  hi rubyDelimEscape ctermfg=9
-  hi rubyDocumentation ctermfg=9
+  hi rubyDelimEscape ctermfg=12
+  hi rubyDocumentation ctermfg=12
   hi rubyEscape ctermfg=252
-  hi rubyEval ctermfg=9
-  hi rubyException ctermfg=9
+  hi rubyEval ctermfg=12
+  hi rubyException ctermfg=12
   hi rubyFloat ctermfg=185
   hi rubyFunction ctermfg=252
-  hi rubyGlobalVariable ctermfg=9
+  hi rubyGlobalVariable ctermfg=12
   hi rubyInclude ctermfg=252
   hi rubyInstanceVariable ctermfg=66
   hi rubyInteger ctermfg=185
   hi rubyInterpolation ctermfg=252
   hi rubyInterpolationDelimiter ctermfg=252
-  hi rubyKeyword ctermfg=9
-  hi rubyLocalVariableOrMethod ctermfg=9
-  hi rubyMethodDeclaration ctermfg=9
+  hi rubyKeyword ctermfg=12
+  hi rubyLocalVariableOrMethod ctermfg=12
+  hi rubyMethodDeclaration ctermfg=12
   hi rubyModule ctermfg=25
-  hi rubyModuleDeclaration ctermfg=9
-  hi rubyNestedAngleBrackets ctermfg=9
-  hi rubyNestedCurlyBraces ctermfg=9
-  hi rubyNestedParentheses ctermfg=9
-  hi rubyNestedSquareBrackets ctermfg=9
-  hi rubyNoInterpolation ctermfg=9
-  hi rubyOperator ctermfg=9
-  hi rubyPredefinedConstant ctermfg=9
-  hi rubyPredefinedVariable ctermfg=9
+  hi rubyModuleDeclaration ctermfg=12
+  hi rubyNestedAngleBrackets ctermfg=12
+  hi rubyNestedCurlyBraces ctermfg=12
+  hi rubyNestedParentheses ctermfg=12
+  hi rubyNestedSquareBrackets ctermfg=12
+  hi rubyNoInterpolation ctermfg=12
+  hi rubyOperator ctermfg=12
+  hi rubyPredefinedConstant ctermfg=12
+  hi rubyPredefinedVariable ctermfg=12
   hi rubyPseudoVariable ctermfg=252
   hi rubyRegexp ctermfg=167
   hi rubyRepeat ctermfg=81
-  hi rubySharpBang ctermfg=9
+  hi rubySharpBang ctermfg=12
   hi rubyString ctermfg=185
-  hi rubyStringSpecial ctermfg=9
+  hi rubyStringSpecial ctermfg=12
   hi rubySymbol ctermfg=167
   hi rubyTodo ctermfg=34
 elseif &t_Co == 88
-  hi ColorColumn ctermbg=48
+  hi ColorColumn ctermbg=19
   hi Comment ctermfg=24
-  hi Conceal ctermbg=81
   hi Constant ctermfg=57
   hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=81
-  hi CursorLineNr ctermfg=76
-  hi DiffAdd ctermbg=48
+  hi CursorLineNr ctermfg=31
+  hi DiffAdd ctermbg=19
   hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=31
+  hi DiffDelete ctermbg=56
+  hi Directory ctermfg=76
   hi Error ctermfg=48 ctermbg=NONE
-  hi FoldColumn ctermfg=31 ctermbg=81
-  hi Folded ctermfg=31 ctermbg=81
+  hi FoldColumn ctermfg=76 ctermbg=81
+  hi Folded ctermfg=76 ctermbg=81
   hi Identifier cterm=bold ctermfg=86
-  hi Ignore ctermfg=9
+  hi Ignore ctermfg=39
   hi LineNr ctermfg=86
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=56
   hi MoreMsg ctermfg=28
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
   hi PmenuSel ctermfg=81 ctermbg=16
   hi PmenuThumb ctermbg=79
   hi PreProc ctermfg=86
   hi Question ctermfg=28
-  hi Search ctermfg=16
-  hi SignColumn ctermfg=31 ctermbg=81
+  hi SignColumn ctermfg=76 ctermbg=81
   hi Special ctermfg=86
-  hi SpecialKey ctermfg=39
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
+  hi SpecialKey ctermfg=9
   hi Statement ctermfg=22
   hi TabLine ctermfg=79 ctermbg=81
   hi Title ctermfg=67
-  hi Todo ctermfg=9
+  hi Todo ctermfg=39
   hi Type ctermfg=53
-  hi Underlined ctermfg=9
-  hi Visual ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Underlined ctermfg=39
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermfg=39
   hi htmlEndTag ctermfg=22
   hi htmlH1 ctermfg=22
   hi htmlTag ctermfg=22
@@ -256,98 +239,91 @@ elseif &t_Co == 88
   hi railsMethod ctermfg=41
   hi railsUserClass ctermfg=41
   hi railsUserMethod ctermfg=41
-  hi rubyASCIICode ctermfg=9
+  hi rubyASCIICode ctermfg=39
   hi rubyAccess ctermfg=22
   hi rubyAttribute ctermfg=86
-  hi rubyBeginEnd ctermfg=9
+  hi rubyBeginEnd ctermfg=39
   hi rubyBlock ctermfg=86
-  hi rubyBlockArgument ctermfg=9
+  hi rubyBlockArgument ctermfg=39
   hi rubyBlockParameter ctermfg=86
   hi rubyBoolean ctermfg=86
   hi rubyClass ctermfg=22
-  hi rubyClassDeclaration ctermfg=9
-  hi rubyClassVariable ctermfg=9
+  hi rubyClassDeclaration ctermfg=39
+  hi rubyClassVariable ctermfg=39
   hi rubyComment ctermfg=20
   hi rubyConditional ctermfg=43
   hi rubyConstant ctermfg=86
   hi rubyControl ctermfg=43
-  hi rubyData ctermfg=9
+  hi rubyData ctermfg=39
   hi rubyDefine ctermfg=22
-  hi rubyDelimEscape ctermfg=9
-  hi rubyDocumentation ctermfg=9
+  hi rubyDelimEscape ctermfg=39
+  hi rubyDocumentation ctermfg=39
   hi rubyEscape ctermfg=86
-  hi rubyEval ctermfg=9
-  hi rubyException ctermfg=9
+  hi rubyEval ctermfg=39
+  hi rubyException ctermfg=39
   hi rubyFloat ctermfg=57
   hi rubyFunction ctermfg=86
-  hi rubyGlobalVariable ctermfg=9
+  hi rubyGlobalVariable ctermfg=39
   hi rubyInclude ctermfg=86
   hi rubyInstanceVariable ctermfg=83
   hi rubyInteger ctermfg=57
   hi rubyInterpolation ctermfg=86
   hi rubyInterpolationDelimiter ctermfg=86
-  hi rubyKeyword ctermfg=9
-  hi rubyLocalVariableOrMethod ctermfg=9
-  hi rubyMethodDeclaration ctermfg=9
+  hi rubyKeyword ctermfg=39
+  hi rubyLocalVariableOrMethod ctermfg=39
+  hi rubyMethodDeclaration ctermfg=39
   hi rubyModule ctermfg=22
-  hi rubyModuleDeclaration ctermfg=9
-  hi rubyNestedAngleBrackets ctermfg=9
-  hi rubyNestedCurlyBraces ctermfg=9
-  hi rubyNestedParentheses ctermfg=9
-  hi rubyNestedSquareBrackets ctermfg=9
-  hi rubyNoInterpolation ctermfg=9
-  hi rubyOperator ctermfg=9
-  hi rubyPredefinedConstant ctermfg=9
-  hi rubyPredefinedVariable ctermfg=9
+  hi rubyModuleDeclaration ctermfg=39
+  hi rubyNestedAngleBrackets ctermfg=39
+  hi rubyNestedCurlyBraces ctermfg=39
+  hi rubyNestedParentheses ctermfg=39
+  hi rubyNestedSquareBrackets ctermfg=39
+  hi rubyNoInterpolation ctermfg=39
+  hi rubyOperator ctermfg=39
+  hi rubyPredefinedConstant ctermfg=39
+  hi rubyPredefinedVariable ctermfg=39
   hi rubyPseudoVariable ctermfg=86
   hi rubyRegexp ctermfg=53
   hi rubyRepeat ctermfg=43
-  hi rubySharpBang ctermfg=9
+  hi rubySharpBang ctermfg=39
   hi rubyString ctermfg=57
-  hi rubyStringSpecial ctermfg=9
+  hi rubyStringSpecial ctermfg=39
   hi rubySymbol ctermfg=53
   hi rubyTodo ctermfg=24
 elseif &t_Co == 16
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Constant ctermfg=10
   hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=9
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=14
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11
   hi Error ctermfg=9 ctermbg=NONE
-  hi FoldColumn ctermfg=14 ctermbg=2
-  hi Folded ctermfg=14 ctermbg=2
+  hi FoldColumn ctermfg=11 ctermbg=2
+  hi Folded ctermfg=11 ctermbg=2
   hi Identifier cterm=bold ctermfg=7
-  hi Ignore ctermfg=9
+  hi Ignore ctermfg=12
   hi LineNr ctermfg=7
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi MoreMsg ctermfg=2
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
   hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=15
   hi PreProc ctermfg=7
   hi Question ctermfg=2
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=2
+  hi SignColumn ctermfg=11 ctermbg=2
   hi Special ctermfg=7
-  hi SpecialKey ctermfg=12
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi SpecialKey ctermfg=9
   hi Statement ctermfg=6
   hi TabLine ctermfg=15 ctermbg=2
   hi Title ctermfg=13
-  hi Todo ctermfg=9
+  hi Todo ctermfg=12
   hi Type ctermfg=8
-  hi Underlined ctermfg=9
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Underlined ctermfg=12
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=12
   hi htmlEndTag ctermfg=6
   hi htmlH1 ctermfg=6
   hi htmlTag ctermfg=6
@@ -355,98 +331,91 @@ elseif &t_Co == 16
   hi railsMethod ctermfg=8
   hi railsUserClass ctermfg=8
   hi railsUserMethod ctermfg=8
-  hi rubyASCIICode ctermfg=9
+  hi rubyASCIICode ctermfg=12
   hi rubyAccess ctermfg=6
   hi rubyAttribute ctermfg=7
-  hi rubyBeginEnd ctermfg=9
+  hi rubyBeginEnd ctermfg=12
   hi rubyBlock ctermfg=7
-  hi rubyBlockArgument ctermfg=9
+  hi rubyBlockArgument ctermfg=12
   hi rubyBlockParameter ctermfg=7
   hi rubyBoolean ctermfg=7
   hi rubyClass ctermfg=6
-  hi rubyClassDeclaration ctermfg=9
-  hi rubyClassVariable ctermfg=9
+  hi rubyClassDeclaration ctermfg=12
+  hi rubyClassVariable ctermfg=12
   hi rubyComment ctermfg=2
   hi rubyConditional ctermfg=12
   hi rubyConstant ctermfg=7
   hi rubyControl ctermfg=12
-  hi rubyData ctermfg=9
+  hi rubyData ctermfg=12
   hi rubyDefine ctermfg=6
-  hi rubyDelimEscape ctermfg=9
-  hi rubyDocumentation ctermfg=9
+  hi rubyDelimEscape ctermfg=12
+  hi rubyDocumentation ctermfg=12
   hi rubyEscape ctermfg=7
-  hi rubyEval ctermfg=9
-  hi rubyException ctermfg=9
+  hi rubyEval ctermfg=12
+  hi rubyException ctermfg=12
   hi rubyFloat ctermfg=10
   hi rubyFunction ctermfg=7
-  hi rubyGlobalVariable ctermfg=9
+  hi rubyGlobalVariable ctermfg=12
   hi rubyInclude ctermfg=7
   hi rubyInstanceVariable ctermfg=6
   hi rubyInteger ctermfg=10
   hi rubyInterpolation ctermfg=7
   hi rubyInterpolationDelimiter ctermfg=7
-  hi rubyKeyword ctermfg=9
-  hi rubyLocalVariableOrMethod ctermfg=9
-  hi rubyMethodDeclaration ctermfg=9
+  hi rubyKeyword ctermfg=12
+  hi rubyLocalVariableOrMethod ctermfg=12
+  hi rubyMethodDeclaration ctermfg=12
   hi rubyModule ctermfg=6
-  hi rubyModuleDeclaration ctermfg=9
-  hi rubyNestedAngleBrackets ctermfg=9
-  hi rubyNestedCurlyBraces ctermfg=9
-  hi rubyNestedParentheses ctermfg=9
-  hi rubyNestedSquareBrackets ctermfg=9
-  hi rubyNoInterpolation ctermfg=9
-  hi rubyOperator ctermfg=9
-  hi rubyPredefinedConstant ctermfg=9
-  hi rubyPredefinedVariable ctermfg=9
+  hi rubyModuleDeclaration ctermfg=12
+  hi rubyNestedAngleBrackets ctermfg=12
+  hi rubyNestedCurlyBraces ctermfg=12
+  hi rubyNestedParentheses ctermfg=12
+  hi rubyNestedSquareBrackets ctermfg=12
+  hi rubyNoInterpolation ctermfg=12
+  hi rubyOperator ctermfg=12
+  hi rubyPredefinedConstant ctermfg=12
+  hi rubyPredefinedVariable ctermfg=12
   hi rubyPseudoVariable ctermfg=7
   hi rubyRegexp ctermfg=8
   hi rubyRepeat ctermfg=12
-  hi rubySharpBang ctermfg=9
+  hi rubySharpBang ctermfg=12
   hi rubyString ctermfg=10
-  hi rubyStringSpecial ctermfg=9
+  hi rubyStringSpecial ctermfg=12
   hi rubySymbol ctermfg=8
   hi rubyTodo ctermfg=2
 else " 8 colors
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7
   hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
+  hi CursorLineNr ctermfg=6
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=6
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=3
   hi Error ctermfg=1 ctermbg=NONE
-  hi FoldColumn ctermfg=6 ctermbg=2
-  hi Folded ctermfg=6 ctermbg=2
+  hi FoldColumn ctermfg=3 ctermbg=2
+  hi Folded ctermfg=3 ctermbg=2
   hi Identifier cterm=bold ctermfg=7
-  hi Ignore ctermfg=1
+  hi Ignore ctermfg=5
   hi LineNr ctermfg=7
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi MoreMsg ctermfg=2
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=7
   hi PreProc ctermfg=7
   hi Question ctermfg=2
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=6 ctermbg=2
+  hi SignColumn ctermfg=3 ctermbg=2
   hi Special ctermfg=7
-  hi SpecialKey ctermfg=5
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
+  hi SpecialKey ctermfg=1
   hi Statement ctermfg=6
   hi TabLine ctermfg=7 ctermbg=2
   hi Title ctermfg=5
-  hi Todo ctermfg=1
+  hi Todo ctermfg=5
   hi Type ctermfg=3
-  hi Underlined ctermfg=1
-  hi Visual ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Underlined ctermfg=5
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=5
   hi htmlEndTag ctermfg=6
   hi htmlH1 ctermfg=6
   hi htmlTag ctermfg=6
@@ -454,55 +423,55 @@ else " 8 colors
   hi railsMethod ctermfg=3
   hi railsUserClass ctermfg=3
   hi railsUserMethod ctermfg=3
-  hi rubyASCIICode ctermfg=1
+  hi rubyASCIICode ctermfg=5
   hi rubyAccess ctermfg=6
   hi rubyAttribute ctermfg=7
-  hi rubyBeginEnd ctermfg=1
+  hi rubyBeginEnd ctermfg=5
   hi rubyBlock ctermfg=7
-  hi rubyBlockArgument ctermfg=1
+  hi rubyBlockArgument ctermfg=5
   hi rubyBlockParameter ctermfg=7
   hi rubyBoolean ctermfg=7
   hi rubyClass ctermfg=6
-  hi rubyClassDeclaration ctermfg=1
-  hi rubyClassVariable ctermfg=1
+  hi rubyClassDeclaration ctermfg=5
+  hi rubyClassVariable ctermfg=5
   hi rubyComment ctermfg=2
   hi rubyConditional ctermfg=7
   hi rubyConstant ctermfg=7
   hi rubyControl ctermfg=7
-  hi rubyData ctermfg=1
+  hi rubyData ctermfg=5
   hi rubyDefine ctermfg=6
-  hi rubyDelimEscape ctermfg=1
-  hi rubyDocumentation ctermfg=1
+  hi rubyDelimEscape ctermfg=5
+  hi rubyDocumentation ctermfg=5
   hi rubyEscape ctermfg=7
-  hi rubyEval ctermfg=1
-  hi rubyException ctermfg=1
+  hi rubyEval ctermfg=5
+  hi rubyException ctermfg=5
   hi rubyFloat ctermfg=7
   hi rubyFunction ctermfg=7
-  hi rubyGlobalVariable ctermfg=1
+  hi rubyGlobalVariable ctermfg=5
   hi rubyInclude ctermfg=7
   hi rubyInstanceVariable ctermfg=6
   hi rubyInteger ctermfg=7
   hi rubyInterpolation ctermfg=7
   hi rubyInterpolationDelimiter ctermfg=7
-  hi rubyKeyword ctermfg=1
-  hi rubyLocalVariableOrMethod ctermfg=1
-  hi rubyMethodDeclaration ctermfg=1
+  hi rubyKeyword ctermfg=5
+  hi rubyLocalVariableOrMethod ctermfg=5
+  hi rubyMethodDeclaration ctermfg=5
   hi rubyModule ctermfg=6
-  hi rubyModuleDeclaration ctermfg=1
-  hi rubyNestedAngleBrackets ctermfg=1
-  hi rubyNestedCurlyBraces ctermfg=1
-  hi rubyNestedParentheses ctermfg=1
-  hi rubyNestedSquareBrackets ctermfg=1
-  hi rubyNoInterpolation ctermfg=1
-  hi rubyOperator ctermfg=1
-  hi rubyPredefinedConstant ctermfg=1
-  hi rubyPredefinedVariable ctermfg=1
+  hi rubyModuleDeclaration ctermfg=5
+  hi rubyNestedAngleBrackets ctermfg=5
+  hi rubyNestedCurlyBraces ctermfg=5
+  hi rubyNestedParentheses ctermfg=5
+  hi rubyNestedSquareBrackets ctermfg=5
+  hi rubyNoInterpolation ctermfg=5
+  hi rubyOperator ctermfg=5
+  hi rubyPredefinedConstant ctermfg=5
+  hi rubyPredefinedVariable ctermfg=5
   hi rubyPseudoVariable ctermfg=7
   hi rubyRegexp ctermfg=3
   hi rubyRepeat ctermfg=7
-  hi rubySharpBang ctermfg=1
+  hi rubySharpBang ctermfg=5
   hi rubyString ctermfg=7
-  hi rubyStringSpecial ctermfg=1
+  hi rubyStringSpecial ctermfg=5
   hi rubySymbol ctermfg=3
   hi rubyTodo ctermfg=2
 endif

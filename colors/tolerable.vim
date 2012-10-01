@@ -4,7 +4,7 @@
 " Name: tolerable
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:07
+" Date: 2012-09-29 13:46:22
 "----------------------------------------------------------
 
 set background=light
@@ -27,11 +27,8 @@ if has("gui_running")
   hi MoreMsg gui=NONE
   hi NonText gui=NONE guifg=orange guibg=white
   hi PreProc guifg=darkcyan
-  hi Search guibg=yellow
+  hi Search guifg=NONE guibg=yellow
   hi Special guifg=red
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=blue
   hi StatusLine gui=NONE guifg=white guibg=#333333
   hi StatusLineNC gui=NONE guifg=white guibg=#333333
@@ -43,100 +40,40 @@ if has("gui_running")
   hi WarningMsg guifg=red
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=231
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=231 ctermbg=22
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
-  hi LineNr ctermfg=3
   hi NonText ctermbg=231
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=236
   hi StatusLineNC ctermfg=231 ctermbg=236
   hi VertSplit ctermfg=231 ctermbg=236
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=79 ctermbg=20
-  hi CursorLineNr ctermfg=56
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
-  hi LineNr ctermfg=56
   hi NonText ctermbg=79
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
-  hi SignColumn ctermbg=87
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=56
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=80
   hi StatusLineNC ctermfg=79 ctermbg=80
   hi VertSplit ctermfg=79 ctermbg=80
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=15 ctermbg=2
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
-  hi LineNr ctermfg=3
   hi NonText ctermbg=15
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
-  hi SignColumn ctermbg=11
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=2
   hi StatusLineNC ctermfg=15 ctermbg=2
   hi VertSplit ctermfg=15 ctermbg=2
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi ColorColumn ctermbg=1
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=7 ctermbg=2
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
-  hi LineNr ctermfg=3
   hi NonText ctermbg=7
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=7 ctermbg=2
   hi VertSplit ctermfg=7 ctermbg=2
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
 endif
 
 

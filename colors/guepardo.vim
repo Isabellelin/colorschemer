@@ -4,7 +4,7 @@
 " Name: guepardo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:11
+" Date: 2012-09-29 13:35:48
 "----------------------------------------------------------
 
 set background=light
@@ -67,11 +67,11 @@ elseif &t_Co == 256
   hi MatchParen ctermfg=231
   hi Menu ctermfg=16 ctermbg=203
   hi Repeat ctermfg=16
-  hi Search ctermfg=208
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=67 ctermbg=231
   hi StatusLineNC ctermfg=67 ctermbg=231
   hi String ctermfg=244
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi WarningMsg ctermbg=9
   hi pythonBuiltin ctermfg=67
   hi pythonComment ctermfg=67
@@ -93,11 +93,11 @@ elseif &t_Co == 88
   hi MatchParen ctermfg=79
   hi Menu ctermfg=16 ctermbg=69
   hi Repeat ctermfg=16
-  hi Search ctermfg=68
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=83 ctermbg=79
   hi StatusLineNC ctermfg=83 ctermbg=79
   hi String ctermfg=83
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi WarningMsg ctermbg=9
   hi pythonBuiltin ctermfg=83
   hi pythonComment ctermfg=83
@@ -119,11 +119,11 @@ elseif &t_Co == 16
   hi MatchParen ctermfg=15
   hi Menu ctermfg=0 ctermbg=8
   hi Repeat ctermfg=0
-  hi Search ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=6 ctermbg=15
   hi StatusLineNC ctermfg=6 ctermbg=15
   hi String ctermfg=8
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi WarningMsg ctermbg=9
   hi pythonBuiltin ctermfg=6
   hi pythonComment ctermfg=6
@@ -145,11 +145,11 @@ else " 8 colors
   hi MatchParen ctermfg=7
   hi Menu ctermfg=0 ctermbg=7
   hi Repeat ctermfg=0
-  hi Search ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=6 ctermbg=7
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi String ctermfg=3
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=1
   hi pythonBuiltin ctermfg=6
   hi pythonComment ctermfg=6

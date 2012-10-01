@@ -4,7 +4,7 @@
 " Name: strange
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:12
+" Date: 2012-09-29 13:45:11
 "----------------------------------------------------------
 
 set background=dark
@@ -48,7 +48,7 @@ if has("gui_running")
   hi Underlined guifg=#0066CC
   hi VertSplit gui=NONE guifg=#222222 guibg=#222222
   hi Visual guifg=#333333 guibg=#C0FFC0
-  hi VisualNOS guifg=#111111 guibg=#888888
+  hi VisualNOS gui=NONE guifg=#111111 guibg=#888888
   hi WildMenu guifg=#000000 guibg=#FFD700
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=232
@@ -58,6 +58,7 @@ elseif &t_Co == 256
   hi CursorColumn ctermbg=233
   hi CursorLine cterm=NONE ctermbg=233
   hi Delimiter ctermfg=240
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=9
   hi Folded ctermfg=222 ctermbg=234
   hi Identifier cterm=NONE ctermfg=145
@@ -81,8 +82,8 @@ elseif &t_Co == 256
   hi Type ctermfg=246
   hi Underlined ctermfg=32
   hi VertSplit cterm=NONE ctermfg=235 ctermbg=235
-  hi Visual ctermfg=233 ctermbg=108
-  hi VisualNOS ctermfg=0 ctermbg=243
+  hi Visual cterm=NONE ctermfg=233 ctermbg=108
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=243
   hi WildMenu ctermbg=226
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
@@ -92,6 +93,7 @@ elseif &t_Co == 88
   hi CursorColumn ctermbg=16
   hi CursorLine cterm=NONE ctermbg=16
   hi Delimiter ctermfg=81
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=9
   hi Folded ctermfg=73 ctermbg=80
   hi Identifier cterm=NONE ctermfg=85
@@ -115,8 +117,8 @@ elseif &t_Co == 88
   hi Type ctermfg=83
   hi Underlined ctermfg=22
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=16 ctermbg=41
-  hi VisualNOS ctermfg=16 ctermbg=82
+  hi Visual cterm=NONE ctermfg=16 ctermbg=41
+  hi VisualNOS cterm=NONE ctermfg=16 ctermbg=82
   hi WildMenu ctermbg=76
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
@@ -126,6 +128,7 @@ elseif &t_Co == 16
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Delimiter ctermfg=2
+  hi Error ctermbg=9
   hi ErrorMsg ctermbg=9
   hi Folded ctermfg=11 ctermbg=0
   hi Identifier cterm=NONE ctermfg=8
@@ -149,8 +152,8 @@ elseif &t_Co == 16
   hi Type ctermfg=8
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=8
-  hi VisualNOS ctermfg=0 ctermbg=8
+  hi Visual cterm=NONE ctermfg=0 ctermbg=8
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=8
   hi WildMenu ctermbg=11
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -160,6 +163,7 @@ else " 8 colors
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Delimiter ctermfg=2
+  hi Error ctermbg=1
   hi ErrorMsg ctermbg=1
   hi Folded ctermfg=7 ctermbg=0
   hi Identifier cterm=NONE ctermfg=7
@@ -183,8 +187,8 @@ else " 8 colors
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=7
-  hi VisualNOS ctermfg=0 ctermbg=3
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=3
   hi WildMenu ctermbg=3
 endif
 

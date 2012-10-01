@@ -4,7 +4,7 @@
 " Name: grey2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:05
+" Date: 2012-09-29 13:35:41
 "----------------------------------------------------------
 
 set background=dark
@@ -77,7 +77,7 @@ if has("gui_running")
   hi Underlined guifg=#8962ce
   hi VertSplit gui=NONE guifg=#a7a7a2 guibg=#546292
   hi Visual guibg=#304050
-  hi VisualNOS guifg=#aaaaaa guibg=#000000
+  hi VisualNOS gui=NONE guifg=#aaaaaa guibg=#000000
   hi WarningMsg guifg=#cf2323
   hi WildMenu guifg=#ffffff guibg=#506080
   hi XPTcurrentPH gui=underline guibg=#3c3c3c
@@ -100,23 +100,24 @@ elseif &t_Co == 256
   hi Number ctermfg=61 ctermbg=234
   hi Operator ctermfg=67
   hi PreProc ctermbg=234
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=15
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=15
   hi StatusLineNC ctermfg=73 ctermbg=238
-  hi StatuslineBufNr ctermfg=0 ctermbg=14
-  hi StatuslineChar ctermfg=11 ctermbg=15
-  hi StatuslineFileEnc ctermfg=15 ctermbg=11
-  hi StatuslineFileName ctermfg=15 ctermbg=12
+  hi StatuslineBufNr ctermfg=0 ctermbg=11
+  hi StatuslineChar ctermfg=14 ctermbg=15
+  hi StatuslineFileEnc ctermfg=15 ctermbg=14
+  hi StatuslineFileName ctermfg=15 ctermbg=9
   hi StatuslineFileType cterm=bold ctermfg=0 ctermbg=15
-  hi StatuslineFlag ctermfg=0 ctermbg=14
+  hi StatuslineFlag ctermfg=0 ctermbg=11
   hi StatuslinePath ctermfg=15 ctermbg=10
-  hi StatuslineRealSyn ctermfg=11 ctermbg=15
-  hi StatuslineSomething cterm=reverse ctermfg=15 ctermbg=1
-  hi StatuslineSyn ctermfg=11 ctermbg=15
-  hi StatuslineTermEnc ctermfg=11 ctermbg=15
-  hi StatuslineTime ctermfg=0 ctermbg=14
+  hi StatuslineRealSyn ctermfg=14 ctermbg=15
+  hi StatuslineSomething cterm=reverse ctermfg=15 ctermbg=4
+  hi StatuslineSyn ctermfg=14 ctermbg=15
+  hi StatuslineTermEnc ctermfg=14 ctermbg=15
+  hi StatuslineTime ctermfg=0 ctermbg=11
   hi String ctermfg=98 ctermbg=234
   hi Tag ctermfg=107
   hi VertSplit ctermfg=248 ctermbg=60
+  hi Visual cterm=NONE ctermbg=8
   hi VisualNOS ctermfg=248 ctermbg=16
   hi XPTcurrentPH ctermbg=237
   hi XPTnextItem ctermfg=253 ctermbg=238
@@ -137,23 +138,24 @@ elseif &t_Co == 88
   hi Number ctermfg=82 ctermbg=80
   hi Operator ctermfg=83
   hi PreProc ctermbg=80
-  hi StatusLine cterm=NONE ctermfg=76 ctermbg=79
+  hi StatusLine cterm=NONE ctermfg=31 ctermbg=79
   hi StatusLineNC ctermfg=84 ctermbg=80
-  hi StatuslineBufNr ctermfg=16 ctermbg=31
-  hi StatuslineChar ctermfg=76 ctermbg=79
-  hi StatuslineFileEnc ctermfg=79 ctermbg=76
-  hi StatuslineFileName ctermfg=79 ctermbg=39
+  hi StatuslineBufNr ctermfg=16 ctermbg=76
+  hi StatuslineChar ctermfg=31 ctermbg=79
+  hi StatuslineFileEnc ctermfg=79 ctermbg=31
+  hi StatuslineFileName ctermfg=79 ctermbg=9
   hi StatuslineFileType cterm=bold ctermfg=16 ctermbg=79
-  hi StatuslineFlag ctermfg=16 ctermbg=31
+  hi StatuslineFlag ctermfg=16 ctermbg=76
   hi StatuslinePath ctermfg=79 ctermbg=28
-  hi StatuslineRealSyn ctermfg=76 ctermbg=79
-  hi StatuslineSomething cterm=reverse ctermfg=79 ctermbg=48
-  hi StatuslineSyn ctermfg=76 ctermbg=79
-  hi StatuslineTermEnc ctermfg=76 ctermbg=79
-  hi StatuslineTime ctermfg=16 ctermbg=31
+  hi StatuslineRealSyn ctermfg=31 ctermbg=79
+  hi StatuslineSomething cterm=reverse ctermfg=79 ctermbg=19
+  hi StatuslineSyn ctermfg=31 ctermbg=79
+  hi StatuslineTermEnc ctermfg=31 ctermbg=79
+  hi StatuslineTime ctermfg=16 ctermbg=76
   hi String ctermfg=38 ctermbg=80
   hi Tag ctermfg=82
   hi VertSplit ctermfg=84 ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
   hi VisualNOS ctermfg=84 ctermbg=16
   hi XPTcurrentPH ctermbg=80
   hi XPTnextItem ctermfg=87 ctermbg=81
@@ -174,23 +176,24 @@ elseif &t_Co == 16
   hi Number ctermfg=8 ctermbg=0
   hi Operator ctermfg=8
   hi PreProc ctermbg=0
-  hi StatusLine cterm=NONE ctermfg=11 ctermbg=15
+  hi StatusLine cterm=NONE ctermfg=14 ctermbg=15
   hi StatusLineNC ctermfg=8 ctermbg=2
-  hi StatuslineBufNr ctermfg=0 ctermbg=14
-  hi StatuslineChar ctermfg=11 ctermbg=15
-  hi StatuslineFileEnc ctermfg=15 ctermbg=11
-  hi StatuslineFileName ctermfg=15 ctermbg=12
+  hi StatuslineBufNr ctermfg=0 ctermbg=11
+  hi StatuslineChar ctermfg=14 ctermbg=15
+  hi StatuslineFileEnc ctermfg=15 ctermbg=14
+  hi StatuslineFileName ctermfg=15 ctermbg=9
   hi StatuslineFileType cterm=bold ctermfg=0 ctermbg=15
-  hi StatuslineFlag ctermfg=0 ctermbg=14
+  hi StatuslineFlag ctermfg=0 ctermbg=11
   hi StatuslinePath ctermfg=15 ctermbg=2
-  hi StatuslineRealSyn ctermfg=11 ctermbg=15
-  hi StatuslineSomething cterm=reverse ctermfg=15 ctermbg=9
-  hi StatuslineSyn ctermfg=11 ctermbg=15
-  hi StatuslineTermEnc ctermfg=11 ctermbg=15
-  hi StatuslineTime ctermfg=0 ctermbg=14
+  hi StatuslineRealSyn ctermfg=14 ctermbg=15
+  hi StatuslineSomething cterm=reverse ctermfg=15 ctermbg=4
+  hi StatuslineSyn ctermfg=14 ctermbg=15
+  hi StatuslineTermEnc ctermfg=14 ctermbg=15
+  hi StatuslineTime ctermfg=0 ctermbg=11
   hi String ctermfg=8 ctermbg=0
   hi Tag ctermfg=8
   hi VertSplit ctermfg=8 ctermbg=6
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermfg=8 ctermbg=0
   hi XPTcurrentPH ctermbg=2
   hi XPTnextItem ctermfg=12 ctermbg=4
@@ -211,23 +214,24 @@ else " 8 colors
   hi Number ctermfg=6 ctermbg=0
   hi Operator ctermfg=6
   hi PreProc ctermbg=0
-  hi StatusLine cterm=NONE ctermfg=3 ctermbg=7
+  hi StatusLine cterm=NONE ctermfg=6 ctermbg=7
   hi StatusLineNC ctermfg=7 ctermbg=2
-  hi StatuslineBufNr ctermfg=0 ctermbg=6
-  hi StatuslineChar ctermfg=3 ctermbg=7
-  hi StatuslineFileEnc ctermfg=7 ctermbg=3
-  hi StatuslineFileName ctermfg=7 ctermbg=5
+  hi StatuslineBufNr ctermfg=0 ctermbg=3
+  hi StatuslineChar ctermfg=6 ctermbg=7
+  hi StatuslineFileEnc ctermfg=7 ctermbg=6
+  hi StatuslineFileName ctermfg=7 ctermbg=1
   hi StatuslineFileType cterm=bold ctermfg=0 ctermbg=7
-  hi StatuslineFlag ctermfg=0 ctermbg=6
+  hi StatuslineFlag ctermfg=0 ctermbg=3
   hi StatuslinePath ctermfg=7 ctermbg=2
-  hi StatuslineRealSyn ctermfg=3 ctermbg=7
-  hi StatuslineSomething cterm=reverse ctermfg=7 ctermbg=1
-  hi StatuslineSyn ctermfg=3 ctermbg=7
-  hi StatuslineTermEnc ctermfg=3 ctermbg=7
-  hi StatuslineTime ctermfg=0 ctermbg=6
+  hi StatuslineRealSyn ctermfg=6 ctermbg=7
+  hi StatuslineSomething cterm=reverse ctermfg=7 ctermbg=4
+  hi StatuslineSyn ctermfg=6 ctermbg=7
+  hi StatuslineTermEnc ctermfg=6 ctermbg=7
+  hi StatuslineTime ctermfg=0 ctermbg=3
   hi String ctermfg=5 ctermbg=0
   hi Tag ctermfg=3
   hi VertSplit ctermfg=7 ctermbg=6
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=0
   hi XPTcurrentPH ctermbg=2
   hi XPTnextItem ctermfg=7 ctermbg=4

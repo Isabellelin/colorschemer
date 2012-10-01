@@ -4,7 +4,7 @@
 " Name: ekinivim
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:12
+" Date: 2012-09-29 13:34:26
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#C9C9BB guibg=#2E3330
   hi Comment guifg=#6a9875
   hi Constant gui=bold guifg=#F696DB
-  hi Cursor guibg=#425461
+  hi Cursor guifg=NONE guibg=#425461
   hi CursorColumn guibg=#000709
   hi CursorLine guibg=#000709
   hi Folded guifg=#a0a8b0 guibg=#384048
@@ -47,7 +47,7 @@ if has("gui_running")
   hi Visual guifg=#fefeec guibg=#6c8b9f
 elseif &t_Co == 256
   hi Normal ctermfg=251 ctermbg=236
-  hi Cursor ctermbg=240
+  hi Cursor ctermfg=NONE ctermbg=240
   hi CursorLine ctermbg=232
   hi Function ctermfg=186
   hi Keyword ctermfg=117
@@ -61,10 +61,10 @@ elseif &t_Co == 256
   hi StatusLineNC ctermfg=243 ctermbg=238
   hi String ctermfg=179
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=58 ctermbg=80
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorLine ctermbg=16
   hi Function ctermfg=57
   hi Keyword ctermfg=43
@@ -78,10 +78,10 @@ elseif &t_Co == 88
   hi StatusLineNC ctermfg=82 ctermbg=80
   hi String ctermfg=52
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=2
-  hi Cursor ctermbg=6
+  hi Cursor ctermfg=NONE ctermbg=6
   hi CursorLine ctermbg=0
   hi Function ctermfg=10
   hi Keyword ctermfg=12
@@ -95,10 +95,10 @@ elseif &t_Co == 16
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=3
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
-  hi Cursor ctermbg=6
+  hi Cursor ctermfg=NONE ctermbg=6
   hi CursorLine ctermbg=0
   hi Function ctermfg=7
   hi Keyword ctermfg=7
@@ -112,7 +112,7 @@ else " 8 colors
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=3
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 

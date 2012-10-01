@@ -4,7 +4,7 @@
 " Name: lodestone
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:53
+" Date: 2012-09-29 13:38:09
 "----------------------------------------------------------
 
 set background=dark
@@ -22,7 +22,7 @@ if has("gui_running")
   hi Comment gui=italic guifg=#606060
   hi Conditional guifg=#b3d38c
   hi Constant guifg=#8cd0d3
-  hi Cursor guifg=bg guibg=#a3e3ed
+  hi Cursor guibg=#a3e3ed
   hi CursorColumn guibg=#202438
   hi CursorLine guibg=#202438
   hi Debug guifg=#cca3b3
@@ -67,6 +67,9 @@ if has("gui_running")
   hi SpecialChar guifg=#cca3b3
   hi SpecialComment guifg=#cca3b3
   hi SpecialKey guifg=#405060
+  hi SpellBad guibg=#ff0000
+  hi SpellCap guibg=#5c5cff
+  hi SpellLocal guibg=#00ffff
   hi Statement gui=NONE guifg=#b3d38c
   hi StatusLine gui=NONE guifg=fg guibg=#334b7d
   hi StatusLineNC gui=NONE guifg=fg guibg=#25365a
@@ -147,13 +150,13 @@ elseif &t_Co == 256
   hi SpecialChar ctermfg=181
   hi SpecialComment ctermfg=181
   hi SpecialKey ctermfg=237
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=150
   hi StatusLine ctermfg=0 ctermbg=7
-  hi StatusLineNC ctermfg=0 ctermbg=242
+  hi StatusLineNC ctermfg=0 ctermbg=8
   hi StorageClass ctermfg=115
   hi String ctermfg=110
   hi Structure ctermfg=115
@@ -167,7 +170,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=115
   hi Underlined ctermfg=253
   hi VertSplit cterm=NONE ctermfg=242 ctermbg=16
-  hi Visual ctermbg=24
+  hi Visual cterm=NONE ctermbg=24
   hi WarningMsg ctermfg=173
   hi WildMenu cterm=bold ctermfg=16 ctermbg=186
   hi cursorim ctermfg=0 ctermbg=116
@@ -231,13 +234,13 @@ elseif &t_Co == 88
   hi SpecialChar ctermfg=85
   hi SpecialComment ctermfg=85
   hi SpecialKey ctermfg=80
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=39
+  hi SpellLocal cterm=undercurl ctermbg=31
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=57
   hi StatusLine ctermfg=16 ctermbg=87
-  hi StatusLineNC ctermfg=16 ctermbg=82
+  hi StatusLineNC ctermfg=16 ctermbg=81
   hi StorageClass ctermfg=42
   hi String ctermfg=42
   hi Structure ctermfg=42
@@ -251,7 +254,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=42
   hi Underlined ctermfg=86
   hi VertSplit cterm=NONE ctermfg=82 ctermbg=16
-  hi Visual ctermbg=21
+  hi Visual cterm=NONE ctermbg=21
   hi WarningMsg ctermfg=53
   hi WildMenu cterm=bold ctermfg=16 ctermbg=57
   hi cursorim ctermfg=16 ctermbg=42
@@ -315,13 +318,13 @@ elseif &t_Co == 16
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=9
+  hi SpellCap cterm=undercurl ctermbg=12
+  hi SpellLocal cterm=undercurl ctermbg=14
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=10
   hi StatusLine ctermfg=0 ctermbg=11
-  hi StatusLineNC ctermfg=0 ctermbg=3
+  hi StatusLineNC ctermfg=0 ctermbg=2
   hi StorageClass ctermfg=10
   hi String ctermfg=8
   hi Structure ctermfg=10
@@ -335,7 +338,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=10
   hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=0
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi WarningMsg ctermfg=8
   hi WildMenu cterm=bold ctermfg=0 ctermbg=10
   hi cursorim ctermfg=0 ctermbg=12
@@ -399,13 +402,13 @@ else " 8 colors
   hi SpecialChar ctermfg=7
   hi SpecialComment ctermfg=7
   hi SpecialKey ctermfg=2
-  hi SpellBad cterm=undercurl
-  hi SpellCap cterm=undercurl
-  hi SpellLocal cterm=undercurl
+  hi SpellBad cterm=undercurl ctermbg=1
+  hi SpellCap cterm=undercurl ctermbg=5
+  hi SpellLocal cterm=undercurl ctermbg=6
   hi SpellRare cterm=undercurl
   hi Statement ctermfg=7
   hi StatusLine ctermfg=0 ctermbg=7
-  hi StatusLineNC ctermfg=0 ctermbg=3
+  hi StatusLineNC ctermfg=0 ctermbg=2
   hi StorageClass ctermfg=7
   hi String ctermfg=7
   hi Structure ctermfg=7
@@ -419,7 +422,7 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Underlined ctermfg=7
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=0
-  hi Visual ctermbg=6
+  hi Visual cterm=NONE ctermbg=6
   hi WarningMsg ctermfg=3
   hi WildMenu cterm=bold ctermfg=0 ctermbg=7
   hi cursorim ctermfg=0 ctermbg=7

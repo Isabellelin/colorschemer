@@ -4,7 +4,7 @@
 " Name: django
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:47
+" Date: 2012-09-29 13:33:49
 "----------------------------------------------------------
 
 set background=dark
@@ -35,71 +35,71 @@ if has("gui_running")
   hi Todo gui=bold guifg=#c6210b guibg=#61150b
   hi Type guifg=#96dd3b
   hi VertSplit guifg=#244a2a guibg=#244a2a
-  hi lcursor guibg=#336242
+  hi lCursor guibg=#336242
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=234
   hi Cursor ctermbg=238
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=1
   hi Function ctermfg=221
-  hi IncSearch cterm=NONE ctermfg=11 ctermbg=10
+  hi IncSearch cterm=NONE ctermfg=14 ctermbg=10
   hi NonText ctermbg=236
   hi Number ctermfg=240
-  hi Search ctermfg=248 ctermbg=12
+  hi Search ctermfg=7 ctermbg=9
   hi StatusLine ctermfg=231 ctermbg=109
   hi StatusLineNC ctermfg=236 ctermbg=107
   hi String ctermfg=109
   hi VertSplit ctermfg=235 ctermbg=235
-  hi lcursor ctermbg=238
+  hi Visual cterm=NONE ctermbg=8
+  hi lCursor ctermbg=238
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=80
   hi Cursor ctermbg=81
-  hi DiffAdd ctermbg=19
-  hi DiffDelete cterm=bold ctermfg=19
+  hi DiffDelete cterm=bold ctermfg=19 ctermbg=6
   hi DiffText ctermbg=48
   hi Function ctermfg=73
-  hi IncSearch cterm=NONE ctermfg=76 ctermbg=28
+  hi IncSearch cterm=NONE ctermfg=31 ctermbg=28
   hi NonText ctermbg=80
   hi Number ctermfg=81
-  hi Search ctermfg=84 ctermbg=39
+  hi Search ctermfg=87 ctermbg=9
   hi StatusLine ctermfg=79 ctermbg=41
   hi StatusLineNC ctermfg=80 ctermbg=41
   hi String ctermfg=41
   hi VertSplit ctermfg=80 ctermbg=80
-  hi lcursor ctermbg=81
+  hi Visual cterm=NONE ctermbg=81
+  hi lCursor ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Cursor ctermbg=2
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=9
   hi Function ctermfg=7
-  hi IncSearch cterm=NONE ctermfg=11 ctermbg=2
+  hi IncSearch cterm=NONE ctermfg=14 ctermbg=2
   hi NonText ctermbg=2
   hi Number ctermfg=6
-  hi Search ctermfg=8 ctermbg=12
+  hi Search ctermfg=11 ctermbg=9
   hi StatusLine ctermfg=15 ctermbg=8
   hi StatusLineNC ctermfg=2 ctermbg=10
   hi String ctermfg=8
   hi VertSplit ctermfg=2 ctermbg=2
-  hi lcursor ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi lCursor ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermbg=2
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=1
   hi Function ctermfg=7
-  hi IncSearch cterm=NONE ctermfg=3 ctermbg=2
+  hi IncSearch cterm=NONE ctermfg=6 ctermbg=2
   hi NonText ctermbg=2
   hi Number ctermfg=6
-  hi Search ctermfg=7 ctermbg=5
+  hi Search ctermfg=7 ctermbg=1
   hi StatusLine ctermfg=7 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi String ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi lcursor ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
+  hi lCursor ctermbg=2
 endif
 
 

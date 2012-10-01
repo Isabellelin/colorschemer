@@ -4,7 +4,7 @@
 " Name: badwolf
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:43
+" Date: 2012-09-29 13:30:41
 "----------------------------------------------------------
 
 set background=dark
@@ -299,7 +299,7 @@ elseif &t_Co == 256
   hi VimMapMod ctermfg=211
   hi VimMapModKey ctermfg=211
   hi VimNotation ctermfg=211
-  hi Visual ctermbg=238
+  hi Visual cterm=NONE ctermbg=238
   hi VisualNOS ctermbg=238
   hi WarningMsg cterm=bold ctermfg=211
   hi clojureAnonArg cterm=bold ctermfg=15
@@ -494,7 +494,7 @@ elseif &t_Co == 88
   hi VimMapMod ctermfg=70
   hi VimMapModKey ctermfg=70
   hi VimNotation ctermfg=70
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi VisualNOS ctermbg=80
   hi WarningMsg cterm=bold ctermfg=70
   hi clojureAnonArg cterm=bold ctermfg=79
@@ -689,7 +689,7 @@ elseif &t_Co == 16
   hi VimMapMod ctermfg=8
   hi VimMapModKey ctermfg=8
   hi VimNotation ctermfg=8
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=8
   hi clojureAnonArg cterm=bold ctermfg=15
@@ -884,7 +884,7 @@ else " 8 colors
   hi VimMapMod ctermfg=7
   hi VimMapModKey ctermfg=7
   hi VimNotation ctermfg=7
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7
   hi clojureAnonArg cterm=bold ctermfg=7

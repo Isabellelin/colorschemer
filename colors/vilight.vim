@@ -4,7 +4,7 @@
 " Name: vilight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:01
+" Date: 2012-09-29 13:47:29
 "----------------------------------------------------------
 
 set background=dark
@@ -73,7 +73,7 @@ if has("gui_running")
   hi htmlSpecialChar guifg=#cf6a4c
   hi htmlTag guifg=#cda869
   hi htmlTagName guifg=#b6b6b6
-  hi javaScriptFunction guifg=#cf6a4c
+  hi javascriptFunction guifg=#cf6a4c
   hi pythonBuiltin guifg=#9ca9b7
   hi pythonClass guifg=#cda869
   hi pythonControl guifg=#4f94cd
@@ -109,7 +109,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=179
   hi Variable ctermfg=103
   hi VertSplit ctermfg=249 ctermbg=248
-  hi Visual ctermfg=234
+  hi Visual cterm=NONE ctermfg=234 ctermbg=8
   hi cssClassName ctermfg=179
   hi cssCommonAttr ctermfg=167
   hi cssPseudoClassId ctermfg=103
@@ -117,7 +117,7 @@ elseif &t_Co == 256
   hi htmlSpecialChar ctermfg=167
   hi htmlTag ctermfg=179
   hi htmlTagName ctermfg=249
-  hi javaScriptFunction ctermfg=167
+  hi javascriptFunction ctermfg=167
   hi pythonBuiltin ctermfg=248
   hi pythonClass ctermfg=179
   hi pythonControl ctermfg=68
@@ -153,7 +153,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=53
   hi Variable ctermfg=83
   hi VertSplit ctermfg=85 ctermbg=84
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi cssClassName ctermfg=53
   hi cssCommonAttr ctermfg=53
   hi cssPseudoClassId ctermfg=83
@@ -161,7 +161,7 @@ elseif &t_Co == 88
   hi htmlSpecialChar ctermfg=53
   hi htmlTag ctermfg=53
   hi htmlTagName ctermfg=85
-  hi javaScriptFunction ctermfg=53
+  hi javascriptFunction ctermfg=53
   hi pythonBuiltin ctermfg=84
   hi pythonClass ctermfg=53
   hi pythonControl ctermfg=38
@@ -197,7 +197,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=8
   hi Variable ctermfg=8
   hi VertSplit ctermfg=7 ctermbg=8
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi cssClassName ctermfg=8
   hi cssCommonAttr ctermfg=3
   hi cssPseudoClassId ctermfg=8
@@ -205,7 +205,7 @@ elseif &t_Co == 16
   hi htmlSpecialChar ctermfg=3
   hi htmlTag ctermfg=8
   hi htmlTagName ctermfg=7
-  hi javaScriptFunction ctermfg=3
+  hi javascriptFunction ctermfg=3
   hi pythonBuiltin ctermfg=8
   hi pythonClass ctermfg=8
   hi pythonControl ctermfg=8
@@ -241,7 +241,7 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Variable ctermfg=6
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi cssClassName ctermfg=7
   hi cssCommonAttr ctermfg=3
   hi cssPseudoClassId ctermfg=6
@@ -249,7 +249,7 @@ else " 8 colors
   hi htmlSpecialChar ctermfg=3
   hi htmlTag ctermfg=7
   hi htmlTagName ctermfg=7
-  hi javaScriptFunction ctermfg=3
+  hi javascriptFunction ctermfg=3
   hi pythonBuiltin ctermfg=7
   hi pythonClass ctermfg=7
   hi pythonControl ctermfg=6

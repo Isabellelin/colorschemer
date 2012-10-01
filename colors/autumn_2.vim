@@ -4,7 +4,7 @@
 " Name: autumn_2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:40
+" Date: 2012-09-29 13:30:37
 "----------------------------------------------------------
 
 set background=light
@@ -52,7 +52,7 @@ if has("gui_running")
   hi WarningMsg gui=bold guifg=#f8f8f8 guibg=#4040ff
   hi WildMenu gui=bold guifg=#f8f8f8 guibg=#ff3030
   hi cursorim guifg=#ffffff guibg=#8040ff
-  hi lcursor guifg=#ffffff guibg=#8040ff
+  hi lCursor guifg=#ffffff guibg=#8040ff
 elseif &t_Co == 256
   hi Normal ctermfg=238 ctermbg=230
   hi Cursor ctermfg=231 ctermbg=33
@@ -62,14 +62,14 @@ elseif &t_Co == 256
   hi IncSearch ctermfg=238 ctermbg=185
   hi ModeMsg ctermfg=166
   hi NonText ctermbg=224
-  hi Search ctermfg=240
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=95
   hi StatusLineNC ctermfg=145 ctermbg=95
   hi VertSplit ctermfg=231 ctermbg=95
-  hi Visual ctermfg=94
+  hi Visual cterm=NONE ctermfg=94 ctermbg=7
   hi WarningMsg ctermbg=63
   hi cursorim ctermfg=231 ctermbg=99
-  hi lcursor ctermfg=231 ctermbg=99
+  hi lCursor ctermfg=231 ctermbg=99
 elseif &t_Co == 88
   hi Normal ctermfg=8 ctermbg=79
   hi Cursor ctermfg=79 ctermbg=23
@@ -79,14 +79,14 @@ elseif &t_Co == 88
   hi IncSearch ctermfg=8 ctermbg=56
   hi ModeMsg ctermfg=52
   hi NonText ctermbg=74
-  hi Search ctermfg=81
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=81
   hi StatusLineNC ctermfg=85 ctermbg=81
   hi VertSplit ctermfg=79 ctermbg=81
-  hi Visual ctermfg=32
+  hi Visual cterm=NONE ctermfg=32 ctermbg=87
   hi WarningMsg ctermbg=19
   hi cursorim ctermfg=79 ctermbg=35
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=11
   hi Cursor ctermfg=15 ctermbg=6
@@ -96,14 +96,14 @@ elseif &t_Co == 16
   hi IncSearch ctermfg=2 ctermbg=10
   hi ModeMsg ctermfg=3
   hi NonText ctermbg=11
-  hi Search ctermfg=5
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=3
   hi StatusLineNC ctermfg=8 ctermbg=3
   hi VertSplit ctermfg=15 ctermbg=3
-  hi Visual ctermfg=1
+  hi Visual cterm=NONE ctermfg=1 ctermbg=11
   hi WarningMsg ctermbg=4
   hi cursorim ctermfg=15 ctermbg=5
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
   hi Cursor ctermfg=7 ctermbg=6
@@ -113,14 +113,14 @@ else " 8 colors
   hi IncSearch ctermfg=2 ctermbg=7
   hi ModeMsg ctermfg=3
   hi NonText ctermbg=7
-  hi Search ctermfg=5
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=3
   hi StatusLineNC ctermfg=7 ctermbg=3
   hi VertSplit ctermfg=7 ctermbg=3
-  hi Visual ctermfg=1
+  hi Visual cterm=NONE ctermfg=1 ctermbg=7
   hi WarningMsg ctermbg=4
   hi cursorim ctermfg=7 ctermbg=5
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 hi! link vimfunction Function

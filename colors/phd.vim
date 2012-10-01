@@ -4,7 +4,7 @@
 " Name: phd
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:30
+" Date: 2012-09-29 13:41:39
 "----------------------------------------------------------
 
 set background=dark
@@ -82,6 +82,7 @@ elseif &t_Co == 256
   hi Title ctermbg=233
   hi Type ctermbg=233
   hi VertSplit ctermfg=238 ctermbg=238
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Comment ctermbg=16
@@ -109,6 +110,7 @@ elseif &t_Co == 88
   hi Title ctermbg=16
   hi Type ctermbg=16
   hi VertSplit ctermfg=80 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermbg=0
@@ -136,6 +138,7 @@ elseif &t_Co == 16
   hi Title ctermbg=0
   hi Type ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=0
@@ -163,6 +166,7 @@ else " 8 colors
   hi Title ctermbg=0
   hi Type ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

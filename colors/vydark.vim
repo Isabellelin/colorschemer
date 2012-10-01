@@ -4,7 +4,7 @@
 " Name: vydark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:18
+" Date: 2012-09-29 13:47:50
 "----------------------------------------------------------
 
 set background=dark
@@ -67,6 +67,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=250 ctermbg=236
   hi StatusLineNC ctermfg=243 ctermbg=236
   hi VertSplit ctermfg=236 ctermbg=236
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=80
   hi Conditional ctermfg=42
@@ -84,6 +85,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=85 ctermbg=80
   hi StatusLineNC ctermfg=82 ctermbg=80
   hi VertSplit ctermfg=80 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Conditional ctermfg=7
@@ -101,6 +103,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=8 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Conditional ctermfg=7
@@ -118,6 +121,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 hi! link Define Type

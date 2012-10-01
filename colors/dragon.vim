@@ -4,7 +4,7 @@
 " Name: dragon
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:51
+" Date: 2012-09-29 13:33:55
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal gui=italic guifg=#fe6666 guibg=#000000
   hi Comment gui=italic guifg=#adadad
   hi Constant guifg=#fe6666
-  hi Cursor guibg=#656565
+  hi Cursor guifg=NONE guibg=#656565
   hi CursorColumn guibg=#2d2d2d
   hi CursorLine guibg=#2d2d2d
   hi Folded guifg=#a0a8b0 guibg=#384048
@@ -83,7 +83,6 @@ if has("gui_running")
   hi htmlTag gui=italic guifg=#ffcd00
   hi htmlTagName gui=italic guifg=#ffcd00
   hi javaScriptBlock guifg=#ffffff
-  hi javaScriptBoolean guifg=#ffffff
   hi javaScriptBracket guifg=#ffffff
   hi javaScriptCharacter guifg=#ffffff
   hi javaScriptCommentSkip guifg=#ffffff
@@ -92,9 +91,10 @@ if has("gui_running")
   hi javaScriptFuncName guifg=#78e083
   hi javaScriptParen guifg=#ffffff
   hi javaScriptValue guifg=#ffffff
+  hi javascriptBoolean guifg=#ffffff
 elseif &t_Co == 256
   hi Normal ctermfg=203 ctermbg=16
-  hi Cursor ctermbg=241
+  hi Cursor ctermfg=NONE ctermbg=241
   hi CursorLine ctermbg=236
   hi Function ctermfg=114
   hi Keyword ctermfg=114
@@ -107,7 +107,7 @@ elseif &t_Co == 256
   hi StatusLineNC ctermfg=243 ctermbg=238
   hi String ctermfg=185
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=255
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
   hi cssAuralAttr ctermfg=114
   hi cssAuralProp ctermfg=231
   hi cssBoxAttr ctermfg=114
@@ -147,7 +147,6 @@ elseif &t_Co == 256
   hi htmlTag ctermfg=220
   hi htmlTagName ctermfg=220
   hi javaScriptBlock ctermfg=231
-  hi javaScriptBoolean ctermfg=231
   hi javaScriptBracket ctermfg=231
   hi javaScriptCharacter ctermfg=231
   hi javaScriptCommentSkip ctermfg=231
@@ -156,9 +155,10 @@ elseif &t_Co == 256
   hi javaScriptFuncName ctermfg=114
   hi javaScriptParen ctermfg=231
   hi javaScriptValue ctermfg=231
+  hi javascriptBoolean ctermfg=231
 elseif &t_Co == 88
   hi Normal ctermfg=69 ctermbg=16
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorLine ctermbg=80
   hi Function ctermfg=41
   hi Keyword ctermfg=41
@@ -171,7 +171,7 @@ elseif &t_Co == 88
   hi StatusLineNC ctermfg=82 ctermbg=80
   hi String ctermfg=57
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
   hi cssAuralAttr ctermfg=41
   hi cssAuralProp ctermfg=79
   hi cssBoxAttr ctermfg=41
@@ -211,7 +211,6 @@ elseif &t_Co == 88
   hi htmlTag ctermfg=72
   hi htmlTagName ctermfg=72
   hi javaScriptBlock ctermfg=79
-  hi javaScriptBoolean ctermfg=79
   hi javaScriptBracket ctermfg=79
   hi javaScriptCharacter ctermfg=79
   hi javaScriptCommentSkip ctermfg=79
@@ -220,9 +219,10 @@ elseif &t_Co == 88
   hi javaScriptFuncName ctermfg=41
   hi javaScriptParen ctermfg=79
   hi javaScriptValue ctermfg=79
+  hi javascriptBoolean ctermfg=79
 elseif &t_Co == 16
   hi Normal ctermfg=9 ctermbg=0
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi Function ctermfg=10
   hi Keyword ctermfg=10
@@ -235,7 +235,7 @@ elseif &t_Co == 16
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=10
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
   hi cssAuralAttr ctermfg=10
   hi cssAuralProp ctermfg=15
   hi cssBoxAttr ctermfg=10
@@ -275,7 +275,6 @@ elseif &t_Co == 16
   hi htmlTag ctermfg=3
   hi htmlTagName ctermfg=3
   hi javaScriptBlock ctermfg=15
-  hi javaScriptBoolean ctermfg=15
   hi javaScriptBracket ctermfg=15
   hi javaScriptCharacter ctermfg=15
   hi javaScriptCommentSkip ctermfg=15
@@ -284,9 +283,10 @@ elseif &t_Co == 16
   hi javaScriptFuncName ctermfg=10
   hi javaScriptParen ctermfg=15
   hi javaScriptValue ctermfg=15
+  hi javascriptBoolean ctermfg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi Function ctermfg=7
   hi Keyword ctermfg=7
@@ -299,7 +299,7 @@ else " 8 colors
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi cssAuralAttr ctermfg=7
   hi cssAuralProp ctermfg=7
   hi cssBoxAttr ctermfg=7
@@ -339,7 +339,6 @@ else " 8 colors
   hi htmlTag ctermfg=3
   hi htmlTagName ctermfg=3
   hi javaScriptBlock ctermfg=7
-  hi javaScriptBoolean ctermfg=7
   hi javaScriptBracket ctermfg=7
   hi javaScriptCharacter ctermfg=7
   hi javaScriptCommentSkip ctermfg=7
@@ -348,6 +347,7 @@ else " 8 colors
   hi javaScriptFuncName ctermfg=7
   hi javaScriptParen ctermfg=7
   hi javaScriptValue ctermfg=7
+  hi javascriptBoolean ctermfg=7
 endif
 
 

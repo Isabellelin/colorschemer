@@ -4,7 +4,7 @@
 " Name: southernlights
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:00
+" Date: 2012-09-29 13:44:56
 "----------------------------------------------------------
 
 set background=dark
@@ -43,7 +43,7 @@ if has("gui_running")
   hi SignColumn guibg=#585858
   hi Special guifg=#ffd75f
   hi SpecialKey guifg=#00ffff
-  hi SpellBad guifg=#ff0000 guibg=NONE
+  hi SpellBad guifg=#5c5cff guibg=NONE
   hi SpellLocal guifg=#00ff00 guibg=NONE
   hi SpellRare guifg=#ff00ff guibg=NONE
   hi Statement gui=NONE guifg=yellow
@@ -92,26 +92,21 @@ elseif &t_Co == 256
   hi CursorColumn ctermbg=234
   hi CursorLine cterm=NONE ctermbg=234
   hi Directory ctermfg=27
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=240
+  hi Folded ctermfg=14 ctermbg=240
   hi Function ctermfg=117
   hi LineNr ctermfg=0 ctermbg=240
   hi MatchParen ctermfg=15 ctermbg=58
-  hi MoreMsg ctermfg=10
   hi NonText ctermfg=21
   hi Number ctermfg=223
   hi Operator ctermfg=204
   hi Pmenu ctermfg=119 ctermbg=22
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=11 ctermbg=28
+  hi PmenuSel ctermfg=14 ctermbg=28
   hi PreProc ctermfg=13 ctermbg=0
-  hi Question ctermfg=10
   hi Search ctermfg=15 ctermbg=58
   hi ShowMarksHLl ctermfg=227 ctermbg=28
-  hi SignColumn ctermbg=8
   hi Special ctermfg=221
   hi SpecialKey ctermfg=14
-  hi SpellBad cterm=underline ctermfg=9 ctermbg=NONE
+  hi SpellBad cterm=underline ctermfg=12 ctermbg=NONE
   hi SpellLocal cterm=underline ctermfg=10 ctermbg=NONE
   hi SpellRare cterm=underline ctermfg=13 ctermbg=NONE
   hi StatusLine cterm=bold ctermfg=15 ctermbg=239
@@ -120,15 +115,13 @@ elseif &t_Co == 256
   hi TabLine cterm=NONE ctermfg=0 ctermbg=240
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=235
   hi TabLineSel cterm=NONE ctermfg=0 ctermbg=244
-  hi Title cterm=bold ctermfg=13
+  hi Title cterm=bold
   hi Type ctermfg=77
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=239
-  hi Visual ctermfg=248 ctermbg=237
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=248 ctermbg=237
   hi diffAdded ctermfg=40
   hi diffFile ctermfg=117
-  hi diffLine ctermfg=11
+  hi diffLine ctermfg=14
   hi diffNewFile ctermfg=117
   hi diffOldFile ctermfg=117
   hi diffRemoved ctermfg=210
@@ -148,7 +141,7 @@ elseif &t_Co == 256
   hi mailQuoted5 ctermfg=27
   hi mailQuoted6 ctermfg=21
   hi mailSignature ctermfg=209
-  hi mailSubject ctermfg=11
+  hi mailSubject ctermfg=14
   hi vimCommentString ctermfg=147
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=16
@@ -162,26 +155,21 @@ elseif &t_Co == 88
   hi CursorColumn ctermbg=80
   hi CursorLine cterm=NONE ctermbg=80
   hi Directory ctermfg=23
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
+  hi Folded ctermfg=31 ctermbg=81
   hi Function ctermfg=43
   hi LineNr ctermfg=16 ctermbg=81
   hi MatchParen ctermfg=79 ctermbg=36
-  hi MoreMsg ctermfg=28
   hi NonText ctermfg=19
   hi Number ctermfg=74
   hi Operator ctermfg=69
   hi Pmenu ctermfg=45 ctermbg=20
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=76 ctermbg=20
+  hi PmenuSel ctermfg=31 ctermbg=20
   hi PreProc ctermfg=67 ctermbg=16
-  hi Question ctermfg=28
   hi Search ctermfg=79 ctermbg=36
   hi ShowMarksHLl ctermfg=77 ctermbg=20
-  hi SignColumn ctermbg=81
   hi Special ctermfg=73
   hi SpecialKey ctermfg=31
-  hi SpellBad cterm=underline ctermfg=9 ctermbg=NONE
+  hi SpellBad cterm=underline ctermfg=39 ctermbg=NONE
   hi SpellLocal cterm=underline ctermfg=28 ctermbg=NONE
   hi SpellRare cterm=underline ctermfg=67 ctermbg=NONE
   hi StatusLine cterm=bold ctermfg=79 ctermbg=81
@@ -190,15 +178,13 @@ elseif &t_Co == 88
   hi TabLine cterm=NONE ctermfg=16 ctermbg=81
   hi TabLineFill cterm=NONE ctermfg=16 ctermbg=80
   hi TabLineSel cterm=NONE ctermfg=16 ctermbg=83
-  hi Title cterm=bold ctermfg=67
+  hi Title cterm=bold
   hi Type ctermfg=41
-  hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=81
-  hi Visual ctermfg=84 ctermbg=80
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=84 ctermbg=80
   hi diffAdded ctermfg=24
   hi diffFile ctermfg=43
-  hi diffLine ctermfg=76
+  hi diffLine ctermfg=31
   hi diffNewFile ctermfg=43
   hi diffOldFile ctermfg=43
   hi diffRemoved ctermfg=69
@@ -218,7 +204,7 @@ elseif &t_Co == 88
   hi mailQuoted5 ctermfg=23
   hi mailQuoted6 ctermfg=19
   hi mailSignature ctermfg=69
-  hi mailSubject ctermfg=76
+  hi mailSubject ctermfg=31
   hi vimCommentString ctermfg=59
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
@@ -232,26 +218,21 @@ elseif &t_Co == 16
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi Folded ctermfg=14 ctermbg=2
   hi Function ctermfg=12
   hi LineNr ctermfg=0 ctermbg=2
   hi MatchParen ctermfg=15 ctermbg=3
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=4
   hi Number ctermfg=11
   hi Operator ctermfg=8
   hi Pmenu ctermfg=10 ctermbg=2
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=11 ctermbg=2
+  hi PmenuSel ctermfg=14 ctermbg=2
   hi PreProc ctermfg=13 ctermbg=0
-  hi Question ctermfg=2
   hi Search ctermfg=15 ctermbg=3
   hi ShowMarksHLl ctermfg=11 ctermbg=2
-  hi SignColumn ctermbg=2
   hi Special ctermfg=11
   hi SpecialKey ctermfg=14
-  hi SpellBad cterm=underline ctermfg=9 ctermbg=NONE
+  hi SpellBad cterm=underline ctermfg=12 ctermbg=NONE
   hi SpellLocal cterm=underline ctermfg=2 ctermbg=NONE
   hi SpellRare cterm=underline ctermfg=13 ctermbg=NONE
   hi StatusLine cterm=bold ctermfg=15 ctermbg=2
@@ -260,15 +241,13 @@ elseif &t_Co == 16
   hi TabLine cterm=NONE ctermfg=0 ctermbg=2
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=0
   hi TabLineSel cterm=NONE ctermfg=0 ctermbg=8
-  hi Title cterm=bold ctermfg=13
+  hi Title cterm=bold
   hi Type ctermfg=10
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=2
-  hi Visual ctermfg=8 ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=8 ctermbg=2
   hi diffAdded ctermfg=2
   hi diffFile ctermfg=12
-  hi diffLine ctermfg=11
+  hi diffLine ctermfg=14
   hi diffNewFile ctermfg=12
   hi diffOldFile ctermfg=12
   hi diffRemoved ctermfg=8
@@ -288,7 +267,7 @@ elseif &t_Co == 16
   hi mailQuoted5 ctermfg=6
   hi mailQuoted6 ctermfg=4
   hi mailSignature ctermfg=8
-  hi mailSubject ctermfg=11
+  hi mailSubject ctermfg=14
   hi vimCommentString ctermfg=12
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -302,26 +281,21 @@ else " 8 colors
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
+  hi Folded ctermfg=6 ctermbg=2
   hi Function ctermfg=7
   hi LineNr ctermfg=0 ctermbg=2
   hi MatchParen ctermfg=7 ctermbg=3
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=4
   hi Number ctermfg=7
   hi Operator ctermfg=5
   hi Pmenu ctermfg=3 ctermbg=2
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=3 ctermbg=2
+  hi PmenuSel ctermfg=6 ctermbg=2
   hi PreProc ctermfg=5 ctermbg=0
-  hi Question ctermfg=2
   hi Search ctermfg=7 ctermbg=3
   hi ShowMarksHLl ctermfg=7 ctermbg=2
-  hi SignColumn ctermbg=2
   hi Special ctermfg=7
   hi SpecialKey ctermfg=6
-  hi SpellBad cterm=underline ctermfg=1 ctermbg=NONE
+  hi SpellBad cterm=underline ctermfg=5 ctermbg=NONE
   hi SpellLocal cterm=underline ctermfg=2 ctermbg=NONE
   hi SpellRare cterm=underline ctermfg=5 ctermbg=NONE
   hi StatusLine cterm=bold ctermfg=7 ctermbg=2
@@ -330,15 +304,13 @@ else " 8 colors
   hi TabLine cterm=NONE ctermfg=0 ctermbg=2
   hi TabLineFill cterm=NONE ctermfg=0 ctermbg=0
   hi TabLineSel cterm=NONE ctermfg=0 ctermbg=3
-  hi Title cterm=bold ctermfg=5
+  hi Title cterm=bold
   hi Type ctermfg=3
-  hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi diffAdded ctermfg=2
   hi diffFile ctermfg=7
-  hi diffLine ctermfg=3
+  hi diffLine ctermfg=6
   hi diffNewFile ctermfg=7
   hi diffOldFile ctermfg=7
   hi diffRemoved ctermfg=7
@@ -358,7 +330,7 @@ else " 8 colors
   hi mailQuoted5 ctermfg=6
   hi mailQuoted6 ctermfg=4
   hi mailSignature ctermfg=3
-  hi mailSubject ctermfg=3
+  hi mailSubject ctermfg=6
   hi vimCommentString ctermfg=7
 endif
 

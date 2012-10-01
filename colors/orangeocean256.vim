@@ -4,7 +4,7 @@
 " Name: orangeocean256
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:11
+" Date: 2012-09-29 13:41:13
 "----------------------------------------------------------
 
 set background=dark
@@ -23,7 +23,6 @@ if has("gui_running")
   hi Comment guifg=Blue guibg=#005fff
   hi Conditional guifg=#afff00
   hi Constant guifg=Magenta
-  hi Cursor guifg=#000000 guibg=#008700
   hi CursorColumn guibg=Grey90
   hi CursorLine guibg=Grey90
   hi CursorLineNr guifg=Brown
@@ -70,20 +69,18 @@ if has("gui_running")
   hi Visual guifg=#ffffff guibg=LightGrey
   hi VisualNOS guifg=#ffffff guibg=#000000
   hi cursorim guifg=#000000 guibg=#008787
-  hi lcursor guifg=#000000 guibg=#ffffff
 elseif &t_Co == 256
   hi Normal ctermfg=15 ctermbg=17
   hi Boolean ctermfg=226
   hi Character ctermfg=172
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=255 ctermbg=27
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=154
-  hi Constant ctermfg=1
+  hi Constant ctermfg=4
   hi Cursor ctermfg=0 ctermbg=28
   hi CursorColumn ctermbg=18
   hi CursorLine cterm=NONE ctermbg=18
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi DiffAdd ctermfg=0 ctermbg=228
   hi DiffChange ctermfg=15 ctermbg=33
   hi DiffDelete ctermfg=243 ctermbg=233
@@ -96,12 +93,12 @@ elseif &t_Co == 256
   hi FoldColumn cterm=bold ctermfg=251 ctermbg=0
   hi Folded cterm=bold ctermfg=233 ctermbg=195
   hi Function ctermfg=46
-  hi Identifier cterm=NONE ctermfg=6
+  hi Identifier cterm=NONE ctermfg=3
   hi Ignore ctermfg=15
   hi Keyword ctermfg=15
   hi Label ctermfg=154
   hi LineNr ctermfg=255 ctermbg=208
-  hi MatchParen ctermbg=14
+  hi MatchParen ctermbg=11
   hi ModeMsg ctermfg=111
   hi MoreMsg ctermfg=152
   hi NonText ctermfg=104 ctermbg=18
@@ -112,10 +109,9 @@ elseif &t_Co == 256
   hi PmenuSel cterm=bold ctermfg=232 ctermbg=208
   hi PmenuThumb ctermfg=226 ctermbg=0
   hi PreProc ctermfg=226
-  hi Question ctermfg=10
   hi Repeat ctermfg=154
   hi Search cterm=bold ctermbg=226
-  hi SignColumn ctermfg=4 ctermbg=7
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special cterm=bold ctermfg=252
   hi SpecialKey ctermfg=24
   hi Statement ctermfg=154
@@ -125,30 +121,28 @@ elseif &t_Co == 256
   hi TabLine ctermfg=233 ctermbg=75
   hi TabLineFill ctermfg=237
   hi TabLineSel ctermfg=15 ctermbg=27
-  hi Title cterm=bold ctermfg=13
+  hi Title cterm=bold
   hi Todo ctermfg=15 ctermbg=52
   hi Type ctermfg=151
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=166 ctermbg=0
-  hi Visual cterm=reverse ctermfg=15 ctermbg=0
+  hi Visual ctermfg=15 ctermbg=0
   hi VisualNOS cterm=reverse ctermfg=15 ctermbg=0
-  hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=191
   hi cursorim ctermfg=0 ctermbg=30
-  hi lcursor ctermfg=0 ctermbg=15
+  hi lCursor ctermfg=0 ctermbg=15
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=17
   hi Boolean ctermfg=76
   hi Character ctermfg=52
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=39
   hi Comment ctermfg=87 ctermbg=23
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=60
-  hi Constant ctermfg=48
+  hi Constant ctermfg=19
   hi Cursor ctermfg=16 ctermbg=20
   hi CursorColumn ctermbg=17
   hi CursorLine cterm=NONE ctermbg=17
-  hi CursorLineNr ctermfg=56
+  hi CursorLineNr ctermfg=6
   hi DiffAdd ctermfg=16 ctermbg=77
   hi DiffChange ctermfg=79 ctermbg=23
   hi DiffDelete ctermfg=82 ctermbg=16
@@ -161,12 +155,12 @@ elseif &t_Co == 88
   hi FoldColumn cterm=bold ctermfg=58 ctermbg=16
   hi Folded cterm=bold ctermfg=16 ctermbg=63
   hi Function ctermfg=28
-  hi Identifier cterm=NONE ctermfg=6
+  hi Identifier cterm=NONE ctermfg=56
   hi Ignore ctermfg=79
   hi Keyword ctermfg=79
   hi Label ctermfg=60
   hi LineNr ctermfg=87 ctermbg=68
-  hi MatchParen ctermbg=31
+  hi MatchParen ctermbg=76
   hi ModeMsg ctermfg=43
   hi MoreMsg ctermfg=86
   hi NonText ctermfg=38 ctermbg=17
@@ -177,10 +171,9 @@ elseif &t_Co == 88
   hi PmenuSel cterm=bold ctermfg=16 ctermbg=68
   hi PmenuThumb ctermfg=76 ctermbg=16
   hi PreProc ctermfg=76
-  hi Question ctermfg=28
   hi Repeat ctermfg=60
   hi Search cterm=bold ctermbg=76
-  hi SignColumn ctermfg=19 ctermbg=87
+  hi SignColumn ctermfg=48 ctermbg=87
   hi Special cterm=bold ctermfg=86
   hi SpecialKey ctermfg=21
   hi Statement ctermfg=60
@@ -190,30 +183,28 @@ elseif &t_Co == 88
   hi TabLine ctermfg=16 ctermbg=43
   hi TabLineFill ctermfg=80
   hi TabLineSel ctermfg=79 ctermbg=23
-  hi Title cterm=bold ctermfg=67
+  hi Title cterm=bold
   hi Todo ctermfg=79 ctermbg=32
   hi Type ctermfg=85
   hi Underlined ctermfg=50
   hi VertSplit cterm=NONE ctermfg=52 ctermbg=16
-  hi Visual cterm=reverse ctermfg=79 ctermbg=16
+  hi Visual ctermfg=79 ctermbg=16
   hi VisualNOS cterm=reverse ctermfg=79 ctermbg=16
-  hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=61
   hi cursorim ctermfg=16 ctermbg=21
-  hi lcursor ctermfg=16 ctermbg=79
+  hi lCursor ctermfg=16 ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=4
   hi Boolean ctermfg=11
   hi Character ctermfg=3
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=12
   hi Comment ctermfg=11 ctermbg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
-  hi Constant ctermfg=9
+  hi Constant ctermfg=4
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=4
   hi CursorLine cterm=NONE ctermbg=4
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi DiffAdd ctermfg=0 ctermbg=11
   hi DiffChange ctermfg=15 ctermbg=6
   hi DiffDelete ctermfg=8 ctermbg=0
@@ -226,12 +217,12 @@ elseif &t_Co == 16
   hi FoldColumn cterm=bold ctermfg=7 ctermbg=0
   hi Folded cterm=bold ctermfg=0 ctermbg=14
   hi Function ctermfg=2
-  hi Identifier cterm=NONE ctermfg=6
+  hi Identifier cterm=NONE ctermfg=3
   hi Ignore ctermfg=15
   hi Keyword ctermfg=15
   hi Label ctermfg=3
   hi LineNr ctermfg=11 ctermbg=3
-  hi MatchParen ctermbg=14
+  hi MatchParen ctermbg=11
   hi ModeMsg ctermfg=12
   hi MoreMsg ctermfg=12
   hi NonText ctermfg=8 ctermbg=4
@@ -242,10 +233,9 @@ elseif &t_Co == 16
   hi PmenuSel cterm=bold ctermfg=0 ctermbg=3
   hi PmenuThumb ctermfg=11 ctermbg=0
   hi PreProc ctermfg=11
-  hi Question ctermfg=2
   hi Repeat ctermfg=3
   hi Search cterm=bold ctermbg=11
-  hi SignColumn ctermfg=4 ctermbg=11
+  hi SignColumn ctermfg=9 ctermbg=11
   hi Special cterm=bold ctermfg=7
   hi SpecialKey ctermfg=6
   hi Statement ctermfg=3
@@ -255,30 +245,28 @@ elseif &t_Co == 16
   hi TabLine ctermfg=0 ctermbg=12
   hi TabLineFill ctermfg=2
   hi TabLineSel ctermfg=15 ctermbg=6
-  hi Title cterm=bold ctermfg=13
+  hi Title cterm=bold
   hi Todo ctermfg=15 ctermbg=1
   hi Type ctermfg=7
   hi Underlined ctermfg=13
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=0
-  hi Visual cterm=reverse ctermfg=15 ctermbg=0
+  hi Visual ctermfg=15 ctermbg=0
   hi VisualNOS cterm=reverse ctermfg=15 ctermbg=0
-  hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=10
   hi cursorim ctermfg=0 ctermbg=6
-  hi lcursor ctermfg=0 ctermbg=15
+  hi lCursor ctermfg=0 ctermbg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=4
   hi Boolean ctermfg=3
   hi Character ctermfg=3
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=5
   hi Comment ctermfg=7 ctermbg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=3
-  hi Constant ctermfg=1
+  hi Constant ctermfg=4
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorColumn ctermbg=4
   hi CursorLine cterm=NONE ctermbg=4
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi DiffAdd ctermfg=0 ctermbg=7
   hi DiffChange ctermfg=7 ctermbg=6
   hi DiffDelete ctermfg=3 ctermbg=0
@@ -291,12 +279,12 @@ else " 8 colors
   hi FoldColumn cterm=bold ctermfg=7 ctermbg=0
   hi Folded cterm=bold ctermfg=0 ctermbg=7
   hi Function ctermfg=2
-  hi Identifier cterm=NONE ctermfg=6
+  hi Identifier cterm=NONE ctermfg=3
   hi Ignore ctermfg=7
   hi Keyword ctermfg=7
   hi Label ctermfg=3
   hi LineNr ctermfg=7 ctermbg=3
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi ModeMsg ctermfg=7
   hi MoreMsg ctermfg=7
   hi NonText ctermfg=7 ctermbg=4
@@ -307,10 +295,9 @@ else " 8 colors
   hi PmenuSel cterm=bold ctermfg=0 ctermbg=3
   hi PmenuThumb ctermfg=3 ctermbg=0
   hi PreProc ctermfg=3
-  hi Question ctermfg=2
   hi Repeat ctermfg=3
   hi Search cterm=bold ctermbg=3
-  hi SignColumn ctermfg=4 ctermbg=7
+  hi SignColumn ctermfg=1 ctermbg=7
   hi Special cterm=bold ctermfg=7
   hi SpecialKey ctermfg=6
   hi Statement ctermfg=3
@@ -320,17 +307,16 @@ else " 8 colors
   hi TabLine ctermfg=0 ctermbg=7
   hi TabLineFill ctermfg=2
   hi TabLineSel ctermfg=7 ctermbg=6
-  hi Title cterm=bold ctermfg=5
+  hi Title cterm=bold
   hi Todo ctermfg=7 ctermbg=1
   hi Type ctermfg=7
   hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=0
-  hi Visual cterm=reverse ctermfg=7 ctermbg=0
+  hi Visual ctermfg=7 ctermbg=0
   hi VisualNOS cterm=reverse ctermfg=7 ctermbg=0
-  hi WarningMsg ctermfg=1
   hi WildMenu ctermbg=7
   hi cursorim ctermfg=0 ctermbg=6
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 

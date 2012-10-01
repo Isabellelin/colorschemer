@@ -4,7 +4,7 @@
 " Name: eclm_wombat
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:07
+" Date: 2012-09-29 13:34:18
 "----------------------------------------------------------
 
 set background=dark
@@ -60,7 +60,7 @@ elseif &t_Co == 256
   hi StatusLineNC ctermfg=243 ctermbg=238
   hi String ctermfg=186
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=255
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Cursor ctermfg=16
@@ -76,7 +76,7 @@ elseif &t_Co == 88
   hi StatusLineNC ctermfg=82 ctermbg=80
   hi String ctermfg=57
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Cursor ctermfg=0
@@ -92,7 +92,7 @@ elseif &t_Co == 16
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=10
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=0
@@ -108,7 +108,7 @@ else " 8 colors
   hi StatusLineNC ctermfg=3 ctermbg=2
   hi String ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 hi! link RubyStringDemiliter String

@@ -4,7 +4,7 @@
 " Name: northsky
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:47
+" Date: 2012-09-29 13:40:42
 "----------------------------------------------------------
 
 set background=dark
@@ -65,24 +65,22 @@ if has("gui_running")
   hi Visual guifg=#0000ee guibg=#2b5547
   hi VisualNOS gui=bold guibg=#628262
   hi WarningMsg gui=underline guifg=#f60000
-  hi lcursor guibg=SeaGreen1
+  hi lCursor guifg=NONE guibg=SeaGreen1
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=0
   hi Comment cterm=bold ctermfg=0
-  hi Conceal ctermbg=8
   hi Constant cterm=bold ctermfg=4
   hi Cursor ctermfg=254 ctermbg=167
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=17
-  hi DiffAdd cterm=bold ctermfg=3 ctermbg=4
+  hi DiffAdd cterm=bold ctermfg=3
   hi DiffChange ctermfg=4 ctermbg=2
   hi DiffDelete cterm=bold ctermfg=3 ctermbg=1
   hi DiffText ctermfg=3 ctermbg=1
   hi Directory ctermfg=3
   hi Error cterm=bold ctermfg=7 ctermbg=1
-  hi ErrorMsg cterm=bold ctermfg=7
+  hi ErrorMsg cterm=bold ctermfg=7 ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=5
-  hi Folded ctermfg=5 ctermbg=8
+  hi Folded ctermfg=5
   hi Identifier cterm=NONE ctermfg=6
   hi Ignore ctermfg=4
   hi IncSearch cterm=NONE ctermfg=7 ctermbg=5
@@ -94,7 +92,6 @@ elseif &t_Co == 256
   hi NonText cterm=bold ctermfg=6 ctermbg=239
   hi Number cterm=bold ctermfg=2
   hi Pmenu ctermbg=4
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=7 ctermbg=5
   hi PmenuThumb ctermfg=236 ctermbg=0
   hi PreProc ctermfg=2
@@ -114,30 +111,28 @@ elseif &t_Co == 256
   hi Type ctermfg=3
   hi Underlined cterm=bold,underline ctermfg=4
   hi User1 ctermfg=16 ctermbg=23
-  hi User2 cterm=bold ctermfg=4 ctermbg=12
+  hi User2 cterm=bold ctermfg=1 ctermbg=9
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi Visual ctermfg=4 ctermbg=3
-  hi VisualNOS cterm=bold,underline ctermbg=65
+  hi Visual cterm=NONE ctermfg=4 ctermbg=3
+  hi VisualNOS ctermbg=65
   hi WarningMsg ctermfg=1
   hi WildMenu ctermbg=3
-  hi lcursor ctermbg=85
+  hi lCursor ctermfg=NONE ctermbg=85
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Comment cterm=bold ctermfg=16
-  hi Conceal ctermbg=81
   hi Constant cterm=bold ctermfg=19
   hi Cursor ctermfg=87 ctermbg=48
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
-  hi DiffAdd cterm=bold ctermfg=56 ctermbg=19
+  hi DiffAdd cterm=bold ctermfg=56
   hi DiffChange ctermfg=19 ctermbg=24
   hi DiffDelete cterm=bold ctermfg=56 ctermbg=48
   hi DiffText ctermfg=56 ctermbg=48
   hi Directory ctermfg=56
   hi Error cterm=bold ctermfg=87 ctermbg=48
-  hi ErrorMsg cterm=bold ctermfg=87
+  hi ErrorMsg cterm=bold ctermfg=87 ctermbg=48
   hi FoldColumn ctermfg=87 ctermbg=50
-  hi Folded ctermfg=50 ctermbg=81
+  hi Folded ctermfg=50
   hi Identifier cterm=NONE ctermfg=6
   hi Ignore ctermfg=19
   hi IncSearch cterm=NONE ctermfg=87 ctermbg=50
@@ -149,7 +144,6 @@ elseif &t_Co == 88
   hi NonText cterm=bold ctermfg=6 ctermbg=81
   hi Number cterm=bold ctermfg=24
   hi Pmenu ctermbg=19
-  hi PmenuSbar ctermbg=87
   hi PmenuSel ctermfg=87 ctermbg=50
   hi PmenuThumb ctermfg=80 ctermbg=16
   hi PreProc ctermfg=24
@@ -169,30 +163,28 @@ elseif &t_Co == 88
   hi Type ctermfg=56
   hi Underlined cterm=bold,underline ctermfg=19
   hi User1 ctermfg=16 ctermbg=80
-  hi User2 cterm=bold ctermfg=19 ctermbg=39
+  hi User2 cterm=bold ctermfg=48 ctermbg=9
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=87
-  hi Visual ctermfg=19 ctermbg=56
-  hi VisualNOS cterm=bold,underline ctermbg=82
+  hi Visual cterm=NONE ctermfg=19 ctermbg=56
+  hi VisualNOS ctermbg=82
   hi WarningMsg ctermfg=48
   hi WildMenu ctermbg=56
-  hi lcursor ctermbg=45
+  hi lCursor ctermfg=NONE ctermbg=45
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment cterm=bold ctermfg=0
-  hi Conceal ctermbg=2
   hi Constant cterm=bold ctermfg=4
   hi Cursor ctermfg=11 ctermbg=9
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=4
-  hi DiffAdd cterm=bold ctermfg=3 ctermbg=4
+  hi DiffAdd cterm=bold ctermfg=3
   hi DiffChange ctermfg=4 ctermbg=2
   hi DiffDelete cterm=bold ctermfg=3 ctermbg=9
   hi DiffText ctermfg=3 ctermbg=9
   hi Directory ctermfg=3
   hi Error cterm=bold ctermfg=11 ctermbg=9
-  hi ErrorMsg cterm=bold ctermfg=11
+  hi ErrorMsg cterm=bold ctermfg=11 ctermbg=9
   hi FoldColumn ctermfg=11 ctermbg=13
-  hi Folded ctermfg=13 ctermbg=2
+  hi Folded ctermfg=13
   hi Identifier cterm=NONE ctermfg=6
   hi Ignore ctermfg=4
   hi IncSearch cterm=NONE ctermfg=11 ctermbg=13
@@ -204,7 +196,6 @@ elseif &t_Co == 16
   hi NonText cterm=bold ctermfg=6 ctermbg=6
   hi Number cterm=bold ctermfg=2
   hi Pmenu ctermbg=4
-  hi PmenuSbar ctermbg=11
   hi PmenuSel ctermfg=11 ctermbg=13
   hi PmenuThumb ctermfg=2 ctermbg=0
   hi PreProc ctermfg=2
@@ -224,30 +215,28 @@ elseif &t_Co == 16
   hi Type ctermfg=3
   hi Underlined cterm=bold,underline ctermfg=4
   hi User1 ctermfg=0 ctermbg=2
-  hi User2 cterm=bold ctermfg=4 ctermbg=12
+  hi User2 cterm=bold ctermfg=9 ctermbg=9
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=11
-  hi Visual ctermfg=4 ctermbg=3
-  hi VisualNOS cterm=bold,underline ctermbg=3
+  hi Visual cterm=NONE ctermfg=4 ctermbg=3
+  hi VisualNOS ctermbg=3
   hi WarningMsg ctermfg=9
   hi WildMenu ctermbg=3
-  hi lcursor ctermbg=10
+  hi lCursor ctermfg=NONE ctermbg=10
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment cterm=bold ctermfg=0
-  hi Conceal ctermbg=2
   hi Constant cterm=bold ctermfg=4
   hi Cursor ctermfg=7 ctermbg=1
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=4
-  hi DiffAdd cterm=bold ctermfg=3 ctermbg=4
+  hi DiffAdd cterm=bold ctermfg=3
   hi DiffChange ctermfg=4 ctermbg=2
   hi DiffDelete cterm=bold ctermfg=3 ctermbg=1
   hi DiffText ctermfg=3 ctermbg=1
   hi Directory ctermfg=3
   hi Error cterm=bold ctermfg=7 ctermbg=1
-  hi ErrorMsg cterm=bold ctermfg=7
+  hi ErrorMsg cterm=bold ctermfg=7 ctermbg=1
   hi FoldColumn ctermfg=7 ctermbg=5
-  hi Folded ctermfg=5 ctermbg=2
+  hi Folded ctermfg=5
   hi Identifier cterm=NONE ctermfg=6
   hi Ignore ctermfg=4
   hi IncSearch cterm=NONE ctermfg=7 ctermbg=5
@@ -259,7 +248,6 @@ else " 8 colors
   hi NonText cterm=bold ctermfg=6 ctermbg=6
   hi Number cterm=bold ctermfg=2
   hi Pmenu ctermbg=4
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=7 ctermbg=5
   hi PmenuThumb ctermfg=2 ctermbg=0
   hi PreProc ctermfg=2
@@ -279,13 +267,13 @@ else " 8 colors
   hi Type ctermfg=3
   hi Underlined cterm=bold,underline ctermfg=4
   hi User1 ctermfg=0 ctermbg=2
-  hi User2 cterm=bold ctermfg=4 ctermbg=5
+  hi User2 cterm=bold ctermfg=1 ctermbg=1
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi Visual ctermfg=4 ctermbg=3
-  hi VisualNOS cterm=bold,underline ctermbg=3
+  hi Visual cterm=NONE ctermfg=4 ctermbg=3
+  hi VisualNOS ctermbg=3
   hi WarningMsg ctermfg=1
   hi WildMenu ctermbg=3
-  hi lcursor ctermbg=7
+  hi lCursor ctermfg=NONE ctermbg=7
 endif
 
 

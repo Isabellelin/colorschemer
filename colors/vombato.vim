@@ -4,7 +4,7 @@
 " Name: vombato
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:16
+" Date: 2012-09-29 13:47:48
 "----------------------------------------------------------
 
 set background=dark
@@ -21,7 +21,7 @@ if has("gui_running")
   hi ColorColumn guibg=#202020
   hi Comment guifg=#99968B
   hi Constant guifg=#E5786D
-  hi Cursor guibg=#656565
+  hi Cursor guifg=NONE guibg=#656565
   hi CursorColumn guibg=#2D2D2D
   hi CursorLine guibg=#2D2D2D
   hi DiffAdd guifg=#000000 guibg=#CAE682
@@ -71,7 +71,7 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=235
   hi Boolean ctermfg=169
-  hi Cursor ctermbg=241
+  hi Cursor ctermfg=NONE ctermbg=241
   hi CursorLine ctermbg=236
   hi DiffAdd ctermfg=16
   hi DiffChange ctermfg=16
@@ -90,11 +90,11 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=238 ctermbg=238
   hi TabLineSel ctermfg=113 ctermbg=234
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=255
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Boolean ctermfg=54
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=16
   hi DiffChange ctermfg=16
@@ -113,11 +113,11 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=80 ctermbg=80
   hi TabLineSel ctermfg=41 ctermbg=80
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Boolean ctermfg=7
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=0
   hi DiffChange ctermfg=0
@@ -136,11 +136,11 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=2 ctermbg=2
   hi TabLineSel ctermfg=10 ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=0
   hi DiffChange ctermfg=0
@@ -159,7 +159,7 @@ else " 8 colors
   hi TabLineFill ctermfg=2 ctermbg=2
   hi TabLineSel ctermfg=3 ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
 endif
 
 hi! link MoreMsg Question

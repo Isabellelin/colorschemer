@@ -4,7 +4,7 @@
 " Name: donbass
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:48
+" Date: 2012-09-29 13:33:50
 "----------------------------------------------------------
 
 set background=light
@@ -61,7 +61,7 @@ if has("gui_running")
   hi Underlined guifg=fg guibg=bg
   hi VertSplit gui=NONE guifg=#000000 guibg=#a8a8a8
   hi Visual guifg=#000000 guibg=#5fafdf
-  hi VisualNOS guifg=#5f0000 guibg=#af875f
+  hi VisualNOS gui=NONE guifg=#5f0000 guibg=#af875f
   hi WarningMsg gui=bold guifg=#ff0000 guibg=bg
   hi WildMenu guifg=#bcbcbc guibg=#303030
   hi cPreCondit gui=bold guifg=#af5f5f guibg=bg
@@ -116,8 +116,8 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=25 ctermbg=252
   hi Underlined ctermfg=232 ctermbg=252
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=248
-  hi Visual ctermfg=16 ctermbg=74
-  hi VisualNOS ctermfg=52 ctermbg=137
+  hi Visual cterm=NONE ctermfg=16 ctermbg=74
+  hi VisualNOS cterm=NONE ctermfg=52 ctermbg=137
   hi WarningMsg cterm=bold ctermfg=196 ctermbg=252
   hi WildMenu ctermfg=250 ctermbg=236
   hi cPreCondit cterm=bold ctermfg=131 ctermbg=252
@@ -172,8 +172,8 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=22 ctermbg=86
   hi Underlined ctermfg=16 ctermbg=86
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=84
-  hi Visual ctermfg=16 ctermbg=42
-  hi VisualNOS ctermfg=32 ctermbg=53
+  hi Visual cterm=NONE ctermfg=16 ctermbg=42
+  hi VisualNOS cterm=NONE ctermfg=32 ctermbg=53
   hi WarningMsg cterm=bold ctermfg=9 ctermbg=86
   hi WildMenu ctermfg=85 ctermbg=80
   hi cPreCondit cterm=bold ctermfg=81 ctermbg=86
@@ -228,8 +228,8 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=6 ctermbg=7
   hi Underlined ctermfg=0 ctermbg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=8
-  hi Visual ctermfg=0 ctermbg=8
-  hi VisualNOS ctermfg=1 ctermbg=8
+  hi Visual cterm=NONE ctermfg=0 ctermbg=8
+  hi VisualNOS cterm=NONE ctermfg=1 ctermbg=8
   hi WarningMsg cterm=bold ctermfg=9 ctermbg=7
   hi WildMenu ctermfg=7 ctermbg=0
   hi cPreCondit cterm=bold ctermfg=8 ctermbg=7
@@ -284,8 +284,8 @@ else " 8 colors
   hi Type cterm=bold ctermfg=6 ctermbg=7
   hi Underlined ctermfg=0 ctermbg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0 ctermbg=7
-  hi VisualNOS ctermfg=1 ctermbg=3
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=1 ctermbg=3
   hi WarningMsg cterm=bold ctermfg=1 ctermbg=7
   hi WildMenu ctermfg=7 ctermbg=0
   hi cPreCondit cterm=bold ctermfg=3 ctermbg=7

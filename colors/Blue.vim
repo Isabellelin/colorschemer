@@ -4,7 +4,7 @@
 " Name: Blue
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:17
+" Date: 2012-09-29 13:30:12
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,7 @@ if has("gui_running")
   hi Character guifg=Cyan
   hi Comment guifg=SkyBlue
   hi Constant guifg=#FF7070
-  hi Cursor guifg=bg guibg=yellow
+  hi Cursor guibg=yellow
   hi CursorColumn guibg=#222260
   hi CursorLine guibg=#222260
   hi Error guibg=red3
@@ -39,42 +39,42 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=17
   hi Character ctermfg=51
-  hi Cursor ctermfg=bg ctermbg=226
+  hi Cursor ctermbg=226
   hi CursorLine ctermbg=235
   hi IncSearch ctermfg=226 ctermbg=21
   hi NonText ctermbg=17
   hi String ctermfg=217
-  hi Visual ctermfg=241
+  hi Visual cterm=NONE ctermfg=241 ctermbg=8
   hi WarningMsg ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=17
   hi Character ctermfg=31
-  hi Cursor ctermfg=bg ctermbg=76
+  hi Cursor ctermbg=76
   hi CursorLine ctermbg=80
   hi IncSearch ctermfg=76 ctermbg=19
   hi NonText ctermbg=16
   hi String ctermfg=69
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
   hi WarningMsg ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=4
   hi Character ctermfg=14
-  hi Cursor ctermfg=bg ctermbg=11
+  hi Cursor ctermbg=11
   hi CursorLine ctermbg=4
   hi IncSearch ctermfg=11 ctermbg=4
   hi NonText ctermbg=0
   hi String ctermfg=8
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=4
   hi Character ctermfg=6
-  hi Cursor ctermfg=bg ctermbg=3
+  hi Cursor ctermbg=3
   hi CursorLine ctermbg=4
   hi IncSearch ctermfg=3 ctermbg=4
   hi NonText ctermbg=0
   hi String ctermfg=7
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=7
 endif
 

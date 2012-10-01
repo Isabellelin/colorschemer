@@ -4,7 +4,7 @@
 " Name: h80
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:13
+" Date: 2012-09-29 13:35:52
 "----------------------------------------------------------
 
 set background=dark
@@ -51,7 +51,7 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=159 ctermbg=23
   hi StatusLineNC ctermfg=23 ctermbg=30
   hi VertSplit ctermfg=23 ctermbg=159
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
   hi Cursor ctermfg=87 ctermbg=48
@@ -62,7 +62,7 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=63 ctermbg=80
   hi StatusLineNC ctermfg=80 ctermbg=21
   hi VertSplit ctermfg=81 ctermbg=63
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
   hi Cursor ctermfg=11 ctermbg=9
@@ -73,7 +73,7 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=14 ctermbg=2
   hi StatusLineNC ctermfg=2 ctermbg=6
   hi VertSplit ctermfg=2 ctermbg=14
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=7 ctermbg=1
@@ -84,7 +84,7 @@ else " 8 colors
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=2 ctermbg=6
   hi VertSplit ctermfg=2 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 

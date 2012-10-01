@@ -4,7 +4,7 @@
 " Name: getafe
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:46
+" Date: 2012-09-29 13:35:14
 "----------------------------------------------------------
 
 set background=dark
@@ -90,7 +90,7 @@ if has("gui_running")
   hi Underlined gui=NONE guifg=#F8FFF9 guibg=#1B1D1E
   hi VertSplit gui=NONE guifg=#F8FFF9 guibg=#5A7085
   hi Visual guifg=#F8FFF9 guibg=#FF358B
-  hi VisualNOS guifg=#F8FFF9 guibg=#1B1D1E
+  hi VisualNOS gui=NONE guifg=#F8FFF9 guibg=#1B1D1E
   hi WarningMsg guifg=#F8FFF9 guibg=#1B1D1E
   hi WildMenu guifg=#01B0F0 guibg=#000000
   hi cursorim guifg=#F8FFF9 guibg=#1B1D1E
@@ -168,7 +168,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=15 ctermbg=234
   hi Underlined ctermfg=15 ctermbg=234
   hi VertSplit ctermfg=15 ctermbg=60
-  hi Visual ctermfg=231 ctermbg=60
+  hi Visual cterm=NONE ctermfg=231 ctermbg=60
   hi VisualNOS ctermfg=15 ctermbg=234
   hi WarningMsg ctermfg=15 ctermbg=234
   hi WildMenu ctermfg=39 ctermbg=0
@@ -247,7 +247,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=79 ctermbg=80
   hi Underlined ctermfg=79 ctermbg=80
   hi VertSplit ctermfg=79 ctermbg=81
-  hi Visual ctermfg=79 ctermbg=81
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi VisualNOS ctermfg=79 ctermbg=80
   hi WarningMsg ctermfg=79 ctermbg=80
   hi WildMenu ctermfg=27 ctermbg=16
@@ -326,7 +326,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=15 ctermbg=0
   hi Underlined ctermfg=15 ctermbg=0
   hi VertSplit ctermfg=15 ctermbg=5
-  hi Visual ctermfg=15 ctermbg=5
+  hi Visual cterm=NONE ctermfg=15 ctermbg=5
   hi VisualNOS ctermfg=15 ctermbg=0
   hi WarningMsg ctermfg=15 ctermbg=0
   hi WildMenu ctermfg=6 ctermbg=0
@@ -405,7 +405,7 @@ else " 8 colors
   hi Typedef ctermfg=7 ctermbg=0
   hi Underlined ctermfg=7 ctermbg=0
   hi VertSplit ctermfg=7 ctermbg=5
-  hi Visual ctermfg=7 ctermbg=5
+  hi Visual cterm=NONE ctermfg=7 ctermbg=5
   hi VisualNOS ctermfg=7 ctermbg=0
   hi WarningMsg ctermfg=7 ctermbg=0
   hi WildMenu ctermfg=6 ctermbg=0

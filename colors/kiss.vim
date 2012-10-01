@@ -4,7 +4,7 @@
 " Name: kiss
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:20
+" Date: 2012-09-29 13:37:24
 "----------------------------------------------------------
 
 set background=dark
@@ -73,7 +73,7 @@ if has("gui_running")
   hi htmlTitle guifg=#bf81fa
   hi iCursor guibg=#babdb6
   hi javaScriptBraces guifg=#888a85
-  hi javaScriptOperator guifg=#888a85
+  hi javascriptOperator guifg=#888a85
   hi phpArrayPair guifg=#888a85
   hi phpAssignByRef guifg=#888a85
   hi phpFunctions guifg=#d3d7cf
@@ -103,6 +103,7 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=233
   hi TabLineSel ctermfg=255 ctermbg=240
   hi VertSplit ctermfg=240 ctermbg=102
+  hi Visual cterm=NONE ctermbg=8
   hi cssBraces ctermfg=102
   hi cssIdentifier ctermfg=111
   hi cssPseudoClassId ctermfg=255
@@ -117,7 +118,7 @@ elseif &t_Co == 256
   hi htmlTitle ctermfg=141
   hi iCursor ctermbg=250
   hi javaScriptBraces ctermfg=102
-  hi javaScriptOperator ctermfg=102
+  hi javascriptOperator ctermfg=102
   hi phpArrayPair ctermfg=102
   hi phpAssignByRef ctermfg=102
   hi phpFunctions ctermfg=252
@@ -147,6 +148,7 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=16
   hi TabLineSel ctermfg=87 ctermbg=81
   hi VertSplit ctermfg=81 ctermbg=83
+  hi Visual cterm=NONE ctermbg=81
   hi cssBraces ctermfg=83
   hi cssIdentifier ctermfg=43
   hi cssPseudoClassId ctermfg=87
@@ -161,7 +163,7 @@ elseif &t_Co == 88
   hi htmlTitle ctermfg=55
   hi iCursor ctermbg=85
   hi javaScriptBraces ctermfg=83
-  hi javaScriptOperator ctermfg=83
+  hi javascriptOperator ctermfg=83
   hi phpArrayPair ctermfg=83
   hi phpAssignByRef ctermfg=83
   hi phpFunctions ctermfg=86
@@ -191,6 +193,7 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=11 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=8
+  hi Visual cterm=NONE ctermbg=2
   hi cssBraces ctermfg=8
   hi cssIdentifier ctermfg=12
   hi cssPseudoClassId ctermfg=11
@@ -205,7 +208,7 @@ elseif &t_Co == 16
   hi htmlTitle ctermfg=7
   hi iCursor ctermbg=7
   hi javaScriptBraces ctermfg=8
-  hi javaScriptOperator ctermfg=8
+  hi javascriptOperator ctermfg=8
   hi phpArrayPair ctermfg=8
   hi phpAssignByRef ctermfg=8
   hi phpFunctions ctermfg=12
@@ -235,6 +238,7 @@ else " 8 colors
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=7 ctermbg=2
   hi VertSplit ctermfg=2 ctermbg=3
+  hi Visual cterm=NONE ctermbg=2
   hi cssBraces ctermfg=3
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7
@@ -249,7 +253,7 @@ else " 8 colors
   hi htmlTitle ctermfg=7
   hi iCursor ctermbg=7
   hi javaScriptBraces ctermfg=3
-  hi javaScriptOperator ctermfg=3
+  hi javascriptOperator ctermfg=3
   hi phpArrayPair ctermfg=3
   hi phpAssignByRef ctermfg=3
   hi phpFunctions ctermfg=7

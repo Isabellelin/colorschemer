@@ -4,7 +4,7 @@
 " Name: up
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:50
+" Date: 2012-09-29 13:47:16
 "----------------------------------------------------------
 
 set background=dark
@@ -69,7 +69,7 @@ if has("gui_running")
   hi treeHelp guifg=#4D4D4D
   hi treePart guifg=#919191
   hi treeUp guifg=#4D4D4D
-  hi vimHiGuiRgb guifg=#ABB78D
+  hi vimHiGuiRGB guifg=#ABB78D
 elseif &t_Co == 256
   hi Normal ctermfg=253 ctermbg=234
   hi Action ctermfg=220
@@ -77,15 +77,12 @@ elseif &t_Co == 256
   hi Character ctermfg=148
   hi ColorColumn ctermbg=NONE
   hi Comment ctermfg=244
-  hi Conceal ctermbg=8
   hi Constant ctermfg=208
   hi Cursor ctermfg=16 ctermbg=192
   hi CursorColumn ctermbg=234
   hi CursorLine cterm=NONE ctermbg=234
   hi Define ctermfg=230
   hi Delimiter ctermfg=148
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
   hi Folded ctermfg=248 ctermbg=4
   hi Function ctermfg=255
   hi Identifier ctermfg=148
@@ -93,7 +90,6 @@ elseif &t_Co == 256
   hi Keyword ctermfg=208
   hi LineNr ctermfg=244 ctermbg=232
   hi MatchParen cterm=bold ctermfg=157 ctermbg=237
-  hi MoreMsg ctermfg=10
   hi NonText ctermfg=244 ctermbg=235
   hi Number ctermfg=208
   hi Pmenu ctermfg=255 ctermbg=238
@@ -101,8 +97,6 @@ elseif &t_Co == 256
   hi PmenuSel ctermfg=0 ctermbg=148
   hi PmenuThumb ctermfg=0 ctermbg=148
   hi PreProc ctermfg=230
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
   hi Special ctermfg=208
   hi SpecialChar ctermfg=148
   hi SpecialComment ctermfg=244
@@ -112,15 +106,12 @@ elseif &t_Co == 256
   hi StatusLineNC cterm=NONE ctermfg=246 ctermbg=238
   hi StorageClass ctermfg=103
   hi String ctermfg=148
-  hi TabLine ctermbg=8
   hi Title cterm=bold ctermfg=254
   hi Todo ctermfg=245
   hi Type ctermfg=103
   hi Typedef ctermfg=103
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=238 ctermbg=238
-  hi Visual ctermfg=254 ctermbg=4
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=254 ctermbg=4
   hi cssBoxProp ctermfg=108
   hi cssImportant ctermfg=252
   hi cssUIAttr ctermfg=230
@@ -132,7 +123,7 @@ elseif &t_Co == 256
   hi treeHelp ctermfg=8
   hi treePart ctermfg=246
   hi treeUp ctermfg=8
-  hi vimHiGuiRgb ctermfg=144
+  hi vimHiGuiRGB ctermfg=144
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
   hi Action ctermfg=72
@@ -140,15 +131,12 @@ elseif &t_Co == 88
   hi Character ctermfg=56
   hi ColorColumn ctermbg=NONE
   hi Comment ctermfg=83
-  hi Conceal ctermbg=81
   hi Constant ctermfg=68
   hi Cursor ctermfg=16 ctermbg=61
   hi CursorColumn ctermbg=80
   hi CursorLine cterm=NONE ctermbg=80
   hi Define ctermfg=78
   hi Delimiter ctermfg=56
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
   hi Folded ctermfg=84 ctermbg=19
   hi Function ctermfg=87
   hi Identifier ctermfg=56
@@ -156,7 +144,6 @@ elseif &t_Co == 88
   hi Keyword ctermfg=68
   hi LineNr ctermfg=83 ctermbg=16
   hi MatchParen cterm=bold ctermfg=62 ctermbg=80
-  hi MoreMsg ctermfg=28
   hi NonText ctermfg=83 ctermbg=80
   hi Number ctermfg=68
   hi Pmenu ctermfg=87 ctermbg=80
@@ -164,8 +151,6 @@ elseif &t_Co == 88
   hi PmenuSel ctermfg=16 ctermbg=56
   hi PmenuThumb ctermfg=16 ctermbg=56
   hi PreProc ctermfg=78
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
   hi Special ctermfg=68
   hi SpecialChar ctermfg=56
   hi SpecialComment ctermfg=83
@@ -175,15 +160,12 @@ elseif &t_Co == 88
   hi StatusLineNC cterm=NONE ctermfg=83 ctermbg=80
   hi StorageClass ctermfg=38
   hi String ctermfg=56
-  hi TabLine ctermbg=81
   hi Title cterm=bold ctermfg=87
   hi Todo ctermfg=83
   hi Type ctermfg=38
   hi Typedef ctermfg=38
-  hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87 ctermbg=19
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=87 ctermbg=19
   hi cssBoxProp ctermfg=84
   hi cssImportant ctermfg=86
   hi cssUIAttr ctermfg=78
@@ -195,7 +177,7 @@ elseif &t_Co == 88
   hi treeHelp ctermfg=81
   hi treePart ctermfg=83
   hi treeUp ctermfg=81
-  hi vimHiGuiRgb ctermfg=84
+  hi vimHiGuiRGB ctermfg=84
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Action ctermfg=11
@@ -203,15 +185,12 @@ elseif &t_Co == 16
   hi Character ctermfg=3
   hi ColorColumn ctermbg=NONE
   hi Comment ctermfg=8
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=0 ctermbg=10
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=11
   hi Delimiter ctermfg=3
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
   hi Folded ctermfg=8 ctermbg=4
   hi Function ctermfg=11
   hi Identifier ctermfg=3
@@ -219,7 +198,6 @@ elseif &t_Co == 16
   hi Keyword ctermfg=3
   hi LineNr ctermfg=8 ctermbg=0
   hi MatchParen cterm=bold ctermfg=10 ctermbg=2
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=8 ctermbg=0
   hi Number ctermfg=3
   hi Pmenu ctermfg=11 ctermbg=2
@@ -227,8 +205,6 @@ elseif &t_Co == 16
   hi PmenuSel ctermfg=0 ctermbg=3
   hi PmenuThumb ctermfg=0 ctermbg=3
   hi PreProc ctermfg=11
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
   hi Special ctermfg=3
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=8
@@ -238,15 +214,12 @@ elseif &t_Co == 16
   hi StatusLineNC cterm=NONE ctermfg=8 ctermbg=2
   hi StorageClass ctermfg=8
   hi String ctermfg=3
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=11
   hi Todo ctermfg=8
   hi Type ctermfg=8
   hi Typedef ctermfg=8
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11 ctermbg=4
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=11 ctermbg=4
   hi cssBoxProp ctermfg=8
   hi cssImportant ctermfg=7
   hi cssUIAttr ctermfg=11
@@ -258,7 +231,7 @@ elseif &t_Co == 16
   hi treeHelp ctermfg=2
   hi treePart ctermfg=8
   hi treeUp ctermfg=2
-  hi vimHiGuiRgb ctermfg=8
+  hi vimHiGuiRGB ctermfg=8
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Action ctermfg=7
@@ -266,15 +239,12 @@ else " 8 colors
   hi Character ctermfg=3
   hi ColorColumn ctermbg=NONE
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=0 ctermbg=7
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Define ctermfg=7
   hi Delimiter ctermfg=3
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
   hi Folded ctermfg=7 ctermbg=4
   hi Function ctermfg=7
   hi Identifier ctermfg=3
@@ -282,7 +252,6 @@ else " 8 colors
   hi Keyword ctermfg=3
   hi LineNr ctermfg=3 ctermbg=0
   hi MatchParen cterm=bold ctermfg=7 ctermbg=2
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=3 ctermbg=0
   hi Number ctermfg=3
   hi Pmenu ctermfg=7 ctermbg=2
@@ -290,8 +259,6 @@ else " 8 colors
   hi PmenuSel ctermfg=0 ctermbg=3
   hi PmenuThumb ctermfg=0 ctermbg=3
   hi PreProc ctermfg=7
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
   hi Special ctermfg=3
   hi SpecialChar ctermfg=3
   hi SpecialComment ctermfg=3
@@ -301,15 +268,12 @@ else " 8 colors
   hi StatusLineNC cterm=NONE ctermfg=7 ctermbg=2
   hi StorageClass ctermfg=7
   hi String ctermfg=3
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=7
   hi Todo ctermfg=3
   hi Type ctermfg=7
   hi Typedef ctermfg=7
-  hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=4
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermfg=7 ctermbg=4
   hi cssBoxProp ctermfg=7
   hi cssImportant ctermfg=7
   hi cssUIAttr ctermfg=7
@@ -321,7 +285,7 @@ else " 8 colors
   hi treeHelp ctermfg=2
   hi treePart ctermfg=7
   hi treeUp ctermfg=2
-  hi vimHiGuiRgb ctermfg=7
+  hi vimHiGuiRGB ctermfg=7
 endif
 
 hi! link cssClassName hamlClass

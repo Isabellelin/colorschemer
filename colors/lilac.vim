@@ -4,7 +4,7 @@
 " Name: lilac
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:43
+" Date: 2012-09-29 13:37:56
 "----------------------------------------------------------
 
 set background=dark
@@ -77,7 +77,7 @@ if has("gui_running")
   hi VisualNOS gui=underline guifg=#f0f0f0 guibg=#503040
   hi WarningMsg gui=bold guifg=#000000 guibg=#b0d0f0
   hi WildMenu guifg=#f0f0f0 guibg=#0000f0
-  hi lcursor guifg=#f0f0f0 guibg=#503040
+  hi lCursor guifg=#f0f0f0 guibg=#503040
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=238
   hi Boolean ctermfg=48 ctermbg=238
@@ -129,10 +129,10 @@ elseif &t_Co == 256
   hi Typedef ctermfg=205 ctermbg=238
   hi Underlined ctermbg=238
   hi VertSplit ctermfg=16 ctermbg=153
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi VisualNOS ctermfg=255 ctermbg=238
   hi WarningMsg ctermbg=153
-  hi lcursor ctermfg=255 ctermbg=238
+  hi lCursor ctermfg=255 ctermbg=238
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Boolean ctermfg=29 ctermbg=80
@@ -184,10 +184,10 @@ elseif &t_Co == 88
   hi Typedef ctermfg=69 ctermbg=80
   hi Underlined ctermbg=80
   hi VertSplit ctermfg=16 ctermbg=59
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi VisualNOS ctermfg=87 ctermbg=80
   hi WarningMsg ctermbg=59
-  hi lcursor ctermfg=87 ctermbg=80
+  hi lCursor ctermfg=87 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=1
   hi Boolean ctermfg=6 ctermbg=1
@@ -239,10 +239,10 @@ elseif &t_Co == 16
   hi Typedef ctermfg=8 ctermbg=1
   hi Underlined ctermbg=1
   hi VertSplit ctermfg=0 ctermbg=12
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=15 ctermbg=1
   hi WarningMsg ctermbg=12
-  hi lcursor ctermfg=15 ctermbg=1
+  hi lCursor ctermfg=15 ctermbg=1
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=1
   hi Boolean ctermfg=6 ctermbg=1
@@ -294,10 +294,10 @@ else " 8 colors
   hi Typedef ctermfg=7 ctermbg=1
   hi Underlined ctermbg=1
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=1
   hi WarningMsg ctermbg=7
-  hi lcursor ctermfg=7 ctermbg=1
+  hi lCursor ctermfg=7 ctermbg=1
 endif
 
 

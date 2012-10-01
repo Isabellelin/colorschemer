@@ -4,7 +4,7 @@
 " Name: zephyr
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:24
+" Date: 2012-09-29 13:49:14
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,6 @@ if has("gui_running")
   hi Boolean guifg=#af0000
   hi Character guifg=#ffffd7
   hi Conditional guifg=#5f87d7
-  hi Cursor guifg=#eeeeee guibg=#d75f5f
   hi Debug guifg=#ff8787
   hi Define guifg=#5f87d7
   hi Delimiter guifg=#eeeeee
@@ -179,10 +178,10 @@ elseif &t_Co == 256
   hi Type cterm=bold ctermfg=70
   hi Typedef cterm=bold ctermfg=114
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=229
-  hi Visual ctermfg=255 ctermbg=68
+  hi Visual cterm=NONE ctermfg=255 ctermbg=68
   hi WarningMsg cterm=bold ctermfg=196
   hi WhitespaceBOL ctermfg=238
-  hi WhitespaceEOL ctermbg=9
+  hi WhitespaceEOL ctermbg=12
   hi cssAttributeSelector ctermbg=233
   hi cssBoxAttr ctermfg=15 ctermbg=233
   hi cssBoxProp ctermfg=145 ctermbg=233
@@ -300,10 +299,10 @@ elseif &t_Co == 88
   hi Type cterm=bold ctermfg=40
   hi Typedef cterm=bold ctermfg=41
   hi VertSplit cterm=NONE ctermfg=16 ctermbg=78
-  hi Visual ctermfg=87 ctermbg=38
+  hi Visual cterm=NONE ctermfg=87 ctermbg=38
   hi WarningMsg cterm=bold ctermfg=9
   hi WhitespaceBOL ctermfg=80
-  hi WhitespaceEOL ctermbg=9
+  hi WhitespaceEOL ctermbg=39
   hi cssAttributeSelector ctermbg=16
   hi cssBoxAttr ctermfg=79 ctermbg=16
   hi cssBoxProp ctermfg=85 ctermbg=16
@@ -421,10 +420,10 @@ elseif &t_Co == 16
   hi Type cterm=bold ctermfg=3
   hi Typedef cterm=bold ctermfg=10
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=11
-  hi Visual ctermfg=11 ctermbg=8
+  hi Visual cterm=NONE ctermfg=11 ctermbg=8
   hi WarningMsg cterm=bold ctermfg=9
   hi WhitespaceBOL ctermfg=2
-  hi WhitespaceEOL ctermbg=9
+  hi WhitespaceEOL ctermbg=12
   hi cssAttributeSelector ctermbg=0
   hi cssBoxAttr ctermfg=15 ctermbg=0
   hi cssBoxProp ctermfg=8 ctermbg=0
@@ -542,10 +541,10 @@ else " 8 colors
   hi Type cterm=bold ctermfg=3
   hi Typedef cterm=bold ctermfg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=7
-  hi Visual ctermfg=7 ctermbg=6
+  hi Visual cterm=NONE ctermfg=7 ctermbg=6
   hi WarningMsg cterm=bold ctermfg=1
   hi WhitespaceBOL ctermfg=2
-  hi WhitespaceEOL ctermbg=1
+  hi WhitespaceEOL ctermbg=5
   hi cssAttributeSelector ctermbg=0
   hi cssBoxAttr ctermfg=7 ctermbg=0
   hi cssBoxProp ctermfg=7 ctermbg=0

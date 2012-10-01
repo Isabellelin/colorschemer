@@ -4,7 +4,7 @@
 " Name: lightcolors
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:41
+" Date: 2012-09-29 13:37:52
 "----------------------------------------------------------
 
 set background=light
@@ -34,6 +34,7 @@ if has("gui_running")
   hi PreConduit gui=underline guifg=#702589
   hi PreProc gui=underline guifg=#702589
   hi Repeat gui=underline guifg=#663300
+  hi Search guifg=NONE
   hi Special guifg=#800000
   hi SpecialKey guifg=#a0a0a0 guibg=#e0e0e0
   hi Statement gui=italic guifg=#555555
@@ -61,6 +62,7 @@ elseif &t_Co == 256
   hi Number ctermfg=52
   hi PreConduit ctermfg=54
   hi Repeat ctermfg=58
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=254
   hi StatusLine ctermfg=24 ctermbg=231
   hi StatusLineNC ctermfg=61 ctermbg=250
@@ -69,6 +71,7 @@ elseif &t_Co == 256
   hi Structure ctermfg=64 ctermbg=186
   hi Typedef ctermfg=64
   hi VertSplit ctermfg=61 ctermbg=61
+  hi Visual cterm=NONE ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Conditional ctermfg=52
@@ -82,6 +85,7 @@ elseif &t_Co == 88
   hi Number ctermfg=80
   hi PreConduit ctermfg=33
   hi Repeat ctermfg=32
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=87
   hi StatusLine ctermfg=80 ctermbg=79
   hi StatusLineNC ctermfg=81 ctermbg=85
@@ -90,6 +94,7 @@ elseif &t_Co == 88
   hi Structure ctermfg=36 ctermbg=61
   hi Typedef ctermfg=36
   hi VertSplit ctermfg=81 ctermbg=81
+  hi Visual cterm=NONE ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Conditional ctermfg=3
@@ -103,6 +108,7 @@ elseif &t_Co == 16
   hi Number ctermfg=1
   hi PreConduit ctermfg=5
   hi Repeat ctermfg=1
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=11
   hi StatusLine ctermfg=4 ctermbg=15
   hi StatusLineNC ctermfg=6 ctermbg=7
@@ -111,6 +117,7 @@ elseif &t_Co == 16
   hi Structure ctermfg=3 ctermbg=10
   hi Typedef ctermfg=3
   hi VertSplit ctermfg=6 ctermbg=6
+  hi Visual cterm=NONE ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Conditional ctermfg=3
@@ -124,6 +131,7 @@ else " 8 colors
   hi Number ctermfg=1
   hi PreConduit ctermfg=5
   hi Repeat ctermfg=1
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi StatusLine ctermfg=4 ctermbg=7
   hi StatusLineNC ctermfg=6 ctermbg=7
@@ -132,6 +140,7 @@ else " 8 colors
   hi Structure ctermfg=3 ctermbg=7
   hi Typedef ctermfg=3
   hi VertSplit ctermfg=6 ctermbg=6
+  hi Visual cterm=NONE ctermbg=7
 endif
 
 

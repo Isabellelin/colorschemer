@@ -4,7 +4,7 @@
 " Name: adobe
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:29
+" Date: 2012-09-29 13:30:25
 "----------------------------------------------------------
 
 set background=light
@@ -21,7 +21,7 @@ if has("gui_running")
   hi Comment guifg=#80817c
   hi Conditional guifg=#1596bb
   hi Constant guifg=red4
-  hi Cursor guifg=#ffffff guibg=Yellow
+  hi Cursor guifg=NONE guibg=Yellow
   hi CursorColumn guibg=Grey40
   hi CursorLine guibg=Grey40
   hi CursorLineNr guifg=Yellow
@@ -43,7 +43,7 @@ if has("gui_running")
   hi Operator guifg=#c2f555
   hi PerlPOD guifg=purple4
   hi Pmenu guibg=Magenta
-  hi PmenuSel guifg=#6c6c6c guibg=DarkGrey
+  hi PmenuSel guifg=#4d4d4d guibg=DarkGrey
   hi PmenuThumb guibg=White
   hi PreProc guifg=#0066ff
   hi Question gui=NONE guifg=#ffff60
@@ -52,9 +52,7 @@ if has("gui_running")
   hi SignColumn guifg=Cyan
   hi Special guifg=purple3
   hi SpecialKey guifg=Cyan
-  hi SpellBad guifg=#8a8a8a guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
+  hi SpellBad guifg=#8a8a8a
   hi Statement gui=NONE guifg=orange4
   hi StatusLine gui=reverse guibg=white
   hi String guifg=#0a1b98
@@ -117,56 +115,53 @@ if has("gui_running")
   hi pythonTripleTickString guifg=#9d979c
 elseif &t_Co == 256
   hi Normal ctermbg=144
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=244
   hi Conditional ctermfg=33
   hi Constant ctermfg=124
-  hi Cursor ctermfg=15 ctermbg=11
-  hi CursorColumn ctermbg=242
+  hi Cursor ctermfg=15 ctermbg=14
+  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=241
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=1
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=159
-  hi FoldColumn ctermfg=14 ctermbg=242
-  hi Folded ctermfg=14 ctermbg=242
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11
+  hi FoldColumn ctermfg=11 ctermbg=8
+  hi Folded ctermfg=11 ctermbg=8
   hi Function cterm=bold ctermfg=153
   hi Identifier cterm=bold ctermfg=19
   hi Ignore ctermfg=0
   hi Include ctermfg=136
-  hi LineNr ctermfg=11
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=121
-  hi NonText ctermfg=4
+  hi LineNr ctermfg=14
+  hi MatchParen ctermbg=3
+  hi MoreMsg ctermfg=10
+  hi NonText ctermfg=1
   hi Operator ctermfg=155
   hi PerlPOD ctermfg=99
-  hi Pmenu ctermbg=13
-  hi PmenuSel ctermfg=242 ctermbg=0
+  hi PmenuSel ctermfg=8 ctermbg=0
   hi PmenuThumb ctermbg=15
   hi PreProc ctermfg=192
-  hi Question ctermfg=121
+  hi Question ctermfg=10
   hi Repeat ctermfg=34
   hi Search ctermfg=201 ctermbg=154
-  hi SignColumn ctermfg=14 ctermbg=242
+  hi SignColumn ctermfg=11 ctermbg=8
   hi Special ctermfg=97
-  hi SpecialKey ctermfg=81
-  hi SpellBad ctermfg=245 ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi SpecialKey ctermfg=9
+  hi SpellBad ctermfg=245
   hi StatusLine ctermbg=231
   hi String ctermfg=18
-  hi TabLine ctermfg=15 ctermbg=242
-  hi Title ctermfg=225
+  hi TabLine ctermfg=15 ctermbg=8
+  hi Title ctermfg=13
   hi Todo cterm=bold,underline ctermbg=NONE
   hi Type cterm=bold ctermfg=100
   hi Underlined ctermfg=192
-  hi Visual ctermbg=242
-  hi WarningMsg ctermfg=224
-  hi mailQuoted1 ctermfg=9
-  hi mailQuoted2 ctermfg=81
-  hi mailQuoted3 ctermfg=11
-  hi mailQuoted4 ctermfg=1
+  hi Visual cterm=NONE ctermbg=8
+  hi WarningMsg ctermfg=12
+  hi mailQuoted1 ctermfg=12
+  hi mailQuoted2 ctermfg=9
+  hi mailQuoted3 ctermfg=14
+  hi mailQuoted4 ctermfg=4
   hi mailQuoted5 ctermfg=15
   hi moinAlphalist ctermfg=241
   hi moinBigromanlist ctermfg=233
@@ -198,13 +193,13 @@ elseif &t_Co == 256
   hi perlVarMember ctermfg=87
   hi perlVarPlain ctermfg=69
   hi pythonBuiltinFunc cterm=bold ctermfg=200
-  hi pythonCommentedCode ctermfg=9
+  hi pythonCommentedCode ctermfg=12
   hi pythonDisabledComment ctermfg=247
-  hi pythonEolComment ctermfg=12
-  hi pythonEpydoc ctermfg=130
-  hi pythonImport ctermfg=11
+  hi pythonEolComment ctermfg=9
+  hi pythonEpydoc ctermfg=6
+  hi pythonImport ctermfg=14
   hi pythonInfoComment ctermfg=217
-  hi pythonJavadoc ctermfg=11
+  hi pythonJavadoc ctermfg=14
   hi pythonKingComment ctermfg=253
   hi pythonMajorSection ctermfg=15
   hi pythonMinorSection ctermfg=15
@@ -213,56 +208,53 @@ elseif &t_Co == 256
   hi pythonTripleTickString ctermfg=247
 elseif &t_Co == 88
   hi Normal ctermbg=84
-  hi ColorColumn ctermbg=48
+  hi ColorColumn ctermbg=19
   hi Comment ctermfg=83
   hi Conditional ctermfg=23
   hi Constant ctermfg=48
-  hi Cursor ctermfg=79 ctermbg=76
-  hi CursorColumn ctermbg=82
+  hi Cursor ctermfg=79 ctermbg=31
+  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=81
-  hi CursorLineNr ctermfg=76
-  hi DiffAdd ctermbg=48
+  hi CursorLineNr ctermfg=31
+  hi DiffAdd ctermbg=19
   hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=63
-  hi FoldColumn ctermfg=31 ctermbg=82
-  hi Folded ctermfg=31 ctermbg=82
+  hi DiffDelete ctermbg=56
+  hi Directory ctermfg=76
+  hi FoldColumn ctermfg=76 ctermbg=81
+  hi Folded ctermfg=76 ctermbg=81
   hi Function cterm=bold ctermfg=59
   hi Identifier cterm=bold ctermfg=4
   hi Ignore ctermfg=16
   hi Include ctermfg=52
-  hi LineNr ctermfg=76
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=46
-  hi NonText ctermfg=19
+  hi LineNr ctermfg=31
+  hi MatchParen ctermbg=56
+  hi MoreMsg ctermfg=28
+  hi NonText ctermfg=48
   hi Operator ctermfg=61
   hi PerlPOD ctermfg=39
-  hi Pmenu ctermbg=67
-  hi PmenuSel ctermfg=82 ctermbg=16
+  hi PmenuSel ctermfg=81 ctermbg=16
   hi PmenuThumb ctermbg=79
   hi PreProc ctermfg=61
-  hi Question ctermfg=46
+  hi Question ctermfg=28
   hi Repeat ctermfg=24
   hi Search ctermfg=67 ctermbg=60
-  hi SignColumn ctermfg=31 ctermbg=82
+  hi SignColumn ctermfg=76 ctermbg=81
   hi Special ctermfg=38
-  hi SpecialKey ctermfg=43
-  hi SpellBad ctermfg=83 ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
+  hi SpecialKey ctermfg=9
+  hi SpellBad ctermfg=83
   hi StatusLine ctermbg=79
   hi String ctermfg=17
-  hi TabLine ctermfg=79 ctermbg=82
-  hi Title ctermfg=75
+  hi TabLine ctermfg=79 ctermbg=81
+  hi Title ctermfg=67
   hi Todo cterm=bold,underline ctermbg=NONE
   hi Type cterm=bold ctermfg=36
   hi Underlined ctermfg=61
-  hi Visual ctermbg=82
-  hi WarningMsg ctermfg=74
-  hi mailQuoted1 ctermfg=9
-  hi mailQuoted2 ctermfg=43
-  hi mailQuoted3 ctermfg=76
-  hi mailQuoted4 ctermfg=48
+  hi Visual cterm=NONE ctermbg=81
+  hi WarningMsg ctermfg=39
+  hi mailQuoted1 ctermfg=39
+  hi mailQuoted2 ctermfg=9
+  hi mailQuoted3 ctermfg=31
+  hi mailQuoted4 ctermfg=19
   hi mailQuoted5 ctermfg=79
   hi moinAlphalist ctermfg=81
   hi moinBigromanlist ctermfg=16
@@ -294,13 +286,13 @@ elseif &t_Co == 88
   hi perlVarMember ctermfg=47
   hi perlVarPlain ctermfg=39
   hi pythonBuiltinFunc cterm=bold ctermfg=66
-  hi pythonCommentedCode ctermfg=9
+  hi pythonCommentedCode ctermfg=39
   hi pythonDisabledComment ctermfg=84
-  hi pythonEolComment ctermfg=39
-  hi pythonEpydoc ctermfg=52
-  hi pythonImport ctermfg=76
+  hi pythonEolComment ctermfg=9
+  hi pythonEpydoc ctermfg=6
+  hi pythonImport ctermfg=31
   hi pythonInfoComment ctermfg=74
-  hi pythonJavadoc ctermfg=76
+  hi pythonJavadoc ctermfg=31
   hi pythonKingComment ctermfg=86
   hi pythonMajorSection ctermfg=79
   hi pythonMinorSection ctermfg=79
@@ -309,56 +301,53 @@ elseif &t_Co == 88
   hi pythonTripleTickString ctermfg=84
 elseif &t_Co == 16
   hi Normal ctermbg=8
-  hi ColorColumn ctermbg=9
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=8
   hi Conditional ctermfg=6
   hi Constant ctermfg=1
-  hi Cursor ctermfg=15 ctermbg=11
-  hi CursorColumn ctermbg=3
+  hi Cursor ctermfg=15 ctermbg=14
+  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=9
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=14
-  hi FoldColumn ctermfg=14 ctermbg=3
-  hi Folded ctermfg=14 ctermbg=3
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11
+  hi FoldColumn ctermfg=11 ctermbg=2
+  hi Folded ctermfg=11 ctermbg=2
   hi Function cterm=bold ctermfg=12
   hi Identifier cterm=bold ctermfg=4
   hi Ignore ctermfg=0
   hi Include ctermfg=3
-  hi LineNr ctermfg=11
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=10
-  hi NonText ctermfg=4
+  hi LineNr ctermfg=14
+  hi MatchParen ctermbg=3
+  hi MoreMsg ctermfg=2
+  hi NonText ctermfg=9
   hi Operator ctermfg=10
   hi PerlPOD ctermfg=12
-  hi Pmenu ctermbg=13
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=15
   hi PreProc ctermfg=10
-  hi Question ctermfg=10
+  hi Question ctermfg=2
   hi Repeat ctermfg=2
   hi Search ctermfg=13 ctermbg=3
-  hi SignColumn ctermfg=14 ctermbg=3
+  hi SignColumn ctermfg=11 ctermbg=2
   hi Special ctermfg=8
-  hi SpecialKey ctermfg=12
-  hi SpellBad ctermfg=8 ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi SpecialKey ctermfg=9
+  hi SpellBad ctermfg=8
   hi StatusLine ctermbg=15
   hi String ctermfg=4
-  hi TabLine ctermfg=15 ctermbg=3
-  hi Title ctermfg=15
+  hi TabLine ctermfg=15 ctermbg=2
+  hi Title ctermfg=13
   hi Todo cterm=bold,underline ctermbg=NONE
   hi Type cterm=bold ctermfg=3
   hi Underlined ctermfg=10
-  hi Visual ctermbg=3
-  hi WarningMsg ctermfg=11
-  hi mailQuoted1 ctermfg=9
-  hi mailQuoted2 ctermfg=12
-  hi mailQuoted3 ctermfg=11
-  hi mailQuoted4 ctermfg=9
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=12
+  hi mailQuoted1 ctermfg=12
+  hi mailQuoted2 ctermfg=9
+  hi mailQuoted3 ctermfg=14
+  hi mailQuoted4 ctermfg=4
   hi mailQuoted5 ctermfg=15
   hi moinAlphalist ctermfg=3
   hi moinBigromanlist ctermfg=0
@@ -390,13 +379,13 @@ elseif &t_Co == 16
   hi perlVarMember ctermfg=14
   hi perlVarPlain ctermfg=12
   hi pythonBuiltinFunc cterm=bold ctermfg=13
-  hi pythonCommentedCode ctermfg=9
+  hi pythonCommentedCode ctermfg=12
   hi pythonDisabledComment ctermfg=8
-  hi pythonEolComment ctermfg=12
-  hi pythonEpydoc ctermfg=3
-  hi pythonImport ctermfg=11
+  hi pythonEolComment ctermfg=9
+  hi pythonEpydoc ctermfg=6
+  hi pythonImport ctermfg=14
   hi pythonInfoComment ctermfg=7
-  hi pythonJavadoc ctermfg=11
+  hi pythonJavadoc ctermfg=14
   hi pythonKingComment ctermfg=12
   hi pythonMajorSection ctermfg=15
   hi pythonMinorSection ctermfg=15
@@ -405,56 +394,53 @@ elseif &t_Co == 16
   hi pythonTripleTickString ctermfg=8
 else " 8 colors
   hi Normal ctermbg=7
-  hi ColorColumn ctermbg=1
+  hi ColorColumn ctermbg=4
   hi Comment ctermfg=3
   hi Conditional ctermfg=6
   hi Constant ctermfg=1
-  hi Cursor ctermfg=7 ctermbg=3
-  hi CursorColumn ctermbg=3
+  hi Cursor ctermfg=7 ctermbg=6
+  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
+  hi CursorLineNr ctermfg=6
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=7
-  hi FoldColumn ctermfg=6 ctermbg=3
-  hi Folded ctermfg=6 ctermbg=3
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=3
+  hi FoldColumn ctermfg=3 ctermbg=2
+  hi Folded ctermfg=3 ctermbg=2
   hi Function cterm=bold ctermfg=7
   hi Identifier cterm=bold ctermfg=4
   hi Ignore ctermfg=0
   hi Include ctermfg=3
-  hi LineNr ctermfg=3
-  hi MatchParen ctermbg=6
-  hi MoreMsg ctermfg=7
-  hi NonText ctermfg=4
+  hi LineNr ctermfg=6
+  hi MatchParen ctermbg=3
+  hi MoreMsg ctermfg=2
+  hi NonText ctermfg=1
   hi Operator ctermfg=7
   hi PerlPOD ctermfg=5
-  hi Pmenu ctermbg=5
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=7
   hi PreProc ctermfg=7
-  hi Question ctermfg=7
+  hi Question ctermfg=2
   hi Repeat ctermfg=2
   hi Search ctermfg=5 ctermbg=3
-  hi SignColumn ctermfg=6 ctermbg=3
+  hi SignColumn ctermfg=3 ctermbg=2
   hi Special ctermfg=5
-  hi SpecialKey ctermfg=7
-  hi SpellBad ctermfg=3 ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
+  hi SpecialKey ctermfg=1
+  hi SpellBad ctermfg=3
   hi StatusLine ctermbg=7
   hi String ctermfg=4
-  hi TabLine ctermfg=7 ctermbg=3
-  hi Title ctermfg=7
+  hi TabLine ctermfg=7 ctermbg=2
+  hi Title ctermfg=5
   hi Todo cterm=bold,underline ctermbg=NONE
   hi Type cterm=bold ctermfg=3
   hi Underlined ctermfg=7
-  hi Visual ctermbg=3
-  hi WarningMsg ctermfg=7
-  hi mailQuoted1 ctermfg=1
-  hi mailQuoted2 ctermfg=7
-  hi mailQuoted3 ctermfg=3
-  hi mailQuoted4 ctermfg=1
+  hi Visual cterm=NONE ctermbg=2
+  hi WarningMsg ctermfg=5
+  hi mailQuoted1 ctermfg=5
+  hi mailQuoted2 ctermfg=1
+  hi mailQuoted3 ctermfg=6
+  hi mailQuoted4 ctermfg=4
   hi mailQuoted5 ctermfg=7
   hi moinAlphalist ctermfg=3
   hi moinBigromanlist ctermfg=0
@@ -486,13 +472,13 @@ else " 8 colors
   hi perlVarMember ctermfg=7
   hi perlVarPlain ctermfg=6
   hi pythonBuiltinFunc cterm=bold ctermfg=5
-  hi pythonCommentedCode ctermfg=1
+  hi pythonCommentedCode ctermfg=5
   hi pythonDisabledComment ctermfg=7
-  hi pythonEolComment ctermfg=5
-  hi pythonEpydoc ctermfg=3
-  hi pythonImport ctermfg=3
+  hi pythonEolComment ctermfg=1
+  hi pythonEpydoc ctermfg=6
+  hi pythonImport ctermfg=6
   hi pythonInfoComment ctermfg=7
-  hi pythonJavadoc ctermfg=3
+  hi pythonJavadoc ctermfg=6
   hi pythonKingComment ctermfg=7
   hi pythonMajorSection ctermfg=7
   hi pythonMinorSection ctermfg=7

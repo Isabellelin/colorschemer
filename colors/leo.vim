@@ -4,7 +4,7 @@
 " Name: leo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:35
+" Date: 2012-09-29 13:37:44
 "----------------------------------------------------------
 
 set background=dark
@@ -19,21 +19,17 @@ if has("gui_running")
   hi Normal guifg=#ffffff guibg=#121212
   hi Boolean guifg=#ffaf5f
   hi Character guifg=#d7d700
-  hi ColorColumn guifg=#bcbcbc guibg=LightRed
+  hi ColorColumn guifg=#bcbcbc
   hi Comment gui=italic guifg=#a8a8a8
   hi Conditional guifg=#0087ff
   hi Constant guifg=#ffff00
-  hi Cursor guifg=bg guibg=fg
-  hi CursorColumn guibg=Grey90
   hi CursorLine guibg=#050505
-  hi CursorLineNr guifg=Brown
   hi Define gui=bold guifg=#005fff
   hi Delimiter guifg=#ff0000
   hi DiffAdd guibg=#262626
   hi DiffChange guibg=#262626
   hi DiffDelete guifg=#444444 guibg=#808080
   hi DiffText guifg=#ffffff
-  hi Directory guifg=Blue
   hi Error guifg=#ffffff
   hi ErrorMsg guifg=#ffffff
   hi Exception gui=bold guifg=#ffff00
@@ -49,12 +45,11 @@ if has("gui_running")
   hi Pmenu guifg=#ffffff guibg=#262626
   hi PmenuSbar guifg=#585858 guibg=#444444
   hi PmenuSel guifg=#ffffff guibg=#0000ff
-  hi PmenuThumb guifg=#ffffff guibg=Black
+  hi PmenuThumb guifg=#ffffff
   hi PreProc guifg=#ff5f00
-  hi Question guifg=SeaGreen
   hi Repeat guifg=#875fff
   hi Search guifg=#000000 guibg=#a8a8a8
-  hi SignColumn guifg=DarkBlue guibg=#000000
+  hi SignColumn guibg=#000000
   hi Special guifg=#ff5fd7 guibg=#1c1c1c
   hi SpecialKey guifg=#8a8a8a guibg=#090909
   hi SpellBad guifg=#000000 guibg=#ff0000
@@ -65,7 +60,7 @@ if has("gui_running")
   hi StatusLine guifg=#0000af guibg=#ffffff
   hi StatusLineNC guifg=#00005f guibg=#d0d0d0
   hi String guifg=#d7af87 guibg=#1c1c1c
-  hi TabLine guifg=#121212 guibg=LightGrey
+  hi TabLine guifg=#121212
   hi TabLineFill guifg=#121212 guibg=#87afd7
   hi TabLineSel guifg=#87afd7 guibg=#121212
   hi Todo guifg=#000000 guibg=#ffff00
@@ -83,9 +78,7 @@ elseif &t_Co == 256
   hi Conditional ctermfg=33
   hi Constant ctermfg=226
   hi Cursor ctermfg=232 ctermbg=255
-  hi CursorColumn ctermbg=7
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=130
   hi Define cterm=bold ctermfg=27
   hi Delimiter ctermfg=196
   hi DiffAdd ctermbg=235
@@ -93,14 +86,13 @@ elseif &t_Co == 256
   hi DiffDelete ctermfg=238 ctermbg=244
   hi DiffText ctermfg=255 ctermbg=196
   hi Directory ctermfg=196
-  hi Error ctermfg=255
+  hi Error ctermfg=255 ctermbg=9
   hi ErrorMsg ctermfg=255 ctermbg=160
   hi Exception cterm=bold ctermfg=226
   hi FoldColumn ctermfg=110 ctermbg=16
   hi Folded ctermfg=110 ctermbg=233
   hi Function ctermfg=196
   hi Identifier cterm=NONE ctermfg=40
-  hi Ignore ctermfg=15
   hi Keyword ctermfg=123
   hi LineNr ctermfg=239 ctermbg=16
   hi MatchParen ctermfg=190 ctermbg=20
@@ -116,7 +108,7 @@ elseif &t_Co == 256
   hi Question ctermfg=40
   hi Repeat ctermfg=99
   hi Search ctermfg=16 ctermbg=248
-  hi SignColumn ctermfg=4 ctermbg=16
+  hi SignColumn ctermbg=16
   hi Special ctermfg=206 ctermbg=234
   hi SpecialKey ctermfg=245 ctermbg=233
   hi SpellBad ctermfg=16 ctermbg=196
@@ -135,10 +127,9 @@ elseif &t_Co == 256
   hi Type ctermfg=75
   hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=254 ctermbg=16
-  hi Visual cterm=reverse ctermbg=NONE
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=232
   hi WarningMsg ctermfg=255
-  hi WildMenu ctermfg=16
+  hi WildMenu ctermfg=16 ctermbg=11
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Boolean ctermfg=73
@@ -148,9 +139,7 @@ elseif &t_Co == 88
   hi Conditional ctermfg=23
   hi Constant ctermfg=76
   hi Cursor ctermfg=16 ctermbg=87
-  hi CursorColumn ctermbg=87
   hi CursorLine cterm=NONE ctermbg=16
-  hi CursorLineNr ctermfg=52
   hi Define cterm=bold ctermfg=23
   hi Delimiter ctermfg=9
   hi DiffAdd ctermbg=80
@@ -158,14 +147,13 @@ elseif &t_Co == 88
   hi DiffDelete ctermfg=80 ctermbg=83
   hi DiffText ctermfg=87 ctermbg=9
   hi Directory ctermfg=9
-  hi Error ctermfg=87
+  hi Error ctermfg=87 ctermbg=9
   hi ErrorMsg ctermfg=87 ctermbg=48
   hi Exception cterm=bold ctermfg=76
   hi FoldColumn ctermfg=42 ctermbg=16
   hi Folded ctermfg=42 ctermbg=16
   hi Function ctermfg=9
   hi Identifier cterm=NONE ctermfg=24
-  hi Ignore ctermfg=79
   hi Keyword ctermfg=47
   hi LineNr ctermfg=81 ctermbg=16
   hi MatchParen ctermfg=60 ctermbg=4
@@ -181,7 +169,7 @@ elseif &t_Co == 88
   hi Question ctermfg=24
   hi Repeat ctermfg=39
   hi Search ctermfg=16 ctermbg=84
-  hi SignColumn ctermfg=19 ctermbg=16
+  hi SignColumn ctermbg=16
   hi Special ctermfg=70 ctermbg=80
   hi SpecialKey ctermfg=83 ctermbg=16
   hi SpellBad ctermfg=16 ctermbg=9
@@ -200,10 +188,9 @@ elseif &t_Co == 88
   hi Type ctermfg=43
   hi Underlined ctermfg=27
   hi VertSplit cterm=NONE ctermfg=87 ctermbg=16
-  hi Visual cterm=reverse ctermbg=NONE
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=16
   hi WarningMsg ctermfg=87
-  hi WildMenu ctermfg=16
+  hi WildMenu ctermfg=16 ctermbg=76
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Boolean ctermfg=8
@@ -213,9 +200,7 @@ elseif &t_Co == 16
   hi Conditional ctermfg=6
   hi Constant ctermfg=11
   hi Cursor ctermfg=0 ctermbg=11
-  hi CursorColumn ctermbg=11
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
   hi Define cterm=bold ctermfg=6
   hi Delimiter ctermfg=9
   hi DiffAdd ctermbg=0
@@ -223,14 +208,13 @@ elseif &t_Co == 16
   hi DiffDelete ctermfg=2 ctermbg=8
   hi DiffText ctermfg=11 ctermbg=9
   hi Directory ctermfg=9
-  hi Error ctermfg=11
+  hi Error ctermfg=11 ctermbg=9
   hi ErrorMsg ctermfg=11 ctermbg=9
   hi Exception cterm=bold ctermfg=11
   hi FoldColumn ctermfg=8 ctermbg=0
   hi Folded ctermfg=8 ctermbg=0
   hi Function ctermfg=9
   hi Identifier cterm=NONE ctermfg=2
-  hi Ignore ctermfg=15
   hi Keyword ctermfg=14
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen ctermfg=3 ctermbg=4
@@ -246,7 +230,7 @@ elseif &t_Co == 16
   hi Question ctermfg=2
   hi Repeat ctermfg=12
   hi Search ctermfg=0 ctermbg=8
-  hi SignColumn ctermfg=4 ctermbg=0
+  hi SignColumn ctermbg=0
   hi Special ctermfg=13 ctermbg=0
   hi SpecialKey ctermfg=8 ctermbg=0
   hi SpellBad ctermfg=0 ctermbg=9
@@ -265,10 +249,9 @@ elseif &t_Co == 16
   hi Type ctermfg=12
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=0
-  hi Visual cterm=reverse ctermbg=NONE
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=0
   hi WarningMsg ctermfg=11
-  hi WildMenu ctermfg=0
+  hi WildMenu ctermfg=0 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
@@ -278,9 +261,7 @@ else " 8 colors
   hi Conditional ctermfg=6
   hi Constant ctermfg=3
   hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=7
   hi CursorLine cterm=NONE ctermbg=0
-  hi CursorLineNr ctermfg=3
   hi Define cterm=bold ctermfg=6
   hi Delimiter ctermfg=1
   hi DiffAdd ctermbg=0
@@ -288,14 +269,13 @@ else " 8 colors
   hi DiffDelete ctermfg=2 ctermbg=3
   hi DiffText ctermfg=7 ctermbg=1
   hi Directory ctermfg=1
-  hi Error ctermfg=7
+  hi Error ctermfg=7 ctermbg=1
   hi ErrorMsg ctermfg=7 ctermbg=1
   hi Exception cterm=bold ctermfg=3
   hi FoldColumn ctermfg=7 ctermbg=0
   hi Folded ctermfg=7 ctermbg=0
   hi Function ctermfg=1
   hi Identifier cterm=NONE ctermfg=2
-  hi Ignore ctermfg=7
   hi Keyword ctermfg=7
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen ctermfg=3 ctermbg=4
@@ -311,7 +291,7 @@ else " 8 colors
   hi Question ctermfg=2
   hi Repeat ctermfg=5
   hi Search ctermfg=0 ctermbg=7
-  hi SignColumn ctermfg=4 ctermbg=0
+  hi SignColumn ctermbg=0
   hi Special ctermfg=7 ctermbg=0
   hi SpecialKey ctermfg=3 ctermbg=0
   hi SpellBad ctermfg=0 ctermbg=1
@@ -330,10 +310,9 @@ else " 8 colors
   hi Type ctermfg=7
   hi Underlined ctermfg=6
   hi VertSplit cterm=NONE ctermfg=7 ctermbg=0
-  hi Visual cterm=reverse ctermbg=NONE
-  hi VisualNOS cterm=bold,underline
+  hi Visual ctermbg=0
   hi WarningMsg ctermfg=7
-  hi WildMenu ctermfg=0
+  hi WildMenu ctermfg=0 ctermbg=3
 endif
 
 

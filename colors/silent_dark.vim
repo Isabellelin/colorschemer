@@ -4,7 +4,7 @@
 " Name: silent_dark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:23
+" Date: 2012-09-29 13:44:07
 "----------------------------------------------------------
 
 set background=light
@@ -100,304 +100,280 @@ elseif &t_Co == 256
   hi Boolean ctermfg=236 ctermbg=255
   hi Character ctermfg=60 ctermbg=231
   hi Chatacter ctermfg=16 ctermbg=231
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=14 ctermbg=231
-  hi Conceal ctermbg=82
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=11 ctermbg=231
   hi Conditional ctermfg=136 ctermbg=231
   hi Constant ctermfg=13 ctermbg=255
   hi Cursor ctermfg=231 ctermbg=25
-  hi CursorColumn ctermfg=16 ctermbg=82
+  hi CursorColumn ctermfg=16 ctermbg=8
   hi CursorLine ctermfg=16 ctermbg=229
-  hi CursorLineNr ctermfg=11
+  hi CursorLineNr ctermfg=14
   hi Define ctermfg=22 ctermbg=231
   hi Delimiter ctermfg=16 ctermbg=231
-  hi DiffAdd ctermbg=1
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=63 ctermbg=231
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11 ctermbg=231
   hi Done ctermfg=195 ctermbg=250
   hi Exception ctermfg=16 ctermbg=231
   hi Float ctermfg=75 ctermbg=231
-  hi FoldColumn ctermfg=14 ctermbg=82
-  hi Folded ctermfg=14 ctermbg=82
+  hi FoldColumn ctermfg=11 ctermbg=8
+  hi Folded ctermfg=11 ctermbg=8
   hi Function ctermfg=136 ctermbg=231
-  hi Identifier cterm=bold ctermfg=14 ctermbg=231
+  hi Identifier cterm=bold ctermfg=11 ctermbg=231
   hi Ignore ctermfg=0 ctermbg=231
   hi IncSearch ctermfg=16 ctermbg=226
   hi Include ctermfg=233 ctermbg=231
   hi Keyword ctermfg=233 ctermbg=231
-  hi LineNr ctermfg=11 ctermbg=229
+  hi LineNr ctermfg=14 ctermbg=229
   hi Macro ctermfg=16 ctermbg=231
-  hi MatchParen ctermfg=233 ctermbg=6
+  hi MatchParen ctermfg=233 ctermbg=3
   hi ModeMsg ctermfg=16 ctermbg=231
-  hi MoreMsg ctermfg=61 ctermbg=231
+  hi MoreMsg ctermfg=10 ctermbg=231
   hi NonText ctermbg=231
   hi Number ctermfg=136 ctermbg=231
   hi Operator ctermfg=25 ctermbg=231
   hi PerlPOD ctermfg=130 ctermbg=231
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=fg ctermbg=84
-  hi PmenuSel ctermfg=82 ctermbg=0
+  hi PmenuSbar ctermfg=fg
+  hi PmenuSel ctermfg=8 ctermbg=0
   hi PmenuThumb ctermfg=fg ctermbg=15
   hi PreCondit ctermfg=25 ctermbg=231
-  hi PreProc ctermfg=43 ctermbg=231
-  hi Question ctermfg=61 ctermbg=231
+  hi PreProc ctermfg=9 ctermbg=231
+  hi Question ctermfg=10 ctermbg=231
   hi Repeat ctermfg=136 ctermbg=231
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=82
-  hi Special ctermfg=74 ctermbg=231
+  hi SignColumn ctermfg=11 ctermbg=8
+  hi Special ctermfg=12 ctermbg=231
   hi SpecialChar ctermfg=233 ctermbg=231
-  hi SpecialKey ctermfg=43 ctermbg=231
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
+  hi SpecialKey ctermfg=9 ctermbg=231
   hi SpellErrors ctermfg=124 ctermbg=231
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=11 ctermbg=231
+  hi Statement ctermfg=14 ctermbg=231
   hi StatusLine ctermfg=253 ctermbg=236
   hi StatusLineNC ctermfg=231 ctermbg=250
   hi StorageClass ctermfg=22 ctermbg=231
   hi String ctermfg=124 ctermbg=231
   hi Structure ctermfg=16 ctermbg=231
-  hi TabLine ctermfg=15 ctermbg=82
+  hi TabLine ctermfg=15 ctermbg=8
   hi TabLineSel ctermfg=16 ctermbg=231
   hi Tag ctermfg=75 ctermbg=231
-  hi Title ctermfg=75 ctermbg=231
+  hi Title ctermfg=13 ctermbg=231
   hi Tooltip ctermfg=248 ctermbg=229
-  hi Type ctermfg=61 ctermbg=231
+  hi Type ctermfg=10 ctermbg=231
   hi Typedef ctermfg=22 ctermbg=231
-  hi Underlined ctermfg=43 ctermbg=231
+  hi Underlined ctermfg=9 ctermbg=231
   hi VertSplit ctermfg=229 ctermbg=229
-  hi Visual ctermfg=231 ctermbg=82
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi VisualNOS ctermfg=231 ctermbg=69
-  hi WarningMsg ctermfg=74
+  hi WarningMsg ctermfg=12
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi AutoHiGroup ctermfg=16 ctermbg=76
   hi Boolean ctermfg=80 ctermbg=87
   hi Character ctermfg=81 ctermbg=79
   hi Chatacter ctermfg=16 ctermbg=79
-  hi ColorColumn ctermbg=48
-  hi Comment ctermfg=31 ctermbg=79
-  hi Conceal ctermbg=44
+  hi ColorColumn ctermbg=19
+  hi Comment ctermfg=76 ctermbg=79
   hi Conditional ctermfg=52 ctermbg=79
   hi Constant ctermfg=67 ctermbg=87
   hi Cursor ctermfg=79 ctermbg=22
-  hi CursorColumn ctermfg=16 ctermbg=44
+  hi CursorColumn ctermfg=16 ctermbg=81
   hi CursorLine ctermfg=16 ctermbg=78
-  hi CursorLineNr ctermfg=76
+  hi CursorLineNr ctermfg=31
   hi Define ctermfg=20 ctermbg=79
   hi Delimiter ctermfg=16 ctermbg=79
-  hi DiffAdd ctermbg=48
+  hi DiffAdd ctermbg=19
   hi DiffChange ctermbg=50
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=39 ctermbg=79
+  hi DiffDelete ctermbg=56
+  hi Directory ctermfg=76 ctermbg=79
   hi Done ctermfg=63 ctermbg=85
   hi Exception ctermfg=16 ctermbg=79
   hi Float ctermfg=23 ctermbg=79
-  hi FoldColumn ctermfg=31 ctermbg=44
-  hi Folded ctermfg=31 ctermbg=44
+  hi FoldColumn ctermfg=76 ctermbg=81
+  hi Folded ctermfg=76 ctermbg=81
   hi Function ctermfg=52 ctermbg=79
-  hi Identifier cterm=bold ctermfg=31 ctermbg=79
+  hi Identifier cterm=bold ctermfg=76 ctermbg=79
   hi Ignore ctermfg=16 ctermbg=79
   hi IncSearch ctermfg=16 ctermbg=76
   hi Include ctermfg=16 ctermbg=79
   hi Keyword ctermfg=16 ctermbg=79
-  hi LineNr ctermfg=76 ctermbg=78
+  hi LineNr ctermfg=31 ctermbg=78
   hi Macro ctermfg=16 ctermbg=79
-  hi MatchParen ctermfg=16 ctermbg=6
+  hi MatchParen ctermfg=16 ctermbg=56
   hi ModeMsg ctermfg=16 ctermbg=79
-  hi MoreMsg ctermfg=81 ctermbg=79
+  hi MoreMsg ctermfg=28 ctermbg=79
   hi NonText ctermbg=79
   hi Number ctermfg=52 ctermbg=79
   hi Operator ctermfg=22 ctermbg=79
   hi PerlPOD ctermfg=52 ctermbg=79
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermfg=fg ctermbg=45
-  hi PmenuSel ctermfg=44 ctermbg=16
+  hi PmenuSbar ctermfg=fg
+  hi PmenuSel ctermfg=81 ctermbg=16
   hi PmenuThumb ctermfg=fg ctermbg=79
   hi PreCondit ctermfg=22 ctermbg=79
-  hi PreProc ctermfg=6 ctermbg=79
-  hi Question ctermfg=81 ctermbg=79
+  hi PreProc ctermfg=9 ctermbg=79
+  hi Question ctermfg=28 ctermbg=79
   hi Repeat ctermfg=52 ctermbg=79
-  hi Search ctermfg=16
-  hi SignColumn ctermfg=31 ctermbg=44
-  hi Special ctermfg=42 ctermbg=79
+  hi SignColumn ctermfg=76 ctermbg=81
+  hi Special ctermfg=39 ctermbg=79
   hi SpecialChar ctermfg=16 ctermbg=79
-  hi SpecialKey ctermfg=6 ctermbg=79
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
+  hi SpecialKey ctermfg=9 ctermbg=79
   hi SpellErrors ctermfg=32 ctermbg=79
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=76 ctermbg=79
+  hi Statement ctermfg=31 ctermbg=79
   hi StatusLine ctermfg=87 ctermbg=80
   hi StatusLineNC ctermfg=79 ctermbg=85
   hi StorageClass ctermfg=20 ctermbg=79
   hi String ctermfg=48 ctermbg=79
   hi Structure ctermfg=16 ctermbg=79
-  hi TabLine ctermfg=79 ctermbg=44
+  hi TabLine ctermfg=79 ctermbg=81
   hi TabLineSel ctermfg=16 ctermbg=79
   hi Tag ctermfg=23 ctermbg=79
-  hi Title ctermfg=43 ctermbg=79
+  hi Title ctermfg=67 ctermbg=79
   hi Tooltip ctermfg=84 ctermbg=78
-  hi Type ctermfg=81 ctermbg=79
+  hi Type ctermfg=28 ctermbg=79
   hi Typedef ctermfg=20 ctermbg=79
-  hi Underlined ctermfg=6 ctermbg=79
+  hi Underlined ctermfg=9 ctermbg=79
   hi VertSplit ctermfg=78 ctermbg=78
-  hi Visual ctermfg=79 ctermbg=44
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi VisualNOS ctermfg=79 ctermbg=23
-  hi WarningMsg ctermfg=42
+  hi WarningMsg ctermfg=39
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi AutoHiGroup ctermfg=0 ctermbg=11
   hi Boolean ctermfg=2 ctermbg=11
   hi Character ctermfg=5 ctermbg=15
   hi Chatacter ctermfg=0 ctermbg=15
-  hi ColorColumn ctermbg=9
-  hi Comment ctermfg=14 ctermbg=15
-  hi Conceal ctermbg=3
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=11 ctermbg=15
   hi Conditional ctermfg=3 ctermbg=15
   hi Constant ctermfg=13 ctermbg=11
   hi Cursor ctermfg=15 ctermbg=6
-  hi CursorColumn ctermfg=0 ctermbg=3
+  hi CursorColumn ctermfg=0 ctermbg=2
   hi CursorLine ctermfg=0 ctermbg=11
-  hi CursorLineNr ctermfg=11
+  hi CursorLineNr ctermfg=14
   hi Define ctermfg=2 ctermbg=15
   hi Delimiter ctermfg=0 ctermbg=15
-  hi DiffAdd ctermbg=9
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=12 ctermbg=15
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=11 ctermbg=15
   hi Done ctermfg=14 ctermbg=7
   hi Exception ctermfg=0 ctermbg=15
   hi Float ctermfg=12 ctermbg=15
-  hi FoldColumn ctermfg=14 ctermbg=3
-  hi Folded ctermfg=14 ctermbg=3
+  hi FoldColumn ctermfg=11 ctermbg=2
+  hi Folded ctermfg=11 ctermbg=2
   hi Function ctermfg=3 ctermbg=15
-  hi Identifier cterm=bold ctermfg=14 ctermbg=15
+  hi Identifier cterm=bold ctermfg=11 ctermbg=15
   hi Ignore ctermfg=0 ctermbg=15
   hi IncSearch ctermfg=0 ctermbg=11
   hi Include ctermfg=0 ctermbg=15
   hi Keyword ctermfg=0 ctermbg=15
-  hi LineNr ctermfg=11 ctermbg=11
+  hi LineNr ctermfg=14 ctermbg=11
   hi Macro ctermfg=0 ctermbg=15
-  hi MatchParen ctermfg=0 ctermbg=6
+  hi MatchParen ctermfg=0 ctermbg=3
   hi ModeMsg ctermfg=0 ctermbg=15
-  hi MoreMsg ctermfg=8 ctermbg=15
+  hi MoreMsg ctermfg=2 ctermbg=15
   hi NonText ctermbg=15
   hi Number ctermfg=3 ctermbg=15
   hi Operator ctermfg=6 ctermbg=15
   hi PerlPOD ctermfg=3 ctermbg=15
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermfg=fg ctermbg=10
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSbar ctermfg=fg
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermfg=fg ctermbg=15
   hi PreCondit ctermfg=6 ctermbg=15
-  hi PreProc ctermfg=6 ctermbg=15
-  hi Question ctermfg=8 ctermbg=15
+  hi PreProc ctermfg=9 ctermbg=15
+  hi Question ctermfg=2 ctermbg=15
   hi Repeat ctermfg=3 ctermbg=15
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=14 ctermbg=3
-  hi Special ctermfg=8 ctermbg=15
+  hi SignColumn ctermfg=11 ctermbg=2
+  hi Special ctermfg=12 ctermbg=15
   hi SpecialChar ctermfg=0 ctermbg=15
-  hi SpecialKey ctermfg=6 ctermbg=15
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
+  hi SpecialKey ctermfg=9 ctermbg=15
   hi SpellErrors ctermfg=1 ctermbg=15
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=11 ctermbg=15
+  hi Statement ctermfg=14 ctermbg=15
   hi StatusLine ctermfg=12 ctermbg=2
   hi StatusLineNC ctermfg=15 ctermbg=7
   hi StorageClass ctermfg=2 ctermbg=15
   hi String ctermfg=1 ctermbg=15
   hi Structure ctermfg=0 ctermbg=15
-  hi TabLine ctermfg=15 ctermbg=3
+  hi TabLine ctermfg=15 ctermbg=2
   hi TabLineSel ctermfg=0 ctermbg=15
   hi Tag ctermfg=12 ctermbg=15
-  hi Title ctermfg=12 ctermbg=15
+  hi Title ctermfg=13 ctermbg=15
   hi Tooltip ctermfg=8 ctermbg=11
-  hi Type ctermfg=8 ctermbg=15
+  hi Type ctermfg=2 ctermbg=15
   hi Typedef ctermfg=2 ctermbg=15
-  hi Underlined ctermfg=6 ctermbg=15
+  hi Underlined ctermfg=9 ctermbg=15
   hi VertSplit ctermfg=11 ctermbg=11
-  hi Visual ctermfg=15 ctermbg=3
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi VisualNOS ctermfg=15 ctermbg=6
-  hi WarningMsg ctermfg=8
+  hi WarningMsg ctermfg=12
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi AutoHiGroup ctermfg=0 ctermbg=3
   hi Boolean ctermfg=2 ctermbg=7
   hi Character ctermfg=5 ctermbg=7
   hi Chatacter ctermfg=0 ctermbg=7
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=6 ctermbg=7
-  hi Conceal ctermbg=3
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=3 ctermbg=7
   hi Conditional ctermfg=3 ctermbg=7
   hi Constant ctermfg=5 ctermbg=7
   hi Cursor ctermfg=7 ctermbg=6
-  hi CursorColumn ctermfg=0 ctermbg=3
+  hi CursorColumn ctermfg=0 ctermbg=2
   hi CursorLine ctermfg=0 ctermbg=7
-  hi CursorLineNr ctermfg=3
+  hi CursorLineNr ctermfg=6
   hi Define ctermfg=2 ctermbg=7
   hi Delimiter ctermfg=0 ctermbg=7
-  hi DiffAdd ctermbg=1
+  hi DiffAdd ctermbg=4
   hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi Directory ctermfg=5 ctermbg=7
+  hi DiffDelete ctermbg=3
+  hi Directory ctermfg=3 ctermbg=7
   hi Done ctermfg=7 ctermbg=7
   hi Exception ctermfg=0 ctermbg=7
   hi Float ctermfg=7 ctermbg=7
-  hi FoldColumn ctermfg=6 ctermbg=3
-  hi Folded ctermfg=6 ctermbg=3
+  hi FoldColumn ctermfg=3 ctermbg=2
+  hi Folded ctermfg=3 ctermbg=2
   hi Function ctermfg=3 ctermbg=7
-  hi Identifier cterm=bold ctermfg=6 ctermbg=7
+  hi Identifier cterm=bold ctermfg=3 ctermbg=7
   hi Ignore ctermfg=0 ctermbg=7
   hi IncSearch ctermfg=0 ctermbg=3
   hi Include ctermfg=0 ctermbg=7
   hi Keyword ctermfg=0 ctermbg=7
-  hi LineNr ctermfg=3 ctermbg=7
+  hi LineNr ctermfg=6 ctermbg=7
   hi Macro ctermfg=0 ctermbg=7
-  hi MatchParen ctermfg=0 ctermbg=6
+  hi MatchParen ctermfg=0 ctermbg=3
   hi ModeMsg ctermfg=0 ctermbg=7
-  hi MoreMsg ctermfg=5 ctermbg=7
+  hi MoreMsg ctermfg=2 ctermbg=7
   hi NonText ctermbg=7
   hi Number ctermfg=3 ctermbg=7
   hi Operator ctermfg=6 ctermbg=7
   hi PerlPOD ctermfg=3 ctermbg=7
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermfg=fg ctermbg=6
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSbar ctermfg=fg
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermfg=fg ctermbg=7
   hi PreCondit ctermfg=6 ctermbg=7
-  hi PreProc ctermfg=6 ctermbg=7
-  hi Question ctermfg=5 ctermbg=7
+  hi PreProc ctermfg=1 ctermbg=7
+  hi Question ctermfg=2 ctermbg=7
   hi Repeat ctermfg=3 ctermbg=7
-  hi Search ctermfg=0
-  hi SignColumn ctermfg=6 ctermbg=3
-  hi Special ctermfg=7 ctermbg=7
+  hi SignColumn ctermfg=3 ctermbg=2
+  hi Special ctermfg=5 ctermbg=7
   hi SpecialChar ctermfg=0 ctermbg=7
-  hi SpecialKey ctermfg=6 ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
+  hi SpecialKey ctermfg=1 ctermbg=7
   hi SpellErrors ctermfg=1 ctermbg=7
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3 ctermbg=7
+  hi Statement ctermfg=6 ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=7 ctermbg=7
   hi StorageClass ctermfg=2 ctermbg=7
   hi String ctermfg=1 ctermbg=7
   hi Structure ctermfg=0 ctermbg=7
-  hi TabLine ctermfg=7 ctermbg=3
+  hi TabLine ctermfg=7 ctermbg=2
   hi TabLineSel ctermfg=0 ctermbg=7
   hi Tag ctermfg=7 ctermbg=7
-  hi Title ctermfg=7 ctermbg=7
+  hi Title ctermfg=5 ctermbg=7
   hi Tooltip ctermfg=7 ctermbg=7
-  hi Type ctermfg=5 ctermbg=7
+  hi Type ctermfg=2 ctermbg=7
   hi Typedef ctermfg=2 ctermbg=7
-  hi Underlined ctermfg=6 ctermbg=7
+  hi Underlined ctermfg=1 ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=7 ctermbg=3
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi VisualNOS ctermfg=7 ctermbg=6
-  hi WarningMsg ctermfg=7
+  hi WarningMsg ctermfg=5
 endif
 
 

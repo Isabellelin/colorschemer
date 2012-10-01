@@ -4,7 +4,7 @@
 " Name: corporation
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:56
+" Date: 2012-09-29 13:32:32
 "----------------------------------------------------------
 
 set background=dark
@@ -29,7 +29,6 @@ if has("gui_running")
   hi FoldColumn gui=italic guifg=#192224 guibg=#A1A6A8
   hi Identifier guifg=#BD9800
   hi ModeMsg guifg=#F9F9F9 guibg=#192224
-  hi PmenuSel guifg=#4d4d4d
   hi PreProc guifg=#BD9800
   hi Search guifg=#192224 guibg=#BD9800
   hi SignColumn guifg=#192224 guibg=#536991
@@ -46,111 +45,47 @@ if has("gui_running")
   hi cursorim guifg=#192224 guibg=#536991
 elseif &t_Co == 256
   hi Normal ctermfg=231 ctermbg=234
-  hi Conceal ctermbg=8
   hi Cursor ctermfg=234 ctermbg=231
-  hi CursorColumn ctermbg=8
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi ModeMsg ctermfg=231 ctermbg=234
-  hi MoreMsg ctermfg=10
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=234 ctermbg=136
   hi StatusLineNC ctermfg=234 ctermbg=242
-  hi TabLine ctermbg=8
-  hi Title ctermfg=13 ctermbg=234
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12 ctermbg=234
-  hi Visual ctermfg=234 ctermbg=8
+  hi Title ctermbg=234
+  hi Underlined ctermbg=234
+  hi Visual cterm=NONE ctermfg=234 ctermbg=8
   hi VisualNOS ctermfg=234 ctermbg=231
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=234 ctermbg=60
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=80
-  hi Conceal ctermbg=81
   hi Cursor ctermfg=80 ctermbg=79
-  hi CursorColumn ctermbg=81
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi ModeMsg ctermfg=79 ctermbg=80
-  hi MoreMsg ctermfg=28
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=80 ctermbg=52
   hi StatusLineNC ctermfg=80 ctermbg=82
-  hi TabLine ctermbg=81
-  hi Title ctermfg=67 ctermbg=80
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39 ctermbg=80
-  hi Visual ctermfg=80 ctermbg=81
+  hi Title ctermbg=80
+  hi Underlined ctermbg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi VisualNOS ctermfg=80 ctermbg=79
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=80 ctermbg=82
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=0 ctermbg=15
-  hi CursorColumn ctermbg=2
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi ModeMsg ctermfg=15 ctermbg=0
-  hi MoreMsg ctermfg=2
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=0 ctermbg=3
   hi StatusLineNC ctermfg=0 ctermbg=6
-  hi TabLine ctermbg=2
-  hi Title ctermfg=13 ctermbg=0
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
+  hi Title ctermbg=0
+  hi Underlined ctermbg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=15
-  hi WarningMsg ctermfg=9
   hi cursorim ctermfg=0 ctermbg=6
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Conceal ctermbg=2
   hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=2
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi ModeMsg ctermfg=7 ctermbg=0
-  hi MoreMsg ctermfg=2
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=0 ctermbg=3
   hi StatusLineNC ctermfg=0 ctermbg=6
-  hi TabLine ctermbg=2
-  hi Title ctermfg=5 ctermbg=0
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5 ctermbg=0
-  hi Visual ctermfg=0 ctermbg=2
+  hi Title ctermbg=0
+  hi Underlined ctermbg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=7
-  hi WarningMsg ctermfg=1
   hi cursorim ctermfg=0 ctermbg=6
 endif
 

@@ -4,7 +4,7 @@
 " Name: underwater-mod
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:44
+" Date: 2012-09-29 13:47:09
 "----------------------------------------------------------
 
 set background=dark
@@ -57,14 +57,9 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=235
   hi Comment ctermbg=bg
-  hi Conceal ctermbg=8
   hi Constant ctermbg=bg
   hi Cursor ctermfg=16 ctermbg=72
-  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=237
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi Function ctermfg=141 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Ignore ctermbg=bg
@@ -72,41 +67,29 @@ elseif &t_Co == 256
   hi Keyword ctermfg=117 ctermbg=bg
   hi LineNr ctermbg=bg
   hi MatchParen ctermfg=201
-  hi MoreMsg ctermfg=10
   hi NonText ctermbg=bg
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12 ctermbg=bg
-  hi Question ctermfg=10
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9 ctermbg=bg
-  hi SpecialKey ctermfg=12
+  hi PreProc ctermbg=bg
+  hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=228 ctermbg=233
   hi StatusLineNC ctermfg=60 ctermbg=233
   hi String ctermfg=113 ctermbg=bg
-  hi TabLine ctermbg=8
   hi TabLineFill ctermfg=fg ctermbg=253
   hi TabLineSel ctermfg=233 ctermbg=145
-  hi Title ctermfg=13 ctermbg=bg
-  hi Type ctermfg=10 ctermbg=bg
-  hi Underlined ctermfg=12 ctermbg=bg
+  hi Title ctermbg=bg
+  hi Type ctermbg=bg
+  hi Underlined ctermbg=bg
   hi VertSplit ctermfg=233 ctermbg=233
-  hi Visual ctermfg=255 ctermbg=8
-  hi WarningMsg ctermfg=9 ctermbg=bg
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
+  hi WarningMsg ctermbg=bg
   hi rubyAccess ctermfg=209 ctermbg=bg
   hi treeFlag ctermfg=61 ctermbg=bg
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermbg=bg
-  hi Conceal ctermbg=81
   hi Constant ctermbg=bg
   hi Cursor ctermfg=16 ctermbg=83
-  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=80
-  hi Directory ctermfg=31
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi Function ctermfg=55 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Ignore ctermbg=bg
@@ -114,41 +97,29 @@ elseif &t_Co == 88
   hi Keyword ctermfg=43 ctermbg=bg
   hi LineNr ctermbg=bg
   hi MatchParen ctermfg=67
-  hi MoreMsg ctermfg=28
   hi NonText ctermbg=bg
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39 ctermbg=bg
-  hi Question ctermfg=28
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9 ctermbg=bg
-  hi SpecialKey ctermfg=39
+  hi PreProc ctermbg=bg
+  hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=77 ctermbg=16
   hi StatusLineNC ctermfg=82 ctermbg=16
   hi String ctermfg=41 ctermbg=bg
-  hi TabLine ctermbg=81
   hi TabLineFill ctermfg=fg ctermbg=87
   hi TabLineSel ctermfg=16 ctermbg=85
-  hi Title ctermfg=67 ctermbg=bg
-  hi Type ctermfg=28 ctermbg=bg
-  hi Underlined ctermfg=39 ctermbg=bg
+  hi Title ctermbg=bg
+  hi Type ctermbg=bg
+  hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=16
-  hi Visual ctermfg=87 ctermbg=81
-  hi WarningMsg ctermfg=9 ctermbg=bg
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
+  hi WarningMsg ctermbg=bg
   hi rubyAccess ctermfg=69 ctermbg=bg
   hi treeFlag ctermfg=82 ctermbg=bg
 elseif &t_Co == 16
   hi Normal ctermfg=14 ctermbg=0
   hi Comment ctermbg=bg
-  hi Conceal ctermbg=2
   hi Constant ctermbg=bg
   hi Cursor ctermfg=0 ctermbg=8
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=4
-  hi Directory ctermfg=14
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=12 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Ignore ctermbg=bg
@@ -156,41 +127,29 @@ elseif &t_Co == 16
   hi Keyword ctermfg=12 ctermbg=bg
   hi LineNr ctermbg=bg
   hi MatchParen ctermfg=13
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=bg
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12 ctermbg=bg
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9 ctermbg=bg
-  hi SpecialKey ctermfg=12
+  hi PreProc ctermbg=bg
+  hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=11 ctermbg=0
   hi StatusLineNC ctermfg=6 ctermbg=0
   hi String ctermfg=10 ctermbg=bg
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=fg ctermbg=12
   hi TabLineSel ctermfg=0 ctermbg=8
-  hi Title ctermfg=13 ctermbg=bg
-  hi Type ctermfg=2 ctermbg=bg
-  hi Underlined ctermfg=12 ctermbg=bg
+  hi Title ctermbg=bg
+  hi Type ctermbg=bg
+  hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=14 ctermbg=2
-  hi WarningMsg ctermfg=9 ctermbg=bg
+  hi Visual cterm=NONE ctermfg=14 ctermbg=2
+  hi WarningMsg ctermbg=bg
   hi rubyAccess ctermfg=8 ctermbg=bg
   hi treeFlag ctermfg=6 ctermbg=bg
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermbg=bg
-  hi Conceal ctermbg=2
   hi Constant ctermbg=bg
   hi Cursor ctermfg=0 ctermbg=6
-  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=4
-  hi Directory ctermfg=6
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi Function ctermfg=7 ctermbg=bg
   hi Identifier ctermbg=bg
   hi Ignore ctermbg=bg
@@ -198,34 +157,27 @@ else " 8 colors
   hi Keyword ctermfg=7 ctermbg=bg
   hi LineNr ctermbg=bg
   hi MatchParen ctermfg=5
-  hi MoreMsg ctermfg=2
   hi NonText ctermbg=bg
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5 ctermbg=bg
-  hi Question ctermfg=2
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1 ctermbg=bg
-  hi SpecialKey ctermfg=5
+  hi PreProc ctermbg=bg
+  hi Special ctermbg=bg
   hi Statement ctermbg=bg
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=6 ctermbg=0
   hi String ctermfg=3 ctermbg=bg
-  hi TabLine ctermbg=2
   hi TabLineFill ctermfg=fg ctermbg=7
   hi TabLineSel ctermfg=0 ctermbg=7
-  hi Title ctermfg=5 ctermbg=bg
-  hi Type ctermfg=2 ctermbg=bg
-  hi Underlined ctermfg=5 ctermbg=bg
+  hi Title ctermbg=bg
+  hi Type ctermbg=bg
+  hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=2
-  hi WarningMsg ctermfg=1 ctermbg=bg
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
+  hi WarningMsg ctermbg=bg
   hi rubyAccess ctermfg=7 ctermbg=bg
   hi treeFlag ctermfg=6 ctermbg=bg
 endif
 
 hi! link coffeeInterpolation Special
-hi! link erubyDelimiter PreProc
+hi! link eRubyDelimiter PreProc
 hi! link hamlAttributes htmlArg
 hi! link hamlClassChar hamlClass
 hi! link hamlIdChar hamlId
@@ -237,7 +189,7 @@ hi! link htmlSpecialChar Constant
 hi! link htmlTag Statement
 hi! link htmlTagName Statement
 hi! link javaScriptDocSeeTag Underlined
-hi! link javaScriptFunction Function
+hi! link javascriptFunction Function
 hi! link markdownCode Statement
 hi! link markdownCodeBlock Statement
 hi! link markdownCodeDelimiter Statement

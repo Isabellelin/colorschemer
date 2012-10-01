@@ -4,7 +4,7 @@
 " Name: greyhouse
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:08
+" Date: 2012-09-29 13:35:45
 "----------------------------------------------------------
 
 set background=light
@@ -36,7 +36,7 @@ if has("gui_running")
   hi Identifier guifg=#495a16 guibg=bg
   hi Ignore guifg=#b3b3b3 guibg=bg
   hi IncSearch gui=NONE guifg=#000000 guibg=#78d8d8
-  hi LineNr guifg=#886688 guibg=#a8a8a8
+  hi LineNr guifg=#886688 guibg=#e5e5e5
   hi MatchParen guifg=#ffffff guibg=#990000
   hi ModeMsg gui=NONE guifg=#703000 guibg=bg
   hi MoreMsg gui=NONE guifg=#606000 guibg=bg
@@ -53,10 +53,10 @@ if has("gui_running")
   hi SpecialChar guifg=#3a5c57 guibg=bg
   hi SpecialComment guifg=#505320 guibg=bg
   hi SpecialKey guifg=#007050 guibg=bg
-  hi SpellBad guifg=#a8a8a8 guibg=#cd0000
-  hi SpellCap guifg=#a8a8a8 guibg=#0000ee
-  hi SpellLocal guifg=#000000 guibg=#00cdcd
-  hi SpellRare guifg=#a8a8a8 guibg=#cd00cd
+  hi SpellBad guifg=#e5e5e5 guibg=#0000ee
+  hi SpellCap guifg=#e5e5e5 guibg=#cd0000
+  hi SpellLocal guifg=#000000 guibg=#cdcd00
+  hi SpellRare guifg=#e5e5e5 guibg=#cd00cd
   hi Statement gui=NONE guifg=#004080 guibg=bg
   hi StatusLine gui=NONE guifg=bg guibg=#333333
   hi StatusLineNC gui=NONE guifg=fg guibg=#999999
@@ -69,236 +69,232 @@ if has("gui_running")
   hi Type gui=NONE guifg=#800080 guibg=bg
   hi Underlined guifg=#004080 guibg=bg
   hi VertSplit gui=NONE guifg=fg guibg=#999999
-  hi Visual guifg=#a8a8a8 guibg=#b3b3b3
-  hi VisualNOS guifg=#a8a8a8 guibg=#d3a3a3
+  hi Visual guifg=#e5e5e5 guibg=#b3b3b3
+  hi VisualNOS gui=NONE guifg=#e5e5e5 guibg=#d3a3a3
   hi WarningMsg guifg=#900000 guibg=bg
   hi WildMenu gui=underline guifg=fg guibg=bg
   hi cursorim guifg=#ffffff guibg=#003300
 elseif &t_Co == 256
-  hi Normal ctermfg=0 ctermbg=248
-  hi Character ctermfg=12 ctermbg=248
-  hi Comment ctermfg=2 ctermbg=248
-  hi Constant ctermfg=130 ctermbg=248
-  hi Cursor ctermfg=15 ctermbg=4
-  hi CursorColumn ctermbg=15
-  hi CursorLine cterm=NONE ctermbg=15
-  hi Debug ctermfg=242 ctermbg=248
-  hi DiffAdd ctermfg=0 ctermbg=248
-  hi DiffChange ctermfg=0 ctermbg=248
-  hi DiffDelete ctermfg=0 ctermbg=248
-  hi DiffText cterm=NONE ctermfg=0 ctermbg=248
-  hi Directory ctermbg=248
-  hi ErrorMsg ctermfg=11 ctermbg=9
-  hi FoldColumn ctermfg=5
-  hi Folded ctermfg=5 ctermbg=242
-  hi Identifier ctermfg=130 ctermbg=248
-  hi Ignore ctermfg=248 ctermbg=248
-  hi IncSearch cterm=NONE ctermfg=0 ctermbg=14
-  hi LineNr ctermfg=242 ctermbg=248
-  hi MatchParen ctermfg=15 ctermbg=1
-  hi ModeMsg cterm=NONE ctermfg=1 ctermbg=248
-  hi MoreMsg ctermfg=130 ctermbg=248
-  hi NonText ctermfg=242 ctermbg=248
-  hi Pmenu ctermfg=248 ctermbg=242
-  hi PmenuSbar ctermfg=0 ctermbg=0
-  hi PmenuSel ctermbg=248
-  hi PmenuThumb ctermfg=242 ctermbg=242
-  hi PreProc ctermfg=1 ctermbg=248
-  hi Question ctermfg=5 ctermbg=248
-  hi Search ctermfg=0 ctermbg=10
-  hi SignColumn ctermfg=6
-  hi Special ctermfg=2 ctermbg=248
-  hi SpecialChar ctermfg=2 ctermbg=248
-  hi SpecialComment ctermfg=130 ctermbg=248
-  hi SpecialKey ctermfg=2 ctermbg=248
-  hi SpellBad ctermfg=248 ctermbg=1
-  hi SpellCap ctermfg=248 ctermbg=4
-  hi SpellLocal ctermfg=0 ctermbg=6
-  hi SpellRare ctermfg=248 ctermbg=5
-  hi Statement ctermfg=4 ctermbg=248
-  hi StatusLine cterm=NONE ctermfg=248 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=242
-  hi String ctermfg=12 ctermbg=248
-  hi TabLine cterm=NONE ctermbg=242
-  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=242
-  hi TabLineSel cterm=NONE ctermfg=248 ctermbg=0
-  hi Title ctermfg=0 ctermbg=248
-  hi Type ctermfg=5 ctermbg=248
-  hi Underlined ctermfg=4 ctermbg=248
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=242
-  hi Visual ctermfg=248 ctermbg=0
-  hi VisualNOS ctermfg=248 ctermbg=1
-  hi WarningMsg ctermbg=248
-  hi WildMenu ctermbg=248
-  hi cursorim ctermfg=15 ctermbg=2
-elseif &t_Co == 88
-  hi Normal ctermfg=16 ctermbg=84
-  hi Character ctermfg=39 ctermbg=84
-  hi Comment ctermfg=24 ctermbg=84
-  hi Constant ctermfg=52 ctermbg=84
-  hi Cursor ctermfg=79 ctermbg=19
-  hi CursorColumn ctermbg=79
-  hi CursorLine cterm=NONE ctermbg=79
-  hi Debug ctermfg=82 ctermbg=84
-  hi DiffAdd ctermfg=16 ctermbg=84
-  hi DiffChange ctermfg=16 ctermbg=84
-  hi DiffDelete ctermfg=16 ctermbg=84
-  hi DiffText cterm=NONE ctermfg=16 ctermbg=84
-  hi Directory ctermbg=84
-  hi ErrorMsg ctermfg=76 ctermbg=9
-  hi FoldColumn ctermfg=50
-  hi Folded ctermfg=50 ctermbg=82
-  hi Identifier ctermfg=52 ctermbg=84
-  hi Ignore ctermfg=84 ctermbg=84
-  hi IncSearch cterm=NONE ctermfg=16 ctermbg=31
-  hi LineNr ctermfg=82 ctermbg=84
-  hi MatchParen ctermfg=79 ctermbg=48
-  hi ModeMsg cterm=NONE ctermfg=48 ctermbg=84
-  hi MoreMsg ctermfg=52 ctermbg=84
-  hi NonText ctermfg=82 ctermbg=84
-  hi Pmenu ctermfg=84 ctermbg=82
-  hi PmenuSbar ctermfg=16 ctermbg=16
-  hi PmenuSel ctermbg=84
-  hi PmenuThumb ctermfg=82 ctermbg=82
-  hi PreProc ctermfg=48 ctermbg=84
-  hi Question ctermfg=50 ctermbg=84
-  hi Search ctermfg=16 ctermbg=28
-  hi SignColumn ctermfg=6
-  hi Special ctermfg=24 ctermbg=84
-  hi SpecialChar ctermfg=24 ctermbg=84
-  hi SpecialComment ctermfg=52 ctermbg=84
-  hi SpecialKey ctermfg=24 ctermbg=84
-  hi SpellBad ctermfg=84 ctermbg=48
-  hi SpellCap ctermfg=84 ctermbg=19
-  hi SpellLocal ctermfg=16 ctermbg=6
-  hi SpellRare ctermfg=84 ctermbg=50
-  hi Statement ctermfg=19 ctermbg=84
-  hi StatusLine cterm=NONE ctermfg=84 ctermbg=16
-  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=82
-  hi String ctermfg=39 ctermbg=84
-  hi TabLine cterm=NONE ctermbg=82
-  hi TabLineFill cterm=NONE ctermfg=16 ctermbg=82
-  hi TabLineSel cterm=NONE ctermfg=84 ctermbg=16
-  hi Title ctermfg=16 ctermbg=84
-  hi Type ctermfg=50 ctermbg=84
-  hi Underlined ctermfg=19 ctermbg=84
-  hi VertSplit cterm=NONE ctermfg=16 ctermbg=82
-  hi Visual ctermfg=84 ctermbg=16
-  hi VisualNOS ctermfg=84 ctermbg=48
-  hi WarningMsg ctermbg=84
-  hi WildMenu ctermbg=84
-  hi cursorim ctermfg=79 ctermbg=24
-elseif &t_Co == 16
-  hi Normal ctermfg=0 ctermbg=8
-  hi Character ctermfg=12 ctermbg=8
-  hi Comment ctermfg=2 ctermbg=8
-  hi Constant ctermfg=3 ctermbg=8
-  hi Cursor ctermfg=15 ctermbg=4
-  hi CursorColumn ctermbg=15
-  hi CursorLine cterm=NONE ctermbg=15
-  hi Debug ctermfg=3 ctermbg=8
-  hi DiffAdd ctermfg=0 ctermbg=8
-  hi DiffChange ctermfg=0 ctermbg=8
-  hi DiffDelete ctermfg=0 ctermbg=8
-  hi DiffText cterm=NONE ctermfg=0 ctermbg=8
-  hi Directory ctermbg=8
-  hi ErrorMsg ctermfg=11 ctermbg=9
-  hi FoldColumn ctermfg=13
-  hi Folded ctermfg=13 ctermbg=3
-  hi Identifier ctermfg=3 ctermbg=8
-  hi Ignore ctermfg=8 ctermbg=8
-  hi IncSearch cterm=NONE ctermfg=0 ctermbg=14
-  hi LineNr ctermfg=3 ctermbg=8
-  hi MatchParen ctermfg=15 ctermbg=9
-  hi ModeMsg cterm=NONE ctermfg=9 ctermbg=8
-  hi MoreMsg ctermfg=3 ctermbg=8
-  hi NonText ctermfg=3 ctermbg=8
-  hi Pmenu ctermfg=8 ctermbg=3
-  hi PmenuSbar ctermfg=0 ctermbg=0
-  hi PmenuSel ctermbg=8
-  hi PmenuThumb ctermfg=3 ctermbg=3
-  hi PreProc ctermfg=9 ctermbg=8
-  hi Question ctermfg=13 ctermbg=8
-  hi Search ctermfg=0 ctermbg=2
-  hi SignColumn ctermfg=6
-  hi Special ctermfg=2 ctermbg=8
-  hi SpecialChar ctermfg=2 ctermbg=8
-  hi SpecialComment ctermfg=3 ctermbg=8
-  hi SpecialKey ctermfg=2 ctermbg=8
-  hi SpellBad ctermfg=8 ctermbg=9
-  hi SpellCap ctermfg=8 ctermbg=4
-  hi SpellLocal ctermfg=0 ctermbg=6
-  hi SpellRare ctermfg=8 ctermbg=13
-  hi Statement ctermfg=4 ctermbg=8
-  hi StatusLine cterm=NONE ctermfg=8 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=3
-  hi String ctermfg=12 ctermbg=8
-  hi TabLine cterm=NONE ctermbg=3
-  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=3
-  hi TabLineSel cterm=NONE ctermfg=8 ctermbg=0
-  hi Title ctermfg=0 ctermbg=8
-  hi Type ctermfg=13 ctermbg=8
-  hi Underlined ctermfg=4 ctermbg=8
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=3
-  hi Visual ctermfg=8 ctermbg=0
-  hi VisualNOS ctermfg=8 ctermbg=9
-  hi WarningMsg ctermbg=8
-  hi WildMenu ctermbg=8
-  hi cursorim ctermfg=15 ctermbg=2
-else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi Character ctermfg=5 ctermbg=7
+  hi Character ctermfg=9 ctermbg=7
   hi Comment ctermfg=2 ctermbg=7
-  hi Constant ctermfg=3 ctermbg=7
-  hi Cursor ctermfg=7 ctermbg=4
-  hi CursorColumn ctermbg=7
-  hi CursorLine cterm=NONE ctermbg=7
-  hi Debug ctermfg=3 ctermbg=7
+  hi Constant ctermfg=6 ctermbg=7
+  hi Cursor ctermfg=15 ctermbg=1
+  hi CursorColumn ctermbg=15
+  hi CursorLine cterm=NONE ctermbg=15
+  hi Debug ctermfg=8 ctermbg=7
   hi DiffAdd ctermfg=0 ctermbg=7
   hi DiffChange ctermfg=0 ctermbg=7
   hi DiffDelete ctermfg=0 ctermbg=7
   hi DiffText cterm=NONE ctermfg=0 ctermbg=7
   hi Directory ctermbg=7
-  hi ErrorMsg ctermfg=3 ctermbg=1
+  hi ErrorMsg ctermfg=14 ctermbg=12
   hi FoldColumn ctermfg=5
-  hi Folded ctermfg=5 ctermbg=3
-  hi Identifier ctermfg=3 ctermbg=7
+  hi Folded ctermfg=5 ctermbg=8
+  hi Identifier ctermfg=6 ctermbg=7
   hi Ignore ctermfg=7 ctermbg=7
-  hi IncSearch cterm=NONE ctermfg=0 ctermbg=6
-  hi LineNr ctermfg=3 ctermbg=7
-  hi MatchParen ctermfg=7 ctermbg=1
-  hi ModeMsg cterm=NONE ctermfg=1 ctermbg=7
-  hi MoreMsg ctermfg=3 ctermbg=7
-  hi NonText ctermfg=3 ctermbg=7
-  hi Pmenu ctermfg=7 ctermbg=3
+  hi IncSearch cterm=NONE ctermfg=0 ctermbg=11
+  hi LineNr ctermfg=8 ctermbg=7
+  hi MatchParen ctermfg=15 ctermbg=4
+  hi ModeMsg cterm=NONE ctermfg=4 ctermbg=7
+  hi MoreMsg ctermfg=6 ctermbg=7
+  hi NonText ctermfg=8 ctermbg=7
+  hi Pmenu ctermfg=7 ctermbg=8
   hi PmenuSbar ctermfg=0 ctermbg=0
-  hi PmenuSel ctermbg=7
-  hi PmenuThumb ctermfg=3 ctermbg=3
-  hi PreProc ctermfg=1 ctermbg=7
+  hi PmenuThumb ctermfg=8 ctermbg=8
+  hi PreProc ctermfg=4 ctermbg=7
   hi Question ctermfg=5 ctermbg=7
-  hi Search ctermfg=0 ctermbg=2
-  hi SignColumn ctermfg=6
+  hi Search ctermbg=10
+  hi SignColumn ctermfg=3
   hi Special ctermfg=2 ctermbg=7
   hi SpecialChar ctermfg=2 ctermbg=7
-  hi SpecialComment ctermfg=3 ctermbg=7
+  hi SpecialComment ctermfg=6 ctermbg=7
   hi SpecialKey ctermfg=2 ctermbg=7
-  hi SpellBad ctermfg=7 ctermbg=1
-  hi SpellCap ctermfg=7 ctermbg=4
-  hi SpellLocal ctermfg=0 ctermbg=6
+  hi SpellBad ctermfg=7 ctermbg=4
+  hi SpellCap ctermfg=7 ctermbg=1
+  hi SpellLocal ctermfg=0 ctermbg=3
   hi SpellRare ctermfg=7 ctermbg=5
-  hi Statement ctermfg=4 ctermbg=7
+  hi Statement ctermfg=1 ctermbg=7
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=3
-  hi String ctermfg=5 ctermbg=7
-  hi TabLine cterm=NONE ctermbg=3
-  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=3
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=8
+  hi String ctermfg=9 ctermbg=7
+  hi TabLine cterm=NONE ctermbg=8
+  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=8
   hi TabLineSel cterm=NONE ctermfg=7 ctermbg=0
   hi Title ctermfg=0 ctermbg=7
   hi Type ctermfg=5 ctermbg=7
-  hi Underlined ctermfg=4 ctermbg=7
-  hi VertSplit cterm=NONE ctermfg=0 ctermbg=3
-  hi Visual ctermfg=7 ctermbg=0
-  hi VisualNOS ctermfg=7 ctermbg=1
+  hi Underlined ctermfg=1 ctermbg=7
+  hi VertSplit cterm=NONE ctermfg=0 ctermbg=8
+  hi Visual cterm=NONE ctermfg=7 ctermbg=0
+  hi VisualNOS cterm=NONE ctermfg=7 ctermbg=4
+  hi WarningMsg ctermbg=7
+  hi WildMenu ctermbg=7
+  hi cursorim ctermfg=15 ctermbg=2
+elseif &t_Co == 88
+  hi Normal ctermfg=16 ctermbg=87
+  hi Character ctermfg=9 ctermbg=87
+  hi Comment ctermfg=24 ctermbg=87
+  hi Constant ctermfg=6 ctermbg=87
+  hi Cursor ctermfg=79 ctermbg=48
+  hi CursorColumn ctermbg=79
+  hi CursorLine cterm=NONE ctermbg=79
+  hi Debug ctermfg=81 ctermbg=87
+  hi DiffAdd ctermfg=16 ctermbg=87
+  hi DiffChange ctermfg=16 ctermbg=87
+  hi DiffDelete ctermfg=16 ctermbg=87
+  hi DiffText cterm=NONE ctermfg=16 ctermbg=87
+  hi Directory ctermbg=87
+  hi ErrorMsg ctermfg=31 ctermbg=39
+  hi FoldColumn ctermfg=50
+  hi Folded ctermfg=50 ctermbg=81
+  hi Identifier ctermfg=6 ctermbg=87
+  hi Ignore ctermfg=87 ctermbg=87
+  hi IncSearch cterm=NONE ctermfg=16 ctermbg=76
+  hi LineNr ctermfg=81 ctermbg=87
+  hi MatchParen ctermfg=79 ctermbg=19
+  hi ModeMsg cterm=NONE ctermfg=19 ctermbg=87
+  hi MoreMsg ctermfg=6 ctermbg=87
+  hi NonText ctermfg=81 ctermbg=87
+  hi Pmenu ctermfg=87 ctermbg=81
+  hi PmenuSbar ctermfg=16 ctermbg=16
+  hi PmenuThumb ctermfg=81 ctermbg=81
+  hi PreProc ctermfg=19 ctermbg=87
+  hi Question ctermfg=50 ctermbg=87
+  hi Search ctermbg=28
+  hi SignColumn ctermfg=56
+  hi Special ctermfg=24 ctermbg=87
+  hi SpecialChar ctermfg=24 ctermbg=87
+  hi SpecialComment ctermfg=6 ctermbg=87
+  hi SpecialKey ctermfg=24 ctermbg=87
+  hi SpellBad ctermfg=87 ctermbg=19
+  hi SpellCap ctermfg=87 ctermbg=48
+  hi SpellLocal ctermfg=16 ctermbg=56
+  hi SpellRare ctermfg=87 ctermbg=50
+  hi Statement ctermfg=48 ctermbg=87
+  hi StatusLine cterm=NONE ctermfg=87 ctermbg=16
+  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=81
+  hi String ctermfg=9 ctermbg=87
+  hi TabLine cterm=NONE ctermbg=81
+  hi TabLineFill cterm=NONE ctermfg=16 ctermbg=81
+  hi TabLineSel cterm=NONE ctermfg=87 ctermbg=16
+  hi Title ctermfg=16 ctermbg=87
+  hi Type ctermfg=50 ctermbg=87
+  hi Underlined ctermfg=48 ctermbg=87
+  hi VertSplit cterm=NONE ctermfg=16 ctermbg=81
+  hi Visual cterm=NONE ctermfg=87 ctermbg=16
+  hi VisualNOS cterm=NONE ctermfg=87 ctermbg=19
+  hi WarningMsg ctermbg=87
+  hi WildMenu ctermbg=87
+  hi cursorim ctermfg=79 ctermbg=24
+elseif &t_Co == 16
+  hi Normal ctermfg=0 ctermbg=11
+  hi Character ctermfg=9 ctermbg=11
+  hi Comment ctermfg=2 ctermbg=11
+  hi Constant ctermfg=6 ctermbg=11
+  hi Cursor ctermfg=15 ctermbg=9
+  hi CursorColumn ctermbg=15
+  hi CursorLine cterm=NONE ctermbg=15
+  hi Debug ctermfg=2 ctermbg=11
+  hi DiffAdd ctermfg=0 ctermbg=11
+  hi DiffChange ctermfg=0 ctermbg=11
+  hi DiffDelete ctermfg=0 ctermbg=11
+  hi DiffText cterm=NONE ctermfg=0 ctermbg=11
+  hi Directory ctermbg=11
+  hi ErrorMsg ctermfg=14 ctermbg=12
+  hi FoldColumn ctermfg=13
+  hi Folded ctermfg=13 ctermbg=2
+  hi Identifier ctermfg=6 ctermbg=11
+  hi Ignore ctermfg=11 ctermbg=11
+  hi IncSearch cterm=NONE ctermfg=0 ctermbg=11
+  hi LineNr ctermfg=2 ctermbg=11
+  hi MatchParen ctermfg=15 ctermbg=4
+  hi ModeMsg cterm=NONE ctermfg=4 ctermbg=11
+  hi MoreMsg ctermfg=6 ctermbg=11
+  hi NonText ctermfg=2 ctermbg=11
+  hi Pmenu ctermfg=11 ctermbg=2
+  hi PmenuSbar ctermfg=0 ctermbg=0
+  hi PmenuThumb ctermfg=2 ctermbg=2
+  hi PreProc ctermfg=4 ctermbg=11
+  hi Question ctermfg=13 ctermbg=11
+  hi Search ctermbg=2
+  hi SignColumn ctermfg=3
+  hi Special ctermfg=2 ctermbg=11
+  hi SpecialChar ctermfg=2 ctermbg=11
+  hi SpecialComment ctermfg=6 ctermbg=11
+  hi SpecialKey ctermfg=2 ctermbg=11
+  hi SpellBad ctermfg=11 ctermbg=4
+  hi SpellCap ctermfg=11 ctermbg=9
+  hi SpellLocal ctermfg=0 ctermbg=3
+  hi SpellRare ctermfg=11 ctermbg=13
+  hi Statement ctermfg=9 ctermbg=11
+  hi StatusLine cterm=NONE ctermfg=11 ctermbg=0
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=2
+  hi String ctermfg=9 ctermbg=11
+  hi TabLine cterm=NONE ctermbg=2
+  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=11 ctermbg=0
+  hi Title ctermfg=0 ctermbg=11
+  hi Type ctermfg=13 ctermbg=11
+  hi Underlined ctermfg=9 ctermbg=11
+  hi VertSplit cterm=NONE ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermfg=11 ctermbg=0
+  hi VisualNOS cterm=NONE ctermfg=11 ctermbg=4
+  hi WarningMsg ctermbg=11
+  hi WildMenu ctermbg=11
+  hi cursorim ctermfg=15 ctermbg=2
+else " 8 colors
+  hi Normal ctermfg=0 ctermbg=7
+  hi Character ctermfg=1 ctermbg=7
+  hi Comment ctermfg=2 ctermbg=7
+  hi Constant ctermfg=6 ctermbg=7
+  hi Cursor ctermfg=7 ctermbg=1
+  hi CursorColumn ctermbg=7
+  hi CursorLine cterm=NONE ctermbg=7
+  hi Debug ctermfg=2 ctermbg=7
+  hi DiffAdd ctermfg=0 ctermbg=7
+  hi DiffChange ctermfg=0 ctermbg=7
+  hi DiffDelete ctermfg=0 ctermbg=7
+  hi DiffText cterm=NONE ctermfg=0 ctermbg=7
+  hi Directory ctermbg=7
+  hi ErrorMsg ctermfg=6 ctermbg=5
+  hi FoldColumn ctermfg=5
+  hi Folded ctermfg=5 ctermbg=2
+  hi Identifier ctermfg=6 ctermbg=7
+  hi Ignore ctermfg=7 ctermbg=7
+  hi IncSearch cterm=NONE ctermfg=0 ctermbg=3
+  hi LineNr ctermfg=2 ctermbg=7
+  hi MatchParen ctermfg=7 ctermbg=4
+  hi ModeMsg cterm=NONE ctermfg=4 ctermbg=7
+  hi MoreMsg ctermfg=6 ctermbg=7
+  hi NonText ctermfg=2 ctermbg=7
+  hi Pmenu ctermfg=7 ctermbg=2
+  hi PmenuSbar ctermfg=0 ctermbg=0
+  hi PmenuThumb ctermfg=2 ctermbg=2
+  hi PreProc ctermfg=4 ctermbg=7
+  hi Question ctermfg=5 ctermbg=7
+  hi Search ctermbg=2
+  hi SignColumn ctermfg=3
+  hi Special ctermfg=2 ctermbg=7
+  hi SpecialChar ctermfg=2 ctermbg=7
+  hi SpecialComment ctermfg=6 ctermbg=7
+  hi SpecialKey ctermfg=2 ctermbg=7
+  hi SpellBad ctermfg=7 ctermbg=4
+  hi SpellCap ctermfg=7 ctermbg=1
+  hi SpellLocal ctermfg=0 ctermbg=3
+  hi SpellRare ctermfg=7 ctermbg=5
+  hi Statement ctermfg=1 ctermbg=7
+  hi StatusLine cterm=NONE ctermfg=7 ctermbg=0
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=2
+  hi String ctermfg=1 ctermbg=7
+  hi TabLine cterm=NONE ctermbg=2
+  hi TabLineFill cterm=NONE ctermfg=0 ctermbg=2
+  hi TabLineSel cterm=NONE ctermfg=7 ctermbg=0
+  hi Title ctermfg=0 ctermbg=7
+  hi Type ctermfg=5 ctermbg=7
+  hi Underlined ctermfg=1 ctermbg=7
+  hi VertSplit cterm=NONE ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermfg=7 ctermbg=0
+  hi VisualNOS cterm=NONE ctermfg=7 ctermbg=4
   hi WarningMsg ctermbg=7
   hi WildMenu ctermbg=7
   hi cursorim ctermfg=7 ctermbg=2

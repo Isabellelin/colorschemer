@@ -4,7 +4,7 @@
 " Name: calm
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:16
+" Date: 2012-09-29 13:31:25
 "----------------------------------------------------------
 
 set background=light
@@ -47,7 +47,7 @@ if has("gui_running")
   hi PmenuThumb gui=bold guifg=#e0e5ee guibg=#c0c5dd
   hi PreCondit guifg=#646400
   hi PreProc guifg=#008080
-  hi Search guibg=#fcfcaa
+  hi Search guifg=NONE guibg=#fcfcaa
   hi Special gui=italic guifg=#a05050
   hi Statement gui=NONE guifg=darkviolet
   hi StatusLine gui=NONE guifg=#ffffff guibg=#404040
@@ -82,12 +82,14 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=188
   hi PmenuThumb ctermfg=254
   hi PreCondit ctermfg=58
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=231 ctermbg=238
   hi StatusLineNC ctermfg=255 ctermbg=241
   hi String ctermfg=88
   hi Structure ctermfg=18
   hi Title ctermbg=255
   hi VertSplit ctermfg=255 ctermbg=241
+  hi Visual cterm=NONE ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Character ctermfg=32
@@ -111,12 +113,14 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=86
   hi PmenuThumb ctermfg=87
   hi PreCondit ctermfg=36
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=79 ctermbg=8
   hi StatusLineNC ctermfg=87 ctermbg=81
   hi String ctermfg=32
   hi Structure ctermfg=17
   hi Title ctermbg=87
   hi VertSplit ctermfg=87 ctermbg=81
+  hi Visual cterm=NONE ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Character ctermfg=1
@@ -140,12 +144,14 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=12
   hi PmenuThumb ctermfg=14
   hi PreCondit ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=15 ctermbg=2
   hi StatusLineNC ctermfg=15 ctermbg=3
   hi String ctermfg=1
   hi Structure ctermfg=4
   hi Title ctermbg=11
   hi VertSplit ctermfg=15 ctermbg=3
+  hi Visual cterm=NONE ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Character ctermfg=1
@@ -169,14 +175,15 @@ else " 8 colors
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=7
   hi PreCondit ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=2
   hi StatusLineNC ctermfg=7 ctermbg=3
   hi String ctermfg=1
   hi Structure ctermfg=4
   hi Title ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=3
+  hi Visual cterm=NONE ctermbg=7
 endif
 
-hi! link Function Normal
 hi! link Repeat Conditional
 

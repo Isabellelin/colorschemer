@@ -4,7 +4,7 @@
 " Name: DimGrey
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:21
+" Date: 2012-09-29 13:30:17
 "----------------------------------------------------------
 
 set background=dark
@@ -46,7 +46,7 @@ elseif &t_Co == 256
   hi CursorLine ctermbg=236
   hi IncSearch ctermfg=226 ctermbg=110
   hi NonText ctermbg=234
-  hi Visual ctermfg=240
+  hi Visual cterm=NONE ctermfg=240 ctermbg=8
   hi WarningMsg ctermbg=231
 elseif &t_Co == 88
   hi Normal ctermfg=85 ctermbg=80
@@ -55,7 +55,7 @@ elseif &t_Co == 88
   hi CursorLine ctermbg=80
   hi IncSearch ctermfg=76 ctermbg=42
   hi NonText ctermbg=80
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
   hi WarningMsg ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
@@ -64,7 +64,7 @@ elseif &t_Co == 16
   hi CursorLine ctermbg=2
   hi IncSearch ctermfg=11 ctermbg=7
   hi NonText ctermbg=0
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=15
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -73,7 +73,7 @@ else " 8 colors
   hi CursorLine ctermbg=2
   hi IncSearch ctermfg=3 ctermbg=7
   hi NonText ctermbg=0
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=7
 endif
 

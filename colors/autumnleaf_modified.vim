@@ -4,7 +4,7 @@
 " Name: autumnleaf_modified
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:41
+" Date: 2012-09-29 13:30:39
 "----------------------------------------------------------
 
 set background=light
@@ -68,7 +68,6 @@ elseif &t_Co == 256
   hi Constant ctermfg=9 ctermbg=15
   hi Cursor ctermfg=14 ctermbg=6
   hi Directory ctermfg=2 ctermbg=15
-  hi Error ctermbg=12
   hi ErrorMsg ctermfg=12 ctermbg=15
   hi Exception cterm=bold ctermfg=2 ctermbg=15
   hi Float cterm=bold ctermfg=9 ctermbg=15
@@ -84,7 +83,7 @@ elseif &t_Co == 256
   hi Operator cterm=bold ctermfg=6 ctermbg=15
   hi PreProc ctermfg=6 ctermbg=15
   hi Repeat cterm=bold ctermfg=6 ctermbg=15
-  hi Search ctermfg=0 ctermbg=9
+  hi Search ctermbg=9
   hi Special cterm=bold ctermfg=0 ctermbg=15
   hi SpecialChar ctermfg=fg ctermbg=bg
   hi SpecialComment ctermfg=4 ctermbg=7
@@ -101,7 +100,7 @@ elseif &t_Co == 256
   hi Typedef cterm=italic ctermfg=2 ctermbg=15
   hi Underlined ctermfg=9 ctermbg=15
   hi VertSplit ctermfg=14 ctermbg=6
-  hi Visual ctermfg=0 ctermbg=14
+  hi Visual cterm=NONE ctermfg=0 ctermbg=14
   hi WarningMsg ctermfg=12 ctermbg=15
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
@@ -112,7 +111,6 @@ elseif &t_Co == 88
   hi Constant ctermfg=9 ctermbg=79
   hi Cursor ctermfg=31 ctermbg=6
   hi Directory ctermfg=24 ctermbg=79
-  hi Error ctermbg=39
   hi ErrorMsg ctermfg=39 ctermbg=79
   hi Exception cterm=bold ctermfg=24 ctermbg=79
   hi Float cterm=bold ctermfg=9 ctermbg=79
@@ -128,7 +126,7 @@ elseif &t_Co == 88
   hi Operator cterm=bold ctermfg=6 ctermbg=79
   hi PreProc ctermfg=6 ctermbg=79
   hi Repeat cterm=bold ctermfg=6 ctermbg=79
-  hi Search ctermfg=16 ctermbg=9
+  hi Search ctermbg=9
   hi Special cterm=bold ctermfg=16 ctermbg=79
   hi SpecialChar ctermfg=fg ctermbg=bg
   hi SpecialComment ctermfg=19 ctermbg=87
@@ -145,7 +143,7 @@ elseif &t_Co == 88
   hi Typedef cterm=italic ctermfg=24 ctermbg=79
   hi Underlined ctermfg=9 ctermbg=79
   hi VertSplit ctermfg=31 ctermbg=6
-  hi Visual ctermfg=16 ctermbg=31
+  hi Visual cterm=NONE ctermfg=16 ctermbg=31
   hi WarningMsg ctermfg=39 ctermbg=79
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
@@ -156,7 +154,6 @@ elseif &t_Co == 16
   hi Constant ctermfg=9 ctermbg=15
   hi Cursor ctermfg=14 ctermbg=6
   hi Directory ctermfg=2 ctermbg=15
-  hi Error ctermbg=12
   hi ErrorMsg ctermfg=12 ctermbg=15
   hi Exception cterm=bold ctermfg=2 ctermbg=15
   hi Float cterm=bold ctermfg=9 ctermbg=15
@@ -172,7 +169,7 @@ elseif &t_Co == 16
   hi Operator cterm=bold ctermfg=6 ctermbg=15
   hi PreProc ctermfg=6 ctermbg=15
   hi Repeat cterm=bold ctermfg=6 ctermbg=15
-  hi Search ctermfg=0 ctermbg=9
+  hi Search ctermbg=9
   hi Special cterm=bold ctermfg=0 ctermbg=15
   hi SpecialChar ctermfg=fg ctermbg=bg
   hi SpecialComment ctermfg=4 ctermbg=11
@@ -189,7 +186,7 @@ elseif &t_Co == 16
   hi Typedef cterm=italic ctermfg=2 ctermbg=15
   hi Underlined ctermfg=9 ctermbg=15
   hi VertSplit ctermfg=14 ctermbg=6
-  hi Visual ctermfg=0 ctermbg=14
+  hi Visual cterm=NONE ctermfg=0 ctermbg=14
   hi WarningMsg ctermfg=12 ctermbg=15
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
@@ -200,7 +197,6 @@ else " 8 colors
   hi Constant ctermfg=1 ctermbg=7
   hi Cursor ctermfg=6 ctermbg=6
   hi Directory ctermfg=2 ctermbg=7
-  hi Error ctermbg=5
   hi ErrorMsg ctermfg=5 ctermbg=7
   hi Exception cterm=bold ctermfg=2 ctermbg=7
   hi Float cterm=bold ctermfg=1 ctermbg=7
@@ -216,7 +212,7 @@ else " 8 colors
   hi Operator cterm=bold ctermfg=6 ctermbg=7
   hi PreProc ctermfg=6 ctermbg=7
   hi Repeat cterm=bold ctermfg=6 ctermbg=7
-  hi Search ctermfg=0 ctermbg=1
+  hi Search ctermbg=1
   hi Special cterm=bold ctermfg=0 ctermbg=7
   hi SpecialChar ctermfg=fg ctermbg=bg
   hi SpecialComment ctermfg=4 ctermbg=7
@@ -233,7 +229,7 @@ else " 8 colors
   hi Typedef cterm=italic ctermfg=2 ctermbg=7
   hi Underlined ctermfg=1 ctermbg=7
   hi VertSplit ctermfg=6 ctermbg=6
-  hi Visual ctermfg=0 ctermbg=6
+  hi Visual cterm=NONE ctermfg=0 ctermbg=6
   hi WarningMsg ctermfg=5 ctermbg=7
 endif
 

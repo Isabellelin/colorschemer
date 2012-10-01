@@ -4,7 +4,7 @@
 " Name: golded
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:50
+" Date: 2012-09-29 13:35:20
 "----------------------------------------------------------
 
 set background=light
@@ -129,7 +129,7 @@ elseif &t_Co == 256
   hi PreProc ctermbg=246
   hi Question ctermbg=246
   hi Repeat ctermfg=215
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=246
   hi SpecialChar ctermfg=231 ctermbg=96
   hi SpecialComment ctermfg=219 ctermbg=246
@@ -141,7 +141,7 @@ elseif &t_Co == 256
   hi Structure ctermfg=26
   hi Tag ctermfg=231 ctermbg=66
   hi Typedef ctermfg=90
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=7
   hi WarningMsg ctermbg=202
   hi col_darkgray ctermfg=241
   hi col_grey ctermfg=252
@@ -193,7 +193,7 @@ elseif &t_Co == 88
   hi PreProc ctermbg=83
   hi Question ctermbg=83
   hi Repeat ctermfg=72
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=84
   hi SpecialChar ctermfg=79 ctermbg=83
   hi SpecialComment ctermfg=75 ctermbg=83
@@ -205,7 +205,7 @@ elseif &t_Co == 88
   hi Structure ctermfg=4
   hi Tag ctermfg=79 ctermbg=83
   hi Typedef ctermfg=33
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
   hi WarningMsg ctermbg=68
   hi col_darkgray ctermfg=81
   hi col_grey ctermfg=58
@@ -257,7 +257,7 @@ elseif &t_Co == 16
   hi PreProc ctermbg=8
   hi Question ctermbg=8
   hi Repeat ctermfg=7
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=8
   hi SpecialChar ctermfg=15 ctermbg=8
   hi SpecialComment ctermfg=15 ctermbg=8
@@ -269,7 +269,7 @@ elseif &t_Co == 16
   hi Structure ctermfg=4
   hi Tag ctermfg=15 ctermbg=8
   hi Typedef ctermfg=5
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
   hi WarningMsg ctermbg=9
   hi col_darkgray ctermfg=3
   hi col_grey ctermfg=7
@@ -321,7 +321,7 @@ else " 8 colors
   hi PreProc ctermbg=7
   hi Question ctermbg=7
   hi Repeat ctermfg=7
-  hi Search ctermfg=fg
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi SpecialChar ctermfg=7 ctermbg=5
   hi SpecialComment ctermfg=7 ctermbg=7
@@ -333,7 +333,7 @@ else " 8 colors
   hi Structure ctermfg=4
   hi Tag ctermfg=7 ctermbg=6
   hi Typedef ctermfg=5
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
   hi WarningMsg ctermbg=3
   hi col_darkgray ctermfg=3
   hi col_grey ctermfg=7

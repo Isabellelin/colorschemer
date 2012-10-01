@@ -4,7 +4,7 @@
 " Name: github
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:47
+" Date: 2012-09-29 13:35:16
 "----------------------------------------------------------
 
 set background=light
@@ -66,7 +66,7 @@ if has("gui_running")
   hi Underlined guifg=#000000
   hi VertSplit gui=NONE guifg=#bbbbbb guibg=#bbbbbb
   hi Visual guifg=#FFFFFF guibg=#3465a4
-  hi VisualNOS guifg=#FFFFFF guibg=#204a87
+  hi VisualNOS gui=NONE guifg=#FFFFFF guibg=#204a87
   hi WarningMsg guifg=#ef5939
   hi WildMenu guifg=#7fbdff guibg=#425c78
   hi rubySymbol guifg=#960B73
@@ -88,7 +88,7 @@ elseif &t_Co == 256
   hi Number ctermfg=30
   hi PmenuSbar ctermfg=238
   hi PmenuThumb ctermfg=248
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=238 ctermbg=250
   hi StatusLineNC ctermfg=238 ctermbg=188
   hi StorageClass ctermfg=16
@@ -98,7 +98,7 @@ elseif &t_Co == 256
   hi TabLineSel ctermfg=238
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=250 ctermbg=250
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi VisualNOS ctermfg=231 ctermbg=24
   hi rubySymbol ctermfg=89
   hi vimFold ctermfg=244 ctermbg=255
@@ -119,7 +119,7 @@ elseif &t_Co == 88
   hi Number ctermfg=21
   hi PmenuSbar ctermfg=80
   hi PmenuThumb ctermfg=84
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=8 ctermbg=85
   hi StatusLineNC ctermfg=8 ctermbg=86
   hi StorageClass ctermfg=16
@@ -129,7 +129,7 @@ elseif &t_Co == 88
   hi TabLineSel ctermfg=8
   hi Typedef ctermfg=16
   hi VertSplit ctermfg=85 ctermbg=85
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi VisualNOS ctermfg=79 ctermbg=21
   hi rubySymbol ctermfg=33
   hi vimFold ctermfg=83 ctermbg=87
@@ -150,7 +150,7 @@ elseif &t_Co == 16
   hi Number ctermfg=6
   hi PmenuSbar ctermfg=2
   hi PmenuThumb ctermfg=8
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=2 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=12
   hi StorageClass ctermfg=0
@@ -160,7 +160,7 @@ elseif &t_Co == 16
   hi TabLineSel ctermfg=2
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi VisualNOS ctermfg=15 ctermbg=6
   hi rubySymbol ctermfg=5
   hi vimFold ctermfg=8 ctermbg=11
@@ -181,7 +181,7 @@ else " 8 colors
   hi Number ctermfg=6
   hi PmenuSbar ctermfg=2
   hi PmenuThumb ctermfg=7
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=2 ctermbg=7
   hi StatusLineNC ctermfg=2 ctermbg=7
   hi StorageClass ctermfg=0
@@ -191,14 +191,13 @@ else " 8 colors
   hi TabLineSel ctermfg=2
   hi Typedef ctermfg=0
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi VisualNOS ctermfg=7 ctermbg=6
   hi rubySymbol ctermfg=5
   hi vimFold ctermfg=3 ctermbg=7
 endif
 
 hi! link Character Number
-hi! link VisualNOS Visual
 hi! link cppSTL Function
 hi! link cppSTLType Type
 hi! link cursorim Cursor

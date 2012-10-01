@@ -4,7 +4,7 @@
 " Name: aldmeris
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:31
+" Date: 2012-09-29 13:30:27
 "----------------------------------------------------------
 
 set background=dark
@@ -16,279 +16,226 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
-  hi Normal guifg=#d0d0d0 guibg=#303030
-  hi Boolean guifg=#d75f00 guibg=#303030
-  hi Comment guibg=#303030
-  hi Constant guibg=#303030
-  hi Cursor guifg=#000000 guibg=#d0d0d0
-  hi DiffAdd guifg=#5f8700
-  hi DiffChange guifg=#ffaf5f
-  hi DiffText guifg=#5fafd7
-  hi Directory guibg=#303030
-  hi Identifier guibg=#303030
-  hi LineNr guibg=#000000
-  hi MatchParen guifg=#ffffff
-  hi MoreMsg guibg=#303030
-  hi NonText guibg=#303030
-  hi Pmenu guifg=#bcbcbc
-  hi PmenuSbar guifg=#585858
-  hi PmenuSel guifg=#ffffff
-  hi PmenuThumb guifg=#878787
-  hi PreProc guibg=#303030
-  hi Question guibg=#303030
-  hi Special guibg=#303030
-  hi SpecialChar guifg=#d75f00 guibg=#303030
-  hi SpecialKey guibg=#303030
-  hi SpellBad guibg=#d70000
-  hi SpellCap guibg=#5f5faf
-  hi SpellLocal guibg=#ff8700
-  hi SpellRare guibg=#875f87
-  hi Statement guibg=#303030
-  hi StatusLine guifg=#bcbcbc guibg=#303030
-  hi StatusLineNC guifg=#303030 guibg=#878787
-  hi Title guibg=#303030
-  hi Type guibg=#303030
-  hi Underlined guibg=#303030
-  hi VertSplit guifg=#303030 guibg=#878787
-  hi Visual guifg=#ffffff
-  hi WarningMsg guibg=#303030
-  hi diffAdded guifg=#87d75f
-  hi diffRemoved guifg=#ff0000
-  hi gitcommitDiscardedFile guifg=#ff0000
-  hi gitcommitDiscardedType guifg=#ff0000
-  hi gitcommitSelectedFile guifg=#87d75f
-  hi gitcommitSelectedType guifg=#87d75f
-  hi gitcommitUnmergedFile guifg=#ffd75f
-  hi gitcommitUnmergedType guifg=#ffd75f
-  hi gitcommitUntrackedFile guifg=#af87af
+  hi Normal guifg=#d3d7cf guibg=#2e3436
+  hi Boolean guifg=#ce5c00 guibg=#2e3436
+  hi Comment gui=italic guifg=#888a85 guibg=#2e3436
+  hi Constant guifg=#edd400 guibg=#2e3436
+  hi Cursor guifg=#000000 guibg=#d3d7cf
+  hi CursorColumn guibg=#555753
+  hi CursorLine guibg=#555753
+  hi DiffAdd gui=bold guifg=#4e9a06 guibg=#555753
+  hi DiffChange gui=bold guifg=#fcaf3e guibg=#555753
+  hi DiffDelete guifg=#cc0000 guibg=#555753
+  hi DiffText guifg=#729fcf guibg=#555753
+  hi Directory guifg=#729fcf guibg=#2e3436
+  hi Error gui=bold guifg=#eeeeec guibg=#cc0000
+  hi ErrorMsg guifg=#eeeeec guibg=#cc0000
+  hi FoldColumn guifg=#555753 guibg=#babdb6
+  hi Folded gui=bold,underline guifg=#babdb6 guibg=#2e3436
+  hi Identifier guifg=#729fcf guibg=#2e3436
+  hi LineNr guifg=#555753 guibg=#000000
+  hi MatchParen guifg=#eeeeec guibg=#ad7fa8
+  hi MoreMsg guifg=#8ae234 guibg=#2e3436
+  hi NonText guifg=#555753 guibg=#2e3436
+  hi Pmenu guifg=#babdb6 guibg=#000000
+  hi PmenuSbar guifg=#555753 guibg=#555753
+  hi PmenuSel guifg=#eeeeec guibg=#555753
+  hi PmenuThumb guifg=#888a85 guibg=#888a85
+  hi PreProc guifg=#ad7fa8 guibg=#2e3436
+  hi Question guifg=#8ae234 guibg=#2e3436
+  hi Search guifg=#eeeeec guibg=#4e9a06
+  hi SignColumn guifg=#555753 guibg=#babdb6
+  hi Special guifg=#fcaf3e guibg=#2e3436
+  hi SpecialChar guifg=#ce5c00 guibg=#2e3436
+  hi SpecialKey guifg=#555753 guibg=#2e3436
+  hi SpellBad guibg=#2e3436
+  hi SpellCap guibg=#2e3436
+  hi SpellLocal guibg=#2e3436
+  hi SpellRare guibg=#2e3436
+  hi Statement guifg=#eeeeec guibg=#2e3436
+  hi StatusLine guifg=#babdb6 guibg=#2e3436
+  hi StatusLineNC gui=NONE guifg=#2e3436 guibg=#888a85
+  hi Title guifg=#fce94f guibg=#2e3436
+  hi Todo gui=bold guifg=#888a85 guibg=#fce94f
+  hi Type guifg=#8ae234 guibg=#2e3436
+  hi Underlined guifg=#729fcf guibg=#2e3436
+  hi VertSplit gui=bold guifg=#2e3436 guibg=#888a85
+  hi Visual guifg=#eeeeec guibg=#888a85
+  hi WarningMsg guifg=#ef2929 guibg=#2e3436
+  hi WildMenu guifg=#2e3436 guibg=#edd400
+  hi diffAdded guifg=#8ae234
+  hi diffRemoved guifg=#ef2929
+  hi gitcommitDiscardedFile gui=bold guifg=#ef2929
+  hi gitcommitDiscardedType guifg=#ef2929
+  hi gitcommitSelectedFile gui=bold guifg=#8ae234
+  hi gitcommitSelectedType guifg=#8ae234
+  hi gitcommitUnmergedFile gui=bold guifg=#fce94f
+  hi gitcommitUnmergedType guifg=#fce94f
+  hi gitcommitUntrackedFile gui=bold guifg=#ad7fa8
 elseif &t_Co == 256
   hi Normal ctermfg=252 ctermbg=236
   hi Boolean ctermfg=166 ctermbg=236
-  hi Comment ctermfg=102 ctermbg=236
-  hi Constant ctermfg=220 ctermbg=236
+  hi Comment ctermbg=236
+  hi Constant ctermbg=236
   hi Cursor ctermfg=16 ctermbg=252
-  hi CursorColumn ctermbg=240
-  hi CursorLine cterm=NONE ctermbg=240
-  hi DiffAdd cterm=bold ctermfg=64 ctermbg=240
-  hi DiffChange cterm=bold ctermfg=215 ctermbg=240
-  hi DiffDelete cterm=bold ctermfg=160 ctermbg=240
-  hi DiffText ctermfg=74 ctermbg=240
-  hi Directory ctermfg=74 ctermbg=236
-  hi Error cterm=bold ctermfg=231 ctermbg=160
-  hi ErrorMsg ctermfg=231 ctermbg=160
-  hi FoldColumn ctermfg=240 ctermbg=250
-  hi Folded cterm=bold,underline ctermfg=250 ctermbg=236
-  hi Identifier cterm=NONE ctermfg=74 ctermbg=236
-  hi LineNr ctermfg=240 ctermbg=16
-  hi MatchParen ctermfg=231 ctermbg=139
-  hi MoreMsg cterm=bold ctermfg=113 ctermbg=236
-  hi NonText ctermfg=240 ctermbg=236
-  hi Pmenu ctermfg=250 ctermbg=16
-  hi PmenuSbar ctermfg=240 ctermbg=240
-  hi PmenuSel ctermfg=231 ctermbg=240
-  hi PmenuThumb ctermfg=102 ctermbg=102
-  hi PreProc ctermfg=139 ctermbg=236
-  hi Question cterm=bold ctermfg=113 ctermbg=236
-  hi Search ctermfg=231 ctermbg=64
-  hi SignColumn ctermfg=240 ctermbg=250
-  hi Special ctermfg=215 ctermbg=236
+  hi CursorLine ctermbg=240
+  hi DiffAdd ctermfg=64
+  hi DiffChange ctermfg=215
+  hi DiffText ctermfg=74
+  hi Directory ctermbg=236
+  hi Identifier ctermbg=236
+  hi LineNr ctermbg=16
+  hi MatchParen ctermfg=255
+  hi MoreMsg ctermbg=236
+  hi NonText ctermbg=236
+  hi PmenuSbar ctermfg=240
+  hi PmenuThumb ctermfg=102
+  hi PreProc ctermbg=236
+  hi Question ctermbg=236
+  hi Special ctermbg=236
   hi SpecialChar ctermfg=166 ctermbg=236
-  hi SpecialKey ctermfg=240 ctermbg=236
-  hi SpellBad cterm=undercurl ctermbg=160
-  hi SpellCap cterm=undercurl ctermbg=61
-  hi SpellLocal cterm=undercurl ctermbg=208
-  hi SpellRare cterm=undercurl ctermbg=96
-  hi Statement cterm=bold ctermfg=231 ctermbg=236
+  hi SpecialKey ctermbg=236
+  hi Statement ctermbg=236
   hi StatusLine ctermfg=250 ctermbg=236
-  hi StatusLineNC cterm=NONE ctermfg=236 ctermbg=102
-  hi Title cterm=bold ctermfg=221 ctermbg=236
-  hi Todo cterm=bold ctermfg=102 ctermbg=221
-  hi Type cterm=bold ctermfg=113 ctermbg=236
-  hi Underlined ctermfg=74 ctermbg=236
-  hi VertSplit cterm=bold ctermfg=236 ctermbg=102
-  hi Visual ctermfg=231 ctermbg=102
-  hi WarningMsg ctermfg=196 ctermbg=236
-  hi WildMenu ctermfg=236 ctermbg=220
+  hi StatusLineNC ctermfg=236 ctermbg=102
+  hi Title ctermbg=236
+  hi Type ctermbg=236
+  hi Underlined ctermbg=236
+  hi VertSplit ctermfg=236 ctermbg=102
+  hi Visual cterm=NONE ctermfg=255 ctermbg=8
+  hi WarningMsg ctermbg=236
   hi diffAdded ctermfg=113
-  hi diffRemoved ctermfg=196
-  hi gitcommitDiscardedFile cterm=bold ctermfg=196
-  hi gitcommitDiscardedType ctermfg=196
-  hi gitcommitSelectedFile cterm=bold ctermfg=113
+  hi diffRemoved ctermfg=9
+  hi gitcommitDiscardedFile ctermfg=9
+  hi gitcommitDiscardedType ctermfg=9
+  hi gitcommitSelectedFile ctermfg=113
   hi gitcommitSelectedType ctermfg=113
-  hi gitcommitUnmergedFile cterm=bold ctermfg=221
+  hi gitcommitUnmergedFile ctermfg=221
   hi gitcommitUnmergedType ctermfg=221
-  hi gitcommitUntrackedFile cterm=bold ctermfg=139
+  hi gitcommitUntrackedFile ctermfg=139
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=80
   hi Boolean ctermfg=52 ctermbg=80
-  hi Comment ctermfg=83 ctermbg=80
-  hi Constant ctermfg=72 ctermbg=80
+  hi Comment ctermbg=80
+  hi Constant ctermbg=80
   hi Cursor ctermfg=16 ctermbg=86
-  hi CursorColumn ctermbg=81
-  hi CursorLine cterm=NONE ctermbg=81
-  hi DiffAdd cterm=bold ctermfg=36 ctermbg=81
-  hi DiffChange cterm=bold ctermfg=73 ctermbg=81
-  hi DiffDelete cterm=bold ctermfg=48 ctermbg=81
-  hi DiffText ctermfg=42 ctermbg=81
-  hi Directory ctermfg=42 ctermbg=80
-  hi Error cterm=bold ctermfg=79 ctermbg=48
-  hi ErrorMsg ctermfg=79 ctermbg=48
-  hi FoldColumn ctermfg=81 ctermbg=85
-  hi Folded cterm=bold,underline ctermfg=85 ctermbg=80
-  hi Identifier cterm=NONE ctermfg=42 ctermbg=80
-  hi LineNr ctermfg=81 ctermbg=16
-  hi MatchParen ctermfg=79 ctermbg=84
-  hi MoreMsg cterm=bold ctermfg=41 ctermbg=80
-  hi NonText ctermfg=81 ctermbg=80
-  hi Pmenu ctermfg=85 ctermbg=16
-  hi PmenuSbar ctermfg=81 ctermbg=81
-  hi PmenuSel ctermfg=79 ctermbg=81
-  hi PmenuThumb ctermfg=83 ctermbg=83
-  hi PreProc ctermfg=84 ctermbg=80
-  hi Question cterm=bold ctermfg=41 ctermbg=80
-  hi Search ctermfg=79 ctermbg=36
-  hi SignColumn ctermfg=81 ctermbg=85
-  hi Special ctermfg=73 ctermbg=80
+  hi CursorLine ctermbg=81
+  hi DiffAdd ctermfg=36
+  hi DiffChange ctermfg=72
+  hi DiffText ctermfg=38
+  hi Directory ctermbg=80
+  hi Identifier ctermbg=80
+  hi LineNr ctermbg=16
+  hi MatchParen ctermfg=87
+  hi MoreMsg ctermbg=80
+  hi NonText ctermbg=80
+  hi PmenuSbar ctermfg=81
+  hi PmenuThumb ctermfg=83
+  hi PreProc ctermbg=80
+  hi Question ctermbg=80
+  hi Special ctermbg=80
   hi SpecialChar ctermfg=52 ctermbg=80
-  hi SpecialKey ctermfg=81 ctermbg=80
-  hi SpellBad cterm=undercurl ctermbg=48
-  hi SpellCap cterm=undercurl ctermbg=81
-  hi SpellLocal cterm=undercurl ctermbg=68
-  hi SpellRare cterm=undercurl ctermbg=83
-  hi Statement cterm=bold ctermfg=79 ctermbg=80
+  hi SpecialKey ctermbg=80
+  hi Statement ctermbg=80
   hi StatusLine ctermfg=85 ctermbg=80
-  hi StatusLineNC cterm=NONE ctermfg=80 ctermbg=83
-  hi Title cterm=bold ctermfg=73 ctermbg=80
-  hi Todo cterm=bold ctermfg=83 ctermbg=73
-  hi Type cterm=bold ctermfg=41 ctermbg=80
-  hi Underlined ctermfg=42 ctermbg=80
-  hi VertSplit cterm=bold ctermfg=80 ctermbg=83
-  hi Visual ctermfg=79 ctermbg=83
-  hi WarningMsg ctermfg=9 ctermbg=80
-  hi WildMenu ctermfg=80 ctermbg=72
-  hi diffAdded ctermfg=41
+  hi StatusLineNC ctermfg=80 ctermbg=83
+  hi Title ctermbg=80
+  hi Type ctermbg=80
+  hi Underlined ctermbg=80
+  hi VertSplit ctermfg=80 ctermbg=83
+  hi Visual cterm=NONE ctermfg=87 ctermbg=81
+  hi WarningMsg ctermbg=80
+  hi diffAdded ctermfg=40
   hi diffRemoved ctermfg=9
-  hi gitcommitDiscardedFile cterm=bold ctermfg=9
+  hi gitcommitDiscardedFile ctermfg=9
   hi gitcommitDiscardedType ctermfg=9
-  hi gitcommitSelectedFile cterm=bold ctermfg=41
-  hi gitcommitSelectedType ctermfg=41
-  hi gitcommitUnmergedFile cterm=bold ctermfg=73
-  hi gitcommitUnmergedType ctermfg=73
-  hi gitcommitUntrackedFile cterm=bold ctermfg=84
+  hi gitcommitSelectedFile ctermfg=40
+  hi gitcommitSelectedType ctermfg=40
+  hi gitcommitUnmergedFile ctermfg=77
+  hi gitcommitUnmergedType ctermfg=77
+  hi gitcommitUntrackedFile ctermfg=84
 elseif &t_Co == 16
-  hi Normal ctermfg=7 ctermbg=0
-  hi Boolean ctermfg=3 ctermbg=0
-  hi Comment ctermfg=8 ctermbg=0
-  hi Constant ctermfg=3 ctermbg=0
-  hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=2
-  hi CursorLine cterm=NONE ctermbg=2
-  hi DiffAdd cterm=bold ctermfg=3 ctermbg=2
-  hi DiffChange cterm=bold ctermfg=8 ctermbg=2
-  hi DiffDelete cterm=bold ctermfg=9 ctermbg=2
-  hi DiffText ctermfg=8 ctermbg=2
-  hi Directory ctermfg=8 ctermbg=0
-  hi Error cterm=bold ctermfg=15 ctermbg=9
-  hi ErrorMsg ctermfg=15 ctermbg=9
-  hi FoldColumn ctermfg=2 ctermbg=7
-  hi Folded cterm=bold,underline ctermfg=7 ctermbg=0
-  hi Identifier cterm=NONE ctermfg=8 ctermbg=0
-  hi LineNr ctermfg=2 ctermbg=0
-  hi MatchParen ctermfg=15 ctermbg=8
-  hi MoreMsg cterm=bold ctermfg=10 ctermbg=0
-  hi NonText ctermfg=2 ctermbg=0
-  hi Pmenu ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermfg=2 ctermbg=2
-  hi PmenuSel ctermfg=15 ctermbg=2
-  hi PmenuThumb ctermfg=8 ctermbg=8
-  hi PreProc ctermfg=8 ctermbg=0
-  hi Question cterm=bold ctermfg=10 ctermbg=0
-  hi Search ctermfg=15 ctermbg=3
-  hi SignColumn ctermfg=2 ctermbg=7
-  hi Special ctermfg=8 ctermbg=0
-  hi SpecialChar ctermfg=3 ctermbg=0
-  hi SpecialKey ctermfg=2 ctermbg=0
-  hi SpellBad cterm=undercurl ctermbg=9
-  hi SpellCap cterm=undercurl ctermbg=8
-  hi SpellLocal cterm=undercurl ctermbg=3
-  hi SpellRare cterm=undercurl ctermbg=5
-  hi Statement cterm=bold ctermfg=15 ctermbg=0
-  hi StatusLine ctermfg=7 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=8
-  hi Title cterm=bold ctermfg=11 ctermbg=0
-  hi Todo cterm=bold ctermfg=8 ctermbg=11
-  hi Type cterm=bold ctermfg=10 ctermbg=0
-  hi Underlined ctermfg=8 ctermbg=0
-  hi VertSplit cterm=bold ctermfg=0 ctermbg=8
-  hi Visual ctermfg=15 ctermbg=8
-  hi WarningMsg ctermfg=9 ctermbg=0
-  hi WildMenu ctermfg=0 ctermbg=3
+  hi Normal ctermfg=12 ctermbg=2
+  hi Boolean ctermfg=3 ctermbg=2
+  hi Comment ctermbg=2
+  hi Constant ctermbg=2
+  hi Cursor ctermfg=0 ctermbg=12
+  hi CursorLine ctermbg=2
+  hi DiffAdd ctermfg=3
+  hi DiffChange ctermfg=8
+  hi DiffText ctermfg=8
+  hi Directory ctermbg=2
+  hi Identifier ctermbg=2
+  hi LineNr ctermbg=0
+  hi MatchParen ctermfg=11
+  hi MoreMsg ctermbg=2
+  hi NonText ctermbg=2
+  hi PmenuSbar ctermfg=2
+  hi PmenuThumb ctermfg=8
+  hi PreProc ctermbg=2
+  hi Question ctermbg=2
+  hi Special ctermbg=2
+  hi SpecialChar ctermfg=3 ctermbg=2
+  hi SpecialKey ctermbg=2
+  hi Statement ctermbg=2
+  hi StatusLine ctermfg=7 ctermbg=2
+  hi StatusLineNC ctermfg=2 ctermbg=8
+  hi Title ctermbg=2
+  hi Type ctermbg=2
+  hi Underlined ctermbg=2
+  hi VertSplit ctermfg=2 ctermbg=8
+  hi Visual cterm=NONE ctermfg=11 ctermbg=2
+  hi WarningMsg ctermbg=2
   hi diffAdded ctermfg=10
   hi diffRemoved ctermfg=9
-  hi gitcommitDiscardedFile cterm=bold ctermfg=9
+  hi gitcommitDiscardedFile ctermfg=9
   hi gitcommitDiscardedType ctermfg=9
-  hi gitcommitSelectedFile cterm=bold ctermfg=10
+  hi gitcommitSelectedFile ctermfg=10
   hi gitcommitSelectedType ctermfg=10
-  hi gitcommitUnmergedFile cterm=bold ctermfg=11
+  hi gitcommitUnmergedFile ctermfg=11
   hi gitcommitUnmergedType ctermfg=11
-  hi gitcommitUntrackedFile cterm=bold ctermfg=8
+  hi gitcommitUntrackedFile ctermfg=8
 else " 8 colors
-  hi Normal ctermfg=7 ctermbg=0
-  hi Boolean ctermfg=3 ctermbg=0
-  hi Comment ctermfg=3 ctermbg=0
-  hi Constant ctermfg=3 ctermbg=0
+  hi Normal ctermfg=7 ctermbg=2
+  hi Boolean ctermfg=3 ctermbg=2
+  hi Comment ctermbg=2
+  hi Constant ctermbg=2
   hi Cursor ctermfg=0 ctermbg=7
-  hi CursorColumn ctermbg=2
-  hi CursorLine cterm=NONE ctermbg=2
-  hi DiffAdd cterm=bold ctermfg=3 ctermbg=2
-  hi DiffChange cterm=bold ctermfg=7 ctermbg=2
-  hi DiffDelete cterm=bold ctermfg=1 ctermbg=2
-  hi DiffText ctermfg=7 ctermbg=2
-  hi Directory ctermfg=7 ctermbg=0
-  hi Error cterm=bold ctermfg=7 ctermbg=1
-  hi ErrorMsg ctermfg=7 ctermbg=1
-  hi FoldColumn ctermfg=2 ctermbg=7
-  hi Folded cterm=bold,underline ctermfg=7 ctermbg=0
-  hi Identifier cterm=NONE ctermfg=7 ctermbg=0
-  hi LineNr ctermfg=2 ctermbg=0
-  hi MatchParen ctermfg=7 ctermbg=7
-  hi MoreMsg cterm=bold ctermfg=3 ctermbg=0
-  hi NonText ctermfg=2 ctermbg=0
-  hi Pmenu ctermfg=7 ctermbg=0
-  hi PmenuSbar ctermfg=2 ctermbg=2
-  hi PmenuSel ctermfg=7 ctermbg=2
-  hi PmenuThumb ctermfg=3 ctermbg=3
-  hi PreProc ctermfg=7 ctermbg=0
-  hi Question cterm=bold ctermfg=3 ctermbg=0
-  hi Search ctermfg=7 ctermbg=3
-  hi SignColumn ctermfg=2 ctermbg=7
-  hi Special ctermfg=7 ctermbg=0
-  hi SpecialChar ctermfg=3 ctermbg=0
-  hi SpecialKey ctermfg=2 ctermbg=0
-  hi SpellBad cterm=undercurl ctermbg=1
-  hi SpellCap cterm=undercurl ctermbg=5
-  hi SpellLocal cterm=undercurl ctermbg=3
-  hi SpellRare cterm=undercurl ctermbg=5
-  hi Statement cterm=bold ctermfg=7 ctermbg=0
-  hi StatusLine ctermfg=7 ctermbg=0
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=3
-  hi Title cterm=bold ctermfg=7 ctermbg=0
-  hi Todo cterm=bold ctermfg=3 ctermbg=7
-  hi Type cterm=bold ctermfg=3 ctermbg=0
-  hi Underlined ctermfg=7 ctermbg=0
-  hi VertSplit cterm=bold ctermfg=0 ctermbg=3
-  hi Visual ctermfg=7 ctermbg=3
-  hi WarningMsg ctermfg=1 ctermbg=0
-  hi WildMenu ctermfg=0 ctermbg=3
+  hi CursorLine ctermbg=2
+  hi DiffAdd ctermfg=3
+  hi DiffChange ctermfg=7
+  hi DiffText ctermfg=7
+  hi Directory ctermbg=2
+  hi Identifier ctermbg=2
+  hi LineNr ctermbg=0
+  hi MatchParen ctermfg=7
+  hi MoreMsg ctermbg=2
+  hi NonText ctermbg=2
+  hi PmenuSbar ctermfg=2
+  hi PmenuThumb ctermfg=3
+  hi PreProc ctermbg=2
+  hi Question ctermbg=2
+  hi Special ctermbg=2
+  hi SpecialChar ctermfg=3 ctermbg=2
+  hi SpecialKey ctermbg=2
+  hi Statement ctermbg=2
+  hi StatusLine ctermfg=7 ctermbg=2
+  hi StatusLineNC ctermfg=2 ctermbg=3
+  hi Title ctermbg=2
+  hi Type ctermbg=2
+  hi Underlined ctermbg=2
+  hi VertSplit ctermfg=2 ctermbg=3
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
+  hi WarningMsg ctermbg=2
   hi diffAdded ctermfg=3
   hi diffRemoved ctermfg=1
-  hi gitcommitDiscardedFile cterm=bold ctermfg=1
+  hi gitcommitDiscardedFile ctermfg=1
   hi gitcommitDiscardedType ctermfg=1
-  hi gitcommitSelectedFile cterm=bold ctermfg=3
+  hi gitcommitSelectedFile ctermfg=3
   hi gitcommitSelectedType ctermfg=3
-  hi gitcommitUnmergedFile cterm=bold ctermfg=7
+  hi gitcommitUnmergedFile ctermfg=7
   hi gitcommitUnmergedType ctermfg=7
-  hi gitcommitUntrackedFile cterm=bold ctermfg=7
+  hi gitcommitUntrackedFile ctermfg=7
 endif
 
 hi! link Javascript Normal

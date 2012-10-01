@@ -4,7 +4,7 @@
 " Name: tetragrammaton
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:49
+" Date: 2012-09-29 13:45:59
 "----------------------------------------------------------
 
 set background=dark
@@ -107,10 +107,9 @@ elseif &t_Co == 256
   hi Cursor ctermfg=244 ctermbg=222
   hi CursorLine ctermbg=16
   hi Define ctermfg=220
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=1
-  hi Directory ctermfg=6
+  hi Directory ctermfg=3
   hi Function ctermfg=130
   hi IncSearch ctermfg=61 ctermbg=156
   hi Include ctermfg=107
@@ -129,12 +128,11 @@ elseif &t_Co == 256
   hi StatusLine ctermfg=88 ctermbg=52
   hi StatusLineNC ctermfg=16 ctermbg=52
   hi StorageClass ctermfg=166
-  hi String ctermfg=6
+  hi String ctermfg=3
   hi Structure ctermfg=46
   hi Underlined ctermfg=5
   hi VertSplit ctermfg=203 ctermbg=232
-  hi Visual ctermfg=222
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermfg=222 ctermbg=8
   hi WildMenu ctermbg=3
   hi bufExplorerActBuf ctermfg=60 ctermbg=16
   hi bufExplorerAltBuf ctermfg=105 ctermbg=17
@@ -183,10 +181,9 @@ elseif &t_Co == 88
   hi Cursor ctermfg=83 ctermbg=73
   hi CursorLine ctermbg=16
   hi Define ctermfg=72
-  hi DiffAdd ctermbg=19
-  hi DiffDelete cterm=bold ctermfg=19
+  hi DiffDelete cterm=bold ctermfg=19 ctermbg=6
   hi DiffText ctermbg=48
-  hi Directory ctermfg=6
+  hi Directory ctermfg=56
   hi Function ctermfg=48
   hi IncSearch ctermfg=81 ctermbg=61
   hi Include ctermfg=40
@@ -205,12 +202,11 @@ elseif &t_Co == 88
   hi StatusLine ctermfg=32 ctermbg=32
   hi StatusLineNC ctermfg=16 ctermbg=16
   hi StorageClass ctermfg=48
-  hi String ctermfg=6
+  hi String ctermfg=56
   hi Structure ctermfg=28
   hi Underlined ctermfg=50
   hi VertSplit ctermfg=68 ctermbg=16
-  hi Visual ctermfg=73
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermfg=73 ctermbg=81
   hi WildMenu ctermbg=56
   hi bufExplorerActBuf ctermfg=81 ctermbg=16
   hi bufExplorerAltBuf ctermfg=39 ctermbg=17
@@ -259,10 +255,9 @@ elseif &t_Co == 16
   hi Cursor ctermfg=8 ctermbg=10
   hi CursorLine ctermbg=0
   hi Define ctermfg=3
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=9
-  hi Directory ctermfg=6
+  hi Directory ctermfg=3
   hi Function ctermfg=1
   hi IncSearch ctermfg=4 ctermbg=10
   hi Include ctermfg=3
@@ -281,12 +276,11 @@ elseif &t_Co == 16
   hi StatusLine ctermfg=1 ctermbg=1
   hi StatusLineNC ctermfg=0 ctermbg=0
   hi StorageClass ctermfg=9
-  hi String ctermfg=6
+  hi String ctermfg=3
   hi Structure ctermfg=2
   hi Underlined ctermfg=13
   hi VertSplit ctermfg=9 ctermbg=0
-  hi Visual ctermfg=10
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermfg=10 ctermbg=2
   hi WildMenu ctermbg=3
   hi bufExplorerActBuf ctermfg=4 ctermbg=0
   hi bufExplorerAltBuf ctermfg=12 ctermbg=4
@@ -335,10 +329,9 @@ else " 8 colors
   hi Cursor ctermfg=6 ctermbg=7
   hi CursorLine ctermbg=0
   hi Define ctermfg=3
-  hi DiffAdd ctermbg=4
-  hi DiffDelete cterm=bold ctermfg=4
+  hi DiffDelete cterm=bold ctermfg=4 ctermbg=6
   hi DiffText ctermbg=1
-  hi Directory ctermfg=6
+  hi Directory ctermfg=3
   hi Function ctermfg=1
   hi IncSearch ctermfg=4 ctermbg=7
   hi Include ctermfg=3
@@ -357,12 +350,11 @@ else " 8 colors
   hi StatusLine ctermfg=1 ctermbg=1
   hi StatusLineNC ctermfg=0 ctermbg=0
   hi StorageClass ctermfg=1
-  hi String ctermfg=6
+  hi String ctermfg=3
   hi Structure ctermfg=2
   hi Underlined ctermfg=5
   hi VertSplit ctermfg=3 ctermbg=0
-  hi Visual ctermfg=7
-  hi VisualNOS cterm=bold,underline
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WildMenu ctermbg=3
   hi bufExplorerActBuf ctermfg=4 ctermbg=0
   hi bufExplorerAltBuf ctermfg=7 ctermbg=4

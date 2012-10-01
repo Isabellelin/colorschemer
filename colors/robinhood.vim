@@ -4,7 +4,7 @@
 " Name: robinhood
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:40
+" Date: 2012-09-29 13:43:11
 "----------------------------------------------------------
 
 set background=dark
@@ -80,7 +80,7 @@ elseif &t_Co == 256
   hi Structure ctermfg=122
   hi Typedef ctermfg=122
   hi User2 ctermfg=113 ctermbg=232
-  hi Visual ctermfg=239
+  hi Visual cterm=NONE ctermfg=239 ctermbg=8
   hi VisualNOS ctermfg=16 ctermbg=fg
   hi WarningMsg ctermbg=203
   hi cursorim ctermbg=250
@@ -110,7 +110,7 @@ elseif &t_Co == 88
   hi Structure ctermfg=46
   hi Typedef ctermfg=46
   hi User2 ctermfg=40 ctermbg=16
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi VisualNOS ctermfg=16 ctermbg=fg
   hi WarningMsg ctermbg=69
   hi cursorim ctermbg=85
@@ -140,7 +140,7 @@ elseif &t_Co == 16
   hi Structure ctermfg=10
   hi Typedef ctermfg=10
   hi User2 ctermfg=3 ctermbg=0
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=fg
   hi WarningMsg ctermbg=9
   hi cursorim ctermbg=7
@@ -170,7 +170,7 @@ else " 8 colors
   hi Structure ctermfg=7
   hi Typedef ctermfg=7
   hi User2 ctermfg=3 ctermbg=0
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=fg
   hi WarningMsg ctermbg=3
   hi cursorim ctermbg=7

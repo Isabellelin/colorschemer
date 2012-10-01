@@ -4,7 +4,7 @@
 " Name: camo
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:19
+" Date: 2012-09-29 13:31:31
 "----------------------------------------------------------
 
 set background=dark
@@ -119,7 +119,7 @@ elseif &t_Co == 256
   hi Title ctermbg=235
   hi Typedef ctermfg=185
   hi VertSplit ctermfg=101 ctermbg=191
-  hi Visual ctermfg=64
+  hi Visual cterm=NONE ctermfg=64 ctermbg=8
   hi WarningMsg ctermbg=9
   hi cursorim ctermfg=64 ctermbg=224
 elseif &t_Co == 88
@@ -164,7 +164,7 @@ elseif &t_Co == 88
   hi Title ctermbg=80
   hi Typedef ctermfg=57
   hi VertSplit ctermfg=82 ctermbg=61
-  hi Visual ctermfg=36
+  hi Visual cterm=NONE ctermfg=36 ctermbg=81
   hi WarningMsg ctermbg=9
   hi cursorim ctermfg=36 ctermbg=74
 elseif &t_Co == 16
@@ -209,7 +209,7 @@ elseif &t_Co == 16
   hi Title ctermbg=0
   hi Typedef ctermfg=7
   hi VertSplit ctermfg=3 ctermbg=10
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=9
   hi cursorim ctermfg=3 ctermbg=11
 else " 8 colors
@@ -254,7 +254,7 @@ else " 8 colors
   hi Title ctermbg=0
   hi Typedef ctermfg=7
   hi VertSplit ctermfg=3 ctermbg=7
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi WarningMsg ctermbg=1
   hi cursorim ctermfg=3 ctermbg=7
 endif

@@ -4,7 +4,7 @@
 " Name: vilight_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:02
+" Date: 2012-09-29 13:47:32
 "----------------------------------------------------------
 
 set background=dark
@@ -93,7 +93,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=179
   hi Variable ctermfg=103
   hi VertSplit ctermfg=252 ctermbg=252
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi vimFold ctermfg=231 ctermbg=235
 elseif &t_Co == 88
   hi Normal ctermfg=79 ctermbg=16
@@ -123,7 +123,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=53
   hi Variable ctermfg=83
   hi VertSplit ctermfg=86 ctermbg=86
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi vimFold ctermfg=79 ctermbg=80
 elseif &t_Co == 16
   hi Normal ctermfg=15 ctermbg=0
@@ -153,7 +153,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=8
   hi Variable ctermfg=8
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi vimFold ctermfg=15 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
@@ -183,12 +183,11 @@ else " 8 colors
   hi Typedef ctermfg=7
   hi Variable ctermfg=6
   hi VertSplit ctermfg=7 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi vimFold ctermfg=7 ctermbg=0
 endif
 
 
-hi clear TagListFileName
 hi clear cOperator
 hi clear cocoaClass
 hi clear cocoaFunction
@@ -203,6 +202,7 @@ hi clear objcDirective
 hi clear objcMessageName
 hi clear objcMethodArg
 hi clear objcMethodName
+hi clear objcStatement
 hi clear objcSubclass
 hi clear objcSuperclass
 hi clear phpArrayPair
@@ -211,7 +211,7 @@ hi clear phpFunctions
 hi clear phpNull
 hi clear phpQuoteDouble
 hi clear phpQuoteSingle
-hi clear phpSuperglobal
+hi clear phpSuperGlobal
 hi clear pythonAssignment
 hi clear pythonBuiltinFunc
 hi clear pythonBuiltinObj
@@ -228,3 +228,4 @@ hi clear rubyModule
 hi clear rubySharpBang
 hi clear rubyString
 hi clear rubyStringDelimiter
+hi clear tagListFileName

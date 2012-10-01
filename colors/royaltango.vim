@@ -4,7 +4,7 @@
 " Name: royaltango
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:48
+" Date: 2012-09-29 13:43:21
 "----------------------------------------------------------
 
 set background=light
@@ -20,7 +20,7 @@ if has("gui_running")
   hi Boolean gui=bold guifg=SpringGreen3
   hi Comment guifg=#999988
   hi Constant guifg=DarkViolet
-  hi Cursor guifg=bg guibg=green
+  hi Cursor guibg=green
   hi CursorLine guibg=grey95
   hi ErrorMsg gui=bold guifg=white guibg=red
   hi Exception gui=bold guifg=black
@@ -40,6 +40,7 @@ if has("gui_running")
   hi PmenuSel gui=bold guifg=white guibg=black
   hi PmenuThumb gui=reverse guibg=#002A5C
   hi PreProc gui=bold guifg=firebrick3
+  hi Search guifg=NONE
   hi Special guifg=DarkViolet
   hi SpecialChar gui=bold guifg=goldenrod1
   hi Statement guifg=#204070
@@ -58,7 +59,7 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=231
   hi Boolean ctermfg=41
-  hi Cursor ctermfg=bg ctermbg=46
+  hi Cursor ctermbg=46
   hi CursorLine ctermbg=255
   hi Exception ctermfg=16
   hi Keyword ctermfg=60
@@ -67,11 +68,13 @@ elseif &t_Co == 256
   hi ModeMsg ctermfg=60
   hi Number ctermfg=41
   hi Operator ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=214
   hi StatusLine ctermfg=231 ctermbg=60
   hi StatusLineNC ctermfg=60 ctermbg=231
   hi String ctermfg=209
   hi VertSplit ctermfg=bg ctermbg=60
+  hi Visual cterm=NONE ctermbg=7
   hi rubyBlockArgument ctermfg=244
   hi rubyConstant ctermfg=16
   hi rubyControl ctermfg=16
@@ -82,7 +85,7 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
   hi Boolean ctermfg=25
-  hi Cursor ctermfg=bg ctermbg=28
+  hi Cursor ctermbg=28
   hi CursorLine ctermbg=87
   hi Exception ctermfg=16
   hi Keyword ctermfg=81
@@ -91,11 +94,13 @@ elseif &t_Co == 88
   hi ModeMsg ctermfg=81
   hi Number ctermfg=25
   hi Operator ctermfg=16
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=72
   hi StatusLine ctermfg=79 ctermbg=81
   hi StatusLineNC ctermfg=81 ctermbg=79
   hi String ctermfg=68
   hi VertSplit ctermfg=bg ctermbg=81
+  hi Visual cterm=NONE ctermbg=87
   hi rubyBlockArgument ctermfg=83
   hi rubyConstant ctermfg=16
   hi rubyControl ctermfg=16
@@ -106,7 +111,7 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Boolean ctermfg=6
-  hi Cursor ctermfg=bg ctermbg=2
+  hi Cursor ctermbg=2
   hi CursorLine ctermbg=15
   hi Exception ctermfg=0
   hi Keyword ctermfg=6
@@ -115,11 +120,13 @@ elseif &t_Co == 16
   hi ModeMsg ctermfg=6
   hi Number ctermfg=6
   hi Operator ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=3
   hi StatusLine ctermfg=15 ctermbg=6
   hi StatusLineNC ctermfg=6 ctermbg=15
   hi String ctermfg=3
   hi VertSplit ctermfg=bg ctermbg=6
+  hi Visual cterm=NONE ctermbg=11
   hi rubyBlockArgument ctermfg=8
   hi rubyConstant ctermfg=0
   hi rubyControl ctermfg=0
@@ -130,7 +137,7 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=6
-  hi Cursor ctermfg=bg ctermbg=2
+  hi Cursor ctermbg=2
   hi CursorLine ctermbg=7
   hi Exception ctermfg=0
   hi Keyword ctermfg=6
@@ -139,11 +146,13 @@ else " 8 colors
   hi ModeMsg ctermfg=6
   hi Number ctermfg=6
   hi Operator ctermfg=0
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=3
   hi StatusLine ctermfg=7 ctermbg=6
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi String ctermfg=3
   hi VertSplit ctermfg=bg ctermbg=6
+  hi Visual cterm=NONE ctermbg=7
   hi rubyBlockArgument ctermfg=6
   hi rubyConstant ctermfg=0
   hi rubyControl ctermfg=0
@@ -157,7 +166,6 @@ hi! link Type Keyword
 hi! link rubyBeginEnd Keyword
 hi! link rubyClass Keyword
 hi! link rubyClassVariable Identifier
-hi! link rubyConstant Type
 hi! link rubyDefine Keyword
 hi! link rubyEscape SpecialChar
 hi! link rubyGlobalVariable Identifier

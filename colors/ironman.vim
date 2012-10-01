@@ -4,7 +4,7 @@
 " Name: ironman
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:01
+" Date: 2012-09-29 13:36:58
 "----------------------------------------------------------
 
 set background=light
@@ -78,7 +78,7 @@ if has("gui_running")
   hi htmlLink gui=underline guifg=#0000ff
   hi htmlUnderline gui=underline
   hi htmlUnderlineItalic gui=underline,italic
-  hi lcursor guifg=#f8f8f8 guibg=#8000ff
+  hi lCursor guifg=#f8f8f8 guibg=#8000ff
 elseif &t_Co == 256
   hi Normal ctermfg=235 ctermbg=255
   hi Comma ctermfg=125
@@ -104,16 +104,17 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=252
   hi PmenuThumb ctermfg=16
   hi Repeat ctermfg=84 ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi Special ctermbg=195
   hi StatusLine ctermfg=231 ctermbg=103
   hi StatusLineNC ctermfg=59 ctermbg=145
   hi Title ctermbg=195
   hi VertSplit ctermfg=145 ctermbg=145
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsgildMenu ctermfg=16 ctermbg=214
   hi cursorim ctermfg=231 ctermbg=93
   hi htmlLink ctermfg=21
-  hi lcursor ctermfg=231 ctermbg=93
+  hi lCursor ctermfg=231 ctermbg=93
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=87
   hi Comma ctermfg=49
@@ -139,16 +140,17 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=58
   hi PmenuThumb ctermfg=16
   hi Repeat ctermfg=45 ctermbg=bg
-  hi Search ctermfg=16
+  hi Search ctermfg=NONE
   hi Special ctermbg=63
   hi StatusLine ctermfg=79 ctermbg=83
   hi StatusLineNC ctermfg=81 ctermbg=85
   hi Title ctermbg=63
   hi VertSplit ctermfg=85 ctermbg=85
+  hi Visual cterm=NONE ctermbg=87
   hi WarningMsgildMenu ctermfg=16 ctermbg=68
   hi cursorim ctermfg=79 ctermbg=35
   hi htmlLink ctermfg=19
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
   hi Comma ctermfg=5
@@ -174,16 +176,17 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=0
   hi Repeat ctermfg=10 ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi Special ctermbg=14
   hi StatusLine ctermfg=15 ctermbg=8
   hi StatusLineNC ctermfg=6 ctermbg=8
   hi Title ctermbg=14
   hi VertSplit ctermfg=8 ctermbg=8
+  hi Visual cterm=NONE ctermbg=11
   hi WarningMsgildMenu ctermfg=0 ctermbg=3
   hi cursorim ctermfg=15 ctermbg=5
   hi htmlLink ctermfg=4
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Comma ctermfg=5
@@ -209,16 +212,17 @@ else " 8 colors
   hi PmenuSbar ctermfg=7
   hi PmenuThumb ctermfg=0
   hi Repeat ctermfg=6 ctermbg=bg
-  hi Search ctermfg=0
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi StatusLine ctermfg=7 ctermbg=7
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi Title ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsgildMenu ctermfg=0 ctermbg=3
   hi cursorim ctermfg=7 ctermbg=5
   hi htmlLink ctermfg=4
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
 hi! link SpecialComment Comment

@@ -4,7 +4,7 @@
 " Name: billw
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:51
+" Date: 2012-09-29 13:30:49
 "----------------------------------------------------------
 
 set background=dark
@@ -80,7 +80,7 @@ elseif &t_Co == 256
   hi Structure ctermfg=51
   hi Typedef ctermfg=51
   hi User2 ctermfg=222 ctermbg=235
-  hi Visual ctermfg=240
+  hi Visual cterm=NONE ctermfg=240 ctermbg=8
   hi VisualNOS ctermfg=16 ctermbg=fg
   hi WarningMsg ctermbg=203
   hi cursorim ctermbg=230
@@ -110,7 +110,7 @@ elseif &t_Co == 88
   hi Structure ctermfg=31
   hi Typedef ctermfg=31
   hi User2 ctermfg=73 ctermbg=80
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=81
   hi VisualNOS ctermfg=16 ctermbg=fg
   hi WarningMsg ctermbg=69
   hi cursorim ctermbg=78
@@ -140,7 +140,7 @@ elseif &t_Co == 16
   hi Structure ctermfg=14
   hi Typedef ctermfg=14
   hi User2 ctermfg=10 ctermbg=0
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=fg
   hi WarningMsg ctermbg=9
   hi cursorim ctermbg=11
@@ -170,7 +170,7 @@ else " 8 colors
   hi Structure ctermfg=6
   hi Typedef ctermfg=6
   hi User2 ctermfg=7 ctermbg=0
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi VisualNOS ctermfg=0 ctermbg=fg
   hi WarningMsg ctermbg=3
   hi cursorim ctermbg=7

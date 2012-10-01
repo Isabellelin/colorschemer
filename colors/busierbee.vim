@@ -4,7 +4,7 @@
 " Name: busierbee
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:11
+" Date: 2012-09-29 13:31:15
 "----------------------------------------------------------
 
 set background=dark
@@ -18,7 +18,6 @@ let g:colors_name = expand("<sfile>:t:r")
 if has("gui_running")
   hi Normal guifg=#dadada guibg=#1c1c1c
   hi Boolean guifg=#ffd700
-  hi Cursor guibg=#626262
   hi Function guifg=#d787d7
   hi Keyword guifg=#ff8700
   hi LineNr guibg=#080808
@@ -66,7 +65,7 @@ elseif &t_Co == 256
   hi Todo ctermfg=200
   hi Type ctermfg=103
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=254 ctermbg=4
+  hi Visual cterm=NONE ctermfg=254 ctermbg=4
   hi pythonBuiltinFunction ctermfg=200
   hi pythonExClass ctermfg=200
   hi pythonException ctermfg=200
@@ -101,7 +100,7 @@ elseif &t_Co == 88
   hi Todo ctermfg=66
   hi Type ctermfg=38
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87 ctermbg=19
+  hi Visual cterm=NONE ctermfg=87 ctermbg=19
   hi pythonBuiltinFunction ctermfg=66
   hi pythonExClass ctermfg=66
   hi pythonException ctermfg=66
@@ -136,7 +135,7 @@ elseif &t_Co == 16
   hi Todo ctermfg=13
   hi Type ctermfg=8
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11 ctermbg=4
+  hi Visual cterm=NONE ctermfg=11 ctermbg=4
   hi pythonBuiltinFunction ctermfg=13
   hi pythonExClass ctermfg=13
   hi pythonException ctermfg=13
@@ -171,7 +170,7 @@ else " 8 colors
   hi Todo ctermfg=5
   hi Type ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermfg=7 ctermbg=4
   hi pythonBuiltinFunction ctermfg=5
   hi pythonExClass ctermfg=5
   hi pythonException ctermfg=5

@@ -4,7 +4,7 @@
 " Name: carrot
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:24
+" Date: 2012-09-29 13:31:39
 "----------------------------------------------------------
 
 set background=light
@@ -56,7 +56,7 @@ if has("gui_running")
   hi WarningMsg guifg=#f8f8f8 guibg=FireBrick
   hi WildMenu gui=bold guifg=White guibg=NavyBlue
   hi cursorim guifg=#ffffff guibg=Red3
-  hi lcursor guifg=#ffffff guibg=#8040ff
+  hi lCursor guifg=#ffffff guibg=#8040ff
 elseif &t_Co == 256
   hi Normal ctermfg=18 ctermbg=223
   hi Comment ctermbg=bg
@@ -77,7 +77,7 @@ elseif &t_Co == 256
   hi Number ctermfg=21 ctermbg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=94
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -88,10 +88,10 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=231 ctermbg=95
-  hi Visual ctermfg=94
+  hi Visual cterm=NONE ctermfg=94 ctermbg=7
   hi WarningMsg ctermbg=124
   hi cursorim ctermfg=231 ctermbg=1
-  hi lcursor ctermfg=231 ctermbg=99
+  hi lCursor ctermfg=231 ctermbg=99
 elseif &t_Co == 88
   hi Normal ctermfg=17 ctermbg=74
   hi Comment ctermbg=bg
@@ -112,7 +112,7 @@ elseif &t_Co == 88
   hi Number ctermfg=19 ctermbg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=32
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -123,10 +123,10 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=79 ctermbg=81
-  hi Visual ctermfg=32
+  hi Visual cterm=NONE ctermfg=32 ctermbg=87
   hi WarningMsg ctermbg=48
   hi cursorim ctermfg=79 ctermbg=48
-  hi lcursor ctermfg=79 ctermbg=35
+  hi lCursor ctermfg=79 ctermbg=35
 elseif &t_Co == 16
   hi Normal ctermfg=4 ctermbg=11
   hi Comment ctermbg=bg
@@ -147,7 +147,7 @@ elseif &t_Co == 16
   hi Number ctermfg=4 ctermbg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=1
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -158,10 +158,10 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=15 ctermbg=3
-  hi Visual ctermfg=1
+  hi Visual cterm=NONE ctermfg=1 ctermbg=11
   hi WarningMsg ctermbg=1
   hi cursorim ctermfg=15 ctermbg=9
-  hi lcursor ctermfg=15 ctermbg=5
+  hi lCursor ctermfg=15 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=4 ctermbg=7
   hi Comment ctermbg=bg
@@ -182,7 +182,7 @@ else " 8 colors
   hi Number ctermfg=4 ctermbg=bg
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=1
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -193,11 +193,10 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=3
-  hi Visual ctermfg=1
+  hi Visual cterm=NONE ctermfg=1 ctermbg=7
   hi WarningMsg ctermbg=1
   hi cursorim ctermfg=7 ctermbg=1
-  hi lcursor ctermfg=7 ctermbg=5
+  hi lCursor ctermfg=7 ctermbg=5
 endif
 
-hi! link Delimiter Normal
 

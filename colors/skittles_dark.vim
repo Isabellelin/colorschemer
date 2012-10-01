@@ -4,7 +4,7 @@
 " Name: skittles_dark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:38
+" Date: 2012-09-29 13:44:27
 "----------------------------------------------------------
 
 set background=dark
@@ -55,7 +55,7 @@ if has("gui_running")
   hi Operator guifg=#FF9900
   hi Pmenu guifg=#5FAAC7 guibg=#000000
   hi PmenuSbar guibg=#080808
-  hi PmenuSel guifg=#4d4d4d guibg=#808080
+  hi PmenuSel guibg=#808080
   hi PmenuThumb guifg=#5FAAC7
   hi PreCondit guifg=#A6E22E
   hi PreProc guifg=#A6E22E
@@ -92,7 +92,6 @@ elseif &t_Co == 256
   hi Boolean ctermfg=141
   hi Character ctermfg=186
   hi Comment ctermfg=66
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=1
   hi Constant ctermfg=141
   hi Cursor ctermfg=0 ctermbg=15
@@ -128,7 +127,7 @@ elseif &t_Co == 256
   hi Operator ctermfg=208
   hi Pmenu ctermfg=81 ctermbg=0
   hi PmenuSbar ctermbg=0
-  hi PmenuSel ctermfg=8 ctermbg=244
+  hi PmenuSel ctermbg=244
   hi PmenuThumb ctermfg=81
   hi PreCondit ctermfg=148
   hi PreProc ctermfg=148
@@ -146,7 +145,6 @@ elseif &t_Co == 256
   hi StorageClass ctermfg=208
   hi String ctermfg=113
   hi Structure cterm=bold ctermfg=81
-  hi TabLine ctermbg=8
   hi Tag ctermfg=117
   hi Title ctermfg=203
   hi Todo ctermbg=3
@@ -155,7 +153,7 @@ elseif &t_Co == 256
   hi Underlined ctermfg=244
   hi User1 ctermfg=0 ctermbg=112
   hi VertSplit ctermfg=244 ctermbg=0
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi VisualNOS ctermbg=237
   hi WarningMsg ctermfg=15 ctermbg=236
   hi WildMenu ctermfg=81 ctermbg=233
@@ -166,7 +164,6 @@ elseif &t_Co == 88
   hi Boolean ctermfg=55
   hi Character ctermfg=57
   hi Comment ctermfg=83
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=48
   hi Constant ctermfg=55
   hi Cursor ctermfg=16 ctermbg=79
@@ -202,7 +199,7 @@ elseif &t_Co == 88
   hi Operator ctermfg=68
   hi Pmenu ctermfg=43 ctermbg=16
   hi PmenuSbar ctermbg=16
-  hi PmenuSel ctermfg=81 ctermbg=83
+  hi PmenuSel ctermbg=83
   hi PmenuThumb ctermfg=43
   hi PreCondit ctermfg=56
   hi PreProc ctermfg=56
@@ -220,7 +217,6 @@ elseif &t_Co == 88
   hi StorageClass ctermfg=68
   hi String ctermfg=41
   hi Structure cterm=bold ctermfg=43
-  hi TabLine ctermbg=81
   hi Tag ctermfg=43
   hi Title ctermfg=69
   hi Todo ctermbg=56
@@ -229,7 +225,7 @@ elseif &t_Co == 88
   hi Underlined ctermfg=83
   hi User1 ctermfg=16 ctermbg=40
   hi VertSplit ctermfg=83 ctermbg=16
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi VisualNOS ctermbg=80
   hi WarningMsg ctermfg=79 ctermbg=80
   hi WildMenu ctermfg=43 ctermbg=16
@@ -240,7 +236,6 @@ elseif &t_Co == 16
   hi Boolean ctermfg=12
   hi Character ctermfg=10
   hi Comment ctermfg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=9
   hi Constant ctermfg=12
   hi Cursor ctermfg=0 ctermbg=15
@@ -276,7 +271,7 @@ elseif &t_Co == 16
   hi Operator ctermfg=3
   hi Pmenu ctermfg=12 ctermbg=0
   hi PmenuSbar ctermbg=0
-  hi PmenuSel ctermfg=2 ctermbg=8
+  hi PmenuSel ctermbg=8
   hi PmenuThumb ctermfg=12
   hi PreCondit ctermfg=3
   hi PreProc ctermfg=3
@@ -294,7 +289,6 @@ elseif &t_Co == 16
   hi StorageClass ctermfg=3
   hi String ctermfg=10
   hi Structure cterm=bold ctermfg=12
-  hi TabLine ctermbg=2
   hi Tag ctermfg=12
   hi Title ctermfg=9
   hi Todo ctermbg=3
@@ -303,7 +297,7 @@ elseif &t_Co == 16
   hi Underlined ctermfg=8
   hi User1 ctermfg=0 ctermbg=3
   hi VertSplit ctermfg=8 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg ctermfg=15 ctermbg=0
   hi WildMenu ctermfg=12 ctermbg=0
@@ -314,7 +308,6 @@ else " 8 colors
   hi Boolean ctermfg=7
   hi Character ctermfg=7
   hi Comment ctermfg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=1
   hi Constant ctermfg=7
   hi Cursor ctermfg=0 ctermbg=7
@@ -350,7 +343,7 @@ else " 8 colors
   hi Operator ctermfg=3
   hi Pmenu ctermfg=7 ctermbg=0
   hi PmenuSbar ctermbg=0
-  hi PmenuSel ctermfg=2 ctermbg=3
+  hi PmenuSel ctermbg=3
   hi PmenuThumb ctermfg=7
   hi PreCondit ctermfg=3
   hi PreProc ctermfg=3
@@ -368,7 +361,6 @@ else " 8 colors
   hi StorageClass ctermfg=3
   hi String ctermfg=3
   hi Structure cterm=bold ctermfg=7
-  hi TabLine ctermbg=2
   hi Tag ctermfg=7
   hi Title ctermfg=3
   hi Todo ctermbg=3
@@ -377,7 +369,7 @@ else " 8 colors
   hi Underlined ctermfg=3
   hi User1 ctermfg=0 ctermbg=3
   hi VertSplit ctermfg=3 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=2
   hi WarningMsg ctermfg=7 ctermbg=0
   hi WildMenu ctermfg=7 ctermbg=0

@@ -4,7 +4,7 @@
 " Name: scite
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:00
+" Date: 2012-09-29 13:43:37
 "----------------------------------------------------------
 
 set background=light
@@ -28,7 +28,7 @@ if has("gui_running")
   hi LineNr guifg=#000000 guibg=#bbbbbb
   hi Number gui=bold guifg=#000000 guibg=#eeffff
   hi PreProc gui=bold guifg=#0000ff guibg=#ffffff
-  hi Search gui=bold guibg=#bbbbbb
+  hi Search gui=bold guifg=NONE guibg=#bbbbbb
   hi Special gui=bold guifg=#7F007F guibg=#eeeeff
   hi Statement guifg=#007F7F
   hi StatusLine guifg=#000000 guibg=#aacccc
@@ -48,12 +48,13 @@ elseif &t_Co == 256
   hi LineNr ctermbg=250
   hi Number ctermfg=16 ctermbg=231
   hi PreProc ctermbg=231
+  hi Search ctermfg=NONE
   hi Special ctermbg=255
   hi StatusLine ctermfg=16 ctermbg=152
   hi StatusLineNC ctermfg=243 ctermbg=231
   hi String ctermfg=90 ctermbg=224
   hi Subtitle ctermfg=16 ctermbg=73
-  hi Visual ctermfg=253
+  hi Visual cterm=NONE ctermfg=253 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=82 ctermbg=79
   hi Comment ctermbg=87
@@ -65,12 +66,13 @@ elseif &t_Co == 88
   hi LineNr ctermbg=85
   hi Number ctermfg=16 ctermbg=79
   hi PreProc ctermbg=79
+  hi Search ctermfg=NONE
   hi Special ctermbg=79
   hi StatusLine ctermfg=16 ctermbg=42
   hi StatusLineNC ctermfg=82 ctermbg=79
   hi String ctermfg=33 ctermbg=74
   hi Subtitle ctermfg=16 ctermbg=42
-  hi Visual ctermfg=86
+  hi Visual cterm=NONE ctermfg=86 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=3 ctermbg=15
   hi Comment ctermbg=11
@@ -82,12 +84,13 @@ elseif &t_Co == 16
   hi LineNr ctermbg=7
   hi Number ctermfg=0 ctermbg=14
   hi PreProc ctermbg=15
+  hi Search ctermfg=NONE
   hi Special ctermbg=14
   hi StatusLine ctermfg=0 ctermbg=12
   hi StatusLineNC ctermfg=6 ctermbg=15
   hi String ctermfg=5 ctermbg=11
   hi Subtitle ctermfg=0 ctermbg=7
-  hi Visual ctermfg=12
+  hi Visual cterm=NONE ctermfg=12 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=3 ctermbg=7
   hi Comment ctermbg=7
@@ -99,12 +102,13 @@ else " 8 colors
   hi LineNr ctermbg=7
   hi Number ctermfg=0 ctermbg=7
   hi PreProc ctermbg=7
+  hi Search ctermfg=NONE
   hi Special ctermbg=7
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi String ctermfg=5 ctermbg=7
   hi Subtitle ctermfg=0 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
 endif
 
 

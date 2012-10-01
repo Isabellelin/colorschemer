@@ -4,7 +4,7 @@
 " Name: tesla
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:47
+" Date: 2012-09-29 13:45:57
 "----------------------------------------------------------
 
 set background=dark
@@ -62,11 +62,10 @@ if has("gui_running")
   hi Type gui=NONE guifg=#10CC10
   hi VertSplit guifg=#2e3d4d guibg=#2e3d4d
   hi Visual gui=reverse guifg=#2F3F4F guibg=white
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=red
   hi WildMenu gui=bold guifg=white guibg=#303f4f
   hi iCursor guifg=white guibg=red
-  hi lcursor guibg=MediumPurple3
+  hi lCursor guibg=MediumPurple3
   hi pythonBuiltin guifg=aquamarine2
   hi pythonBuiltinFunc guifg=#4fc6ff
   hi pythonBuiltinObj guifg=aquamarine2
@@ -93,9 +92,9 @@ elseif &t_Co == 256
   hi String ctermfg=176
   hi Title ctermbg=235
   hi VertSplit ctermfg=237 ctermbg=237
-  hi Visual ctermfg=237
+  hi Visual cterm=NONE ctermfg=237 ctermbg=8
   hi iCursor ctermfg=231 ctermbg=9
-  hi lcursor ctermbg=98
+  hi lCursor ctermbg=98
   hi pythonBuiltin ctermfg=122
   hi pythonBuiltinFunc ctermfg=81
   hi pythonBuiltinObj ctermfg=122
@@ -122,9 +121,9 @@ elseif &t_Co == 88
   hi String ctermfg=54
   hi Title ctermbg=80
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
   hi iCursor ctermfg=79 ctermbg=9
-  hi lcursor ctermbg=38
+  hi lCursor ctermbg=38
   hi pythonBuiltin ctermfg=46
   hi pythonBuiltinFunc ctermfg=43
   hi pythonBuiltinObj ctermfg=46
@@ -151,9 +150,9 @@ elseif &t_Co == 16
   hi String ctermfg=7
   hi Title ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi iCursor ctermfg=15 ctermbg=9
-  hi lcursor ctermbg=8
+  hi lCursor ctermbg=8
   hi pythonBuiltin ctermfg=10
   hi pythonBuiltinFunc ctermfg=12
   hi pythonBuiltinObj ctermfg=10
@@ -180,9 +179,9 @@ else " 8 colors
   hi String ctermfg=7
   hi Title ctermbg=0
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
   hi iCursor ctermfg=7 ctermbg=1
-  hi lcursor ctermbg=7
+  hi lCursor ctermbg=7
   hi pythonBuiltin ctermfg=7
   hi pythonBuiltinFunc ctermfg=7
   hi pythonBuiltinObj ctermfg=7

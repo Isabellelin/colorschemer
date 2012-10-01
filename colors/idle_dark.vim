@@ -4,7 +4,7 @@
 " Name: idle_dark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:47
+" Date: 2012-09-29 13:36:38
 "----------------------------------------------------------
 
 set background=light
@@ -20,7 +20,6 @@ if has("gui_running")
   hi ColorColumn guibg=DarkRed
   hi Comment guifg=red2
   hi Constant guifg=green3
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=Grey40
   hi CursorLine guibg=Grey40
   hi CursorLineNr guifg=Yellow
@@ -28,14 +27,12 @@ if has("gui_running")
   hi MatchParen guibg=DarkCyan
   hi NonText guifg=gray guibg=white
   hi Pmenu guibg=Magenta
-  hi PmenuSel guifg=#6c6c6c guibg=DarkGrey
+  hi PmenuSel guifg=#4d4d4d guibg=DarkGrey
   hi PmenuThumb guibg=White
   hi PreProc guifg=magenta3
+  hi Search guifg=NONE
   hi SignColumn guifg=Cyan
   hi Special guifg=green3
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=Orange
   hi StatusLine guifg=blue guibg=gold
   hi StatusLineNC guifg=blue guibg=gold
@@ -43,128 +40,107 @@ if has("gui_running")
   hi Type gui=NONE guifg=purple
   hi Underlined guifg=#80a0ff
   hi Visual gui=reverse guifg=Grey guibg=fg
-  hi VisualNOS gui=bold,underline
-  hi lcursor guibg=Cyan
+  hi lCursor guifg=NONE guibg=Cyan
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=231
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=1
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=4
   hi Constant ctermfg=2
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorColumn ctermbg=242
+  hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=241
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=81
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=9
   hi Ignore ctermfg=0
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi NonText ctermbg=231
-  hi Pmenu ctermbg=13
-  hi PmenuSel ctermfg=242 ctermbg=0
+  hi PmenuSel ctermfg=8 ctermbg=0
   hi PmenuThumb ctermbg=15
-  hi SignColumn ctermfg=14 ctermbg=242
-  hi Special ctermfg=224
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=11 ctermbg=8
+  hi Special ctermfg=12
   hi Statement cterm=bold ctermfg=13
-  hi StatusLine cterm=bold ctermfg=11 ctermbg=12
-  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=12
-  hi TabLine ctermfg=15 ctermbg=242
-  hi Type ctermfg=11
-  hi Underlined ctermfg=81
-  hi Visual cterm=reverse ctermfg=250 ctermbg=242
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermbg=51
+  hi StatusLine cterm=bold ctermfg=14 ctermbg=9
+  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=9
+  hi TabLine ctermfg=15 ctermbg=8
+  hi Type ctermfg=14
+  hi Underlined ctermfg=9
+  hi Visual ctermfg=250 ctermbg=8
+  hi lCursor ctermfg=NONE ctermbg=51
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=79
-  hi ColorColumn ctermbg=48
-  hi Comment ctermfg=48
+  hi ColorColumn ctermbg=19
+  hi Comment ctermfg=19
   hi Constant ctermfg=24
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorColumn ctermbg=82
+  hi CursorColumn ctermbg=81
   hi CursorLine ctermbg=81
-  hi CursorLineNr ctermfg=76
-  hi DiffAdd ctermbg=43
+  hi CursorLineNr ctermfg=31
+  hi DiffAdd ctermbg=9
   hi Ignore ctermfg=16
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=56
   hi NonText ctermbg=79
-  hi Pmenu ctermbg=67
-  hi PmenuSel ctermfg=82 ctermbg=16
+  hi PmenuSel ctermfg=81 ctermbg=16
   hi PmenuThumb ctermbg=79
-  hi SignColumn ctermfg=31 ctermbg=82
-  hi Special ctermfg=74
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=76 ctermbg=81
+  hi Special ctermfg=39
   hi Statement cterm=bold ctermfg=67
-  hi StatusLine cterm=bold ctermfg=76 ctermbg=39
-  hi StatusLineNC cterm=bold ctermfg=16 ctermbg=39
-  hi TabLine ctermfg=79 ctermbg=82
-  hi Type ctermfg=76
-  hi Underlined ctermfg=43
-  hi Visual cterm=reverse ctermfg=85 ctermbg=82
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermbg=31
+  hi StatusLine cterm=bold ctermfg=31 ctermbg=9
+  hi StatusLineNC cterm=bold ctermfg=16 ctermbg=9
+  hi TabLine ctermfg=79 ctermbg=81
+  hi Type ctermfg=31
+  hi Underlined ctermfg=9
+  hi Visual ctermfg=85 ctermbg=81
+  hi lCursor ctermfg=NONE ctermbg=31
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=15
-  hi ColorColumn ctermbg=9
-  hi Comment ctermfg=9
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=4
   hi Constant ctermfg=2
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorColumn ctermbg=3
+  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=11
-  hi DiffAdd ctermbg=12
+  hi CursorLineNr ctermfg=14
+  hi DiffAdd ctermbg=9
   hi Ignore ctermfg=0
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi NonText ctermbg=15
-  hi Pmenu ctermbg=13
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=15
-  hi SignColumn ctermfg=14 ctermbg=3
-  hi Special ctermfg=11
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=11 ctermbg=2
+  hi Special ctermfg=12
   hi Statement cterm=bold ctermfg=13
-  hi StatusLine cterm=bold ctermfg=11 ctermbg=12
-  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=12
-  hi TabLine ctermfg=15 ctermbg=3
-  hi Type ctermfg=11
-  hi Underlined ctermfg=12
-  hi Visual cterm=reverse ctermfg=7 ctermbg=3
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermbg=14
+  hi StatusLine cterm=bold ctermfg=14 ctermbg=9
+  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=9
+  hi TabLine ctermfg=15 ctermbg=2
+  hi Type ctermfg=14
+  hi Underlined ctermfg=9
+  hi Visual ctermfg=7 ctermbg=2
+  hi lCursor ctermfg=NONE ctermbg=14
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi ColorColumn ctermbg=1
-  hi Comment ctermfg=1
+  hi ColorColumn ctermbg=4
+  hi Comment ctermfg=4
   hi Constant ctermfg=2
-  hi Cursor ctermfg=bg ctermbg=fg
-  hi CursorColumn ctermbg=3
+  hi CursorColumn ctermbg=2
   hi CursorLine ctermbg=3
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=7
+  hi CursorLineNr ctermfg=6
+  hi DiffAdd ctermbg=1
   hi Ignore ctermfg=0
-  hi MatchParen ctermbg=6
+  hi MatchParen ctermbg=3
   hi NonText ctermbg=7
-  hi Pmenu ctermbg=5
-  hi PmenuSel ctermfg=3 ctermbg=0
+  hi PmenuSel ctermfg=2 ctermbg=0
   hi PmenuThumb ctermbg=7
-  hi SignColumn ctermfg=6 ctermbg=3
-  hi Special ctermfg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
+  hi Search ctermfg=NONE
+  hi SignColumn ctermfg=3 ctermbg=2
+  hi Special ctermfg=5
   hi Statement cterm=bold ctermfg=5
-  hi StatusLine cterm=bold ctermfg=3 ctermbg=5
-  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=5
-  hi TabLine ctermfg=7 ctermbg=3
-  hi Type ctermfg=3
-  hi Underlined ctermfg=7
-  hi Visual cterm=reverse ctermfg=7 ctermbg=3
-  hi VisualNOS cterm=bold,underline
-  hi lcursor ctermbg=6
+  hi StatusLine cterm=bold ctermfg=6 ctermbg=1
+  hi StatusLineNC cterm=bold ctermfg=0 ctermbg=1
+  hi TabLine ctermfg=7 ctermbg=2
+  hi Type ctermfg=6
+  hi Underlined ctermfg=1
+  hi Visual ctermfg=7 ctermbg=2
+  hi lCursor ctermfg=NONE ctermbg=6
 endif
 
 

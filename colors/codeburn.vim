@@ -4,7 +4,7 @@
 " Name: codeburn
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:44
+" Date: 2012-09-29 13:32:12
 "----------------------------------------------------------
 
 set background=light
@@ -43,12 +43,9 @@ if has("gui_running")
   hi PreProc guifg=DarkGoldenrod
   hi Question gui=NONE guifg=gray10 guibg=#B3C71E
   hi Repeat guifg=#660000
-  hi Search guibg=#ccff66
+  hi Search guifg=NONE guibg=#ccff66
   hi Special guifg=#808000
   hi SpecialKey gui=italic guifg=gray60
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=gray20
   hi StatusLine gui=NONE guifg=gray90 guibg=#888480
   hi StatusLineNC gui=NONE guifg=gray40 guibg=#ABA7A4
@@ -63,7 +60,7 @@ if has("gui_running")
   hi VertSplit gui=NONE guifg=#ABA7A4 guibg=#ABA7A4
   hi Visual guibg=#ffff00
   hi WarningMsg guifg=#600000 guibg=#dcd8d8
-  hi lcursor guifg=black guibg=white
+  hi lCursor guifg=black guibg=white
   hi rubyAccess guifg=Brown
   hi rubyBlockParameter guifg=gray20
   hi rubyException guifg=Red
@@ -73,41 +70,27 @@ if has("gui_running")
   hi rubySymbol guifg=Purple
 elseif &t_Co == 256
   hi Normal ctermfg=236 ctermbg=253
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=88
   hi Cursor ctermfg=231 ctermbg=102
   hi CursorLine ctermbg=249
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=58
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=130
   hi Keyword ctermfg=58
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=231
   hi ModeMsg ctermfg=234 ctermbg=148
   hi MoreMsg ctermbg=148
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
   hi Question ctermbg=148
   hi Repeat ctermfg=52
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=102
   hi StatusLineNC ctermfg=241 ctermbg=248
   hi String ctermfg=33
   hi TabLineFill ctermfg=249 ctermbg=249
   hi TabLineSel ctermfg=7 ctermbg=138
   hi VertSplit ctermfg=248 ctermbg=248
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=253
-  hi lcursor ctermfg=16 ctermbg=231
+  hi lCursor ctermfg=16 ctermbg=231
   hi rubyAccess ctermfg=124
   hi rubyBlockParameter ctermfg=236
   hi rubyException ctermfg=9
@@ -117,41 +100,27 @@ elseif &t_Co == 256
   hi rubySymbol ctermfg=129
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=86
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=32
   hi Cursor ctermfg=79 ctermbg=83
   hi CursorLine ctermbg=85
-  hi CursorLineNr ctermfg=56
   hi Delimiter ctermfg=36
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
   hi Function ctermfg=52
   hi Keyword ctermfg=81
-  hi LineNr ctermfg=56
   hi MatchParen ctermfg=79
   hi ModeMsg ctermfg=80 ctermbg=56
   hi MoreMsg ctermbg=56
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
   hi Question ctermbg=56
   hi Repeat ctermfg=32
-  hi SignColumn ctermbg=87
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=56
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=87 ctermbg=83
   hi StatusLineNC ctermfg=81 ctermbg=84
   hi String ctermfg=23
   hi TabLineFill ctermfg=85 ctermbg=85
   hi TabLineSel ctermfg=87 ctermbg=84
   hi VertSplit ctermfg=84 ctermbg=84
+  hi Visual cterm=NONE ctermbg=87
   hi WarningMsg ctermbg=86
-  hi lcursor ctermfg=16 ctermbg=79
+  hi lCursor ctermfg=16 ctermbg=79
   hi rubyAccess ctermfg=32
   hi rubyBlockParameter ctermfg=80
   hi rubyException ctermfg=9
@@ -161,41 +130,27 @@ elseif &t_Co == 88
   hi rubySymbol ctermfg=35
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=12
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=1
   hi Cursor ctermfg=15 ctermbg=8
   hi CursorLine ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
   hi Function ctermfg=3
   hi Keyword ctermfg=3
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=15
   hi ModeMsg ctermfg=0 ctermbg=3
   hi MoreMsg ctermbg=3
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
   hi Question ctermbg=3
   hi Repeat ctermfg=1
-  hi SignColumn ctermbg=11
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=11 ctermbg=8
   hi StatusLineNC ctermfg=3 ctermbg=8
   hi String ctermfg=6
   hi TabLineFill ctermfg=8 ctermbg=8
   hi TabLineSel ctermfg=11 ctermbg=8
   hi VertSplit ctermfg=8 ctermbg=8
+  hi Visual cterm=NONE ctermbg=11
   hi WarningMsg ctermbg=12
-  hi lcursor ctermfg=0 ctermbg=15
+  hi lCursor ctermfg=0 ctermbg=15
   hi rubyAccess ctermfg=1
   hi rubyBlockParameter ctermfg=2
   hi rubyException ctermfg=9
@@ -205,41 +160,27 @@ elseif &t_Co == 16
   hi rubySymbol ctermfg=13
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
-  hi ColorColumn ctermbg=1
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=1
   hi Cursor ctermfg=7 ctermbg=3
   hi CursorLine ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi Delimiter ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=3
   hi Keyword ctermfg=3
-  hi LineNr ctermfg=3
   hi MatchParen ctermfg=7
   hi ModeMsg ctermfg=0 ctermbg=3
   hi MoreMsg ctermbg=3
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi Question ctermbg=3
   hi Repeat ctermfg=1
-  hi SignColumn ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=7 ctermbg=3
   hi StatusLineNC ctermfg=3 ctermbg=7
   hi String ctermfg=6
   hi TabLineFill ctermfg=7 ctermbg=7
   hi TabLineSel ctermfg=7 ctermbg=7
   hi VertSplit ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi WarningMsg ctermbg=7
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
   hi rubyAccess ctermfg=1
   hi rubyBlockParameter ctermfg=2
   hi rubyException ctermfg=1

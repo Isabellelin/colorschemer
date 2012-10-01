@@ -4,7 +4,7 @@
 " Name: pspad
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:49
+" Date: 2012-09-29 13:42:03
 "----------------------------------------------------------
 
 set background=light
@@ -26,6 +26,7 @@ if has("gui_running")
   hi Macro gui=bold guifg=#FF6400
   hi Operator guifg=#FF0D00
   hi PreProc gui=italic guifg=#FF0D00
+  hi Search guifg=NONE
   hi Special guifg=#DC5B00
   hi String guifg=#FF0D00
   hi Typedef gui=bold guifg=#804040
@@ -38,9 +39,10 @@ elseif &t_Co == 256
   hi Label ctermfg=9
   hi Macro ctermfg=202
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi String ctermfg=9
   hi Typedef ctermfg=238
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=63
   hi Conditional ctermfg=4
@@ -49,9 +51,10 @@ elseif &t_Co == 88
   hi Label ctermfg=9
   hi Macro ctermfg=68
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi String ctermfg=9
   hi Typedef ctermfg=81
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=14
   hi Conditional ctermfg=4
@@ -60,9 +63,10 @@ elseif &t_Co == 16
   hi Label ctermfg=9
   hi Macro ctermfg=9
   hi Operator ctermfg=9
+  hi Search ctermfg=NONE
   hi String ctermfg=9
   hi Typedef ctermfg=1
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Conditional ctermfg=4
@@ -71,9 +75,10 @@ else " 8 colors
   hi Label ctermfg=1
   hi Macro ctermfg=3
   hi Operator ctermfg=1
+  hi Search ctermfg=NONE
   hi String ctermfg=1
   hi Typedef ctermfg=1
-  hi Visual cterm=reverse ctermbg=NONE
+  hi Visual ctermbg=NONE
 endif
 
 

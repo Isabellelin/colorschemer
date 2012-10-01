@@ -4,7 +4,7 @@
 " Name: vividchalk
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:08
+" Date: 2012-09-29 13:47:39
 "----------------------------------------------------------
 
 set background=dark
@@ -37,9 +37,9 @@ if has("gui_running")
   hi Search guifg=NONE guibg=#555555
   hi Special guifg=#33AA00
   hi SpecialKey guifg=#404040
-  hi SpellBad guibg=#cd0000
-  hi SpellCap guibg=#0000ee
-  hi SpellLocal guibg=#00cdcd
+  hi SpellBad guibg=#0000ee
+  hi SpellCap guibg=#cd0000
+  hi SpellLocal guibg=#cdcd00
   hi SpellRare guibg=#cd00cd
   hi Statement gui=NONE guifg=#FF6600
   hi StatusLine gui=bold guifg=Black guibg=#aabbee
@@ -50,188 +50,180 @@ if has("gui_running")
   hi TabLineSel guifg=White guibg=Black
   hi Type gui=NONE guifg=#AAAA77
   hi Visual guibg=#555577
-  hi VisualNOS guibg=#444444
+  hi VisualNOS gui=NONE guibg=#444444
   hi WildMenu gui=bold guibg=#ffff00
   hi railsUserClass gui=italic guifg=#AAAAAA
   hi railsUserMethod gui=italic guifg=#AACCFF
   hi rubyMethod guifg=#DDE93D
   hi rubyNumber guifg=#CCFF33
 elseif &t_Co == 256
-  hi Normal ctermfg=253 ctermbg=16
-  hi Comment ctermfg=92
-  hi Constant ctermfg=30
-  hi Cursor ctermfg=0 ctermbg=15
-  hi CursorLine ctermbg=236
-  hi DiffAdd ctermbg=4
-  hi Error ctermbg=1
-  hi ErrorMsg ctermfg=NONE
-  hi Folded ctermfg=195 ctermbg=18
-  hi Identifier cterm=NONE ctermfg=220
-  hi IncSearch ctermfg=15 ctermbg=0
-  hi LineNr ctermfg=15 ctermbg=232
-  hi MatchParen ctermbg=20
-  hi MoreMsg ctermfg=10
-  hi NonText ctermfg=8
-  hi Pmenu cterm=bold ctermfg=15 ctermbg=20
-  hi PmenuSel cterm=bold ctermfg=15 ctermbg=105
-  hi PreProc ctermfg=123
-  hi Regexp ctermfg=30
-  hi Search ctermfg=NONE ctermbg=235
-  hi Special ctermfg=40
-  hi SpecialKey ctermfg=8
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=4
-  hi SpellLocal ctermbg=6
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=208
-  hi StatusLine cterm=bold ctermfg=0 ctermbg=15
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=248
-  hi String ctermfg=82
-  hi TabLine ctermfg=247 ctermbg=232
-  hi TabLineFill cterm=underline ctermfg=247 ctermbg=241
-  hi TabLineSel ctermfg=15 ctermbg=0
-  hi Title ctermfg=13
-  hi Type ctermfg=186
-  hi Visual ctermbg=241
-  hi VisualNOS ctermbg=235
-  hi WarningMsg ctermfg=9
-  hi WildMenu cterm=bold
-  hi railsUserClass ctermfg=7
-  hi railsUserMethod ctermfg=45
-  hi rubyMethod ctermfg=228
-  hi rubyNumber ctermfg=190
-elseif &t_Co == 88
-  hi Normal ctermfg=86 ctermbg=16
+  hi Normal ctermfg=87 ctermbg=0
   hi Comment ctermfg=34
   hi Constant ctermfg=21
-  hi Cursor ctermfg=16 ctermbg=79
-  hi CursorLine ctermbg=80
-  hi DiffAdd ctermbg=19
-  hi Error ctermbg=48
+  hi Cursor ctermfg=0 ctermbg=15
+  hi CursorLine ctermbg=236
+  hi DiffDelete ctermfg=12 ctermbg=6
+  hi DiffText ctermbg=9
+  hi Error ctermbg=4
   hi ErrorMsg ctermfg=NONE
   hi Folded ctermfg=63 ctermbg=17
   hi Identifier cterm=NONE ctermfg=72
-  hi IncSearch ctermfg=79 ctermbg=16
-  hi LineNr ctermfg=79 ctermbg=16
-  hi MatchParen ctermbg=4
-  hi MoreMsg ctermfg=28
-  hi NonText ctermfg=81
-  hi Pmenu cterm=bold ctermfg=79 ctermbg=4
-  hi PmenuSel cterm=bold ctermfg=79 ctermbg=39
+  hi IncSearch ctermfg=15 ctermbg=0
+  hi LineNr ctermfg=15 ctermbg=80
+  hi MatchParen ctermbg=18
+  hi NonText ctermfg=8
+  hi Pmenu cterm=bold ctermfg=15 ctermbg=18
+  hi PmenuSel cterm=bold ctermfg=15 ctermbg=39
   hi PreProc ctermfg=47
   hi Regexp ctermfg=21
-  hi Search ctermfg=NONE ctermbg=80
+  hi Search ctermfg=NONE ctermbg=81
   hi Special ctermfg=24
-  hi SpecialKey ctermfg=81
-  hi SpellBad ctermbg=48
-  hi SpellCap ctermbg=19
-  hi SpellLocal ctermbg=6
-  hi SpellRare ctermbg=50
+  hi SpecialKey ctermfg=8
+  hi SpellBad ctermbg=4
+  hi SpellCap ctermbg=1
+  hi SpellLocal ctermbg=3
+  hi SpellRare ctermbg=5
   hi Statement ctermfg=68
-  hi StatusLine cterm=bold ctermfg=16 ctermbg=79
-  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=84
+  hi StatusLine cterm=bold ctermfg=0 ctermbg=15
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=7
   hi String ctermfg=44
-  hi TabLine ctermfg=84 ctermbg=16
-  hi TabLineFill cterm=underline ctermfg=84 ctermbg=81
-  hi TabLineSel ctermfg=79 ctermbg=16
-  hi Title ctermfg=67
+  hi TabLine ctermfg=85 ctermbg=80
+  hi TabLineFill cterm=underline ctermfg=85 ctermbg=83
+  hi TabLineSel ctermfg=15 ctermbg=0
   hi Type ctermfg=57
-  hi Visual ctermbg=81
-  hi VisualNOS ctermbg=80
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermbg=83
+  hi VisualNOS cterm=NONE ctermbg=81
   hi WildMenu cterm=bold
-  hi railsUserClass ctermfg=87
+  hi railsUserClass ctermfg=7
   hi railsUserMethod ctermfg=27
   hi rubyMethod ctermfg=77
   hi rubyNumber ctermfg=60
+elseif &t_Co == 88
+  hi Normal ctermfg=47 ctermbg=16
+  hi Comment ctermfg=24
+  hi Constant ctermfg=19
+  hi Cursor ctermfg=16 ctermbg=79
+  hi CursorLine ctermbg=80
+  hi DiffDelete ctermfg=39 ctermbg=6
+  hi DiffText ctermbg=9
+  hi Error ctermbg=19
+  hi ErrorMsg ctermfg=NONE
+  hi Folded ctermfg=39 ctermbg=17
+  hi Identifier cterm=NONE ctermfg=41
+  hi IncSearch ctermfg=79 ctermbg=16
+  hi LineNr ctermfg=79 ctermbg=42
+  hi MatchParen ctermbg=17
+  hi NonText ctermfg=81
+  hi Pmenu cterm=bold ctermfg=79 ctermbg=17
+  hi PmenuSel cterm=bold ctermfg=79 ctermbg=27
+  hi PreProc ctermfg=29
+  hi Regexp ctermfg=19
+  hi Search ctermfg=NONE ctermbg=43
+  hi Special ctermfg=21
+  hi SpecialKey ctermfg=81
+  hi SpellBad ctermbg=19
+  hi SpellCap ctermbg=48
+  hi SpellLocal ctermbg=56
+  hi SpellRare ctermbg=50
+  hi Statement ctermfg=38
+  hi StatusLine cterm=bold ctermfg=16 ctermbg=79
+  hi StatusLineNC cterm=NONE ctermfg=16 ctermbg=87
+  hi String ctermfg=6
+  hi TabLine ctermfg=46 ctermbg=42
+  hi TabLineFill cterm=underline ctermfg=46 ctermbg=45
+  hi TabLineSel ctermfg=79 ctermbg=16
+  hi Type ctermfg=35
+  hi Visual cterm=NONE ctermbg=45
+  hi VisualNOS cterm=NONE ctermbg=43
+  hi WildMenu cterm=bold
+  hi railsUserClass ctermfg=87
+  hi railsUserMethod ctermfg=23
+  hi rubyMethod ctermfg=41
+  hi rubyNumber ctermfg=81
 elseif &t_Co == 16
-  hi Normal ctermfg=12 ctermbg=0
-  hi Comment ctermfg=5
-  hi Constant ctermfg=6
+  hi Normal ctermfg=14 ctermbg=0
+  hi Comment ctermfg=2
+  hi Constant ctermfg=4
   hi Cursor ctermfg=0 ctermbg=15
   hi CursorLine ctermbg=2
-  hi DiffAdd ctermbg=4
-  hi Error ctermbg=9
+  hi DiffDelete ctermfg=12 ctermbg=6
+  hi DiffText ctermbg=9
+  hi Error ctermbg=4
   hi ErrorMsg ctermfg=NONE
-  hi Folded ctermfg=14 ctermbg=4
-  hi Identifier cterm=NONE ctermfg=3
+  hi Folded ctermfg=12 ctermbg=4
+  hi Identifier cterm=NONE ctermfg=8
   hi IncSearch ctermfg=15 ctermbg=0
-  hi LineNr ctermfg=15 ctermbg=0
+  hi LineNr ctermfg=15 ctermbg=12
   hi MatchParen ctermbg=4
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=2
   hi Pmenu cterm=bold ctermfg=15 ctermbg=4
-  hi PmenuSel cterm=bold ctermfg=15 ctermbg=12
-  hi PreProc ctermfg=14
-  hi Regexp ctermfg=6
-  hi Search ctermfg=NONE ctermbg=0
-  hi Special ctermfg=2
+  hi PmenuSel cterm=bold ctermfg=15 ctermbg=6
+  hi PreProc ctermfg=6
+  hi Regexp ctermfg=4
+  hi Search ctermfg=NONE ctermbg=12
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=2
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=4
-  hi SpellLocal ctermbg=6
+  hi SpellBad ctermbg=4
+  hi SpellCap ctermbg=9
+  hi SpellLocal ctermbg=3
   hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
+  hi Statement ctermfg=8
   hi StatusLine cterm=bold ctermfg=0 ctermbg=15
-  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=8
-  hi String ctermfg=3
-  hi TabLine ctermfg=8 ctermbg=0
-  hi TabLineFill cterm=underline ctermfg=8 ctermbg=3
+  hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=11
+  hi String ctermfg=6
+  hi TabLine ctermfg=10 ctermbg=12
+  hi TabLineFill cterm=underline ctermfg=10 ctermbg=10
   hi TabLineSel ctermfg=15 ctermbg=0
-  hi Title ctermfg=13
-  hi Type ctermfg=10
-  hi Visual ctermbg=3
-  hi VisualNOS ctermbg=0
-  hi WarningMsg ctermfg=9
+  hi Type ctermfg=5
+  hi Visual cterm=NONE ctermbg=10
+  hi VisualNOS cterm=NONE ctermbg=12
   hi WildMenu cterm=bold
   hi railsUserClass ctermfg=11
   hi railsUserMethod ctermfg=6
-  hi rubyMethod ctermfg=11
-  hi rubyNumber ctermfg=3
+  hi rubyMethod ctermfg=10
+  hi rubyNumber ctermfg=5
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Comment ctermfg=5
-  hi Constant ctermfg=6
+  hi Comment ctermfg=2
+  hi Constant ctermfg=4
   hi Cursor ctermfg=0 ctermbg=7
   hi CursorLine ctermbg=2
-  hi DiffAdd ctermbg=4
-  hi Error ctermbg=1
+  hi DiffDelete ctermfg=5 ctermbg=6
+  hi DiffText ctermbg=1
+  hi Error ctermbg=4
   hi ErrorMsg ctermfg=NONE
-  hi Folded ctermfg=7 ctermbg=4
-  hi Identifier cterm=NONE ctermfg=3
+  hi Folded ctermfg=5 ctermbg=4
+  hi Identifier cterm=NONE ctermfg=6
   hi IncSearch ctermfg=7 ctermbg=0
-  hi LineNr ctermfg=7 ctermbg=0
+  hi LineNr ctermfg=7 ctermbg=7
   hi MatchParen ctermbg=4
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=2
   hi Pmenu cterm=bold ctermfg=7 ctermbg=4
-  hi PmenuSel cterm=bold ctermfg=7 ctermbg=7
-  hi PreProc ctermfg=7
-  hi Regexp ctermfg=6
-  hi Search ctermfg=NONE ctermbg=0
-  hi Special ctermfg=2
+  hi PmenuSel cterm=bold ctermfg=7 ctermbg=6
+  hi PreProc ctermfg=6
+  hi Regexp ctermfg=4
+  hi Search ctermfg=NONE ctermbg=7
+  hi Special ctermfg=6
   hi SpecialKey ctermfg=2
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=4
-  hi SpellLocal ctermbg=6
+  hi SpellBad ctermbg=4
+  hi SpellCap ctermbg=1
+  hi SpellLocal ctermbg=3
   hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
+  hi Statement ctermfg=6
   hi StatusLine cterm=bold ctermfg=0 ctermbg=7
   hi StatusLineNC cterm=NONE ctermfg=0 ctermbg=7
-  hi String ctermfg=3
-  hi TabLine ctermfg=7 ctermbg=0
+  hi String ctermfg=6
+  hi TabLine ctermfg=7 ctermbg=7
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=3
   hi TabLineSel ctermfg=7 ctermbg=0
-  hi Title ctermfg=5
-  hi Type ctermfg=7
-  hi Visual ctermbg=3
-  hi VisualNOS ctermbg=0
-  hi WarningMsg ctermfg=1
+  hi Type ctermfg=5
+  hi Visual cterm=NONE ctermbg=3
+  hi VisualNOS cterm=NONE ctermbg=7
   hi WildMenu cterm=bold
   hi railsUserClass ctermfg=7
   hi railsUserMethod ctermfg=6
-  hi rubyMethod ctermfg=7
-  hi rubyNumber ctermfg=3
+  hi rubyMethod ctermfg=3
+  hi rubyNumber ctermfg=5
 endif
 
 hi! link Directory Identifier

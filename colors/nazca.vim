@@ -4,7 +4,7 @@
 " Name: nazca
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:05
+" Date: 2012-09-29 13:39:45
 "----------------------------------------------------------
 
 set background=dark
@@ -84,14 +84,12 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=233
   hi Comment ctermfg=8
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=68
   hi Constant ctermfg=114
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=233
   hi CursorLine cterm=NONE ctermbg=16
   hi Delimiter ctermfg=37
-  hi Directory ctermfg=14
   hi Error ctermbg=88
   hi ErrorMsg cterm=bold ctermbg=203
   hi FoldColumn ctermfg=248 ctermbg=238
@@ -102,7 +100,6 @@ elseif &t_Co == 256
   hi LineNr ctermfg=237 ctermbg=0
   hi MatchParen cterm=bold ctermfg=7 ctermbg=243
   hi ModeMsg ctermfg=0 ctermbg=189
-  hi MoreMsg ctermfg=10
   hi NonText ctermfg=239 ctermbg=0
   hi Number ctermfg=207
   hi Operator ctermfg=179
@@ -110,24 +107,20 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=0 ctermbg=186
   hi PreProc ctermfg=117
-  hi Question ctermfg=10
   hi Search cterm=underline ctermbg=229
-  hi SignColumn ctermbg=8
   hi Special ctermfg=173
   hi SpecialKey ctermfg=239 ctermbg=0
   hi Statement ctermfg=68
   hi StatusLine cterm=NONE ctermfg=85 ctermbg=234
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=234
   hi String ctermfg=156
-  hi TabLine ctermbg=8
   hi Title cterm=bold ctermfg=7
   hi Todo cterm=bold ctermfg=88 ctermbg=227
   hi Type cterm=bold ctermfg=229
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermbg=237
+  hi Visual cterm=NONE ctermbg=237
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=203
-  hi WildMenu ctermfg=28
+  hi WildMenu ctermfg=28 ctermbg=11
   hi cssBoxProp ctermfg=180
   hi cssIdentifier ctermfg=151
   hi cssPseudoClassId ctermfg=152
@@ -157,14 +150,12 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
   hi Comment ctermfg=81
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=38
   hi Constant ctermfg=41
   hi Cursor cterm=reverse ctermfg=16 ctermbg=76
   hi CursorColumn cterm=bold ctermbg=16
   hi CursorLine cterm=NONE ctermbg=16
   hi Delimiter ctermfg=6
-  hi Directory ctermfg=31
   hi Error ctermbg=32
   hi ErrorMsg cterm=bold ctermbg=69
   hi FoldColumn ctermfg=84 ctermbg=80
@@ -175,7 +166,6 @@ elseif &t_Co == 88
   hi LineNr ctermfg=80 ctermbg=16
   hi MatchParen cterm=bold ctermfg=87 ctermbg=82
   hi ModeMsg ctermfg=16 ctermbg=59
-  hi MoreMsg ctermfg=28
   hi NonText ctermfg=81 ctermbg=16
   hi Number ctermfg=71
   hi Operator ctermfg=57
@@ -183,24 +173,20 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=16 ctermbg=79
   hi PmenuSel ctermfg=16 ctermbg=57
   hi PreProc ctermfg=43
-  hi Question ctermfg=28
   hi Search cterm=underline ctermbg=78
-  hi SignColumn ctermbg=81
   hi Special ctermfg=53
   hi SpecialKey ctermfg=81 ctermbg=16
   hi Statement ctermfg=38
   hi StatusLine cterm=NONE ctermfg=46 ctermbg=80
   hi StatusLineNC cterm=bold ctermfg=16 ctermbg=80
   hi String ctermfg=61
-  hi TabLine ctermbg=81
   hi Title cterm=bold ctermfg=87
   hi Todo cterm=bold ctermfg=32 ctermbg=77
   hi Type cterm=bold ctermfg=78
-  hi Underlined ctermfg=39
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermbg=80
+  hi Visual cterm=NONE ctermbg=80
   hi WarningMsg cterm=bold ctermfg=79 ctermbg=69
-  hi WildMenu ctermfg=20
+  hi WildMenu ctermfg=20 ctermbg=76
   hi cssBoxProp ctermfg=57
   hi cssIdentifier ctermfg=85
   hi cssPseudoClassId ctermfg=86
@@ -230,14 +216,12 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=8
   hi Constant ctermfg=10
   hi Cursor cterm=reverse ctermfg=0 ctermbg=11
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Delimiter ctermfg=6
-  hi Directory ctermfg=14
   hi Error ctermbg=1
   hi ErrorMsg cterm=bold ctermbg=9
   hi FoldColumn ctermfg=8 ctermbg=2
@@ -248,7 +232,6 @@ elseif &t_Co == 16
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen cterm=bold ctermfg=11 ctermbg=8
   hi ModeMsg ctermfg=0 ctermbg=14
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=2 ctermbg=0
   hi Number ctermfg=13
   hi Operator ctermfg=8
@@ -256,24 +239,20 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=0 ctermbg=15
   hi PmenuSel ctermfg=0 ctermbg=10
   hi PreProc ctermfg=12
-  hi Question ctermfg=2
   hi Search cterm=underline ctermbg=11
-  hi SignColumn ctermbg=2
   hi Special ctermfg=8
   hi SpecialKey ctermfg=2 ctermbg=0
   hi Statement ctermfg=8
   hi StatusLine cterm=NONE ctermfg=10 ctermbg=0
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=0
   hi String ctermfg=10
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=11
   hi Todo cterm=bold ctermfg=1 ctermbg=11
   hi Type cterm=bold ctermfg=11
-  hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=15 ctermbg=9
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=11
   hi cssBoxProp ctermfg=8
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=12
@@ -303,14 +282,12 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=2
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=6
   hi Constant ctermfg=7
   hi Cursor cterm=reverse ctermfg=0 ctermbg=3
   hi CursorColumn cterm=bold ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi Delimiter ctermfg=6
-  hi Directory ctermfg=6
   hi Error ctermbg=1
   hi ErrorMsg cterm=bold ctermbg=3
   hi FoldColumn ctermfg=7 ctermbg=2
@@ -321,7 +298,6 @@ else " 8 colors
   hi LineNr ctermfg=2 ctermbg=0
   hi MatchParen cterm=bold ctermfg=7 ctermbg=3
   hi ModeMsg ctermfg=0 ctermbg=7
-  hi MoreMsg ctermfg=2
   hi NonText ctermfg=2 ctermbg=0
   hi Number ctermfg=7
   hi Operator ctermfg=7
@@ -329,24 +305,20 @@ else " 8 colors
   hi PmenuSbar ctermfg=0 ctermbg=7
   hi PmenuSel ctermfg=0 ctermbg=7
   hi PreProc ctermfg=7
-  hi Question ctermfg=2
   hi Search cterm=underline ctermbg=7
-  hi SignColumn ctermbg=2
   hi Special ctermfg=3
   hi SpecialKey ctermfg=2 ctermbg=0
   hi Statement ctermfg=6
   hi StatusLine cterm=NONE ctermfg=7 ctermbg=0
   hi StatusLineNC cterm=bold ctermfg=0 ctermbg=0
   hi String ctermfg=7
-  hi TabLine ctermbg=2
   hi Title cterm=bold ctermfg=7
   hi Todo cterm=bold ctermfg=1 ctermbg=7
   hi Type cterm=bold ctermfg=7
-  hi Underlined ctermfg=5
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=3
-  hi WildMenu ctermfg=2
+  hi WildMenu ctermfg=2 ctermbg=3
   hi cssBoxProp ctermfg=7
   hi cssIdentifier ctermfg=7
   hi cssPseudoClassId ctermfg=7

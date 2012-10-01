@@ -4,7 +4,7 @@
 " Name: beachcomber
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:09:49
+" Date: 2012-09-29 13:30:47
 "----------------------------------------------------------
 
 set background=light
@@ -57,11 +57,11 @@ elseif &t_Co == 256
   hi LineNr ctermbg=152
   hi MatchParen ctermfg=152
   hi NonText ctermbg=187
-  hi Search ctermfg=239
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=236 ctermbg=116
   hi StatusLineNC ctermfg=159 ctermbg=240
   hi VertSplit ctermfg=159 ctermbg=240
-  hi Visual ctermfg=242
+  hi Visual cterm=NONE ctermfg=242 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=87
   hi Cursor ctermfg=67 ctermbg=42
@@ -72,11 +72,11 @@ elseif &t_Co == 88
   hi LineNr ctermbg=87
   hi MatchParen ctermfg=42
   hi NonText ctermbg=86
-  hi Search ctermfg=81
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=80 ctermbg=42
   hi StatusLineNC ctermfg=47 ctermbg=81
   hi VertSplit ctermfg=47 ctermbg=81
-  hi Visual ctermfg=82
+  hi Visual cterm=NONE ctermfg=82 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=4 ctermbg=11
   hi Cursor ctermfg=13 ctermbg=12
@@ -87,11 +87,11 @@ elseif &t_Co == 16
   hi LineNr ctermbg=12
   hi MatchParen ctermfg=12
   hi NonText ctermbg=7
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=12
   hi StatusLineNC ctermfg=14 ctermbg=2
   hi VertSplit ctermfg=14 ctermbg=2
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=4 ctermbg=7
   hi Cursor ctermfg=5 ctermbg=7
@@ -102,11 +102,11 @@ else " 8 colors
   hi LineNr ctermbg=7
   hi MatchParen ctermfg=7
   hi NonText ctermbg=7
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi StatusLine ctermfg=0 ctermbg=7
   hi StatusLineNC ctermfg=7 ctermbg=2
   hi VertSplit ctermfg=7 ctermbg=2
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=7
 endif
 
 

@@ -4,7 +4,7 @@
 " Name: tango
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:29
+" Date: 2012-09-29 13:45:33
 "----------------------------------------------------------
 
 set background=light
@@ -81,7 +81,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=236
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=240
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -92,7 +92,7 @@ elseif &t_Co == 256
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=252 ctermbg=24
-  hi Visual ctermfg=240
+  hi Visual cterm=NONE ctermfg=240 ctermbg=7
   hi WarningMsg ctermbg=160
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=79
@@ -116,7 +116,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=80
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=81
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -127,7 +127,7 @@ elseif &t_Co == 88
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=86 ctermbg=21
-  hi Visual ctermfg=81
+  hi Visual cterm=NONE ctermfg=81 ctermbg=87
   hi WarningMsg ctermbg=48
 elseif &t_Co == 16
   hi Normal ctermfg=2 ctermbg=15
@@ -151,7 +151,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=2
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -162,7 +162,7 @@ elseif &t_Co == 16
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=12 ctermbg=6
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=11
   hi WarningMsg ctermbg=9
 else " 8 colors
   hi Normal ctermfg=2 ctermbg=7
@@ -186,7 +186,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=2
   hi PreProc ctermbg=bg
   hi Question ctermbg=bg
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi Special ctermbg=bg
   hi SpecialKey ctermbg=bg
   hi Statement ctermbg=bg
@@ -197,7 +197,7 @@ else " 8 colors
   hi Type ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=7 ctermbg=6
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=7
   hi WarningMsg ctermbg=1
 endif
 

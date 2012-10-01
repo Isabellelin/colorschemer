@@ -4,7 +4,7 @@
 " Name: compot
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:53
+" Date: 2012-09-29 13:32:26
 "----------------------------------------------------------
 
 set background=dark
@@ -22,7 +22,7 @@ if has("gui_running")
   hi Comment guifg=#3c403b
   hi Conditional guifg=#86B9BE
   hi Constant guifg=#948369
-  hi Cursor guibg=#ffffff
+  hi Cursor guifg=NONE guibg=#ffffff
   hi CursorColumn guibg=#1f1f1f
   hi CursorLine guibg=#222222
   hi Define guifg=#B1BE4F
@@ -85,50 +85,32 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=246 ctermbg=234
   hi Boolean ctermfg=65
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=109
-  hi Cursor ctermbg=231
-  hi CursorColumn ctermbg=8
+  hi Cursor ctermfg=NONE ctermbg=231
   hi CursorLine ctermbg=235
   hi Define ctermfg=143
   hi DiffAdd ctermfg=231
   hi DiffChange ctermfg=231
   hi DiffText ctermfg=231
-  hi Directory ctermfg=14
   hi Float ctermfg=236
-  hi FoldColumn ctermbg=8
-  hi Folded ctermbg=8
   hi IncSearch ctermfg=231 ctermbg=65
   hi Keyword ctermfg=109
   hi Label ctermfg=67
   hi LineNr ctermbg=16
   hi MatchParen ctermfg=202
-  hi MoreMsg ctermfg=10
   hi Number ctermfg=236
   hi Operator ctermfg=239
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=8
-  hi PreProc ctermfg=12
-  hi Question ctermfg=10
   hi ShowMarksHLl ctermfg=46
   hi ShowMarksHLm ctermfg=51
   hi ShowMarksHLu ctermfg=9
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=246 ctermbg=236
   hi StatusLineNC ctermfg=246 ctermbg=236
   hi StorageClass ctermfg=245
   hi String ctermfg=137
-  hi TabLine ctermbg=8
   hi Tag ctermfg=59
-  hi Title ctermfg=13
-  hi Type ctermfg=10
-  hi Underlined ctermfg=12
   hi VCSConflict ctermfg=231 ctermbg=9
   hi VertSplit ctermfg=236 ctermbg=236
-  hi Visual ctermfg=231 ctermbg=8
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi WhitespaceEOL ctermfg=231 ctermbg=9
   hi erlangBIF ctermfg=59
   hi erlangBinary ctermfg=238
@@ -146,50 +128,32 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=83 ctermbg=80
   hi Boolean ctermfg=21
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=42
-  hi Cursor ctermbg=79
-  hi CursorColumn ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=79
   hi CursorLine ctermbg=80
   hi Define ctermfg=57
   hi DiffAdd ctermfg=79
   hi DiffChange ctermfg=79
   hi DiffText ctermfg=79
-  hi Directory ctermfg=31
   hi Float ctermfg=80
-  hi FoldColumn ctermbg=81
-  hi Folded ctermbg=81
   hi IncSearch ctermfg=79 ctermbg=81
   hi Keyword ctermfg=38
   hi Label ctermfg=22
   hi LineNr ctermbg=16
   hi MatchParen ctermfg=68
-  hi MoreMsg ctermfg=28
   hi Number ctermfg=80
   hi Operator ctermfg=81
-  hi PmenuSbar ctermbg=87
-  hi PmenuSel ctermfg=81
-  hi PreProc ctermfg=39
-  hi Question ctermfg=28
   hi ShowMarksHLl ctermfg=28
   hi ShowMarksHLm ctermfg=31
   hi ShowMarksHLu ctermfg=9
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=83 ctermbg=80
   hi StatusLineNC ctermfg=83 ctermbg=80
   hi StorageClass ctermfg=83
   hi String ctermfg=83
-  hi TabLine ctermbg=81
   hi Tag ctermfg=81
-  hi Title ctermfg=67
-  hi Type ctermfg=28
-  hi Underlined ctermfg=39
   hi VCSConflict ctermfg=79 ctermbg=9
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=79 ctermbg=81
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi WhitespaceEOL ctermfg=79 ctermbg=9
   hi erlangBIF ctermfg=81
   hi erlangBinary ctermfg=81
@@ -207,50 +171,32 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=8 ctermbg=0
   hi Boolean ctermfg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7
-  hi Cursor ctermbg=15
-  hi CursorColumn ctermbg=2
+  hi Cursor ctermfg=NONE ctermbg=15
   hi CursorLine ctermbg=0
   hi Define ctermfg=8
   hi DiffAdd ctermfg=15
   hi DiffChange ctermfg=15
   hi DiffText ctermfg=15
-  hi Directory ctermfg=14
   hi Float ctermfg=2
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=15 ctermbg=3
   hi Keyword ctermfg=8
   hi Label ctermfg=6
   hi LineNr ctermbg=0
   hi MatchParen ctermfg=9
-  hi MoreMsg ctermfg=2
   hi Number ctermfg=2
   hi Operator ctermfg=2
-  hi PmenuSbar ctermbg=11
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=12
-  hi Question ctermfg=2
   hi ShowMarksHLl ctermfg=2
   hi ShowMarksHLm ctermfg=14
   hi ShowMarksHLu ctermfg=9
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=8 ctermbg=0
   hi StatusLineNC ctermfg=8 ctermbg=0
   hi StorageClass ctermfg=8
   hi String ctermfg=8
-  hi TabLine ctermbg=2
   hi Tag ctermfg=3
-  hi Title ctermfg=13
-  hi Type ctermfg=2
-  hi Underlined ctermfg=12
   hi VCSConflict ctermfg=15 ctermbg=9
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=15 ctermbg=2
-  hi WarningMsg ctermfg=9
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi WhitespaceEOL ctermfg=15 ctermbg=9
   hi erlangBIF ctermfg=3
   hi erlangBinary ctermfg=2
@@ -268,50 +214,32 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=6
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=7
-  hi Cursor ctermbg=7
-  hi CursorColumn ctermbg=2
+  hi Cursor ctermfg=NONE ctermbg=7
   hi CursorLine ctermbg=0
   hi Define ctermfg=7
   hi DiffAdd ctermfg=7
   hi DiffChange ctermfg=7
   hi DiffText ctermfg=7
-  hi Directory ctermfg=6
   hi Float ctermfg=2
-  hi FoldColumn ctermbg=2
-  hi Folded ctermbg=2
   hi IncSearch ctermfg=7 ctermbg=3
   hi Keyword ctermfg=7
   hi Label ctermfg=6
   hi LineNr ctermbg=0
   hi MatchParen ctermfg=3
-  hi MoreMsg ctermfg=2
   hi Number ctermfg=2
   hi Operator ctermfg=2
-  hi PmenuSbar ctermbg=7
-  hi PmenuSel ctermfg=2
-  hi PreProc ctermfg=5
-  hi Question ctermfg=2
   hi ShowMarksHLl ctermfg=2
   hi ShowMarksHLm ctermfg=6
   hi ShowMarksHLu ctermfg=1
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=7 ctermbg=0
   hi StorageClass ctermfg=3
   hi String ctermfg=3
-  hi TabLine ctermbg=2
   hi Tag ctermfg=3
-  hi Title ctermfg=5
-  hi Type ctermfg=2
-  hi Underlined ctermfg=5
   hi VCSConflict ctermfg=7 ctermbg=1
   hi VertSplit ctermfg=0 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=2
-  hi WarningMsg ctermfg=1
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WhitespaceEOL ctermfg=7 ctermbg=1
   hi erlangBIF ctermfg=3
   hi erlangBinary ctermfg=2
@@ -330,7 +258,7 @@ endif
 
 hi! link NERDTreeBookmark Identifier
 hi! link NERDTreeBookmarkName Label
-hi! link NERDTreeDir Statement
+hi! link nerdtreeDir Statement
 
 hi clear Character
 hi clear Function

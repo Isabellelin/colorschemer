@@ -4,7 +4,7 @@
 " Name: liquidcarbon
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:50
+" Date: 2012-09-29 13:38:05
 "----------------------------------------------------------
 
 set background=dark
@@ -21,7 +21,6 @@ if has("gui_running")
   hi ColorColumn guibg=#3a3a3a
   hi Comment gui=italic guifg=#809090
   hi Constant guifg=#cdad00
-  hi Cursor guifg=bg guibg=fg
   hi CursorLine guibg=#3a3a3a
   hi DiffAdd guifg=#000000 guibg=#3cb371
   hi DiffChange guifg=#000000 guibg=#4f94cd
@@ -75,7 +74,6 @@ if has("gui_running")
   hi diffNewFile gui=italic guifg=#ffff00
   hi diffOldFile gui=italic guifg=#da70d6
   hi diffRemoved guifg=#cd5555
-  hi lcursor guifg=bg guibg=fg
   hi pythonDecorator guifg=#cd8500
   hi qfError gui=bold guifg=#ff0000
   hi qfFileName gui=italic guifg=#607b8b
@@ -83,7 +81,6 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=251 ctermbg=236
   hi Boolean ctermfg=170
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=237
   hi DiffAdd ctermfg=16
   hi DiffChange ctermfg=16
@@ -108,7 +105,7 @@ elseif &t_Co == 256
   hi VertSplit ctermfg=240 ctermbg=240
   hi VimCommentTitle ctermfg=66 ctermbg=bg
   hi VimError ctermfg=9 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi diffAdded ctermfg=2
@@ -118,7 +115,6 @@ elseif &t_Co == 256
   hi diffNewFile ctermfg=226
   hi diffOldFile ctermfg=170
   hi diffRemoved ctermfg=167
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=172
   hi qfError ctermfg=9
   hi qfFileName ctermfg=66
@@ -126,7 +122,6 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=58 ctermbg=80
   hi Boolean ctermfg=54
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=16
   hi DiffChange ctermfg=16
@@ -151,7 +146,7 @@ elseif &t_Co == 88
   hi VertSplit ctermfg=81 ctermbg=81
   hi VimCommentTitle ctermfg=83 ctermbg=bg
   hi VimError ctermfg=9 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi diffAdded ctermfg=24
@@ -161,7 +156,6 @@ elseif &t_Co == 88
   hi diffNewFile ctermfg=76
   hi diffOldFile ctermfg=54
   hi diffRemoved ctermfg=53
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=52
   hi qfError ctermfg=9
   hi qfFileName ctermfg=82
@@ -169,7 +163,6 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=0
   hi DiffChange ctermfg=0
@@ -194,7 +187,7 @@ elseif &t_Co == 16
   hi VertSplit ctermfg=6 ctermbg=6
   hi VimCommentTitle ctermfg=6 ctermbg=bg
   hi VimError ctermfg=9 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi diffAdded ctermfg=2
@@ -204,7 +197,6 @@ elseif &t_Co == 16
   hi diffNewFile ctermfg=11
   hi diffOldFile ctermfg=7
   hi diffRemoved ctermfg=8
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=3
   hi qfError ctermfg=9
   hi qfFileName ctermfg=6
@@ -212,7 +204,6 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Boolean ctermfg=7
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=0
   hi DiffChange ctermfg=0
@@ -237,7 +228,7 @@ else " 8 colors
   hi VertSplit ctermfg=6 ctermbg=6
   hi VimCommentTitle ctermfg=6 ctermbg=bg
   hi VimError ctermfg=1 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi diffAdded ctermfg=2
@@ -247,7 +238,6 @@ else " 8 colors
   hi diffNewFile ctermfg=3
   hi diffOldFile ctermfg=7
   hi diffRemoved ctermfg=3
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=3
   hi qfError ctermfg=1
   hi qfFileName ctermfg=6

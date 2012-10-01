@@ -4,7 +4,7 @@
 " Name: busybee
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:11
+" Date: 2012-09-29 13:31:17
 "----------------------------------------------------------
 
 set background=dark
@@ -20,7 +20,7 @@ if has("gui_running")
   hi Boolean guifg=#b1d631
   hi Comment gui=italic guifg=#3f3f3f
   hi Constant guifg=#ff9800
-  hi Cursor guibg=#626262
+  hi Cursor guifg=NONE guibg=#626262
   hi CursorColumn guibg=#202020
   hi CursorLine guibg=#202020
   hi Folded guifg=#a0a8b0 guibg=#384048
@@ -55,7 +55,7 @@ elseif &t_Co == 256
   hi Boolean ctermfg=148
   hi Comment ctermfg=244
   hi Constant ctermfg=208
-  hi Cursor ctermbg=241
+  hi Cursor ctermfg=NONE ctermbg=241
   hi CursorColumn ctermbg=234
   hi CursorLine ctermbg=234
   hi Folded ctermfg=248 ctermbg=4
@@ -79,7 +79,7 @@ elseif &t_Co == 256
   hi Todo ctermfg=245
   hi Type ctermfg=103
   hi VertSplit ctermfg=238 ctermbg=238
-  hi Visual ctermfg=254 ctermbg=4
+  hi Visual cterm=NONE ctermfg=254 ctermbg=4
   hi pythonBuiltinFunction ctermfg=200
   hi pythonExClass ctermfg=200
   hi pythonException ctermfg=200
@@ -90,7 +90,7 @@ elseif &t_Co == 88
   hi Boolean ctermfg=56
   hi Comment ctermfg=83
   hi Constant ctermfg=68
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorColumn ctermbg=80
   hi CursorLine ctermbg=80
   hi Folded ctermfg=84 ctermbg=19
@@ -114,7 +114,7 @@ elseif &t_Co == 88
   hi Todo ctermfg=83
   hi Type ctermfg=38
   hi VertSplit ctermfg=80 ctermbg=80
-  hi Visual ctermfg=87 ctermbg=19
+  hi Visual cterm=NONE ctermfg=87 ctermbg=19
   hi pythonBuiltinFunction ctermfg=66
   hi pythonExClass ctermfg=66
   hi pythonException ctermfg=66
@@ -125,7 +125,7 @@ elseif &t_Co == 16
   hi Boolean ctermfg=3
   hi Comment ctermfg=8
   hi Constant ctermfg=3
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=0
   hi Folded ctermfg=8 ctermbg=4
@@ -149,7 +149,7 @@ elseif &t_Co == 16
   hi Todo ctermfg=8
   hi Type ctermfg=8
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=11 ctermbg=4
+  hi Visual cterm=NONE ctermfg=11 ctermbg=4
   hi pythonBuiltinFunction ctermfg=13
   hi pythonExClass ctermfg=13
   hi pythonException ctermfg=13
@@ -160,7 +160,7 @@ else " 8 colors
   hi Boolean ctermfg=3
   hi Comment ctermfg=3
   hi Constant ctermfg=3
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine ctermbg=0
   hi Folded ctermfg=7 ctermbg=4
@@ -184,7 +184,7 @@ else " 8 colors
   hi Todo ctermfg=3
   hi Type ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=2
-  hi Visual ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermfg=7 ctermbg=4
   hi pythonBuiltinFunction ctermfg=5
   hi pythonExClass ctermfg=5
   hi pythonException ctermfg=5

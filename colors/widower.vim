@@ -4,7 +4,7 @@
 " Name: widower
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:22:38
+" Date: 2012-09-29 13:48:16
 "----------------------------------------------------------
 
 set background=dark
@@ -41,7 +41,7 @@ elseif &t_Co == 256
   hi StatusLineNC ctermfg=252 ctermbg=238
   hi String ctermfg=181
   hi VertSplit ctermfg=238 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=9 ctermbg=16
   hi Cursor ctermfg=16 ctermbg=28
@@ -52,7 +52,7 @@ elseif &t_Co == 88
   hi StatusLineNC ctermfg=86 ctermbg=8
   hi String ctermfg=85
   hi VertSplit ctermfg=8 ctermbg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=9 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=2
@@ -63,7 +63,7 @@ elseif &t_Co == 16
   hi StatusLineNC ctermfg=12 ctermbg=2
   hi String ctermfg=8
   hi VertSplit ctermfg=2 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=1 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=2
@@ -74,7 +74,7 @@ else " 8 colors
   hi StatusLineNC ctermfg=7 ctermbg=2
   hi String ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=2
 endif
 
 

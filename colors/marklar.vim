@@ -4,7 +4,7 @@
 " Name: marklar
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:15:05
+" Date: 2012-09-29 13:38:25
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#71C293 guibg=#06544a
   hi Comment guifg=#00BBBB
   hi Constant guifg=#FFFFFF
-  hi Cursor guibg=#FF0000
+  hi Cursor guifg=NONE guibg=#FF0000
   hi CursorColumn guibg=#096354
   hi CursorLine guibg=#096354
   hi DiffAdd guifg=#0000ee guibg=#136769
@@ -69,7 +69,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=72 ctermbg=23
   hi Comment ctermfg=6
   hi Constant ctermfg=7
-  hi Cursor ctermbg=9
+  hi Cursor ctermfg=NONE ctermbg=9
   hi CursorLine ctermbg=23
   hi DiffAdd ctermfg=4 ctermbg=7
   hi DiffChange ctermfg=4 ctermbg=2
@@ -77,7 +77,7 @@ elseif &t_Co == 256
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
   hi Error cterm=bold ctermfg=7 ctermbg=0
-  hi Folded cterm=bold ctermfg=0 ctermbg=8
+  hi Folded cterm=bold ctermfg=0
   hi Identifier ctermfg=8
   hi IncSearch ctermbg=64
   hi LineNr ctermbg=238
@@ -106,6 +106,7 @@ elseif &t_Co == 256
   hi Todo ctermfg=6 ctermbg=4
   hi Type cterm=bold ctermfg=6
   hi Underlined ctermfg=8
+  hi Visual cterm=NONE ctermbg=8
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=1
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi pythonPrecondit ctermfg=2
@@ -114,7 +115,7 @@ elseif &t_Co == 88
   hi Normal ctermfg=41 ctermbg=80
   hi Comment ctermfg=6
   hi Constant ctermfg=87
-  hi Cursor ctermbg=9
+  hi Cursor ctermfg=NONE ctermbg=9
   hi CursorLine ctermbg=81
   hi DiffAdd ctermfg=19 ctermbg=87
   hi DiffChange ctermfg=19 ctermbg=24
@@ -122,7 +123,7 @@ elseif &t_Co == 88
   hi DiffText cterm=NONE ctermfg=19 ctermbg=56
   hi Directory ctermfg=24
   hi Error cterm=bold ctermfg=87 ctermbg=16
-  hi Folded cterm=bold ctermfg=16 ctermbg=81
+  hi Folded cterm=bold ctermfg=16
   hi Identifier ctermfg=81
   hi IncSearch ctermbg=36
   hi LineNr ctermbg=80
@@ -151,6 +152,7 @@ elseif &t_Co == 88
   hi Todo ctermfg=6 ctermbg=19
   hi Type cterm=bold ctermfg=6
   hi Underlined ctermfg=81
+  hi Visual cterm=NONE ctermbg=81
   hi WarningMsg cterm=bold ctermfg=87 ctermbg=48
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi pythonPrecondit ctermfg=24
@@ -159,7 +161,7 @@ elseif &t_Co == 16
   hi Normal ctermfg=10 ctermbg=2
   hi Comment ctermfg=6
   hi Constant ctermfg=11
-  hi Cursor ctermbg=9
+  hi Cursor ctermfg=NONE ctermbg=9
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=4 ctermbg=11
   hi DiffChange ctermfg=4 ctermbg=2
@@ -167,7 +169,7 @@ elseif &t_Co == 16
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
   hi Error cterm=bold ctermfg=11 ctermbg=0
-  hi Folded cterm=bold ctermfg=0 ctermbg=2
+  hi Folded cterm=bold ctermfg=0
   hi Identifier ctermfg=2
   hi IncSearch ctermbg=3
   hi LineNr ctermbg=2
@@ -196,6 +198,7 @@ elseif &t_Co == 16
   hi Todo ctermfg=6 ctermbg=4
   hi Type cterm=bold ctermfg=6
   hi Underlined ctermfg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=11 ctermbg=9
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi pythonPrecondit ctermfg=2
@@ -204,7 +207,7 @@ else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
   hi Comment ctermfg=6
   hi Constant ctermfg=7
-  hi Cursor ctermbg=1
+  hi Cursor ctermfg=NONE ctermbg=1
   hi CursorLine ctermbg=2
   hi DiffAdd ctermfg=4 ctermbg=7
   hi DiffChange ctermfg=4 ctermbg=2
@@ -212,7 +215,7 @@ else " 8 colors
   hi DiffText cterm=NONE ctermfg=4 ctermbg=3
   hi Directory ctermfg=2
   hi Error cterm=bold ctermfg=7 ctermbg=0
-  hi Folded cterm=bold ctermfg=0 ctermbg=2
+  hi Folded cterm=bold ctermfg=0
   hi Identifier ctermfg=2
   hi IncSearch ctermbg=3
   hi LineNr ctermbg=2
@@ -241,6 +244,7 @@ else " 8 colors
   hi Todo ctermfg=6 ctermbg=4
   hi Type cterm=bold ctermfg=6
   hi Underlined ctermfg=2
+  hi Visual cterm=NONE ctermbg=2
   hi WarningMsg cterm=bold ctermfg=7 ctermbg=1
   hi WildMenu cterm=bold ctermfg=NONE ctermbg=NONE
   hi pythonPrecondit ctermfg=2

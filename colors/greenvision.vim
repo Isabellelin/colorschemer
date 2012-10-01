@@ -4,7 +4,7 @@
 " Name: greenvision
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:04
+" Date: 2012-09-29 13:35:39
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#00a900 guibg=#000000
   hi Comment guifg=#008220 guibg=#000000
   hi Constant guifg=#1fc700 guibg=#001c00
-  hi Cursor gui=bold,reverse guifg=#00ff00 guibg=#000000
+  hi Cursor gui=bold,reverse guifg=#00ff00
   hi CursorColumn guifg=#000000 guibg=#00cc00
   hi CursorLine guifg=#000000 guibg=#00cc00
   hi DiffAdd guifg=#00bf00 guibg=#002200
@@ -102,7 +102,7 @@ elseif &t_Co == 256
   hi Type ctermfg=46 ctermbg=0
   hi Underlined ctermfg=2 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=22 ctermbg=22
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=reverse ctermbg=22
   hi WarningMsg ctermfg=10 ctermbg=0
   hi WildMenu cterm=reverse ctermbg=10
@@ -148,7 +148,7 @@ elseif &t_Co == 88
   hi Type ctermfg=28 ctermbg=16
   hi Underlined ctermfg=24 ctermbg=16
   hi VertSplit cterm=NONE ctermfg=20 ctermbg=20
-  hi Visual cterm=reverse ctermbg=16
+  hi Visual ctermbg=16
   hi VisualNOS cterm=reverse ctermbg=20
   hi WarningMsg ctermfg=28 ctermbg=16
   hi WildMenu cterm=reverse ctermbg=28
@@ -194,7 +194,7 @@ elseif &t_Co == 16
   hi Type ctermfg=2 ctermbg=0
   hi Underlined ctermfg=2 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=reverse ctermbg=2
   hi WarningMsg ctermfg=2 ctermbg=0
   hi WildMenu cterm=reverse ctermbg=2
@@ -240,7 +240,7 @@ else " 8 colors
   hi Type ctermfg=2 ctermbg=0
   hi Underlined ctermfg=2 ctermbg=0
   hi VertSplit cterm=NONE ctermfg=2 ctermbg=2
-  hi Visual cterm=reverse ctermbg=0
+  hi Visual ctermbg=0
   hi VisualNOS cterm=reverse ctermbg=2
   hi WarningMsg ctermfg=2 ctermbg=0
   hi WildMenu cterm=reverse ctermbg=2

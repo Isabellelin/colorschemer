@@ -4,7 +4,7 @@
 " Name: rcg_gui
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:17
+" Date: 2012-09-29 13:42:40
 "----------------------------------------------------------
 
 set background=dark
@@ -32,21 +32,25 @@ elseif &t_Co == 256
   hi Number ctermfg=9
   hi Operator ctermfg=226
   hi String ctermfg=9
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=86 ctermbg=16
   hi Number ctermfg=9
   hi Operator ctermfg=76
   hi String ctermfg=9
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=12 ctermbg=0
   hi Number ctermfg=9
   hi Operator ctermfg=11
   hi String ctermfg=9
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Number ctermfg=1
   hi Operator ctermfg=3
   hi String ctermfg=1
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

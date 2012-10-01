@@ -4,7 +4,7 @@
 " Name: calmbreeze
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:10:18
+" Date: 2012-09-29 13:31:29
 "----------------------------------------------------------
 
 set background=light
@@ -66,10 +66,10 @@ if has("gui_running")
   hi Underlined guifg=#323232
   hi VertSplit gui=NONE guifg=#f0f0f0 guibg=#646464
   hi Visual guifg=#ffffff guibg=#0000AA
-  hi VisualNOS guifg=#ffffff guibg=#0000AA
+  hi VisualNOS gui=NONE guifg=#ffffff guibg=#0000AA
   hi WarningMsg guifg=#c8c8c8 guibg=#a01010
   hi WildMenu guifg=#ffffff guibg=#1994d1
-  hi lcursor guifg=#ffffff guibg=#004364
+  hi lCursor guifg=#ffffff guibg=#004364
 elseif &t_Co == 256
   hi Normal ctermfg=236 ctermbg=230
   hi Cursor ctermfg=231 ctermbg=236
@@ -85,7 +85,7 @@ elseif &t_Co == 256
   hi PmenuSbar ctermfg=236
   hi PmenuThumb ctermfg=241
   hi Question ctermbg=221
-  hi Search ctermfg=9
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=230
   hi SpellBad ctermfg=16
   hi SpellCap ctermfg=16
@@ -96,10 +96,10 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=241 ctermbg=241
   hi TabLineSel ctermfg=231 ctermbg=236
   hi VertSplit ctermfg=255 ctermbg=241
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi VisualNOS ctermfg=231 ctermbg=19
   hi WarningMsg ctermbg=124
-  hi lcursor ctermfg=231 ctermbg=23
+  hi lCursor ctermfg=231 ctermbg=23
 elseif &t_Co == 88
   hi Normal ctermfg=80 ctermbg=78
   hi Cursor ctermfg=79 ctermbg=80
@@ -115,7 +115,7 @@ elseif &t_Co == 88
   hi PmenuSbar ctermfg=80
   hi PmenuThumb ctermfg=81
   hi Question ctermbg=72
-  hi Search ctermfg=9
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=78
   hi SpellBad ctermfg=16
   hi SpellCap ctermfg=16
@@ -126,10 +126,10 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=81 ctermbg=81
   hi TabLineSel ctermfg=79 ctermbg=80
   hi VertSplit ctermfg=87 ctermbg=81
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi VisualNOS ctermfg=79 ctermbg=17
   hi WarningMsg ctermbg=32
-  hi lcursor ctermfg=79 ctermbg=17
+  hi lCursor ctermfg=79 ctermbg=17
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Cursor ctermfg=15 ctermbg=0
@@ -145,7 +145,7 @@ elseif &t_Co == 16
   hi PmenuSbar ctermfg=0
   hi PmenuThumb ctermfg=3
   hi Question ctermbg=11
-  hi Search ctermfg=9
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=11
   hi SpellBad ctermfg=0
   hi SpellCap ctermfg=0
@@ -156,10 +156,10 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=3 ctermbg=3
   hi TabLineSel ctermfg=15 ctermbg=0
   hi VertSplit ctermfg=15 ctermbg=3
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi VisualNOS ctermfg=15 ctermbg=4
   hi WarningMsg ctermbg=1
-  hi lcursor ctermfg=15 ctermbg=4
+  hi lCursor ctermfg=15 ctermbg=4
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Cursor ctermfg=7 ctermbg=0
@@ -175,7 +175,7 @@ else " 8 colors
   hi PmenuSbar ctermfg=0
   hi PmenuThumb ctermfg=3
   hi Question ctermbg=7
-  hi Search ctermfg=1
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
   hi SpellBad ctermfg=0
   hi SpellCap ctermfg=0
@@ -186,10 +186,10 @@ else " 8 colors
   hi TabLineFill ctermfg=3 ctermbg=3
   hi TabLineSel ctermfg=7 ctermbg=0
   hi VertSplit ctermfg=7 ctermbg=3
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi VisualNOS ctermfg=7 ctermbg=4
   hi WarningMsg ctermbg=1
-  hi lcursor ctermfg=7 ctermbg=4
+  hi lCursor ctermfg=7 ctermbg=4
 endif
 
 

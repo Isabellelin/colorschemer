@@ -4,7 +4,7 @@
 " Name: tango2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:31
+" Date: 2012-09-29 13:45:35
 "----------------------------------------------------------
 
 set background=dark
@@ -31,24 +31,28 @@ if has("gui_running")
   hi Type guifg=#8AE234
 elseif &t_Co == 256
   hi Normal ctermfg=255 ctermbg=236
-  hi Comment ctermfg=248
+  hi Comment ctermfg=7
   hi Cursor ctermfg=16 ctermbg=231
   hi Function ctermfg=114
+  hi Visual cterm=NONE ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
-  hi Comment ctermfg=84
+  hi Comment ctermfg=87
   hi Cursor ctermfg=16 ctermbg=79
   hi Function ctermfg=41
+  hi Visual cterm=NONE ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=2
-  hi Comment ctermfg=8
+  hi Comment ctermfg=11
   hi Cursor ctermfg=0 ctermbg=15
   hi Function ctermfg=10
+  hi Visual cterm=NONE ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=2
   hi Comment ctermfg=7
   hi Cursor ctermfg=0 ctermbg=7
   hi Function ctermfg=7
+  hi Visual cterm=NONE ctermbg=2
 endif
 
 

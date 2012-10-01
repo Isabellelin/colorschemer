@@ -4,7 +4,7 @@
 " Name: oceanlight
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:02
+" Date: 2012-09-29 13:41:01
 "----------------------------------------------------------
 
 set background=light
@@ -50,12 +50,9 @@ if has("gui_running")
   hi PreProc guifg=SkyBlue1
   hi Question gui=NONE guifg=SeaGreen2 guibg=bg
   hi Repeat guifg=#5daf83 guibg=bg
-  hi Search guibg=SlateGray2
+  hi Search guifg=NONE guibg=SlateGray2
   hi Special guifg=aquamarine3
   hi SpecialKey guifg=CadetBlue guibg=LightGray
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=NONE guifg=SeaGreen
   hi StatusLine gui=NONE guifg=LightGrey guibg=SlateGrey
   hi StatusLineNC gui=NONE guifg=SlateGrey guibg=LightGrey
@@ -76,43 +73,31 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=242 ctermbg=255
   hi Boolean ctermfg=108 ctermbg=bg
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=8
   hi Conditional ctermfg=72 ctermbg=bg
   hi Constant ctermbg=bg
   hi Cursor ctermfg=231 ctermbg=116
-  hi CursorLineNr ctermfg=3
   hi Define ctermfg=153 ctermbg=bg
-  hi DiffAdd ctermfg=67 ctermbg=9
-  hi DiffChange ctermfg=fg ctermbg=13
-  hi DiffDelete ctermbg=14
+  hi DiffAdd ctermfg=67
+  hi DiffChange ctermfg=fg
   hi DiffText ctermfg=fg
   hi Directory ctermbg=bg
   hi Exception ctermfg=29 ctermbg=bg
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=108 ctermbg=bg
   hi IncSearch ctermfg=fg ctermbg=bg
   hi Include ctermfg=67 ctermbg=bg
   hi Keyword ctermfg=29 ctermbg=bg
-  hi LineNr ctermfg=3 ctermbg=252
+  hi LineNr ctermbg=252
   hi Macro ctermfg=110 ctermbg=bg
   hi ModeMsg ctermfg=252 ctermbg=73
   hi MoreMsg ctermbg=bg
   hi NonText ctermbg=252
   hi Number ctermfg=71 ctermbg=bg
   hi Operator ctermfg=99 ctermbg=bg
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
   hi PreCondit ctermfg=153 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=72 ctermbg=bg
-  hi SignColumn ctermbg=7
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=252
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
   hi StatusLine ctermfg=252 ctermbg=244
   hi StatusLineNC ctermfg=244 ctermbg=252
   hi StorageClass ctermfg=67 ctermbg=bg
@@ -122,50 +107,38 @@ elseif &t_Co == 256
   hi Typedef ctermfg=67 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=246
-  hi Visual ctermfg=153
+  hi Visual cterm=NONE ctermfg=153 ctermbg=7
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=231 ctermbg=116
 elseif &t_Co == 88
   hi Normal ctermfg=82 ctermbg=79
   hi Boolean ctermfg=41 ctermbg=bg
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=81
   hi Conditional ctermfg=41 ctermbg=bg
   hi Constant ctermbg=bg
   hi Cursor ctermfg=79 ctermbg=42
-  hi CursorLineNr ctermfg=56
   hi Define ctermfg=59 ctermbg=bg
-  hi DiffAdd ctermfg=38 ctermbg=9
-  hi DiffChange ctermfg=fg ctermbg=67
-  hi DiffDelete ctermbg=31
+  hi DiffAdd ctermfg=38
+  hi DiffChange ctermfg=fg
   hi DiffText ctermfg=fg
   hi Directory ctermbg=bg
   hi Exception ctermfg=81 ctermbg=bg
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
   hi Function ctermfg=41 ctermbg=bg
   hi IncSearch ctermfg=fg ctermbg=bg
   hi Include ctermfg=38 ctermbg=bg
   hi Keyword ctermfg=81 ctermbg=bg
-  hi LineNr ctermfg=56 ctermbg=86
+  hi LineNr ctermbg=86
   hi Macro ctermfg=42 ctermbg=bg
   hi ModeMsg ctermfg=86 ctermbg=84
   hi MoreMsg ctermbg=bg
   hi NonText ctermbg=86
   hi Number ctermfg=25 ctermbg=bg
   hi Operator ctermfg=39 ctermbg=bg
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
   hi PreCondit ctermfg=43 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=41 ctermbg=bg
-  hi SignColumn ctermbg=87
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=86
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
-  hi Statement ctermfg=56
   hi StatusLine ctermfg=86 ctermbg=83
   hi StatusLineNC ctermfg=83 ctermbg=86
   hi StorageClass ctermfg=38 ctermbg=bg
@@ -175,50 +148,38 @@ elseif &t_Co == 88
   hi Typedef ctermfg=38 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=16 ctermbg=84
-  hi Visual ctermfg=59
+  hi Visual cterm=NONE ctermfg=59 ctermbg=87
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=79 ctermbg=42
 elseif &t_Co == 16
   hi Normal ctermfg=3 ctermbg=15
   hi Boolean ctermfg=10 ctermbg=bg
-  hi ColorColumn ctermbg=9
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=8 ctermbg=bg
   hi Constant ctermbg=bg
   hi Cursor ctermfg=15 ctermbg=12
-  hi CursorLineNr ctermfg=3
   hi Define ctermfg=12 ctermbg=bg
-  hi DiffAdd ctermfg=6 ctermbg=9
-  hi DiffChange ctermfg=fg ctermbg=13
-  hi DiffDelete ctermbg=14
+  hi DiffAdd ctermfg=6
+  hi DiffChange ctermfg=fg
   hi DiffText ctermfg=fg
   hi Directory ctermbg=bg
   hi Exception ctermfg=6 ctermbg=bg
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
   hi Function ctermfg=10 ctermbg=bg
   hi IncSearch ctermfg=fg ctermbg=bg
   hi Include ctermfg=6 ctermbg=bg
   hi Keyword ctermfg=6 ctermbg=bg
-  hi LineNr ctermfg=3 ctermbg=12
+  hi LineNr ctermbg=12
   hi Macro ctermfg=7 ctermbg=bg
   hi ModeMsg ctermfg=12 ctermbg=8
   hi MoreMsg ctermbg=bg
   hi NonText ctermbg=12
   hi Number ctermfg=6 ctermbg=bg
   hi Operator ctermfg=12 ctermbg=bg
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
   hi PreCondit ctermfg=12 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=8 ctermbg=bg
-  hi SignColumn ctermbg=11
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=12
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
-  hi Statement ctermfg=3
   hi StatusLine ctermfg=12 ctermbg=8
   hi StatusLineNC ctermfg=8 ctermbg=12
   hi StorageClass ctermfg=6 ctermbg=bg
@@ -228,50 +189,38 @@ elseif &t_Co == 16
   hi Typedef ctermfg=6 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=8
-  hi Visual ctermfg=12
+  hi Visual cterm=NONE ctermfg=12 ctermbg=11
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=15 ctermbg=12
 else " 8 colors
   hi Normal ctermfg=3 ctermbg=7
   hi Boolean ctermfg=7 ctermbg=bg
-  hi ColorColumn ctermbg=1
-  hi Conceal ctermbg=2
   hi Conditional ctermfg=6 ctermbg=bg
   hi Constant ctermbg=bg
   hi Cursor ctermfg=7 ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi Define ctermfg=7 ctermbg=bg
-  hi DiffAdd ctermfg=6 ctermbg=1
-  hi DiffChange ctermfg=fg ctermbg=5
-  hi DiffDelete ctermbg=6
+  hi DiffAdd ctermfg=6
+  hi DiffChange ctermfg=fg
   hi DiffText ctermfg=fg
   hi Directory ctermbg=bg
   hi Exception ctermfg=6 ctermbg=bg
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Function ctermfg=7 ctermbg=bg
   hi IncSearch ctermfg=fg ctermbg=bg
   hi Include ctermfg=6 ctermbg=bg
   hi Keyword ctermfg=6 ctermbg=bg
-  hi LineNr ctermfg=3 ctermbg=7
+  hi LineNr ctermbg=7
   hi Macro ctermfg=7 ctermbg=bg
   hi ModeMsg ctermfg=7 ctermbg=6
   hi MoreMsg ctermbg=bg
   hi NonText ctermbg=7
   hi Number ctermfg=6 ctermbg=bg
   hi Operator ctermfg=7 ctermbg=bg
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi PreCondit ctermfg=7 ctermbg=bg
   hi Question ctermbg=bg
   hi Repeat ctermfg=6 ctermbg=bg
-  hi SignColumn ctermbg=7
+  hi Search ctermfg=NONE
   hi SpecialKey ctermbg=7
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
-  hi Statement ctermfg=3
   hi StatusLine ctermfg=7 ctermbg=6
   hi StatusLineNC ctermfg=6 ctermbg=7
   hi StorageClass ctermfg=6 ctermbg=bg
@@ -281,7 +230,7 @@ else " 8 colors
   hi Typedef ctermfg=6 ctermbg=bg
   hi Underlined ctermbg=bg
   hi VertSplit ctermfg=0 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi VisualNOS ctermfg=fg ctermbg=bg
   hi WarningMsg ctermbg=bg
   hi cursorim ctermfg=7 ctermbg=7

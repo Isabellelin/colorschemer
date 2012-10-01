@@ -4,7 +4,7 @@
 " Name: golden
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:51
+" Date: 2012-09-29 13:35:22
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#ddbb00 guibg=black
   hi Comment guifg=#978345
   hi Constant guifg=Red
-  hi Cursor guifg=bg guibg=#FF5E06
+  hi Cursor guibg=#FF5E06
   hi Directory guifg=#ffddaa
   hi Error guifg=Red guibg=Black
   hi Folded guifg=orange guibg=#2E2E2E
@@ -42,121 +42,121 @@ if has("gui_running")
   hi VertSplit guifg=#2E2E2E guibg=#978345
   hi Visual gui=reverse
 elseif &t_Co == 256
-  hi Normal ctermfg=11 ctermbg=16
-  hi Comment cterm=bold ctermfg=130
-  hi Constant cterm=bold ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=130
-  hi Directory cterm=bold ctermfg=130
-  hi Error ctermfg=6 ctermbg=0
-  hi ErrorMsg cterm=bold ctermbg=9
-  hi Folded ctermfg=11
+  hi Normal ctermfg=14 ctermbg=16
+  hi Comment cterm=bold ctermfg=6
+  hi Constant cterm=bold ctermfg=12
+  hi Cursor ctermbg=6
+  hi Directory cterm=bold ctermfg=6
+  hi Error ctermfg=3 ctermbg=0
+  hi ErrorMsg cterm=bold ctermbg=12
+  hi Folded ctermfg=14
   hi Identifier ctermfg=7
-  hi LineNr cterm=bold ctermfg=130
-  hi Menu ctermfg=130 ctermbg=16
-  hi ModeMsg ctermfg=130 ctermbg=178
-  hi MoreMsg cterm=bold ctermfg=11
-  hi NonText cterm=bold ctermfg=81
-  hi PreProc ctermfg=130
-  hi Question cterm=bold ctermfg=130
-  hi Scrollbar ctermfg=11 ctermbg=16
-  hi Search ctermfg=15 ctermbg=9
-  hi Special cterm=bold ctermfg=9
-  hi SpecialKey cterm=bold ctermfg=11
-  hi Statement cterm=bold ctermfg=121
-  hi StatusLine cterm=bold ctermfg=0 ctermbg=242
-  hi StatusLineNC ctermfg=15 ctermbg=0
-  hi Title cterm=bold ctermfg=130
-  hi Type cterm=bold
-  hi VertSplit ctermfg=0 ctermbg=242
-  hi Visual cterm=reverse
-  hi WarningMsg cterm=bold ctermfg=4
-elseif &t_Co == 88
-  hi Normal ctermfg=76 ctermbg=16
-  hi Comment cterm=bold ctermfg=52
-  hi Constant cterm=bold ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=52
-  hi Directory cterm=bold ctermfg=52
-  hi Error ctermfg=6 ctermbg=16
-  hi ErrorMsg cterm=bold ctermbg=9
-  hi Folded ctermfg=76
-  hi Identifier ctermfg=87
-  hi LineNr cterm=bold ctermfg=52
-  hi Menu ctermfg=52 ctermbg=16
-  hi ModeMsg ctermfg=52 ctermbg=56
-  hi MoreMsg cterm=bold ctermfg=76
-  hi NonText cterm=bold ctermfg=43
-  hi PreProc ctermfg=52
-  hi Question cterm=bold ctermfg=52
-  hi Scrollbar ctermfg=76 ctermbg=16
-  hi Search ctermfg=79 ctermbg=9
-  hi Special cterm=bold ctermfg=9
-  hi SpecialKey cterm=bold ctermfg=76
-  hi Statement cterm=bold ctermfg=46
-  hi StatusLine cterm=bold ctermfg=16 ctermbg=82
-  hi StatusLineNC ctermfg=79 ctermbg=16
-  hi Title cterm=bold ctermfg=52
-  hi Type cterm=bold
-  hi VertSplit ctermfg=16 ctermbg=82
-  hi Visual cterm=reverse
-  hi WarningMsg cterm=bold ctermfg=19
-elseif &t_Co == 16
-  hi Normal ctermfg=11 ctermbg=0
-  hi Comment cterm=bold ctermfg=3
-  hi Constant cterm=bold ctermfg=9
-  hi Cursor ctermfg=bg ctermbg=3
-  hi Directory cterm=bold ctermfg=3
-  hi Error ctermfg=6 ctermbg=0
-  hi ErrorMsg cterm=bold ctermbg=9
-  hi Folded ctermfg=11
-  hi Identifier ctermfg=11
-  hi LineNr cterm=bold ctermfg=3
-  hi Menu ctermfg=3 ctermbg=0
-  hi ModeMsg ctermfg=3 ctermbg=3
-  hi MoreMsg cterm=bold ctermfg=11
-  hi NonText cterm=bold ctermfg=12
-  hi PreProc ctermfg=3
-  hi Question cterm=bold ctermfg=3
-  hi Scrollbar ctermfg=11 ctermbg=0
-  hi Search ctermfg=15 ctermbg=9
-  hi Special cterm=bold ctermfg=9
-  hi SpecialKey cterm=bold ctermfg=11
+  hi LineNr cterm=bold ctermfg=6
+  hi Menu ctermfg=6 ctermbg=16
+  hi ModeMsg ctermfg=6 ctermbg=178
+  hi MoreMsg cterm=bold ctermfg=14
+  hi NonText cterm=bold
+  hi PreProc ctermfg=6
+  hi Question cterm=bold ctermfg=6
+  hi Scrollbar ctermfg=14 ctermbg=16
+  hi Search ctermfg=15 ctermbg=12
+  hi Special cterm=bold
+  hi SpecialKey cterm=bold ctermfg=14
   hi Statement cterm=bold ctermfg=10
-  hi StatusLine cterm=bold ctermfg=0 ctermbg=3
+  hi StatusLine cterm=bold ctermfg=0 ctermbg=8
   hi StatusLineNC ctermfg=15 ctermbg=0
-  hi Title cterm=bold ctermfg=3
+  hi Title cterm=bold ctermfg=6
   hi Type cterm=bold
-  hi VertSplit ctermfg=0 ctermbg=3
-  hi Visual cterm=reverse
-  hi WarningMsg cterm=bold ctermfg=4
+  hi VertSplit ctermfg=0 ctermbg=8
+  hi Visual ctermbg=8
+  hi WarningMsg cterm=bold ctermfg=1
+elseif &t_Co == 88
+  hi Normal ctermfg=31 ctermbg=16
+  hi Comment cterm=bold ctermfg=6
+  hi Constant cterm=bold ctermfg=39
+  hi Cursor ctermbg=6
+  hi Directory cterm=bold ctermfg=6
+  hi Error ctermfg=56 ctermbg=16
+  hi ErrorMsg cterm=bold ctermbg=39
+  hi Folded ctermfg=31
+  hi Identifier ctermfg=87
+  hi LineNr cterm=bold ctermfg=6
+  hi Menu ctermfg=6 ctermbg=16
+  hi ModeMsg ctermfg=6 ctermbg=56
+  hi MoreMsg cterm=bold ctermfg=31
+  hi NonText cterm=bold
+  hi PreProc ctermfg=6
+  hi Question cterm=bold ctermfg=6
+  hi Scrollbar ctermfg=31 ctermbg=16
+  hi Search ctermfg=79 ctermbg=39
+  hi Special cterm=bold
+  hi SpecialKey cterm=bold ctermfg=31
+  hi Statement cterm=bold ctermfg=28
+  hi StatusLine cterm=bold ctermfg=16 ctermbg=81
+  hi StatusLineNC ctermfg=79 ctermbg=16
+  hi Title cterm=bold ctermfg=6
+  hi Type cterm=bold
+  hi VertSplit ctermfg=16 ctermbg=81
+  hi Visual ctermbg=81
+  hi WarningMsg cterm=bold ctermfg=48
+elseif &t_Co == 16
+  hi Normal ctermfg=14 ctermbg=0
+  hi Comment cterm=bold ctermfg=6
+  hi Constant cterm=bold ctermfg=12
+  hi Cursor ctermbg=6
+  hi Directory cterm=bold ctermfg=6
+  hi Error ctermfg=3 ctermbg=0
+  hi ErrorMsg cterm=bold ctermbg=12
+  hi Folded ctermfg=14
+  hi Identifier ctermfg=11
+  hi LineNr cterm=bold ctermfg=6
+  hi Menu ctermfg=6 ctermbg=0
+  hi ModeMsg ctermfg=6 ctermbg=3
+  hi MoreMsg cterm=bold ctermfg=14
+  hi NonText cterm=bold
+  hi PreProc ctermfg=6
+  hi Question cterm=bold ctermfg=6
+  hi Scrollbar ctermfg=14 ctermbg=0
+  hi Search ctermfg=15 ctermbg=12
+  hi Special cterm=bold
+  hi SpecialKey cterm=bold ctermfg=14
+  hi Statement cterm=bold ctermfg=2
+  hi StatusLine cterm=bold ctermfg=0 ctermbg=2
+  hi StatusLineNC ctermfg=15 ctermbg=0
+  hi Title cterm=bold ctermfg=6
+  hi Type cterm=bold
+  hi VertSplit ctermfg=0 ctermbg=2
+  hi Visual ctermbg=2
+  hi WarningMsg cterm=bold ctermfg=9
 else " 8 colors
-  hi Normal ctermfg=3 ctermbg=0
-  hi Comment cterm=bold ctermfg=3
-  hi Constant cterm=bold ctermfg=1
-  hi Cursor ctermfg=bg ctermbg=3
-  hi Directory cterm=bold ctermfg=3
-  hi Error ctermfg=6 ctermbg=0
-  hi ErrorMsg cterm=bold ctermbg=1
-  hi Folded ctermfg=3
+  hi Normal ctermfg=6 ctermbg=0
+  hi Comment cterm=bold ctermfg=6
+  hi Constant cterm=bold ctermfg=5
+  hi Cursor ctermbg=6
+  hi Directory cterm=bold ctermfg=6
+  hi Error ctermfg=3 ctermbg=0
+  hi ErrorMsg cterm=bold ctermbg=5
+  hi Folded ctermfg=6
   hi Identifier ctermfg=7
-  hi LineNr cterm=bold ctermfg=3
-  hi Menu ctermfg=3 ctermbg=0
-  hi ModeMsg ctermfg=3 ctermbg=3
-  hi MoreMsg cterm=bold ctermfg=3
-  hi NonText cterm=bold ctermfg=7
-  hi PreProc ctermfg=3
-  hi Question cterm=bold ctermfg=3
-  hi Scrollbar ctermfg=3 ctermbg=0
-  hi Search ctermfg=7 ctermbg=1
-  hi Special cterm=bold ctermfg=1
-  hi SpecialKey cterm=bold ctermfg=3
-  hi Statement cterm=bold ctermfg=7
-  hi StatusLine cterm=bold ctermfg=0 ctermbg=3
+  hi LineNr cterm=bold ctermfg=6
+  hi Menu ctermfg=6 ctermbg=0
+  hi ModeMsg ctermfg=6 ctermbg=3
+  hi MoreMsg cterm=bold ctermfg=6
+  hi NonText cterm=bold
+  hi PreProc ctermfg=6
+  hi Question cterm=bold ctermfg=6
+  hi Scrollbar ctermfg=6 ctermbg=0
+  hi Search ctermfg=7 ctermbg=5
+  hi Special cterm=bold
+  hi SpecialKey cterm=bold ctermfg=6
+  hi Statement cterm=bold ctermfg=2
+  hi StatusLine cterm=bold ctermfg=0 ctermbg=2
   hi StatusLineNC ctermfg=7 ctermbg=0
-  hi Title cterm=bold ctermfg=3
+  hi Title cterm=bold ctermfg=6
   hi Type cterm=bold
-  hi VertSplit ctermfg=0 ctermbg=3
-  hi Visual cterm=reverse
-  hi WarningMsg cterm=bold ctermfg=4
+  hi VertSplit ctermfg=0 ctermbg=2
+  hi Visual ctermbg=2
+  hi WarningMsg cterm=bold ctermfg=1
 endif
 
 

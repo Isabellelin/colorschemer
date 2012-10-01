@@ -4,7 +4,7 @@
 " Name: softbluev2
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:19:48
+" Date: 2012-09-29 13:44:40
 "----------------------------------------------------------
 
 set background=dark
@@ -70,12 +70,9 @@ elseif &t_Co == 256
   hi AnsiFuncPtr ctermfg=196 ctermbg=17
   hi BlockBraces cterm=bold ctermfg=226 ctermbg=17
   hi Comment ctermfg=67 ctermbg=17
-  hi Conceal ctermbg=8
   hi Constant ctermfg=217 ctermbg=17
   hi Cursor cterm=bold ctermfg=239 ctermbg=146
-  hi CursorColumn ctermbg=8
   hi CursorLine cterm=NONE ctermbg=18
-  hi Directory ctermfg=14
   hi Error ctermfg=231 ctermbg=169
   hi ErrorMsg ctermfg=231 ctermbg=169
   hi FoldColumn ctermfg=152 ctermbg=17
@@ -91,13 +88,11 @@ elseif &t_Co == 256
   hi Operator ctermfg=226 ctermbg=17
   hi OperatorBold cterm=bold ctermfg=226 ctermbg=17
   hi Pmenu ctermfg=231 ctermbg=61
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=61 ctermbg=170
   hi PreCondit ctermfg=130 ctermbg=17
   hi PreProc ctermfg=171 ctermbg=17
   hi Question ctermfg=68 ctermbg=17
   hi Search ctermfg=159 ctermbg=26
-  hi SignColumn ctermbg=8
   hi Special ctermfg=179 ctermbg=17
   hi SpecialKey ctermfg=149 ctermbg=17
   hi Statement ctermfg=191 ctermbg=17
@@ -105,14 +100,12 @@ elseif &t_Co == 256
   hi StatusLineNC cterm=NONE ctermfg=237 ctermbg=67
   hi StdFunction cterm=bold ctermfg=177 ctermbg=17
   hi StdName cterm=bold ctermfg=69 ctermbg=17
-  hi TabLine ctermbg=8
   hi Title ctermfg=81 ctermbg=17
   hi Todo cterm=bold ctermfg=70 ctermbg=54
   hi Type ctermfg=63 ctermbg=17
-  hi Underlined ctermfg=12
   hi UserLabel2 cterm=bold ctermfg=166 ctermbg=17
   hi VertSplit cterm=NONE ctermfg=244 ctermbg=67
-  hi Visual ctermfg=152 ctermbg=17
+  hi Visual cterm=NONE ctermfg=152 ctermbg=17
   hi WarningMsg ctermfg=210 ctermbg=17
   hi cBinaryOperator ctermfg=161 ctermbg=17
   hi cBinaryOperatorError ctermfg=231 ctermbg=169
@@ -127,12 +120,9 @@ elseif &t_Co == 88
   hi AnsiFuncPtr ctermfg=9 ctermbg=17
   hi BlockBraces cterm=bold ctermfg=76 ctermbg=17
   hi Comment ctermfg=38 ctermbg=17
-  hi Conceal ctermbg=81
   hi Constant ctermfg=74 ctermbg=17
   hi Cursor cterm=bold ctermfg=81 ctermbg=85
-  hi CursorColumn ctermbg=81
   hi CursorLine cterm=NONE ctermbg=17
-  hi Directory ctermfg=31
   hi Error ctermfg=79 ctermbg=54
   hi ErrorMsg ctermfg=79 ctermbg=54
   hi FoldColumn ctermfg=86 ctermbg=17
@@ -148,13 +138,11 @@ elseif &t_Co == 88
   hi Operator ctermfg=76 ctermbg=17
   hi OperatorBold cterm=bold ctermfg=76 ctermbg=17
   hi Pmenu ctermfg=79 ctermbg=81
-  hi PmenuSbar ctermbg=87
   hi PmenuSel ctermfg=81 ctermbg=54
   hi PreCondit ctermfg=52 ctermbg=17
   hi PreProc ctermfg=55 ctermbg=17
   hi Question ctermfg=38 ctermbg=17
   hi Search ctermfg=63 ctermbg=22
-  hi SignColumn ctermbg=81
   hi Special ctermfg=57 ctermbg=17
   hi SpecialKey ctermfg=57 ctermbg=17
   hi Statement ctermfg=61 ctermbg=17
@@ -162,14 +150,12 @@ elseif &t_Co == 88
   hi StatusLineNC cterm=NONE ctermfg=80 ctermbg=38
   hi StdFunction cterm=bold ctermfg=55 ctermbg=17
   hi StdName cterm=bold ctermfg=39 ctermbg=17
-  hi TabLine ctermbg=81
   hi Title ctermfg=43 ctermbg=17
   hi Todo cterm=bold ctermfg=40 ctermbg=33
   hi Type ctermfg=39 ctermbg=17
-  hi Underlined ctermfg=39
   hi UserLabel2 cterm=bold ctermfg=52 ctermbg=17
   hi VertSplit cterm=NONE ctermfg=83 ctermbg=38
-  hi Visual ctermfg=86 ctermbg=17
+  hi Visual cterm=NONE ctermfg=86 ctermbg=17
   hi WarningMsg ctermfg=69 ctermbg=17
   hi cBinaryOperator ctermfg=49 ctermbg=17
   hi cBinaryOperatorError ctermfg=79 ctermbg=54
@@ -184,12 +170,9 @@ elseif &t_Co == 16
   hi AnsiFuncPtr ctermfg=9 ctermbg=4
   hi BlockBraces cterm=bold ctermfg=11 ctermbg=4
   hi Comment ctermfg=8 ctermbg=4
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7 ctermbg=4
   hi Cursor cterm=bold ctermfg=2 ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=4
-  hi Directory ctermfg=14
   hi Error ctermfg=15 ctermbg=8
   hi ErrorMsg ctermfg=15 ctermbg=8
   hi FoldColumn ctermfg=12 ctermbg=4
@@ -205,13 +188,11 @@ elseif &t_Co == 16
   hi Operator ctermfg=11 ctermbg=4
   hi OperatorBold cterm=bold ctermfg=11 ctermbg=4
   hi Pmenu ctermfg=15 ctermbg=8
-  hi PmenuSbar ctermbg=11
   hi PmenuSel ctermfg=8 ctermbg=7
   hi PreCondit ctermfg=3 ctermbg=4
   hi PreProc ctermfg=13 ctermbg=4
   hi Question ctermfg=8 ctermbg=4
   hi Search ctermfg=14 ctermbg=6
-  hi SignColumn ctermbg=2
   hi Special ctermfg=8 ctermbg=4
   hi SpecialKey ctermfg=10 ctermbg=4
   hi Statement ctermfg=10 ctermbg=4
@@ -219,14 +200,12 @@ elseif &t_Co == 16
   hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=8
   hi StdFunction cterm=bold ctermfg=14 ctermbg=4
   hi StdName cterm=bold ctermfg=12 ctermbg=4
-  hi TabLine ctermbg=2
   hi Title ctermfg=12 ctermbg=4
   hi Todo cterm=bold ctermfg=3 ctermbg=5
   hi Type ctermfg=12 ctermbg=4
-  hi Underlined ctermfg=12
   hi UserLabel2 cterm=bold ctermfg=3 ctermbg=4
   hi VertSplit cterm=NONE ctermfg=8 ctermbg=8
-  hi Visual ctermfg=12 ctermbg=4
+  hi Visual cterm=NONE ctermfg=12 ctermbg=4
   hi WarningMsg ctermfg=8 ctermbg=4
   hi cBinaryOperator ctermfg=5 ctermbg=4
   hi cBinaryOperatorError ctermfg=15 ctermbg=8
@@ -241,12 +220,9 @@ else " 8 colors
   hi AnsiFuncPtr ctermfg=1 ctermbg=4
   hi BlockBraces cterm=bold ctermfg=3 ctermbg=4
   hi Comment ctermfg=6 ctermbg=4
-  hi Conceal ctermbg=2
   hi Constant ctermfg=7 ctermbg=4
   hi Cursor cterm=bold ctermfg=2 ctermbg=7
-  hi CursorColumn ctermbg=2
   hi CursorLine cterm=NONE ctermbg=4
-  hi Directory ctermfg=6
   hi Error ctermfg=7 ctermbg=7
   hi ErrorMsg ctermfg=7 ctermbg=7
   hi FoldColumn ctermfg=7 ctermbg=4
@@ -262,13 +238,11 @@ else " 8 colors
   hi Operator ctermfg=3 ctermbg=4
   hi OperatorBold cterm=bold ctermfg=3 ctermbg=4
   hi Pmenu ctermfg=7 ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi PmenuSel ctermfg=5 ctermbg=7
   hi PreCondit ctermfg=3 ctermbg=4
   hi PreProc ctermfg=7 ctermbg=4
   hi Question ctermfg=6 ctermbg=4
   hi Search ctermfg=7 ctermbg=6
-  hi SignColumn ctermbg=2
   hi Special ctermfg=7 ctermbg=4
   hi SpecialKey ctermfg=7 ctermbg=4
   hi Statement ctermfg=7 ctermbg=4
@@ -276,14 +250,12 @@ else " 8 colors
   hi StatusLineNC cterm=NONE ctermfg=2 ctermbg=6
   hi StdFunction cterm=bold ctermfg=7 ctermbg=4
   hi StdName cterm=bold ctermfg=6 ctermbg=4
-  hi TabLine ctermbg=2
   hi Title ctermfg=7 ctermbg=4
   hi Todo cterm=bold ctermfg=3 ctermbg=5
   hi Type ctermfg=5 ctermbg=4
-  hi Underlined ctermfg=5
   hi UserLabel2 cterm=bold ctermfg=3 ctermbg=4
   hi VertSplit cterm=NONE ctermfg=3 ctermbg=6
-  hi Visual ctermfg=7 ctermbg=4
+  hi Visual cterm=NONE ctermfg=7 ctermbg=4
   hi WarningMsg ctermfg=7 ctermbg=4
   hi cBinaryOperator ctermfg=5 ctermbg=4
   hi cBinaryOperatorError ctermfg=7 ctermbg=7

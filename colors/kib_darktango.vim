@@ -4,7 +4,7 @@
 " Name: kib_darktango
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:17
+" Date: 2012-09-29 13:37:20
 "----------------------------------------------------------
 
 set background=dark
@@ -119,7 +119,7 @@ elseif &t_Co == 256
   hi Tag ctermfg=255
   hi Typedef ctermfg=231
   hi VertSplit ctermfg=236 ctermbg=102
-  hi Visual ctermfg=166
+  hi Visual cterm=NONE ctermfg=166 ctermbg=8
   hi pythonBuiltin ctermfg=74
   hi pythonComment ctermfg=220
   hi pythonConditional ctermfg=76
@@ -166,7 +166,7 @@ elseif &t_Co == 88
   hi Tag ctermfg=87
   hi Typedef ctermfg=79
   hi VertSplit ctermfg=80 ctermbg=83
-  hi Visual ctermfg=52
+  hi Visual cterm=NONE ctermfg=52 ctermbg=81
   hi pythonBuiltin ctermfg=38
   hi pythonComment ctermfg=72
   hi pythonConditional ctermfg=40
@@ -213,7 +213,7 @@ elseif &t_Co == 16
   hi Tag ctermfg=11
   hi Typedef ctermfg=15
   hi VertSplit ctermfg=2 ctermbg=8
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi pythonBuiltin ctermfg=8
   hi pythonComment ctermfg=3
   hi pythonConditional ctermfg=3
@@ -260,7 +260,7 @@ else " 8 colors
   hi Tag ctermfg=7
   hi Typedef ctermfg=7
   hi VertSplit ctermfg=2 ctermbg=3
-  hi Visual ctermfg=3
+  hi Visual cterm=NONE ctermfg=3 ctermbg=2
   hi pythonBuiltin ctermfg=7
   hi pythonComment ctermfg=3
   hi pythonConditional ctermfg=3

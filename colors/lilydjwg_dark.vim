@@ -4,7 +4,7 @@
 " Name: lilydjwg_dark
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:45
+" Date: 2012-09-29 13:37:58
 "----------------------------------------------------------
 
 set background=dark
@@ -60,6 +60,7 @@ if has("gui_running")
   hi Underlined guifg=#0088c5 guibg=#222d3d
   hi VertSplit guifg=#00C4FF guibg=#0000FF
   hi Visual guifg=#3a3a3a guibg=#3D3D3D
+  hi VisualNOS gui=NONE
   hi WarningMsg guifg=#FFA500 guibg=#000080
   hi cursorim guifg=#00AAFF guibg=#FF66FF
 elseif &t_Co == 256
@@ -111,7 +112,8 @@ elseif &t_Co == 256
   hi Type ctermfg=214 ctermbg=235
   hi Underlined ctermfg=32 ctermbg=236
   hi VertSplit ctermfg=45 ctermbg=21
-  hi Visual ctermfg=237
+  hi Visual cterm=NONE ctermfg=237 ctermbg=8
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=214 ctermbg=18
   hi cursorim ctermfg=39 ctermbg=207
 elseif &t_Co == 88
@@ -163,7 +165,8 @@ elseif &t_Co == 88
   hi Type ctermfg=72 ctermbg=80
   hi Underlined ctermfg=22 ctermbg=80
   hi VertSplit ctermfg=27 ctermbg=19
-  hi Visual ctermfg=80
+  hi Visual cterm=NONE ctermfg=80 ctermbg=81
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=72 ctermbg=17
   hi cursorim ctermfg=27 ctermbg=71
 elseif &t_Co == 16
@@ -215,7 +218,8 @@ elseif &t_Co == 16
   hi Type ctermfg=3 ctermbg=0
   hi Underlined ctermfg=6 ctermbg=0
   hi VertSplit ctermfg=6 ctermbg=4
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=3 ctermbg=4
   hi cursorim ctermfg=6 ctermbg=13
 else " 8 colors
@@ -267,7 +271,8 @@ else " 8 colors
   hi Type ctermfg=3 ctermbg=0
   hi Underlined ctermfg=6 ctermbg=0
   hi VertSplit ctermfg=6 ctermbg=4
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
+  hi VisualNOS cterm=NONE
   hi WarningMsg ctermfg=3 ctermbg=4
   hi cursorim ctermfg=6 ctermbg=7
 endif

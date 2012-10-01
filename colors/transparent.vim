@@ -4,7 +4,7 @@
 " Name: transparent
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:21:19
+" Date: 2012-09-29 13:46:37
 "----------------------------------------------------------
 
 set background=dark
@@ -67,31 +67,29 @@ if has("gui_running")
   hi Type guifg=Green
   hi Typedef guifg=Red
   hi Visual gui=reverse guifg=DarkGray guibg=Black
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=White guibg=DarkRed
   hi WildMenu gui=bold
 elseif &t_Co == 256
   hi Normal ctermfg=7 ctermbg=16
-  hi Character ctermfg=11
-  hi Comment ctermfg=6
-  hi Conceal ctermbg=8
+  hi Character ctermfg=14
+  hi Comment ctermfg=3
   hi Constant ctermfg=10
   hi Cursor ctermfg=16 ctermbg=46
-  hi CursorColumn cterm=reverse ctermbg=8
+  hi CursorColumn cterm=reverse
   hi CursorLine ctermbg=241
   hi Debug ctermfg=15 ctermbg=0
   hi Delimiter ctermfg=10
-  hi DiffAdd ctermfg=15 ctermbg=6
+  hi DiffAdd ctermfg=15 ctermbg=3
   hi DiffChange ctermfg=0 ctermbg=7
-  hi DiffDelete ctermfg=15 ctermbg=1
+  hi DiffDelete ctermfg=15 ctermbg=4
   hi DiffText ctermfg=15 ctermbg=7
   hi Directory ctermfg=15
-  hi Error ctermbg=1
-  hi Exception ctermfg=0 ctermbg=1
+  hi Error ctermbg=4
+  hi Exception ctermfg=0 ctermbg=4
   hi FoldColumn ctermfg=10 ctermbg=NONE
   hi Folded cterm=bold ctermbg=NONE
   hi Function ctermfg=15
-  hi Ignore ctermfg=4
+  hi Ignore ctermfg=1
   hi IncSearch ctermfg=15 ctermbg=0
   hi Label ctermfg=15
   hi MatchParen cterm=bold,underline ctermbg=NONE
@@ -99,54 +97,47 @@ elseif &t_Co == 256
   hi MoreMsg cterm=bold ctermfg=15
   hi NonText ctermfg=NONE
   hi Operator ctermfg=10
-  hi Pmenu ctermbg=14
-  hi PmenuSbar ctermfg=0 ctermbg=7
+  hi Pmenu ctermbg=11
+  hi PmenuSbar ctermfg=0
   hi PmenuSel ctermfg=0 ctermbg=7
   hi PmenuThumb cterm=reverse
   hi PreProc ctermfg=2
-  hi Question ctermfg=10
   hi Search cterm=reverse ctermfg=7 ctermbg=NONE
-  hi SignColumn ctermbg=8
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=9
+  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=15 ctermbg=0
   hi StatusLineNC ctermfg=7 ctermbg=0
-  hi String ctermfg=11
-  hi TabLine ctermfg=7 ctermbg=8
+  hi String ctermfg=14
+  hi TabLine ctermfg=7
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=248
   hi TabLineSel cterm=bold,underline ctermfg=15
   hi Tag ctermfg=10
   hi Title ctermfg=10
   hi Todo ctermbg=7
-  hi Type ctermfg=10
-  hi Typedef ctermfg=9
-  hi Underlined ctermfg=12
-  hi Visual cterm=reverse ctermfg=15 ctermbg=8
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=15 ctermbg=1
+  hi Typedef ctermfg=12
+  hi Visual ctermfg=15 ctermbg=8
+  hi WarningMsg ctermfg=15 ctermbg=4
   hi WildMenu cterm=bold
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=16
-  hi Character ctermfg=76
-  hi Comment ctermfg=6
-  hi Conceal ctermbg=81
+  hi Character ctermfg=31
+  hi Comment ctermfg=56
   hi Constant ctermfg=28
   hi Cursor ctermfg=16 ctermbg=28
-  hi CursorColumn cterm=reverse ctermbg=81
+  hi CursorColumn cterm=reverse
   hi CursorLine ctermbg=81
   hi Debug ctermfg=79 ctermbg=16
   hi Delimiter ctermfg=28
-  hi DiffAdd ctermfg=79 ctermbg=6
+  hi DiffAdd ctermfg=79 ctermbg=56
   hi DiffChange ctermfg=16 ctermbg=87
-  hi DiffDelete ctermfg=79 ctermbg=48
+  hi DiffDelete ctermfg=79 ctermbg=19
   hi DiffText ctermfg=79 ctermbg=87
   hi Directory ctermfg=79
-  hi Error ctermbg=48
-  hi Exception ctermfg=16 ctermbg=48
+  hi Error ctermbg=19
+  hi Exception ctermfg=16 ctermbg=19
   hi FoldColumn ctermfg=28 ctermbg=NONE
   hi Folded cterm=bold ctermbg=NONE
   hi Function ctermfg=79
-  hi Ignore ctermfg=19
+  hi Ignore ctermfg=48
   hi IncSearch ctermfg=79 ctermbg=16
   hi Label ctermfg=79
   hi MatchParen cterm=bold,underline ctermbg=NONE
@@ -154,54 +145,47 @@ elseif &t_Co == 88
   hi MoreMsg cterm=bold ctermfg=79
   hi NonText ctermfg=NONE
   hi Operator ctermfg=28
-  hi Pmenu ctermbg=31
-  hi PmenuSbar ctermfg=16 ctermbg=87
+  hi Pmenu ctermbg=76
+  hi PmenuSbar ctermfg=16
   hi PmenuSel ctermfg=16 ctermbg=87
   hi PmenuThumb cterm=reverse
   hi PreProc ctermfg=24
-  hi Question ctermfg=28
   hi Search cterm=reverse ctermfg=87 ctermbg=NONE
-  hi SignColumn ctermbg=81
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=9
+  hi SpecialKey ctermfg=39
   hi StatusLine ctermfg=79 ctermbg=16
   hi StatusLineNC ctermfg=87 ctermbg=16
-  hi String ctermfg=76
-  hi TabLine ctermfg=87 ctermbg=81
+  hi String ctermfg=31
+  hi TabLine ctermfg=87
   hi TabLineFill cterm=underline ctermfg=87 ctermbg=84
   hi TabLineSel cterm=bold,underline ctermfg=79
   hi Tag ctermfg=28
   hi Title ctermfg=28
   hi Todo ctermbg=87
-  hi Type ctermfg=28
-  hi Typedef ctermfg=9
-  hi Underlined ctermfg=39
-  hi Visual cterm=reverse ctermfg=79 ctermbg=81
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=79 ctermbg=48
+  hi Typedef ctermfg=39
+  hi Visual ctermfg=79 ctermbg=81
+  hi WarningMsg ctermfg=79 ctermbg=19
   hi WildMenu cterm=bold
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Character ctermfg=11
-  hi Comment ctermfg=6
-  hi Conceal ctermbg=2
+  hi Character ctermfg=14
+  hi Comment ctermfg=3
   hi Constant ctermfg=2
   hi Cursor ctermfg=0 ctermbg=2
-  hi CursorColumn cterm=reverse ctermbg=2
+  hi CursorColumn cterm=reverse
   hi CursorLine ctermbg=3
   hi Debug ctermfg=15 ctermbg=0
   hi Delimiter ctermfg=2
-  hi DiffAdd ctermfg=15 ctermbg=6
+  hi DiffAdd ctermfg=15 ctermbg=3
   hi DiffChange ctermfg=0 ctermbg=11
-  hi DiffDelete ctermfg=15 ctermbg=9
+  hi DiffDelete ctermfg=15 ctermbg=4
   hi DiffText ctermfg=15 ctermbg=11
   hi Directory ctermfg=15
-  hi Error ctermbg=9
-  hi Exception ctermfg=0 ctermbg=9
+  hi Error ctermbg=4
+  hi Exception ctermfg=0 ctermbg=4
   hi FoldColumn ctermfg=2 ctermbg=NONE
   hi Folded cterm=bold ctermbg=NONE
   hi Function ctermfg=15
-  hi Ignore ctermfg=4
+  hi Ignore ctermfg=9
   hi IncSearch ctermfg=15 ctermbg=0
   hi Label ctermfg=15
   hi MatchParen cterm=bold,underline ctermbg=NONE
@@ -209,54 +193,47 @@ elseif &t_Co == 16
   hi MoreMsg cterm=bold ctermfg=15
   hi NonText ctermfg=NONE
   hi Operator ctermfg=2
-  hi Pmenu ctermbg=14
-  hi PmenuSbar ctermfg=0 ctermbg=11
+  hi Pmenu ctermbg=11
+  hi PmenuSbar ctermfg=0
   hi PmenuSel ctermfg=0 ctermbg=11
   hi PmenuThumb cterm=reverse
   hi PreProc ctermfg=2
-  hi Question ctermfg=2
   hi Search cterm=reverse ctermfg=11 ctermbg=NONE
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=9
-  hi SpecialKey ctermfg=9
+  hi SpecialKey ctermfg=12
   hi StatusLine ctermfg=15 ctermbg=0
   hi StatusLineNC ctermfg=11 ctermbg=0
-  hi String ctermfg=11
-  hi TabLine ctermfg=11 ctermbg=2
+  hi String ctermfg=14
+  hi TabLine ctermfg=11
   hi TabLineFill cterm=underline ctermfg=11 ctermbg=8
   hi TabLineSel cterm=bold,underline ctermfg=15
   hi Tag ctermfg=2
   hi Title ctermfg=2
   hi Todo ctermbg=11
-  hi Type ctermfg=2
-  hi Typedef ctermfg=9
-  hi Underlined ctermfg=12
-  hi Visual cterm=reverse ctermfg=15 ctermbg=2
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=15 ctermbg=9
+  hi Typedef ctermfg=12
+  hi Visual ctermfg=15 ctermbg=2
+  hi WarningMsg ctermfg=15 ctermbg=4
   hi WildMenu cterm=bold
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Character ctermfg=3
-  hi Comment ctermfg=6
-  hi Conceal ctermbg=2
+  hi Character ctermfg=6
+  hi Comment ctermfg=3
   hi Constant ctermfg=2
   hi Cursor ctermfg=0 ctermbg=2
-  hi CursorColumn cterm=reverse ctermbg=2
+  hi CursorColumn cterm=reverse
   hi CursorLine ctermbg=3
   hi Debug ctermfg=7 ctermbg=0
   hi Delimiter ctermfg=2
-  hi DiffAdd ctermfg=7 ctermbg=6
+  hi DiffAdd ctermfg=7 ctermbg=3
   hi DiffChange ctermfg=0 ctermbg=7
-  hi DiffDelete ctermfg=7 ctermbg=1
+  hi DiffDelete ctermfg=7 ctermbg=4
   hi DiffText ctermfg=7 ctermbg=7
   hi Directory ctermfg=7
-  hi Error ctermbg=1
-  hi Exception ctermfg=0 ctermbg=1
+  hi Error ctermbg=4
+  hi Exception ctermfg=0 ctermbg=4
   hi FoldColumn ctermfg=2 ctermbg=NONE
   hi Folded cterm=bold ctermbg=NONE
   hi Function ctermfg=7
-  hi Ignore ctermfg=4
+  hi Ignore ctermfg=1
   hi IncSearch ctermfg=7 ctermbg=0
   hi Label ctermfg=7
   hi MatchParen cterm=bold,underline ctermbg=NONE
@@ -264,31 +241,25 @@ else " 8 colors
   hi MoreMsg cterm=bold ctermfg=7
   hi NonText ctermfg=NONE
   hi Operator ctermfg=2
-  hi Pmenu ctermbg=6
-  hi PmenuSbar ctermfg=0 ctermbg=7
+  hi Pmenu ctermbg=3
+  hi PmenuSbar ctermfg=0
   hi PmenuSel ctermfg=0 ctermbg=7
   hi PmenuThumb cterm=reverse
   hi PreProc ctermfg=2
-  hi Question ctermfg=2
   hi Search cterm=reverse ctermfg=7 ctermbg=NONE
-  hi SignColumn ctermbg=2
-  hi Special ctermfg=1
-  hi SpecialKey ctermfg=1
+  hi SpecialKey ctermfg=5
   hi StatusLine ctermfg=7 ctermbg=0
   hi StatusLineNC ctermfg=7 ctermbg=0
-  hi String ctermfg=3
-  hi TabLine ctermfg=7 ctermbg=2
+  hi String ctermfg=6
+  hi TabLine ctermfg=7
   hi TabLineFill cterm=underline ctermfg=7 ctermbg=7
   hi TabLineSel cterm=bold,underline ctermfg=7
   hi Tag ctermfg=2
   hi Title ctermfg=2
   hi Todo ctermbg=7
-  hi Type ctermfg=2
-  hi Typedef ctermfg=1
-  hi Underlined ctermfg=5
-  hi Visual cterm=reverse ctermfg=7 ctermbg=2
-  hi VisualNOS cterm=bold,underline
-  hi WarningMsg ctermfg=7 ctermbg=1
+  hi Typedef ctermfg=5
+  hi Visual ctermfg=7 ctermbg=2
+  hi WarningMsg ctermfg=7 ctermbg=4
   hi WildMenu cterm=bold
 endif
 

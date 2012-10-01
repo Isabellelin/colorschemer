@@ -4,7 +4,7 @@
 " Name: lucius
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:57
+" Date: 2012-09-29 13:38:13
 "----------------------------------------------------------
 
 set background=light
@@ -26,7 +26,7 @@ if has("gui_running")
   hi ColorColumn guibg=#d7d7af
   hi Comment guifg=#808080
   hi Constant guifg=#af5f00
-  hi Cursor guifg=bg guibg=#5f87af
+  hi Cursor guibg=#5f87af
   hi CursorColumn guibg=#dadada
   hi CursorLine guibg=#dadada
   hi CursorLineNr gui=NONE guifg=#9e9e9e guibg=#dadada
@@ -86,7 +86,6 @@ elseif &t_Co == 256
   hi BType cterm=bold ctermfg=24
   hi ColorColumn ctermbg=187
   hi Comment ctermfg=244
-  hi Conceal ctermbg=8
   hi Constant ctermfg=130
   hi Cursor ctermfg=255 ctermbg=67
   hi CursorColumn ctermbg=253
@@ -133,7 +132,7 @@ elseif &t_Co == 256
   hi Type ctermfg=24
   hi Underlined ctermfg=238
   hi VertSplit cterm=NONE ctermfg=254 ctermbg=244
-  hi Visual ctermbg=153
+  hi Visual cterm=NONE ctermbg=153
   hi VisualNOS cterm=underline ctermfg=238
   hi WarningMsg ctermfg=130
   hi WildMenu ctermfg=238 ctermbg=153
@@ -148,7 +147,6 @@ elseif &t_Co == 88
   hi BType cterm=bold ctermfg=21
   hi ColorColumn ctermbg=86
   hi Comment ctermfg=83
-  hi Conceal ctermbg=81
   hi Constant ctermfg=52
   hi Cursor ctermfg=87 ctermbg=38
   hi CursorColumn ctermbg=86
@@ -195,7 +193,7 @@ elseif &t_Co == 88
   hi Type ctermfg=21
   hi Underlined ctermfg=80
   hi VertSplit cterm=NONE ctermfg=87 ctermbg=83
-  hi Visual ctermbg=59
+  hi Visual cterm=NONE ctermbg=59
   hi VisualNOS cterm=underline ctermfg=80
   hi WarningMsg ctermfg=52
   hi WildMenu ctermfg=80 ctermbg=59
@@ -210,7 +208,6 @@ elseif &t_Co == 16
   hi BType cterm=bold ctermfg=6
   hi ColorColumn ctermbg=7
   hi Comment ctermfg=8
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=11 ctermbg=8
   hi CursorColumn ctermbg=12
@@ -257,7 +254,7 @@ elseif &t_Co == 16
   hi Type ctermfg=6
   hi Underlined ctermfg=2
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=8
-  hi Visual ctermbg=12
+  hi Visual cterm=NONE ctermbg=12
   hi VisualNOS cterm=underline ctermfg=2
   hi WarningMsg ctermfg=3
   hi WildMenu ctermfg=2 ctermbg=12
@@ -272,7 +269,6 @@ else " 8 colors
   hi BType cterm=bold ctermfg=6
   hi ColorColumn ctermbg=7
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=7 ctermbg=6
   hi CursorColumn ctermbg=7
@@ -319,7 +315,7 @@ else " 8 colors
   hi Type ctermfg=6
   hi Underlined ctermfg=2
   hi VertSplit cterm=NONE ctermfg=7 ctermbg=3
-  hi Visual ctermbg=7
+  hi Visual cterm=NONE ctermbg=7
   hi VisualNOS cterm=underline ctermfg=2
   hi WarningMsg ctermfg=3
   hi WildMenu ctermfg=2 ctermbg=7

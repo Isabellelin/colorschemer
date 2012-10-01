@@ -4,7 +4,7 @@
 " Name: highlights_for_radiologist
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:13:40
+" Date: 2012-09-29 13:36:29
 "----------------------------------------------------------
 
 set background=light
@@ -16,6 +16,7 @@ endif
 let g:colors_name = expand("<sfile>:t:r")
 
 if has("gui_running")
+  hi Search guifg=NONE
   hi abbr guifg=white guibg=black
   hi disease gui=bold guifg=yellow guibg=black
   hi etc_term guifg=grey guibg=black
@@ -26,45 +27,53 @@ if has("gui_running")
   hi proc_term guifg=white guibg=black
   hi simil_term guifg=red guibg=grey
 elseif &t_Co == 256
+  hi Search ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=7
   hi abbr ctermfg=15 ctermbg=0
-  hi disease ctermfg=11 ctermbg=0
-  hi etc_term ctermfg=248 ctermbg=0
-  hi known_typo ctermfg=15 ctermbg=9
-  hi loc_term ctermfg=10 ctermbg=0
-  hi organ_term ctermfg=224 ctermbg=0
-  hi path_term ctermfg=11 ctermbg=0
-  hi proc_term ctermfg=15 ctermbg=0
-  hi simil_term ctermfg=9 ctermbg=248
-elseif &t_Co == 88
-  hi abbr ctermfg=79 ctermbg=16
-  hi disease ctermfg=76 ctermbg=16
-  hi etc_term ctermfg=84 ctermbg=16
-  hi known_typo ctermfg=79 ctermbg=9
-  hi loc_term ctermfg=28 ctermbg=16
-  hi organ_term ctermfg=74 ctermbg=16
-  hi path_term ctermfg=76 ctermbg=16
-  hi proc_term ctermfg=79 ctermbg=16
-  hi simil_term ctermfg=9 ctermbg=84
-elseif &t_Co == 16
-  hi abbr ctermfg=15 ctermbg=0
-  hi disease ctermfg=11 ctermbg=0
-  hi etc_term ctermfg=8 ctermbg=0
-  hi known_typo ctermfg=15 ctermbg=9
-  hi loc_term ctermfg=2 ctermbg=0
-  hi organ_term ctermfg=11 ctermbg=0
-  hi path_term ctermfg=11 ctermbg=0
-  hi proc_term ctermfg=15 ctermbg=0
-  hi simil_term ctermfg=9 ctermbg=8
-else " 8 colors
-  hi abbr ctermfg=7 ctermbg=0
-  hi disease ctermfg=3 ctermbg=0
+  hi disease ctermfg=14 ctermbg=0
   hi etc_term ctermfg=7 ctermbg=0
-  hi known_typo ctermfg=7 ctermbg=1
+  hi known_typo ctermfg=15 ctermbg=12
+  hi loc_term ctermfg=10 ctermbg=0
+  hi organ_term ctermfg=12 ctermbg=0
+  hi path_term ctermfg=14 ctermbg=0
+  hi proc_term ctermfg=15 ctermbg=0
+  hi simil_term ctermfg=12 ctermbg=7
+elseif &t_Co == 88
+  hi Search ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=87
+  hi abbr ctermfg=79 ctermbg=16
+  hi disease ctermfg=31 ctermbg=16
+  hi etc_term ctermfg=87 ctermbg=16
+  hi known_typo ctermfg=79 ctermbg=39
+  hi loc_term ctermfg=28 ctermbg=16
+  hi organ_term ctermfg=39 ctermbg=16
+  hi path_term ctermfg=31 ctermbg=16
+  hi proc_term ctermfg=79 ctermbg=16
+  hi simil_term ctermfg=39 ctermbg=87
+elseif &t_Co == 16
+  hi Search ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=11
+  hi abbr ctermfg=15 ctermbg=0
+  hi disease ctermfg=14 ctermbg=0
+  hi etc_term ctermfg=11 ctermbg=0
+  hi known_typo ctermfg=15 ctermbg=12
   hi loc_term ctermfg=2 ctermbg=0
-  hi organ_term ctermfg=7 ctermbg=0
-  hi path_term ctermfg=3 ctermbg=0
+  hi organ_term ctermfg=12 ctermbg=0
+  hi path_term ctermfg=14 ctermbg=0
+  hi proc_term ctermfg=15 ctermbg=0
+  hi simil_term ctermfg=12 ctermbg=11
+else " 8 colors
+  hi Search ctermfg=NONE
+  hi Visual cterm=NONE ctermbg=7
+  hi abbr ctermfg=7 ctermbg=0
+  hi disease ctermfg=6 ctermbg=0
+  hi etc_term ctermfg=7 ctermbg=0
+  hi known_typo ctermfg=7 ctermbg=5
+  hi loc_term ctermfg=2 ctermbg=0
+  hi organ_term ctermfg=5 ctermbg=0
+  hi path_term ctermfg=6 ctermbg=0
   hi proc_term ctermfg=7 ctermbg=0
-  hi simil_term ctermfg=1 ctermbg=7
+  hi simil_term ctermfg=5 ctermbg=7
 endif
 
 

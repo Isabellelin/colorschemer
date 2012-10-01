@@ -4,7 +4,7 @@
 " Name: deveiate
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:11:43
+" Date: 2012-09-29 13:33:43
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#f6dfb2 guibg=#00000f
   hi Comment guifg=#a82419
   hi Constant guifg=#76a3d7
-  hi Cursor guibg=yellow
+  hi Cursor guifg=NONE guibg=yellow
   hi CursorLine guibg=#171520
   hi DiffAdd guifg=#f8f8f8 guibg=#253b22
   hi DiffChange guifg=#f8f8f8 guibg=#4a410d
@@ -66,7 +66,7 @@ if has("gui_running")
   hi rubySymbol guifg=#9bda8b
 elseif &t_Co == 256
   hi Normal ctermfg=223 ctermbg=16
-  hi Cursor ctermbg=226
+  hi Cursor ctermfg=NONE ctermbg=226
   hi CursorLine ctermbg=234
   hi DiffAdd ctermfg=231
   hi DiffChange ctermfg=231
@@ -83,6 +83,7 @@ elseif &t_Co == 256
   hi TabLineFill ctermfg=16
   hi TabLineSel ctermfg=231 ctermbg=236
   hi VertSplit ctermfg=16 ctermbg=236
+  hi Visual cterm=NONE ctermbg=8
   hi VisualNOS ctermbg=233
   hi rubyClass ctermfg=251
   hi rubyClassVariable ctermfg=153
@@ -95,7 +96,7 @@ elseif &t_Co == 256
   hi rubySymbol ctermfg=114
 elseif &t_Co == 88
   hi Normal ctermfg=74 ctermbg=16
-  hi Cursor ctermbg=76
+  hi Cursor ctermfg=NONE ctermbg=76
   hi CursorLine ctermbg=80
   hi DiffAdd ctermfg=79
   hi DiffChange ctermfg=79
@@ -112,6 +113,7 @@ elseif &t_Co == 88
   hi TabLineFill ctermfg=16
   hi TabLineSel ctermfg=79 ctermbg=80
   hi VertSplit ctermfg=16 ctermbg=80
+  hi Visual cterm=NONE ctermbg=81
   hi VisualNOS ctermbg=16
   hi rubyClass ctermfg=85
   hi rubyClassVariable ctermfg=63
@@ -124,7 +126,7 @@ elseif &t_Co == 88
   hi rubySymbol ctermfg=41
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
-  hi Cursor ctermbg=11
+  hi Cursor ctermfg=NONE ctermbg=11
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=15
   hi DiffChange ctermfg=15
@@ -141,6 +143,7 @@ elseif &t_Co == 16
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=15 ctermbg=2
   hi VertSplit ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=0
   hi rubyClass ctermfg=7
   hi rubyClassVariable ctermfg=12
@@ -153,7 +156,7 @@ elseif &t_Co == 16
   hi rubySymbol ctermfg=10
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorLine ctermbg=0
   hi DiffAdd ctermfg=7
   hi DiffChange ctermfg=7
@@ -170,6 +173,7 @@ else " 8 colors
   hi TabLineFill ctermfg=0
   hi TabLineSel ctermfg=7 ctermbg=2
   hi VertSplit ctermfg=0 ctermbg=2
+  hi Visual cterm=NONE ctermbg=2
   hi VisualNOS ctermbg=0
   hi rubyClass ctermfg=7
   hi rubyClassVariable ctermfg=7

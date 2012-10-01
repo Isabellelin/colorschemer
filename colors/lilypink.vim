@@ -4,7 +4,7 @@
 " Name: lilypink
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:14:48
+" Date: 2012-09-29 13:38:01
 "----------------------------------------------------------
 
 set background=dark
@@ -19,7 +19,7 @@ if has("gui_running")
   hi Normal guifg=#e0e0e0 guibg=#242424
   hi Comment gui=italic guifg=#99968b
   hi Constant guifg=#ffa1cf
-  hi Cursor guibg=#666666
+  hi Cursor guifg=NONE guibg=#666666
   hi CursorColumn guibg=#303030
   hi CursorLine guibg=#303030
   hi CursorLineNr guifg=#4f4f4f guibg=#303030
@@ -58,7 +58,7 @@ elseif &t_Co == 256
   hi Normal ctermfg=254 ctermbg=235
   hi Comment ctermfg=246
   hi Constant ctermfg=218
-  hi Cursor ctermbg=241
+  hi Cursor ctermfg=NONE ctermbg=241
   hi CursorColumn ctermbg=236
   hi CursorLine cterm=NONE ctermbg=236
   hi CursorLineNr ctermfg=239 ctermbg=236
@@ -93,13 +93,13 @@ elseif &t_Co == 256
   hi Type ctermfg=228
   hi Underlined ctermfg=111
   hi VertSplit cterm=NONE ctermfg=234 ctermbg=234
-  hi Visual ctermbg=16
+  hi Visual cterm=NONE ctermbg=16
   hi WildMenu cterm=underline ctermfg=46 ctermbg=16
 elseif &t_Co == 88
   hi Normal ctermfg=87 ctermbg=80
   hi Comment ctermfg=83
   hi Constant ctermfg=74
-  hi Cursor ctermbg=81
+  hi Cursor ctermfg=NONE ctermbg=81
   hi CursorColumn ctermbg=80
   hi CursorLine cterm=NONE ctermbg=80
   hi CursorLineNr ctermfg=81 ctermbg=80
@@ -134,13 +134,13 @@ elseif &t_Co == 88
   hi Type ctermfg=77
   hi Underlined ctermfg=43
   hi VertSplit cterm=NONE ctermfg=80 ctermbg=80
-  hi Visual ctermbg=16
+  hi Visual cterm=NONE ctermbg=16
   hi WildMenu cterm=underline ctermfg=28 ctermbg=16
 elseif &t_Co == 16
   hi Normal ctermfg=11 ctermbg=0
   hi Comment ctermfg=8
   hi Constant ctermfg=11
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi CursorLineNr ctermfg=2 ctermbg=0
@@ -175,13 +175,13 @@ elseif &t_Co == 16
   hi Type ctermfg=11
   hi Underlined ctermfg=12
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=0
   hi WildMenu cterm=underline ctermfg=2 ctermbg=0
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Comment ctermfg=7
   hi Constant ctermfg=7
-  hi Cursor ctermbg=3
+  hi Cursor ctermfg=NONE ctermbg=3
   hi CursorColumn ctermbg=0
   hi CursorLine cterm=NONE ctermbg=0
   hi CursorLineNr ctermfg=2 ctermbg=0
@@ -216,7 +216,7 @@ else " 8 colors
   hi Type ctermfg=7
   hi Underlined ctermfg=7
   hi VertSplit cterm=NONE ctermfg=0 ctermbg=0
-  hi Visual ctermbg=0
+  hi Visual cterm=NONE ctermbg=0
   hi WildMenu cterm=underline ctermfg=2 ctermbg=0
 endif
 

@@ -4,7 +4,7 @@
 " Name: refactor
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:18:26
+" Date: 2012-09-29 13:42:52
 "----------------------------------------------------------
 
 set background=dark
@@ -52,7 +52,6 @@ if has("gui_running")
   hi Todo gui=italic guifg=black guibg=yellow
   hi Type guifg=#99CF50
   hi Visual gui=bold guifg=gray25 guibg=darkgray
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=red
   hi WildMenu guifg=black guibg=yellow
 elseif &t_Co == 256
@@ -60,25 +59,25 @@ elseif &t_Co == 256
   hi Cursor ctermfg=16 ctermbg=46
   hi CursorLine ctermbg=241
   hi StatusLine ctermfg=68 ctermbg=231
-  hi Visual ctermfg=238
+  hi Visual cterm=NONE ctermfg=238 ctermbg=8
 elseif &t_Co == 88
   hi Normal ctermfg=58 ctermbg=16
   hi Cursor ctermfg=16 ctermbg=28
   hi CursorLine ctermbg=81
   hi StatusLine ctermfg=22 ctermbg=79
-  hi Visual ctermfg=8
+  hi Visual cterm=NONE ctermfg=8 ctermbg=81
 elseif &t_Co == 16
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorLine ctermbg=3
   hi StatusLine ctermfg=6 ctermbg=15
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
 else " 8 colors
   hi Normal ctermfg=7 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=2
   hi CursorLine ctermbg=3
   hi StatusLine ctermfg=6 ctermbg=7
-  hi Visual ctermfg=2
+  hi Visual cterm=NONE ctermfg=2 ctermbg=2
 endif
 
 hi! link Float Constant

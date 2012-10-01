@@ -4,7 +4,7 @@
 " Name: festoon
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:12:23
+" Date: 2012-09-29 13:34:42
 "----------------------------------------------------------
 
 set background=light
@@ -128,7 +128,7 @@ if has("gui_running")
   hi htmlUnderline gui=underline
   hi htmlUnderlineItalic gui=underline,italic
   hi htmlValue guifg=#b9917d
-  hi lcursor guibg=Cyan
+  hi lCursor guifg=NONE guibg=Cyan
   hi markdownBold gui=bold
   hi markdownBoldItalic gui=bold,italic
   hi markdownCode guifg=#7e6f68
@@ -226,7 +226,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=16
   hi PreCondit ctermfg=143
   hi Repeat ctermfg=143
-  hi Search ctermfg=238
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=241
   hi SpecialComment ctermfg=143
   hi StatementBold ctermfg=242
@@ -250,7 +250,7 @@ elseif &t_Co == 256
   hi Typedef ctermfg=241
   hi VertSplit ctermfg=248 ctermbg=255
   hi VimwikiEmoticons ctermfg=238 ctermbg=230
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=7
   hi VisualNOS ctermfg=231 ctermbg=243
   hi WarningMsg ctermbg=88
   hi browseSuffixes ctermfg=61
@@ -275,7 +275,7 @@ elseif &t_Co == 256
   hi htmlTagN ctermfg=174
   hi htmlTagName ctermfg=174
   hi htmlValue ctermfg=138
-  hi lcursor ctermbg=51
+  hi lCursor ctermfg=NONE ctermbg=51
   hi markdownCode ctermfg=242
   hi markdownEscape ctermfg=61
   hi markdownLineBreak ctermbg=238
@@ -360,7 +360,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=16
   hi PreCondit ctermfg=84
   hi Repeat ctermfg=84
-  hi Search ctermfg=80
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=81
   hi SpecialComment ctermfg=84
   hi StatementBold ctermfg=82
@@ -384,7 +384,7 @@ elseif &t_Co == 88
   hi Typedef ctermfg=81
   hi VertSplit ctermfg=84 ctermbg=87
   hi VimwikiEmoticons ctermfg=80 ctermbg=78
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=87
   hi VisualNOS ctermfg=79 ctermbg=82
   hi WarningMsg ctermbg=32
   hi browseSuffixes ctermfg=21
@@ -409,7 +409,7 @@ elseif &t_Co == 88
   hi htmlTagN ctermfg=53
   hi htmlTagName ctermfg=53
   hi htmlValue ctermfg=53
-  hi lcursor ctermbg=31
+  hi lCursor ctermfg=NONE ctermbg=31
   hi markdownCode ctermfg=82
   hi markdownEscape ctermfg=21
   hi markdownLineBreak ctermbg=80
@@ -494,7 +494,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=0
   hi PreCondit ctermfg=8
   hi Repeat ctermfg=8
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=6
   hi SpecialComment ctermfg=8
   hi StatementBold ctermfg=3
@@ -518,7 +518,7 @@ elseif &t_Co == 16
   hi Typedef ctermfg=6
   hi VertSplit ctermfg=8 ctermbg=11
   hi VimwikiEmoticons ctermfg=2 ctermbg=11
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=11
   hi VisualNOS ctermfg=15 ctermbg=8
   hi WarningMsg ctermbg=1
   hi browseSuffixes ctermfg=6
@@ -543,7 +543,7 @@ elseif &t_Co == 16
   hi htmlTagN ctermfg=8
   hi htmlTagName ctermfg=8
   hi htmlValue ctermfg=8
-  hi lcursor ctermbg=14
+  hi lCursor ctermfg=NONE ctermbg=14
   hi markdownCode ctermfg=3
   hi markdownEscape ctermfg=6
   hi markdownLineBreak ctermbg=2
@@ -628,7 +628,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=0
   hi PreCondit ctermfg=7
   hi Repeat ctermfg=7
-  hi Search ctermfg=2
+  hi Search ctermfg=NONE
   hi SpecialChar ctermfg=6
   hi SpecialComment ctermfg=7
   hi StatementBold ctermfg=3
@@ -652,7 +652,7 @@ else " 8 colors
   hi Typedef ctermfg=6
   hi VertSplit ctermfg=7 ctermbg=7
   hi VimwikiEmoticons ctermfg=2 ctermbg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi VisualNOS ctermfg=7 ctermbg=3
   hi WarningMsg ctermbg=1
   hi browseSuffixes ctermfg=6
@@ -677,7 +677,7 @@ else " 8 colors
   hi htmlTagN ctermfg=7
   hi htmlTagName ctermfg=7
   hi htmlValue ctermfg=7
-  hi lcursor ctermbg=6
+  hi lCursor ctermfg=NONE ctermbg=6
   hi markdownCode ctermfg=3
   hi markdownEscape ctermfg=6
   hi markdownLineBreak ctermbg=2
@@ -748,7 +748,7 @@ hi! link VimwikiLink htmlLink
 hi! link VimwikiLinkT htmlLink
 hi! link htmlBoldItalicUnderline htmlBoldUnderlineItalic
 hi! link htmlCssStyleComment Comment
-hi! link htmlEventDq htmlEvent
+hi! link htmlEventDQ htmlEvent
 hi! link htmlEventSQ htmlEvent
 hi! link htmlItalicBold htmlBoldItalic
 hi! link htmlItalicBoldUnderline htmlBoldUnderlineItalic

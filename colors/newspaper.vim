@@ -4,7 +4,7 @@
 " Name: newspaper
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:24
+" Date: 2012-09-29 13:40:11
 "----------------------------------------------------------
 
 set background=light
@@ -21,7 +21,6 @@ if has("gui_running")
   hi ColorColumn guibg=#EEEEDD
   hi Comment gui=italic guifg=#4e5968
   hi Constant guifg=#881a1a
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=#FFFDD0
   hi CursorLine guibg=#a4a061
   hi DiffAdd guifg=#000000 guibg=#6bb269
@@ -73,7 +72,6 @@ if has("gui_running")
   hi WarningMsg guifg=#883629 guibg=bg
   hi WildMenu guifg=#000000 guibg=#7ab4cf
   hi cursorim guifg=bg guibg=fg
-  hi lcursor guifg=bg guibg=fg
   hi pythonDecorator gui=bold guifg=#6c1111 guibg=#eeeeee
   hi qfError gui=bold guifg=#673420
   hi qfFileName gui=italic guifg=#5b7982
@@ -81,14 +79,11 @@ if has("gui_running")
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=255
   hi Boolean ctermfg=88
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=110
-  hi Conceal ctermbg=8
   hi Constant ctermfg=214
   hi Cursor ctermfg=255 ctermbg=16
   hi CursorColumn ctermbg=255
   hi CursorLine cterm=NONE ctermbg=254
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=16 ctermbg=48
   hi DiffChange ctermfg=16 ctermbg=153
   hi DiffDelete ctermfg=16 ctermbg=203
@@ -134,11 +129,11 @@ elseif &t_Co == 256
   hi VertSplit cterm=NONE ctermfg=255 ctermbg=24
   hi VimCommentTitle ctermfg=110 ctermbg=bg
   hi VimError ctermfg=160 ctermbg=16
-  hi Visual ctermfg=255 ctermbg=153
+  hi Visual cterm=NONE ctermfg=255 ctermbg=153
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=16 ctermbg=117
   hi cursorim ctermfg=255 ctermbg=16
-  hi lcursor ctermfg=255 ctermbg=16
+  hi lCursor ctermfg=255 ctermbg=16
   hi pythonDecorator ctermfg=208 ctermbg=255
   hi qfError ctermfg=236
   hi qfFileName ctermfg=66
@@ -146,14 +141,11 @@ elseif &t_Co == 256
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
   hi Boolean ctermfg=32
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=42
-  hi Conceal ctermbg=81
   hi Constant ctermfg=72
   hi Cursor ctermfg=87 ctermbg=16
   hi CursorColumn ctermbg=87
   hi CursorLine cterm=NONE ctermbg=87
-  hi CursorLineNr ctermfg=56
   hi DiffAdd ctermfg=16 ctermbg=29
   hi DiffChange ctermfg=16 ctermbg=59
   hi DiffDelete ctermfg=16 ctermbg=69
@@ -199,11 +191,11 @@ elseif &t_Co == 88
   hi VertSplit cterm=NONE ctermfg=87 ctermbg=21
   hi VimCommentTitle ctermfg=42 ctermbg=bg
   hi VimError ctermfg=48 ctermbg=16
-  hi Visual ctermfg=87 ctermbg=59
+  hi Visual cterm=NONE ctermfg=87 ctermbg=59
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=16 ctermbg=43
   hi cursorim ctermfg=87 ctermbg=16
-  hi lcursor ctermfg=87 ctermbg=16
+  hi lCursor ctermfg=87 ctermbg=16
   hi pythonDecorator ctermfg=68 ctermbg=87
   hi qfError ctermfg=80
   hi qfFileName ctermfg=82
@@ -211,14 +203,11 @@ elseif &t_Co == 88
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
   hi Boolean ctermfg=1
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=8
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=11 ctermbg=0
   hi CursorColumn ctermbg=11
   hi CursorLine cterm=NONE ctermbg=11
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=0 ctermbg=6
   hi DiffChange ctermfg=0 ctermbg=12
   hi DiffDelete ctermfg=0 ctermbg=9
@@ -264,11 +253,11 @@ elseif &t_Co == 16
   hi VertSplit cterm=NONE ctermfg=11 ctermbg=6
   hi VimCommentTitle ctermfg=8 ctermbg=bg
   hi VimError ctermfg=9 ctermbg=0
-  hi Visual ctermfg=11 ctermbg=12
+  hi Visual cterm=NONE ctermfg=11 ctermbg=12
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=0 ctermbg=12
   hi cursorim ctermfg=11 ctermbg=0
-  hi lcursor ctermfg=11 ctermbg=0
+  hi lCursor ctermfg=11 ctermbg=0
   hi pythonDecorator ctermfg=3 ctermbg=11
   hi qfError ctermfg=1
   hi qfFileName ctermfg=6
@@ -276,14 +265,11 @@ elseif &t_Co == 16
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
   hi Boolean ctermfg=1
-  hi ColorColumn ctermbg=1
   hi Comment ctermfg=7
-  hi Conceal ctermbg=2
   hi Constant ctermfg=3
   hi Cursor ctermfg=7 ctermbg=0
   hi CursorColumn ctermbg=7
   hi CursorLine cterm=NONE ctermbg=7
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermfg=0 ctermbg=6
   hi DiffChange ctermfg=0 ctermbg=7
   hi DiffDelete ctermfg=0 ctermbg=3
@@ -329,11 +315,11 @@ else " 8 colors
   hi VertSplit cterm=NONE ctermfg=7 ctermbg=6
   hi VimCommentTitle ctermfg=7 ctermbg=bg
   hi VimError ctermfg=1 ctermbg=0
-  hi Visual ctermfg=7 ctermbg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=7
   hi WarningMsg ctermbg=bg
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=7 ctermbg=0
-  hi lcursor ctermfg=7 ctermbg=0
+  hi lCursor ctermfg=7 ctermbg=0
   hi pythonDecorator ctermfg=3 ctermbg=7
   hi qfError ctermfg=1
   hi qfFileName ctermfg=6

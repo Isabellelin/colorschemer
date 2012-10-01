@@ -4,7 +4,7 @@
 " Name: zazen_1
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:23:13
+" Date: 2012-09-29 13:49:00
 "----------------------------------------------------------
 
 set background=dark
@@ -22,7 +22,6 @@ if has("gui_running")
   hi Comment guifg=#777777
   hi Conditional gui=bold guifg=#787878
   hi Constant gui=bold guifg=#838383 guibg=#222222
-  hi Cursor guifg=bg guibg=fg
   hi CursorColumn guibg=#000000
   hi CursorLine guibg=#555555
   hi Delimiter guifg=#838383
@@ -76,7 +75,6 @@ if has("gui_running")
   hi cssBraces guifg=fg guibg=bg
   hi cursorim guifg=bg guibg=fg
   hi htmlLink gui=underline,italic guifg=#666666
-  hi lcursor guifg=bg guibg=fg
   hi pythonDecorator gui=bold guifg=#3b3b3b
   hi qfError gui=undercurl guifg=fg guibg=#000000
   hi qfFileName gui=italic guifg=#6a6a6a
@@ -86,7 +84,6 @@ elseif &t_Co == 256
   hi Boolean ctermfg=59
   hi Conditional ctermfg=243
   hi Constant ctermbg=235
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=240
   hi Delimiter ctermfg=244
   hi DiffAdd ctermfg=fg
@@ -114,12 +111,11 @@ elseif &t_Co == 256
   hi VertSplit ctermfg=235 ctermbg=235
   hi VimCommentTitle ctermfg=59 ctermbg=bg
   hi VimError ctermfg=249 ctermbg=236
-  hi Visual ctermfg=231
+  hi Visual cterm=NONE ctermfg=231 ctermbg=8
   hi WarningMsg ctermbg=240
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=241
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=237
   hi qfError ctermfg=fg ctermbg=16
   hi qfFileName ctermfg=242
@@ -129,7 +125,6 @@ elseif &t_Co == 88
   hi Boolean ctermfg=81
   hi Conditional ctermfg=82
   hi Constant ctermbg=80
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=81
   hi Delimiter ctermfg=83
   hi DiffAdd ctermfg=fg
@@ -157,12 +152,11 @@ elseif &t_Co == 88
   hi VertSplit ctermfg=80 ctermbg=80
   hi VimCommentTitle ctermfg=81 ctermbg=bg
   hi VimError ctermfg=85 ctermbg=80
-  hi Visual ctermfg=79
+  hi Visual cterm=NONE ctermfg=79 ctermbg=81
   hi WarningMsg ctermbg=81
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=81
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=80
   hi qfError ctermfg=fg ctermbg=16
   hi qfFileName ctermfg=82
@@ -172,7 +166,6 @@ elseif &t_Co == 16
   hi Boolean ctermfg=3
   hi Conditional ctermfg=8
   hi Constant ctermbg=0
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi Delimiter ctermfg=8
   hi DiffAdd ctermfg=fg
@@ -200,12 +193,11 @@ elseif &t_Co == 16
   hi VertSplit ctermfg=0 ctermbg=0
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=15
+  hi Visual cterm=NONE ctermfg=15 ctermbg=2
   hi WarningMsg ctermbg=3
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=3
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=2
   hi qfError ctermfg=fg ctermbg=0
   hi qfFileName ctermfg=3
@@ -215,7 +207,6 @@ else " 8 colors
   hi Boolean ctermfg=3
   hi Conditional ctermfg=3
   hi Constant ctermbg=0
-  hi Cursor ctermfg=bg ctermbg=fg
   hi CursorLine ctermbg=2
   hi Delimiter ctermfg=3
   hi DiffAdd ctermfg=fg
@@ -243,12 +234,11 @@ else " 8 colors
   hi VertSplit ctermfg=0 ctermbg=0
   hi VimCommentTitle ctermfg=3 ctermbg=bg
   hi VimError ctermfg=7 ctermbg=0
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi WarningMsg ctermbg=3
   hi cssBraces ctermfg=fg ctermbg=bg
   hi cursorim ctermfg=bg ctermbg=fg
   hi htmlLink ctermfg=3
-  hi lcursor ctermfg=bg ctermbg=fg
   hi pythonDecorator ctermfg=2
   hi qfError ctermfg=fg ctermbg=0
   hi qfFileName ctermfg=3
@@ -277,10 +267,10 @@ hi! link htmlEndTag htmlTagName
 hi! link htmlScriptTag htmlTagName
 hi! link htmlSpecialTagName htmlTagName
 hi! link htmlTagN htmlTagName
-hi! link javaScriptFunction Statement
-hi! link javaScriptMember Statement
 hi! link javaScriptValue Constant
 hi! link javaType Statement
+hi! link javascriptFunction Statement
+hi! link javascriptMember Statement
 hi! link objcClass Type
 hi! link objcMessageName Identifier
 hi! link objcMethodArg Normal

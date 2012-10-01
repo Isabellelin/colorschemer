@@ -4,7 +4,7 @@
 " Name: peaksea
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:17:24
+" Date: 2012-09-29 13:41:31
 "----------------------------------------------------------
 
 set background=light
@@ -45,7 +45,7 @@ if has("gui_running")
   hi PmenuThumb guifg=fg guibg=#c0e080
   hi PreProc guifg=#009030
   hi Question guifg=fg guibg=#d0d090
-  hi Search guibg=#f8f8f8
+  hi Search guifg=NONE guibg=#f8f8f8
   hi SignColumn guifg=fg guibg=#90e090
   hi Special guifg=#907000
   hi SpecialKey guifg=#1050a0
@@ -65,20 +65,17 @@ if has("gui_running")
   hi Underlined guifg=#6a5acd
   hi VertSplit gui=bold guifg=fg guibg=#c0c0c0
   hi Visual gui=bold guibg=#a6caf0
-  hi VisualNOS guifg=fg guibg=#b0b0e0
+  hi VisualNOS gui=NONE guifg=fg guibg=#b0b0e0
   hi WarningMsg guifg=#b02000
   hi WildMenu guifg=fg guibg=#d0d090
   hi cursorim guifg=#f0f0f0 guibg=#800080
 elseif &t_Co == 256
   hi Normal ctermfg=16 ctermbg=254
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=58
-  hi Conceal ctermbg=8
   hi Constant ctermfg=23
   hi Cursor ctermfg=255 ctermbg=28
   hi CursorColumn ctermbg=216
   hi CursorLine ctermbg=NONE
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermbg=146
   hi DiffChange ctermbg=182
   hi DiffDelete cterm=bold ctermfg=18 ctermbg=252
@@ -103,7 +100,7 @@ elseif &t_Co == 256
   hi PmenuThumb ctermfg=16 ctermbg=150
   hi PreProc ctermfg=29
   hi Question cterm=bold ctermfg=16 ctermbg=186
-  hi Search ctermbg=231
+  hi Search ctermfg=NONE ctermbg=231
   hi SignColumn ctermfg=16 ctermbg=114
   hi Special ctermfg=94
   hi SpecialKey ctermfg=25
@@ -123,20 +120,17 @@ elseif &t_Co == 256
   hi Underlined ctermfg=62
   hi VertSplit cterm=bold ctermfg=16 ctermbg=250
   hi Visual cterm=bold ctermbg=153
-  hi VisualNOS ctermfg=16 ctermbg=146
+  hi VisualNOS cterm=NONE ctermfg=16 ctermbg=146
   hi WarningMsg ctermfg=124
   hi WildMenu ctermfg=16 ctermbg=186
   hi cursorim ctermfg=255 ctermbg=90
 elseif &t_Co == 88
   hi Normal ctermfg=16 ctermbg=87
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=36
-  hi Conceal ctermbg=81
   hi Constant ctermfg=21
   hi Cursor ctermfg=87 ctermbg=20
   hi CursorColumn ctermbg=73
   hi CursorLine ctermbg=NONE
-  hi CursorLineNr ctermfg=56
   hi DiffAdd ctermbg=85
   hi DiffChange ctermbg=86
   hi DiffDelete cterm=bold ctermfg=17 ctermbg=86
@@ -161,7 +155,7 @@ elseif &t_Co == 88
   hi PmenuThumb ctermfg=16 ctermbg=57
   hi PreProc ctermfg=21
   hi Question cterm=bold ctermfg=16 ctermbg=57
-  hi Search ctermbg=79
+  hi Search ctermfg=NONE ctermbg=79
   hi SignColumn ctermfg=16 ctermbg=41
   hi Special ctermfg=36
   hi SpecialKey ctermfg=22
@@ -181,20 +175,17 @@ elseif &t_Co == 88
   hi Underlined ctermfg=38
   hi VertSplit cterm=bold ctermfg=16 ctermbg=85
   hi Visual cterm=bold ctermbg=59
-  hi VisualNOS ctermfg=16 ctermbg=85
+  hi VisualNOS cterm=NONE ctermfg=16 ctermbg=85
   hi WarningMsg ctermfg=48
   hi WildMenu ctermfg=16 ctermbg=57
   hi cursorim ctermfg=87 ctermbg=33
 elseif &t_Co == 16
   hi Normal ctermfg=0 ctermbg=11
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=6
   hi Cursor ctermfg=11 ctermbg=2
   hi CursorColumn ctermbg=8
   hi CursorLine ctermbg=NONE
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermbg=7
   hi DiffChange ctermbg=7
   hi DiffDelete cterm=bold ctermfg=4 ctermbg=7
@@ -219,7 +210,7 @@ elseif &t_Co == 16
   hi PmenuThumb ctermfg=0 ctermbg=10
   hi PreProc ctermfg=6
   hi Question cterm=bold ctermfg=0 ctermbg=10
-  hi Search ctermbg=15
+  hi Search ctermfg=NONE ctermbg=15
   hi SignColumn ctermfg=0 ctermbg=10
   hi Special ctermfg=3
   hi SpecialKey ctermfg=6
@@ -239,20 +230,17 @@ elseif &t_Co == 16
   hi Underlined ctermfg=8
   hi VertSplit cterm=bold ctermfg=0 ctermbg=7
   hi Visual cterm=bold ctermbg=12
-  hi VisualNOS ctermfg=0 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=7
   hi WarningMsg ctermfg=1
   hi WildMenu ctermfg=0 ctermbg=10
   hi cursorim ctermfg=11 ctermbg=5
 else " 8 colors
   hi Normal ctermfg=0 ctermbg=7
-  hi ColorColumn ctermbg=1
   hi Comment ctermfg=3
-  hi Conceal ctermbg=2
   hi Constant ctermfg=6
   hi Cursor ctermfg=7 ctermbg=2
   hi CursorColumn ctermbg=7
   hi CursorLine ctermbg=NONE
-  hi CursorLineNr ctermfg=3
   hi DiffAdd ctermbg=7
   hi DiffChange ctermbg=7
   hi DiffDelete cterm=bold ctermfg=4 ctermbg=7
@@ -277,7 +265,7 @@ else " 8 colors
   hi PmenuThumb ctermfg=0 ctermbg=7
   hi PreProc ctermfg=6
   hi Question cterm=bold ctermfg=0 ctermbg=7
-  hi Search ctermbg=7
+  hi Search ctermfg=NONE ctermbg=7
   hi SignColumn ctermfg=0 ctermbg=7
   hi Special ctermfg=3
   hi SpecialKey ctermfg=6
@@ -297,7 +285,7 @@ else " 8 colors
   hi Underlined ctermfg=5
   hi VertSplit cterm=bold ctermfg=0 ctermbg=7
   hi Visual cterm=bold ctermbg=7
-  hi VisualNOS ctermfg=0 ctermbg=7
+  hi VisualNOS cterm=NONE ctermfg=0 ctermbg=7
   hi WarningMsg ctermfg=1
   hi WildMenu ctermfg=0 ctermbg=7
   hi cursorim ctermfg=7 ctermbg=5

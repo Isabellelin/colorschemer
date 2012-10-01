@@ -4,7 +4,7 @@
 " Name: newsprint
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:16:25
+" Date: 2012-09-29 13:40:13
 "----------------------------------------------------------
 
 set background=light
@@ -24,125 +24,67 @@ if has("gui_running")
   hi Error gui=bold guifg=grey guibg=black
   hi Identifier gui=bold guifg=black
   hi PreProc gui=italic guifg=black
+  hi Search guifg=NONE
   hi Special gui=bold guifg=black
-  hi SpellBad guibg=#ff0000
-  hi SpellCap guibg=#5c5cff
-  hi SpellRare guibg=#ff00ff
   hi Statement gui=bold,underline guifg=black
   hi Type guifg=black
   hi Visual guifg=black guibg=grey
 elseif &t_Co == 256
   hi Normal ctermfg=0
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=7
-  hi Conceal ctermbg=8
   hi Constant cterm=bold ctermfg=7
   hi Cursor ctermbg=16
   hi CursorLine ctermbg=250
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
   hi Error cterm=bold ctermfg=7 ctermbg=0
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Identifier cterm=bold ctermfg=0
-  hi LineNr ctermfg=3
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=7
   hi PreProc ctermfg=0
-  hi SignColumn ctermbg=7
+  hi Search ctermfg=NONE
   hi Special cterm=bold ctermfg=0
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
   hi Statement cterm=bold,underline ctermfg=0
   hi Type cterm=bold ctermfg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
 elseif &t_Co == 88
   hi Normal ctermfg=16
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=87
-  hi Conceal ctermbg=81
   hi Constant cterm=bold ctermfg=87
   hi Cursor ctermbg=16
   hi CursorLine ctermbg=85
-  hi CursorLineNr ctermfg=56
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=67
-  hi DiffDelete ctermbg=31
   hi Error cterm=bold ctermfg=87 ctermbg=16
-  hi FoldColumn ctermbg=87
-  hi Folded ctermbg=87
   hi Identifier cterm=bold ctermfg=16
-  hi LineNr ctermfg=56
-  hi Pmenu ctermbg=67
-  hi PmenuSbar ctermbg=87
   hi PreProc ctermfg=16
-  hi SignColumn ctermbg=87
+  hi Search ctermfg=NONE
   hi Special cterm=bold ctermfg=16
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=39
-  hi SpellRare ctermbg=67
   hi Statement cterm=bold,underline ctermfg=16
   hi Type cterm=bold ctermfg=16
-  hi Visual ctermfg=16
+  hi Visual cterm=NONE ctermfg=16 ctermbg=87
 elseif &t_Co == 16
   hi Normal ctermfg=0
-  hi ColorColumn ctermbg=9
   hi Comment ctermfg=11
-  hi Conceal ctermbg=2
   hi Constant cterm=bold ctermfg=11
   hi Cursor ctermbg=0
   hi CursorLine ctermbg=7
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=9
-  hi DiffChange ctermbg=13
-  hi DiffDelete ctermbg=14
   hi Error cterm=bold ctermfg=11 ctermbg=0
-  hi FoldColumn ctermbg=11
-  hi Folded ctermbg=11
   hi Identifier cterm=bold ctermfg=0
-  hi LineNr ctermfg=3
-  hi Pmenu ctermbg=13
-  hi PmenuSbar ctermbg=11
   hi PreProc ctermfg=0
-  hi SignColumn ctermbg=11
+  hi Search ctermfg=NONE
   hi Special cterm=bold ctermfg=0
-  hi SpellBad ctermbg=9
-  hi SpellCap ctermbg=12
-  hi SpellRare ctermbg=13
   hi Statement cterm=bold,underline ctermfg=0
   hi Type cterm=bold ctermfg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=11
 else " 8 colors
   hi Normal ctermfg=0
-  hi ColorColumn ctermbg=1
   hi Comment ctermfg=7
-  hi Conceal ctermbg=2
   hi Constant cterm=bold ctermfg=7
   hi Cursor ctermbg=0
   hi CursorLine ctermbg=7
-  hi CursorLineNr ctermfg=3
-  hi DiffAdd ctermbg=1
-  hi DiffChange ctermbg=5
-  hi DiffDelete ctermbg=6
   hi Error cterm=bold ctermfg=7 ctermbg=0
-  hi FoldColumn ctermbg=7
-  hi Folded ctermbg=7
   hi Identifier cterm=bold ctermfg=0
-  hi LineNr ctermfg=3
-  hi Pmenu ctermbg=5
-  hi PmenuSbar ctermbg=7
   hi PreProc ctermfg=0
-  hi SignColumn ctermbg=7
+  hi Search ctermfg=NONE
   hi Special cterm=bold ctermfg=0
-  hi SpellBad ctermbg=1
-  hi SpellCap ctermbg=5
-  hi SpellRare ctermbg=5
   hi Statement cterm=bold,underline ctermfg=0
   hi Type cterm=bold ctermfg=0
-  hi Visual ctermfg=0
+  hi Visual cterm=NONE ctermfg=0 ctermbg=7
 endif
 
 hi! link CursorColumn CursorLine

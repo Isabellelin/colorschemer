@@ -4,7 +4,7 @@
 " Name: telstar
 " ColorSchemerVersion: 1.0
 " User: emberson
-" Date: 2012-09-29 13:20:44
+" Date: 2012-09-29 13:45:52
 "----------------------------------------------------------
 
 set background=dark
@@ -52,7 +52,6 @@ if has("gui_running")
   hi Type guifg=#9060c8
   hi VertSplit gui=bold
   hi Visual gui=bold guifg=Grey guibg=fg
-  hi VisualNOS gui=bold,underline
   hi WarningMsg guifg=Black
   hi javaBraces guifg=#406090
   hi javaExternal guifg=#666666
@@ -62,7 +61,7 @@ if has("gui_running")
   hi javaParen1 guifg=#80a0ff
   hi javaParen2 guifg=#a0c0ff
   hi javaScopeDecl guifg=#8040c0
-  hi lcursor guifg=Black guibg=#bababa
+  hi lCursor guifg=Black guibg=#bababa
 elseif &t_Co == 256
   hi Normal ctermfg=61 ctermbg=16
   hi Cursor ctermfg=16 ctermbg=248
@@ -70,7 +69,7 @@ elseif &t_Co == 256
   hi Number ctermfg=61
   hi Operator ctermfg=103
   hi String ctermfg=246
-  hi Visual ctermfg=250
+  hi Visual cterm=NONE ctermfg=250 ctermbg=8
   hi javaBraces ctermfg=60
   hi javaExternal ctermfg=241
   hi javaFuncDef ctermfg=69
@@ -79,7 +78,7 @@ elseif &t_Co == 256
   hi javaParen1 ctermfg=111
   hi javaParen2 ctermfg=147
   hi javaScopeDecl ctermfg=97
-  hi lcursor ctermfg=16 ctermbg=250
+  hi lCursor ctermfg=16 ctermbg=250
 elseif &t_Co == 88
   hi Normal ctermfg=38 ctermbg=16
   hi Cursor ctermfg=16 ctermbg=84
@@ -87,7 +86,7 @@ elseif &t_Co == 88
   hi Number ctermfg=38
   hi Operator ctermfg=38
   hi String ctermfg=84
-  hi Visual ctermfg=85
+  hi Visual cterm=NONE ctermfg=85 ctermbg=81
   hi javaBraces ctermfg=81
   hi javaExternal ctermfg=81
   hi javaFuncDef ctermfg=39
@@ -96,7 +95,7 @@ elseif &t_Co == 88
   hi javaParen1 ctermfg=39
   hi javaParen2 ctermfg=43
   hi javaScopeDecl ctermfg=34
-  hi lcursor ctermfg=16 ctermbg=85
+  hi lCursor ctermfg=16 ctermbg=85
 elseif &t_Co == 16
   hi Normal ctermfg=6 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=8
@@ -104,7 +103,7 @@ elseif &t_Co == 16
   hi Number ctermfg=8
   hi Operator ctermfg=8
   hi String ctermfg=8
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi javaBraces ctermfg=6
   hi javaExternal ctermfg=3
   hi javaFuncDef ctermfg=12
@@ -113,7 +112,7 @@ elseif &t_Co == 16
   hi javaParen1 ctermfg=12
   hi javaParen2 ctermfg=12
   hi javaScopeDecl ctermfg=5
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 else " 8 colors
   hi Normal ctermfg=6 ctermbg=0
   hi Cursor ctermfg=0 ctermbg=7
@@ -121,7 +120,7 @@ else " 8 colors
   hi Number ctermfg=7
   hi Operator ctermfg=7
   hi String ctermfg=7
-  hi Visual ctermfg=7
+  hi Visual cterm=NONE ctermfg=7 ctermbg=2
   hi javaBraces ctermfg=6
   hi javaExternal ctermfg=3
   hi javaFuncDef ctermfg=7
@@ -130,7 +129,7 @@ else " 8 colors
   hi javaParen1 ctermfg=7
   hi javaParen2 ctermfg=7
   hi javaScopeDecl ctermfg=5
-  hi lcursor ctermfg=0 ctermbg=7
+  hi lCursor ctermfg=0 ctermbg=7
 endif
 
 
